@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m82dde8bb-0ca8-1000-90a3-0af502b50000" name="ADS_BI_PT_DELIVERABLE_DIM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/82ddc126-0ca8-1000-90a3-0af502b50000.xml#m82ddc126-0ca8-1000-90a3-0af502b50000">
+<Description><![CDATA[Old name W_DELIVERABLES_DIM]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[ADS_BI_PT_DELIVERABLE_DIM]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m82dde8bc-0ca8-1000-90a3-0af502b50000" name="CONTRACT_DESCRIPTION" dataType="VARCHAR" precision="240" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8bd-0ca8-1000-90a3-0af502b50000" name="CONTRACT_NO" dataType="VARCHAR" precision="20" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8be-0ca8-1000-90a3-0af502b50000" name="CONTRACT_TYPE" dataType="VARCHAR" precision="27" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8bf-0ca8-1000-90a3-0af502b50000" name="DELIVERABLE_DESCRIPTION" dataType="VARCHAR" precision="240" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8c0-0ca8-1000-90a3-0af502b50000" name="DELIVERABLE_NUMBER" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8c1-0ca8-1000-90a3-0af502b50000" name="PARTY" dataType="VARCHAR" precision="8" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8c2-0ca8-1000-90a3-0af502b50000" name="REVISION_NUM" dataType="INT" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8c3-0ca8-1000-90a3-0af502b50000" name="STATUS" dataType="VARCHAR" precision="80" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8c4-0ca8-1000-90a3-0af502b50000" name="SUPPLIER" dataType="VARCHAR" precision="360" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8c5-0ca8-1000-90a3-0af502b50000" name="TYPE" dataType="VARCHAR" precision="11" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8c6-0ca8-1000-90a3-0af502b50000" name="ORG_OWNER" dataType="VARCHAR" precision="244" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8c7-0ca8-1000-90a3-0af502b50000" name="DELIVERABLE_OWNER" dataType="VARCHAR" precision="244" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m82de3643-0ca8-1000-90a3-0af502b50000" name="W_DELIVERABLES_DIM_Key">
+<RefColumns>
+<RefColumn refId="m82de3643-0ca8-1000-90a3-0af502b50000-m82dde8bd-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82dde8bb-0ca8-1000-90a3-0af502b50000.xml#m82dde8bd-0ca8-1000-90a3-0af502b50000"/>
+<RefColumn refId="m82de3643-0ca8-1000-90a3-0af502b50000-m82dde8c0-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82dde8bb-0ca8-1000-90a3-0af502b50000.xml#m82dde8c0-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

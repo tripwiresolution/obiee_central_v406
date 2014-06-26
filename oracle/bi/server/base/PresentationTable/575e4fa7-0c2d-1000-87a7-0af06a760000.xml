@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationTable mdsid="m575e4fa7-0c2d-1000-87a7-0af06a760000" name="Arrival Delay" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" hasDispName="false" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationCatalog/575e4f99-0c2d-1000-87a7-0af06a760000.xml#m575e4f99-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[->]]></Description>
+<Alias name="Delay Details"/>
+<Alias name="DelD"/>
+<Alias name="F3"/>
+<PresentationColumn mdsid="m575e4f50-0c2d-1000-87a7-0af06a760000" name="Arr Delay (Min)" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cb-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Difference in minutes between scheduled and actual arrival time. Early arrivals are set to 0.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4f4f-0c2d-1000-87a7-0af06a760000" name="Arr Lag (Min)" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68ca-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Difference in minutes between scheduled and actual arrival time. Early arrival are negative values.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4f51-0c2d-1000-87a7-0af06a760000" name="Arr Delay as % of Flight Time" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68e0-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Arrival Delay expressed as % of total trip time.]]></Description>
+<Alias name="Arr Delay as % of Flight"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m488fbaa0-0c61-1000-99f2-7f0000010000" name="Arr Lag as % of Flight Time" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m48835e90-0c61-1000-99f2-7f0000010000">
+<Description><![CDATA[Percent of flights that arrive on time. Note: If you select Origin as a category, you get percent of flights that depart from those airports and arrive on time.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4f52-0c2d-1000-87a7-0af06a760000" name="Avg Arr Delay (Min)" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68e3-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Avg of difference in minutes between scheduled and actual arrival time. Early arrivals set to 0.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4f55-0c2d-1000-87a7-0af06a760000" name="# of Fl Arr Ontime or Early" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f5-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Number of flights with 0 minutes delay]]></Description>
+<Alias name="# of Arr Ontime or Early"/>
+<Alias name="# of Arrivals Ontime or Early"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4f54-0c2d-1000-87a7-0af06a760000" name="# of Fl Arr 1 to 30 Min Late" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f4-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Number of flights with less of 30 minutes Arrival delay]]></Description>
+<Alias name="# of Arr 1 to 30 Min Late"/>
+<Alias name="# of Arrivals 1 to 30 Min Late"/>
+<Alias name="# of Fl Arr Less than 30 Min Late"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4f57-0c2d-1000-87a7-0af06a760000" name="# of Fl Arr Over 30 Min Late" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b6901-0c2d-1000-87a7-0af06a760000">
+<Alias name="# of Fl Arr over 30 Min Late init"/>
+<Alias name="Fl over 30 Min Late"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4f53-0c2d-1000-87a7-0af06a760000" name="% of Fl Arr 1 to 30 Min Late" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f3-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Percent of flights that arrive with less of 30 minutes Arrival delay.]]></Description>
+<Alias name="% of Arr 1 to 30 Min Late"/>
+<Alias name="% of Arrivals 1 to 30 Min Late"/>
+<Alias name="% of Fl Arr Less than 30 Min Late"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4f58-0c2d-1000-87a7-0af06a760000" name="% of Fl Arr Over 30 Min Late" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b6902-0c2d-1000-87a7-0af06a760000">
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4f4e-0c2d-1000-87a7-0af06a760000" name="% of Fl Arr Ontime or Early" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f6-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[% of Flights that arrived ontime or early.]]></Description>
+<Alias name="% of Arr Ontime"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4f56-0c2d-1000-87a7-0af06a760000" name="% of Fl Arrived Late" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b6900-0c2d-1000-87a7-0af06a760000">
+</PresentationColumn>
+</PresentationTable>

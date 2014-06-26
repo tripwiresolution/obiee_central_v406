@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CubeTable mdsid="mdf212370-0c83-1000-ba54-0a9a60060000" name="Risk" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" extName="Risk" memberReference="Member_Name" dateFormat="MM-DD-YYYY" isMemberAliasUnique="true" containerRef="/oracle/bi/server/base/PhysicalCatalog/df212363-0c83-1000-ba54-0a9a60060000.xml#mdf212363-0c83-1000-ba54-0a9a60060000">
+<Alias name="Default"/>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[Risk]]></Value>
+</DBMapItem>
+<CubeColumn mdsid="mdf212371-0c83-1000-ba54-0a9a60060000" name="Risk - measure" extName="Risk - measure" aggrType="external" dataType="DOUBLE" scale="4" precision="19" nullable="true" dimPropType="none">
+</CubeColumn>
+<CubeColumn mdsid="mdf212372-0c83-1000-ba54-0a9a60060000" name="Gen1,Measures" extName="Gen1,Measures" dataType="VARCHAR" precision="128" nullable="true" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212364-0c83-1000-ba54-0a9a60060000.xml#mdf2123c3-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212373-0c83-1000-ba54-0a9a60060000" name="Gen1,Measures - Memnor" extName="Memnor" dataType="INT" precision="128" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212364-0c83-1000-ba54-0a9a60060000.xml#mdf2123c3-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212374-0c83-1000-ba54-0a9a60060000" name="Gen1,Measures - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212364-0c83-1000-ba54-0a9a60060000.xml#mdf2123c3-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212375-0c83-1000-ba54-0a9a60060000" name="Gen2,Measures" extName="Gen2,Measures" dataType="VARCHAR" precision="128" nullable="true" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212364-0c83-1000-ba54-0a9a60060000.xml#mdf2123c4-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212376-0c83-1000-ba54-0a9a60060000" name="Gen2,Measures - Ancestor Ref" extName="Ancestor_Names" dataType="VARCHAR" precision="100" dimPropType="ancestorRef" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212364-0c83-1000-ba54-0a9a60060000.xml#mdf2123c4-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212377-0c83-1000-ba54-0a9a60060000" name="Gen2,Measures - Memnor" extName="Memnor" dataType="INT" precision="128" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212364-0c83-1000-ba54-0a9a60060000.xml#mdf2123c4-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212378-0c83-1000-ba54-0a9a60060000" name="Gen2,Measures - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212364-0c83-1000-ba54-0a9a60060000.xml#mdf2123c4-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212379-0c83-1000-ba54-0a9a60060000" name="Gen1,Time" extName="Gen1,Time" dataType="VARCHAR" precision="128" nullable="true" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212365-0c83-1000-ba54-0a9a60060000.xml#mdf2123c5-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf21237a-0c83-1000-ba54-0a9a60060000" name="Gen1,Time - Memnor" extName="Memnor" dataType="INT" precision="128" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212365-0c83-1000-ba54-0a9a60060000.xml#mdf2123c5-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf21237b-0c83-1000-ba54-0a9a60060000" name="Gen1,Time - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212365-0c83-1000-ba54-0a9a60060000.xml#mdf2123c5-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf21237c-0c83-1000-ba54-0a9a60060000" name="Gen2,Time" extName="Gen2,Time" dataType="VARCHAR" precision="128" nullable="true" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212365-0c83-1000-ba54-0a9a60060000.xml#mdf2123c6-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf21237d-0c83-1000-ba54-0a9a60060000" name="Gen2,Time - Ancestor Ref" extName="Ancestor_Names" dataType="VARCHAR" precision="100" dimPropType="ancestorRef" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212365-0c83-1000-ba54-0a9a60060000.xml#mdf2123c6-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf21237e-0c83-1000-ba54-0a9a60060000" name="Gen2,Time - Memnor" extName="Memnor" dataType="INT" precision="128" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212365-0c83-1000-ba54-0a9a60060000.xml#mdf2123c6-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf21237f-0c83-1000-ba54-0a9a60060000" name="Gen2,Time - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212365-0c83-1000-ba54-0a9a60060000.xml#mdf2123c6-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212380-0c83-1000-ba54-0a9a60060000" name="Gen3,Time" extName="Gen3,Time" dataType="VARCHAR" precision="128" nullable="true" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212365-0c83-1000-ba54-0a9a60060000.xml#mdf2123c7-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212381-0c83-1000-ba54-0a9a60060000" name="Gen3,Time - Ancestor Ref" extName="Ancestor_Names" dataType="VARCHAR" precision="200" dimPropType="ancestorRef" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212365-0c83-1000-ba54-0a9a60060000.xml#mdf2123c7-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212382-0c83-1000-ba54-0a9a60060000" name="Gen3,Time - Memnor" extName="Memnor" dataType="INT" precision="128" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212365-0c83-1000-ba54-0a9a60060000.xml#mdf2123c7-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212383-0c83-1000-ba54-0a9a60060000" name="Gen3,Time - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212365-0c83-1000-ba54-0a9a60060000.xml#mdf2123c7-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212384-0c83-1000-ba54-0a9a60060000" name="Gen4,Time" extName="Gen4,Time" dataType="VARCHAR" precision="128" nullable="true" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212365-0c83-1000-ba54-0a9a60060000.xml#mdf2123c8-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212385-0c83-1000-ba54-0a9a60060000" name="Gen4,Time - Ancestor Ref" extName="Ancestor_Names" dataType="VARCHAR" precision="300" dimPropType="ancestorRef" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212365-0c83-1000-ba54-0a9a60060000.xml#mdf2123c8-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212386-0c83-1000-ba54-0a9a60060000" name="Gen4,Time - Memnor" extName="Memnor" dataType="INT" precision="128" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212365-0c83-1000-ba54-0a9a60060000.xml#mdf2123c8-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212387-0c83-1000-ba54-0a9a60060000" name="Gen4,Time - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212365-0c83-1000-ba54-0a9a60060000.xml#mdf2123c8-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212388-0c83-1000-ba54-0a9a60060000" name="Gen5,Time" extName="Gen5,Time" dataType="VARCHAR" precision="128" nullable="true" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212365-0c83-1000-ba54-0a9a60060000.xml#mdf2123c9-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212389-0c83-1000-ba54-0a9a60060000" name="Gen5,Time - Ancestor Ref" extName="Ancestor_Names" dataType="VARCHAR" precision="400" dimPropType="ancestorRef" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212365-0c83-1000-ba54-0a9a60060000.xml#mdf2123c9-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf21238a-0c83-1000-ba54-0a9a60060000" name="Gen5,Time - Memnor" extName="Memnor" dataType="INT" precision="128" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212365-0c83-1000-ba54-0a9a60060000.xml#mdf2123c9-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf21238b-0c83-1000-ba54-0a9a60060000" name="Gen5,Time - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212365-0c83-1000-ba54-0a9a60060000.xml#mdf2123c9-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf21238c-0c83-1000-ba54-0a9a60060000" name="Gen1,Curve1" extName="Gen1,Curve1" dataType="VARCHAR" precision="128" nullable="true" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212366-0c83-1000-ba54-0a9a60060000.xml#mdf2123ca-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf21238d-0c83-1000-ba54-0a9a60060000" name="Gen1,Curve1 - Memnor" extName="Memnor" dataType="INT" precision="128" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212366-0c83-1000-ba54-0a9a60060000.xml#mdf2123ca-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf21238e-0c83-1000-ba54-0a9a60060000" name="Gen1,Curve1 - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212366-0c83-1000-ba54-0a9a60060000.xml#mdf2123ca-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf21238f-0c83-1000-ba54-0a9a60060000" name="Gen2,Curve1" extName="Gen2,Curve1" dataType="VARCHAR" precision="128" nullable="true" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212366-0c83-1000-ba54-0a9a60060000.xml#mdf2123cb-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212390-0c83-1000-ba54-0a9a60060000" name="Gen2,Curve1 - Ancestor Ref" extName="Ancestor_Names" dataType="VARCHAR" precision="100" dimPropType="ancestorRef" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212366-0c83-1000-ba54-0a9a60060000.xml#mdf2123cb-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212391-0c83-1000-ba54-0a9a60060000" name="Gen2,Curve1 - Memnor" extName="Memnor" dataType="INT" precision="128" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212366-0c83-1000-ba54-0a9a60060000.xml#mdf2123cb-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212392-0c83-1000-ba54-0a9a60060000" name="Gen2,Curve1 - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212366-0c83-1000-ba54-0a9a60060000.xml#mdf2123cb-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212393-0c83-1000-ba54-0a9a60060000" name="Gen1,Bucket1" extName="Gen1,Bucket1" dataType="VARCHAR" precision="128" nullable="true" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212367-0c83-1000-ba54-0a9a60060000.xml#mdf2123cc-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212394-0c83-1000-ba54-0a9a60060000" name="Gen1,Bucket1 - Memnor" extName="Memnor" dataType="INT" precision="128" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212367-0c83-1000-ba54-0a9a60060000.xml#mdf2123cc-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212395-0c83-1000-ba54-0a9a60060000" name="Gen1,Bucket1 - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212367-0c83-1000-ba54-0a9a60060000.xml#mdf2123cc-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212396-0c83-1000-ba54-0a9a60060000" name="Gen2,Bucket1" extName="Gen2,Bucket1" dataType="VARCHAR" precision="128" nullable="true" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212367-0c83-1000-ba54-0a9a60060000.xml#mdf2123cd-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212397-0c83-1000-ba54-0a9a60060000" name="Gen2,Bucket1 - Ancestor Ref" extName="Ancestor_Names" dataType="VARCHAR" precision="100" dimPropType="ancestorRef" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212367-0c83-1000-ba54-0a9a60060000.xml#mdf2123cd-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212398-0c83-1000-ba54-0a9a60060000" name="Gen2,Bucket1 - Memnor" extName="Memnor" dataType="INT" precision="128" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212367-0c83-1000-ba54-0a9a60060000.xml#mdf2123cd-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf212399-0c83-1000-ba54-0a9a60060000" name="Gen2,Bucket1 - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212367-0c83-1000-ba54-0a9a60060000.xml#mdf2123cd-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf21239a-0c83-1000-ba54-0a9a60060000" name="Gen1,Curve2" extName="Gen1,Curve2" dataType="VARCHAR" precision="128" nullable="true" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212368-0c83-1000-ba54-0a9a60060000.xml#mdf2123ce-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf21239b-0c83-1000-ba54-0a9a60060000" name="Gen1,Curve2 - Memnor" extName="Memnor" dataType="INT" precision="128" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212368-0c83-1000-ba54-0a9a60060000.xml#mdf2123ce-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf21239c-0c83-1000-ba54-0a9a60060000" name="Gen1,Curve2 - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212368-0c83-1000-ba54-0a9a60060000.xml#mdf2123ce-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf21239d-0c83-1000-ba54-0a9a60060000" name="Gen2,Curve2" extName="Gen2,Curve2" dataType="VARCHAR" precision="128" nullable="true" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212368-0c83-1000-ba54-0a9a60060000.xml#mdf2123cf-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf21239e-0c83-1000-ba54-0a9a60060000" name="Gen2,Curve2 - Ancestor Ref" extName="Ancestor_Names" dataType="VARCHAR" precision="100" dimPropType="ancestorRef" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212368-0c83-1000-ba54-0a9a60060000.xml#mdf2123cf-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf21239f-0c83-1000-ba54-0a9a60060000" name="Gen2,Curve2 - Memnor" extName="Memnor" dataType="INT" precision="128" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212368-0c83-1000-ba54-0a9a60060000.xml#mdf2123cf-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123a0-0c83-1000-ba54-0a9a60060000" name="Gen2,Curve2 - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212368-0c83-1000-ba54-0a9a60060000.xml#mdf2123cf-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123a1-0c83-1000-ba54-0a9a60060000" name="Gen1,Bucket2" extName="Gen1,Bucket2" dataType="VARCHAR" precision="128" nullable="true" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212369-0c83-1000-ba54-0a9a60060000.xml#mdf2123d0-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123a2-0c83-1000-ba54-0a9a60060000" name="Gen1,Bucket2 - Memnor" extName="Memnor" dataType="INT" precision="128" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212369-0c83-1000-ba54-0a9a60060000.xml#mdf2123d0-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123a3-0c83-1000-ba54-0a9a60060000" name="Gen1,Bucket2 - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212369-0c83-1000-ba54-0a9a60060000.xml#mdf2123d0-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123a4-0c83-1000-ba54-0a9a60060000" name="Gen2,Bucket2" extName="Gen2,Bucket2" dataType="VARCHAR" precision="128" nullable="true" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212369-0c83-1000-ba54-0a9a60060000.xml#mdf2123d1-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123a5-0c83-1000-ba54-0a9a60060000" name="Gen2,Bucket2 - Ancestor Ref" extName="Ancestor_Names" dataType="VARCHAR" precision="100" dimPropType="ancestorRef" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212369-0c83-1000-ba54-0a9a60060000.xml#mdf2123d1-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123a6-0c83-1000-ba54-0a9a60060000" name="Gen2,Bucket2 - Memnor" extName="Memnor" dataType="INT" precision="128" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212369-0c83-1000-ba54-0a9a60060000.xml#mdf2123d1-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123a7-0c83-1000-ba54-0a9a60060000" name="Gen2,Bucket2 - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/df212369-0c83-1000-ba54-0a9a60060000.xml#mdf2123d1-0c83-1000-ba54-0a9a60060000">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123a8-0c83-1000-ba54-0a9a60060000" name="Bucket1 Leaf Indicator" extName="LEVEL_NUMBER" dataType="INT" precision="128" dimPropType="levelNumber">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123a9-0c83-1000-ba54-0a9a60060000" name="Bucket1 Root Indicator" extName="GEN_NUMBER" dataType="INT" precision="128" dimPropType="genNumber">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123aa-0c83-1000-ba54-0a9a60060000" name="Bucket1 - Default" extName="Default" dataType="VARCHAR" precision="128" nullable="true" dimPropType="none">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123ab-0c83-1000-ba54-0a9a60060000" name="Bucket2 Leaf Indicator" extName="LEVEL_NUMBER" dataType="INT" precision="128" dimPropType="levelNumber">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123ac-0c83-1000-ba54-0a9a60060000" name="Bucket2 Root Indicator" extName="GEN_NUMBER" dataType="INT" precision="128" dimPropType="genNumber">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123ad-0c83-1000-ba54-0a9a60060000" name="Bucket2 - Default" extName="Default" dataType="VARCHAR" precision="128" nullable="true" dimPropType="none">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123ae-0c83-1000-ba54-0a9a60060000" name="Curve1 Leaf Indicator" extName="LEVEL_NUMBER" dataType="INT" precision="128" dimPropType="levelNumber">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123af-0c83-1000-ba54-0a9a60060000" name="Curve1 Root Indicator" extName="GEN_NUMBER" dataType="INT" precision="128" dimPropType="genNumber">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123b0-0c83-1000-ba54-0a9a60060000" name="Curve1 - Default" extName="Default" dataType="VARCHAR" precision="128" nullable="true" dimPropType="none">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123b1-0c83-1000-ba54-0a9a60060000" name="Curve2 Leaf Indicator" extName="LEVEL_NUMBER" dataType="INT" precision="128" dimPropType="levelNumber">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123b2-0c83-1000-ba54-0a9a60060000" name="Curve2 Root Indicator" extName="GEN_NUMBER" dataType="INT" precision="128" dimPropType="genNumber">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123b3-0c83-1000-ba54-0a9a60060000" name="Curve2 - Default" extName="Default" dataType="VARCHAR" precision="128" nullable="true" dimPropType="none">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123b4-0c83-1000-ba54-0a9a60060000" name="Measures Leaf Indicator" extName="LEVEL_NUMBER" dataType="INT" precision="128" dimPropType="levelNumber">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123b5-0c83-1000-ba54-0a9a60060000" name="Measures Root Indicator" extName="GEN_NUMBER" dataType="INT" precision="128" dimPropType="genNumber">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123b6-0c83-1000-ba54-0a9a60060000" name="Measures - Default" extName="Default" dataType="VARCHAR" precision="128" nullable="true" dimPropType="none">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123b7-0c83-1000-ba54-0a9a60060000" name="Time Leaf Indicator" extName="LEVEL_NUMBER" dataType="INT" precision="128" dimPropType="levelNumber">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123b8-0c83-1000-ba54-0a9a60060000" name="Time Root Indicator" extName="GEN_NUMBER" dataType="INT" precision="128" dimPropType="genNumber">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123b9-0c83-1000-ba54-0a9a60060000" name="Time - Default" extName="Default" dataType="VARCHAR" precision="128" nullable="true" dimPropType="none">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123ba-0c83-1000-ba54-0a9a60060000" name="Correlation Change" extName="Correlation Change" aggrType="external" dataType="DOUBLE" nullable="true" dimPropType="uda">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123bb-0c83-1000-ba54-0a9a60060000" name="Correlation Value" extName="Correlation Value" aggrType="external" dataType="DOUBLE" nullable="true" dimPropType="uda">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123bc-0c83-1000-ba54-0a9a60060000" name="Value Average" extName="Value Average" aggrType="external" dataType="DOUBLE" nullable="true" dimPropType="uda">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123bd-0c83-1000-ba54-0a9a60060000" name="Value Average Change" extName="Value Average Change" aggrType="external" dataType="DOUBLE" nullable="true" dimPropType="uda">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123be-0c83-1000-ba54-0a9a60060000" name="Value Count" extName="Value Count" aggrType="external" dataType="DOUBLE" nullable="true" dimPropType="uda">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123bf-0c83-1000-ba54-0a9a60060000" name="Value Avg % Change" extName="Value Avg % Change" aggrType="external" dataType="DOUBLE" nullable="true" dimPropType="uda">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123c0-0c83-1000-ba54-0a9a60060000" name="Monthly Value Avg" extName="Monthly Value Avg" aggrType="external" dataType="DOUBLE" nullable="true" dimPropType="uda">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123c1-0c83-1000-ba54-0a9a60060000" name="Quarterly Value Avg" extName="Quarterly Value Avg" aggrType="external" dataType="DOUBLE" nullable="true" dimPropType="uda">
+</CubeColumn>
+<CubeColumn mdsid="mdf2123c2-0c83-1000-ba54-0a9a60060000" name="Yearly Value Avg" extName="Yearly Value Avg" aggrType="external" dataType="DOUBLE" nullable="true" dimPropType="uda">
+</CubeColumn>
+</CubeTable>

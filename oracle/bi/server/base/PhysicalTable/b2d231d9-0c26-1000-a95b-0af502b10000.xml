@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="mb2d231d9-0c26-1000-a95b-0af502b10000" name="V$SYSMETRIC_HISTORY" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/78682d26-0c20-1000-b5b8-0af502b10000.xml#m78682d26-0c20-1000-b5b8-0af502b10000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[V$SYSMETRIC_HISTORY]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="mb2d231da-0c26-1000-a95b-0af502b10000" name="BEGIN_TIME" dataType="DATETIME" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb2d231db-0c26-1000-a95b-0af502b10000" name="END_TIME" dataType="DATETIME" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb2d231dc-0c26-1000-a95b-0af502b10000" name="GROUP_ID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb2d231dd-0c26-1000-a95b-0af502b10000" name="INTSIZE_CSEC" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb2d231de-0c26-1000-a95b-0af502b10000" name="METRIC_ID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb2d231df-0c26-1000-a95b-0af502b10000" name="METRIC_NAME" dataType="VARCHAR" precision="64" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb2d231e0-0c26-1000-a95b-0af502b10000" name="METRIC_UNIT" dataType="VARCHAR" precision="64" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb2d231e1-0c26-1000-a95b-0af502b10000" name="VALUE" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="mbb389c60-0c26-1000-b8db-0af502b10000" name="V_$SYSMETRIC_HISTORY_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/b2d231d0-0c26-1000-a95b-0af502b10000.xml#mbb395fb0-0c26-1000-b8db-0af502b10000">
+<RefColumns>
+<RefColumn refId="mbb389c60-0c26-1000-b8db-0af502b10000-mb2d231de-0c26-1000-a95b-0af502b10000" columnRef="/oracle/bi/server/base/PhysicalTable/b2d231d9-0c26-1000-a95b-0af502b10000.xml#mb2d231de-0c26-1000-a95b-0af502b10000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

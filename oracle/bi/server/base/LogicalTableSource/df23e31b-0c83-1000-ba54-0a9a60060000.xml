@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="mdf23e31b-0c83-1000-ba54-0a9a60060000" name="Risk" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/df23e2a1-0c83-1000-ba54-0a9a60060000.xml#mdf23e2a1-0c83-1000-ba54-0a9a60060000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-8da1-c56d00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Hierarchy (Essbase)"."Bucket1"."Gen2,Bucket1"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-8da1-c56d00000000-mdf23e2a2-0c83-1000-ba54-0a9a60060000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/df23e2a1-0c83-1000-ba54-0a9a60060000.xml#mdf23e2a2-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-fa99-738d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Gen2,Bucket1"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-fa99-738d00000000-mdf212396-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf212396-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-253c-cf1b00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Hierarchy (Essbase)"."Bucket1"."Gen2,Bucket1 - Memnor"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-253c-cf1b00000000-mdf23e2a3-0c83-1000-ba54-0a9a60060000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/df23e2a1-0c83-1000-ba54-0a9a60060000.xml#mdf23e2a3-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-ddb6-8d0b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Gen2,Bucket1 - Memnor"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-ddb6-8d0b00000000-mdf212398-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf212398-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-5872-c7cd00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Hierarchy (Essbase)"."Bucket1"."Gen2,Bucket1 - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-5872-c7cd00000000-mdf23e2a4-0c83-1000-ba54-0a9a60060000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/df23e2a1-0c83-1000-ba54-0a9a60060000.xml#mdf23e2a4-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-2a2a-038700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Gen2,Bucket1 - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-2a2a-038700000000-mdf212399-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf212399-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000007-01f4-0000-88b7-da6700000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Hierarchy (Essbase)"."Bucket1"."Bucket1 - Default"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-88b7-da6700000000-mdf23e2a5-0c83-1000-ba54-0a9a60060000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/df23e2a1-0c83-1000-ba54-0a9a60060000.xml#mdf23e2a5-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000008-01f4-0000-fb86-ea9c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Bucket1 - Default"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-fb86-ea9c00000000-mdf2123aa-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf2123aa-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf212370-0c83-1000-ba54-0a9a60060000">
+</Link>
+<WhereClause mdsid="m00000009-01f4-0000-cf85-fc4400000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m0000000a-01f4-0000-3d40-4f1000000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("Y09 -Trading Hierarchy (Essbase)"."Bucket1"."Gen2,Bucket1")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-3d40-4f1000000000-mdf23e2bf-0c83-1000-ba54-0a9a60060000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/df23e284-0c83-1000-ba54-0a9a60060000.xml#mdf23e2bf-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m0000000b-01f4-0000-ec3c-7f8000000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

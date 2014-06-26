@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cb6807-0bb9-0000-714b-e31d00000000" name="SAMP_CHANNELS_D" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" x="251" y="1555" uri="VALUEOF(BI_EE_HOME)/sample/SampleAppFiles/Data/SAMP_CHANNELS_D.xml" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000">
+<Description><![CDATA[Channels Dimension table: Stores channel dimension attribute information]]></Description>
+<PhysicalColumn mdsid="m80cb686b-0bbb-0000-714b-e31d00000000" name="Chnl_Key" dataType="DOUBLE" specialType="none">
+<Description><![CDATA[Channel Key: Surrogate key of the channel dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb686c-0bbb-0000-714b-e31d00000000" name="Chnl_Name" dataType="VARCHAR" precision="50" specialType="none">
+<Description><![CDATA[Channel Name: Stores channel name as text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb686d-0bbb-0000-714b-e31d00000000" name="Chnl_Attribute_1" dataType="VARCHAR" precision="50" nullable="true" specialType="none">
+<Description><![CDATA[Channel Attribute 1: Stores channel attribute 1 as a text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m83254d01-0c8a-1000-8bc9-0af502b30000" name="TOTAL_VALUE" dataType="VARCHAR" precision="20" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cb6ad8-0bc0-0000-714b-e31d00000000" name="SAMP_SALES_TEAMS_D_PK">
+<RefColumns>
+<RefColumn refId="m80cb6ad8-0bc0-0000-714b-e31d00000000-m80cb686b-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6807-0bb9-0000-714b-e31d00000000.xml#m80cb686b-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

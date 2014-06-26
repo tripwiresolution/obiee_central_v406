@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cb680e-0bb9-0000-714b-e31d00000000" name="SAMP_HEADCOUNT_F" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" x="260" y="1552" uri="VALUEOF(BI_EE_HOME)/sample/SampleAppFiles/Data/SAMP_HEADCOUNT_F.xml" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000">
+<Description><![CDATA[Headcount Fact table: Stores the headcount information at day and office grain.]]></Description>
+<PhysicalColumn mdsid="m80cb688f-0bbb-0000-714b-e31d00000000" name="Office_Key" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6890-0bbb-0000-714b-e31d00000000" name="Day_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Day Key: Joins to Calendar_date of Time dimension table (Day grain).]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6891-0bbb-0000-714b-e31d00000000" name="Fte" iconIndex="32768" dataType="DOUBLE" specialType="none">
+<Description><![CDATA[Full Time Employee: Stores the fact information as an integer]]></Description>
+</PhysicalColumn>
+</PhysicalTable>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m8b330ff8-0c26-1000-9bbc-0af502b10000" name="WRH$_SERVICE_STAT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" maxConn="0" containerRef="/oracle/bi/server/base/Schema/8b330ff0-0c26-1000-9bbc-0af502b10000.xml#m8b330ff0-0c26-1000-9bbc-0af502b10000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[WRH$_SERVICE_STAT]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m8b330ff9-0c26-1000-9bbc-0af502b10000" name="DBID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8b330ffa-0c26-1000-9bbc-0af502b10000" name="INSTANCE_NUMBER" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8b330ffb-0c26-1000-9bbc-0af502b10000" name="SERVICE_NAME_HASH" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8b330ffc-0c26-1000-9bbc-0af502b10000" name="SNAP_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8b330ffd-0c26-1000-9bbc-0af502b10000" name="STAT_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8b330ffe-0c26-1000-9bbc-0af502b10000" name="VALUE" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m8b3340a0-0c26-1000-9bbc-0af502b10000" name="SNAP_ID">
+<RefColumns>
+<RefColumn refId="m8b3340a0-0c26-1000-9bbc-0af502b10000-m8b330ffc-0c26-1000-9bbc-0af502b10000" columnRef="/oracle/bi/server/base/PhysicalTable/8b330ff8-0c26-1000-9bbc-0af502b10000.xml#m8b330ffc-0c26-1000-9bbc-0af502b10000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

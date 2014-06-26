@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cdb88f-0bb9-0000-714b-e31d00000000" name="SAMP_XML_PRODUCTS_D" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" x="241" y="1547" uri="VALUEOF(BI_EE_HOME)/sample/SampleAppFiles/Data/SAMP_XML_PRODUCTS_D.xml" maxConn="0" containerRef="/oracle/bi/server/base/Database/80ca62be-0bcf-0000-714b-e31d00000000.xml#m80ca62be-0bcf-0000-714b-e31d00000000">
+<Description><![CDATA[Products dimension table : Stores product dimension attribute information]]></Description>
+<PhysicalColumn mdsid="m80cdb890-0bbb-0000-714b-e31d00000000" name="Brand" dataType="VARCHAR" precision="25" extName="//Table/SAMP_XML_PRODUCTS_D/BRAND" specialType="none">
+<Description><![CDATA[Brand: Stores the product brand information as text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdb891-0bbb-0000-714b-e31d00000000" name="LOB" dataType="VARCHAR" precision="25" extName="//Table/SAMP_XML_PRODUCTS_D/LOB" specialType="none">
+<Description><![CDATA[LOB: Stores the product LOB information as text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdb892-0bbb-0000-714b-e31d00000000" name="Prod_Dsc" dataType="VARCHAR" precision="25" extName="//Table/SAMP_XML_PRODUCTS_D/PROD_DSC" specialType="none">
+<Description><![CDATA[Product Description: Stores the product description information as text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdb893-0bbb-0000-714b-e31d00000000" name="Prod_Key" dataType="INT" extName="//Table/SAMP_XML_PRODUCTS_D/PROD_KEY" specialType="none">
+<Description><![CDATA[Product Key: Surrogate key of the product dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdb894-0bbb-0000-714b-e31d00000000" name="Sequence" dataType="INT" extName="//Table/SAMP_XML_PRODUCTS_D/SEQUENCE" specialType="none">
+<Description><![CDATA[Sequence: Stores product sequence as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdb895-0bbb-0000-714b-e31d00000000" name="Type" dataType="VARCHAR" precision="25" extName="//Table/SAMP_XML_PRODUCTS_D/TYPE" specialType="none">
+<Description><![CDATA[Type: Stores the product type information as text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdb896-0bbb-0000-714b-e31d00000000" name="Brand_Key" dataType="INT" extName="//Table/SAMP_XML_PRODUCTS_D/BRAND_KEY" specialType="none">
+<Description><![CDATA[Brand Key: Stores product brand key as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdb897-0bbb-0000-714b-e31d00000000" name="Type_Key" dataType="INT" extName="//Table/SAMP_XML_PRODUCTS_D/TYPE_KEY" specialType="none">
+<Description><![CDATA[Type Key: Stores product type key as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdb898-0bbb-0000-714b-e31d00000000" name="LOB_Key" dataType="INT" extName="//Table/SAMP_XML_PRODUCTS_D/LOB_KEY" specialType="none">
+<Description><![CDATA[LOB Key: Stores product LOB key as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cdb899-0bc0-0000-714b-e31d00000000" name="Product_Key">
+<RefColumns>
+<RefColumn refId="m80cdb899-0bc0-0000-714b-e31d00000000-m80cdb893-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cdb88f-0bb9-0000-714b-e31d00000000.xml#m80cdb893-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

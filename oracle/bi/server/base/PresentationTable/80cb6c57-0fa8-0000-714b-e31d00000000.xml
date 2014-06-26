@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationTable mdsid="m80cb6c57-0fa8-0000-714b-e31d00000000" name="Allocations" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Allocations)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationCatalog/80cab7ef-0fa4-0000-714b-e31d00000000.xml#m80cab7ef-0fa4-0000-714b-e31d00000000">
+<Description><![CDATA[This folder contains Quota and Forecast Amt allocations derived based on Period Ago allocation rules.]]></Description>
+<PresentationColumn mdsid="m80cb6c55-0faa-0000-714b-e31d00000000" name="77  Allocated Target  (Yago Period Rule)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Allocations_77__Allocated_Target__(Yago_Period_Rule))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cab9e0-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue Forecast data. Sources from Dollars column in Forecast table. Grain of forecast is Market, Month  
+
+- This aggregation will fragment physical data to a lower granularity then it is in the database, using the pattern of last year spread. Example : Forecast data is available by month in db, this metric will take the 'by month' information, and break it down at day level using the same spread as how last year's actual daily values were spread over the same month. This aggregation will apply similar break down on the following dimensions : Time, Customer, Market. I.e., forecast data available only by month by market level is fragmented further down to be "by customer, by product, by day" according to how that pattern was the previous year.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cb6c56-0faa-0000-714b-e31d00000000" name="78  Allocated Target  (Qago Period Rule)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Allocations_78__Allocated_Target__(Qago_Period_Rule))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cab9ea-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue Forecast data. Sources from Dollars column in Forecast table. Grain of forecast is Market, Month  
+
+- This aggregation will fragment physical data to a lower granularity then it is in the database, using the pattern of last year spread. Example : Forecast data is available by month in db, this metric will take the 'by month' information, and break it down at day level using the same spread as how last year's actual daily values were spread over the same month. This aggregation will apply similar break down on the following dimensions : Time, Customer, Market. I.e., forecast data available only by month by market level is fragmented further down to be "by customer, by product, by day" according to how that pattern was the previous year.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cdbf6e-0faa-0000-714b-e31d00000000" name="75  ======== Allocations Rules ========" iconIndex="86" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cab97d-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cb6c53-0faa-0000-714b-e31d00000000" name="75  Yago Rev Allocation Factor" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Allocations_75__Yago_Rev_Mth_Allocation_Factor)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cab952-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue Forecast data. Sources from Dollars column in Forecast table. Grain of forecast is Market, Month  
+
+- This aggregation will fragment physical data to a lower granularity then it is in the database, using the pattern of last year spread. Example : Forecast data is available by month in db, this metric will take the 'by month' information, and break it down at day level using the same spread as how last year's actual daily values were spread over the same month. This aggregation will apply similar break down on the following dimensions : Time, Customer, Market. I.e., forecast data available only by month by market level is fragmented further down to be "by customer, by product, by day" according to how that pattern was the previous year.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cb6c54-0faa-0000-714b-e31d00000000" name="76  Qago Rev Allocation Factor" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Allocations_76__Qago_Rev_Mth_Allocation_Factor)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cab9da-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue Forecast data. Sources from Dollars column in Forecast table. Grain of forecast is Market, Month  
+
+- This aggregation will fragment physical data to a lower granularity then it is in the database, using the pattern of last quarter spread. Example : Forecast data is available by month in db, this metric will take the 'by month' information, and break it down at day level using the same spread as how last quarter's actual daily values were spread over the same month. This aggregation will apply similar break down rule on the following dimensions : Time, Customer, Market. I.e., forecast data available only by month by market level is fragmented further down to be "by customer, by product, by day" according to how that pattern was the previous quarter.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cdbf5f-0faa-0000-714b-e31d00000000" name="119  Rev  (Yago Sum for Non Target Dims)" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cc1ff5-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- 12 months prior to the current month, the value of the metric for the full month and at the Total level of Customer, Product and Employee]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cdbf6c-0faa-0000-714b-e31d00000000" name="118  Rev  (Qago Sum for Non Target Dims)" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cab61c-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- 13 months prior to the current month, the value of the metric for the full month and at the Total level of Customer, Product and Employee]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cdbf63-0faa-0000-714b-e31d00000000" name="5d  Target Rev  (Sum All Non Target Dims)" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab659-07f3-0000-714b-e31d00000000.xml#m80cb1a01-07d6-0000-714b-e31d00000000">
+<Alias name="5d  Target Rev  (Sum All)"/>
+<Alias name="5x  Target Rev  (Sum All Non Target Dims)"/>
+</PresentationColumn>
+</PresentationTable>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m66f3e163-0c61-1000-99f2-7f0000010000" name="X0 - Airlines Demo Dbs (ORCL)__BI_AIRLINES_AGG_SA_23_Arr_00039CE7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" isSysGen="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/575b6955-0c2d-1000-87a7-0af06a760000.xml#m575b6955-0c2d-1000-87a7-0af06a760000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-ac3c-139000000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."23 Arr Time Blk"."Arr Time Blk"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-ac3c-139000000000-m575b6956-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6955-0c2d-1000-87a7-0af06a760000.xml#m575b6956-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-23c2-005200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES_AGG"."SA_23_Arr_00039CE7"."Arr_Time_B00039BAD"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-23c2-005200000000-m66f233c7-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/66f233c5-0c61-1000-99f2-7f0000010000.xml#m66f233c7-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/66f233c5-0c61-1000-99f2-7f0000010000.xml#m66f233c5-0c61-1000-99f2-7f0000010000">
+</Link>
+<WhereClause mdsid="m00000003-01f4-0000-bc15-aebb00000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000004-01f4-0000-1242-cebc00000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("X0 - Airlines"."23 Arr Time Blk"."23 Arr Time Blk Detail")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-1242-cebc00000000-m575b6a90-0c2d-1000-87a7-0af06a760000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/575b68b4-0c2d-1000-87a7-0af06a760000.xml#m575b6a90-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m00000005-01f4-0000-b46a-ccea00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

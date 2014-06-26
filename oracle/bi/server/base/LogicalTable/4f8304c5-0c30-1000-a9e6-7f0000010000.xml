@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m4f8304c5-0c30-1000-a9e6-7f0000010000" name="Fact - Model Instance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/4f82dda0-0c30-1000-a9e6-7f0000010000.xml#m4f82dda0-0c30-1000-a9e6-7f0000010000">
+<LogicalColumn mdsid="m4f8304c6-0c30-1000-a9e6-7f0000010000" name="Total Count" isWriteable="false">
+<MeasureDefn mdsid="m4f8304f7-0c30-1000-a9e6-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m4f830503-0c30-1000-a9e6-7f0000010000" name="AggRule_2050:2397221340163242" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-ed5f-c67400000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X4 - RTD Analytics"."Fact - Model Instance"."Total Count")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-ed5f-c67400000000-m4f8304c6-0c30-1000-a9e6-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4f8304c5-0c30-1000-a9e6-7f0000010000.xml#m4f8304c6-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m4f832bee-0c30-1000-a9e6-7f0000010000" name="AD_3900:2399471340163242">
+<Expr mdsid="m00000002-01f4-0000-8b81-d5d800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDMODELINSTANCE"."COUNT_TOTAL"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-8b81-d5d800000000-m4f80bb2e-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb28-0c30-1000-a9e6-7f0000010000.xml#m4f80bb2e-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m4f8304c7-0c30-1000-a9e6-7f0000010000" name="Output Count" isWriteable="false">
+<MeasureDefn mdsid="m4f8304f8-0c30-1000-a9e6-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m4f830504-0c30-1000-a9e6-7f0000010000" name="AggRule_2050:2397231340163242" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-eefc-57ab00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X4 - RTD Analytics"."Fact - Model Instance"."Output Count")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-eefc-57ab00000000-m4f8304c7-0c30-1000-a9e6-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4f8304c5-0c30-1000-a9e6-7f0000010000.xml#m4f8304c7-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m4f832bef-0c30-1000-a9e6-7f0000010000" name="AD_3900:2399481340163242">
+<Expr mdsid="m00000004-01f4-0000-0497-baa700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDMODELINSTANCE"."COUNT_POSITIVE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-0497-baa700000000-m4f80bb2f-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb28-0c30-1000-a9e6-7f0000010000.xml#m4f80bb2f-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m4f8304c8-0c30-1000-a9e6-7f0000010000" name="Quality" isWriteable="false">
+<MeasureDefn mdsid="m4f8304f9-0c30-1000-a9e6-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m4f830505-0c30-1000-a9e6-7f0000010000" name="AggRule_2050:2397241340163242" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-56d4-7ab900000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("X4 - RTD Analytics"."Fact - Model Instance"."Quality")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-56d4-7ab900000000-m4f8304c8-0c30-1000-a9e6-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4f8304c5-0c30-1000-a9e6-7f0000010000.xml#m4f8304c8-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m4f832bf0-0c30-1000-a9e6-7f0000010000" name="AD_3900:2399491340163242">
+<Expr mdsid="m00000006-01f4-0000-7eb6-30dd00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDMODELINSTANCE"."QUALITY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-7eb6-30dd00000000-m4f80bb32-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb28-0c30-1000-a9e6-7f0000010000.xml#m4f80bb32-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m4f8304c5-0c30-1000-a9e6-7f0000010000-m4f832c0d-0c30-1000-a9e6-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/4f832c0d-0c30-1000-a9e6-7f0000010000.xml#m4f832c0d-0c30-1000-a9e6-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

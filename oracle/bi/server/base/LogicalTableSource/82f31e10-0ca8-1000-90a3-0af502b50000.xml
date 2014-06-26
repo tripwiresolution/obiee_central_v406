@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m82f31e10-0ca8-1000-90a3-0af502b50000" name="LOIC_FY" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/82f0fc60-0ca8-1000-90a3-0af502b50000.xml#m82f0fc60-0ca8-1000-90a3-0af502b50000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-ffa4-840200000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y02 - Demo HR Oracle EMEA"."Dim - FY"."Year"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-ffa4-840200000000-m82f0fc61-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc60-0ca8-1000-90a3-0af502b50000.xml#m82f0fc61-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-3b06-ef1000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_FY"."YEAR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-3b06-ef1000000000-m82e3dc6a-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc69-0ca8-1000-90a3-0af502b50000.xml#m82e3dc6a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-e928-b0a500000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y02 - Demo HR Oracle EMEA"."Dim - FY"."Year Number"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-e928-b0a500000000-m82f0fc62-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc60-0ca8-1000-90a3-0af502b50000.xml#m82f0fc62-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-c342-46e400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_FY"."YEAR_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-c342-46e400000000-m82e3dc6b-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc69-0ca8-1000-90a3-0af502b50000.xml#m82e3dc6b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/82e3dc69-0ca8-1000-90a3-0af502b50000.xml#m82e3dc69-0ca8-1000-90a3-0af502b50000">
+</Link>
+<WhereClause mdsid="m00000005-01f4-0000-8f06-d97400000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000006-01f4-0000-6d0a-b86e00000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("Y02 - Demo HR Oracle EMEA"."Financial Year"."Detail")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-6d0a-b86e00000000-m82f19859-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0d405-0ca8-1000-90a3-0af502b50000.xml#m82f19859-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m00000007-01f4-0000-64ef-6c8e00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

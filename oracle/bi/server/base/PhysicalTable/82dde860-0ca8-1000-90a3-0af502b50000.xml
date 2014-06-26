@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m82dde860-0ca8-1000-90a3-0af502b50000" name="ADS_BI_ARV_CUST_ACS_F" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/82ddc125-0ca8-1000-90a3-0af502b50000.xml#m82ddc125-0ca8-1000-90a3-0af502b50000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[select
+CUST_ACCOUNT_ID,
+ACCOUNT_NUMBER,
+SUSPENSION_STATUS,
+CREDIT_RATING,
+CREDIT_LIMIT,
+TOLERANCE,
+p.PARTY_ID
+from 
+ads_bi_art_cust_acs c
+, ads_bi_art_parties p
+where c.party_id = p.party_id]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m82dde861-0ca8-1000-90a3-0af502b50000" name="ACCOUNT_NUMBER" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde862-0ca8-1000-90a3-0af502b50000" name="CREDIT_LIMIT" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde863-0ca8-1000-90a3-0af502b50000" name="CREDIT_RATING" dataType="VARCHAR" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde864-0ca8-1000-90a3-0af502b50000" name="CUST_ACCOUNT_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde865-0ca8-1000-90a3-0af502b50000" name="PARTY_ID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde866-0ca8-1000-90a3-0af502b50000" name="SUSPENSION_STATUS" dataType="VARCHAR" precision="2" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde867-0ca8-1000-90a3-0af502b50000" name="TOLERANCE" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="m82de3671-0ca8-1000-90a3-0af502b50000" name="ADS_BI_ARV_CUST_ACS_F_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82ddc197-0ca8-1000-90a3-0af502b50000.xml#m82de106a-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82de3671-0ca8-1000-90a3-0af502b50000-m82dde865-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82dde860-0ca8-1000-90a3-0af502b50000.xml#m82dde865-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82de3672-0ca8-1000-90a3-0af502b50000" name="ADS_BI_ARV_CUST_ACS_F_FKey#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82ddc189-0ca8-1000-90a3-0af502b50000.xml#m82de1068-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82de3672-0ca8-1000-90a3-0af502b50000-m82dde864-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82dde860-0ca8-1000-90a3-0af502b50000.xml#m82dde864-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

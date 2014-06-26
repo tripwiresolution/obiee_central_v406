@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0d51d-0ca8-1000-90a3-0af502b50000" name="Dim - Invoice Hold" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd4-0ca8-1000-90a3-0af502b50000.xml#m82f0acd4-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0d51e-0ca8-1000-90a3-0af502b50000" name="Hold Date" isWriteable="false">
+<AttrDefn mdsid="m82f281ac-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756051391789375">
+<Expr mdsid="m00000001-01f4-0000-0782-a13d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_INVOICE_HOLDS"."HOLD_DATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-0782-a13d00000000-m82ddc164-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc163-0ca8-1000-90a3-0af502b50000.xml#m82ddc164-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d51f-0ca8-1000-90a3-0af502b50000" name="Hold Flexfield" isWriteable="false">
+<AttrDefn mdsid="m82f281ad-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756061391789375">
+<Expr mdsid="m00000002-01f4-0000-5d12-d11900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_INVOICE_HOLDS"."HOLD_DFF"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-5d12-d11900000000-m82ddc165-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc163-0ca8-1000-90a3-0af502b50000.xml#m82ddc165-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d520-0ca8-1000-90a3-0af502b50000" name="Hold Code" isWriteable="false">
+<AttrDefn mdsid="m82f281ae-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756071391789375">
+<Expr mdsid="m00000003-01f4-0000-3713-dacf00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_INVOICE_HOLDS"."HOLD_LOOKUP_CODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-3713-dacf00000000-m82ddc166-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc163-0ca8-1000-90a3-0af502b50000.xml#m82ddc166-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d521-0ca8-1000-90a3-0af502b50000" name="Hold Reason" isWriteable="false">
+<AttrDefn mdsid="m82f281af-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756081391789375">
+<Expr mdsid="m00000004-01f4-0000-7f08-a0b800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_INVOICE_HOLDS"."HOLD_REASON"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-7f08-a0b800000000-m82ddc167-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc163-0ca8-1000-90a3-0af502b50000.xml#m82ddc167-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d522-0ca8-1000-90a3-0af502b50000" name="INVOICE_ID" isWriteable="false">
+<AttrDefn mdsid="m82f281b0-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756091391789375">
+<Expr mdsid="m00000005-01f4-0000-dd7e-d2c400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_INVOICE_HOLDS"."INVOICE_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-dd7e-d2c400000000-m82ddc168-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc163-0ca8-1000-90a3-0af502b50000.xml#m82ddc168-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d523-0ca8-1000-90a3-0af502b50000" name="ORG_ID" isWriteable="false">
+<AttrDefn mdsid="m82f281b1-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756101391789375">
+<Expr mdsid="m00000006-01f4-0000-2224-028800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_INVOICE_HOLDS"."ORG_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-2224-028800000000-m82ddc169-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc163-0ca8-1000-90a3-0af502b50000.xml#m82ddc169-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d524-0ca8-1000-90a3-0af502b50000" name="PO_DISTRIBUTION_ID" isWriteable="false">
+<AttrDefn mdsid="m82f281b2-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756111391789375">
+<Expr mdsid="m00000007-01f4-0000-dbe3-80c700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_INVOICE_HOLDS"."PO_DISTRIBUTION_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-dbe3-80c700000000-m82ddc16a-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc163-0ca8-1000-90a3-0af502b50000.xml#m82ddc16a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d525-0ca8-1000-90a3-0af502b50000" name="Hold ID" isWriteable="false">
+<AttrDefn mdsid="m82f281b3-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756121391789375">
+<Expr mdsid="m00000008-01f4-0000-2c22-c21d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_INVOICE_HOLDS"."HOLD_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-2c22-c21d00000000-m82ddc16d-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc163-0ca8-1000-90a3-0af502b50000.xml#m82ddc16d-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m82f233ba-0ca8-1000-90a3-0af502b50000" name="Hold ID" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f233ba-0ca8-1000-90a3-0af502b50000-m82f0d525-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d51d-0ca8-1000-90a3-0af502b50000.xml#m82f0d525-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0d51d-0ca8-1000-90a3-0af502b50000-m82f2f6e0-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f2f6e0-0ca8-1000-90a3-0af502b50000.xml#m82f2f6e0-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

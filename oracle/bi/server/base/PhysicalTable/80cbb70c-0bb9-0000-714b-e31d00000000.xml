@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cbb70c-0bb9-0000-714b-e31d00000000" name="ORDER_ITEMS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" x="1296" y="797" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cbb6f4-0bd3-0000-714b-e31d00000000.xml#m80cbb6f4-0bd3-0000-714b-e31d00000000">
+<PhysicalColumn mdsid="m80cbb806-0bbb-0000-714b-e31d00000000" name="CREATED_BY" dataType="VARCHAR" precision="60" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb807-0bbb-0000-714b-e31d00000000" name="CREATION_DATE" dataType="DATETIME" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb808-0bbb-0000-714b-e31d00000000" name="LAST_UPDATED_BY" dataType="VARCHAR" precision="60" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb809-0bbb-0000-714b-e31d00000000" name="LAST_UPDATE_DATE" dataType="DATETIME" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb80a-0bbb-0000-714b-e31d00000000" name="LINE_ITEM_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb80b-0bbb-0000-714b-e31d00000000" name="OBJECT_VERSION_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb80c-0bbb-0000-714b-e31d00000000" name="ORDER_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb80d-0bbb-0000-714b-e31d00000000" name="PRODUCT_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb80e-0bbb-0000-714b-e31d00000000" name="QUANTITY" dataType="INT" precision="6" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb80f-0bbb-0000-714b-e31d00000000" name="UNIT_PRICE" dataType="DOUBLE" scale="2" precision="8" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cbb8e7-0bc0-0000-714b-e31d00000000" name="ORDER_ID">
+<RefColumns>
+<RefColumn refId="m80cbb8e7-0bc0-0000-714b-e31d00000000-m80cbb80a-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cbb70c-0bb9-0000-714b-e31d00000000.xml#m80cbb80a-0bbb-0000-714b-e31d00000000"/>
+<RefColumn refId="m80cbb8e7-0bc0-0000-714b-e31d00000000-m80cbb80c-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cbb70c-0bb9-0000-714b-e31d00000000.xml#m80cbb80c-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="m80cbd091-0bc0-0000-714b-e31d00000000" name="ORDER_ITEMS_Key">
+<RefColumns>
+<RefColumn refId="m80cbd091-0bc0-0000-714b-e31d00000000-m80cbb80c-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cbb70c-0bb9-0000-714b-e31d00000000.xml#m80cbb80c-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m80cbb908-0bbe-0000-714b-e31d00000000" name="ORDER_ID" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cbc403-0bb9-0000-714b-e31d00000000.xml#m80cbc41c-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cbb908-0bbe-0000-714b-e31d00000000-m80cbb80c-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cbb70c-0bb9-0000-714b-e31d00000000.xml#m80cbb80c-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cbb909-0bbe-0000-714b-e31d00000000" name="PRODUCT_ID#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cbc121-0bb9-0000-714b-e31d00000000.xml#m80cbc162-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cbb909-0bbe-0000-714b-e31d00000000-m80cbb80d-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cbb70c-0bb9-0000-714b-e31d00000000.xml#m80cbb80d-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cbc519-0bbe-0000-714b-e31d00000000" name="ORDER_ITEMS_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cbb70b-0bb9-0000-714b-e31d00000000.xml#m80cbb8e6-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cbc519-0bbe-0000-714b-e31d00000000-m80cbb80c-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cbb70c-0bb9-0000-714b-e31d00000000.xml#m80cbb80c-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

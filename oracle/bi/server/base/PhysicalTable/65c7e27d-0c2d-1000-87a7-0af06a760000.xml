@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m65c7e27d-0c2d-1000-87a7-0af06a760000" name="ORDERS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" x="818" y="1176" maxConn="0" containerRef="/oracle/bi/server/base/Schema/65c7e220-0c2d-1000-87a7-0af06a760000.xml#m65c7e220-0c2d-1000-87a7-0af06a760000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[ORDERS]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m65c7e27e-0c2d-1000-87a7-0af06a760000" name="COLLECTION_WAREHOUSE_ID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e27f-0c2d-1000-87a7-0af06a760000" name="COUPON_ID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e280-0c2d-1000-87a7-0af06a760000" name="CREATED_BY" dataType="VARCHAR" precision="60" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e281-0c2d-1000-87a7-0af06a760000" name="CREATION_DATE" dataType="DATETIME" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e282-0c2d-1000-87a7-0af06a760000" name="CUSTOMER_COLLECT_FLAG" dataType="VARCHAR" precision="1" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e283-0c2d-1000-87a7-0af06a760000" name="CUSTOMER_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e284-0c2d-1000-87a7-0af06a760000" name="DISCOUNT_ID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e285-0c2d-1000-87a7-0af06a760000" name="FREE_SHIPPING_FLAG" dataType="VARCHAR" precision="1" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e286-0c2d-1000-87a7-0af06a760000" name="GIFTWRAP_FLAG" dataType="VARCHAR" precision="1" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e287-0c2d-1000-87a7-0af06a760000" name="GIFTWRAP_MESSAGE" dataType="VARCHAR" precision="2000" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e288-0c2d-1000-87a7-0af06a760000" name="LAST_UPDATED_BY" dataType="VARCHAR" precision="60" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e289-0c2d-1000-87a7-0af06a760000" name="LAST_UPDATE_DATE" dataType="DATETIME" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e28a-0c2d-1000-87a7-0af06a760000" name="OBJECT_VERSION_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e28b-0c2d-1000-87a7-0af06a760000" name="ORDER_DATE" dataType="DATETIME" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e28c-0c2d-1000-87a7-0af06a760000" name="ORDER_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e28d-0c2d-1000-87a7-0af06a760000" name="ORDER_SHIPPED_DATE" dataType="DATETIME" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e28e-0c2d-1000-87a7-0af06a760000" name="ORDER_STATUS_CODE" dataType="VARCHAR" precision="30" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e28f-0c2d-1000-87a7-0af06a760000" name="ORDER_TOTAL" dataType="DOUBLE" scale="2" precision="8" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e290-0c2d-1000-87a7-0af06a760000" name="PAYMENT_OPTION_ID" dataType="DOUBLE" precision="16" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e291-0c2d-1000-87a7-0af06a760000" name="SHIPPING_OPTION_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e292-0c2d-1000-87a7-0af06a760000" name="SHIP_TO_ADDRESS_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e293-0c2d-1000-87a7-0af06a760000" name="SHIP_TO_NAME" dataType="VARCHAR" precision="120" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e294-0c2d-1000-87a7-0af06a760000" name="SHIP_TO_PHONE_NUMBER" dataType="VARCHAR" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m65c7e463-0c2d-1000-87a7-0af06a760000" name="ORDER_ID">
+<RefColumns>
+<RefColumn refId="m65c7e463-0c2d-1000-87a7-0af06a760000-m65c7e28c-0c2d-1000-87a7-0af06a760000" columnRef="/oracle/bi/server/base/PhysicalTable/65c7e27d-0c2d-1000-87a7-0af06a760000.xml#m65c7e28c-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="mf46cf740-0c32-1000-939a-7f0000010000" name="ORDERS_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb681d-0bb9-0000-714b-e31d00000000.xml#m80cb6ae6-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="mf46cf740-0c32-1000-939a-7f0000010000-m65c7e28b-0c2d-1000-87a7-0af06a760000" columnRef="/oracle/bi/server/base/PhysicalTable/65c7e27d-0c2d-1000-87a7-0af06a760000.xml#m65c7e28b-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

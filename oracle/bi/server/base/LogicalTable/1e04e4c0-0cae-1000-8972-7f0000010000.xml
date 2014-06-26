@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m1e04e4c0-0cae-1000-8972-7f0000010000" name="Arena" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cde354-07d0-0000-714b-e31d00000000.xml#m80cde354-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m1e04e4c7-0cae-1000-8972-7f0000010000" name="Section" isWriteable="false">
+<AttrDefn mdsid="m1e04e4cd-0cae-1000-8972-7f0000010000" name="AD_3900:2786611394197301">
+<Expr mdsid="m00000001-01f4-0000-8299-46e700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."ARENA_DATA"."SECTION"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-8299-46e700000000-m1dde9810-0cae-1000-8972-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/1dd9dd21-0cae-1000-8972-7f0000010000.xml#m1dde9810-0cae-1000-8972-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1e04e4c8-0cae-1000-8972-7f0000010000" name="Section Type" isWriteable="false">
+<AttrDefn mdsid="m1e04e4ce-0cae-1000-8972-7f0000010000" name="AD_3900:2786621394197301">
+<Expr mdsid="m00000002-01f4-0000-aec6-9e7400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."ARENA_DATA"."TYPE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-aec6-9e7400000000-m1de17e40-0cae-1000-8972-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/1dd9dd21-0cae-1000-8972-7f0000010000.xml#m1de17e40-0cae-1000-8972-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m1e4a0410-0cae-1000-8972-7f0000010000" name="k" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m1e4a0410-0cae-1000-8972-7f0000010000-m1e04e4c7-0cae-1000-8972-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1e04e4c0-0cae-1000-8972-7f0000010000.xml#m1e04e4c7-0cae-1000-8972-7f0000010000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m1e04e4c0-0cae-1000-8972-7f0000010000-m1e04e4c2-0cae-1000-8972-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/1e04e4c2-0cae-1000-8972-7f0000010000.xml#m1e04e4c2-0cae-1000-8972-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

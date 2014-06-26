@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cd8f9f-0bb9-0000-714b-e31d00000000" name="D61 Customer Segments" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" x="1151" y="68" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cd8dda-0bd3-0000-714b-e31d00000000.xml#m80cd8dda-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cd8e03-0bb9-0000-714b-e31d00000000.xml#m80cd8e03-0bb9-0000-714b-e31d00000000">
+<Description><![CDATA[Customer Segment Dimension Alias: ]]></Description>
+<PhysicalColumn mdsid="m80cd8fa0-0bbb-0000-714b-e31d00000000" name="Segment_Desc" dataType="VARCHAR" precision="15" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e03-0bb9-0000-714b-e31d00000000.xml#m80cd8e04-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Segmnent Desc: Stores customer segment description as text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8fa1-0bbb-0000-714b-e31d00000000" name="Segment_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e03-0bb9-0000-714b-e31d00000000.xml#m80cd8e05-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Segment Key: Surrogate key of the customer segment dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cd9213-0bc0-0000-714b-e31d00000000" name="09 Segment_Key">
+<RefColumns>
+<RefColumn refId="m80cd9213-0bc0-0000-714b-e31d00000000-m80cd8fa1-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cd8f9f-0bb9-0000-714b-e31d00000000.xml#m80cd8fa1-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

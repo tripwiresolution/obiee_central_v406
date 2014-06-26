@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m66f3e164-0c61-1000-99f2-7f0000010000" name="X0 - Airlines Demo Dbs (ORCL)__BI_AIRLINES_AGG_SA_20_Arr_00039CE9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" isSysGen="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/575b6943-0c2d-1000-87a7-0af06a760000.xml#m575b6943-0c2d-1000-87a7-0af06a760000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-d809-68c100000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."20 Arr Delay Grp"."Arr Delay Group"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-d809-68c100000000-m575b6944-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6943-0c2d-1000-87a7-0af06a760000.xml#m575b6944-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-9bfb-f22600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES_AGG"."SA_20_Arr_00039CE9"."Arr_Delay_00039B9B"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-9bfb-f22600000000-m66f233cd-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/66f233cb-0c61-1000-99f2-7f0000010000.xml#m66f233cd-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-bcde-ff9700000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."20 Arr Delay Grp"."Arr delay Code"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-bcde-ff9700000000-m575b6945-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6943-0c2d-1000-87a7-0af06a760000.xml#m575b6945-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-380a-c47900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES_AGG"."SA_20_Arr_00039CE9"."Arr_delay_00039B9C"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-380a-c47900000000-m66f233ce-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/66f233cb-0c61-1000-99f2-7f0000010000.xml#m66f233ce-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/66f233cb-0c61-1000-99f2-7f0000010000.xml#m66f233cb-0c61-1000-99f2-7f0000010000">
+</Link>
+<WhereClause mdsid="m00000005-01f4-0000-0324-b25c00000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000006-01f4-0000-0504-07d300000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("X0 - Airlines"."20 Arr Delay"."20 Arr Delay Detail")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-0504-07d300000000-m575b6a92-0c2d-1000-87a7-0af06a760000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/575b68b5-0c2d-1000-87a7-0af06a760000.xml#m575b6a92-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m00000007-01f4-0000-d1e0-83db00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

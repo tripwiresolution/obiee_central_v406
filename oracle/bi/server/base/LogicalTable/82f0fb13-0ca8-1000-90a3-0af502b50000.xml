@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0fb13-0ca8-1000-90a3-0af502b50000" name="Fact - Contract Details" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd6-0ca8-1000-90a3-0af502b50000.xml#m82f0acd6-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0fb14-0ca8-1000-90a3-0af502b50000" name="Contract No" isWriteable="false">
+<AttrDefn mdsid="m82f28270-0ca8-1000-90a3-0af502b50000" name="AD_3900:2758011391789375">
+<Expr mdsid="m00000001-01f4-0000-0f2c-572900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_PT"."ADS_BI_PT_CONTRACT_FACT"."CONTRACT_NO"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-0f2c-572900000000-m82dde8a1-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde89f-0ca8-1000-90a3-0af502b50000.xml#m82dde8a1-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fb15-0ca8-1000-90a3-0af502b50000" name="Agreed Amount" isWriteable="false">
+<MeasureDefn mdsid="m82f14977-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1974e-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736521391789375" isDefault="true">
+<Expr mdsid="m00000002-01f4-0000-6d55-903800000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y05 - Demo Procurement Contracts"."Fact - Contract Details"."Agreed Amount")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-6d55-903800000000-m82f0fb15-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fb13-0ca8-1000-90a3-0af502b50000.xml#m82f0fb15-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f28271-0ca8-1000-90a3-0af502b50000" name="AD_3900:2758021391789375">
+<Expr mdsid="m00000003-01f4-0000-f664-a2a000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_PT"."ADS_BI_PT_CONTRACT_FACT"."AGREED_AMOUNT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-f664-a2a000000000-m82dde8a0-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde89f-0ca8-1000-90a3-0af502b50000.xml#m82dde8a0-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fb16-0ca8-1000-90a3-0af502b50000" name="Creation Date" isWriteable="false">
+<AttrDefn mdsid="m82f28272-0ca8-1000-90a3-0af502b50000" name="AD_3900:2758031391789375">
+<Expr mdsid="m00000004-01f4-0000-a82b-116200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_PT"."ADS_BI_PT_CONTRACT_FACT"."CREATION_DATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-a82b-116200000000-m82dde8a2-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde89f-0ca8-1000-90a3-0af502b50000.xml#m82dde8a2-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fb17-0ca8-1000-90a3-0af502b50000" name="Effective To Date" isWriteable="false">
+<AttrDefn mdsid="m82f28273-0ca8-1000-90a3-0af502b50000" name="AD_3900:2758041391789375">
+<Expr mdsid="m00000005-01f4-0000-dd2f-151c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_PT"."ADS_BI_PT_CONTRACT_FACT"."END_DATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-dd2f-151c00000000-m82dde8a3-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde89f-0ca8-1000-90a3-0af502b50000.xml#m82dde8a3-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fb18-0ca8-1000-90a3-0af502b50000" name="Effective From Date" isWriteable="false">
+<AttrDefn mdsid="m82f28274-0ca8-1000-90a3-0af502b50000" name="AD_3900:2758051391789375">
+<Expr mdsid="m00000006-01f4-0000-5024-589a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_PT"."ADS_BI_PT_CONTRACT_FACT"."START_DATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-5024-589a00000000-m82dde8a5-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde89f-0ca8-1000-90a3-0af502b50000.xml#m82dde8a5-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fb19-0ca8-1000-90a3-0af502b50000" name="Spend To Date" isWriteable="false">
+<MeasureDefn mdsid="m82f14978-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1974f-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736531391789375" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-2aa1-3ea200000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y05 - Demo Procurement Contracts"."Fact - Contract Details"."Spend To Date")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-2aa1-3ea200000000-m82f0fb19-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fb13-0ca8-1000-90a3-0af502b50000.xml#m82f0fb19-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f28275-0ca8-1000-90a3-0af502b50000" name="AD_3900:2758061391789375">
+<Expr mdsid="m00000008-01f4-0000-1a60-aad300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_PT"."ADS_BI_PT_CONTRACT_FACT"."SPEND_TO_DATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-1a60-aad300000000-m82dde8a4-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde89f-0ca8-1000-90a3-0af502b50000.xml#m82dde8a4-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fb1a-0ca8-1000-90a3-0af502b50000" name="PO Lines Count" isWriteable="false">
+<MeasureDefn mdsid="m82f14979-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19750-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736541391789375" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-3bd1-c8b300000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y05 - Demo Procurement Contracts"."Fact - Contract Details"."PO Lines Count")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-3bd1-c8b300000000-m82f0fb1a-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fb13-0ca8-1000-90a3-0af502b50000.xml#m82f0fb1a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f28276-0ca8-1000-90a3-0af502b50000" name="AD_3900:2758071391789375">
+<Expr mdsid="m0000000a-01f4-0000-a354-a3ba00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_PT"."ADS_BI_PT_CONTRACT_FACT"."PO_LINES_COUNT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-a354-a3ba00000000-m82dde8a6-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde89f-0ca8-1000-90a3-0af502b50000.xml#m82dde8a6-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fb1b-0ca8-1000-90a3-0af502b50000" name="Actual Savings To Date" isWriteable="false">
+<MeasureDefn mdsid="m82f1497a-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19751-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736551391789375" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-bcb2-431400000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y05 - Demo Procurement Contracts"."Fact - Contract Details"."Actual Savings To Date")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-bcb2-431400000000-m82f0fb1b-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fb13-0ca8-1000-90a3-0af502b50000.xml#m82f0fb1b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f28277-0ca8-1000-90a3-0af502b50000" name="AD_3900:2758081391789375">
+<Expr mdsid="m0000000c-01f4-0000-583f-c91500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_PT"."ADS_BI_PT_CONTRACT_FACT"."ACTUAL_SAVINGS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-583f-c91500000000-m82dde8a8-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde89f-0ca8-1000-90a3-0af502b50000.xml#m82dde8a8-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fb1c-0ca8-1000-90a3-0af502b50000" name="Predicted Savings To Date" isWriteable="false">
+<MeasureDefn mdsid="m82f1497b-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19752-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736561391789375" isDefault="true">
+<Expr mdsid="m0000000d-01f4-0000-e040-712f00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y05 - Demo Procurement Contracts"."Fact - Contract Details"."Predicted Savings To Date")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-e040-712f00000000-m82f0fb1c-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fb13-0ca8-1000-90a3-0af502b50000.xml#m82f0fb1c-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f28278-0ca8-1000-90a3-0af502b50000" name="AD_3900:2758091391789375">
+<Expr mdsid="m0000000e-01f4-0000-fcd4-769100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_PT"."ADS_BI_PT_CONTRACT_FACT"."PREDICTED_SAVINGS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-fcd4-769100000000-m82dde8a7-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde89f-0ca8-1000-90a3-0af502b50000.xml#m82dde8a7-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m82f233e7-0ca8-1000-90a3-0af502b50000" name="CONTRACT_NO" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f233e7-0ca8-1000-90a3-0af502b50000-m82f0fb14-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0fb13-0ca8-1000-90a3-0af502b50000.xml#m82f0fb14-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0fb13-0ca8-1000-90a3-0af502b50000-m82f31ddd-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f31ddd-0ca8-1000-90a3-0af502b50000.xml#m82f31ddd-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

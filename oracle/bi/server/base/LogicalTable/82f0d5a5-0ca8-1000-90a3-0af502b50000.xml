@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0d5a5-0ca8-1000-90a3-0af502b50000" name="Fact - Agents" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd5-0ca8-1000-90a3-0af502b50000.xml#m82f0acd5-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0d5a6-0ca8-1000-90a3-0af502b50000" name="Completed Tasks" isWriteable="false">
+<MeasureDefn mdsid="m82f14968-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1973f-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736371391789375" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-cb9a-630600000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y04 - Demo Other Advanced Collections"."Fact - Agents"."Completed Tasks")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-cb9a-630600000000-m82f0d5a6-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d5a5-0ca8-1000-90a3-0af502b50000.xml#m82f0d5a6-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2822b-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757321391789375">
+<Expr mdsid="m00000002-01f4-0000-9897-f5ba00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_AGENTS"."COMPLETED_TASKS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-9897-f5ba00000000-m82dde86a-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde868-0ca8-1000-90a3-0af502b50000.xml#m82dde86a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d5a7-0ca8-1000-90a3-0af502b50000" name="Day" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/82f0d5a5-0ca8-1000-90a3-0af502b50000.xml#m82f0d5ac-0ca8-1000-90a3-0af502b50000">
+<AttrDefn mdsid="m82f2822c-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757331391789375">
+<Expr mdsid="m00000003-01f4-0000-440f-cf4c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_AGENTS"."DAY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-440f-cf4c00000000-m82dde86c-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde868-0ca8-1000-90a3-0af502b50000.xml#m82dde86c-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d5a8-0ca8-1000-90a3-0af502b50000" name="Existing Tasks Removed" isWriteable="false">
+<MeasureDefn mdsid="m82f14969-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19740-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736381391789375" isDefault="true">
+<Expr mdsid="m00000004-01f4-0000-edba-519500000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y04 - Demo Other Advanced Collections"."Fact - Agents"."Existing Tasks Removed")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-edba-519500000000-m82f0d5a8-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d5a5-0ca8-1000-90a3-0af502b50000.xml#m82f0d5a8-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2822d-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757341391789375">
+<Expr mdsid="m00000005-01f4-0000-08ef-e2bb00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_AGENTS"."EXISTING_TASKS_REMOVED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-08ef-e2bb00000000-m82dde86d-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde868-0ca8-1000-90a3-0af502b50000.xml#m82dde86d-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d5a9-0ca8-1000-90a3-0af502b50000" name="New Tasks Assigned" isWriteable="false">
+<MeasureDefn mdsid="m82f1496a-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19741-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736391391789375" isDefault="true">
+<Expr mdsid="m00000006-01f4-0000-0b62-4f4e00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y04 - Demo Other Advanced Collections"."Fact - Agents"."New Tasks Assigned")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-0b62-4f4e00000000-m82f0d5a9-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d5a5-0ca8-1000-90a3-0af502b50000.xml#m82f0d5a9-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2822e-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757351391789375">
+<Expr mdsid="m00000007-01f4-0000-2c0b-b5d700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_AGENTS"."NEW_TASKS_ASSIGNED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-2c0b-b5d700000000-m82dde86e-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde868-0ca8-1000-90a3-0af502b50000.xml#m82dde86e-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d5aa-0ca8-1000-90a3-0af502b50000" name="Tasks Assigned" isWriteable="false">
+<MeasureDefn mdsid="m82f1496b-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19742-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736401391789375" isDefault="true">
+<Expr mdsid="m00000008-01f4-0000-db39-a5b800000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y04 - Demo Other Advanced Collections"."Fact - Agents"."Tasks Assigned")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-db39-a5b800000000-m82f0d5aa-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d5a5-0ca8-1000-90a3-0af502b50000.xml#m82f0d5aa-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2822f-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757361391789375">
+<Expr mdsid="m00000009-01f4-0000-5aa1-293200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_AGENTS"."TASKS_ASSIGNED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-5aa1-293200000000-m82dde86f-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde868-0ca8-1000-90a3-0af502b50000.xml#m82dde86f-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d5ab-0ca8-1000-90a3-0af502b50000" name="Week" isWriteable="false">
+<AttrDefn mdsid="m82f28230-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757371391789375">
+<Expr mdsid="m0000000a-01f4-0000-24f3-d26600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_AGENTS"."WEEK"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-24f3-d26600000000-m82dde870-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde868-0ca8-1000-90a3-0af502b50000.xml#m82dde870-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d5ac-0ca8-1000-90a3-0af502b50000" name="SORTDAY" isWriteable="false">
+<AttrDefn mdsid="m82f28231-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757381391789375">
+<Expr mdsid="m0000000b-01f4-0000-2824-efd400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_AGENTS"."SORTDAY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-2824-efd400000000-m82dde871-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde868-0ca8-1000-90a3-0af502b50000.xml#m82dde871-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0d5a5-0ca8-1000-90a3-0af502b50000-m82f2f6ea-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f2f6ea-0ca8-1000-90a3-0af502b50000.xml#m82f2f6ea-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

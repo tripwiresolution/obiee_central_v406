@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cde812-0bb9-0000-714b-e31d00000000" name="V_POI_In_Range_Business" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cde2bb-0bd3-0000-714b-e31d00000000.xml#m80cde2bb-0bd3-0000-714b-e31d00000000">
+<DBMapItem name="Oracle11g">
+<Value><![CDATA[select 
+poi_id, 
+name, 
+cat_id
+from OBIEE_NAVTEQ.NTC_MAP_POI_BUSINESS
+where 
+sdo_within_distance(geometry, geocode_address('VALUEOF(NQ_SESSION.OGS_ADDRESS)'),
+ 'distance=VALUEOF(NQ_SESSION.OGS_DIST_M) unit=m')='TRUE'
+
+
+
+ 
+
+
+]]></Value>
+</DBMapItem>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SchoolsNearAddress]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cde813-0bbb-0000-714b-e31d00000000" name="POI_Id" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cde816-0bbb-0000-714b-e31d00000000" name="name" dataType="VARCHAR" precision="240" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cde864-0bbb-0000-714b-e31d00000000" name="cat_id" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cde81a-0bc0-0000-714b-e31d00000000" name="Id">
+<RefColumns>
+<RefColumn refId="m80cde81a-0bc0-0000-714b-e31d00000000-m80cde813-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cde812-0bb9-0000-714b-e31d00000000.xml#m80cde813-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m80cde867-0bbe-0000-714b-e31d00000000" name="V_Business_POI_Near_Address_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cde2bc-0bb9-0000-714b-e31d00000000.xml#m80cde34c-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cde867-0bbe-0000-714b-e31d00000000-m80cde864-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cde812-0bb9-0000-714b-e31d00000000.xml#m80cde864-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m4f832c12-0c30-1000-a9e6-7f0000010000" name="Dim_RTDATTRIBUTE_Predictiveness" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/4f8304da-0c30-1000-a9e6-7f0000010000.xml#m4f8304da-0c30-1000-a9e6-7f0000010000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-95a4-8a8200000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X4 - RTD Analytics"."Dim - Predictiveness Attribute"."ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-95a4-8a8200000000-m4f8304db-0c30-1000-a9e6-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4f8304da-0c30-1000-a9e6-7f0000010000.xml#m4f8304db-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-dc4c-36ed00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."RTD"."Dim_RTDATTRIBUTE_Predictiveness"."ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-dc4c-36ed00000000-m4f80bafd-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bafc-0c30-1000-a9e6-7f0000010000.xml#m4f80bafd-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-e692-5cf300000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X4 - RTD Analytics"."Dim - Predictiveness Attribute"."Attribute Name"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-e692-5cf300000000-m4f8304dc-0c30-1000-a9e6-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4f8304da-0c30-1000-a9e6-7f0000010000.xml#m4f8304dc-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-c0bd-172c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."RTD"."Dim_RTDATTRIBUTE_Predictiveness"."NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-c0bd-172c00000000-m4f80bafe-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bafc-0c30-1000-a9e6-7f0000010000.xml#m4f80bafe-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-7ecb-9d5c00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X4 - RTD Analytics"."Dim - Predictiveness Attribute"."Attribute Path"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-7ecb-9d5c00000000-m4f8304dd-0c30-1000-a9e6-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4f8304da-0c30-1000-a9e6-7f0000010000.xml#m4f8304dd-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-77da-efbb00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."RTD"."Dim_RTDATTRIBUTE_Predictiveness"."PATH"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-77da-efbb00000000-m4f80baff-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bafc-0c30-1000-a9e6-7f0000010000.xml#m4f80baff-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/4f80bafc-0c30-1000-a9e6-7f0000010000.xml#m4f80bafc-0c30-1000-a9e6-7f0000010000">
+</Link>
+<WhereClause mdsid="m00000007-01f4-0000-ecc4-72ec00000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000008-01f4-0000-791c-146700000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m00000009-01f4-0000-077e-5ca600000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

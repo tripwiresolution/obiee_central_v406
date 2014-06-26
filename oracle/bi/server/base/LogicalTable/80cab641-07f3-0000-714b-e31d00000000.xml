@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cab641-07f3-0000-714b-e31d00000000" name="F3 M:M Quotas Base Measures" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="1318" y="1086" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cab573-07d0-0000-714b-e31d00000000.xml#m80cab573-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cab646-07d6-0000-714b-e31d00000000" name="8- Quota Amount" isWriteable="true">
+<MeasureDefn mdsid="m80cab67b-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cbb48d-0802-0000-714b-e31d00000000" name="AggRule_2050:602731271399943" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-e37e-049900000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("01 - Sample App"."F3 M:M Quotas Base Measures"."8- Quota Amount")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-e37e-049900000000-m80cab646-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab641-07f3-0000-714b-e31d00000000.xml#m80cab646-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cab7bc-0f3c-0000-714b-e31d00000000" name="AD_3900:123321262767587">
+<Expr mdsid="m00000002-01f4-0000-aeca-680400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F30 Facts Quotas"."VALUE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-aeca-680400000000-m80cb6aa8-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb6846-0bb9-0000-714b-e31d00000000.xml#m80cb6aa8-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cab641-07f3-0000-714b-e31d00000000-m80cab7e8-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cab7e8-07f5-0000-714b-e31d00000000.xml#m80cab7e8-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

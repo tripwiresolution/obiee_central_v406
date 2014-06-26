@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="mfe34e404-0c82-1000-806e-0af170e40000" name="MOVIE_FACT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/fe34e102-0c82-1000-806e-0af170e40000.xml#mfe34e102-0c82-1000-806e-0af170e40000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-6959-e96900000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movie Demo (ORCL)"."Facts - Movie Activities"."Number of Activities"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-6959-e96900000000-mfe34e103-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e102-0c82-1000-806e-0af170e40000.xml#mfe34e103-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-299c-445900000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-8559-cdba00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movie Demo (ORCL)"."Facts - Movie Activities"."Sales"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-8559-cdba00000000-mfe34e104-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e102-0c82-1000-806e-0af170e40000.xml#mfe34e104-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-cec1-6a2a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."SALES"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-cec1-6a2a00000000-mfe333351-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe333351-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-d344-de4400000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movie Demo (ORCL)"."Facts - Movie Activities"."Recommended"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-d344-de4400000000-mfe34e105-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e102-0c82-1000-806e-0af170e40000.xml#mfe34e105-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-494b-f3f500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."RECOMMENDED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-494b-f3f500000000-mfe333350-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe333350-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000007-01f4-0000-82df-bca200000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movie Demo (ORCL)"."Facts - Movie Activities"."Average Rating"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-82df-bca200000000-mfe34e106-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e102-0c82-1000-806e-0af170e40000.xml#mfe34e106-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000008-01f4-0000-da43-a5e900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."RATING"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-da43-a5e900000000-mfe33334f-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe33334f-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe33334c-0c82-1000-806e-0af170e40000">
+</Link>
+<WhereClause mdsid="m00000009-01f4-0000-2a05-f0ad00000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m0000000a-01f4-0000-468d-17aa00000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1", "%2", "%3", "%4", "%5", "%6", "%7")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("Y10 - Movie Demo (ORCL)"."Movie"."Movie Detail", "Y10 - Movie Demo (ORCL)"."Movie Genre"."Genre", "Y10 - Movie Demo (ORCL)"."Time"."Day-Date", "Y10 - Movie Demo (ORCL)"."Customers"."Detail", "Y10 - Movie Demo (ORCL)"."Activities"."Detail", "Y10 - Movie Demo (ORCL)"."Customer Segment"."Detail", "Y10 - Movie Demo (ORCL)"."Customer Geography"."Detail")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-468d-17aa00000000-mfe34e1f7-0c82-1000-806e-0af170e40000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/fe34e083-0c82-1000-806e-0af170e40000.xml#mfe34e1f7-0c82-1000-806e-0af170e40000"/>
+<RefObject refId="m0000000a-01f4-0000-468d-17aa00000000-mfe34e20d-0c82-1000-806e-0af170e40000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/fe34e08a-0c82-1000-806e-0af170e40000.xml#mfe34e20d-0c82-1000-806e-0af170e40000"/>
+<RefObject refId="m0000000a-01f4-0000-468d-17aa00000000-mfe34e1f9-0c82-1000-806e-0af170e40000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/fe34e084-0c82-1000-806e-0af170e40000.xml#mfe34e1f9-0c82-1000-806e-0af170e40000"/>
+<RefObject refId="m0000000a-01f4-0000-468d-17aa00000000-mfe34e204-0c82-1000-806e-0af170e40000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/fe34e086-0c82-1000-806e-0af170e40000.xml#mfe34e204-0c82-1000-806e-0af170e40000"/>
+<RefObject refId="m0000000a-01f4-0000-468d-17aa00000000-mfe34e210-0c82-1000-806e-0af170e40000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/fe34e08b-0c82-1000-806e-0af170e40000.xml#mfe34e210-0c82-1000-806e-0af170e40000"/>
+<RefObject refId="m0000000a-01f4-0000-468d-17aa00000000-mfe34e207-0c82-1000-806e-0af170e40000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/fe34e087-0c82-1000-806e-0af170e40000.xml#mfe34e207-0c82-1000-806e-0af170e40000"/>
+<RefObject refId="m0000000a-01f4-0000-468d-17aa00000000-mfe34e1fe-0c82-1000-806e-0af170e40000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/fe34e085-0c82-1000-806e-0af170e40000.xml#mfe34e1fe-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m0000000b-01f4-0000-b245-542b00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

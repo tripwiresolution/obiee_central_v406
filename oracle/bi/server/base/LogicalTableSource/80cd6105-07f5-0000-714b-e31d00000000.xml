@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m80cd6105-07f5-0000-714b-e31d00000000" name="Forecast Cube" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/80cd5e92-07f3-0000-714b-e31d00000000.xml#m80cd5e92-07f3-0000-714b-e31d00000000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-2bb2-f6b900000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Olap Sample"."F2 Forecast Cube"."Forecast Gross Margin"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-2bb2-f6b900000000-m80cd5ec6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cd5e92-07f3-0000-714b-e31d00000000.xml#m80cd5ec6-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-d75e-4f9700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Forecast Cube"."Forecast Gross Margin"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-d75e-4f9700000000-m80cd5b24-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWCube/80cd5aef-0bee-0000-714b-e31d00000000.xml#m80cd5b24-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-85f2-5e2400000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Olap Sample"."F2 Forecast Cube"."Forecast Net Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-85f2-5e2400000000-m80cd5ec7-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cd5e92-07f3-0000-714b-e31d00000000.xml#m80cd5ec7-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-003a-5e5900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Forecast Cube"."Forecast Net Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-003a-5e5900000000-m80cd5b23-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWCube/80cd5aef-0bee-0000-714b-e31d00000000.xml#m80cd5b23-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/AWCube/80cd5aef-0bee-0000-714b-e31d00000000.xml#m80cd5aef-0bee-0000-714b-e31d00000000">
+</Link>
+<WhereClause mdsid="m00000005-01f4-0000-105c-867700000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000006-01f4-0000-294d-51ca00000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1", "%2", "%3")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("04 - Olap Sample"."H0 Time"."Month", "04 - Olap Sample"."H3 Office"."Office", "04 - Olap Sample"."H1 Products"."Product")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-294d-51ca00000000-m80cd5fc9-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cd5e8c-07e3-0000-714b-e31d00000000.xml#m80cd5fc9-07e9-0000-714b-e31d00000000"/>
+<RefObject refId="m00000006-01f4-0000-294d-51ca00000000-m80cd5fd6-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cd5e90-07e3-0000-714b-e31d00000000.xml#m80cd5fd6-07e9-0000-714b-e31d00000000"/>
+<RefObject refId="m00000006-01f4-0000-294d-51ca00000000-m80cd5fe1-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cd5e91-07e3-0000-714b-e31d00000000.xml#m80cd5fe1-07e9-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m00000007-01f4-0000-a4ac-a6db00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

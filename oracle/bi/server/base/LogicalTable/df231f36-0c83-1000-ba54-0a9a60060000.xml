@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="mdf231f36-0c83-1000-ba54-0a9a60060000" name="Risk" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/df231f30-0c83-1000-ba54-0a9a60060000.xml#mdf231f30-0c83-1000-ba54-0a9a60060000">
+<LogicalColumn mdsid="mdf231f37-0c83-1000-ba54-0a9a60060000" name="Correlation Change" isWriteable="false">
+<MeasureDefn mdsid="mdf231f68-0c83-1000-ba54-0a9a60060000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mdf231f71-0c83-1000-ba54-0a9a60060000" name="AggRule_2050:2651961376052387" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-c7aa-17e700000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y09 -Trading (Essbase)"."Risk"."Correlation Change")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-c7aa-17e700000000-mdf231f37-0c83-1000-ba54-0a9a60060000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/df231f36-0c83-1000-ba54-0a9a60060000.xml#mdf231f37-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mdf231faf-0c83-1000-ba54-0a9a60060000" name="AD_3900:2652581376052387">
+<Expr mdsid="m00000002-01f4-0000-cc17-f7bc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Correlation Change"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-cc17-f7bc00000000-mdf2123ba-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf2123ba-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mdf231f38-0c83-1000-ba54-0a9a60060000" name="Correlation Value" isWriteable="false">
+<MeasureDefn mdsid="mdf231f69-0c83-1000-ba54-0a9a60060000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mdf231f72-0c83-1000-ba54-0a9a60060000" name="AggRule_2050:2651971376052387" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-5b22-2a6a00000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y09 -Trading (Essbase)"."Risk"."Correlation Value")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-5b22-2a6a00000000-mdf231f38-0c83-1000-ba54-0a9a60060000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/df231f36-0c83-1000-ba54-0a9a60060000.xml#mdf231f38-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mdf231fb0-0c83-1000-ba54-0a9a60060000" name="AD_3900:2652591376052387">
+<Expr mdsid="m00000004-01f4-0000-9a13-015900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Correlation Value"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-9a13-015900000000-mdf2123bb-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf2123bb-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mdf231f39-0c83-1000-ba54-0a9a60060000" name="Value Average" isWriteable="false">
+<MeasureDefn mdsid="mdf231f6a-0c83-1000-ba54-0a9a60060000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mdf231f73-0c83-1000-ba54-0a9a60060000" name="AggRule_2050:2651981376052387" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-38c7-a85c00000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y09 -Trading (Essbase)"."Risk"."Value Average")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-38c7-a85c00000000-mdf231f39-0c83-1000-ba54-0a9a60060000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/df231f36-0c83-1000-ba54-0a9a60060000.xml#mdf231f39-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mdf231fb1-0c83-1000-ba54-0a9a60060000" name="AD_3900:2652601376052387">
+<Expr mdsid="m00000006-01f4-0000-05b1-c94900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Value Average"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-05b1-c94900000000-mdf2123bc-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf2123bc-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mdf231f3a-0c83-1000-ba54-0a9a60060000" name="Value Average Change" isWriteable="false">
+<MeasureDefn mdsid="mdf231f6b-0c83-1000-ba54-0a9a60060000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mdf231f74-0c83-1000-ba54-0a9a60060000" name="AggRule_2050:2651991376052387" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-453d-ba7500000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y09 -Trading (Essbase)"."Risk"."Value Average Change")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-453d-ba7500000000-mdf231f3a-0c83-1000-ba54-0a9a60060000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/df231f36-0c83-1000-ba54-0a9a60060000.xml#mdf231f3a-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mdf231fb2-0c83-1000-ba54-0a9a60060000" name="AD_3900:2652611376052387">
+<Expr mdsid="m00000008-01f4-0000-0ecd-0cb300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Value Average Change"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-0ecd-0cb300000000-mdf2123bd-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf2123bd-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mdf231f3b-0c83-1000-ba54-0a9a60060000" name="Value Count" isWriteable="false">
+<MeasureDefn mdsid="mdf231f6c-0c83-1000-ba54-0a9a60060000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mdf231f75-0c83-1000-ba54-0a9a60060000" name="AggRule_2050:2652001376052387" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-b4cf-808600000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y09 -Trading (Essbase)"."Risk"."Value Count")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-b4cf-808600000000-mdf231f3b-0c83-1000-ba54-0a9a60060000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/df231f36-0c83-1000-ba54-0a9a60060000.xml#mdf231f3b-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mdf231fb3-0c83-1000-ba54-0a9a60060000" name="AD_3900:2652621376052387">
+<Expr mdsid="m0000000a-01f4-0000-c12b-eb2f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Value Count"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-c12b-eb2f00000000-mdf2123be-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf2123be-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mdf231f3c-0c83-1000-ba54-0a9a60060000" name="Value Avg % Change" isWriteable="false">
+<MeasureDefn mdsid="mdf231f6d-0c83-1000-ba54-0a9a60060000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mdf231f76-0c83-1000-ba54-0a9a60060000" name="AggRule_2050:2652011376052387" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-2ec0-751e00000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y09 -Trading (Essbase)"."Risk"."Value Avg % Change")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-2ec0-751e00000000-mdf231f3c-0c83-1000-ba54-0a9a60060000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/df231f36-0c83-1000-ba54-0a9a60060000.xml#mdf231f3c-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mdf231fb4-0c83-1000-ba54-0a9a60060000" name="AD_3900:2652631376052387">
+<Expr mdsid="m0000000c-01f4-0000-b976-d8c800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Value Avg % Change"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-b976-d8c800000000-mdf2123bf-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf2123bf-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mdf231f3d-0c83-1000-ba54-0a9a60060000" name="Monthly Value Avg" isWriteable="false">
+<MeasureDefn mdsid="mdf231f6e-0c83-1000-ba54-0a9a60060000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mdf231f77-0c83-1000-ba54-0a9a60060000" name="AggRule_2050:2652021376052387" isDefault="true">
+<Expr mdsid="m0000000d-01f4-0000-7097-36e100000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y09 -Trading (Essbase)"."Risk"."Monthly Value Avg")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-7097-36e100000000-mdf231f3d-0c83-1000-ba54-0a9a60060000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/df231f36-0c83-1000-ba54-0a9a60060000.xml#mdf231f3d-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mdf231fb5-0c83-1000-ba54-0a9a60060000" name="AD_3900:2652641376052387">
+<Expr mdsid="m0000000e-01f4-0000-2929-5e4100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Monthly Value Avg"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-2929-5e4100000000-mdf2123c0-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf2123c0-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mdf231f3e-0c83-1000-ba54-0a9a60060000" name="Quarterly Value Avg" isWriteable="false">
+<MeasureDefn mdsid="mdf231f6f-0c83-1000-ba54-0a9a60060000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mdf231f78-0c83-1000-ba54-0a9a60060000" name="AggRule_2050:2652031376052387" isDefault="true">
+<Expr mdsid="m0000000f-01f4-0000-9863-31d500000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y09 -Trading (Essbase)"."Risk"."Quarterly Value Avg")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-9863-31d500000000-mdf231f3e-0c83-1000-ba54-0a9a60060000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/df231f36-0c83-1000-ba54-0a9a60060000.xml#mdf231f3e-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mdf231fb6-0c83-1000-ba54-0a9a60060000" name="AD_3900:2652651376052387">
+<Expr mdsid="m00000010-01f4-0000-1f58-4a9b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Quarterly Value Avg"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-1f58-4a9b00000000-mdf2123c1-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf2123c1-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mdf231f3f-0c83-1000-ba54-0a9a60060000" name="Yearly Value Avg" isWriteable="false">
+<MeasureDefn mdsid="mdf231f70-0c83-1000-ba54-0a9a60060000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mdf231f79-0c83-1000-ba54-0a9a60060000" name="AggRule_2050:2652041376052387" isDefault="true">
+<Expr mdsid="m00000011-01f4-0000-f55d-bac800000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y09 -Trading (Essbase)"."Risk"."Yearly Value Avg")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-f55d-bac800000000-mdf231f3f-0c83-1000-ba54-0a9a60060000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/df231f36-0c83-1000-ba54-0a9a60060000.xml#mdf231f3f-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mdf231fb7-0c83-1000-ba54-0a9a60060000" name="AD_3900:2652661376052387">
+<Expr mdsid="m00000012-01f4-0000-bf01-962c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Yearly Value Avg"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-bf01-962c00000000-mdf2123c2-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf2123c2-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="mdf231f36-0c83-1000-ba54-0a9a60060000-mdf231fd5-0c83-1000-ba54-0a9a60060000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/df231fd5-0c83-1000-ba54-0a9a60060000.xml#mdf231fd5-0c83-1000-ba54-0a9a60060000"/>
+</RefTableSources>
+</LogicalTable>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m7184428c-0c36-1000-b82f-0af06a760000" name="LTS4 GL Flat - Net Revenue" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/718440a8-0c36-1000-b82f-0af06a760000.xml#m718440a8-0c36-1000-b82f-0af06a760000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-794d-128600000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL"."Measures"."Net Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-794d-128600000000-m718440ab-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440a8-0c36-1000-b82f-0af06a760000.xml#m718440ab-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-3527-53f300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Flat"."BISAMPL2".""."SampleGL_Flattened"."Net Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-3527-53f300000000-m71809888-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/7180973a-0c36-1000-b82f-0af06a760000.xml#m71809888-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/CubeTable/7180973a-0c36-1000-b82f-0af06a760000.xml#m7180973a-0c36-1000-b82f-0af06a760000">
+</Link>
+<WhereClause mdsid="m00000003-01f4-0000-10a0-d6e800000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000004-01f4-0000-e6ce-c8e800000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m00000005-01f4-0000-c70d-1d2a00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="mfe333325-0c82-1000-806e-0af170e40000" name="MOVIE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" rowCount="207673.0" lastUpdated="2012-10-24 11:58:49" maxConn="0" containerRef="/oracle/bi/server/base/Schema/fe3332da-0c82-1000-806e-0af170e40000.xml#mfe3332da-0c82-1000-806e-0af170e40000">
+<PhysicalColumn mdsid="mfe333326-0c82-1000-806e-0af170e40000" name="MOVIE_ID" dataType="DOUBLE" precision="22" rowCount="207673.0" lastUpdated="2012-07-18 11:37:50" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe333327-0c82-1000-806e-0af170e40000" name="POPULARITY" dataType="DOUBLE" precision="22" nullable="true" rowCount="91.0" lastUpdated="2012-07-18 11:37:51" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe333328-0c82-1000-806e-0af170e40000" name="TITLE" dataType="VARCHAR" precision="250" nullable="true" rowCount="198554.0" lastUpdated="2012-07-18 11:37:51" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe333329-0c82-1000-806e-0af170e40000" name="VOTE_COUNT" dataType="DOUBLE" precision="22" nullable="true" rowCount="8748.0" lastUpdated="2012-07-18 11:37:52" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe33332a-0c82-1000-806e-0af170e40000" name="YEAR" dataType="DOUBLE" precision="22" nullable="true" rowCount="126.0" lastUpdated="2012-07-18 11:37:52" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="mfe33342f-0c82-1000-806e-0af170e40000" name="MOVIE_ID">
+<RefColumns>
+<RefColumn refId="mfe33342f-0c82-1000-806e-0af170e40000-mfe333326-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe333325-0c82-1000-806e-0af170e40000.xml#mfe333326-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="mfe333450-0c82-1000-806e-0af170e40000" name="MOVIE_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/fe333333-0c82-1000-806e-0af170e40000.xml#mfe333433-0c82-1000-806e-0af170e40000">
+<RefColumns>
+<RefColumn refId="mfe333450-0c82-1000-806e-0af170e40000-mfe333326-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe333325-0c82-1000-806e-0af170e40000.xml#mfe333326-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

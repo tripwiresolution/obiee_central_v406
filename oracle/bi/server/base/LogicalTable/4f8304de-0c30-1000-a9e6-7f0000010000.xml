@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m4f8304de-0c30-1000-a9e6-7f0000010000" name="Dim - Cumulative Grains" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/4f82dda0-0c30-1000-a9e6-7f0000010000.xml#m4f82dda0-0c30-1000-a9e6-7f0000010000">
+<LogicalColumn mdsid="m4f8304df-0c30-1000-a9e6-7f0000010000" name="MODEL_INSTANCE_ID" isWriteable="false">
+<AttrDefn mdsid="m4f832c01-0c30-1000-a9e6-7f0000010000" name="AD_3900:2399661340163242">
+<Expr mdsid="m00000001-01f4-0000-dd33-f1b100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDCUMULATIVEGAINS"."MODEL_INSTANCE_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-dd33-f1b100000000-m4f80bb55-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb54-0c30-1000-a9e6-7f0000010000.xml#m4f80bb55-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m4f8304e0-0c30-1000-a9e6-7f0000010000" name="X" isWriteable="false">
+<AttrDefn mdsid="m4f832c02-0c30-1000-a9e6-7f0000010000" name="AD_3900:2399671340163242">
+<Expr mdsid="m00000002-01f4-0000-2715-3eca00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDCUMULATIVEGAINS"."X"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-2715-3eca00000000-m4f80bb56-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb54-0c30-1000-a9e6-7f0000010000.xml#m4f80bb56-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m4f8304e1-0c30-1000-a9e6-7f0000010000" name="Y" isWriteable="false">
+<AttrDefn mdsid="m4f832c03-0c30-1000-a9e6-7f0000010000" name="AD_3900:2399681340163242">
+<Expr mdsid="m00000003-01f4-0000-6ed7-412300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDCUMULATIVEGAINS"."Y"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-6ed7-412300000000-m4f80bb57-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb54-0c30-1000-a9e6-7f0000010000.xml#m4f80bb57-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m4f832bd6-0c30-1000-a9e6-7f0000010000" name="MODEL_INSTANCE_ID" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m4f832bd6-0c30-1000-a9e6-7f0000010000-m4f8304df-0c30-1000-a9e6-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/4f8304de-0c30-1000-a9e6-7f0000010000.xml#m4f8304df-0c30-1000-a9e6-7f0000010000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m4f8304de-0c30-1000-a9e6-7f0000010000-m4f832c13-0c30-1000-a9e6-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/4f832c13-0c30-1000-a9e6-7f0000010000.xml#m4f832c13-0c30-1000-a9e6-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

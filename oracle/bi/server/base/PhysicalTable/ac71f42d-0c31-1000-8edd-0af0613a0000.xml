@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="mac71f42d-0c31-1000-8edd-0af0613a0000" name="AirportsCount" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" isDeployedView="true" maxConn="0" containerRef="/oracle/bi/server/base/Database/ac71f401-0c31-1000-8edd-0af0613a0000.xml#mac71f401-0c31-1000-8edd-0af0613a0000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[select a.airport AirportCode, a.cnt numFltYear1, b.cnt numFltYear2, b.cnt - a.cnt Change from
+table(rqTableEval( cursor(select 'ALL' UNIQUE_CARRIERS,
+valueof(NQ_SESSION.OR_ARG1) START_YEAR_A, valueof(NQ_SESSION.OR_ARG1) END_YEAR_A, 'ALL' REGION_A,
+-1 START_YEAR_B, 2008 END_YEAR_B, 'ALL' REGION_B from dual),
+cursor(select 1 "ore.connect" from dual), 'select 1 grp, ''aaaaaaaaaa'' airport, 1 cnt from dual',
+'AirportCounts-1')) a, 
+table(rqTableEval( cursor(select 'ALL' UNIQUE_CARRIERS,
+valueof(NQ_SESSION.OR_ARG2) START_YEAR_A, valueof(NQ_SESSION.OR_ARG2) END_YEAR_A, 'ALL' REGION_A,
+-1 START_YEAR_B, 2008 END_YEAR_B, 'ALL' REGION_B from dual),
+cursor(select 1 "ore.connect" from dual), 'select 1 grp, ''aaaaaaaaaa'' airport, 1 cnt from dual',
+'AirportCounts-1')) b 
+where a.airport = b.airport]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="mac71f42e-0c31-1000-8edd-0af0613a0000" name="AirportCode" dataType="VARCHAR" precision="10" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mac71f42f-0c31-1000-8edd-0af0613a0000" name="NumFltYear1" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mac71f430-0c31-1000-8edd-0af0613a0000" name="NumFltYear2" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mac71f431-0c31-1000-8edd-0af0613a0000" name="Change" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="mac71f432-0c31-1000-8edd-0af0613a0000" name="AirportCode">
+<RefColumns>
+<RefColumn refId="mac71f432-0c31-1000-8edd-0af0613a0000-mac71f42e-0c31-1000-8edd-0af0613a0000" columnRef="/oracle/bi/server/base/PhysicalTable/ac71f42d-0c31-1000-8edd-0af0613a0000.xml#mac71f42e-0c31-1000-8edd-0af0613a0000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

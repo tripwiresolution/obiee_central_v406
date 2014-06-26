@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cd5e94-07f3-0000-714b-e31d00000000" name="F1 Revenue Measure Hierarchy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="597" y="318" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cd5e8b-07d0-0000-714b-e31d00000000.xml#m80cd5e8b-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cd5eee-07d6-0000-714b-e31d00000000" name="% Change Pr Period" isWriteable="false">
+<MeasureDefn mdsid="m80cd5f90-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cda75f-0802-0000-714b-e31d00000000" name="AggRule_2050:1735761292250388" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-adb9-bd9d00000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("04 - Olap Sample"."F1 Revenue Measure Hierarchy"."% Change Pr Period")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-adb9-bd9d00000000-m80cd5eee-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cd5e94-07f3-0000-714b-e31d00000000.xml#m80cd5eee-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cd609e-0f3c-0000-714b-e31d00000000" name="AD_3900:1579621291973959">
+<Expr mdsid="m00000002-01f4-0000-b4b4-f67300000000" name="Expr">
+<ExprText><![CDATA["%1"*100]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Revenue Cube w/Measure Hierarchy"."% Change Pr Period"*100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-b4b4-f67300000000-m80cd5b4f-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWCube/80cd5af1-0bee-0000-714b-e31d00000000.xml#m80cd5b4f-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5eef-07d6-0000-714b-e31d00000000" name="Prior Period" isWriteable="false">
+<MeasureDefn mdsid="m80cd5f91-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cd5fbf-0802-0000-714b-e31d00000000" name="AggRule_2050:1579491291973959" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-d28f-2ff100000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("04 - Olap Sample"."F1 Revenue Measure Hierarchy"."Prior Period")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-d28f-2ff100000000-m80cd5eef-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cd5e94-07f3-0000-714b-e31d00000000.xml#m80cd5eef-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cd609f-0f3c-0000-714b-e31d00000000" name="AD_3900:1579631291973959">
+<Expr mdsid="m00000004-01f4-0000-4d10-59e200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Revenue Cube w/Measure Hierarchy"."Prior Period"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-4d10-59e200000000-m80cd5b4c-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWCube/80cd5af1-0bee-0000-714b-e31d00000000.xml#m80cd5b4c-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5ef0-07d6-0000-714b-e31d00000000" name="Product Parent Share" isWriteable="false">
+<MeasureDefn mdsid="m80cd5f92-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cd5fc0-0802-0000-714b-e31d00000000" name="AggRule_2050:1579521291973959" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-daae-625300000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("04 - Olap Sample"."F1 Revenue Measure Hierarchy"."Product Parent Share")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-daae-625300000000-m80cd5ef0-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cd5e94-07f3-0000-714b-e31d00000000.xml#m80cd5ef0-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cd60a0-0f3c-0000-714b-e31d00000000" name="AD_3900:1579641291973959">
+<Expr mdsid="m00000006-01f4-0000-3ec9-94ff00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Revenue Cube w/Measure Hierarchy"."Product Parent Share"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-3ec9-94ff00000000-m80cd5b4e-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWCube/80cd5af1-0bee-0000-714b-e31d00000000.xml#m80cd5b4e-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5ef1-07d6-0000-714b-e31d00000000" name="Value" isWriteable="false">
+<MeasureDefn mdsid="m80cd5f93-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cd5fc1-0802-0000-714b-e31d00000000" name="AggRule_2050:1579551291973959" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-930e-428b00000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("04 - Olap Sample"."F1 Revenue Measure Hierarchy"."Value")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-930e-428b00000000-m80cd5ef1-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cd5e94-07f3-0000-714b-e31d00000000.xml#m80cd5ef1-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cd60a1-0f3c-0000-714b-e31d00000000" name="AD_3900:1579651291973959">
+<Expr mdsid="m00000008-01f4-0000-158d-d38200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Revenue Cube w/Measure Hierarchy"."Value"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-158d-d38200000000-m80cd5b4b-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWCube/80cd5af1-0bee-0000-714b-e31d00000000.xml#m80cd5b4b-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5ef2-07d6-0000-714b-e31d00000000" name="Year To Date" isWriteable="false">
+<MeasureDefn mdsid="m80cd5f94-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cd5fc2-0802-0000-714b-e31d00000000" name="AggRule_2050:1579581291973959" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-3b48-58cf00000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("04 - Olap Sample"."F1 Revenue Measure Hierarchy"."Year To Date")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-3b48-58cf00000000-m80cd5ef2-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cd5e94-07f3-0000-714b-e31d00000000.xml#m80cd5ef2-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cd60a2-0f3c-0000-714b-e31d00000000" name="AD_3900:1579661291973959">
+<Expr mdsid="m0000000a-01f4-0000-997b-7c3400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Revenue Cube w/Measure Hierarchy"."Year To Date"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-997b-7c3400000000-m80cd5b4d-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWCube/80cd5af1-0bee-0000-714b-e31d00000000.xml#m80cd5b4d-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5ef3-07d6-0000-714b-e31d00000000" name="YTD % Chg Pr Period" isWriteable="false">
+<MeasureDefn mdsid="m80cd5f95-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cd5fc3-0802-0000-714b-e31d00000000" name="AggRule_2050:1579611291973959" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-8072-f80e00000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("04 - Olap Sample"."F1 Revenue Measure Hierarchy"."YTD % Chg Pr Period")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-8072-f80e00000000-m80cd5ef3-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cd5e94-07f3-0000-714b-e31d00000000.xml#m80cd5ef3-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cd60a3-0f3c-0000-714b-e31d00000000" name="AD_3900:1579671291973959">
+<Expr mdsid="m0000000c-01f4-0000-18a3-d39400000000" name="Expr">
+<ExprText><![CDATA["%1"*100]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Revenue Cube w/Measure Hierarchy"."YTD % Chg Pr Period"*100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-18a3-d39400000000-m80cd5b50-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWCube/80cd5af1-0bee-0000-714b-e31d00000000.xml#m80cd5b50-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cd5e94-07f3-0000-714b-e31d00000000-m80cd6107-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cd6107-07f5-0000-714b-e31d00000000.xml#m80cd6107-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

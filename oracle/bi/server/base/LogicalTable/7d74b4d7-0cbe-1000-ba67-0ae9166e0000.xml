@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m7d74b4d7-0cbe-1000-ba67-0ae9166e0000" name="Dim - Associantion Rule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/7d74b4c0-0cbe-1000-ba67-0ae9166e0000.xml#m7d74b4c0-0cbe-1000-ba67-0ae9166e0000">
+<LogicalColumn mdsid="m7d74b4d8-0cbe-1000-ba67-0ae9166e0000" name="Model Name" isWriteable="false">
+<AttrDefn mdsid="m7d74b595-0cbe-1000-ba67-0ae9166e0000" name="AD_3900:2805551401228812">
+<Expr mdsid="m00000001-01f4-0000-3ad0-16e000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D91 Associantion Rules"."MODEL_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-3ad0-16e000000000-m7d726af0-0cbe-1000-ba67-0ae9166e0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/7d726ad2-0cbe-1000-ba67-0ae9166e0000.xml#m7d726af0-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m7d74b4d9-0cbe-1000-ba67-0ae9166e0000" name="Owner" isWriteable="false">
+<AttrDefn mdsid="m7d74b596-0cbe-1000-ba67-0ae9166e0000" name="AD_3900:2805561401228812">
+<Expr mdsid="m00000002-01f4-0000-78cd-ed8b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D91 Associantion Rules"."OWNER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-78cd-ed8b00000000-m7d726af2-0cbe-1000-ba67-0ae9166e0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/7d726ad2-0cbe-1000-ba67-0ae9166e0000.xml#m7d726af2-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m7d74b4da-0cbe-1000-ba67-0ae9166e0000" name="Rule Id" isWriteable="false">
+<AttrDefn mdsid="m7d74b597-0cbe-1000-ba67-0ae9166e0000" name="AD_3900:2805571401228812">
+<Expr mdsid="m00000003-01f4-0000-296b-b0a000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D91 Associantion Rules"."RULE_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-296b-b0a000000000-m7d726af4-0cbe-1000-ba67-0ae9166e0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/7d726ad2-0cbe-1000-ba67-0ae9166e0000.xml#m7d726af4-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m7d74b57b-0cbe-1000-ba67-0ae9166e0000" name="D93 Associantion Rule_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m7d74b57b-0cbe-1000-ba67-0ae9166e0000-m7d74b4d9-0cbe-1000-ba67-0ae9166e0000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/7d74b4d7-0cbe-1000-ba67-0ae9166e0000.xml#m7d74b4d9-0cbe-1000-ba67-0ae9166e0000"/>
+<RefLogicalColumn refId="m7d74b57b-0cbe-1000-ba67-0ae9166e0000-m7d74b4d8-0cbe-1000-ba67-0ae9166e0000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/7d74b4d7-0cbe-1000-ba67-0ae9166e0000.xml#m7d74b4d8-0cbe-1000-ba67-0ae9166e0000"/>
+<RefLogicalColumn refId="m7d74b57b-0cbe-1000-ba67-0ae9166e0000-m7d74b4da-0cbe-1000-ba67-0ae9166e0000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/7d74b4d7-0cbe-1000-ba67-0ae9166e0000.xml#m7d74b4da-0cbe-1000-ba67-0ae9166e0000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m7d74b4d7-0cbe-1000-ba67-0ae9166e0000-m7d74b5d7-0cbe-1000-ba67-0ae9166e0000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/7d74b5d7-0cbe-1000-ba67-0ae9166e0000.xml#m7d74b5d7-0cbe-1000-ba67-0ae9166e0000"/>
+</RefTableSources>
+</LogicalTable>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="mdf231f58-0c83-1000-ba54-0a9a60060000" name="Curve2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/df231f30-0c83-1000-ba54-0a9a60060000.xml#mdf231f30-0c83-1000-ba54-0a9a60060000">
+<LogicalColumn mdsid="mdf231f59-0c83-1000-ba54-0a9a60060000" name="Gen2,Curve2" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/df231f58-0c83-1000-ba54-0a9a60060000.xml#mdf231f5a-0c83-1000-ba54-0a9a60060000">
+<AttrDefn mdsid="mdf231fcd-0c83-1000-ba54-0a9a60060000" name="AD_3900:2652881376052387">
+<Expr mdsid="m00000001-01f4-0000-3e3d-e8b600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Gen2,Curve2"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-3e3d-e8b600000000-mdf21239d-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf21239d-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mdf231f5a-0c83-1000-ba54-0a9a60060000" name="Gen2,Curve2 - Memnor" isWriteable="false">
+<AttrDefn mdsid="mdf231fce-0c83-1000-ba54-0a9a60060000" name="AD_3900:2652891376052387">
+<Expr mdsid="m00000002-01f4-0000-0d42-022100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Gen2,Curve2 - Memnor"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-0d42-022100000000-mdf21239f-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf21239f-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mdf231f5b-0c83-1000-ba54-0a9a60060000" name="Gen2,Curve2 - Member Key" isWriteable="false">
+<AttrDefn mdsid="mdf231fcf-0c83-1000-ba54-0a9a60060000" name="AD_3900:2652901376052387">
+<Expr mdsid="m00000003-01f4-0000-1745-f2b800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Gen2,Curve2 - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-1745-f2b800000000-mdf2123a0-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf2123a0-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mdf231f5c-0c83-1000-ba54-0a9a60060000" name="Curve2 - Default" isWriteable="false">
+<AttrDefn mdsid="mdf231fd0-0c83-1000-ba54-0a9a60060000" name="AD_3900:2652911376052387">
+<Expr mdsid="m00000004-01f4-0000-077e-bb7900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Curve2 - Default"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-077e-bb7900000000-mdf2123b3-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf2123b3-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="mdf231fad-0c83-1000-ba54-0a9a60060000" name="Curve2" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="mdf231fad-0c83-1000-ba54-0a9a60060000-mdf231f59-0c83-1000-ba54-0a9a60060000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/df231f58-0c83-1000-ba54-0a9a60060000.xml#mdf231f59-0c83-1000-ba54-0a9a60060000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="mdf231f58-0c83-1000-ba54-0a9a60060000-mdf231fd9-0c83-1000-ba54-0a9a60060000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/df231fd9-0c83-1000-ba54-0a9a60060000.xml#mdf231fd9-0c83-1000-ba54-0a9a60060000"/>
+</RefTableSources>
+</LogicalTable>

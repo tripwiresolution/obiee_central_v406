@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m6974d298-0c84-1000-8c5b-0ae4f18a0000" name="XREF_COMMODITY_HEIRCHY" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/6974ab34-0c84-1000-8c5b-0ae4f18a0000.xml#m6974ab34-0c84-1000-8c5b-0ae4f18a0000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-58a8-dd6500000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims"."Commodity Hierarchy - Xref"."Commodity"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-58a8-dd6500000000-m6974ab35-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/6974ab34-0c84-1000-8c5b-0ae4f18a0000.xml#m6974ab35-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-92c0-71d100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."XREF_COMMODITY_HEIRCHY"."COMMODITY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-92c0-71d100000000-m697101ba-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101b9-0c84-1000-8c5b-0ae4f18a0000.xml#m697101ba-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-e6b1-b79500000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims"."Commodity Hierarchy - Xref"."Commodity Hierarchy"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-e6b1-b79500000000-m6974ab36-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/6974ab34-0c84-1000-8c5b-0ae4f18a0000.xml#m6974ab36-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-82e0-0b2400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."XREF_COMMODITY_HEIRCHY"."COMMODITY_HIERARCHY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-82e0-0b2400000000-m697101bb-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101b9-0c84-1000-8c5b-0ae4f18a0000.xml#m697101bb-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/697101b9-0c84-1000-8c5b-0ae4f18a0000.xml#m697101b9-0c84-1000-8c5b-0ae4f18a0000">
+</Link>
+<WhereClause mdsid="m00000005-01f4-0000-59ca-fcee00000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000006-01f4-0000-dfe3-267f00000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m00000007-01f4-0000-45ce-b52d00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m1e04e4c2-0cae-1000-8972-7f0000010000" name="ARENA_DATA" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/1e04e4c0-0cae-1000-8972-7f0000010000.xml#m1e04e4c0-0cae-1000-8972-7f0000010000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-76ed-2a5300000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["07 - Spatial Samples"."Arena"."Section"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-76ed-2a5300000000-m1e04e4c7-0cae-1000-8972-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1e04e4c0-0cae-1000-8972-7f0000010000.xml#m1e04e4c7-0cae-1000-8972-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-e104-ceff00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."ARENA_DATA"."SECTION"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-e104-ceff00000000-m1dde9810-0cae-1000-8972-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/1dd9dd21-0cae-1000-8972-7f0000010000.xml#m1dde9810-0cae-1000-8972-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-d861-ac2900000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["07 - Spatial Samples"."Arena"."Section Type"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-d861-ac2900000000-m1e04e4c8-0cae-1000-8972-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1e04e4c0-0cae-1000-8972-7f0000010000.xml#m1e04e4c8-0cae-1000-8972-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-db54-a0c100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."ARENA_DATA"."TYPE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-db54-a0c100000000-m1de17e40-0cae-1000-8972-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/1dd9dd21-0cae-1000-8972-7f0000010000.xml#m1de17e40-0cae-1000-8972-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/1dd9dd21-0cae-1000-8972-7f0000010000.xml#m1dd9dd21-0cae-1000-8972-7f0000010000">
+</Link>
+<WhereClause mdsid="m00000005-01f4-0000-ced5-7c9300000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000006-01f4-0000-45b4-d3fc00000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m00000007-01f4-0000-5f30-1c4300000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

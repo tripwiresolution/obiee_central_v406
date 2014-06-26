@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m82f2f6c4-0ca8-1000-90a3-0af502b50000" name="Demo2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/82f0d458-0ca8-1000-90a3-0af502b50000.xml#m82f0d458-0ca8-1000-90a3-0af502b50000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-6c97-8d0800000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y08 - Demo Banking Adjustments"."EntryDate"."Gen1,EntryDate"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-6c97-8d0800000000-m82f0d459-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d458-0ca8-1000-90a3-0af502b50000.xml#m82f0d459-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-cd19-ffa300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Adjustments"."Adjust".""."Demo2"."Gen1,EntryDate"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-cd19-ffa300000000-m82de0fa3-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82de0f6c-0ca8-1000-90a3-0af502b50000.xml#m82de0fa3-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-b534-163f00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y08 - Demo Banking Adjustments"."EntryDate"."Gen1,EntryDate - Memnor"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-b534-163f00000000-m82f0d45a-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d458-0ca8-1000-90a3-0af502b50000.xml#m82f0d45a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-d010-0e8500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Adjustments"."Adjust".""."Demo2"."Gen1,EntryDate - Memnor"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-d010-0e8500000000-m82de0fa4-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82de0f6c-0ca8-1000-90a3-0af502b50000.xml#m82de0fa4-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-0f71-dbd300000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y08 - Demo Banking Adjustments"."EntryDate"."Gen1,EntryDate - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-0f71-dbd300000000-m82f0d45b-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d458-0ca8-1000-90a3-0af502b50000.xml#m82f0d45b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-0e81-b40200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Adjustments"."Adjust".""."Demo2"."Gen1,EntryDate - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-0e81-b40200000000-m82de0fa5-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82de0f6c-0ca8-1000-90a3-0af502b50000.xml#m82de0fa5-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000007-01f4-0000-0f82-d7f700000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y08 - Demo Banking Adjustments"."EntryDate"."ED Years"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-0f82-d7f700000000-m82f0d45c-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d458-0ca8-1000-90a3-0af502b50000.xml#m82f0d45c-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000008-01f4-0000-e967-96c800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Adjustments"."Adjust".""."Demo2"."ED Years"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-e967-96c800000000-m82de0fa6-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82de0f6c-0ca8-1000-90a3-0af502b50000.xml#m82de0fa6-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000009-01f4-0000-ddc9-010500000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y08 - Demo Banking Adjustments"."EntryDate"."ED Years - Memnor"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-ddc9-010500000000-m82f0d45d-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d458-0ca8-1000-90a3-0af502b50000.xml#m82f0d45d-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000a-01f4-0000-fe22-5ce600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Adjustments"."Adjust".""."Demo2"."ED Years - Memnor"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-fe22-5ce600000000-m82de0fa8-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82de0f6c-0ca8-1000-90a3-0af502b50000.xml#m82de0fa8-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000000b-01f4-0000-0c3c-209300000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y08 - Demo Banking Adjustments"."EntryDate"."ED Years - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-0c3c-209300000000-m82f0d45e-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d458-0ca8-1000-90a3-0af502b50000.xml#m82f0d45e-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000c-01f4-0000-2fa1-da9b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Adjustments"."Adjust".""."Demo2"."ED Years - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-2fa1-da9b00000000-m82de0fa9-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82de0f6c-0ca8-1000-90a3-0af502b50000.xml#m82de0fa9-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000000d-01f4-0000-3447-cf2100000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y08 - Demo Banking Adjustments"."EntryDate"."ED Months"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-3447-cf2100000000-m82f0d45f-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d458-0ca8-1000-90a3-0af502b50000.xml#m82f0d45f-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000e-01f4-0000-5dc3-7a5600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Adjustments"."Adjust".""."Demo2"."ED Months"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-5dc3-7a5600000000-m82de0faa-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82de0f6c-0ca8-1000-90a3-0af502b50000.xml#m82de0faa-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000000f-01f4-0000-3f85-405a00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y08 - Demo Banking Adjustments"."EntryDate"."ED Months - Memnor"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-3f85-405a00000000-m82f0d460-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d458-0ca8-1000-90a3-0af502b50000.xml#m82f0d460-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000010-01f4-0000-d255-784900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Adjustments"."Adjust".""."Demo2"."ED Months - Memnor"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-d255-784900000000-m82de0fac-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82de0f6c-0ca8-1000-90a3-0af502b50000.xml#m82de0fac-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000011-01f4-0000-3804-5dd200000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y08 - Demo Banking Adjustments"."EntryDate"."ED Months - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-3804-5dd200000000-m82f0d461-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d458-0ca8-1000-90a3-0af502b50000.xml#m82f0d461-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000012-01f4-0000-55ab-f55c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Adjustments"."Adjust".""."Demo2"."ED Months - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-55ab-f55c00000000-m82de0fad-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82de0f6c-0ca8-1000-90a3-0af502b50000.xml#m82de0fad-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000013-01f4-0000-f467-604600000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y08 - Demo Banking Adjustments"."EntryDate"."ED Date"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-f467-604600000000-m82f0d462-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d458-0ca8-1000-90a3-0af502b50000.xml#m82f0d462-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000014-01f4-0000-d5c9-c0ab00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Adjustments"."Adjust".""."Demo2"."ED Date"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-d5c9-c0ab00000000-m82de0fae-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82de0f6c-0ca8-1000-90a3-0af502b50000.xml#m82de0fae-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000015-01f4-0000-e8df-aa4500000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y08 - Demo Banking Adjustments"."EntryDate"."ED Date - Memnor"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-e8df-aa4500000000-m82f0d463-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d458-0ca8-1000-90a3-0af502b50000.xml#m82f0d463-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000016-01f4-0000-cda8-f91500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Adjustments"."Adjust".""."Demo2"."ED Date - Memnor"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-cda8-f91500000000-m82de0fb0-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82de0f6c-0ca8-1000-90a3-0af502b50000.xml#m82de0fb0-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000017-01f4-0000-806a-dd0300000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y08 - Demo Banking Adjustments"."EntryDate"."ED Date - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-806a-dd0300000000-m82f0d464-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d458-0ca8-1000-90a3-0af502b50000.xml#m82f0d464-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000018-01f4-0000-d114-feb700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Adjustments"."Adjust".""."Demo2"."ED Date - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000018-01f4-0000-d114-feb700000000-m82de0fb1-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82de0f6c-0ca8-1000-90a3-0af502b50000.xml#m82de0fb1-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000019-01f4-0000-902a-8cea00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y08 - Demo Banking Adjustments"."EntryDate"."EntryDate - Default"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000019-01f4-0000-902a-8cea00000000-m82f0d465-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d458-0ca8-1000-90a3-0af502b50000.xml#m82f0d465-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000001a-01f4-0000-1861-2f6b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Adjustments"."Adjust".""."Demo2"."EntryDate - Default"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001a-01f4-0000-1861-2f6b00000000-m82de0fba-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82de0f6c-0ca8-1000-90a3-0af502b50000.xml#m82de0fba-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/CubeTable/82de0f6c-0ca8-1000-90a3-0af502b50000.xml#m82de0f6c-0ca8-1000-90a3-0af502b50000">
+</Link>
+<WhereClause mdsid="m0000001b-01f4-0000-67e6-04fb00000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m0000001c-01f4-0000-f68f-056a00000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("Y08 - Demo Banking Adjustments"."EntryDate"."ED Date")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001c-01f4-0000-f68f-056a00000000-m82f197d5-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0ace5-0ca8-1000-90a3-0af502b50000.xml#m82f197d5-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m0000001d-01f4-0000-56c1-111b00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

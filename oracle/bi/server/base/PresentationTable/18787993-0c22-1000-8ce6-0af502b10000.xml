@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationTable mdsid="m18787993-0c22-1000-8ce6-0af502b10000" name="Many to Many Weighthing" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" hasDispName="false" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationCatalog/80cab7ef-0fa4-0000-714b-e31d00000000.xml#m80cab7ef-0fa4-0000-714b-e31d00000000">
+<Description><![CDATA[This folder contains various Variation metrics on Revenue like Variations to Period Ago and Time span variations.]]></Description>
+<Alias name="Many to Many Weigthing"/>
+<Alias name="MtoM Weigthed Aggr"/>
+<Alias name="Time Span Variations#1"/>
+<PresentationColumn mdsid="m1880b6f0-0c22-1000-8ce6-0af502b10000" name="8- Quota Amount" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab641-07f3-0000-714b-e31d00000000.xml#m80cab646-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Quota Amount data. Sources from Value physical column in 'Sample Quotas Fact' table. Grain of Quota Amount is Month.
+
+- Returns sum of data over any selected dimension]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m188e7290-0c22-1000-8ce6-0af502b10000" name="N1  Office" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab597-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help : 
+Stores the Market description.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m188e7296-0c22-1000-8ce6-0af502b10000" name="N1k  Office Key" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab596-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help : 
+Market Key is an integer that uniquely identifies each record in the Market dimension table.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m188e7294-0c22-1000-8ce6-0af502b10000" name="N6  Channel Name" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab59d-07d6-0000-714b-e31d00000000">
+</PresentationColumn>
+<PresentationColumn mdsid="m188e7295-0c22-1000-8ce6-0af502b10000" name="N6k  Channel Key" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab59c-07d6-0000-714b-e31d00000000">
+</PresentationColumn>
+<PresentationColumn mdsid="m188e7297-0c22-1000-8ce6-0af502b10000" name="N8  Chnl-Office Weight" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cb3817-07d6-0000-714b-e31d00000000">
+</PresentationColumn>
+<PresentationColumn mdsid="m188e7291-0c22-1000-8ce6-0af502b10000" name="N2  Department" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab598-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help : 
+Stores the market area description.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m188e7292-0c22-1000-8ce6-0af502b10000" name="N3  Organization" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab599-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help : 
+Stores the market district description.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m188e7293-0c22-1000-8ce6-0af502b10000" name="N4  Company" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab59a-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help : 
+Stores the market region description.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m1880b6f1-0c22-1000-8ce6-0af502b10000" name="71  Bridge Weighted Revenue (M:M)" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cdbf56-07d6-0000-714b-e31d00000000">
+</PresentationColumn>
+</PresentationTable>

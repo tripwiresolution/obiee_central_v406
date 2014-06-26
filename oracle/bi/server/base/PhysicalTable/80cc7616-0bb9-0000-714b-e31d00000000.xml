@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cc7616-0bb9-0000-714b-e31d00000000" name="F92 Report Comments" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" x="223" y="414" rowCount="2.0" lastUpdated="2014-04-02 04:18:00" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cc5a07-0bb9-0000-714b-e31d00000000.xml#m80cc5a07-0bb9-0000-714b-e31d00000000">
+<PhysicalColumn mdsid="m80cc7617-0bbb-0000-714b-e31d00000000" name="COMMENTARY" dataType="VARCHAR" precision="4000" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cc5a07-0bb9-0000-714b-e31d00000000.xml#m80cc5a08-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc7618-0bbb-0000-714b-e31d00000000" name="COMMENT_ID" dataType="DOUBLE" precision="15" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cc5a07-0bb9-0000-714b-e31d00000000.xml#m80cc5a09-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc7619-0bbb-0000-714b-e31d00000000" name="DAY_KEY" dataType="DOUBLE" precision="15" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cc5a07-0bb9-0000-714b-e31d00000000.xml#m80cc5a0a-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc761a-0bbb-0000-714b-e31d00000000" name="LOB_KEY" dataType="INT" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cc5a07-0bb9-0000-714b-e31d00000000.xml#m80cc5a0b-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc761b-0bbb-0000-714b-e31d00000000" name="EMPL_KEY" dataType="DOUBLE" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cc5a07-0bb9-0000-714b-e31d00000000.xml#m80cc5a0c-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="m80cc761f-0bbe-0000-714b-e31d00000000" name="F92 Report Comments_FKey#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb681d-0bb9-0000-714b-e31d00000000.xml#m80cb6ae7-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cc761f-0bbe-0000-714b-e31d00000000-m80cc7619-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc7616-0bb9-0000-714b-e31d00000000.xml#m80cc7619-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cc7620-0bbe-0000-714b-e31d00000000" name="F92 Report Comments_FKey#2" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb682d-0bb9-0000-714b-e31d00000000.xml#m80cb6af5-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cc7620-0bbe-0000-714b-e31d00000000-m80cc761b-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc7616-0bb9-0000-714b-e31d00000000.xml#m80cc761b-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m4f14c571-0c23-1000-a028-0af502b10000" name="F92 Report Comments_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb6822-0bb9-0000-714b-e31d00000000.xml#m4f1c3f80-0c23-1000-a028-0af502b10000">
+<RefColumns>
+<RefColumn refId="m4f14c571-0c23-1000-a028-0af502b10000-m80cc761a-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc7616-0bb9-0000-714b-e31d00000000.xml#m80cc761a-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cc432a-07f3-0000-714b-e31d00000000" name="3 Dim Activities" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="337" y="386" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cc4320-07d0-0000-714b-e31d00000000.xml#m80cc4320-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cc4353-07d6-0000-714b-e31d00000000" name="Activity Id" isWriteable="false">
+<AttrDefn mdsid="m80cc44ca-0f3c-0000-714b-e31d00000000" name="AD_3900:872311285346076">
+<Expr mdsid="m00000001-01f4-0000-2882-1d7d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X3 - BPM Data (ORCL)".""."BISAMPLE"."3 Dim Activities"."ACTIVITYID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-2882-1d7d00000000-m80cc4403-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43e0-0bb9-0000-714b-e31d00000000.xml#m80cc4403-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc4354-07d6-0000-714b-e31d00000000" name="Activity Label" isWriteable="false">
+<AttrDefn mdsid="m80cc44cb-0f3c-0000-714b-e31d00000000" name="AD_3900:872321285346076">
+<Expr mdsid="m00000002-01f4-0000-0e4a-c8d300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X3 - BPM Data (ORCL)".""."BISAMPLE"."3 Dim Activities"."LABEL"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-0e4a-c8d300000000-m80cc4406-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43e0-0bb9-0000-714b-e31d00000000.xml#m80cc4406-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc4355-07d6-0000-714b-e31d00000000" name="Activity Name" isWriteable="false">
+<AttrDefn mdsid="m80cc44cc-0f3c-0000-714b-e31d00000000" name="AD_3900:872331285346076">
+<Expr mdsid="m00000003-01f4-0000-9dcf-025b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X3 - BPM Data (ORCL)".""."BISAMPLE"."3 Dim Activities"."ACTIVITYNAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-9dcf-025b00000000-m80cc4404-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43e0-0bb9-0000-714b-e31d00000000.xml#m80cc4404-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc4356-07d6-0000-714b-e31d00000000" name="Activity Type" isWriteable="false">
+<AttrDefn mdsid="m80cc44cd-0f3c-0000-714b-e31d00000000" name="AD_3900:872341285346076">
+<Expr mdsid="m00000004-01f4-0000-5c35-e7b900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X3 - BPM Data (ORCL)".""."BISAMPLE"."3 Dim Activities"."ACTIVITYTYPE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-5c35-e7b900000000-m80cc4405-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43e0-0bb9-0000-714b-e31d00000000.xml#m80cc4405-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc4357-07d6-0000-714b-e31d00000000" name="Process Id" isWriteable="false">
+<AttrDefn mdsid="m80cc44ce-0f3c-0000-714b-e31d00000000" name="AD_3900:872351285346076">
+<Expr mdsid="m00000005-01f4-0000-b8df-a3e500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X3 - BPM Data (ORCL)".""."BISAMPLE"."3 Dim Activities"."PROCESSID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-b8df-a3e500000000-m80cc4407-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43e0-0bb9-0000-714b-e31d00000000.xml#m80cc4407-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cc43cf-07d8-0000-714b-e31d00000000" name="Primary" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cc43cf-07d8-0000-714b-e31d00000000-m80cc4353-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc432a-07f3-0000-714b-e31d00000000.xml#m80cc4353-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cc43cf-07d8-0000-714b-e31d00000000-m80cc4357-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc432a-07f3-0000-714b-e31d00000000.xml#m80cc4357-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cc432a-07f3-0000-714b-e31d00000000-m80cc4505-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cc4505-07f5-0000-714b-e31d00000000.xml#m80cc4505-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0d5ad-0ca8-1000-90a3-0af502b50000" name="Dim - Agents" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd5-0ca8-1000-90a3-0af502b50000.xml#m82f0acd5-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0d5ae-0ca8-1000-90a3-0af502b50000" name="Agent Name" isWriteable="false">
+<AttrDefn mdsid="m82f28232-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757391391789375">
+<Expr mdsid="m00000001-01f4-0000-dc04-84a900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_AGENTS_DIM"."COLLECTOR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-dc04-84a900000000-m82dde874-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde872-0ca8-1000-90a3-0af502b50000.xml#m82dde874-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m82f233cd-0ca8-1000-90a3-0af502b50000" name="AGENTS_D_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f233cd-0ca8-1000-90a3-0af502b50000-m82f0d5ae-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d5ad-0ca8-1000-90a3-0af502b50000.xml#m82f0d5ae-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0d5ad-0ca8-1000-90a3-0af502b50000-m82f2f6eb-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f2f6eb-0ca8-1000-90a3-0af502b50000.xml#m82f2f6eb-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

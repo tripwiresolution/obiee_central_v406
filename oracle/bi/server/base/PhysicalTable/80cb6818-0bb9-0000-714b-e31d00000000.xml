@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cb6818-0bb9-0000-714b-e31d00000000" name="SAMP_TARGETS_F" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" x="260" y="1552" uri="VALUEOF(BI_EE_HOME)/sample/SampleAppFiles/Data/SAMP_TARGETS_F.xml" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000">
+<Description><![CDATA[Targets fact table. Stores the target facts information at Month, Office and Product grain.]]></Description>
+<PhysicalColumn mdsid="m80cb68dd-0bbb-0000-714b-e31d00000000" name="Revenue" iconIndex="32768" dataType="DOUBLE" specialType="none">
+<Description><![CDATA[Revenue: Stores the target revenue information as a double.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb68de-0bbb-0000-714b-e31d00000000" name="Prod_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Product Key: Joins to Prod_Key of Products dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb68df-0bbb-0000-714b-e31d00000000" name="Office_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Office Key: Joins to te Office_Key of Offices dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb68e0-0bbb-0000-714b-e31d00000000" name="Units" iconIndex="32768" dataType="DOUBLE" specialType="none">
+<Description><![CDATA[Units: Stores the target units information as an integer.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb68e1-0bbb-0000-714b-e31d00000000" name="Bill_Mth_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Bill Month Key: Joins the Mth_Key of Time dimension table (Mth grain).]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb68e3-0bbb-0000-714b-e31d00000000" name="Bill_Qtr_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Bill Quarter Key: Joins to Qtr_Key of Time dimension table (Qtr grain).]]></Description>
+</PhysicalColumn>
+</PhysicalTable>

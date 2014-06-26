@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m82f0d3f5-0ca8-1000-90a3-0af502b50000" name="PolicyHolderRegion" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="false" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/82f0d3f5-0ca8-1000-90a3-0af502b50000.xml#m82f19832-0ca8-1000-90a3-0af502b50000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd8-0ca8-1000-90a3-0af502b50000.xml#m82f0acd8-0ca8-1000-90a3-0af502b50000">
+<LogicalLevel mdsid="m82f19832-0ca8-1000-90a3-0af502b50000" name="Total Country" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;Total Country&apos;">
+<LogicalKey mdsid="m82f23401-0ca8-1000-90a3-0af502b50000" name="Country" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f23401-0ca8-1000-90a3-0af502b50000-m82f0fb89-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0fb86-0ca8-1000-90a3-0af502b50000.xml#m82f0fb89-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m82f19832-0ca8-1000-90a3-0af502b50000_m82f19833-0ca8-1000-90a3-0af502b50000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/82f0d3f5-0ca8-1000-90a3-0af502b50000.xml#m82f19833-0ca8-1000-90a3-0af502b50000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m82f19832-0ca8-1000-90a3-0af502b50000-m82f0fb89-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0fb86-0ca8-1000-90a3-0af502b50000.xml#m82f0fb89-0ca8-1000-90a3-0af502b50000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m82f19833-0ca8-1000-90a3-0af502b50000" name="City" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;City&apos;">
+<LogicalKey mdsid="m82f23402-0ca8-1000-90a3-0af502b50000" name="City" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f23402-0ca8-1000-90a3-0af502b50000-m82f0fb88-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0fb86-0ca8-1000-90a3-0af502b50000.xml#m82f0fb88-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m82f19833-0ca8-1000-90a3-0af502b50000-m82f0fb88-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0fb86-0ca8-1000-90a3-0af502b50000.xml#m82f0fb88-0ca8-1000-90a3-0af502b50000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

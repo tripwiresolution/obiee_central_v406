@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m7d74b4db-0cbe-1000-ba67-0ae9166e0000" name="Fact - Association Rule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/7d74b4c0-0cbe-1000-ba67-0ae9166e0000.xml#m7d74b4c0-0cbe-1000-ba67-0ae9166e0000">
+<LogicalColumn mdsid="m7d74b4dc-0cbe-1000-ba67-0ae9166e0000" name="Antecedent Support" isWriteable="false">
+<MeasureDefn mdsid="m7d74b52d-0cbe-1000-ba67-0ae9166e0000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m7d74b544-0cbe-1000-ba67-0ae9166e0000" name="AggRule_2050:2804741401228812" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-a186-3b4500000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("11 - OAA Integration"."Fact - Association Rule"."Antecedent Support")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-a186-3b4500000000-m7d74b4dc-0cbe-1000-ba67-0ae9166e0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/7d74b4db-0cbe-1000-ba67-0ae9166e0000.xml#m7d74b4dc-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m7d74b598-0cbe-1000-ba67-0ae9166e0000" name="AD_3900:2805581401228812">
+<Expr mdsid="m00000002-01f4-0000-dce6-64b600000000" name="Expr">
+<ExprText><![CDATA["%1" * 100]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D91 Associantion Rules"."ANTECEDENT_SUPPORT" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-dce6-64b600000000-m7d726ae0-0cbe-1000-ba67-0ae9166e0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/7d726ad2-0cbe-1000-ba67-0ae9166e0000.xml#m7d726ae0-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m7d74b4dd-0cbe-1000-ba67-0ae9166e0000" name="Consequent Support" isWriteable="false">
+<MeasureDefn mdsid="m7d74b52e-0cbe-1000-ba67-0ae9166e0000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m7d74b545-0cbe-1000-ba67-0ae9166e0000" name="AggRule_2050:2804751401228812" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-5fbb-874100000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("11 - OAA Integration"."Fact - Association Rule"."Consequent Support")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-5fbb-874100000000-m7d74b4dd-0cbe-1000-ba67-0ae9166e0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/7d74b4db-0cbe-1000-ba67-0ae9166e0000.xml#m7d74b4dd-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m7d74b599-0cbe-1000-ba67-0ae9166e0000" name="AD_3900:2805591401228812">
+<Expr mdsid="m00000004-01f4-0000-c3b1-315900000000" name="Expr">
+<ExprText><![CDATA["%1"* 100]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D91 Associantion Rules"."CONSEQUENT_SUPPORT"* 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-c3b1-315900000000-m7d726ae8-0cbe-1000-ba67-0ae9166e0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/7d726ad2-0cbe-1000-ba67-0ae9166e0000.xml#m7d726ae8-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m7d74b4de-0cbe-1000-ba67-0ae9166e0000" name="Number Of Items" isWriteable="false">
+<MeasureDefn mdsid="m7d74b52f-0cbe-1000-ba67-0ae9166e0000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m7d74b546-0cbe-1000-ba67-0ae9166e0000" name="AggRule_2050:2804761401228812" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-71b1-c8db00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("11 - OAA Integration"."Fact - Association Rule"."Number Of Items")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-71b1-c8db00000000-m7d74b4de-0cbe-1000-ba67-0ae9166e0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/7d74b4db-0cbe-1000-ba67-0ae9166e0000.xml#m7d74b4de-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m7d74b59a-0cbe-1000-ba67-0ae9166e0000" name="AD_3900:2805601401228812">
+<Expr mdsid="m00000006-01f4-0000-2d81-c9c000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D91 Associantion Rules"."NUMBER_OF_ITEMS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-2d81-c9c000000000-m7d726af1-0cbe-1000-ba67-0ae9166e0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/7d726ad2-0cbe-1000-ba67-0ae9166e0000.xml#m7d726af1-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m7d74b4df-0cbe-1000-ba67-0ae9166e0000" name="Rule Confidence" isWriteable="false">
+<MeasureDefn mdsid="m7d74b530-0cbe-1000-ba67-0ae9166e0000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m7d74b547-0cbe-1000-ba67-0ae9166e0000" name="AggRule_2050:2804771401228812" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-f7c1-229100000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("11 - OAA Integration"."Fact - Association Rule"."Rule Confidence")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-f7c1-229100000000-m7d74b4df-0cbe-1000-ba67-0ae9166e0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/7d74b4db-0cbe-1000-ba67-0ae9166e0000.xml#m7d74b4df-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m7d74b59b-0cbe-1000-ba67-0ae9166e0000" name="AD_3900:2805611401228812">
+<Expr mdsid="m00000008-01f4-0000-6c9f-f1ff00000000" name="Expr">
+<ExprText><![CDATA["%1"* 100]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D91 Associantion Rules"."RULE_CONFIDENCE"* 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-6c9f-f1ff00000000-m7d726af3-0cbe-1000-ba67-0ae9166e0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/7d726ad2-0cbe-1000-ba67-0ae9166e0000.xml#m7d726af3-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m7d74b4e0-0cbe-1000-ba67-0ae9166e0000" name="Rule Lift" isWriteable="false">
+<MeasureDefn mdsid="m7d74b531-0cbe-1000-ba67-0ae9166e0000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m7d74b548-0cbe-1000-ba67-0ae9166e0000" name="AggRule_2050:2804781401228812" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-d2a7-98c000000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("11 - OAA Integration"."Fact - Association Rule"."Rule Lift")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-d2a7-98c000000000-m7d74b4e0-0cbe-1000-ba67-0ae9166e0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/7d74b4db-0cbe-1000-ba67-0ae9166e0000.xml#m7d74b4e0-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m7d74b59c-0cbe-1000-ba67-0ae9166e0000" name="AD_3900:2805621401228812">
+<Expr mdsid="m0000000a-01f4-0000-f11d-cd8100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D91 Associantion Rules"."RULE_LIFT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-f11d-cd8100000000-m7d726af5-0cbe-1000-ba67-0ae9166e0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/7d726ad2-0cbe-1000-ba67-0ae9166e0000.xml#m7d726af5-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m7d74b4e1-0cbe-1000-ba67-0ae9166e0000" name="Rule Support" isWriteable="false">
+<MeasureDefn mdsid="m7d74b532-0cbe-1000-ba67-0ae9166e0000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m7d74b549-0cbe-1000-ba67-0ae9166e0000" name="AggRule_2050:2804791401228812" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-2812-8b4300000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("11 - OAA Integration"."Fact - Association Rule"."Rule Support")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-2812-8b4300000000-m7d74b4e1-0cbe-1000-ba67-0ae9166e0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/7d74b4db-0cbe-1000-ba67-0ae9166e0000.xml#m7d74b4e1-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m7d74b59d-0cbe-1000-ba67-0ae9166e0000" name="AD_3900:2805631401228812">
+<Expr mdsid="m0000000c-01f4-0000-3ce7-910400000000" name="Expr">
+<ExprText><![CDATA["%1"* 100]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D91 Associantion Rules"."RULE_SUPPORT"* 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-3ce7-910400000000-m7d726af6-0cbe-1000-ba67-0ae9166e0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/7d726ad2-0cbe-1000-ba67-0ae9166e0000.xml#m7d726af6-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m7d74b4db-0cbe-1000-ba67-0ae9166e0000-m7d74b5d8-0cbe-1000-ba67-0ae9166e0000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/7d74b5d8-0cbe-1000-ba67-0ae9166e0000.xml#m7d74b5d8-0cbe-1000-ba67-0ae9166e0000"/>
+</RefTableSources>
+</LogicalTable>

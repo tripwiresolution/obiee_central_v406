@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m82dde8a9-0ca8-1000-90a3-0af502b50000" name="ADS_BI_PT_CONTRACT_DIM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/82ddc126-0ca8-1000-90a3-0af502b50000.xml#m82ddc126-0ca8-1000-90a3-0af502b50000">
+<Description><![CDATA[Old name W_CONTRACTS_DIM]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[ADS_BI_PT_CONTRACT_DIM]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m82dde8aa-0ca8-1000-90a3-0af502b50000" name="CONTRACT_DESCRIPTION" dataType="VARCHAR" precision="240" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8ab-0ca8-1000-90a3-0af502b50000" name="CONTRACT_NO" dataType="VARCHAR" precision="20" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8ac-0ca8-1000-90a3-0af502b50000" name="CONTRACT_TYPE" dataType="VARCHAR" precision="27" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8ad-0ca8-1000-90a3-0af502b50000" name="REVISION_NUM" dataType="INT" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8ae-0ca8-1000-90a3-0af502b50000" name="SUPPLIER" dataType="VARCHAR" precision="360" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8af-0ca8-1000-90a3-0af502b50000" name="CONTRACT_MANAGER" dataType="VARCHAR" precision="200" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8b0-0ca8-1000-90a3-0af502b50000" name="PROJECT_NUMBER" dataType="VARCHAR" precision="50" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m82de3640-0ca8-1000-90a3-0af502b50000" name="W_CONTRACTS_DIM_Key">
+<RefColumns>
+<RefColumn refId="m82de3640-0ca8-1000-90a3-0af502b50000-m82dde8ab-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82dde8a9-0ca8-1000-90a3-0af502b50000.xml#m82dde8ab-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

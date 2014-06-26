@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m139e4ae0-0ca8-1000-90a3-0af502b50000" name="Vehicleclaims Dummy" iconIndex="91" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/13878e90-0ca8-1000-90a3-0af502b50000.xml#m13878e90-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m139e4ae1-0ca8-1000-90a3-0af502b50000" name="CLAIM_YEAR" isWriteable="false">
+<AttrDefn mdsid="m139e4ae7-0ca8-1000-90a3-0af502b50000" name="AD_3900:2684131391614598">
+<Expr mdsid="m00000001-01f4-0000-f7f5-28d400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X9-EID (EQL)"."".""."Vehicleclaims"."CLAIM_YEAR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-f7f5-28d400000000-mebc99b50-0ca7-1000-89c9-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/eb2d8260-0ca7-1000-89c9-0af502b50000.xml#mebc99b50-0ca7-1000-89c9-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m139e4ae2-0ca8-1000-90a3-0af502b50000" name="pCLAIM_TOT_GLOBL_AMT" isWriteable="false">
+<AttrDefn mdsid="m139e4ae8-0ca8-1000-90a3-0af502b50000" name="AD_3900:2684141391614598">
+<Expr mdsid="m00000002-01f4-0000-7568-4f4a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X9-EID (EQL)"."".""."Vehicleclaims"."pCLAIM_TOT_GLOBL_AMT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-7568-4f4a00000000-mebc57ca0-0ca7-1000-89c9-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/eb2d8260-0ca7-1000-89c9-0af502b50000.xml#mebc57ca0-0ca7-1000-89c9-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m139e4ae3-0ca8-1000-90a3-0af502b50000" name="Commodity" isWriteable="false">
+<AttrDefn mdsid="m139e4ae9-0ca8-1000-90a3-0af502b50000" name="AD_3900:2684151391614598">
+<Expr mdsid="m00000003-01f4-0000-4c84-89a100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X9-EID (EQL)"."".""."Vehicleclaims"."Commodity"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-4c84-89a100000000-mebd2ea20-0ca7-1000-89c9-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/eb2d8260-0ca7-1000-89c9-0af502b50000.xml#mebd2ea20-0ca7-1000-89c9-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m139e4ae4-0ca8-1000-90a3-0af502b50000" name="Vehicle_Make" isWriteable="false">
+<AttrDefn mdsid="m139e4aea-0ca8-1000-90a3-0af502b50000" name="AD_3900:2684161391614598">
+<Expr mdsid="m00000004-01f4-0000-33ad-e40a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X9-EID (EQL)"."".""."Vehicleclaims"."Vehicle_Make"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-33ad-e40a00000000-mebcd92f0-0ca7-1000-89c9-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/eb2d8260-0ca7-1000-89c9-0af502b50000.xml#mebcd92f0-0ca7-1000-89c9-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m139e4ae5-0ca8-1000-90a3-0af502b50000" name="Vehicle_Model" isWriteable="false">
+<AttrDefn mdsid="m139e4aeb-0ca8-1000-90a3-0af502b50000" name="AD_3900:2684171391614598">
+<Expr mdsid="m00000005-01f4-0000-be8b-1d4700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X9-EID (EQL)"."".""."Vehicleclaims"."Vehicle_Model"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-be8b-1d4700000000-mebd0a030-0ca7-1000-89c9-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/eb2d8260-0ca7-1000-89c9-0af502b50000.xml#mebd0a030-0ca7-1000-89c9-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m1ad696f0-0ca8-1000-90a3-0af502b50000" name="Dummy_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m1ad696f0-0ca8-1000-90a3-0af502b50000-m139e4ae1-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/139e4ae0-0ca8-1000-90a3-0af502b50000.xml#m139e4ae1-0ca8-1000-90a3-0af502b50000"/>
+<RefLogicalColumn refId="m1ad696f0-0ca8-1000-90a3-0af502b50000-m139e4ae3-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/139e4ae0-0ca8-1000-90a3-0af502b50000.xml#m139e4ae3-0ca8-1000-90a3-0af502b50000"/>
+<RefLogicalColumn refId="m1ad696f0-0ca8-1000-90a3-0af502b50000-m139e4ae4-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/139e4ae0-0ca8-1000-90a3-0af502b50000.xml#m139e4ae4-0ca8-1000-90a3-0af502b50000"/>
+<RefLogicalColumn refId="m1ad696f0-0ca8-1000-90a3-0af502b50000-m139e4ae5-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/139e4ae0-0ca8-1000-90a3-0af502b50000.xml#m139e4ae5-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m139e4ae0-0ca8-1000-90a3-0af502b50000-m139e4aec-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/139e4aec-0ca8-1000-90a3-0af502b50000.xml#m139e4aec-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

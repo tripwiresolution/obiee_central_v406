@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PrivilegePackage mdsid="m80cc11a8-1071-0000-714b-e31d00000000" name="PrivPack_4209:787771276602632" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" userRef="/oracle/bi/server/base/User/80cc4898-05dd-0000-714b-e31d00000000.xml#m80cc4898-05dd-0000-714b-e31d00000000">
+<FilterMapping status="enable" objectTypeId="2035" objectRef="/oracle/bi/server/base/LogicalTable/80cab5a9-07f3-0000-714b-e31d00000000.xml#m80cab5a9-07f3-0000-714b-e31d00000000">
+<Expr mdsid="m00000001-01f4-0000-5d6f-8fc800000000" name="Expr">
+<ExprText><![CDATA[ ISDESCENDANT("%1",  VALUEOF(NQ_SESSION."%2")) OR "%3" =  CAST ( VALUEOF(NQ_SESSION."%2") AS INTEGER )
+]]></ExprText>
+<ExprTextDesc><![CDATA[ ISDESCENDANT("01 - Sample App"."H5 Sales Rep",  VALUEOF(NQ_SESSION."USER_HIER_ID")) OR "01 - Sample App"."D5 Sales Rep (Parent Child Hier)"."E0  Sales Rep Number" =  CAST ( VALUEOF(NQ_SESSION."USER_HIER_ID") AS INTEGER )
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-5d6f-8fc800000000-m80cab579-07e3-0000-714b-e31d00000000" objectRef="/oracle/bi/server/base/Dimension/80cab579-07e3-0000-714b-e31d00000000.xml#m80cab579-07e3-0000-714b-e31d00000000"/>
+<RefObject refId="m00000001-01f4-0000-5d6f-8fc800000000-m80cc114b-0bd7-0000-714b-e31d00000000" objectRef="/oracle/bi/server/base/Variable/80cc114b-0bd7-0000-714b-e31d00000000.xml#m80cc114b-0bd7-0000-714b-e31d00000000"/>
+<RefObject refId="m00000001-01f4-0000-5d6f-8fc800000000-m80cab648-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab647-07f3-0000-714b-e31d00000000.xml#m80cab648-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</FilterMapping>
+<FilterMapping status="enable" objectTypeId="2035" objectRef="/oracle/bi/server/base/LogicalTable/80cab5b6-07f3-0000-714b-e31d00000000.xml#m80cab5b6-07f3-0000-714b-e31d00000000">
+<Expr mdsid="m00000002-01f4-0000-3ece-9ab200000000" name="Expr">
+<ExprText><![CDATA[ ISDESCENDANT("%1",  VALUEOF(NQ_SESSION."%2")) OR "%3" =  CAST ( VALUEOF(NQ_SESSION."%2") AS INTEGER )
+]]></ExprText>
+<ExprTextDesc><![CDATA[ ISDESCENDANT("01 - Sample App"."H5 Sales Rep",  VALUEOF(NQ_SESSION."USER_HIER_ID")) OR "01 - Sample App"."D5 Sales Rep (Parent Child Hier)"."E0  Sales Rep Number" =  CAST ( VALUEOF(NQ_SESSION."USER_HIER_ID") AS INTEGER )
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-3ece-9ab200000000-m80cab579-07e3-0000-714b-e31d00000000" objectRef="/oracle/bi/server/base/Dimension/80cab579-07e3-0000-714b-e31d00000000.xml#m80cab579-07e3-0000-714b-e31d00000000"/>
+<RefObject refId="m00000002-01f4-0000-3ece-9ab200000000-m80cc114b-0bd7-0000-714b-e31d00000000" objectRef="/oracle/bi/server/base/Variable/80cc114b-0bd7-0000-714b-e31d00000000.xml#m80cc114b-0bd7-0000-714b-e31d00000000"/>
+<RefObject refId="m00000002-01f4-0000-3ece-9ab200000000-m80cab648-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab647-07f3-0000-714b-e31d00000000.xml#m80cab648-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</FilterMapping>
+<FilterMapping status="enable" objectTypeId="2035" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d5-07f3-0000-714b-e31d00000000">
+<Expr mdsid="m00000003-01f4-0000-91ab-855700000000" name="Expr">
+<ExprText><![CDATA[ ISDESCENDANT("%1",  VALUEOF(NQ_SESSION."%2")) OR "%3" =  CAST ( VALUEOF(NQ_SESSION."%2") AS INTEGER )
+]]></ExprText>
+<ExprTextDesc><![CDATA[ ISDESCENDANT("01 - Sample App"."H5 Sales Rep",  VALUEOF(NQ_SESSION."USER_HIER_ID")) OR "01 - Sample App"."D5 Sales Rep (Parent Child Hier)"."E0  Sales Rep Number" =  CAST ( VALUEOF(NQ_SESSION."USER_HIER_ID") AS INTEGER )
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-91ab-855700000000-m80cab579-07e3-0000-714b-e31d00000000" objectRef="/oracle/bi/server/base/Dimension/80cab579-07e3-0000-714b-e31d00000000.xml#m80cab579-07e3-0000-714b-e31d00000000"/>
+<RefObject refId="m00000003-01f4-0000-91ab-855700000000-m80cc114b-0bd7-0000-714b-e31d00000000" objectRef="/oracle/bi/server/base/Variable/80cc114b-0bd7-0000-714b-e31d00000000.xml#m80cc114b-0bd7-0000-714b-e31d00000000"/>
+<RefObject refId="m00000003-01f4-0000-91ab-855700000000-m80cab648-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab647-07f3-0000-714b-e31d00000000.xml#m80cab648-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</FilterMapping>
+<FilterMapping status="enable" objectTypeId="2035" objectRef="/oracle/bi/server/base/LogicalTable/80cab629-07f3-0000-714b-e31d00000000.xml#m80cab629-07f3-0000-714b-e31d00000000">
+<Expr mdsid="m00000004-01f4-0000-4c0c-e01400000000" name="Expr">
+<ExprText><![CDATA[ ISDESCENDANT("%1",  VALUEOF(NQ_SESSION."%2")) OR "%3" =  CAST ( VALUEOF(NQ_SESSION."%2") AS INTEGER )
+]]></ExprText>
+<ExprTextDesc><![CDATA[ ISDESCENDANT("01 - Sample App"."H5 Sales Rep",  VALUEOF(NQ_SESSION."USER_HIER_ID")) OR "01 - Sample App"."D5 Sales Rep (Parent Child Hier)"."E0  Sales Rep Number" =  CAST ( VALUEOF(NQ_SESSION."USER_HIER_ID") AS INTEGER )
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-4c0c-e01400000000-m80cab579-07e3-0000-714b-e31d00000000" objectRef="/oracle/bi/server/base/Dimension/80cab579-07e3-0000-714b-e31d00000000.xml#m80cab579-07e3-0000-714b-e31d00000000"/>
+<RefObject refId="m00000004-01f4-0000-4c0c-e01400000000-m80cc114b-0bd7-0000-714b-e31d00000000" objectRef="/oracle/bi/server/base/Variable/80cc114b-0bd7-0000-714b-e31d00000000.xml#m80cc114b-0bd7-0000-714b-e31d00000000"/>
+<RefObject refId="m00000004-01f4-0000-4c0c-e01400000000-m80cab648-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab647-07f3-0000-714b-e31d00000000.xml#m80cab648-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</FilterMapping>
+<FilterMapping status="enable" objectTypeId="2035" objectRef="/oracle/bi/server/base/LogicalTable/80cab647-07f3-0000-714b-e31d00000000.xml#m80cab647-07f3-0000-714b-e31d00000000">
+<Expr mdsid="m00000005-01f4-0000-3805-ea0400000000" name="Expr">
+<ExprText><![CDATA[ ISDESCENDANT("%1",  VALUEOF(NQ_SESSION."%2")) OR "%3" =  CAST ( VALUEOF(NQ_SESSION."%2") AS INTEGER )
+]]></ExprText>
+<ExprTextDesc><![CDATA[ ISDESCENDANT("01 - Sample App"."H5 Sales Rep",  VALUEOF(NQ_SESSION."USER_HIER_ID")) OR "01 - Sample App"."D5 Sales Rep (Parent Child Hier)"."E0  Sales Rep Number" =  CAST ( VALUEOF(NQ_SESSION."USER_HIER_ID") AS INTEGER )
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-3805-ea0400000000-m80cab579-07e3-0000-714b-e31d00000000" objectRef="/oracle/bi/server/base/Dimension/80cab579-07e3-0000-714b-e31d00000000.xml#m80cab579-07e3-0000-714b-e31d00000000"/>
+<RefObject refId="m00000005-01f4-0000-3805-ea0400000000-m80cc114b-0bd7-0000-714b-e31d00000000" objectRef="/oracle/bi/server/base/Variable/80cc114b-0bd7-0000-714b-e31d00000000.xml#m80cc114b-0bd7-0000-714b-e31d00000000"/>
+<RefObject refId="m00000005-01f4-0000-3805-ea0400000000-m80cab648-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab647-07f3-0000-714b-e31d00000000.xml#m80cab648-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</FilterMapping>
+<FilterMapping status="enable" objectTypeId="2035" objectRef="/oracle/bi/server/base/LogicalTable/80cb35a8-07f3-0000-714b-e31d00000000.xml#m80cb35a8-07f3-0000-714b-e31d00000000">
+<Expr mdsid="m00000006-01f4-0000-6945-af2300000000" name="Expr">
+<ExprText><![CDATA[ ISDESCENDANT("%1",  VALUEOF(NQ_SESSION."%2")) OR "%3" =  CAST ( VALUEOF(NQ_SESSION."%2") AS INTEGER )
+]]></ExprText>
+<ExprTextDesc><![CDATA[ ISDESCENDANT("01 - Sample App"."H5 Sales Rep",  VALUEOF(NQ_SESSION."USER_HIER_ID")) OR "01 - Sample App"."D5 Sales Rep (Parent Child Hier)"."E0  Sales Rep Number" =  CAST ( VALUEOF(NQ_SESSION."USER_HIER_ID") AS INTEGER )
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-6945-af2300000000-m80cab579-07e3-0000-714b-e31d00000000" objectRef="/oracle/bi/server/base/Dimension/80cab579-07e3-0000-714b-e31d00000000.xml#m80cab579-07e3-0000-714b-e31d00000000"/>
+<RefObject refId="m00000006-01f4-0000-6945-af2300000000-m80cc114b-0bd7-0000-714b-e31d00000000" objectRef="/oracle/bi/server/base/Variable/80cc114b-0bd7-0000-714b-e31d00000000.xml#m80cc114b-0bd7-0000-714b-e31d00000000"/>
+<RefObject refId="m00000006-01f4-0000-6945-af2300000000-m80cab648-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab647-07f3-0000-714b-e31d00000000.xml#m80cab648-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</FilterMapping>
+</PrivilegePackage>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m80cc450e-07f5-0000-714b-e31d00000000" name="Facts ActiveTasks" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/80cc432f-07f3-0000-714b-e31d00000000.xml#m80cc432f-07f3-0000-714b-e31d00000000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-a015-6a7500000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X3 - Bus Process Monitoring (BPM)"."5 Dim Process Instances"."Process Id"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-a015-6a7500000000-m80cc437b-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cc432f-07f3-0000-714b-e31d00000000.xml#m80cc437b-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-4d6e-618e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X3 - BPM Data (ORCL)".""."BISAMPLE"."5 Facts ActiveTasks"."PROCESS_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-4d6e-618e00000000-m80cc43f2-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43d7-0bb9-0000-714b-e31d00000000.xml#m80cc43f2-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-dbeb-58c500000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X3 - Bus Process Monitoring (BPM)"."5 Dim Process Instances"."Process Instance"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-dbeb-58c500000000-m80cc437d-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cc432f-07f3-0000-714b-e31d00000000.xml#m80cc437d-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-6aee-04ed00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X3 - BPM Data (ORCL)".""."BISAMPLE"."5 Facts ActiveTasks"."PROCESS_INSTANCE_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-6aee-04ed00000000-m80cc43f3-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43d7-0bb9-0000-714b-e31d00000000.xml#m80cc43f3-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-0ac7-461b00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X3 - Bus Process Monitoring (BPM)"."5 Dim Process Instances"."Instance Start Time"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-0ac7-461b00000000-m80cc437e-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cc432f-07f3-0000-714b-e31d00000000.xml#m80cc437e-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-381e-1b1700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X3 - BPM Data (ORCL)".""."BISAMPLE"."5 Facts ActiveTasks"."PROCESS_START_TIME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-381e-1b1700000000-m80cc43f6-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43d7-0bb9-0000-714b-e31d00000000.xml#m80cc43f6-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000007-01f4-0000-2255-04d300000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X3 - Bus Process Monitoring (BPM)"."5 Dim Process Instances"."Date Instance Started"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-2255-04d300000000-m80cc4382-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cc432f-07f3-0000-714b-e31d00000000.xml#m80cc4382-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000008-01f4-0000-3aea-ab1900000000" name="Expr">
+<ExprText><![CDATA[cast("%1" as date)
+]]></ExprText>
+<ExprTextDesc><![CDATA[cast("X3 - BPM Data (ORCL)".""."BISAMPLE"."5 Facts ActiveTasks"."PROCESS_START_TIME" as date)
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-3aea-ab1900000000-m80cc43f6-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43d7-0bb9-0000-714b-e31d00000000.xml#m80cc43f6-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/80cc43d7-0bb9-0000-714b-e31d00000000.xml#m80cc43d7-0bb9-0000-714b-e31d00000000">
+</Link>
+<WhereClause mdsid="m00000009-01f4-0000-cbaf-c14100000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m0000000a-01f4-0000-057d-f08f00000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("X3 - Bus Process Monitoring (BPM)"."5 Proc Instances"."Instance Details")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-057d-f08f00000000-m80cc43af-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cc4325-07e3-0000-714b-e31d00000000.xml#m80cc43af-07e9-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m0000000b-01f4-0000-170a-30f900000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

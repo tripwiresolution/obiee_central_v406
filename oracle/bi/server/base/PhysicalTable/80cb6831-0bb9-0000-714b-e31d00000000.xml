@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cb6831-0bb9-0000-714b-e31d00000000" name="D55 Sales Rep (PC Hier - Childs)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" x="1702" y="332" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cb680b-0bb9-0000-714b-e31d00000000.xml#m80cb680b-0bb9-0000-714b-e31d00000000">
+<Description><![CDATA[ZZZ - Not yet filled]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SAMP_EMPL_D_VH]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cb69c3-0bbb-0000-714b-e31d00000000" name="Mgr_Id" dataType="INT" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb680b-0bb9-0000-714b-e31d00000000.xml#m80cb6882-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Manager Id: Stores manager id as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb69c4-0bbb-0000-714b-e31d00000000" name="Empl_Name" dataType="VARCHAR" precision="255" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb680b-0bb9-0000-714b-e31d00000000.xml#m80cb6883-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Employee Name: Stores employee name as a text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb69c5-0bbb-0000-714b-e31d00000000" name="Employee_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb680b-0bb9-0000-714b-e31d00000000.xml#m80cb6884-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Employee Key: Surrogate key of the employee dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb69c6-0bbb-0000-714b-e31d00000000" name="Postn_Key" dataType="DOUBLE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb680b-0bb9-0000-714b-e31d00000000.xml#m80cb6885-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Position Key: Joins to Postn_key in employee position dimension table]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb69c7-0bbb-0000-714b-e31d00000000" name="Hire_Dt" dataType="DATETIME" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb680b-0bb9-0000-714b-e31d00000000.xml#m80cb6886-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Hire Date: Stores employee hire date information in date format]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb69c8-0bbb-0000-714b-e31d00000000" name="Type" dataType="VARCHAR" precision="20" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb680b-0bb9-0000-714b-e31d00000000.xml#m80cb6887-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Type: Stores employee type information as text]]></Description>
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cb6afa-0bc0-0000-714b-e31d00000000" name="A061 Employee (Parent-Child)_Key">
+<RefColumns>
+<RefColumn refId="m80cb6afa-0bc0-0000-714b-e31d00000000-m80cb69c5-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6831-0bb9-0000-714b-e31d00000000.xml#m80cb69c5-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="m80cb6afb-0bc0-0000-714b-e31d00000000" name="D30 Sales Rep (Parent Child Hierarchy)_Key">
+<RefColumns>
+<RefColumn refId="m80cb6afb-0bc0-0000-714b-e31d00000000-m80cb69c3-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6831-0bb9-0000-714b-e31d00000000.xml#m80cb69c3-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m80cc116b-0bbe-0000-714b-e31d00000000" name="D55 Sales Rep (PC Hier - Childs)_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb682c-0bb9-0000-714b-e31d00000000.xml#m80cb6af3-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cc116b-0bbe-0000-714b-e31d00000000-m80cb69c3-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6831-0bb9-0000-714b-e31d00000000.xml#m80cb69c3-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

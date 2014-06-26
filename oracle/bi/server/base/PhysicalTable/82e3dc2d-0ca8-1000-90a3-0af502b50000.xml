@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m82e3dc2d-0ca8-1000-90a3-0af502b50000" name="LOIC_COUNTRY" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" maxConn="0" containerRef="/oracle/bi/server/base/Schema/82e3b49b-0ca8-1000-90a3-0af502b50000.xml#m82e3b49b-0ca8-1000-90a3-0af502b50000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[LOIC_COUNTRY]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m82e3dc2e-0ca8-1000-90a3-0af502b50000" name="COUNTRY_ID" dataType="DOUBLE" precision="22" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dc2f-0ca8-1000-90a3-0af502b50000" name="COUNTRY_NAME" dataType="VARCHAR" precision="200" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dc30-0ca8-1000-90a3-0af502b50000" name="REGION_ID" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dc31-0ca8-1000-90a3-0af502b50000" name="REGION_NAME" dataType="VARCHAR" precision="200" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dc32-0ca8-1000-90a3-0af502b50000" name="CITY" dataType="VARCHAR" precision="200" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dc33-0ca8-1000-90a3-0af502b50000" name="GENERAL_REGION" dataType="VARCHAR" precision="200" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m82e429d4-0ca8-1000-90a3-0af502b50000" name="LOIC_COUNTRY_Key">
+<RefColumns>
+<RefColumn refId="m82e429d4-0ca8-1000-90a3-0af502b50000-m82e3dc2e-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3dc2d-0ca8-1000-90a3-0af502b50000.xml#m82e3dc2e-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

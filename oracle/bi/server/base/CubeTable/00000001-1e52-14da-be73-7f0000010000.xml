@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CubeTable mdsid="m00000001-1e52-14da-be73-7f0000010000" name="EXA_ESSB" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" extName="EXA_ESSB" isCacheable="false" cacheExpiry="86400" isSysGen="true" memberReference="Member_Name" isMemberAliasUnique="true" containerRef="/oracle/bi/server/base/PhysicalCatalog/00000000-1e52-14da-be73-7f0000010000.xml#m00000000-1e52-14da-be73-7f0000010000" aggrConnPoolRef="/oracle/bi/server/base/ConnectionPool/71c7c360-0c64-1000-8567-7f0000010000.xml#m71c7c360-0c64-1000-8567-7f0000010000">
+<Alias name="Default"/>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[EXA_ESSB]]></Value>
+</DBMapItem>
+<CubeColumn mdsid="m00000003-1e52-14da-be73-7f0000010000" name="H0 Time - default" extName="default" dataType="VARCHAR" precision="128" dimPropType="none">
+</CubeColumn>
+<CubeColumn mdsid="m00000004-1e52-14da-be73-7f0000010000" name="H0 Time  Root Indicator" extName="GEN_NUMBER" dataType="INT" dimPropType="genNumber">
+</CubeColumn>
+<CubeColumn mdsid="m00000005-1e52-14da-be73-7f0000010000" name="H0 Time  Leaf Indicator" extName="LEVEL_NUMBER" dataType="INT" dimPropType="levelNumber">
+</CubeColumn>
+<CubeColumn mdsid="m00000008-1e52-14da-be73-7f0000010000" name="Gen1,H0 Time" extName="Gen1,H0 Time" dataType="VARCHAR" precision="128" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000006-1e52-14da-be73-7f0000010000.xml#m00000007-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000009-1e52-14da-be73-7f0000010000" name="Gen1,H0 Time - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000006-1e52-14da-be73-7f0000010000.xml#m00000007-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m0000000a-1e52-14da-be73-7f0000010000" name="Gen1,H0 Time - Memnor" extName="Memnor" dataType="INT" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000006-1e52-14da-be73-7f0000010000.xml#m00000007-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m0000000c-1e52-14da-be73-7f0000010000" name="Year" extName="H0 Time - Year" dataType="VARCHAR" precision="4" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000006-1e52-14da-be73-7f0000010000.xml#m0000000b-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m0000000d-1e52-14da-be73-7f0000010000" name="Year - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000006-1e52-14da-be73-7f0000010000.xml#m0000000b-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m0000000e-1e52-14da-be73-7f0000010000" name="Year - Ancestor Ref" extName="Ancestor_Names" dataType="VARCHAR" precision="128" dimPropType="ancestorRef" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000006-1e52-14da-be73-7f0000010000.xml#m0000000b-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m0000000f-1e52-14da-be73-7f0000010000" name="Year - Memnor" extName="Memnor" dataType="INT" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000006-1e52-14da-be73-7f0000010000.xml#m0000000b-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000011-1e52-14da-be73-7f0000010000" name="Half" extName="H0 Time - Half" dataType="VARCHAR" precision="8" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000006-1e52-14da-be73-7f0000010000.xml#m00000010-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000012-1e52-14da-be73-7f0000010000" name="Half - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000006-1e52-14da-be73-7f0000010000.xml#m00000010-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000013-1e52-14da-be73-7f0000010000" name="Half - Ancestor Ref" extName="Ancestor_Names" dataType="VARCHAR" precision="128" dimPropType="ancestorRef" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000006-1e52-14da-be73-7f0000010000.xml#m00000010-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000014-1e52-14da-be73-7f0000010000" name="Half - Memnor" extName="Memnor" dataType="INT" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000006-1e52-14da-be73-7f0000010000.xml#m00000010-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000016-1e52-14da-be73-7f0000010000" name="Quarter" extName="H0 Time - Quarter" dataType="VARCHAR" precision="7" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000006-1e52-14da-be73-7f0000010000.xml#m00000015-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000017-1e52-14da-be73-7f0000010000" name="Quarter - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000006-1e52-14da-be73-7f0000010000.xml#m00000015-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000018-1e52-14da-be73-7f0000010000" name="Quarter - Ancestor Ref" extName="Ancestor_Names" dataType="VARCHAR" precision="128" dimPropType="ancestorRef" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000006-1e52-14da-be73-7f0000010000.xml#m00000015-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000019-1e52-14da-be73-7f0000010000" name="Quarter - Memnor" extName="Memnor" dataType="INT" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000006-1e52-14da-be73-7f0000010000.xml#m00000015-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m0000001b-1e52-14da-be73-7f0000010000" name="Month" extName="H0 Time - Month" dataType="VARCHAR" precision="9" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000006-1e52-14da-be73-7f0000010000.xml#m0000001a-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m0000001c-1e52-14da-be73-7f0000010000" name="Month - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000006-1e52-14da-be73-7f0000010000.xml#m0000001a-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m0000001d-1e52-14da-be73-7f0000010000" name="Month - Ancestor Ref" extName="Ancestor_Names" dataType="VARCHAR" precision="128" dimPropType="ancestorRef" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000006-1e52-14da-be73-7f0000010000.xml#m0000001a-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m0000001e-1e52-14da-be73-7f0000010000" name="Month - Memnor" extName="Memnor" dataType="INT" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000006-1e52-14da-be73-7f0000010000.xml#m0000001a-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000020-1e52-14da-be73-7f0000010000" name="H1 Products - default" extName="default" dataType="VARCHAR" precision="128" dimPropType="none">
+</CubeColumn>
+<CubeColumn mdsid="m00000021-1e52-14da-be73-7f0000010000" name="H1 Products  Root Indicator" extName="GEN_NUMBER" dataType="INT" dimPropType="genNumber">
+</CubeColumn>
+<CubeColumn mdsid="m00000022-1e52-14da-be73-7f0000010000" name="H1 Products  Leaf Indicator" extName="LEVEL_NUMBER" dataType="INT" dimPropType="levelNumber">
+</CubeColumn>
+<CubeColumn mdsid="m00000025-1e52-14da-be73-7f0000010000" name="Gen1,H1 Products" extName="Gen1,H1 Products" dataType="VARCHAR" precision="128" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000023-1e52-14da-be73-7f0000010000.xml#m00000024-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000026-1e52-14da-be73-7f0000010000" name="Gen1,H1 Products - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000023-1e52-14da-be73-7f0000010000.xml#m00000024-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000027-1e52-14da-be73-7f0000010000" name="Gen1,H1 Products - Memnor" extName="Memnor" dataType="INT" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000023-1e52-14da-be73-7f0000010000.xml#m00000024-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000029-1e52-14da-be73-7f0000010000" name="Products Brand" extName="H1 Products - Products Brand" dataType="VARCHAR" precision="25" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000023-1e52-14da-be73-7f0000010000.xml#m00000028-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m0000002a-1e52-14da-be73-7f0000010000" name="Products Brand - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000023-1e52-14da-be73-7f0000010000.xml#m00000028-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m0000002b-1e52-14da-be73-7f0000010000" name="Products Brand - Ancestor Ref" extName="Ancestor_Names" dataType="VARCHAR" precision="128" dimPropType="ancestorRef" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000023-1e52-14da-be73-7f0000010000.xml#m00000028-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m0000002c-1e52-14da-be73-7f0000010000" name="Products Brand - Memnor" extName="Memnor" dataType="INT" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000023-1e52-14da-be73-7f0000010000.xml#m00000028-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m0000002e-1e52-14da-be73-7f0000010000" name="Products LOB" extName="H1 Products - Products LOB" dataType="INT" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000023-1e52-14da-be73-7f0000010000.xml#m0000002d-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m0000002f-1e52-14da-be73-7f0000010000" name="Products LOB - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000023-1e52-14da-be73-7f0000010000.xml#m0000002d-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000030-1e52-14da-be73-7f0000010000" name="Products LOB - Ancestor Ref" extName="Ancestor_Names" dataType="VARCHAR" precision="128" dimPropType="ancestorRef" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000023-1e52-14da-be73-7f0000010000.xml#m0000002d-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000031-1e52-14da-be73-7f0000010000" name="Products LOB - Memnor" extName="Memnor" dataType="INT" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000023-1e52-14da-be73-7f0000010000.xml#m0000002d-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000033-1e52-14da-be73-7f0000010000" name="Products Type" extName="H1 Products - Products Type" dataType="VARCHAR" precision="25" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000023-1e52-14da-be73-7f0000010000.xml#m00000032-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000034-1e52-14da-be73-7f0000010000" name="Products Type - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000023-1e52-14da-be73-7f0000010000.xml#m00000032-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000035-1e52-14da-be73-7f0000010000" name="Products Type - Ancestor Ref" extName="Ancestor_Names" dataType="VARCHAR" precision="128" dimPropType="ancestorRef" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000023-1e52-14da-be73-7f0000010000.xml#m00000032-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000036-1e52-14da-be73-7f0000010000" name="Products Type - Memnor" extName="Memnor" dataType="INT" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000023-1e52-14da-be73-7f0000010000.xml#m00000032-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000038-1e52-14da-be73-7f0000010000" name="Products Detail" extName="H1 Products - Products Detail" dataType="INT" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000023-1e52-14da-be73-7f0000010000.xml#m00000037-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000039-1e52-14da-be73-7f0000010000" name="Products Detail - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000023-1e52-14da-be73-7f0000010000.xml#m00000037-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m0000003a-1e52-14da-be73-7f0000010000" name="Products Detail - Ancestor Ref" extName="Ancestor_Names" dataType="VARCHAR" precision="128" dimPropType="ancestorRef" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000023-1e52-14da-be73-7f0000010000.xml#m00000037-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m0000003b-1e52-14da-be73-7f0000010000" name="Products Detail - Memnor" extName="Memnor" dataType="INT" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000023-1e52-14da-be73-7f0000010000.xml#m00000037-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m0000003d-1e52-14da-be73-7f0000010000" name="H3 Offices - default" extName="default" dataType="VARCHAR" precision="128" dimPropType="none">
+</CubeColumn>
+<CubeColumn mdsid="m0000003e-1e52-14da-be73-7f0000010000" name="H3 Offices  Root Indicator" extName="GEN_NUMBER" dataType="INT" dimPropType="genNumber">
+</CubeColumn>
+<CubeColumn mdsid="m0000003f-1e52-14da-be73-7f0000010000" name="H3 Offices  Leaf Indicator" extName="LEVEL_NUMBER" dataType="INT" dimPropType="levelNumber">
+</CubeColumn>
+<CubeColumn mdsid="m00000042-1e52-14da-be73-7f0000010000" name="Gen1,H3 Offices" extName="Gen1,H3 Offices" dataType="VARCHAR" precision="128" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000040-1e52-14da-be73-7f0000010000.xml#m00000041-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000043-1e52-14da-be73-7f0000010000" name="Gen1,H3 Offices - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000040-1e52-14da-be73-7f0000010000.xml#m00000041-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000044-1e52-14da-be73-7f0000010000" name="Gen1,H3 Offices - Memnor" extName="Memnor" dataType="INT" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000040-1e52-14da-be73-7f0000010000.xml#m00000041-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000046-1e52-14da-be73-7f0000010000" name="Offices Company" extName="H3 Offices - Offices Company" dataType="VARCHAR" precision="128" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000040-1e52-14da-be73-7f0000010000.xml#m00000045-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000047-1e52-14da-be73-7f0000010000" name="Offices Company - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000040-1e52-14da-be73-7f0000010000.xml#m00000045-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000048-1e52-14da-be73-7f0000010000" name="Offices Company - Ancestor Ref" extName="Ancestor_Names" dataType="VARCHAR" precision="128" dimPropType="ancestorRef" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000040-1e52-14da-be73-7f0000010000.xml#m00000045-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000049-1e52-14da-be73-7f0000010000" name="Offices Company - Memnor" extName="Memnor" dataType="INT" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000040-1e52-14da-be73-7f0000010000.xml#m00000045-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m0000004b-1e52-14da-be73-7f0000010000" name="Offices Organization" extName="H3 Offices - Offices Organization" dataType="VARCHAR" precision="128" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000040-1e52-14da-be73-7f0000010000.xml#m0000004a-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m0000004c-1e52-14da-be73-7f0000010000" name="Offices Organization - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000040-1e52-14da-be73-7f0000010000.xml#m0000004a-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m0000004d-1e52-14da-be73-7f0000010000" name="Offices Organization - Ancestor Ref" extName="Ancestor_Names" dataType="VARCHAR" precision="128" dimPropType="ancestorRef" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000040-1e52-14da-be73-7f0000010000.xml#m0000004a-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m0000004e-1e52-14da-be73-7f0000010000" name="Offices Organization - Memnor" extName="Memnor" dataType="INT" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000040-1e52-14da-be73-7f0000010000.xml#m0000004a-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000050-1e52-14da-be73-7f0000010000" name="Offices Department" extName="H3 Offices - Offices Department" dataType="VARCHAR" precision="128" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000040-1e52-14da-be73-7f0000010000.xml#m0000004f-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000051-1e52-14da-be73-7f0000010000" name="Offices Department - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000040-1e52-14da-be73-7f0000010000.xml#m0000004f-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000052-1e52-14da-be73-7f0000010000" name="Offices Department - Ancestor Ref" extName="Ancestor_Names" dataType="VARCHAR" precision="128" dimPropType="ancestorRef" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000040-1e52-14da-be73-7f0000010000.xml#m0000004f-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000053-1e52-14da-be73-7f0000010000" name="Offices Department - Memnor" extName="Memnor" dataType="INT" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000040-1e52-14da-be73-7f0000010000.xml#m0000004f-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000055-1e52-14da-be73-7f0000010000" name="Offices Detail" extName="H3 Offices - Offices Detail" dataType="INT" dimPropType="none" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000040-1e52-14da-be73-7f0000010000.xml#m00000054-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000056-1e52-14da-be73-7f0000010000" name="Offices Detail - Member Key" extName="MEMBER_UNIQUE_NAME" dataType="VARCHAR" precision="128" dimPropType="memberKey" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000040-1e52-14da-be73-7f0000010000.xml#m00000054-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000057-1e52-14da-be73-7f0000010000" name="Offices Detail - Ancestor Ref" extName="Ancestor_Names" dataType="VARCHAR" precision="128" dimPropType="ancestorRef" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000040-1e52-14da-be73-7f0000010000.xml#m00000054-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m00000058-1e52-14da-be73-7f0000010000" name="Offices Detail - Memnor" extName="Memnor" dataType="INT" dimPropType="memnor" physicalLevelRef="/oracle/bi/server/base/PhysicalHierarchy/00000040-1e52-14da-be73-7f0000010000.xml#m00000054-1e52-14da-be73-7f0000010000">
+</CubeColumn>
+<CubeColumn mdsid="m40000000-1e70-14da-be73-7f0000010000" name="1- Revenue" extName="1- Revenue" aggrType="sum" dataType="DOUBLE" precision="20" nullable="true" dimPropType="none">
+</CubeColumn>
+<CubeColumn mdsid="m40000001-1e70-14da-be73-7f0000010000" name="2- Billed Quantity" extName="2- Billed Quantity" aggrType="sum" dataType="INT" precision="12" nullable="true" dimPropType="none">
+</CubeColumn>
+<CubeColumn mdsid="m40000002-1e70-14da-be73-7f0000010000" name="3- Discount Amount" extName="3- Discount Amount" aggrType="sum" dataType="DOUBLE" precision="20" nullable="true" dimPropType="none">
+</CubeColumn>
+<CubeColumn mdsid="m40000003-1e70-14da-be73-7f0000010000" name="11- Fixed Costs" extName="11- Fixed Costs" aggrType="sum" dataType="DOUBLE" precision="20" nullable="true" dimPropType="none">
+</CubeColumn>
+</CubeTable>

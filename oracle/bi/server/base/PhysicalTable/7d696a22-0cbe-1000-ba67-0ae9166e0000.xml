@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m7d696a22-0cbe-1000-ba67-0ae9166e0000" name="ODM_CLUSTER_DETAILS_V" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000">
+<PhysicalColumn mdsid="m7d696a46-0cbe-1000-ba67-0ae9166e0000" name="ATTRIBUTE_NAME" dataType="VARCHAR" precision="4000" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m7d696a47-0cbe-1000-ba67-0ae9166e0000" name="CLUSTER_ID" dataType="VARCHAR" precision="4000" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m7d696a48-0cbe-1000-ba67-0ae9166e0000" name="ID" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m7d696a49-0cbe-1000-ba67-0ae9166e0000" name="MEAN" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m7d696a4a-0cbe-1000-ba67-0ae9166e0000" name="MODEL_NAME" dataType="VARCHAR" precision="128" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m7d696a4b-0cbe-1000-ba67-0ae9166e0000" name="MODE_VALUE" dataType="VARCHAR" precision="4000" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m7d696a4c-0cbe-1000-ba67-0ae9166e0000" name="OWNER" dataType="VARCHAR" precision="128" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m7d696a4d-0cbe-1000-ba67-0ae9166e0000" name="RECORD_COUNT" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m7d696a4e-0cbe-1000-ba67-0ae9166e0000" name="VARIANCE" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="m7d696a7a-0cbe-1000-ba67-0ae9166e0000" name="ODM_CLUSTER_DETAILS_V_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/7d696a20-0cbe-1000-ba67-0ae9166e0000.xml#m7d696a75-0cbe-1000-ba67-0ae9166e0000">
+<RefColumns>
+<RefColumn refId="m7d696a7a-0cbe-1000-ba67-0ae9166e0000-m7d696a4a-0cbe-1000-ba67-0ae9166e0000" columnRef="/oracle/bi/server/base/PhysicalTable/7d696a22-0cbe-1000-ba67-0ae9166e0000.xml#m7d696a4a-0cbe-1000-ba67-0ae9166e0000"/>
+<RefColumn refId="m7d696a7a-0cbe-1000-ba67-0ae9166e0000-m7d696a4c-0cbe-1000-ba67-0ae9166e0000" columnRef="/oracle/bi/server/base/PhysicalTable/7d696a22-0cbe-1000-ba67-0ae9166e0000.xml#m7d696a4c-0cbe-1000-ba67-0ae9166e0000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m82f31e0e-0ca8-1000-90a3-0af502b50000" name="LOIC_SOURCE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/82f0fc56-0ca8-1000-90a3-0af502b50000.xml#m82f0fc56-0ca8-1000-90a3-0af502b50000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-9caf-818a00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y02 - Demo HR Oracle EMEA"."Dim - Candidate Source"."Candidate Source"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-9caf-818a00000000-m82f0fc57-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc56-0ca8-1000-90a3-0af502b50000.xml#m82f0fc57-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-dabd-0a8e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_SOURCE"."SOURCE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-dabd-0a8e00000000-m82e3dc5f-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc5e-0ca8-1000-90a3-0af502b50000.xml#m82e3dc5f-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/82e3dc5e-0ca8-1000-90a3-0af502b50000.xml#m82e3dc5e-0ca8-1000-90a3-0af502b50000">
+</Link>
+<WhereClause mdsid="m00000003-01f4-0000-4b31-965800000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000004-01f4-0000-21c6-dc5000000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("Y02 - Demo HR Oracle EMEA"."Candidate Source"."Detail")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-21c6-dc5000000000-m82f19853-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0d403-0ca8-1000-90a3-0af502b50000.xml#m82f19853-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m00000005-01f4-0000-f010-f36100000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

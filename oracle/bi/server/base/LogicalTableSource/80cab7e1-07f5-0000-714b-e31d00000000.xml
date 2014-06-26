@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m80cab7e1-07f5-0000-714b-e31d00000000" name="LTS07 Rolling Rev. (Billed Time Join)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" canCombine="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d5-07f3-0000-714b-e31d00000000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-9f64-c00300000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F0 Sales Base Measures"."117  Unbound Rolling Rev  (Alias Based)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-9f64-c00300000000-m80cab5d7-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d7-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-9add-992000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F12 Rev. (Rolling)"."Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-9add-992000000000-m80cb6a2f-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb683c-0bb9-0000-714b-e31d00000000.xml#m80cb6a2f-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-a93a-598b00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F0 Sales Base Measures"."X10  Dim Julian Mth Number"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-a93a-598b00000000-m80cab5e4-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5e4-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-d59b-d2dd00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D04 Time Rolling Mth"."Julian_Month_Num"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-d59b-d2dd00000000-m80cb6971-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb6820-0bb9-0000-714b-e31d00000000.xml#m80cb6971-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-bf09-4a4300000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F0 Sales Base Measures"."X11  Fact Julian Mth Number"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-bf09-4a4300000000-m80cab5e5-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5e5-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-6d28-a8f100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F90 Facts Rolling Time Mth"."Julian_Month_Num"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-6d28-a8f100000000-m80cb6ab7-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb6847-0bb9-0000-714b-e31d00000000.xml#m80cb6ab7-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000007-01f4-0000-ae18-fadd00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F0 Sales Base Measures"."X03  Physical Fact Table Hit"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-ae18-fadd00000000-m5c480950-0c28-1000-accc-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m5c480950-0c28-1000-accc-0af502b10000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000008-01f4-0000-f072-5fbf00000000" name="Expr">
+<ExprText><![CDATA['SAMP_REVENUE_F']]></ExprText>
+<ExprTextDesc><![CDATA['SAMP_REVENUE_F']]></ExprTextDesc>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000009-01f4-0000-9e74-374b00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F0 Sales Base Measures"."X01  LTS Selected"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-9e74-374b00000000-m5d28cc62-0c28-1000-accc-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m5d28cc62-0c28-1000-accc-0af502b10000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000a-01f4-0000-1347-ea0c00000000" name="Expr">
+<ExprText><![CDATA['LTS07 Rolling Rev. (Billed Time Join)']]></ExprText>
+<ExprTextDesc><![CDATA['LTS07 Rolling Rev. (Billed Time Join)']]></ExprTextDesc>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000000b-01f4-0000-b874-8dbf00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F0 Sales Base Measures"."X02  Physical Fact Alias Hit"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-b874-8dbf00000000-m5d5f45b2-0c28-1000-accc-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m5d5f45b2-0c28-1000-accc-0af502b10000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000c-01f4-0000-d9c0-7ef700000000" name="Expr">
+<ExprText><![CDATA['F12 Rev. (Rolling)']]></ExprText>
+<ExprTextDesc><![CDATA['F12 Rev. (Rolling)']]></ExprTextDesc>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/80cb6820-0bb9-0000-714b-e31d00000000.xml#m80cb6820-0bb9-0000-714b-e31d00000000">
+<Join type="Inner" physicalTable1Ref="/oracle/bi/server/base/PhysicalTable/80cb6820-0bb9-0000-714b-e31d00000000.xml#m80cb6820-0bb9-0000-714b-e31d00000000" physicalTable2Ref="/oracle/bi/server/base/PhysicalTable/80cb6847-0bb9-0000-714b-e31d00000000.xml#m80cb6847-0bb9-0000-714b-e31d00000000" physicalJoinRef="/oracle/bi/server/base/ComplexJoin/80cb6b78-0bc4-0000-714b-e31d00000000.xml#m80cb6b78-0bc4-0000-714b-e31d00000000"/>
+</Link>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/80cb683c-0bb9-0000-714b-e31d00000000.xml#m80cb683c-0bb9-0000-714b-e31d00000000">
+<Join type="Inner" cardinality="MANY TO ONE" physicalTable1Ref="/oracle/bi/server/base/PhysicalTable/80cb683c-0bb9-0000-714b-e31d00000000.xml#m80cb683c-0bb9-0000-714b-e31d00000000" physicalTable2Ref="/oracle/bi/server/base/PhysicalTable/80cb6847-0bb9-0000-714b-e31d00000000.xml#m80cb6847-0bb9-0000-714b-e31d00000000" physicalJoinRef="/oracle/bi/server/base/PhysicalTable/80cb683c-0bb9-0000-714b-e31d00000000.xml#m80cb6b33-0bbe-0000-714b-e31d00000000"/>
+</Link>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/80cb6847-0bb9-0000-714b-e31d00000000.xml#m80cb6847-0bb9-0000-714b-e31d00000000">
+<Join type="Inner" physicalTable1Ref="/oracle/bi/server/base/PhysicalTable/80cb6847-0bb9-0000-714b-e31d00000000.xml#m80cb6847-0bb9-0000-714b-e31d00000000" physicalTable2Ref="/oracle/bi/server/base/PhysicalTable/80cb6820-0bb9-0000-714b-e31d00000000.xml#m80cb6820-0bb9-0000-714b-e31d00000000" physicalJoinRef="/oracle/bi/server/base/ComplexJoin/80cb6b78-0bc4-0000-714b-e31d00000000.xml#m80cb6b78-0bc4-0000-714b-e31d00000000"/>
+<Join type="Inner" cardinality=" ONE TO MANY" physicalTable1Ref="/oracle/bi/server/base/PhysicalTable/80cb6847-0bb9-0000-714b-e31d00000000.xml#m80cb6847-0bb9-0000-714b-e31d00000000" physicalTable2Ref="/oracle/bi/server/base/PhysicalTable/80cb683c-0bb9-0000-714b-e31d00000000.xml#m80cb683c-0bb9-0000-714b-e31d00000000" physicalJoinRef="/oracle/bi/server/base/PhysicalTable/80cb683c-0bb9-0000-714b-e31d00000000.xml#m80cb6b33-0bbe-0000-714b-e31d00000000"/>
+</Link>
+<WhereClause mdsid="m0000000d-01f4-0000-7f34-625600000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m0000000e-01f4-0000-9468-e9a600000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m0000000f-01f4-0000-e8fc-fd0e00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

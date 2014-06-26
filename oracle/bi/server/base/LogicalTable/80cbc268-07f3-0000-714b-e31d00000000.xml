@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cbc268-07f3-0000-714b-e31d00000000" name="D06 Product Categories" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="1071" y="192" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cbbdd2-07d0-0000-714b-e31d00000000.xml#m80cbbdd2-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cbc26c-07d6-0000-714b-e31d00000000" name="Category ID" isWriteable="false">
+<AttrDefn mdsid="m80cbc28e-0f3c-0000-714b-e31d00000000" name="AD_3900:625571273062804">
+<Expr mdsid="m00000001-01f4-0000-53de-53c000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BIFOD"."PRODUCT_CATEGORIES_BASE"."CATEGORY_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-53de-53c000000000-m80cbc12c-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbc11f-0bb9-0000-714b-e31d00000000.xml#m80cbc12c-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cbc26d-07d6-0000-714b-e31d00000000" name="Category Locked Flag" isWriteable="false">
+<AttrDefn mdsid="m80cbc278-0f3c-0000-714b-e31d00000000" name="AD_3900:625181273062784">
+<Expr mdsid="m00000002-01f4-0000-20ea-8ba900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BIFOD"."PRODUCT_CATEGORIES_BASE"."CATEGORY_LOCKED_FLAG"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-20ea-8ba900000000-m80cbc12d-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbc11f-0bb9-0000-714b-e31d00000000.xml#m80cbc12d-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cbc26a-07d6-0000-714b-e31d00000000" name="Parent Category ID" isWriteable="false">
+<AttrDefn mdsid="m80cbc27e-0f3c-0000-714b-e31d00000000" name="AD_3900:625241273062784">
+<Expr mdsid="m00000003-01f4-0000-721a-268300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BIFOD"."PRODUCT_CATEGORIES_BASE"."PARENT_CATEGORY_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-721a-268300000000-m80cbc133-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbc11f-0bb9-0000-714b-e31d00000000.xml#m80cbc133-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cbc26b-07d6-0000-714b-e31d00000000" name="Representative Product ID" isWriteable="false">
+<AttrDefn mdsid="m80cbc27f-0f3c-0000-714b-e31d00000000" name="AD_3900:625251273062784">
+<Expr mdsid="m00000004-01f4-0000-3491-a1ed00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BIFOD"."PRODUCT_CATEGORIES_BASE"."REPRESENTATIVE_PRODUCT_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-3491-a1ed00000000-m80cbc134-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbc11f-0bb9-0000-714b-e31d00000000.xml#m80cbc134-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cbce64-07d6-0000-714b-e31d00000000" name="Cat Description (Lookup Phys)" iconIndex="77" isWriteable="false">
+<AttrDefn mdsid="m80cbce65-0f3c-0000-714b-e31d00000000" name="AD_3900:659691273143639">
+<Expr mdsid="m00000005-01f4-0000-5e10-8c4f00000000" name="Expr">
+<ExprText><![CDATA[LOOKUP ( SPARSE
+ "%1" ,
+'No data for this record',
+ "%2" ,
+'FR')
+
+
+]]></ExprText>
+<ExprTextDesc><![CDATA[LOOKUP ( SPARSE
+ "01 - Sample App Data (ORCL)".""."BIFOD"."CATEGORY_TRANSLATIONS"."CATEGORY_DESCRIPTION" ,
+'No data for this record',
+ "01 - Sample App Data (ORCL)".""."BIFOD"."PRODUCT_CATEGORIES_BASE"."CATEGORY_ID" ,
+'FR')
+
+
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-5e10-8c4f00000000-m80cbc122-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbc11e-0bb9-0000-714b-e31d00000000.xml#m80cbc122-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m00000005-01f4-0000-5e10-8c4f00000000-m80cbc12c-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbc11f-0bb9-0000-714b-e31d00000000.xml#m80cbc12c-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cbce71-07d6-0000-714b-e31d00000000" name="Cat Name (Lookup Phys)" iconIndex="77" isWriteable="false">
+<AttrDefn mdsid="m80cbce72-0f3c-0000-714b-e31d00000000" name="AD_3900:659751273144094">
+<Expr mdsid="m00000006-01f4-0000-1c2c-9f9500000000" name="Expr">
+<ExprText><![CDATA[LOOKUP ( SPARSE
+ "%1" ,
+'No data for this record',
+ "%2" ,
+'FR')
+
+
+]]></ExprText>
+<ExprTextDesc><![CDATA[LOOKUP ( SPARSE
+ "01 - Sample App Data (ORCL)".""."BIFOD"."CATEGORY_TRANSLATIONS"."CATEGORY_NAME" ,
+'No data for this record',
+ "01 - Sample App Data (ORCL)".""."BIFOD"."PRODUCT_CATEGORIES_BASE"."CATEGORY_ID" ,
+'FR')
+
+
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-1c2c-9f9500000000-m80cbc124-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbc11e-0bb9-0000-714b-e31d00000000.xml#m80cbc124-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m00000006-01f4-0000-1c2c-9f9500000000-m80cbc12c-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbc11f-0bb9-0000-714b-e31d00000000.xml#m80cbc12c-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cbcfd6-07d6-0000-714b-e31d00000000" name="Category ID (from Product)" isWriteable="false">
+<AttrDefn mdsid="m80cbcfd7-0f3c-0000-714b-e31d00000000" name="AD_3900:663071273152212">
+<Expr mdsid="m00000007-01f4-0000-9b90-28c900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BIFOD"."PRODUCTS_BASE"."CATEGORY_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-9b90-28c900000000-m80cbc14f-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbc121-0bb9-0000-714b-e31d00000000.xml#m80cbc14f-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cbc276-07d8-0000-714b-e31d00000000" name="CATEGORY_ID" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cbc276-07d8-0000-714b-e31d00000000-m80cbc26c-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cbc268-07f3-0000-714b-e31d00000000.xml#m80cbc26c-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cbc268-07f3-0000-714b-e31d00000000-m80cbc280-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cbc280-07f5-0000-714b-e31d00000000.xml#m80cbc280-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

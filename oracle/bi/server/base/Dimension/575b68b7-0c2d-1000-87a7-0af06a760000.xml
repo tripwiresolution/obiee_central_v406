@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m575b68b7-0c2d-1000-87a7-0af06a760000" name="50 Flight" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="false" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/575b68b7-0c2d-1000-87a7-0af06a760000.xml#m575b6a97-0c2d-1000-87a7-0af06a760000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/575b68b0-0c2d-1000-87a7-0af06a760000.xml#m575b68b0-0c2d-1000-87a7-0af06a760000">
+<LogicalLevel mdsid="m575b6a97-0c2d-1000-87a7-0af06a760000" name="50 Flight Total" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;50 Flight Total&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="m575b6a97-0c2d-1000-87a7-0af06a760000_m575b6a98-0c2d-1000-87a7-0af06a760000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/575b68b7-0c2d-1000-87a7-0af06a760000.xml#m575b6a98-0c2d-1000-87a7-0af06a760000"/>
+</RefChildLevels>
+</LogicalLevel>
+<LogicalLevel mdsid="m575b6a98-0c2d-1000-87a7-0af06a760000" name="50 Flight #" isGTA="false" isFDUC="true" memberCount="50000" levelConst="&apos;50 Flight #&apos;">
+<LogicalKey mdsid="m575b6b8f-0c2d-1000-87a7-0af06a760000" name="Carrier Flight #" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6b8f-0c2d-1000-87a7-0af06a760000-m575b6942-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6942-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m575b6a98-0c2d-1000-87a7-0af06a760000_m575b6a96-0c2d-1000-87a7-0af06a760000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/575b68b7-0c2d-1000-87a7-0af06a760000.xml#m575b6a96-0c2d-1000-87a7-0af06a760000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m575b6a98-0c2d-1000-87a7-0af06a760000-m575b6942-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6942-0c2d-1000-87a7-0af06a760000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m575b6a96-0c2d-1000-87a7-0af06a760000" name="50 Flight Detail" isGTA="false" isFDUC="true" memberCount="1000000" levelConst="&apos;50 Flight Detail&apos;">
+<LogicalKey mdsid="m575b6b8e-0c2d-1000-87a7-0af06a760000" name="40 Flight Detail_Key" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6b8e-0c2d-1000-87a7-0af06a760000-m575b6942-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6942-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6b8e-0c2d-1000-87a7-0af06a760000-m575b692d-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b692d-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6b8e-0c2d-1000-87a7-0af06a760000-m575b692e-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b692e-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6b8e-0c2d-1000-87a7-0af06a760000-m575b6931-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6931-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6b8e-0c2d-1000-87a7-0af06a760000-m575b693b-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b693b-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6b8e-0c2d-1000-87a7-0af06a760000-m81d75bc2-0c33-1000-a9e6-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m81d75bc2-0c33-1000-a9e6-7f0000010000"/>
+<RefLogicalColumn refId="m575b6b8e-0c2d-1000-87a7-0af06a760000-m82117e90-0c33-1000-a9e6-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m82117e90-0c33-1000-a9e6-7f0000010000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m575b6a96-0c2d-1000-87a7-0af06a760000-m575b6927-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6927-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6a96-0c2d-1000-87a7-0af06a760000-m575b692d-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b692d-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6a96-0c2d-1000-87a7-0af06a760000-m575b692e-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b692e-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6a96-0c2d-1000-87a7-0af06a760000-m575b6931-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6931-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6a96-0c2d-1000-87a7-0af06a760000-m575b693b-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b693b-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6a96-0c2d-1000-87a7-0af06a760000-m81d75bc2-0c33-1000-a9e6-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m81d75bc2-0c33-1000-a9e6-7f0000010000"/>
+<RefLogicalColumn refId="m575b6a96-0c2d-1000-87a7-0af06a760000-m82117e90-0c33-1000-a9e6-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m82117e90-0c33-1000-a9e6-7f0000010000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m5758665d-0c2d-1000-87a7-0af06a760000" name="OBIEE_COUNTY_HIER" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/57583469-0c2d-1000-87a7-0af06a760000.xml#m57583469-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[SELECT M.AIRPORT, M.TR_CITY_NAME, M.TR_AIRPORT_NAME, 
+M.TR_STATE_NAME,AIRPORT_ID, M.LATITUDE, M.LONGITUDE,	
+C.STFIPS,C.CTYFIPS
+FROM AIRLINES.MASTER_CORD M, OBIEE_NAVTEQ.COUNTY C 	
+WHERE M.TR_COUNTRY_NAME = 'United States of America' AND M.END_DATE IS NULL	
+AND SDO_ANYINTERACT(C.GEOMETRY, SDO_GEOMETRY(2001, 8307,	
+SDO_POINT_TYPE(M.LONGITUDE, M.LATITUDE, NULL), NULL, NULL)) = 'TRUE'	
+ORDER BY M.AIRPORT]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[OBIEE_COUNTY_HIER]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m5758665e-0c2d-1000-87a7-0af06a760000" name="D_CODE" dataType="VARCHAR" precision="2" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m5758665f-0c2d-1000-87a7-0af06a760000" name="R_CODE" dataType="VARCHAR" precision="2" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m57586660-0c2d-1000-87a7-0af06a760000" name="C_CODE" dataType="VARCHAR" precision="3" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m57586661-0c2d-1000-87a7-0af06a760000" name="RD_CODE" dataType="VARCHAR" precision="3" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m57586662-0c2d-1000-87a7-0af06a760000" name="S_CODE" dataType="VARCHAR" precision="2" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m57586663-0c2d-1000-87a7-0af06a760000" name="SC_CODE" dataType="VARCHAR" precision="5" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m57586664-0c2d-1000-87a7-0af06a760000" name="C_NAME" dataType="VARCHAR" precision="90" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m57586665-0c2d-1000-87a7-0af06a760000" name="D_NAME" dataType="VARCHAR" precision="50" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m57586666-0c2d-1000-87a7-0af06a760000" name="R_NAME" dataType="VARCHAR" precision="30" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m57586667-0c2d-1000-87a7-0af06a760000" name="S_NAME" dataType="VARCHAR" precision="50" nullable="true" specialType="none">
+</PhysicalColumn>
+</PhysicalTable>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="mdf23e2ab-0c83-1000-ba54-0a9a60060000" name="Bucket2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/df23e280-0c83-1000-ba54-0a9a60060000.xml#mdf23e280-0c83-1000-ba54-0a9a60060000">
+<LogicalColumn mdsid="mdf23e2ac-0c83-1000-ba54-0a9a60060000" name="Gen2,Bucket2" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/df23e2ab-0c83-1000-ba54-0a9a60060000.xml#mdf23e2ad-0c83-1000-ba54-0a9a60060000">
+<AttrDefn mdsid="mdf23e313-0c83-1000-ba54-0a9a60060000" name="AD_3900:2654491376052392">
+<Expr mdsid="m00000001-01f4-0000-0bf8-e92500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Gen2,Bucket2"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-0bf8-e92500000000-mdf2123a4-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf2123a4-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mdf23e2ad-0c83-1000-ba54-0a9a60060000" name="Gen2,Bucket2 - Memnor" isWriteable="false">
+<AttrDefn mdsid="mdf23e314-0c83-1000-ba54-0a9a60060000" name="AD_3900:2654501376052392">
+<Expr mdsid="m00000002-01f4-0000-4a8f-bbe100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Gen2,Bucket2 - Memnor"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-4a8f-bbe100000000-mdf2123a6-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf2123a6-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mdf23e2ae-0c83-1000-ba54-0a9a60060000" name="Gen2,Bucket2 - Member Key" isWriteable="false">
+<AttrDefn mdsid="mdf23e315-0c83-1000-ba54-0a9a60060000" name="AD_3900:2654511376052392">
+<Expr mdsid="m00000003-01f4-0000-d281-c4f000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Gen2,Bucket2 - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-d281-c4f000000000-mdf2123a7-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf2123a7-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mdf23e2af-0c83-1000-ba54-0a9a60060000" name="Bucket2 - Default" isWriteable="false">
+<AttrDefn mdsid="mdf23e316-0c83-1000-ba54-0a9a60060000" name="AD_3900:2654521376052392">
+<Expr mdsid="m00000004-01f4-0000-37f6-8a7d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Bucket2 - Default"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-37f6-8a7d00000000-mdf2123ad-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf2123ad-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="mdf23e2f4-0c83-1000-ba54-0a9a60060000" name="Bucket2" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="mdf23e2f4-0c83-1000-ba54-0a9a60060000-mdf23e2ac-0c83-1000-ba54-0a9a60060000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/df23e2ab-0c83-1000-ba54-0a9a60060000.xml#mdf23e2ac-0c83-1000-ba54-0a9a60060000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="mdf23e2ab-0c83-1000-ba54-0a9a60060000-mdf23e31d-0c83-1000-ba54-0a9a60060000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/df23e31d-0c83-1000-ba54-0a9a60060000.xml#mdf23e31d-0c83-1000-ba54-0a9a60060000"/>
+</RefTableSources>
+</LogicalTable>

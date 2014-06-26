@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cb6823-0bb9-0000-714b-e31d00000000" name="D20 Product (Ragged Hier)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" x="1307" y="684" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cb6812-0bb9-0000-714b-e31d00000000.xml#m80cb6812-0bb9-0000-714b-e31d00000000">
+<Description><![CDATA[Products dimension Alias Ragged: Stores ragged and skipped level data.]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SAMP_PRODUCTS_DR]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cb6987-0bbb-0000-714b-e31d00000000" name="Brand" dataType="VARCHAR" precision="255" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6812-0bb9-0000-714b-e31d00000000.xml#m80cb68ab-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Brand: Stores the product brand information as text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6988-0bbb-0000-714b-e31d00000000" name="LOB" dataType="VARCHAR" precision="255" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6812-0bb9-0000-714b-e31d00000000.xml#m80cb68ac-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[LOB: Stores the product LOB information as text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6989-0bbb-0000-714b-e31d00000000" name="Prod_Dsc" dataType="VARCHAR" precision="255" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6812-0bb9-0000-714b-e31d00000000.xml#m80cb68ad-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Product Description: Stores the product description information as text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb698a-0bbb-0000-714b-e31d00000000" name="Prod_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6812-0bb9-0000-714b-e31d00000000.xml#m80cb68ae-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Product Key: Surrogate key of the product dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb698b-0bbb-0000-714b-e31d00000000" name="Type" dataType="VARCHAR" precision="255" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6812-0bb9-0000-714b-e31d00000000.xml#m80cb68af-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Type: Stores the product type information as text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m83363cf3-0c8a-1000-8bc9-0af502b30000" name="TOTAL_VALUE" dataType="VARCHAR" precision="20" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6812-0bb9-0000-714b-e31d00000000.xml#m83363cf2-0c8a-1000-8bc9-0af502b30000">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cb6aee-0bc0-0000-714b-e31d00000000" name="Dim 05 Product_Key">
+<RefColumns>
+<RefColumn refId="m80cb6aee-0bc0-0000-714b-e31d00000000-m80cb698a-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6823-0bb9-0000-714b-e31d00000000.xml#m80cb698a-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

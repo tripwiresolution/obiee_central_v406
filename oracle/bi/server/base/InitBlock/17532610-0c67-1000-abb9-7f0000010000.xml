@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<InitBlock mdsid="m17532610-0c67-1000-abb9-7f0000010000" name="ASSIGN_SERVER_IP" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isSessionVar="true" refreshPeriod="86400" connectionPoolRef="/oracle/bi/server/base/ConnectionPool/80cb28c8-0bd5-0000-714b-e31d00000000.xml#m80cb28c8-0bd5-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SELECT UTL_INADDR.GET_HOST_ADDRESS IPAddress FROM dual]]></Value>
+</DBMapItem>
+<RefVariables>
+<RefVariable refId="m17532610-0c67-1000-abb9-7f0000010000-m175967a0-0c67-1000-abb9-7f0000010000" variableRef="/oracle/bi/server/base/Variable/175967a0-0c67-1000-abb9-7f0000010000.xml#m175967a0-0c67-1000-abb9-7f0000010000"/>
+</RefVariables>
+<InitString><![CDATA[SELECT UTL_INADDR.GET_HOST_ADDRESS IPAddress FROM dual]]></InitString>
+</InitBlock>

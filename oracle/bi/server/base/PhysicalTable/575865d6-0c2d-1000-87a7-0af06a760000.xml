@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m575865d6-0c2d-1000-87a7-0af06a760000" name="32 AIRCRAFT_GROUP" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" pollFreq="0" maxConn="0" containerRef="/oracle/bi/server/base/Schema/57583469-0c2d-1000-87a7-0af06a760000.xml#m57583469-0c2d-1000-87a7-0af06a760000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/575865d0-0c2d-1000-87a7-0af06a760000.xml#m575865d0-0c2d-1000-87a7-0af06a760000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[AIRCRAFT_GROUP]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m575865d7-0c2d-1000-87a7-0af06a760000" name="DESCRIPTION" dataType="VARCHAR" precision="250" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/575865d0-0c2d-1000-87a7-0af06a760000.xml#m575865d2-0c2d-1000-87a7-0af06a760000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m575865d8-0c2d-1000-87a7-0af06a760000" name="CODE" dataType="VARCHAR" precision="20" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/575865d0-0c2d-1000-87a7-0af06a760000.xml#m575865d1-0c2d-1000-87a7-0af06a760000">
+</PhysicalColumn>
+<PhysicalKey mdsid="m57588438-0c2d-1000-87a7-0af06a760000" name="20 ARRIVAL_DELAY_GROUPS_Key">
+<RefColumns>
+<RefColumn refId="m57588438-0c2d-1000-87a7-0af06a760000-m575865d8-0c2d-1000-87a7-0af06a760000" columnRef="/oracle/bi/server/base/PhysicalTable/575865d6-0c2d-1000-87a7-0af06a760000.xml#m575865d8-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

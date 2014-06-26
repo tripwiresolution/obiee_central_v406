@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m575b69ff-0c2d-1000-87a7-0af06a760000" name="02 Time Week Attributes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/575b68b0-0c2d-1000-87a7-0af06a760000.xml#m575b68b0-0c2d-1000-87a7-0af06a760000">
+<LogicalColumn mdsid="m575b6a00-0c2d-1000-87a7-0af06a760000" name="Day of Week" isWriteable="false">
+<AttrDefn mdsid="m575b6ce9-0c2d-1000-87a7-0af06a760000" name="AD_3900:2373761338887867">
+<Expr mdsid="m00000001-01f4-0000-db16-3bd000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES_AGG"."SA_02_Day_00039D15"."Day_of_Wee00039C57"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-db16-3bd000000000-m6746e362-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6746e360-0c61-1000-99f2-7f0000010000.xml#m6746e362-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6a01-0c2d-1000-87a7-0af06a760000" name="Day Key" isWriteable="false">
+<AttrDefn mdsid="m575b6cea-0c2d-1000-87a7-0af06a760000" name="AD_3900:2373771338887867">
+<Expr mdsid="m00000002-01f4-0000-3969-7c6d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."40 TIME DAY"."Day_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-3969-7c6d00000000-m57586646-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586627-0c2d-1000-87a7-0af06a760000.xml#m57586646-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6a02-0c2d-1000-87a7-0af06a760000" name="Day Name" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000003-01f4-0000-b285-a6c200000000" name="Expr">
+<ExprText><![CDATA[ CASE  WHEN "%1" = 1 THEN 'Sunday' WHEN "%1" = 2 THEN 'Monday' WHEN "%1" = 3 THEN 'Tuesday' WHEN "%1" = 4 THEN 'Wednesday' WHEN "%1" = 5 THEN 'Thursday' WHEN "%1" = 6 THEN 'Friday' ELSE 'Saturday' END ]]></ExprText>
+<ExprTextDesc><![CDATA[ CASE  WHEN "X0 - Airlines"."02 Time Week Attributes"."Day of Week" = 1 THEN 'Sunday' WHEN "X0 - Airlines"."02 Time Week Attributes"."Day of Week" = 2 THEN 'Monday' WHEN "X0 - Airlines"."02 Time Week Attributes"."Day of Week" = 3 THEN 'Tuesday' WHEN "X0 - Airlines"."02 Time Week Attributes"."Day of Week" = 4 THEN 'Wednesday' WHEN "X0 - Airlines"."02 Time Week Attributes"."Day of Week" = 5 THEN 'Thursday' WHEN "X0 - Airlines"."02 Time Week Attributes"."Day of Week" = 6 THEN 'Friday' ELSE 'Saturday' END ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-b285-a6c200000000-m575b6a00-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b69ff-0c2d-1000-87a7-0af06a760000.xml#m575b6a00-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6ceb-0c2d-1000-87a7-0af06a760000" name="AD_3900:2373781338887867">
+<Expr mdsid="m00000004-01f4-0000-71f8-8f9400000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m575b6bc3-0c2d-1000-87a7-0af06a760000" name="Primary" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6bc3-0c2d-1000-87a7-0af06a760000-m575b6a01-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69ff-0c2d-1000-87a7-0af06a760000.xml#m575b6a01-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m575b69ff-0c2d-1000-87a7-0af06a760000-m575b6d7e-0c2d-1000-87a7-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/575b6d7e-0c2d-1000-87a7-0af06a760000.xml#m575b6d7e-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalTableSource refId="m575b69ff-0c2d-1000-87a7-0af06a760000-m6757d350-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/6757d350-0c61-1000-99f2-7f0000010000.xml#m6757d350-0c61-1000-99f2-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

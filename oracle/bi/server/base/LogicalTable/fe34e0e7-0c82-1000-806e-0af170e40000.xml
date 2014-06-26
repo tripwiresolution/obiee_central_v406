@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="mfe34e0e7-0c82-1000-806e-0af170e40000" name="Movie Cast" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/fe34e080-0c82-1000-806e-0af170e40000.xml#mfe34e080-0c82-1000-806e-0af170e40000">
+<LogicalColumn mdsid="mfe34e0e8-0c82-1000-806e-0af170e40000" name="Cast ID" isWriteable="false">
+<AttrDefn mdsid="mfe34e37a-0c82-1000-806e-0af170e40000" name="AD_3900:2634961375675016">
+<Expr mdsid="m00000001-01f4-0000-146c-ad0500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."CAST"."CAST_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-146c-ad0500000000-mfe3332f0-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe3332ef-0c82-1000-806e-0af170e40000.xml#mfe3332f0-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0e9-0c82-1000-806e-0af170e40000" name="Character" isWriteable="false">
+<AttrDefn mdsid="mfe34e37b-0c82-1000-806e-0af170e40000" name="AD_3900:2634971375675016">
+<Expr mdsid="m00000002-01f4-0000-0d00-976300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_CAST"."CHARACTER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-0d00-976300000000-mfe33332d-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe33332b-0c82-1000-806e-0af170e40000.xml#mfe33332d-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0ea-0c82-1000-806e-0af170e40000" name="Actor" isWriteable="false">
+<AttrDefn mdsid="mfe34e37c-0c82-1000-806e-0af170e40000" name="AD_3900:2634981375675016">
+<Expr mdsid="m00000003-01f4-0000-f9b2-135100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."CAST"."NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-f9b2-135100000000-mfe3332f1-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe3332ef-0c82-1000-806e-0af170e40000.xml#mfe3332f1-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="mfe34e30e-0c82-1000-806e-0af170e40000" name="Primary" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="mfe34e30e-0c82-1000-806e-0af170e40000-mfe34e0e8-0c82-1000-806e-0af170e40000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/fe34e0e7-0c82-1000-806e-0af170e40000.xml#mfe34e0e8-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="mfe34e0e7-0c82-1000-806e-0af170e40000-mfe34e400-0c82-1000-806e-0af170e40000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/fe34e400-0c82-1000-806e-0af170e40000.xml#mfe34e400-0c82-1000-806e-0af170e40000"/>
+</RefTableSources>
+</LogicalTable>

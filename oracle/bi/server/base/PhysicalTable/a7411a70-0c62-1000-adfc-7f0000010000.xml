@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="ma7411a70-0c62-1000-adfc-7f0000010000" name="F82 Db Facts Frequent Itemset from Db Function" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" pollFreq="0" x="265" y="1168" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/a71bdf30-0c62-1000-adfc-7f0000010000.xml#ma71bdf30-0c62-1000-adfc-7f0000010000">
+<Description><![CDATA[Time dimension Alias: This alias is specifically used for the Rolling month metrics.]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SELECT  SERIES_ID, column_value as PROD_KEY, OCCURS, SERIES_LENGTH, TOTAL_TRANX 
+from (
+select SERIES_ID, column_value, OCCURS, SERIES_LENGTH, TOTAL_TRANX 
+from (
+select rownum as SERIES_ID, ITEMSET AS PROD_KEY, SUPPORT as OCCURS , length as SERIES_LENGTH, TOTAL_TRANX
+from table(DBMS_FREQUENT_ITEMSET.FI_TRANSACTIONAL(
+cursor(select CUST_KEY||'-'||OFFICE_KEY||'-'||ORDER_TYPE, PROD_KEY
+from SAMP_REVENUE_F
+where bill_mth_key between valueof(NQ_SESSION.DB_FRQITEM_MTH1) and valueof(NQ_SESSION.DB_FRQITEM_MTH2) 
+), 0.0 , valueof(NQ_SESSION.DB_FRQITEM_LO), valueof(NQ_SESSION.DB_FRQITEM_HI), null, null)) 
+) T1, 
+table(T1.PROD_KEY)T2) ]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="ma7d80340-0c62-1000-adfc-7f0000010000" name="PROD_KEY" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/a71bdf30-0c62-1000-adfc-7f0000010000.xml#ma71bdf31-0c62-1000-adfc-7f0000010000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="ma7d80341-0c62-1000-adfc-7f0000010000" name="TOTAL_TRANX" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/a71bdf30-0c62-1000-adfc-7f0000010000.xml#ma71bdf32-0c62-1000-adfc-7f0000010000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="ma7d80342-0c62-1000-adfc-7f0000010000" name="SERIES_ID" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/a71bdf30-0c62-1000-adfc-7f0000010000.xml#ma71bdf33-0c62-1000-adfc-7f0000010000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="ma7d80343-0c62-1000-adfc-7f0000010000" name="SERIES_LENGTH" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/a71bdf30-0c62-1000-adfc-7f0000010000.xml#ma71bdf34-0c62-1000-adfc-7f0000010000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="ma7d80344-0c62-1000-adfc-7f0000010000" name="OCCURS" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/a71bdf30-0c62-1000-adfc-7f0000010000.xml#ma71bdf35-0c62-1000-adfc-7f0000010000">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="ma87ea380-0c62-1000-adfc-7f0000010000" name="F82 Db Facts Frequent Itemset from Db Function_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb6822-0bb9-0000-714b-e31d00000000.xml#m80cb6aed-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="ma87ea380-0c62-1000-adfc-7f0000010000-ma7d80340-0c62-1000-adfc-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/a7411a70-0c62-1000-adfc-7f0000010000.xml#ma7d80340-0c62-1000-adfc-7f0000010000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

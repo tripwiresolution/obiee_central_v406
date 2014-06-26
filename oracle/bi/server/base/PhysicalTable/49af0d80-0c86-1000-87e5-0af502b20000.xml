@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m49af0d80-0c86-1000-87e5-0af502b20000" name="GET_DBMS_STAT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" rowCount="1.0" lastUpdated="2013-08-21 08:23:04" maxConn="0" containerRef="/oracle/bi/server/base/Schema/78682d26-0c20-1000-b5b8-0af502b10000.xml#m78682d26-0c20-1000-b5b8-0af502b10000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SELECT T1.*, 'valueof(NQ_SESSION.DB_COL_STATS_SCHEMA)' S_SCHEMA, 'valueof(NQ_SESSION.DB_COL_STATS_TABLE)' S_TABLE,'valueof(NQ_SESSION.DB_COL_STATS_COLUMN)' S_COLUMN  FROM 
+TABLE(SYS.GET_DBMS_STAT('valueof(NQ_SESSION.DB_COL_STATS_SCHEMA)' ,'valueof(NQ_SESSION.DB_COL_STATS_TABLE)','valueof(NQ_SESSION.DB_COL_STATS_COLUMN)',3)) T1
+
+]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m49af0d81-0c86-1000-87e5-0af502b20000" name="EXTREME_VALUES" dataType="LONGVARCHAR" precision="4000" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m49af0d82-0c86-1000-87e5-0af502b20000" name="TOP_5_VALUES" dataType="LONGVARCHAR" precision="4000" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m49af0d83-0c86-1000-87e5-0af502b20000" name="BOTTOM_5_VALUES" dataType="LONGVARCHAR" precision="4000" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m49af0d84-0c86-1000-87e5-0af502b20000" name="COUNT" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m49af0d85-0c86-1000-87e5-0af502b20000" name="MIN" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m49af0d86-0c86-1000-87e5-0af502b20000" name="MAX" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m49af0d87-0c86-1000-87e5-0af502b20000" name="RANGE" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m49af0d88-0c86-1000-87e5-0af502b20000" name="MODE_COUNT" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m49af0d89-0c86-1000-87e5-0af502b20000" name="MEAN" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m49af0d8a-0c86-1000-87e5-0af502b20000" name="MODE1" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m49af0d8b-0c86-1000-87e5-0af502b20000" name="MEDIAN" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m49af0d8c-0c86-1000-87e5-0af502b20000" name="VARIANCE" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m49af0d8d-0c86-1000-87e5-0af502b20000" name="QUANTILE_5" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m49af0d8e-0c86-1000-87e5-0af502b20000" name="STDDEV" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m49af0d8f-0c86-1000-87e5-0af502b20000" name="QUANTILE_25" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m49af0d90-0c86-1000-87e5-0af502b20000" name="QUANTILE_75" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m49af0d91-0c86-1000-87e5-0af502b20000" name="QUANTILE_95" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m49af0d92-0c86-1000-87e5-0af502b20000" name="EXTREME_VALUES_COUNT" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m4a0b8560-0c86-1000-87e5-0af502b20000" name="S_SCHEMA" dataType="VARCHAR" precision="30" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m4a0df661-0c86-1000-87e5-0af502b20000" name="S_COLUMN" dataType="VARCHAR" precision="30" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m4a0e92a1-0c86-1000-87e5-0af502b20000" name="S_TABLE" dataType="VARCHAR" precision="30" specialType="none">
+</PhysicalColumn>
+</PhysicalTable>

@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="mbb47884a-0c34-1000-a434-0a9f65cc0000" name="WP Object Permissions" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/802b289f-07d0-0000-714b-e31d00000000.xml#m802b289f-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="mbb47885a-0c34-1000-a434-0a9f65cc0000" name="Read" isWriteable="false">
+<AttrDefn mdsid="mbb47886e-0c34-1000-a434-0a9f65cc0000" name="AD_3900:2477401342061986">
+<Expr mdsid="m00000001-01f4-0000-f297-728600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."READ"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-f297-728600000000-mbb1d91fe-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d91fe-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mbb478851-0c34-1000-a434-0a9f65cc0000" name="Execute/Traverse" isWriteable="false">
+<AttrDefn mdsid="mbb478865-0c34-1000-a434-0a9f65cc0000" name="AD_3900:2477311342061986">
+<Expr mdsid="m00000002-01f4-0000-efa3-037a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."EXECUTE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-efa3-037a00000000-mbb1d91f5-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d91f5-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mbb47885f-0c34-1000-a434-0a9f65cc0000" name="Write" isWriteable="false">
+<AttrDefn mdsid="mbb478873-0c34-1000-a434-0a9f65cc0000" name="AD_3900:2477451342061986">
+<Expr mdsid="m00000003-01f4-0000-a3f9-16d800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."WRITE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-a3f9-16d800000000-mbb1d9203-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d9203-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mbb478850-0c34-1000-a434-0a9f65cc0000" name="Delete" isWriteable="false">
+<AttrDefn mdsid="mbb478864-0c34-1000-a434-0a9f65cc0000" name="AD_3900:2477301342061986">
+<Expr mdsid="m00000004-01f4-0000-1717-75a700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."DEL"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-1717-75a700000000-mbb1d91f4-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d91f4-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mbb47884f-0c34-1000-a434-0a9f65cc0000" name="ChangePermissions" isWriteable="false">
+<AttrDefn mdsid="mbb478863-0c34-1000-a434-0a9f65cc0000" name="AD_3900:2477291342061986">
+<Expr mdsid="m00000005-01f4-0000-9bad-415b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."CHANGEPERMISSIONS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-9bad-415b00000000-mbb1d91f3-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d91f3-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mbb47885d-0c34-1000-a434-0a9f65cc0000" name="Set Ownership" isWriteable="false">
+<AttrDefn mdsid="mbb478871-0c34-1000-a434-0a9f65cc0000" name="AD_3900:2477431342061986">
+<Expr mdsid="m00000006-01f4-0000-0ba1-816400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."SETOWNERSHIP"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-0ba1-816400000000-mbb1d9201-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d9201-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mbb47885b-0c34-1000-a434-0a9f65cc0000" name="Run Publisher Report" isWriteable="false">
+<AttrDefn mdsid="mbb47886f-0c34-1000-a434-0a9f65cc0000" name="AD_3900:2477411342061986">
+<Expr mdsid="m00000007-01f4-0000-68a1-27a900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."RUNPUBLISHERREPORT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-68a1-27a900000000-mbb1d91ff-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d91ff-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mbb47885c-0c34-1000-a434-0a9f65cc0000" name="Schedule Publisher Report" isWriteable="false">
+<AttrDefn mdsid="mbb478870-0c34-1000-a434-0a9f65cc0000" name="AD_3900:2477421342061986">
+<Expr mdsid="m00000008-01f4-0000-9a15-69f000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."SCHEDULEPUBLISHERREPORT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-9a15-69f000000000-mbb1d9200-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d9200-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mbb47885e-0c34-1000-a434-0a9f65cc0000" name="View Publisher Report" isWriteable="false">
+<AttrDefn mdsid="mbb478872-0c34-1000-a434-0a9f65cc0000" name="AD_3900:2477441342061986">
+<Expr mdsid="m00000009-01f4-0000-4d0a-7c4a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."VIEWPUBLISHEROUTPUT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-4d0a-7c4a00000000-mbb1d9202-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d9202-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb97f2430-0c34-1000-bea8-7f0000010000" name="# of Allowed Reads" isWriteable="false">
+<MeasureDefn mdsid="mba756b10-0c34-1000-bea8-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="md607d431-0c34-1000-8a91-8c5486920000" name="AggRule_2050:2482201342107056" isDefault="true">
+<Expr mdsid="m0000000a-01f4-0000-0368-ea2900000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("10 - Usage Tracking"."WP Object Permissions"."# of Allowed Reads")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-0368-ea2900000000-mb97f2430-0c34-1000-bea8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/bb47884a-0c34-1000-a434-0a9f65cc0000.xml#mb97f2430-0c34-1000-bea8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb97f4b40-0c34-1000-bea8-7f0000010000" name="AD_3900:2479231342061687">
+<Expr mdsid="m0000000b-01f4-0000-e163-dcea00000000" name="Expr">
+<ExprText><![CDATA[case when "%1" = 'Y' THEN 1 END]]></ExprText>
+<ExprTextDesc><![CDATA[case when "10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."READ" = 'Y' THEN 1 END]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-e163-dcea00000000-mbb1d91fe-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d91fe-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb98035a0-0c34-1000-bea8-7f0000010000" name="# of Allowed Execute/Traverses" isWriteable="false">
+<MeasureDefn mdsid="mba756b12-0c34-1000-bea8-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mba756b13-0c34-1000-bea8-7f0000010000" name="AggRule_2050:2479951342061687" isDefault="true">
+<Expr mdsid="m0000000c-01f4-0000-1e8d-564500000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("10 - Usage Tracking"."WP Object Permissions"."# of Allowed Execute/Traverses")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-1e8d-564500000000-mb98035a0-0c34-1000-bea8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/bb47884a-0c34-1000-a434-0a9f65cc0000.xml#mb98035a0-0c34-1000-bea8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb9805cb0-0c34-1000-bea8-7f0000010000" name="AD_3900:2479271342061687">
+<Expr mdsid="m0000000d-01f4-0000-1d8c-39cb00000000" name="Expr">
+<ExprText><![CDATA[CASE WHEN "%1"= 'Y' THEN 1 END
+]]></ExprText>
+<ExprTextDesc><![CDATA[CASE WHEN "10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."EXECUTE"= 'Y' THEN 1 END
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-1d8c-39cb00000000-mbb1d91f5-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d91f5-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb9816e20-0c34-1000-bea8-7f0000010000" name="# of Allowed Writes" isWriteable="false">
+<MeasureDefn mdsid="mba756b14-0c34-1000-bea8-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mba756b15-0c34-1000-bea8-7f0000010000" name="AggRule_2050:2479971342061687" isDefault="true">
+<Expr mdsid="m0000000e-01f4-0000-b036-f43500000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("10 - Usage Tracking"."WP Object Permissions"."# of Allowed Writes")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-b036-f43500000000-mb9816e20-0c34-1000-bea8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/bb47884a-0c34-1000-a434-0a9f65cc0000.xml#mb9816e20-0c34-1000-bea8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb9816e21-0c34-1000-bea8-7f0000010000" name="AD_3900:2479311342061687">
+<Expr mdsid="m0000000f-01f4-0000-2a1d-47bc00000000" name="Expr">
+<ExprText><![CDATA[CASE WHEN "%1"= 'Y' THEN 1 END
+]]></ExprText>
+<ExprTextDesc><![CDATA[CASE WHEN "10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."WRITE"= 'Y' THEN 1 END
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-2a1d-47bc00000000-mbb1d9203-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d9203-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb982a6a0-0c34-1000-bea8-7f0000010000" name="# of Allowed Deletes" isWriteable="false">
+<MeasureDefn mdsid="mba759220-0c34-1000-bea8-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mba759221-0c34-1000-bea8-7f0000010000" name="AggRule_2050:2479991342061687" isDefault="true">
+<Expr mdsid="m00000010-01f4-0000-c557-e5e700000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("10 - Usage Tracking"."WP Object Permissions"."# of Allowed Deletes")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-c557-e5e700000000-mb982a6a0-0c34-1000-bea8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/bb47884a-0c34-1000-a434-0a9f65cc0000.xml#mb982a6a0-0c34-1000-bea8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb982a6a1-0c34-1000-bea8-7f0000010000" name="AD_3900:2479351342061687">
+<Expr mdsid="m00000011-01f4-0000-afb5-bd3e00000000" name="Expr">
+<ExprText><![CDATA[CASE WHEN "%1"= 'Y' THEN 1 END
+]]></ExprText>
+<ExprTextDesc><![CDATA[CASE WHEN "10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."DEL"= 'Y' THEN 1 END
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-afb5-bd3e00000000-mbb1d91f4-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d91f4-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb983df20-0c34-1000-bea8-7f0000010000" name="# of Allowed ChangePermitteds" isWriteable="false">
+<MeasureDefn mdsid="mba759222-0c34-1000-bea8-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mba759223-0c34-1000-bea8-7f0000010000" name="AggRule_2050:2480011342061687" isDefault="true">
+<Expr mdsid="m00000012-01f4-0000-72b3-696f00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("10 - Usage Tracking"."WP Object Permissions"."# of Allowed ChangePermitteds")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-72b3-696f00000000-mb983df20-0c34-1000-bea8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/bb47884a-0c34-1000-a434-0a9f65cc0000.xml#mb983df20-0c34-1000-bea8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb983df21-0c34-1000-bea8-7f0000010000" name="AD_3900:2479391342061687">
+<Expr mdsid="m00000013-01f4-0000-87a7-56a600000000" name="Expr">
+<ExprText><![CDATA[CASE WHEN "%1"= 'Y' THEN 1 END
+]]></ExprText>
+<ExprTextDesc><![CDATA[CASE WHEN "10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."CHANGEPERMISSIONS"= 'Y' THEN 1 END
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-87a7-56a600000000-mbb1d91f3-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d91f3-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb98517a0-0c34-1000-bea8-7f0000010000" name="# of Allowed Set Ownerships" isWriteable="false">
+<MeasureDefn mdsid="mba759224-0c34-1000-bea8-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mba759225-0c34-1000-bea8-7f0000010000" name="AggRule_2050:2480031342061687" isDefault="true">
+<Expr mdsid="m00000014-01f4-0000-a1ce-53c900000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("10 - Usage Tracking"."WP Object Permissions"."# of Allowed Set Ownerships")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-a1ce-53c900000000-mb98517a0-0c34-1000-bea8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/bb47884a-0c34-1000-a434-0a9f65cc0000.xml#mb98517a0-0c34-1000-bea8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb9853eb0-0c34-1000-bea8-7f0000010000" name="AD_3900:2479431342061687">
+<Expr mdsid="m00000015-01f4-0000-841a-1d4100000000" name="Expr">
+<ExprText><![CDATA[CASE WHEN "%1"= 'Y' THEN 1 END]]></ExprText>
+<ExprTextDesc><![CDATA[CASE WHEN "10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."SETOWNERSHIP"= 'Y' THEN 1 END]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-841a-1d4100000000-mbb1d9201-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d9201-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb9867730-0c34-1000-bea8-7f0000010000" name="# of Allowed Run Publisher Reports" isWriteable="false">
+<MeasureDefn mdsid="mba759226-0c34-1000-bea8-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mba75b930-0c34-1000-bea8-7f0000010000" name="AggRule_2050:2480051342061687" isDefault="true">
+<Expr mdsid="m00000016-01f4-0000-02ba-3fd900000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("10 - Usage Tracking"."WP Object Permissions"."# of Allowed Run Publisher Reports")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-02ba-3fd900000000-mb9867730-0c34-1000-bea8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/bb47884a-0c34-1000-a434-0a9f65cc0000.xml#mb9867730-0c34-1000-bea8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb9867731-0c34-1000-bea8-7f0000010000" name="AD_3900:2479471342061687">
+<Expr mdsid="m00000017-01f4-0000-7d56-a6db00000000" name="Expr">
+<ExprText><![CDATA[CASE WHEN "%1"= 'Y' THEN 1 END
+]]></ExprText>
+<ExprTextDesc><![CDATA[CASE WHEN "10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."RUNPUBLISHERREPORT"= 'Y' THEN 1 END
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-7d56-a6db00000000-mbb1d91ff-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d91ff-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb987d6c0-0c34-1000-bea8-7f0000010000" name="# of Allowed Schedule Publisher Reports" isWriteable="false">
+<MeasureDefn mdsid="mba75b931-0c34-1000-bea8-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mba75b932-0c34-1000-bea8-7f0000010000" name="AggRule_2050:2480071342061687" isDefault="true">
+<Expr mdsid="m00000018-01f4-0000-14d2-a22000000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("10 - Usage Tracking"."WP Object Permissions"."# of Allowed Schedule Publisher Reports")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000018-01f4-0000-14d2-a22000000000-mb987d6c0-0c34-1000-bea8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/bb47884a-0c34-1000-a434-0a9f65cc0000.xml#mb987d6c0-0c34-1000-bea8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb987d6c1-0c34-1000-bea8-7f0000010000" name="AD_3900:2479511342061687">
+<Expr mdsid="m00000019-01f4-0000-43a0-02d000000000" name="Expr">
+<ExprText><![CDATA[CASE WHEN "%1"= 'Y' THEN 1 END
+]]></ExprText>
+<ExprTextDesc><![CDATA[CASE WHEN "10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."SCHEDULEPUBLISHERREPORT"= 'Y' THEN 1 END
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000019-01f4-0000-43a0-02d000000000-mbb1d9200-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d9200-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb9895d60-0c34-1000-bea8-7f0000010000" name="# of Allowed View Publisher Reports" isWriteable="false">
+<MeasureDefn mdsid="mba75b933-0c34-1000-bea8-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mba75b934-0c34-1000-bea8-7f0000010000" name="AggRule_2050:2480091342061687" isDefault="true">
+<Expr mdsid="m0000001a-01f4-0000-99ec-7de000000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("10 - Usage Tracking"."WP Object Permissions"."# of Allowed View Publisher Reports")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001a-01f4-0000-99ec-7de000000000-mb9895d60-0c34-1000-bea8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/bb47884a-0c34-1000-a434-0a9f65cc0000.xml#mb9895d60-0c34-1000-bea8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb9895d61-0c34-1000-bea8-7f0000010000" name="AD_3900:2479551342061687">
+<Expr mdsid="m0000001b-01f4-0000-cdf6-52c700000000" name="Expr">
+<ExprText><![CDATA[CASE WHEN "%1"= 'Y' THEN 1 END
+]]></ExprText>
+<ExprTextDesc><![CDATA[CASE WHEN "10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."VIEWPUBLISHEROUTPUT"= 'Y' THEN 1 END
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001b-01f4-0000-cdf6-52c700000000-mbb1d9202-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d9202-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb9c0c110-0c34-1000-bea8-7f0000010000" name="# of Denied Reads" isWriteable="false">
+<MeasureDefn mdsid="mba75b935-0c34-1000-bea8-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mbaf98f30-0c34-1000-bea8-7f0000010000" name="AggRule_2050:2481341342061687" isDefault="true">
+<Expr mdsid="m0000001c-01f4-0000-15fc-ce6300000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("10 - Usage Tracking"."WP Object Permissions"."# of Denied Reads")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001c-01f4-0000-15fc-ce6300000000-mb9c0c110-0c34-1000-bea8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/bb47884a-0c34-1000-a434-0a9f65cc0000.xml#mb9c0c110-0c34-1000-bea8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb9c0c111-0c34-1000-bea8-7f0000010000" name="AD_3900:2479591342061687">
+<Expr mdsid="m0000001d-01f4-0000-0472-438000000000" name="Expr">
+<ExprText><![CDATA[case when "%1" = 'N' THEN 1 END
+]]></ExprText>
+<ExprTextDesc><![CDATA[case when "10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."READ" = 'N' THEN 1 END
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001d-01f4-0000-0472-438000000000-mbb1d91fe-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d91fe-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb9c295d0-0c34-1000-bea8-7f0000010000" name="# of Denied Execute/Traverses" isWriteable="false">
+<MeasureDefn mdsid="mba75e041-0c34-1000-bea8-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mba75e042-0c34-1000-bea8-7f0000010000" name="AggRule_2050:2480131342061687" isDefault="true">
+<Expr mdsid="m0000001e-01f4-0000-2dcb-a55b00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("10 - Usage Tracking"."WP Object Permissions"."# of Denied Execute/Traverses")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001e-01f4-0000-2dcb-a55b00000000-mb9c295d0-0c34-1000-bea8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/bb47884a-0c34-1000-a434-0a9f65cc0000.xml#mb9c295d0-0c34-1000-bea8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb9c295d1-0c34-1000-bea8-7f0000010000" name="AD_3900:2479631342061687">
+<Expr mdsid="m0000001f-01f4-0000-7eec-ca0500000000" name="Expr">
+<ExprText><![CDATA[CASE WHEN "%1"= 'N' THEN 1 END]]></ExprText>
+<ExprTextDesc><![CDATA[CASE WHEN "10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."EXECUTE"= 'N' THEN 1 END]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001f-01f4-0000-7eec-ca0500000000-mbb1d91f5-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d91f5-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb9c44380-0c34-1000-bea8-7f0000010000" name="# of Denied Writes" isWriteable="false">
+<MeasureDefn mdsid="mba75e043-0c34-1000-bea8-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mba75e044-0c34-1000-bea8-7f0000010000" name="AggRule_2050:2480151342061687" isDefault="true">
+<Expr mdsid="m00000020-01f4-0000-eb07-560e00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("10 - Usage Tracking"."WP Object Permissions"."# of Denied Writes")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000020-01f4-0000-eb07-560e00000000-mb9c44380-0c34-1000-bea8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/bb47884a-0c34-1000-a434-0a9f65cc0000.xml#mb9c44380-0c34-1000-bea8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb9c46a90-0c34-1000-bea8-7f0000010000" name="AD_3900:2479671342061687">
+<Expr mdsid="m00000021-01f4-0000-4c33-facd00000000" name="Expr">
+<ExprText><![CDATA[CASE WHEN "%1"= 'N' THEN 1 END]]></ExprText>
+<ExprTextDesc><![CDATA[CASE WHEN "10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."WRITE"= 'N' THEN 1 END]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000021-01f4-0000-4c33-facd00000000-mbb1d9203-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d9203-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb9c63f50-0c34-1000-bea8-7f0000010000" name="# of Denied Deletes" isWriteable="false">
+<MeasureDefn mdsid="mba75e045-0c34-1000-bea8-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mba75e046-0c34-1000-bea8-7f0000010000" name="AggRule_2050:2480171342061687" isDefault="true">
+<Expr mdsid="m00000022-01f4-0000-19fb-13df00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("10 - Usage Tracking"."WP Object Permissions"."# of Denied Deletes")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000022-01f4-0000-19fb-13df00000000-mb9c63f50-0c34-1000-bea8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/bb47884a-0c34-1000-a434-0a9f65cc0000.xml#mb9c63f50-0c34-1000-bea8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb9c63f51-0c34-1000-bea8-7f0000010000" name="AD_3900:2479711342061687">
+<Expr mdsid="m00000023-01f4-0000-b5c5-ca8500000000" name="Expr">
+<ExprText><![CDATA[CASE WHEN "%1"= 'N' THEN 1 END]]></ExprText>
+<ExprTextDesc><![CDATA[CASE WHEN "10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."DEL"= 'N' THEN 1 END]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000023-01f4-0000-b5c5-ca8500000000-mbb1d91f4-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d91f4-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb9c83b20-0c34-1000-bea8-7f0000010000" name="# of Denied ChangePermitteds" isWriteable="false">
+<MeasureDefn mdsid="mba760750-0c34-1000-bea8-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mba760751-0c34-1000-bea8-7f0000010000" name="AggRule_2050:2480191342061687" isDefault="true">
+<Expr mdsid="m00000024-01f4-0000-6159-810c00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("10 - Usage Tracking"."WP Object Permissions"."# of Denied ChangePermitteds")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000024-01f4-0000-6159-810c00000000-mb9c83b20-0c34-1000-bea8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/bb47884a-0c34-1000-a434-0a9f65cc0000.xml#mb9c83b20-0c34-1000-bea8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb9c83b21-0c34-1000-bea8-7f0000010000" name="AD_3900:2479751342061687">
+<Expr mdsid="m00000025-01f4-0000-6796-26dd00000000" name="Expr">
+<ExprText><![CDATA[CASE WHEN "%1"= 'N' THEN 1  END]]></ExprText>
+<ExprTextDesc><![CDATA[CASE WHEN "10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."CHANGEPERMISSIONS"= 'N' THEN 1  END]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000025-01f4-0000-6796-26dd00000000-mbb1d91f3-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d91f3-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb9ca36f0-0c34-1000-bea8-7f0000010000" name="# of Denied Set Ownerships" isWriteable="false">
+<MeasureDefn mdsid="mba760752-0c34-1000-bea8-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mba760753-0c34-1000-bea8-7f0000010000" name="AggRule_2050:2480211342061687" isDefault="true">
+<Expr mdsid="m00000026-01f4-0000-069f-4a5a00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("10 - Usage Tracking"."WP Object Permissions"."# of Denied Set Ownerships")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000026-01f4-0000-069f-4a5a00000000-mb9ca36f0-0c34-1000-bea8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/bb47884a-0c34-1000-a434-0a9f65cc0000.xml#mb9ca36f0-0c34-1000-bea8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb9ca36f1-0c34-1000-bea8-7f0000010000" name="AD_3900:2479791342061687">
+<Expr mdsid="m00000027-01f4-0000-b167-738100000000" name="Expr">
+<ExprText><![CDATA[CASE WHEN "%1"= 'N' THEN 1 END]]></ExprText>
+<ExprTextDesc><![CDATA[CASE WHEN "10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."SETOWNERSHIP"= 'N' THEN 1 END]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000027-01f4-0000-b167-738100000000-mbb1d9201-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d9201-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb9cc59d0-0c34-1000-bea8-7f0000010000" name="# of Denied Run Publisher Reports" isWriteable="false">
+<MeasureDefn mdsid="mba760754-0c34-1000-bea8-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mba760755-0c34-1000-bea8-7f0000010000" name="AggRule_2050:2480231342061687" isDefault="true">
+<Expr mdsid="m00000028-01f4-0000-e77e-b5a900000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("10 - Usage Tracking"."WP Object Permissions"."# of Denied Run Publisher Reports")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000028-01f4-0000-e77e-b5a900000000-mb9cc59d0-0c34-1000-bea8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/bb47884a-0c34-1000-a434-0a9f65cc0000.xml#mb9cc59d0-0c34-1000-bea8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb9cc59d1-0c34-1000-bea8-7f0000010000" name="AD_3900:2479831342061687">
+<Expr mdsid="m00000029-01f4-0000-b9fb-721900000000" name="Expr">
+<ExprText><![CDATA[CASE WHEN "%1"= 'N' THEN 1  END]]></ExprText>
+<ExprTextDesc><![CDATA[CASE WHEN "10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."RUNPUBLISHERREPORT"= 'N' THEN 1  END]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000029-01f4-0000-b9fb-721900000000-mbb1d91ff-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d91ff-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb9ce7cb0-0c34-1000-bea8-7f0000010000" name="# of Denied Schedule Publisher Reports" isWriteable="false">
+<MeasureDefn mdsid="mba760756-0c34-1000-bea8-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mba762e60-0c34-1000-bea8-7f0000010000" name="AggRule_2050:2480251342061687" isDefault="true">
+<Expr mdsid="m0000002a-01f4-0000-316a-7e7400000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("10 - Usage Tracking"."WP Object Permissions"."# of Denied Schedule Publisher Reports")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002a-01f4-0000-316a-7e7400000000-mb9ce7cb0-0c34-1000-bea8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/bb47884a-0c34-1000-a434-0a9f65cc0000.xml#mb9ce7cb0-0c34-1000-bea8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb9ce7cb1-0c34-1000-bea8-7f0000010000" name="AD_3900:2479871342061687">
+<Expr mdsid="m0000002b-01f4-0000-0633-7a4b00000000" name="Expr">
+<ExprText><![CDATA[CASE WHEN "%1"= 'N' THEN 1  END]]></ExprText>
+<ExprTextDesc><![CDATA[CASE WHEN "10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."SCHEDULEPUBLISHERREPORT"= 'N' THEN 1  END]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002b-01f4-0000-0633-7a4b00000000-mbb1d9200-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d9200-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb9d0c6a0-0c34-1000-bea8-7f0000010000" name="# of Denied View Publisher Reports" isWriteable="false">
+<MeasureDefn mdsid="mba762e61-0c34-1000-bea8-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mba762e62-0c34-1000-bea8-7f0000010000" name="AggRule_2050:2480271342061687" isDefault="true">
+<Expr mdsid="m0000002c-01f4-0000-5a28-51ae00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("10 - Usage Tracking"."WP Object Permissions"."# of Denied View Publisher Reports")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002c-01f4-0000-5a28-51ae00000000-mb9d0c6a0-0c34-1000-bea8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/bb47884a-0c34-1000-a434-0a9f65cc0000.xml#mb9d0c6a0-0c34-1000-bea8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb9d0c6a1-0c34-1000-bea8-7f0000010000" name="AD_3900:2479911342061687">
+<Expr mdsid="m0000002d-01f4-0000-ca9a-c3a900000000" name="Expr">
+<ExprText><![CDATA[CASE WHEN "%1"= 'N' THEN 1  END]]></ExprText>
+<ExprTextDesc><![CDATA[CASE WHEN "10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."VIEWPUBLISHEROUTPUT"= 'N' THEN 1  END]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002d-01f4-0000-ca9a-c3a900000000-mbb1d9202-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d9202-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7e6bc0-0c34-1000-bea8-7f0000010000" name="# of Accounts with Explicit Permisions" isWriteable="false">
+<MeasureDefn mdsid="mba8dfc20-0c34-1000-bea8-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mbba363c0-0c34-1000-bea8-7f0000010000" name="AggRule_2050:2482161342062756" isDefault="true">
+<Expr mdsid="m0000002e-01f4-0000-c7d4-d48700000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "10 - Usage Tracking"."WP Object Permissions"."# of Accounts with Explicit Permisions")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002e-01f4-0000-c7d4-d48700000000-mba7e6bc0-0c34-1000-bea8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/bb47884a-0c34-1000-a434-0a9f65cc0000.xml#mba7e6bc0-0c34-1000-bea8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mba7e6bc1-0c34-1000-bea8-7f0000010000" name="AD_3900:2480321342061687">
+<Expr mdsid="m0000002f-01f4-0000-71f0-f41000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."ACCOUNT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002f-01f4-0000-71f0-f41000000000-mbb1d91f1-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d91f1-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7f0800-0c34-1000-bea8-7f0000010000" name="# of Objects with Explicit Permisions" isWriteable="false">
+<MeasureDefn mdsid="mba8dfc22-0c34-1000-bea8-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mba8dfc23-0c34-1000-bea8-7f0000010000" name="AggRule_2050:2480411342061687" isDefault="true">
+<Expr mdsid="m00000030-01f4-0000-89de-73e300000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "10 - Usage Tracking"."WP Object Permissions"."# of Objects with Explicit Permisions")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000030-01f4-0000-89de-73e300000000-mba7f0800-0c34-1000-bea8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/bb47884a-0c34-1000-a434-0a9f65cc0000.xml#mba7f0800-0c34-1000-bea8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mba7f0801-0c34-1000-bea8-7f0000010000" name="AD_3900:2480371342061687">
+<Expr mdsid="m00000031-01f4-0000-8183-cdc000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Facts"."OBJECTPATH"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000031-01f4-0000-8183-cdc000000000-mbb1d91f7-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb1d91f0-0c34-1000-a434-0a9f65cc0000.xml#mbb1d91f7-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="mbb47884a-0c34-1000-a434-0a9f65cc0000-mbb47884c-0c34-1000-a434-0a9f65cc0000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/bb47884c-0c34-1000-a434-0a9f65cc0000.xml#mbb47884c-0c34-1000-a434-0a9f65cc0000"/>
+</RefTableSources>
+</LogicalTable>

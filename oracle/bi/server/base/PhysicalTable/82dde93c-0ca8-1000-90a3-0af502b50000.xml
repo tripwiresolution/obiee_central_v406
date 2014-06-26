@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m82dde93c-0ca8-1000-90a3-0af502b50000" name="ADS_BI_HRV_OBJECTIVES_SP" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" maxConn="0" containerRef="/oracle/bi/server/base/Schema/82ddc127-0ca8-1000-90a3-0af502b50000.xml#m82ddc127-0ca8-1000-90a3-0af502b50000">
+<PhysicalColumn mdsid="m82dde93d-0ca8-1000-90a3-0af502b50000" name="ACHIEVEMENT_DATE" dataType="DATETIME" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde93e-0ca8-1000-90a3-0af502b50000" name="ACTUAL_VALUE" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde93f-0ca8-1000-90a3-0af502b50000" name="COMPLETE_PERCENT" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde940-0ca8-1000-90a3-0af502b50000" name="MEASUREMENT_STYLE_CODE" dataType="VARCHAR" precision="30" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde941-0ca8-1000-90a3-0af502b50000" name="MEASURE_NAME" dataType="VARCHAR" precision="240" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde942-0ca8-1000-90a3-0af502b50000" name="NAME" dataType="VARCHAR" precision="400" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde943-0ca8-1000-90a3-0af502b50000" name="OBJECTIVE_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde944-0ca8-1000-90a3-0af502b50000" name="PERSON_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde945-0ca8-1000-90a3-0af502b50000" name="SCORE1" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde946-0ca8-1000-90a3-0af502b50000" name="SCORE2" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde947-0ca8-1000-90a3-0af502b50000" name="SCORECARD_NAME" dataType="VARCHAR" precision="400" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde948-0ca8-1000-90a3-0af502b50000" name="START_DATE" dataType="DATETIME" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde949-0ca8-1000-90a3-0af502b50000" name="TARGET_DATE" dataType="DATETIME" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde94a-0ca8-1000-90a3-0af502b50000" name="TARGET_VALUE" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde94b-0ca8-1000-90a3-0af502b50000" name="UOM_CODE" dataType="VARCHAR" precision="30" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m82de364d-0ca8-1000-90a3-0af502b50000" name="PERSON_ID">
+<RefColumns>
+<RefColumn refId="m82de364d-0ca8-1000-90a3-0af502b50000-m82dde943-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82dde93c-0ca8-1000-90a3-0af502b50000.xml#m82dde943-0ca8-1000-90a3-0af502b50000"/>
+<RefColumn refId="m82de364d-0ca8-1000-90a3-0af502b50000-m82dde944-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82dde93c-0ca8-1000-90a3-0af502b50000.xml#m82dde944-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m82de3690-0ca8-1000-90a3-0af502b50000" name="ADS_BI_HRV_OBJECTIVES_SP_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82dde979-0ca8-1000-90a3-0af502b50000.xml#m82de3652-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82de3690-0ca8-1000-90a3-0af502b50000-m82dde944-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82dde93c-0ca8-1000-90a3-0af502b50000.xml#m82dde944-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

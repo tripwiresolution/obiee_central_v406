@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m9449bf1d-0c1f-1000-b9aa-0af502b10000" name="L2 Other Lookups" iconIndex="77" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" x="519" y="1494" maxConn="0" containerRef="/oracle/bi/server/base/Schema/9449bd23-0c1f-1000-b9aa-0af502b10000.xml#m9449bd23-0c1f-1000-b9aa-0af502b10000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/9449bd61-0c1f-1000-b9aa-0af502b10000.xml#m9449bd61-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Other Lookups Alias: Stores various description lookup information for dimension attributes]]></Description>
+<PhysicalColumn mdsid="m9449bf1e-0c1f-1000-b9aa-0af502b10000" name="Lookup_Type" dataType="VARCHAR" precision="25" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/9449bd61-0c1f-1000-b9aa-0af502b10000.xml#m9449bd62-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Lookup Type: Stores the name of the dimension attribute. Some possible values are 'Marital Status', 'Customer Type' and so on.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bf1f-0c1f-1000-b9aa-0af502b10000" name="Language_Key" dataType="VARCHAR" precision="25" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/9449bd61-0c1f-1000-b9aa-0af502b10000.xml#m9449bd63-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Language Key: Stores the language information in short form like 'en', 'fr', 'es' and so on.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bf20-0c1f-1000-b9aa-0af502b10000" name="Lookup_Dsc" dataType="VARCHAR" precision="25" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/9449bd61-0c1f-1000-b9aa-0af502b10000.xml#m9449bd64-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Lookup Description: Stores the description of a dimension attribute in a specific language]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bf21-0c1f-1000-b9aa-0af502b10000" name="Lookup_Key" dataType="VARCHAR" precision="10" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/9449bd61-0c1f-1000-b9aa-0af502b10000.xml#m9449bd65-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Lookup Key: Stores the key value of a dimension attribute in a specific language]]></Description>
+</PhysicalColumn>
+<PhysicalKey mdsid="m9449bf92-0c1f-1000-b9aa-0af502b10000" name="ok">
+<RefColumns>
+<RefColumn refId="m9449bf92-0c1f-1000-b9aa-0af502b10000-m9449bf1f-0c1f-1000-b9aa-0af502b10000" columnRef="/oracle/bi/server/base/PhysicalTable/9449bf1d-0c1f-1000-b9aa-0af502b10000.xml#m9449bf1f-0c1f-1000-b9aa-0af502b10000"/>
+<RefColumn refId="m9449bf92-0c1f-1000-b9aa-0af502b10000-m9449bf21-0c1f-1000-b9aa-0af502b10000" columnRef="/oracle/bi/server/base/PhysicalTable/9449bf1d-0c1f-1000-b9aa-0af502b10000.xml#m9449bf21-0c1f-1000-b9aa-0af502b10000"/>
+<RefColumn refId="m9449bf92-0c1f-1000-b9aa-0af502b10000-m9449bf1e-0c1f-1000-b9aa-0af502b10000" columnRef="/oracle/bi/server/base/PhysicalTable/9449bf1d-0c1f-1000-b9aa-0af502b10000.xml#m9449bf1e-0c1f-1000-b9aa-0af502b10000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="m9449bf93-0c1f-1000-b9aa-0af502b10000" name="D42 Product Color (Lookup Table)_Key">
+<RefColumns>
+<RefColumn refId="m9449bf93-0c1f-1000-b9aa-0af502b10000-m9449bf21-0c1f-1000-b9aa-0af502b10000" columnRef="/oracle/bi/server/base/PhysicalTable/9449bf1d-0c1f-1000-b9aa-0af502b10000.xml#m9449bf21-0c1f-1000-b9aa-0af502b10000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

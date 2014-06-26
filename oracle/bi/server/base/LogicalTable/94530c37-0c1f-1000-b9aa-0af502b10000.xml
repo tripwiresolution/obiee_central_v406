@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m94530c37-0c1f-1000-b9aa-0af502b10000" name="D0 Time" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="1067" y="621" subjectAreaRef="/oracle/bi/server/base/BusinessModel/94530bf0-0c1f-1000-b9aa-0af502b10000.xml#m94530bf0-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[This logical table maps to the physical Time Dimension tables at Day,Month and Quarter grains. 
+It is mapped to 4 LTS.
+LTS1 Time Day Grain - Maps to the physical time table at day grain.
+LTS2 Time Month Grain - Maps to the physical time table at month grain.
+LTS3 Time Quarter Grain - Maps to the physical time table at quarter grain.
+LTS4 Targets (XML Source) - Maps to Fact targets XML source.
+
+ ]]></Description>
+<LogicalColumn mdsid="m94530c38-0c1f-1000-b9aa-0af502b10000" name="LTS4 Targets (XML Source)" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the information in date format .]]></Description>
+<AttrDefn mdsid="m94530ea9-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979331332977199">
+<Expr mdsid="m00000001-01f4-0000-8be3-85cf00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."LTS4_Targe000302BC"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-8be3-85cf00000000-m28511442-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m28511442-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c39-0c1f-1000-b9aa-0af502b10000" name="T01 Per Name Week" isWriteable="false">
+<Description><![CDATA[Help : 
+Period Name Week: Stores the week information in the format YYYY Week Weeknumber.
+Eg:- 2009 Week 1]]></Description>
+<AttrDefn mdsid="m94530eaa-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979341332977199">
+<Expr mdsid="m00000002-01f4-0000-596b-e50600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T01_Per_Na000302BD"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-596b-e50600000000-m28511443-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m28511443-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c3a-0c1f-1000-b9aa-0af502b10000" name="T02 Per Name Month" isWriteable="false">
+<Description><![CDATA[Help : 
+Period Name Month: Stores the year information in the format YYYY / MM.
+Eg:- 2009 / 01]]></Description>
+<AttrDefn mdsid="m94530eab-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979351332977199">
+<Expr mdsid="m00000003-01f4-0000-2b44-b03200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["DMA_DB"."ESSCUBE1".""."ESSCUBE1"."Month"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-2b44-b03200000000-mc0000016-1efa-14da-be73-7f0000010000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/c0000001-1efa-14da-be73-7f0000010000.xml#mc0000016-1efa-14da-be73-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c3b-0c1f-1000-b9aa-0af502b10000" name="T03 Per Name Qtr" isWriteable="false">
+<Description><![CDATA[Help :
+Period Name Quarter: Stores the quarter information in the format YYYY QQuarterNumber.
+Eg:- 2009 Q1]]></Description>
+<AttrDefn mdsid="m94530eac-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979361332977199">
+<Expr mdsid="m00000004-01f4-0000-7138-a64300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["DMA_DB"."ESSCUBE1".""."ESSCUBE1"."Quarter"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-7138-a64300000000-mc0000011-1efa-14da-be73-7f0000010000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/c0000001-1efa-14da-be73-7f0000010000.xml#mc0000011-1efa-14da-be73-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c3c-0c1f-1000-b9aa-0af502b10000" name="T04 Per Name Half" isWriteable="false">
+<Description><![CDATA[Help : 
+Period Name Half: Stores the Half year information in the format YYYY HYHalfYearNumber.
+Eg:- 2009 HY1]]></Description>
+<AttrDefn mdsid="m94530ead-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979371332977199">
+<Expr mdsid="m00000005-01f4-0000-739f-856b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ESSB)"."EXA_ESSB".""."EXA_ESSB"."Half"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-739f-856b00000000-m00000011-1e52-14da-be73-7f0000010000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/00000001-1e52-14da-be73-7f0000010000.xml#m00000011-1e52-14da-be73-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c3d-0c1f-1000-b9aa-0af502b10000" name="T05 Per Name Year" isWriteable="false">
+<Description><![CDATA[Help :
+Period Name Year: Stores the year information in the format YYYY.
+Eg:- 2009]]></Description>
+<AttrDefn mdsid="m94530eae-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979381332977199">
+<Expr mdsid="m00000006-01f4-0000-1fe2-81ad00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["DMA_DB"."ESSCUBE1".""."ESSCUBE1"."Year"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-1fe2-81ad00000000-mc000000c-1efa-14da-be73-7f0000010000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/c0000001-1efa-14da-be73-7f0000010000.xml#mc000000c-1efa-14da-be73-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c3e-0c1f-1000-b9aa-0af502b10000" name="T06 Row Wid" isWriteable="false">
+<Description><![CDATA[Help : 
+Row Wid uniquely identifies a row in the Time dimension table and stores the date information in the format YYYYMMDD.
+Eg :- 20091101.]]></Description>
+<AttrDefn mdsid="m94530eaf-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979391332977199">
+<Expr mdsid="m00000007-01f4-0000-e84a-a0b000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T06_Row_Wi000302C2"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-e84a-a0b000000000-m28511448-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m28511448-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c3f-0c1f-1000-b9aa-0af502b10000" name="T1 ------------------------------------------" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m00000008-01f4-0000-7c3f-6bda00000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m94530eb0-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979401332977199">
+<Expr mdsid="m00000009-01f4-0000-fe36-d16100000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c40-0c1f-1000-b9aa-0af502b10000" name="T11 Day Of Week" isWriteable="false">
+<Description><![CDATA[Help :
+Day of Week: Stores the values 1, 2, 3.. upto 7.]]></Description>
+<AttrDefn mdsid="m94530eb1-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979411332977199">
+<Expr mdsid="m0000000a-01f4-0000-3bc1-d79f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T11_Day_Of000302C4"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-3bc1-d79f00000000-m28511449-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m28511449-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c41-0c1f-1000-b9aa-0af502b10000" name="T12 Day Of Month" isWriteable="false">
+<Description><![CDATA[Help :
+Day of Month: Stores the values 1, 2, 3.. upto 31.]]></Description>
+<AttrDefn mdsid="m94530eb2-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979421332977199">
+<Expr mdsid="m0000000b-01f4-0000-ab32-af6e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T12_Day_Of000302C5"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-ab32-af6e00000000-m2851144a-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m2851144a-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c42-0c1f-1000-b9aa-0af502b10000" name="T15 Day Of Year" isWriteable="false">
+<Description><![CDATA[Help : 
+Day of Year: Stores the values 1, 2, 3.. upto 366.]]></Description>
+<AttrDefn mdsid="m94530eb3-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979431332977199">
+<Expr mdsid="m0000000c-01f4-0000-ca5e-a23b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T15_Day_Of000302C6"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-ca5e-a23b00000000-m2851144b-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m2851144b-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c43-0c1f-1000-b9aa-0af502b10000" name="T2 ------------------------------------------" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m0000000d-01f4-0000-ec8a-0dee00000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m94530eb4-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979441332977199">
+<Expr mdsid="m0000000e-01f4-0000-9151-d54200000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c44-0c1f-1000-b9aa-0af502b10000" name="T21 Beg of Week Wid" iconIndex="91" isWriteable="false">
+<Description><![CDATA[Help : 
+Beginning of Week Wid: Stores the value in the format YYYYMMDD.
+For the day key 20100202, Beg_of_Week_Wid will be 20100131.]]></Description>
+<AttrDefn mdsid="m94530eb5-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979451332977199">
+<Expr mdsid="m0000000f-01f4-0000-d17c-37c600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T21_Beg_of000302C8"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-d17c-37c600000000-m2851144c-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m2851144c-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c45-0c1f-1000-b9aa-0af502b10000" name="T22 Beg of Mth Wid" iconIndex="91" isWriteable="false">
+<Description><![CDATA[Help : 
+Beginning of Mth Wid: Stores the value in the format YYYYMMDD.
+For the day key 20100202, Beg_of_Qtr_Wid will be 20100201.]]></Description>
+<AttrDefn mdsid="m94530eb6-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979461332977199">
+<Expr mdsid="m00000010-01f4-0000-35ae-061900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T22_Beg_of000302C9"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-35ae-061900000000-m2851144d-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m2851144d-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c46-0c1f-1000-b9aa-0af502b10000" name="T23 Beg of Qtr Wid" iconIndex="91" isWriteable="false">
+<Description><![CDATA[Help :
+Beginning of Qtr Wid: Stores the value in the format YYYYMMDD.
+For the day key 20100202, Beg_of_Qtr_Wid will be 20100101.]]></Description>
+<AttrDefn mdsid="m94530eb7-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979471332977199">
+<Expr mdsid="m00000011-01f4-0000-93d3-554000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T23_Beg_of000302CA"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-93d3-554000000000-m2851144e-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m2851144e-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c47-0c1f-1000-b9aa-0af502b10000" name="T26 Days in Mth" isWriteable="false">
+<Description><![CDATA[Help : 
+Days in Month : Stores value 28, 29, 30 or 31.]]></Description>
+<AttrDefn mdsid="m94530eb8-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979481332977199">
+<Expr mdsid="m00000012-01f4-0000-427b-779500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T26_Days_i000302CB"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-427b-779500000000-m2851144f-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m2851144f-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c48-0c1f-1000-b9aa-0af502b10000" name="T27 Days in Qtr" isWriteable="false">
+<Description><![CDATA[Help : 
+Days in Quarter : Stores value 90, 91 or 92]]></Description>
+<AttrDefn mdsid="m94530eb9-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979491332977199">
+<Expr mdsid="m00000013-01f4-0000-8035-86be00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T27_Days_i000302CC"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-8035-86be00000000-m28511450-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m28511450-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c49-0c1f-1000-b9aa-0af502b10000" name="T28 Holiday" isWriteable="false">
+<Description><![CDATA[Help : 
+Holiday : Flag to indicate if a day is holiday or not.
+Possible vlaues are 0 or 1.]]></Description>
+<AttrDefn mdsid="m94530eba-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979501332977199">
+<Expr mdsid="m00000014-01f4-0000-4e24-24a800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T28_Holida000302CD"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-4e24-24a800000000-m28511451-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m28511451-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c4a-0c1f-1000-b9aa-0af502b10000" name="T3 ------------------------------------------" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m00000015-01f4-0000-12c8-69a000000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m94530ebb-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979511332977199">
+<Expr mdsid="m00000016-01f4-0000-4109-26b100000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c4b-0c1f-1000-b9aa-0af502b10000" name="T31 Cal Week" isWriteable="false">
+<Description><![CDATA[Help : 
+Calendar Week: Stores value 1,2,3 ..upto 53.]]></Description>
+<AttrDefn mdsid="m94530ebc-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979521332977199">
+<Expr mdsid="m00000017-01f4-0000-2b9d-c3c200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T31_Cal_We000302CF"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-2b9d-c3c200000000-m28511452-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m28511452-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c4c-0c1f-1000-b9aa-0af502b10000" name="T32 Cal Month" isWriteable="false">
+<Description><![CDATA[Help : 
+Calendar Month: Stores value 1,2,3 ..upto 12]]></Description>
+<AttrDefn mdsid="m94530ebd-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979531332977199">
+<Expr mdsid="m00000018-01f4-0000-2a5a-770c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T32_Cal_Mo000302D0"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000018-01f4-0000-2a5a-770c00000000-m28511453-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m28511453-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c4d-0c1f-1000-b9aa-0af502b10000" name="T33 Cal Qtr" isWriteable="false">
+<Description><![CDATA[Help : 
+Calendar Quarter: Stores value 1,2,3 or 4]]></Description>
+<AttrDefn mdsid="m94530ebe-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979541332977199">
+<Expr mdsid="m00000019-01f4-0000-46c2-a6d700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T33_Cal_Qt000302D1"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000019-01f4-0000-46c2-a6d700000000-m28511454-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m28511454-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c4e-0c1f-1000-b9aa-0af502b10000" name="T34 Cal Half" isWriteable="false">
+<Description><![CDATA[Help : 
+Calendar Half: Stores value 1 or 2]]></Description>
+<AttrDefn mdsid="m94530ebf-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979551332977199">
+<Expr mdsid="m0000001a-01f4-0000-d74c-0eea00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T34_Cal_Ha000302D2"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001a-01f4-0000-d74c-0eea00000000-m28511455-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m28511455-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c4f-0c1f-1000-b9aa-0af502b10000" name="T35 Cal Year" isWriteable="false">
+<Description><![CDATA[Help : 
+Calendar Year: Stores value in the format YYYY]]></Description>
+<AttrDefn mdsid="m94530ec0-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979561332977199">
+<Expr mdsid="m0000001b-01f4-0000-7c56-178500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T35_Cal_Ye000302D3"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001b-01f4-0000-7c56-178500000000-m28511456-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m28511456-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c50-0c1f-1000-b9aa-0af502b10000" name="T4 ------------------------------------------" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m0000001c-01f4-0000-9edd-12ba00000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m94530ec1-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979571332977199">
+<Expr mdsid="m0000001d-01f4-0000-7c8c-4a7300000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c51-0c1f-1000-b9aa-0af502b10000" name="T41 Fscl Week" isWriteable="false">
+<Description><![CDATA[Help : 
+Fiscal Week : Stores the value 1, 2, 3.. upto 53]]></Description>
+<AttrDefn mdsid="m94530ec2-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979581332977199">
+<Expr mdsid="m0000001e-01f4-0000-498d-82c900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T41_Fscl_W000302D5"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001e-01f4-0000-498d-82c900000000-m28511457-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m28511457-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c52-0c1f-1000-b9aa-0af502b10000" name="T42 Fscl Month" isWriteable="false">
+<Description><![CDATA[Help : 
+Fiscal Month : Stores the value 1, 2, 3.. upto 12.]]></Description>
+<AttrDefn mdsid="m94530ec3-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979591332977199">
+<Expr mdsid="m0000001f-01f4-0000-c3ba-e5ac00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T42_Fscl_M000302D6"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001f-01f4-0000-c3ba-e5ac00000000-m28511458-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m28511458-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c53-0c1f-1000-b9aa-0af502b10000" name="T43 Fscl Qtr" isWriteable="false">
+<Description><![CDATA[Help : 
+Fiscal Quarter : Stores the value 1, 2, 3 or 4]]></Description>
+<AttrDefn mdsid="m94530ec4-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979601332977199">
+<Expr mdsid="m00000020-01f4-0000-2433-1b4800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T43_Fscl_Q000302D7"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000020-01f4-0000-2433-1b4800000000-m28511459-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m28511459-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c54-0c1f-1000-b9aa-0af502b10000" name="T44 Fscl Half" isWriteable="false">
+<Description><![CDATA[Help : 
+Fiscal Half : Stores the value 1 or 2]]></Description>
+<AttrDefn mdsid="m94530ec5-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979611332977199">
+<Expr mdsid="m00000021-01f4-0000-64f7-5d0800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T44_Fscl_H000302D8"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000021-01f4-0000-64f7-5d0800000000-m2851145a-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m2851145a-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c55-0c1f-1000-b9aa-0af502b10000" name="T45 Fscl Year" isWriteable="false">
+<Description><![CDATA[Help : 
+Fiscal Year : Stores the fiscal year in the format YYYY]]></Description>
+<AttrDefn mdsid="m94530ec6-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979621332977199">
+<Expr mdsid="m00000022-01f4-0000-8ca0-240e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T45_Fscl_Y000302D9"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000022-01f4-0000-8ca0-240e00000000-m2851145b-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m2851145b-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c56-0c1f-1000-b9aa-0af502b10000" name="T5 ------------------------------------------" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m00000023-01f4-0000-79dc-001500000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m94530ec7-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979631332977199">
+<Expr mdsid="m00000024-01f4-0000-eb8e-05ae00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c57-0c1f-1000-b9aa-0af502b10000" name="T50 Julian Day Num" isWriteable="false">
+<Description><![CDATA[Help : 
+Julian Day Number : Stores the day number in the Julian Calendar format.
+Eg:- 40570, 40571 and so on.]]></Description>
+<AttrDefn mdsid="m94530ec8-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979641332977199">
+<Expr mdsid="m00000025-01f4-0000-e513-ee4700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T50_Julian000302DB"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000025-01f4-0000-e513-ee4700000000-m2851145c-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m2851145c-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c58-0c1f-1000-b9aa-0af502b10000" name="T51 Julian Week Num" isWriteable="false">
+<Description><![CDATA[Help : 
+Julian Week Number : Stores the week number in the Julian Calendar format. 
+Eg:- 2180, 2181 and so on.]]></Description>
+<AttrDefn mdsid="m94530ec9-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979651332977199">
+<Expr mdsid="m00000026-01f4-0000-0f2b-b62f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T51_Julian000302DC"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000026-01f4-0000-0f2b-b62f00000000-m2851145d-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m2851145d-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c59-0c1f-1000-b9aa-0af502b10000" name="T52 Julian Month Num" isWriteable="false">
+<Description><![CDATA[Help : 
+Julian Month Number : Stores the month number in the Julian Calendar format. 
+Eg:- 500, 501 and so on.]]></Description>
+<AttrDefn mdsid="m94530eca-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979661332977199">
+<Expr mdsid="m00000027-01f4-0000-8263-814600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T52_Julian000302DD"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000027-01f4-0000-8263-814600000000-m2851145e-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m2851145e-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c5a-0c1f-1000-b9aa-0af502b10000" name="T53 Julian Qtr Num" isWriteable="false">
+<Description><![CDATA[Help : 
+Julian Quarter Number : Stores the quarter number in the Julian Calendar format. 
+Eg:- 151, 152 and so on.]]></Description>
+<AttrDefn mdsid="m94530ecb-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979671332977199">
+<Expr mdsid="m00000028-01f4-0000-589a-927000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Day_Det00030403"."T53_Julian000302DE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000028-01f4-0000-589a-927000000000-m2851145f-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28511440-0c71-1000-a576-0af502b30000.xml#m2851145f-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m94530e63-0c1f-1000-b9aa-0af502b10000" name="Dim 07 Time_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m94530e63-0c1f-1000-b9aa-0af502b10000-m94530c38-0c1f-1000-b9aa-0af502b10000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530c37-0c1f-1000-b9aa-0af502b10000.xml#m94530c38-0c1f-1000-b9aa-0af502b10000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m94530c37-0c1f-1000-b9aa-0af502b10000-m94533395-0c1f-1000-b9aa-0af502b10000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/94533395-0c1f-1000-b9aa-0af502b10000.xml#m94533395-0c1f-1000-b9aa-0af502b10000"/>
+<RefLogicalTableSource refId="m94530c37-0c1f-1000-b9aa-0af502b10000-m28198980-0c71-1000-a576-0af502b30000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/28198980-0c71-1000-a576-0af502b30000.xml#m28198980-0c71-1000-a576-0af502b30000"/>
+<RefLogicalTableSource refId="m94530c37-0c1f-1000-b9aa-0af502b10000-m28538540-0c71-1000-a576-0af502b30000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/28538540-0c71-1000-a576-0af502b30000.xml#m28538540-0c71-1000-a576-0af502b30000"/>
+<RefLogicalTableSource refId="m94530c37-0c1f-1000-b9aa-0af502b10000-m80000000-1e56-14da-be73-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80000000-1e56-14da-be73-7f0000010000.xml#m80000000-1e56-14da-be73-7f0000010000"/>
+<RefLogicalTableSource refId="m94530c37-0c1f-1000-b9aa-0af502b10000-m80000000-1eff-14da-be73-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80000000-1eff-14da-be73-7f0000010000.xml#m80000000-1eff-14da-be73-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

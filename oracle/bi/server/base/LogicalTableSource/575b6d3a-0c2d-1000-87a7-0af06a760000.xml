@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m575b6d3a-0c2d-1000-87a7-0af06a760000" name="Flights Performance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6922-0c2d-1000-87a7-0af06a760000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-a9ca-43e900000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Arr Del > 15 Min !"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-a9ca-43e900000000-m575b6923-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6923-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-2178-aa1f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."ARRDEL15"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-2178-aa1f00000000-m57586704-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m57586704-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-0d88-687b00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Arr Time !"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-0d88-687b00000000-m575b6924-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6924-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-eba2-76b800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."ARRTIME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-eba2-76b800000000-m57586701-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m57586701-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-2468-9f6900000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Dbg - Carrier"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-2468-9f6900000000-m575b6925-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6925-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-e0a9-1f0800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."CARRIER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-e0a9-1f0800000000-m575866e6-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866e6-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000007-01f4-0000-3713-fe6d00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Dep Del >15 Min !"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-3713-fe6d00000000-m575b6926-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6926-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000008-01f4-0000-ec48-df2000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."DEPDEL15"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-ec48-df2000000000-m575866f9-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866f9-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000009-01f4-0000-5468-f63e00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Dep Time !"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-5468-f63e00000000-m575b6927-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6927-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000a-01f4-0000-3fbd-3cfb00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."DEPTIME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-3fbd-3cfb00000000-m575866f6-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866f6-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000000b-01f4-0000-4dee-cbf600000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Dest Wac"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-4dee-cbf600000000-m575b6928-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6928-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000c-01f4-0000-eed2-4b9700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."DESTWAC"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-eed2-4b9700000000-m575866f4-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866f4-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000000d-01f4-0000-657f-fab800000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Div Reached Dest"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-657f-fab800000000-m575b6929-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6929-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000e-01f4-0000-06f1-8b5700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."DIVREACHEDDEST"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-06f1-8b5700000000-m57586719-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m57586719-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000000f-01f4-0000-c571-472f00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Diverted !"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-c571-472f00000000-m575b692a-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b692a-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000010-01f4-0000-f8fe-fd7b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."DIVERTED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-f8fe-fd7b00000000-m57586709-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m57586709-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000011-01f4-0000-815f-00a200000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Extra"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-815f-00a200000000-m575b692b-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b692b-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000012-01f4-0000-9a08-0cb000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."EXTRA"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-9a08-0cb000000000-m5758673b-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m5758673b-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000013-01f4-0000-089e-02d500000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."First Dep Time !"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-089e-02d500000000-m575b692c-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b692c-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000014-01f4-0000-9178-1b6400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."FIRSTDEPTIME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-9178-1b6400000000-m57586715-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m57586715-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000015-01f4-0000-4d6d-84de00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Flight Num !"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-4d6d-84de00000000-m575b692d-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b692d-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000016-01f4-0000-a61f-f9a000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."FLIGHTNUM"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-a61f-f9a000000000-m575866e8-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866e8-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000017-01f4-0000-a5bb-439000000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Tail Num !"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-a5bb-439000000000-m575b692e-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b692e-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000018-01f4-0000-815e-250b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."TAILNUM"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000018-01f4-0000-815e-250b00000000-m575866e7-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866e7-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000019-01f4-0000-d2a7-b26e00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Wheels Off !"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000019-01f4-0000-d2a7-b26e00000000-m575b692f-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b692f-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000001a-01f4-0000-e73f-faaf00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."WHEELSOFF"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001a-01f4-0000-e73f-faaf00000000-m575866fd-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866fd-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000001b-01f4-0000-4e38-389a00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Wheels On !"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001b-01f4-0000-4e38-389a00000000-m575b6930-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6930-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000001c-01f4-0000-8ad8-ba2900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."WHEELSON"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001c-01f4-0000-8ad8-ba2900000000-m575866fe-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866fe-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000001d-01f4-0000-ed11-249500000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Dbg - Airlineid"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001d-01f4-0000-ed11-249500000000-m575b6931-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6931-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000001e-01f4-0000-a1f0-21a000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."AIRLINEID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001e-01f4-0000-a1f0-21a000000000-m575866e5-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866e5-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000001f-01f4-0000-2495-925f00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Dbg - Arrival Delay Groups"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001f-01f4-0000-2495-925f00000000-m575b6932-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6932-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000020-01f4-0000-c408-418400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."ARRIVALDELAYGROUPS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000020-01f4-0000-c408-418400000000-m57586705-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m57586705-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000021-01f4-0000-ced7-412600000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Dbg - Cancellation Code"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000021-01f4-0000-ced7-412600000000-m575b6933-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6933-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000022-01f4-0000-40e5-e65b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."CANCELLATIONCODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000022-01f4-0000-40e5-e65b00000000-m57586708-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m57586708-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000023-01f4-0000-335b-63fb00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Dbg - Departure Delay Groups"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000023-01f4-0000-335b-63fb00000000-m575b6934-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6934-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000024-01f4-0000-564d-5f9200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."DEPARTUREDELAYGROUPS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000024-01f4-0000-564d-5f9200000000-m575866fa-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866fa-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000025-01f4-0000-6782-905100000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Dbg - Dest"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000025-01f4-0000-6782-905100000000-m575b6935-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6935-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000026-01f4-0000-1d0a-b3e600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."DEST"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000026-01f4-0000-1d0a-b3e600000000-m575866ef-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866ef-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000027-01f4-0000-f1bd-c1f400000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Dbg - Dest City Name"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000027-01f4-0000-f1bd-c1f400000000-m575b6936-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6936-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000028-01f4-0000-ed65-303d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."DESTCITYNAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000028-01f4-0000-ed65-303d00000000-m575866f0-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866f0-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000029-01f4-0000-e3c7-42e800000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Dbg - Dest State"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000029-01f4-0000-e3c7-42e800000000-m575b6937-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6937-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000002a-01f4-0000-066a-850c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."DESTSTATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002a-01f4-0000-066a-850c00000000-m575866f1-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866f1-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000002b-01f4-0000-77c5-a00300000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Dbg - Dest State Fips"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002b-01f4-0000-77c5-a00300000000-m575b6938-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6938-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000002c-01f4-0000-2142-d5a200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."DESTSTATEFIPS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002c-01f4-0000-2142-d5a200000000-m575866f2-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866f2-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000002d-01f4-0000-97e0-fc5900000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Dbg - Dest State Name"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002d-01f4-0000-97e0-fc5900000000-m575b6939-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6939-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000002e-01f4-0000-8f2f-177000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."DESTSTATENAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002e-01f4-0000-8f2f-177000000000-m575866f3-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866f3-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000002f-01f4-0000-daaa-721900000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Dbg - Distance Group"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002f-01f4-0000-daaa-721900000000-m575b693a-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b693a-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000030-01f4-0000-556f-dabc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."DISTANCEGROUP"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000030-01f4-0000-556f-dabc00000000-m5758670f-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m5758670f-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000031-01f4-0000-aa31-72ae00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Dbg - Flight Date"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000031-01f4-0000-aa31-72ae00000000-m575b693b-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b693b-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000032-01f4-0000-915f-7a1400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."FLIGHTDATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000032-01f4-0000-915f-7a1400000000-m575866e3-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866e3-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000033-01f4-0000-e960-34e300000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Dbg - Origin"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000033-01f4-0000-e960-34e300000000-m575b693c-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b693c-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000034-01f4-0000-7514-000b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."ORIGIN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000034-01f4-0000-7514-000b00000000-m575866e9-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866e9-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000035-01f4-0000-b89f-fa4200000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Dbg - Origin City Name"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000035-01f4-0000-b89f-fa4200000000-m575b693d-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b693d-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000036-01f4-0000-df6a-922b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."ORIGINCITYNAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000036-01f4-0000-df6a-922b00000000-m575866ea-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866ea-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000037-01f4-0000-8d61-b14900000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Dbg - Origin State"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000037-01f4-0000-8d61-b14900000000-m575b693e-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b693e-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000038-01f4-0000-57fa-374900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."ORIGINSTATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000038-01f4-0000-57fa-374900000000-m575866eb-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866eb-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000039-01f4-0000-dbcf-549e00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Dbg - Origin State Fips"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000039-01f4-0000-dbcf-549e00000000-m575b693f-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b693f-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000003a-01f4-0000-6ef8-a3ab00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."ORIGINSTATEFIPS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000003a-01f4-0000-6ef8-a3ab00000000-m575866ec-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866ec-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000003b-01f4-0000-4155-b97a00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Dbg - Origin State Name"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000003b-01f4-0000-4155-b97a00000000-m575b6940-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6940-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000003c-01f4-0000-696d-2ebe00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."ORIGINSTATENAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000003c-01f4-0000-696d-2ebe00000000-m575866ed-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866ed-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000003d-01f4-0000-2e49-938800000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Origin Wac"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000003d-01f4-0000-2e49-938800000000-m575b6941-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6941-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000003e-01f4-0000-4300-541400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."ORIGINWAC"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000003e-01f4-0000-4300-541400000000-m575866ee-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866ee-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000003f-01f4-0000-44d5-bc2200000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Carrier Flight #"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000003f-01f4-0000-44d5-bc2200000000-m575b6942-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m575b6942-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000040-01f4-0000-7e10-9e8900000000" name="Expr">
+<ExprText><![CDATA["%1" || '-' || "%2"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."CARRIER" || '-' || "X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."FLIGHTNUM"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000040-01f4-0000-7e10-9e8900000000-m575866e6-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866e6-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000040-01f4-0000-7e10-9e8900000000-m575866e8-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866e8-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000041-01f4-0000-350e-a18100000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Theoretic Dept Time"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000041-01f4-0000-350e-a18100000000-m81d75bc2-0c33-1000-a9e6-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m81d75bc2-0c33-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000042-01f4-0000-d68b-bf6700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."CRSDEPTIME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000042-01f4-0000-d68b-bf6700000000-m575866f5-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866f5-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000043-01f4-0000-6852-857000000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Theoretic Arr Time"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000043-01f4-0000-6852-857000000000-m82117e90-0c33-1000-a9e6-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m82117e90-0c33-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000044-01f4-0000-d1e9-f6f500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."ARRTIME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000044-01f4-0000-d1e9-f6f500000000-m57586701-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m57586701-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000045-01f4-0000-fcc1-63b200000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."50 Flight"."Pilot ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000045-01f4-0000-fcc1-63b200000000-m94b66c92-0c6a-1000-80d5-0af502ed0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6922-0c2d-1000-87a7-0af06a760000.xml#m94b66c92-0c6a-1000-80d5-0af502ed0000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000046-01f4-0000-4149-754800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."PILOTID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000046-01f4-0000-4149-754800000000-me9ee4a41-0c68-1000-8567-0af502eb0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#me9ee4a41-0c68-1000-8567-0af502eb0000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866dd-0c2d-1000-87a7-0af06a760000">
+</Link>
+<WhereClause mdsid="m00000047-01f4-0000-c4f4-5cce00000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000048-01f4-0000-2427-40a200000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("X0 - Airlines"."50 Flight"."50 Flight Detail")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000048-01f4-0000-2427-40a200000000-m575b6a96-0c2d-1000-87a7-0af06a760000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/575b68b7-0c2d-1000-87a7-0af06a760000.xml#m575b6a96-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m00000049-01f4-0000-3f97-4fde00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

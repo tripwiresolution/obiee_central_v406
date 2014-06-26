@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<InitBlock mdsid="mc0000001-6183-14e1-88f6-7f0000010000" name="ODM_MOD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isSessionVar="true" refreshPeriod="86400" connectionPoolRef="/oracle/bi/server/base/ConnectionPool/80cb28c8-0bd5-0000-714b-e31d00000000.xml#m80cb28c8-0bd5-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[select max(model_name) from odm_all_mining_models_v]]></Value>
+</DBMapItem>
+<RefVariables>
+<RefVariable refId="mc0000001-6183-14e1-88f6-7f0000010000-m40000000-6195-14e1-88f6-7f0000010000" variableRef="/oracle/bi/server/base/Variable/40000000-6195-14e1-88f6-7f0000010000.xml#m40000000-6195-14e1-88f6-7f0000010000"/>
+</RefVariables>
+<InitString><![CDATA[select max(model_name) from odm_all_mining_models_v]]></InitString>
+</InitBlock>

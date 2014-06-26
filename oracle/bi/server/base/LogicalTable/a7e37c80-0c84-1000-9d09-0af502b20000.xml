@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="ma7e37c80-0c84-1000-9d09-0af502b20000" name="D7b Orders (TimeZone Converted)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cab573-07d0-0000-714b-e31d00000000.xml#m80cab573-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="ma7e37c84-0c84-1000-9d09-0af502b20000" name="Order Key" isWriteable="false">
+<AttrDefn mdsid="ma7e37c88-0c84-1000-9d09-0af502b20000" name="AD_3900:2664321376389873">
+<Expr mdsid="m00000001-01f4-0000-ab10-60b500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D71 Orders TimeZone Converted"."Order_key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-ab10-60b500000000-ma7d12d02-0c84-1000-9d09-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/a7c7de30-0c84-1000-9d09-0af502b20000.xml#ma7d12d02-0c84-1000-9d09-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb10744e0-0c84-1000-9d09-0af502b20000" name="R70 Db Timezone" isWriteable="false">
+<AttrDefn mdsid="mb10744e8-0c84-1000-9d09-0af502b20000" name="AD_3900:2665091376404776">
+<Expr mdsid="m00000002-01f4-0000-6770-b63b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D71 Orders TimeZone Converted"."DB_TIMEZONE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-6770-b63b00000000-maf34ced3-0c84-1000-9d09-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/a7c7de30-0c84-1000-9d09-0af502b20000.xml#maf34ced3-0c84-1000-9d09-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb10744e7-0c84-1000-9d09-0af502b20000" name="R71 Selected Timezone" isWriteable="false">
+<AttrDefn mdsid="mb10744ef-0c84-1000-9d09-0af502b20000" name="AD_3900:2665161376404776">
+<Expr mdsid="m00000003-01f4-0000-b8e9-369100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D71 Orders TimeZone Converted"."SELECTED_TZ"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-b8e9-369100000000-mb0139613-0c84-1000-9d09-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/a7c7de30-0c84-1000-9d09-0af502b20000.xml#mb0139613-0c84-1000-9d09-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb10744e1-0c84-1000-9d09-0af502b20000" name="R72 Order Dtime1 Db Tz" isWriteable="false">
+<AttrDefn mdsid="mb10744e9-0c84-1000-9d09-0af502b20000" name="AD_3900:2665101376404776">
+<Expr mdsid="m00000004-01f4-0000-37b4-9c7000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D71 Orders TimeZone Converted"."ORDER_DTIME1_DB_TZ"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-37b4-9c7000000000-ma7d12d01-0c84-1000-9d09-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/a7c7de30-0c84-1000-9d09-0af502b20000.xml#ma7d12d01-0c84-1000-9d09-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb10744e2-0c84-1000-9d09-0af502b20000" name="R74 Order Dtime1 Selected Tz" isWriteable="false">
+<AttrDefn mdsid="mb10744ea-0c84-1000-9d09-0af502b20000" name="AD_3900:2665111376404776">
+<Expr mdsid="m00000005-01f4-0000-50c0-ca2900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D71 Orders TimeZone Converted"."ORDER_DTIME1_SELECTED_TZ"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-50c0-ca2900000000-maf360753-0c84-1000-9d09-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/a7c7de30-0c84-1000-9d09-0af502b20000.xml#maf360753-0c84-1000-9d09-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb10744e5-0c84-1000-9d09-0af502b20000" name="R80 Order Dtime2 Timezone" isWriteable="false">
+<AttrDefn mdsid="mb10744ed-0c84-1000-9d09-0af502b20000" name="AD_3900:2665141376404776">
+<Expr mdsid="m00000006-01f4-0000-a186-9c3000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D71 Orders TimeZone Converted"."ORDER_DTIME2_TIMEZONE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-a186-9c3000000000-maf36caa3-0c84-1000-9d09-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/a7c7de30-0c84-1000-9d09-0af502b20000.xml#maf36caa3-0c84-1000-9d09-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb13077c2-0c84-1000-9d09-0af502b20000" name="R81 Order Dtime2 Custom Tz" isWriteable="false">
+<AttrDefn mdsid="mb13077c3-0c84-1000-9d09-0af502b20000" name="AD_3900:2665241376404947">
+<Expr mdsid="m00000007-01f4-0000-7f8f-a50900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D71 Orders TimeZone Converted"."ORDER_DTIME2_CUSTOM_TZ"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-7f8f-a50900000000-mb128af93-0c84-1000-9d09-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/a7c7de30-0c84-1000-9d09-0af502b20000.xml#mb128af93-0c84-1000-9d09-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb10744e3-0c84-1000-9d09-0af502b20000" name="R82 Order Dtime2 At Db Tz" isWriteable="false">
+<AttrDefn mdsid="mb10744eb-0c84-1000-9d09-0af502b20000" name="AD_3900:2665121376404776">
+<Expr mdsid="m00000008-01f4-0000-a3de-ac3600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D71 Orders TimeZone Converted"."ORDER_DTIME2_AT_DB_TZ"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-a3de-ac3600000000-maf365573-0c84-1000-9d09-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/a7c7de30-0c84-1000-9d09-0af502b20000.xml#maf365573-0c84-1000-9d09-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb10744e4-0c84-1000-9d09-0af502b20000" name="R83 Order Dtime2 Selected Tz" isWriteable="false">
+<AttrDefn mdsid="mb10744ec-0c84-1000-9d09-0af502b20000" name="AD_3900:2665131376404776">
+<Expr mdsid="m00000009-01f4-0000-eac6-09a400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D71 Orders TimeZone Converted"."ORDER_DTIME2_SELECTED_TZ"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-eac6-09a400000000-mb0ee65b3-0c84-1000-9d09-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/a7c7de30-0c84-1000-9d09-0af502b20000.xml#mb0ee65b3-0c84-1000-9d09-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="ma7e37c86-0c84-1000-9d09-0af502b20000" name="D71 Orders TimeZone Converted_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="ma7e37c86-0c84-1000-9d09-0af502b20000-ma7e37c84-0c84-1000-9d09-0af502b20000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/a7e37c80-0c84-1000-9d09-0af502b20000.xml#ma7e37c84-0c84-1000-9d09-0af502b20000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="ma7e37c80-0c84-1000-9d09-0af502b20000-ma7e37c82-0c84-1000-9d09-0af502b20000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/a7e37c82-0c84-1000-9d09-0af502b20000.xml#ma7e37c82-0c84-1000-9d09-0af502b20000"/>
+</RefTableSources>
+</LogicalTable>

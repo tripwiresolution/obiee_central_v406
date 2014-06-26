@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cc43da-0bb9-0000-714b-e31d00000000" name="BPM_CUBE_TASKPERF_STD_V" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" x="898" y="256" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cc43d5-0bd3-0000-714b-e31d00000000.xml#m80cc43d5-0bd3-0000-714b-e31d00000000">
+<PhysicalColumn mdsid="m80cc4453-0bbb-0000-714b-e31d00000000" name="ACTIVITY_DISCRIMINATOR" dataType="VARCHAR" precision="200" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4454-0bbb-0000-714b-e31d00000000" name="ACTIVITY_END_TIME" dataType="TIMESTAMP" scale="6" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4455-0bbb-0000-714b-e31d00000000" name="ACTIVITY_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4456-0bbb-0000-714b-e31d00000000" name="ACTIVITY_LABEL" dataType="VARCHAR" precision="500" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4457-0bbb-0000-714b-e31d00000000" name="ACTIVITY_NAME" dataType="VARCHAR" precision="256" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4458-0bbb-0000-714b-e31d00000000" name="ACTIVITY_PARTICIPANT" dataType="VARCHAR" precision="4000" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4459-0bbb-0000-714b-e31d00000000" name="ACTIVITY_PRIORITY" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc445a-0bbb-0000-714b-e31d00000000" name="ACTIVITY_ROLE_ID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc445b-0bbb-0000-714b-e31d00000000" name="ACTIVITY_ROLE_NAME" dataType="VARCHAR" precision="200" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc445c-0bbb-0000-714b-e31d00000000" name="ACTIVITY_RUNNING_TIME_IN_MSEC" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc445d-0bbb-0000-714b-e31d00000000" name="ACTIVITY_START_TIME" dataType="TIMESTAMP" scale="6" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc445e-0bbb-0000-714b-e31d00000000" name="ACTIVITY_TYPE" dataType="VARCHAR" precision="64" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc445f-0bbb-0000-714b-e31d00000000" name="COMPOSITE_DN" dataType="VARCHAR" precision="500" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4460-0bbb-0000-714b-e31d00000000" name="COMPOSITE_INSTANCE_ID" dataType="VARCHAR" precision="200" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4461-0bbb-0000-714b-e31d00000000" name="COMPOSITE_LABEL" dataType="VARCHAR" precision="100" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4462-0bbb-0000-714b-e31d00000000" name="COMPOSITE_NAME" dataType="VARCHAR" precision="100" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4463-0bbb-0000-714b-e31d00000000" name="COMPOSITE_REVISION" dataType="VARCHAR" precision="50" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4464-0bbb-0000-714b-e31d00000000" name="DOMAIN_NAME" dataType="VARCHAR" precision="100" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4465-0bbb-0000-714b-e31d00000000" name="PROCESS_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4466-0bbb-0000-714b-e31d00000000" name="PROCESS_INSTANCE_ID" dataType="VARCHAR" precision="100" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4467-0bbb-0000-714b-e31d00000000" name="PROCESS_NAME" dataType="VARCHAR" precision="100" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4468-0bbb-0000-714b-e31d00000000" name="SEQUENCE_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cc4498-0bc0-0000-714b-e31d00000000" name="UNIQUE">
+<RefColumns>
+<RefColumn refId="m80cc4498-0bc0-0000-714b-e31d00000000-m80cc4455-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc43da-0bb9-0000-714b-e31d00000000.xml#m80cc4455-0bbb-0000-714b-e31d00000000"/>
+<RefColumn refId="m80cc4498-0bc0-0000-714b-e31d00000000-m80cc4465-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc43da-0bb9-0000-714b-e31d00000000.xml#m80cc4465-0bbb-0000-714b-e31d00000000"/>
+<RefColumn refId="m80cc4498-0bc0-0000-714b-e31d00000000-m80cc4466-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc43da-0bb9-0000-714b-e31d00000000.xml#m80cc4466-0bbb-0000-714b-e31d00000000"/>
+<RefColumn refId="m80cc4498-0bc0-0000-714b-e31d00000000-m80cc4468-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc43da-0bb9-0000-714b-e31d00000000.xml#m80cc4468-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m80cc44a4-0bbe-0000-714b-e31d00000000" name="BPM_CUBE_TASKPERF_STD_V_FKey#2" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cc43dc-0bb9-0000-714b-e31d00000000.xml#m80cc449a-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cc44a4-0bbe-0000-714b-e31d00000000-m80cc4465-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc43da-0bb9-0000-714b-e31d00000000.xml#m80cc4465-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cc44a5-0bbe-0000-714b-e31d00000000" name="BPM_CUBE_TASKPERF_STD_V_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cc43de-0bb9-0000-714b-e31d00000000.xml#m80cc449c-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cc44a5-0bbe-0000-714b-e31d00000000-m80cc445a-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc43da-0bb9-0000-714b-e31d00000000.xml#m80cc445a-0bbb-0000-714b-e31d00000000"/>
+<RefColumn refId="m80cc44a5-0bbe-0000-714b-e31d00000000-m80cc4465-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc43da-0bb9-0000-714b-e31d00000000.xml#m80cc4465-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cc44a6-0bbe-0000-714b-e31d00000000" name="BPM_CUBE_TASKPERF_STD_V_FKey#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cc43dd-0bb9-0000-714b-e31d00000000.xml#m80cc449b-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cc44a6-0bbe-0000-714b-e31d00000000-m80cc4455-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc43da-0bb9-0000-714b-e31d00000000.xml#m80cc4455-0bbb-0000-714b-e31d00000000"/>
+<RefColumn refId="m80cc44a6-0bbe-0000-714b-e31d00000000-m80cc4465-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc43da-0bb9-0000-714b-e31d00000000.xml#m80cc4465-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

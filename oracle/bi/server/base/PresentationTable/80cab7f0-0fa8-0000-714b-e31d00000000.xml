@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationTable mdsid="m80cab7f0-0fa8-0000-714b-e31d00000000" name="Time" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationCatalog/80cab7ef-0fa4-0000-714b-e31d00000000.xml#m80cab7ef-0fa4-0000-714b-e31d00000000">
+<Description><![CDATA[Time dimension attribute objects ]]></Description>
+<Alias name="T"/>
+<PresentationColumn mdsid="m80cab7f1-0faa-0000-714b-e31d00000000" name="T00 Calendar Date" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_T00_Calendar_Date)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5b6-07f3-0000-714b-e31d00000000.xml#m80cab5b7-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help : 
+Stores the date information.]]></Description>
+<Alias name="Date"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab7f2-0faa-0000-714b-e31d00000000" name="T01 Per Name Week" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_T01_Per_Name_Week)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5b6-07f3-0000-714b-e31d00000000.xml#m80cab5b8-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help : 
+Period Name Week. Stores the week information in the format YYYY Week Number. Eg :- 2006 Week 40]]></Description>
+<Alias name="Week"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab7f3-0faa-0000-714b-e31d00000000" name="T02 Per Name Month" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_T02_Per_Name_Month)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5b6-07f3-0000-714b-e31d00000000.xml#m80cab5b9-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help : 
+Period Name Month. Stores the month information in the format YYYY / MM. Eg :- 2006 / 11]]></Description>
+<Alias name="Month"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab7f4-0faa-0000-714b-e31d00000000" name="T03 Per Name Qtr" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_T03_Per_Name_Qtr)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5b6-07f3-0000-714b-e31d00000000.xml#m80cab5ba-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Period Name Quarter. Stores the Quarter information in the format YYYY QQuarterNumber. Eg :- 2006 Q3]]></Description>
+<Alias name="Qtr"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab7f5-0faa-0000-714b-e31d00000000" name="T04 Per Name Half" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_T04_Per_Name_Half)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5b6-07f3-0000-714b-e31d00000000.xml#m80cab5bb-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help : 
+Period Name Half. Stores the Half year information in the format YYYY HYHalfYearNumber. Eg :- 2006 HY2]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab7f6-0faa-0000-714b-e31d00000000" name="T05 Per Name Year" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_T05_Per_Name_Year)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5b6-07f3-0000-714b-e31d00000000.xml#m80cab5bc-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Period Name Year. Stores the year information in the format YYYY. Eg :- 2006]]></Description>
+<Alias name="Year"/>
+</PresentationColumn>
+<RefHierarchies>
+<RefPresentationHierarchy refId="m80cab7f0-0fa8-0000-714b-e31d00000000-m80caba4f-0fbc-0000-714b-e31d00000000" presentationHierarchyRef="/oracle/bi/server/base/PresentationHierarchy/80caba4f-0fbc-0000-714b-e31d00000000.xml#m80caba4f-0fbc-0000-714b-e31d00000000"/>
+<RefPresentationHierarchy refId="m80cab7f0-0fa8-0000-714b-e31d00000000-m80caba4e-0fbc-0000-714b-e31d00000000" presentationHierarchyRef="/oracle/bi/server/base/PresentationHierarchy/80caba4e-0fbc-0000-714b-e31d00000000.xml#m80caba4e-0fbc-0000-714b-e31d00000000"/>
+</RefHierarchies>
+<RefContentFolders>
+<RefPresentationTable refId="m80cab7f0-0fa8-0000-714b-e31d00000000-m80cab7f7-0fa8-0000-714b-e31d00000000" presentationTableRef="/oracle/bi/server/base/PresentationTable/80cab7f7-0fa8-0000-714b-e31d00000000.xml#m80cab7f7-0fa8-0000-714b-e31d00000000"/>
+<RefPresentationTable refId="m80cab7f0-0fa8-0000-714b-e31d00000000-m80cadd01-0fa8-0000-714b-e31d00000000" presentationTableRef="/oracle/bi/server/base/PresentationTable/80cadd01-0fa8-0000-714b-e31d00000000.xml#m80cadd01-0fa8-0000-714b-e31d00000000"/>
+</RefContentFolders>
+</PresentationTable>

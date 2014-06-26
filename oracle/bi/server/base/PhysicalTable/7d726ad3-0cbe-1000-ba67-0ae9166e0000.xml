@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m7d726ad3-0cbe-1000-ba67-0ae9166e0000" name="D92 Mining Model Settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" pollFreq="0" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/7d696a26-0cbe-1000-ba67-0ae9166e0000.xml#m7d696a26-0cbe-1000-ba67-0ae9166e0000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[ODM_MINING_MODEL_SETTINGS_V]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m7d726af7-0cbe-1000-ba67-0ae9166e0000" name="MODEL_NAME" dataType="VARCHAR" precision="128" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/7d696a26-0cbe-1000-ba67-0ae9166e0000.xml#m7d696a6f-0cbe-1000-ba67-0ae9166e0000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m7d726af8-0cbe-1000-ba67-0ae9166e0000" name="OWNER" dataType="VARCHAR" precision="128" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/7d696a26-0cbe-1000-ba67-0ae9166e0000.xml#m7d696a70-0cbe-1000-ba67-0ae9166e0000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m7d726af9-0cbe-1000-ba67-0ae9166e0000" name="SETTING_NAME" dataType="VARCHAR" precision="30" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/7d696a26-0cbe-1000-ba67-0ae9166e0000.xml#m7d696a71-0cbe-1000-ba67-0ae9166e0000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m7d726afa-0cbe-1000-ba67-0ae9166e0000" name="SETTING_TYPE" dataType="VARCHAR" precision="7" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/7d696a26-0cbe-1000-ba67-0ae9166e0000.xml#m7d696a72-0cbe-1000-ba67-0ae9166e0000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m7d726afb-0cbe-1000-ba67-0ae9166e0000" name="SETTING_VALUE" dataType="VARCHAR" precision="4000" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/7d696a26-0cbe-1000-ba67-0ae9166e0000.xml#m7d696a73-0cbe-1000-ba67-0ae9166e0000">
+</PhysicalColumn>
+<PhysicalKey mdsid="m7d726b26-0cbe-1000-ba67-0ae9166e0000" name="D92 Mining Model Settings PK">
+<RefColumns>
+<RefColumn refId="m7d726b26-0cbe-1000-ba67-0ae9166e0000-m7d726af7-0cbe-1000-ba67-0ae9166e0000" columnRef="/oracle/bi/server/base/PhysicalTable/7d726ad3-0cbe-1000-ba67-0ae9166e0000.xml#m7d726af7-0cbe-1000-ba67-0ae9166e0000"/>
+<RefColumn refId="m7d726b26-0cbe-1000-ba67-0ae9166e0000-m7d726af8-0cbe-1000-ba67-0ae9166e0000" columnRef="/oracle/bi/server/base/PhysicalTable/7d726ad3-0cbe-1000-ba67-0ae9166e0000.xml#m7d726af8-0cbe-1000-ba67-0ae9166e0000"/>
+<RefColumn refId="m7d726b26-0cbe-1000-ba67-0ae9166e0000-m7d726af9-0cbe-1000-ba67-0ae9166e0000" columnRef="/oracle/bi/server/base/PhysicalTable/7d726ad3-0cbe-1000-ba67-0ae9166e0000.xml#m7d726af9-0cbe-1000-ba67-0ae9166e0000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m7d726b2c-0cbe-1000-ba67-0ae9166e0000" name="D92 Mining Model Settings_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/7d726ad1-0cbe-1000-ba67-0ae9166e0000.xml#m7d726b25-0cbe-1000-ba67-0ae9166e0000">
+<RefColumns>
+<RefColumn refId="m7d726b2c-0cbe-1000-ba67-0ae9166e0000-m7d726af8-0cbe-1000-ba67-0ae9166e0000" columnRef="/oracle/bi/server/base/PhysicalTable/7d726ad3-0cbe-1000-ba67-0ae9166e0000.xml#m7d726af8-0cbe-1000-ba67-0ae9166e0000"/>
+<RefColumn refId="m7d726b2c-0cbe-1000-ba67-0ae9166e0000-m7d726af7-0cbe-1000-ba67-0ae9166e0000" columnRef="/oracle/bi/server/base/PhysicalTable/7d726ad3-0cbe-1000-ba67-0ae9166e0000.xml#m7d726af7-0cbe-1000-ba67-0ae9166e0000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

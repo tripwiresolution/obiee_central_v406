@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cdb89f-0bb9-0000-714b-e31d00000000" name="SAMP_XML_TIME_MTH_D" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" x="243" y="1652" uri="VALUEOF(BI_EE_HOME)/sample/SampleAppFiles/Data/SAMP_XML_TIME_MTH_D.xml" maxConn="0" containerRef="/oracle/bi/server/base/Database/80ca62be-0bcf-0000-714b-e31d00000000.xml#m80ca62be-0bcf-0000-714b-e31d00000000">
+<Description><![CDATA[Time dimension table at month grain. Stores one record for each month.]]></Description>
+<PhysicalColumn mdsid="m80cdb8a0-0bbb-0000-714b-e31d00000000" name="Per_Name_Half" dataType="VARCHAR" precision="8" extName="//Table/SAMP_XML_TIME_MTH_D/Per_Name_Half" specialType="none">
+<Description><![CDATA[Period Name Half: Stores the Half year information in the format YYYY HYHalfYearNumber.
+Eg:- 2009 HY1]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdb8a1-0bbb-0000-714b-e31d00000000" name="Per_Name_Month" dataType="VARCHAR" precision="9" extName="//Table/SAMP_XML_TIME_MTH_D/Per_Name_Month" specialType="none">
+<Description><![CDATA[Period Name Month: Stores the year information in the format YYYY / MM.
+Eg:- 2009 / 01]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdb8a2-0bbb-0000-714b-e31d00000000" name="Per_Name_Qtr" dataType="VARCHAR" precision="7" extName="//Table/SAMP_XML_TIME_MTH_D/Per_Name_Qtr" specialType="none">
+<Description><![CDATA[Period Name Quarter: Stores the quarter information in the format YYYY QQuarterNumber.
+Eg:- 2009 Q1]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdb8a3-0bbb-0000-714b-e31d00000000" name="Per_Name_Year" dataType="VARCHAR" precision="4" extName="//Table/SAMP_XML_TIME_MTH_D/Per_Name_Year" specialType="none">
+<Description><![CDATA[Period Name Year: Stores the year information in the format YYYY.
+Eg:- 2009]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdb8a4-0bbb-0000-714b-e31d00000000" name="Mth_Key" dataType="INT" extName="//Table/SAMP_XML_TIME_MTH_D/MTH_KEY" specialType="none">
+<Description><![CDATA[Month Key: Surrogate key of the table. Stores the month information in the format YYYYMM.
+Eg:- 200901]]></Description>
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cdb8a5-0bc0-0000-714b-e31d00000000" name="Row_Wid">
+<RefColumns>
+<RefColumn refId="m80cdb8a5-0bc0-0000-714b-e31d00000000-m80cdb8a4-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cdb89f-0bb9-0000-714b-e31d00000000.xml#m80cdb8a4-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

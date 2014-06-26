@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m80cd9719-07f5-0000-714b-e31d00000000" name="LTSA Targets ORCL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/80cd9435-07f3-0000-714b-e31d00000000.xml#m80cd9435-07f3-0000-714b-e31d00000000">
+<Description><![CDATA["01 - Sample App Data (ORCL)"."Catalog"."BISAMPLE"."F40 Facts Targets"."Office_Key" < 19
+]]></Description>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-f5f0-0c3e00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - TimesTen Sample"."F1 Targets Base Measures"."5a  Target Rev  (Source A)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-f5f0-0c3e00000000-m80cd9436-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cd9435-07f3-0000-714b-e31d00000000.xml#m80cd9436-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-7ef7-23ca00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."F40 Facts Targets"."Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-7ef7-23ca00000000-m80cd9081-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd9080-0bb9-0000-714b-e31d00000000.xml#m80cd9081-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/80cd9080-0bb9-0000-714b-e31d00000000.xml#m80cd9080-0bb9-0000-714b-e31d00000000">
+</Link>
+<WhereClause mdsid="m00000003-01f4-0000-fee3-69c000000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000004-01f4-0000-447f-55b900000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1", "%2", "%3", "%4")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("05 - TimesTen Sample"."H0 Time"."Month", "05 - TimesTen Sample"."H3 Offices"."Offices Detail", "05 - TimesTen Sample"."H2 Products Ragged SkipLevels"."Product (Rgd Sk Lvl) Detail", "05 - TimesTen Sample"."H1 Products"."Products Detail")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-447f-55b900000000-m80cd94bc-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cd92c8-07e3-0000-714b-e31d00000000.xml#m80cd94bc-07e9-0000-714b-e31d00000000"/>
+<RefObject refId="m00000004-01f4-0000-447f-55b900000000-m80cd94f7-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cd92cf-07e3-0000-714b-e31d00000000.xml#m80cd94f7-07e9-0000-714b-e31d00000000"/>
+<RefObject refId="m00000004-01f4-0000-447f-55b900000000-m80cd94f5-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cd92ce-07e3-0000-714b-e31d00000000.xml#m80cd94f5-07e9-0000-714b-e31d00000000"/>
+<RefObject refId="m00000004-01f4-0000-447f-55b900000000-m80cd94de-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cd92cb-07e3-0000-714b-e31d00000000.xml#m80cd94de-07e9-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m00000005-01f4-0000-6d04-d3d800000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

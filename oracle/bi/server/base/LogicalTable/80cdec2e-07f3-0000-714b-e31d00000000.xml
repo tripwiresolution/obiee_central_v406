@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cdec2e-07f3-0000-714b-e31d00000000" name="BIP Audit" iconIndex="32768" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/802b289f-07d0-0000-714b-e31d00000000.xml#m802b289f-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cdec32-07d6-0000-714b-e31d00000000" name="Application Name" isWriteable="false">
+<AttrDefn mdsid="m80cdec5d-0f3c-0000-714b-e31d00000000" name="AD_3900:1920431310649887">
+<Expr mdsid="m00000001-01f4-0000-63bc-829700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_APPLICATIONNAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-63bc-829700000000-m80cdec07-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec07-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec33-07d6-0000-714b-e31d00000000" name="Authentication Method" isWriteable="false">
+<AttrDefn mdsid="m80cdec5e-0f3c-0000-714b-e31d00000000" name="AD_3900:1920441310649887">
+<Expr mdsid="m00000002-01f4-0000-81a1-e22600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_AUTHENTICATIONMETHOD"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-81a1-e22600000000-m80cdec08-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec08-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec34-07d6-0000-714b-e31d00000000" name="Component Data" isWriteable="false">
+<AttrDefn mdsid="m80cdec5f-0f3c-0000-714b-e31d00000000" name="AD_3900:1920451310649887">
+<Expr mdsid="m00000003-01f4-0000-5758-f8ef00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_COMPONENTDATA"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-5758-f8ef00000000-m80cdec09-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec09-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec35-07d6-0000-714b-e31d00000000" name="Component Id" isWriteable="false">
+<AttrDefn mdsid="m80cdec60-0f3c-0000-714b-e31d00000000" name="AD_3900:1920461310649887">
+<Expr mdsid="m00000004-01f4-0000-46f5-190e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_COMPONENTID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-46f5-190e00000000-m80cdec0a-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec0a-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec36-07d6-0000-714b-e31d00000000" name="Component Name" isWriteable="false">
+<AttrDefn mdsid="m80cdec61-0f3c-0000-714b-e31d00000000" name="AD_3900:1920471310649887">
+<Expr mdsid="m00000005-01f4-0000-d943-3a1d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_COMPONENTNAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-d943-3a1d00000000-m80cdec0b-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec0b-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec37-07d6-0000-714b-e31d00000000" name="Component Type" isWriteable="false">
+<AttrDefn mdsid="m80cdec62-0f3c-0000-714b-e31d00000000" name="AD_3900:1920481310649887">
+<Expr mdsid="m00000006-01f4-0000-ffe0-333400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_COMPONENTTYPE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-ffe0-333400000000-m80cdec0c-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec0c-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec38-07d6-0000-714b-e31d00000000" name="Context Fields" isWriteable="false">
+<AttrDefn mdsid="m80cdec63-0f3c-0000-714b-e31d00000000" name="AD_3900:1920491310649887">
+<Expr mdsid="m00000007-01f4-0000-9d1e-93e700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_CONTEXTFIELDS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-9d1e-93e700000000-m80cdec0d-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec0d-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec39-07d6-0000-714b-e31d00000000" name="Domain Name" isWriteable="false">
+<AttrDefn mdsid="m80cdec64-0f3c-0000-714b-e31d00000000" name="AD_3900:1920501310649887">
+<Expr mdsid="m00000008-01f4-0000-4838-329800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_DOMAINNAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-4838-329800000000-m80cdec0e-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec0e-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec3a-07d6-0000-714b-e31d00000000" name="Downstream Component Id" isWriteable="false">
+<AttrDefn mdsid="m80cdec65-0f3c-0000-714b-e31d00000000" name="AD_3900:1920511310649887">
+<Expr mdsid="m00000009-01f4-0000-ec18-1d5100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_DOWNSTREAMCOMPONENTID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-ec18-1d5100000000-m80cdec0f-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec0f-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec3b-07d6-0000-714b-e31d00000000" name="Ecid" isWriteable="false">
+<AttrDefn mdsid="m80cdec66-0f3c-0000-714b-e31d00000000" name="AD_3900:1920521310649887">
+<Expr mdsid="m0000000a-01f4-0000-0bf6-3f8d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_ECID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-0bf6-3f8d00000000-m80cdec10-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec10-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec3c-07d6-0000-714b-e31d00000000" name="Event Category" isWriteable="false">
+<AttrDefn mdsid="m80cdec67-0f3c-0000-714b-e31d00000000" name="AD_3900:1920531310649887">
+<Expr mdsid="m0000000b-01f4-0000-ace9-587700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_EVENTCATEGORY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-ace9-587700000000-m80cdec11-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec11-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec3d-07d6-0000-714b-e31d00000000" name="Event Status" isWriteable="false">
+<AttrDefn mdsid="m80cdec68-0f3c-0000-714b-e31d00000000" name="AD_3900:1920541310649887">
+<Expr mdsid="m0000000c-01f4-0000-a5ea-92e900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_EVENTSTATUS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-a5ea-92e900000000-m80cdec12-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec12-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec3e-07d6-0000-714b-e31d00000000" name="Event Type" isWriteable="false">
+<AttrDefn mdsid="m80cdec69-0f3c-0000-714b-e31d00000000" name="AD_3900:1920551310649887">
+<Expr mdsid="m0000000d-01f4-0000-126f-264a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_EVENTTYPE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-126f-264a00000000-m80cdec13-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec13-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec3f-07d6-0000-714b-e31d00000000" name="Failure Code" isWriteable="false">
+<AttrDefn mdsid="m80cdec6a-0f3c-0000-714b-e31d00000000" name="AD_3900:1920561310649887">
+<Expr mdsid="m0000000e-01f4-0000-847a-0ea800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_FAILURECODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-847a-0ea800000000-m80cdec14-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec14-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec40-07d6-0000-714b-e31d00000000" name="Home Instance" isWriteable="false">
+<AttrDefn mdsid="m80cdec6b-0f3c-0000-714b-e31d00000000" name="AD_3900:1920571310649887">
+<Expr mdsid="m0000000f-01f4-0000-af06-81b700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_HOMEINSTANCE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-af06-81b700000000-m80cdec15-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec15-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec41-07d6-0000-714b-e31d00000000" name="Host Id" isWriteable="false">
+<AttrDefn mdsid="m80cdec6c-0f3c-0000-714b-e31d00000000" name="AD_3900:1920581310649887">
+<Expr mdsid="m00000010-01f4-0000-90a7-c82b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_HOSTID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-90a7-c82b00000000-m80cdec16-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec16-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec42-07d6-0000-714b-e31d00000000" name="Hosting Client Id" isWriteable="false">
+<AttrDefn mdsid="m80cdec6d-0f3c-0000-714b-e31d00000000" name="AD_3900:1920591310649887">
+<Expr mdsid="m00000011-01f4-0000-3bb7-01cf00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_HOSTINGCLIENTID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-3bb7-01cf00000000-m80cdec17-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec17-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec43-07d6-0000-714b-e31d00000000" name="Hostn Waddr" isWriteable="false">
+<AttrDefn mdsid="m80cdec6e-0f3c-0000-714b-e31d00000000" name="AD_3900:1920601310649887">
+<Expr mdsid="m00000012-01f4-0000-77d2-0fd100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_HOSTNWADDR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-77d2-0fd100000000-m80cdec18-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec18-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec44-07d6-0000-714b-e31d00000000" name="Id" isWriteable="false">
+<AttrDefn mdsid="m80cdec6f-0f3c-0000-714b-e31d00000000" name="AD_3900:1920611310649887">
+<Expr mdsid="m00000013-01f4-0000-549b-176e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-549b-176e00000000-m80cdec19-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec19-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec45-07d6-0000-714b-e31d00000000" name="Initiator" isWriteable="false">
+<AttrDefn mdsid="m80cdec70-0f3c-0000-714b-e31d00000000" name="AD_3900:1920621310649887">
+<Expr mdsid="m00000014-01f4-0000-1935-26e300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_INITIATOR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-1935-26e300000000-m80cdec1a-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec1a-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec46-07d6-0000-714b-e31d00000000" name="Instance Id" isWriteable="false">
+<AttrDefn mdsid="m80cdec71-0f3c-0000-714b-e31d00000000" name="AD_3900:1920631310649887">
+<Expr mdsid="m00000015-01f4-0000-2b33-c83b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_INSTANCEID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-2b33-c83b00000000-m80cdec1b-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec1b-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec47-07d6-0000-714b-e31d00000000" name="Message Text" isWriteable="false">
+<AttrDefn mdsid="m80cdec72-0f3c-0000-714b-e31d00000000" name="AD_3900:1920641310649887">
+<Expr mdsid="m00000016-01f4-0000-b7cd-7cb200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_MESSAGETEXT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-b7cd-7cb200000000-m80cdec1c-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec1c-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec48-07d6-0000-714b-e31d00000000" name="Module Id" isWriteable="false">
+<AttrDefn mdsid="m80cdec73-0f3c-0000-714b-e31d00000000" name="AD_3900:1920651310649887">
+<Expr mdsid="m00000017-01f4-0000-581f-65b200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_MODULEID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-581f-65b200000000-m80cdec1d-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec1d-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec49-07d6-0000-714b-e31d00000000" name="Oracle Home" isWriteable="false">
+<AttrDefn mdsid="m80cdec74-0f3c-0000-714b-e31d00000000" name="AD_3900:1920661310649887">
+<Expr mdsid="m00000018-01f4-0000-f4b3-2dbb00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_ORACLEHOME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000018-01f4-0000-f4b3-2dbb00000000-m80cdec1e-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec1e-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec4a-07d6-0000-714b-e31d00000000" name="Org Id" isWriteable="false">
+<AttrDefn mdsid="m80cdec75-0f3c-0000-714b-e31d00000000" name="AD_3900:1920671310649887">
+<Expr mdsid="m00000019-01f4-0000-0811-7e3500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_ORGID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000019-01f4-0000-0811-7e3500000000-m80cdec1f-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec1f-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec4b-07d6-0000-714b-e31d00000000" name="Process Id" isWriteable="false">
+<AttrDefn mdsid="m80cdec76-0f3c-0000-714b-e31d00000000" name="AD_3900:1920681310649887">
+<Expr mdsid="m0000001a-01f4-0000-37ed-ee8800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_PROCESSID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001a-01f4-0000-37ed-ee8800000000-m80cdec20-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec20-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec4c-07d6-0000-714b-e31d00000000" name="Remote Ip" isWriteable="false">
+<AttrDefn mdsid="m80cdec77-0f3c-0000-714b-e31d00000000" name="AD_3900:1920691310649887">
+<Expr mdsid="m0000001b-01f4-0000-6b00-fd7300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_REMOTEIP"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001b-01f4-0000-6b00-fd7300000000-m80cdec21-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec21-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec4d-07d6-0000-714b-e31d00000000" name="Resource" isWriteable="false">
+<AttrDefn mdsid="m80cdec78-0f3c-0000-714b-e31d00000000" name="AD_3900:1920701310649887">
+<Expr mdsid="m0000001c-01f4-0000-0e2f-52d000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_RESOURCE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001c-01f4-0000-0e2f-52d000000000-m80cdec22-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec22-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec4e-07d6-0000-714b-e31d00000000" name="Rid" isWriteable="false">
+<AttrDefn mdsid="m80cdec79-0f3c-0000-714b-e31d00000000" name="AD_3900:1920711310649887">
+<Expr mdsid="m0000001d-01f4-0000-9cf7-939600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_RID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001d-01f4-0000-9cf7-939600000000-m80cdec23-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec23-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec4f-07d6-0000-714b-e31d00000000" name="Roles" isWriteable="false">
+<AttrDefn mdsid="m80cdec7a-0f3c-0000-714b-e31d00000000" name="AD_3900:1920721310649887">
+<Expr mdsid="m0000001e-01f4-0000-2965-d42e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_ROLES"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001e-01f4-0000-2965-d42e00000000-m80cdec24-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec24-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec50-07d6-0000-714b-e31d00000000" name="Secondary Session Id" isWriteable="false">
+<AttrDefn mdsid="m80cdec7b-0f3c-0000-714b-e31d00000000" name="AD_3900:1920731310649887">
+<Expr mdsid="m0000001f-01f4-0000-d863-fb0f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_SECONDARYSESSIONID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001f-01f4-0000-d863-fb0f00000000-m80cdec25-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec25-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec51-07d6-0000-714b-e31d00000000" name="Session Id" isWriteable="false">
+<AttrDefn mdsid="m80cdec7c-0f3c-0000-714b-e31d00000000" name="AD_3900:1920741310649887">
+<Expr mdsid="m00000020-01f4-0000-a4c7-845b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_SESSIONID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000020-01f4-0000-a4c7-845b00000000-m80cdec26-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec26-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec52-07d6-0000-714b-e31d00000000" name="Target" isWriteable="false">
+<AttrDefn mdsid="m80cdec7d-0f3c-0000-714b-e31d00000000" name="AD_3900:1920751310649887">
+<Expr mdsid="m00000021-01f4-0000-2d81-b93200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_TARGET"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000021-01f4-0000-2d81-b93200000000-m80cdec27-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec27-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec53-07d6-0000-714b-e31d00000000" name="Target Component Type" isWriteable="false">
+<AttrDefn mdsid="m80cdec7e-0f3c-0000-714b-e31d00000000" name="AD_3900:1920761310649887">
+<Expr mdsid="m00000022-01f4-0000-74ad-ed0600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_TARGETCOMPONENTTYPE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000022-01f4-0000-74ad-ed0600000000-m80cdec28-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec28-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec54-07d6-0000-714b-e31d00000000" name="Thread Id" isWriteable="false">
+<AttrDefn mdsid="m80cdec7f-0f3c-0000-714b-e31d00000000" name="AD_3900:1920771310649887">
+<Expr mdsid="m00000023-01f4-0000-76d5-786600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_THREADID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000023-01f4-0000-76d5-786600000000-m80cdec29-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec29-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec55-07d6-0000-714b-e31d00000000" name="Transaction Id" isWriteable="false">
+<AttrDefn mdsid="m80cdec80-0f3c-0000-714b-e31d00000000" name="AD_3900:1920781310649887">
+<Expr mdsid="m00000024-01f4-0000-ba86-672d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_TRANSACTIONID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000024-01f4-0000-ba86-672d00000000-m80cdec2a-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec2a-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec56-07d6-0000-714b-e31d00000000" name="Time Originating" isWriteable="false">
+<AttrDefn mdsid="m80cdec81-0f3c-0000-714b-e31d00000000" name="AD_3900:1920791310649887">
+<Expr mdsid="m00000025-01f4-0000-8d5f-213700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_TSTZORIGINATING"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000025-01f4-0000-8d5f-213700000000-m80cdec2b-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec2b-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdec57-07d6-0000-714b-e31d00000000" name="Upstream Component Id" isWriteable="false">
+<AttrDefn mdsid="m80cdec82-0f3c-0000-714b-e31d00000000" name="AD_3900:1920801310649887">
+<Expr mdsid="m00000026-01f4-0000-0f9f-f58700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_UPSTREAMCOMPONENTID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000026-01f4-0000-0f9f-f58700000000-m80cdec2c-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec2c-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdecb2-07d6-0000-714b-e31d00000000" name="Day Originating" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000027-01f4-0000-bf38-05f500000000" name="Expr">
+<ExprText><![CDATA[DayName("%1" ) ]]></ExprText>
+<ExprTextDesc><![CDATA[DayName("10 - Usage Tracking"."BIP Audit"."Time Originating" ) ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000027-01f4-0000-bf38-05f500000000-m80cdec56-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdec2e-07f3-0000-714b-e31d00000000.xml#m80cdec56-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cdecb3-0f3c-0000-714b-e31d00000000" name="AD_3900:1921311310650968">
+<Expr mdsid="m00000028-01f4-0000-c8a3-d1b900000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdecb6-07d6-0000-714b-e31d00000000" name="Hour Originating" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000029-01f4-0000-2285-e52500000000" name="Expr">
+<ExprText><![CDATA[Hour("%1" ) ]]></ExprText>
+<ExprTextDesc><![CDATA[Hour("10 - Usage Tracking"."BIP Audit"."Time Originating" ) ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000029-01f4-0000-2285-e52500000000-m80cdec56-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdec2e-07f3-0000-714b-e31d00000000.xml#m80cdec56-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cdecb7-0f3c-0000-714b-e31d00000000" name="AD_3900:1921351310650968">
+<Expr mdsid="m0000002a-01f4-0000-9cd0-258200000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cdec5b-07d8-0000-714b-e31d00000000" name="Primary" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cdec5b-07d8-0000-714b-e31d00000000-m80cdec44-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdec2e-07f3-0000-714b-e31d00000000.xml#m80cdec44-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cdec2e-07f3-0000-714b-e31d00000000-m80cdec84-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cdec84-07f5-0000-714b-e31d00000000.xml#m80cdec84-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

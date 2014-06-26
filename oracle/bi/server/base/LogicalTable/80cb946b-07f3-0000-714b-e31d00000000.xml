@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cb946b-07f3-0000-714b-e31d00000000" name="D6 Customers" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="313" y="176" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cb9462-07d0-0000-714b-e31d00000000.xml#m80cb9462-07d0-0000-714b-e31d00000000">
+<Description><![CDATA[This logical table maps to the physical Customer Dimension table with various attributes like Customer Name, Status, Type and so on.
+It maps to 3 LTS and showcases snowflake dimension modelling.
+LTS1 Customers - Maps to the lowest grain of information.
+LTS2 Customer Segments - Maps to higher grain of information. Every customer belongs to a customer segment.
+LTS3 Customer Adresses - Maps to higher grain of information.
+]]></Description>
+<LogicalColumn mdsid="m80cb946c-07d6-0000-714b-e31d00000000" name="C0  Customer Number" isWriteable="false">
+<Description><![CDATA[Help : 
+Customer Key is an integer that uniquely identifies each record in the Customer dimension table.]]></Description>
+<AttrDefn mdsid="m80cb96b4-0f3c-0000-714b-e31d00000000" name="AD_3900:542841271159864">
+<Expr mdsid="m00000001-01f4-0000-7bbd-b7c100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase Sample E1 Flat"."BISAMPLE Flat".""."Sample Flattened"."Customer Members - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-7bbd-b7c100000000-m80cb9c8c-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cb9c63-0bdf-0000-714b-e31d00000000.xml#m80cb9c8c-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb946d-07d6-0000-714b-e31d00000000" name="C1  Customer Name" isWriteable="false">
+<Description><![CDATA[Help : 
+Customer Name stores the first name followed by the last name.]]></Description>
+<AttrDefn mdsid="m80cb96b5-0f3c-0000-714b-e31d00000000" name="AD_3900:542851271159864">
+<Expr mdsid="m00000002-01f4-0000-1535-da0a00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS VARCHAR ( 255 ))]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("03 - Essbase Sample E1 Flat"."BISAMPLE Flat".""."Sample Flattened"."Customer Members" AS VARCHAR ( 255 ))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-1535-da0a00000000-m80cb9c89-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cb9c63-0bdf-0000-714b-e31d00000000.xml#m80cb9c89-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb99ab-07d6-0000-714b-e31d00000000" name="C7 Marital Status (Rel Lookup)" iconIndex="77" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the product's color description.]]></Description>
+<Expr mdsid="m00000003-01f4-0000-58e2-2cea00000000" name="Expr">
+<ExprText><![CDATA[ LOOKUP( DENSE "%1",  VALUEOF(NQ_SESSION."USERLOCALE"), "%2")]]></ExprText>
+<ExprTextDesc><![CDATA[ LOOKUP( DENSE "06 - Federated Sources"."L1 Lookups Translation"."Lookup_Dsc",  VALUEOF(NQ_SESSION."USERLOCALE"), "06 - Federated Sources"."D6 Customers"."C7k  Marital Status Key")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-58e2-2cea00000000-m80cb99b2-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb99b1-07f3-0000-714b-e31d00000000.xml#m80cb99b2-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000003-01f4-0000-58e2-2cea00000000-m80cb9477-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb946b-07f3-0000-714b-e31d00000000.xml#m80cb9477-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cb99ac-0f3c-0000-714b-e31d00000000" name="AD_3900:549231271161740">
+<Expr mdsid="m00000004-01f4-0000-9b35-5f0500000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb9477-07d6-0000-714b-e31d00000000" name="C7k  Marital Status Key" isWriteable="false">
+<AttrDefn mdsid="m80cb96bf-0f3c-0000-714b-e31d00000000" name="AD_3900:542951271159864">
+<Expr mdsid="m00000005-01f4-0000-dd0e-dcee00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D60 Customers"."Marital_St"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-dd0e-dcee00000000-m80cb69e0-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb6835-0bb9-0000-714b-e31d00000000.xml#m80cb69e0-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cb96a5-07d8-0000-714b-e31d00000000" name="Dim 01 Customer_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cb96a5-07d8-0000-714b-e31d00000000-m80cb946c-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb946b-07f3-0000-714b-e31d00000000.xml#m80cb946c-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cb946b-07f3-0000-714b-e31d00000000-m80cb97ed-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cb97ed-07f5-0000-714b-e31d00000000.xml#m80cb97ed-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cb946b-07f3-0000-714b-e31d00000000-m80cb99a8-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cb99a8-07f5-0000-714b-e31d00000000.xml#m80cb99a8-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

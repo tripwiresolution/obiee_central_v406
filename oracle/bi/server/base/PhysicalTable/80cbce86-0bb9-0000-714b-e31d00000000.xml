@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cbce86-0bb9-0000-714b-e31d00000000" name="MEMBERSHIPS_BASE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" x="192" y="323" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cbb6f4-0bd3-0000-714b-e31d00000000.xml#m80cbb6f4-0bd3-0000-714b-e31d00000000">
+<PhysicalColumn mdsid="m80cbceaa-0bbb-0000-714b-e31d00000000" name="CONTACT_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbceab-0bbb-0000-714b-e31d00000000" name="CREATED_BY" dataType="VARCHAR" precision="60" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbceac-0bbb-0000-714b-e31d00000000" name="CREATION_DATE" dataType="DATETIME" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbcead-0bbb-0000-714b-e31d00000000" name="LAST_UPDATED_BY" dataType="VARCHAR" precision="60" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbceae-0bbb-0000-714b-e31d00000000" name="LAST_UPDATE_DATE" dataType="DATETIME" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbceaf-0bbb-0000-714b-e31d00000000" name="MEMBERSHIP_ID" dataType="DOUBLE" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbceb0-0bbb-0000-714b-e31d00000000" name="MEMBERSHIP_TYPE_CODE" dataType="VARCHAR" precision="30" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbceb1-0bbb-0000-714b-e31d00000000" name="OBJECT_VERSION_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cbceca-0bc0-0000-714b-e31d00000000" name="MEMBERSHIP_ID">
+<RefColumns>
+<RefColumn refId="m80cbceca-0bc0-0000-714b-e31d00000000-m80cbceaf-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cbce86-0bb9-0000-714b-e31d00000000.xml#m80cbceaf-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

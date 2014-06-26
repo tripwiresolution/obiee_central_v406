@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationTable mdsid="m80cab891-0fa8-0000-714b-e31d00000000" name="Trailing Measures" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Trailing_Measures)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationCatalog/80cab7ef-0fa4-0000-714b-e31d00000000.xml#m80cab7ef-0fa4-0000-714b-e31d00000000">
+<Description><![CDATA[This folder contains several Rolling Months metrics based on Revenue fact.]]></Description>
+<PresentationColumn mdsid="m80cb6c24-0faa-0000-714b-e31d00000000" name="144  ---- Alias Based Modelling -------" iconIndex="86" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Trailing_Measures_144__----_Alias_Based_Modelling_-------)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cb6c20-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab892-0faa-0000-714b-e31d00000000" name="144  Trailing N Mth Rev  (Alias Based)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Trailing_Measures_144__Trailing_N_Mth_Rev__(Alias_Based))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab5f8-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- Rolling 3 months sum as of selected month : sum of current month plus previous two months value. For January, it gives the value of January plus December and November of the previous year]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab894-0faa-0000-714b-e31d00000000" name="145  Trailing N Mth Rev Daily Avg" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Trailing_Measures_145__Trailing_N_Mth_Rev_Daily_Avg)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab5fa-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- Daily average over Rolling 3 months period : Rolling 3 months sum as of selected month divided by number of days in R3M period.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab895-0faa-0000-714b-e31d00000000" name="146  Trailing N Mth Rev Mthly Avg" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Trailing_Measures_146__Trailing_N_Mth_Rev_Mthly_Avg)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab5fb-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- Monthly average over Rolling 3 months period : Rolling 3 months sum as of selected month divided by 3]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cb6c25-0faa-0000-714b-e31d00000000" name="147  ---- Dynamic Time Level ----------" iconIndex="86" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Trailing_Measures_147__----_Dynamic_Time_Level_----------)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cb6c21-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cb67db-0faa-0000-714b-e31d00000000" name="147  Trailing 3 Periods Rev  (Dyn Time Level)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Trailing_Measures_147__Trailing_3_Periods_Rev__(Dyn_Time_Level))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cb67bc-07d6-0000-714b-e31d00000000">
+</PresentationColumn>
+<PresentationColumn mdsid="m80cb67dd-0faa-0000-714b-e31d00000000" name="148  Unbound Rolling Rev  (Dyn Time Level)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Trailing_Measures_148__Unbound_Rolling_Rev__(Dyn_Time_Level))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cb67d9-07d6-0000-714b-e31d00000000">
+</PresentationColumn>
+<PresentationColumn mdsid="m80cb67dc-0faa-0000-714b-e31d00000000" name="149  Spanning 4 Periods Rev N-2 to +N+1" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Trailing_Measures_149__Spanning_4_Periods_Rev_N-2_to_+N+1)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cb67cd-07d6-0000-714b-e31d00000000">
+<Alias name="149  Spanning 4 Periods Rev N-2 to +N+1)"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab899-0faa-0000-714b-e31d00000000" name="117  Unbound Rolling Rev  (Alias Based)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Trailing_Measures_117__Unbound_Rolling_Rev__(Alias_Based))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d7-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- Sum of current month plus all the periods in history available in the database.]]></Description>
+</PresentationColumn>
+</PresentationTable>

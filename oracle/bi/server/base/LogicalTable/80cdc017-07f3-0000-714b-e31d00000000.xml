@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cdc017-07f3-0000-714b-e31d00000000" name="Basic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cdc011-07d0-0000-714b-e31d00000000.xml#m80cdc011-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cdc018-07d6-0000-714b-e31d00000000" name="Profit" isWriteable="false">
+<MeasureDefn mdsid="m80cdc078-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc090-0802-0000-714b-e31d00000000" name="AggRule_2050:1806481294160172" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-dc52-5b3c00000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."Profit")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-dc52-5b3c00000000-m80cdc018-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc018-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0e2-0f3c-0000-714b-e31d00000000" name="AD_3900:1807731294160172">
+<Expr mdsid="m00000002-01f4-0000-9f95-f19200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."Profit"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-9f95-f19200000000-m80cdbfe5-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbfe5-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc019-07d6-0000-714b-e31d00000000" name="Margin" isWriteable="false">
+<MeasureDefn mdsid="m80cdc079-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc091-0802-0000-714b-e31d00000000" name="AggRule_2050:1806491294160172" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-41b0-5cb800000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."Margin")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-41b0-5cb800000000-m80cdc019-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc019-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0e3-0f3c-0000-714b-e31d00000000" name="AD_3900:1807741294160172">
+<Expr mdsid="m00000004-01f4-0000-8a37-675d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."Margin"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-8a37-675d00000000-m80cdbfe6-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbfe6-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc01a-07d6-0000-714b-e31d00000000" name="Sales" isWriteable="true">
+<MeasureDefn mdsid="m80cdc07a-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m19bdb710-0c5f-1000-9ac7-7f0000010000" name="AggRule_2050:2548661360259444" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-e361-ca6b00000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."Sales")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-e361-ca6b00000000-m80cdc01a-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc01a-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0e4-0f3c-0000-714b-e31d00000000" name="AD_3900:1807751294160172">
+<Expr mdsid="m00000006-01f4-0000-b609-13ce00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."Sales"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-b609-13ce00000000-m80cdbfe7-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbfe7-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc01b-07d6-0000-714b-e31d00000000" name="COGS" isWriteable="false">
+<MeasureDefn mdsid="m80cdc07b-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc093-0802-0000-714b-e31d00000000" name="AggRule_2050:1806511294160172" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-5724-27ba00000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."COGS")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-5724-27ba00000000-m80cdc01b-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc01b-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0e5-0f3c-0000-714b-e31d00000000" name="AD_3900:1807761294160172">
+<Expr mdsid="m00000008-01f4-0000-8f1e-8dff00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."COGS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-8f1e-8dff00000000-m80cdbfe8-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbfe8-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc01c-07d6-0000-714b-e31d00000000" name="Total Expenses" isWriteable="true">
+<MeasureDefn mdsid="m80cdc07c-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m01125000-0c59-1000-8b24-7f0000010000" name="AggRule_2050:2512271357640972" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-6a29-e3d600000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."Total Expenses")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-6a29-e3d600000000-m80cdc01c-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc01c-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0e6-0f3c-0000-714b-e31d00000000" name="AD_3900:1807771294160172">
+<Expr mdsid="m0000000a-01f4-0000-7959-d4e400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."Total Expenses"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-7959-d4e400000000-m80cdbfe9-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbfe9-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc01d-07d6-0000-714b-e31d00000000" name="Marketing" isWriteable="false">
+<MeasureDefn mdsid="m80cdc07d-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc095-0802-0000-714b-e31d00000000" name="AggRule_2050:1806531294160172" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-954f-c32800000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."Marketing")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-954f-c32800000000-m80cdc01d-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc01d-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0e7-0f3c-0000-714b-e31d00000000" name="AD_3900:1807781294160172">
+<Expr mdsid="m0000000c-01f4-0000-03e9-3fbf00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."Marketing"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-03e9-3fbf00000000-m80cdbfea-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbfea-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc01e-07d6-0000-714b-e31d00000000" name="Payroll" isWriteable="false">
+<MeasureDefn mdsid="m80cdc07e-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc096-0802-0000-714b-e31d00000000" name="AggRule_2050:1806541294160172" isDefault="true">
+<Expr mdsid="m0000000d-01f4-0000-d9b1-cf0e00000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."Payroll")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-d9b1-cf0e00000000-m80cdc01e-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc01e-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0e8-0f3c-0000-714b-e31d00000000" name="AD_3900:1807791294160172">
+<Expr mdsid="m0000000e-01f4-0000-ef6d-e9a300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."Payroll"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-ef6d-e9a300000000-m80cdbfeb-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbfeb-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc01f-07d6-0000-714b-e31d00000000" name="Misc" isWriteable="false">
+<MeasureDefn mdsid="m80cdc07f-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc097-0802-0000-714b-e31d00000000" name="AggRule_2050:1806551294160172" isDefault="true">
+<Expr mdsid="m0000000f-01f4-0000-c9d2-b61100000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."Misc")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-c9d2-b61100000000-m80cdc01f-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc01f-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0e9-0f3c-0000-714b-e31d00000000" name="AD_3900:1807801294160172">
+<Expr mdsid="m00000010-01f4-0000-6dc9-fb8c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."Misc"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-6dc9-fb8c00000000-m80cdbfec-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbfec-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc020-07d6-0000-714b-e31d00000000" name="Inventory" isWriteable="false">
+<MeasureDefn mdsid="m80cdc080-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc098-0802-0000-714b-e31d00000000" name="AggRule_2050:1806561294160172" isDefault="true">
+<Expr mdsid="m00000011-01f4-0000-0e09-ad6900000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."Inventory")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-0e09-ad6900000000-m80cdc020-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc020-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0ea-0f3c-0000-714b-e31d00000000" name="AD_3900:1807811294160172">
+<Expr mdsid="m00000012-01f4-0000-772b-c89f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."Inventory"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-772b-c89f00000000-m80cdbfed-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbfed-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc021-07d6-0000-714b-e31d00000000" name="Opening Inventory" isWriteable="false">
+<MeasureDefn mdsid="m80cdc081-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc099-0802-0000-714b-e31d00000000" name="AggRule_2050:1806571294160172" isDefault="true">
+<Expr mdsid="m00000013-01f4-0000-4615-28e900000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."Opening Inventory")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-4615-28e900000000-m80cdc021-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc021-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0eb-0f3c-0000-714b-e31d00000000" name="AD_3900:1807821294160172">
+<Expr mdsid="m00000014-01f4-0000-e749-22f700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."Opening Inventory"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-e749-22f700000000-m80cdbfee-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbfee-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc022-07d6-0000-714b-e31d00000000" name="Additions" isWriteable="false">
+<MeasureDefn mdsid="m80cdc082-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc09a-0802-0000-714b-e31d00000000" name="AggRule_2050:1806581294160172" isDefault="true">
+<Expr mdsid="m00000015-01f4-0000-1728-308200000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."Additions")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-1728-308200000000-m80cdc022-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc022-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0ec-0f3c-0000-714b-e31d00000000" name="AD_3900:1807831294160172">
+<Expr mdsid="m00000016-01f4-0000-7420-347a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."Additions"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-7420-347a00000000-m80cdbfef-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbfef-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc023-07d6-0000-714b-e31d00000000" name="Ending Inventory" isWriteable="false">
+<MeasureDefn mdsid="m80cdc083-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc09b-0802-0000-714b-e31d00000000" name="AggRule_2050:1806591294160172" isDefault="true">
+<Expr mdsid="m00000017-01f4-0000-68e6-4ddf00000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."Ending Inventory")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-68e6-4ddf00000000-m80cdc023-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc023-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0ed-0f3c-0000-714b-e31d00000000" name="AD_3900:1807841294160172">
+<Expr mdsid="m00000018-01f4-0000-8217-531100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."Ending Inventory"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000018-01f4-0000-8217-531100000000-m80cdbff0-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbff0-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc024-07d6-0000-714b-e31d00000000" name="Ratios" isWriteable="false">
+<MeasureDefn mdsid="m80cdc084-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc09c-0802-0000-714b-e31d00000000" name="AggRule_2050:1806601294160172" isDefault="true">
+<Expr mdsid="m00000019-01f4-0000-d23e-05da00000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."Ratios")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000019-01f4-0000-d23e-05da00000000-m80cdc024-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc024-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0ee-0f3c-0000-714b-e31d00000000" name="AD_3900:1807851294160172">
+<Expr mdsid="m0000001a-01f4-0000-74b8-5f2800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."Ratios"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001a-01f4-0000-74b8-5f2800000000-m80cdbff1-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbff1-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc025-07d6-0000-714b-e31d00000000" name="Margin %" isWriteable="false">
+<MeasureDefn mdsid="m80cdc085-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc09d-0802-0000-714b-e31d00000000" name="AggRule_2050:1806611294160172" isDefault="true">
+<Expr mdsid="m0000001b-01f4-0000-196c-09d700000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."Margin %")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001b-01f4-0000-196c-09d700000000-m80cdc025-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc025-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0ef-0f3c-0000-714b-e31d00000000" name="AD_3900:1807861294160172">
+<Expr mdsid="m0000001c-01f4-0000-b595-b62b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."Margin %"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001c-01f4-0000-b595-b62b00000000-m80cdbff2-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbff2-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc026-07d6-0000-714b-e31d00000000" name="Profit %" isWriteable="false">
+<MeasureDefn mdsid="m80cdc086-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc09e-0802-0000-714b-e31d00000000" name="AggRule_2050:1806621294160172" isDefault="true">
+<Expr mdsid="m0000001d-01f4-0000-1760-fb2b00000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."Profit %")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001d-01f4-0000-1760-fb2b00000000-m80cdc026-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc026-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0f0-0f3c-0000-714b-e31d00000000" name="AD_3900:1807871294160172">
+<Expr mdsid="m0000001e-01f4-0000-5818-b8a000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."Profit %"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001e-01f4-0000-5818-b8a000000000-m80cdbff3-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbff3-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc027-07d6-0000-714b-e31d00000000" name="Metrics" isWriteable="false">
+<MeasureDefn mdsid="m80cdc087-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc09f-0802-0000-714b-e31d00000000" name="AggRule_2050:1806631294160172" isDefault="true">
+<Expr mdsid="m0000001f-01f4-0000-72dc-45e500000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."Metrics")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001f-01f4-0000-72dc-45e500000000-m80cdc027-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc027-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0f1-0f3c-0000-714b-e31d00000000" name="AD_3900:1807881294160172">
+<Expr mdsid="m00000020-01f4-0000-1c64-85dc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."Metrics"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000020-01f4-0000-1c64-85dc00000000-m80cdbff4-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbff4-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc028-07d6-0000-714b-e31d00000000" name="Budget Operating Expenses" isWriteable="false">
+<MeasureDefn mdsid="m80cdc088-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc0a0-0802-0000-714b-e31d00000000" name="AggRule_2050:1806641294160172" isDefault="true">
+<Expr mdsid="m00000021-01f4-0000-8fd4-122800000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."Budget Operating Expenses")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000021-01f4-0000-8fd4-122800000000-m80cdc028-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc028-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0f2-0f3c-0000-714b-e31d00000000" name="AD_3900:1807891294160172">
+<Expr mdsid="m00000022-01f4-0000-a9ab-1a1600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."Budget Operating Expenses"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000022-01f4-0000-a9ab-1a1600000000-m80cdbff5-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbff5-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc029-07d6-0000-714b-e31d00000000" name="Operating Expenses" isWriteable="false">
+<MeasureDefn mdsid="m80cdc089-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc0a1-0802-0000-714b-e31d00000000" name="AggRule_2050:1806651294160172" isDefault="true">
+<Expr mdsid="m00000023-01f4-0000-2a4e-998600000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."Operating Expenses")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000023-01f4-0000-2a4e-998600000000-m80cdc029-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc029-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0f3-0f3c-0000-714b-e31d00000000" name="AD_3900:1807901294160172">
+<Expr mdsid="m00000024-01f4-0000-d2ff-b80300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."Operating Expenses"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000024-01f4-0000-d2ff-b80300000000-m80cdbff6-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbff6-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc02a-07d6-0000-714b-e31d00000000" name="Operating Expenses LR" isWriteable="false">
+<MeasureDefn mdsid="m80cdc08a-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc0a2-0802-0000-714b-e31d00000000" name="AggRule_2050:1806661294160172" isDefault="true">
+<Expr mdsid="m00000025-01f4-0000-dc32-352600000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."Operating Expenses LR")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000025-01f4-0000-dc32-352600000000-m80cdc02a-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc02a-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0f4-0f3c-0000-714b-e31d00000000" name="AD_3900:1807911294160172">
+<Expr mdsid="m00000026-01f4-0000-3f9a-23a900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."Operating Expenses LR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000026-01f4-0000-3f9a-23a900000000-m80cdbff7-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbff7-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc02b-07d6-0000-714b-e31d00000000" name="Operating Expenses SES" isWriteable="false">
+<MeasureDefn mdsid="m80cdc08b-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc0a3-0802-0000-714b-e31d00000000" name="AggRule_2050:1806671294160172" isDefault="true">
+<Expr mdsid="m00000027-01f4-0000-9698-fde400000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."Operating Expenses SES")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000027-01f4-0000-9698-fde400000000-m80cdc02b-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc02b-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0f5-0f3c-0000-714b-e31d00000000" name="AD_3900:1807921294160172">
+<Expr mdsid="m00000028-01f4-0000-c67e-edf700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."Operating Expenses SES"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000028-01f4-0000-c67e-edf700000000-m80cdbff8-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbff8-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc02c-07d6-0000-714b-e31d00000000" name="Drivers" isWriteable="false">
+<MeasureDefn mdsid="m80cdc08c-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc0a4-0802-0000-714b-e31d00000000" name="AggRule_2050:1806681294160172" isDefault="true">
+<Expr mdsid="m00000029-01f4-0000-bd17-616500000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."Drivers")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000029-01f4-0000-bd17-616500000000-m80cdc02c-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc02c-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0f6-0f3c-0000-714b-e31d00000000" name="AD_3900:1807931294160172">
+<Expr mdsid="m0000002a-01f4-0000-17fe-4ecb00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."Drivers"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002a-01f4-0000-17fe-4ecb00000000-m80cdbff9-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbff9-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc02d-07d6-0000-714b-e31d00000000" name="Expense Adjustment" isWriteable="true">
+<MeasureDefn mdsid="m80cdc08d-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mce6b4fa1-0c56-1000-8567-7f0000010000" name="AggRule_2050:2511341356697026" isDefault="true">
+<Expr mdsid="m0000002b-01f4-0000-6bd6-3e7100000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("03 - Essbase Integration"."Basic"."Expense Adjustment")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002b-01f4-0000-6bd6-3e7100000000-m80cdc02d-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc02d-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0f7-0f3c-0000-714b-e31d00000000" name="AD_3900:1807941294160172">
+<Expr mdsid="m0000002c-01f4-0000-8aa6-b10f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."Expense Adjustment"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002c-01f4-0000-8aa6-b10f00000000-m80cdbffa-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbffa-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc02e-07d6-0000-714b-e31d00000000" name="LR Temp" isWriteable="false">
+<MeasureDefn mdsid="m80cdc08e-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc0a6-0802-0000-714b-e31d00000000" name="AggRule_2050:1806701294160172" isDefault="true">
+<Expr mdsid="m0000002d-01f4-0000-4eb2-d88500000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."LR Temp")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002d-01f4-0000-4eb2-d88500000000-m80cdc02e-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc02e-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0f8-0f3c-0000-714b-e31d00000000" name="AD_3900:1807951294160172">
+<Expr mdsid="m0000002e-01f4-0000-2d45-af3500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."LR Temp"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002e-01f4-0000-2d45-af3500000000-m80cdbffb-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbffb-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc02f-07d6-0000-714b-e31d00000000" name="SES Temp" isWriteable="false">
+<MeasureDefn mdsid="m80cdc08f-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc0a7-0802-0000-714b-e31d00000000" name="AggRule_2050:1806711294160172" isDefault="true">
+<Expr mdsid="m0000002f-01f4-0000-4152-ff8900000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase Integration"."Basic"."SES Temp")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002f-01f4-0000-4152-ff8900000000-m80cdc02f-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdc017-07f3-0000-714b-e31d00000000.xml#m80cdc02f-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc0f9-0f3c-0000-714b-e31d00000000" name="AD_3900:1807961294160172">
+<Expr mdsid="m00000030-01f4-0000-db1f-af3800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Basic"."BISAMPL2".""."Basic"."SES Temp"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000030-01f4-0000-db1f-af3800000000-m80cdbffc-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cdbf7f-0bdf-0000-714b-e31d00000000.xml#m80cdbffc-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cdc017-07f3-0000-714b-e31d00000000-m80cdc137-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cdc137-07f5-0000-714b-e31d00000000.xml#m80cdc137-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

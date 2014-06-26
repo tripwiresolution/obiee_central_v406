@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m933035d0-0c2a-1000-ac17-0af06a760000" name="UT RPD UIDs Lookups" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isLookupTable="true" subjectAreaRef="/oracle/bi/server/base/BusinessModel/802b289f-07d0-0000-714b-e31d00000000.xml#m802b289f-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m933035d6-0c2a-1000-ac17-0af06a760000" name="UPGRADE_ID" isWriteable="false">
+<AttrDefn mdsid="m933035da-0c2a-1000-ac17-0af06a760000" name="AD_3900:2303611337699757">
+<Expr mdsid="m00000001-01f4-0000-0d46-fad400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_SAMPLE_RPD_UIDS"."UPGRADE_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-0d46-fad400000000-m92ee98f1-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/92ee98f0-0c2a-1000-ac17-0af06a760000.xml#m92ee98f1-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m933035d4-0c2a-1000-ac17-0af06a760000" name="NAME" isWriteable="false">
+<AttrDefn mdsid="m933035d8-0c2a-1000-ac17-0af06a760000" name="AD_3900:2303591337699757">
+<Expr mdsid="m00000002-01f4-0000-12c9-997300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_SAMPLE_RPD_UIDS"."NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-12c9-997300000000-m92ee98f7-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/92ee98f0-0c2a-1000-ac17-0af06a760000.xml#m92ee98f7-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m933035d5-0c2a-1000-ac17-0af06a760000" name="TYPE" isWriteable="false">
+<AttrDefn mdsid="m933035d9-0c2a-1000-ac17-0af06a760000" name="AD_3900:2303601337699757">
+<Expr mdsid="m00000003-01f4-0000-6c93-ac9800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_SAMPLE_RPD_UIDS"."TYPE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-6c93-ac9800000000-m92ee98f8-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/92ee98f0-0c2a-1000-ac17-0af06a760000.xml#m92ee98f8-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m9337d6f0-0c2a-1000-ac17-0af06a760000" name="Primary" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m9337d6f0-0c2a-1000-ac17-0af06a760000-m933035d6-0c2a-1000-ac17-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/933035d0-0c2a-1000-ac17-0af06a760000.xml#m933035d6-0c2a-1000-ac17-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m933035d0-0c2a-1000-ac17-0af06a760000-m933035d2-0c2a-1000-ac17-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/933035d2-0c2a-1000-ac17-0af06a760000.xml#m933035d2-0c2a-1000-ac17-0af06a760000"/>
+</RefTableSources>
+</LogicalTable>

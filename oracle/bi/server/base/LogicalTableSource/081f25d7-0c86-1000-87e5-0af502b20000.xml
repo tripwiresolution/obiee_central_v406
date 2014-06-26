@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m081f25d7-0c86-1000-87e5-0af502b20000" name="TEXT_CLASSIFICATION" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/081f25d0-0c86-1000-87e5-0af502b20000.xml#m081f25d0-0c86-1000-87e5-0af502b20000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-14c8-9f1100000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims"."Dummy"."Classification"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-14c8-9f1100000000-m081f25d1-0c86-1000-87e5-0af502b20000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/081f25d0-0c86-1000-87e5-0af502b20000.xml#m081f25d1-0c86-1000-87e5-0af502b20000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-9db3-203f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."TEXT_CLASSIFICATION"."CLASSIFICATION"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-9db3-203f00000000-m07a513d0-0c86-1000-87e5-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/07a254b1-0c86-1000-87e5-0af502b20000.xml#m07a513d0-0c86-1000-87e5-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-4036-234600000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims"."Dummy"."Search Query String"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-4036-234600000000-m081f25d2-0c86-1000-87e5-0af502b20000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/081f25d0-0c86-1000-87e5-0af502b20000.xml#m081f25d2-0c86-1000-87e5-0af502b20000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-6314-d82a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."TEXT_CLASSIFICATION"."QUERY_STRING"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-6314-d82a00000000-m07aa1ce0-0c86-1000-87e5-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/07a254b1-0c86-1000-87e5-0af502b20000.xml#m07aa1ce0-0c86-1000-87e5-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/07a254b1-0c86-1000-87e5-0af502b20000.xml#m07a254b1-0c86-1000-87e5-0af502b20000">
+</Link>
+<WhereClause mdsid="m00000005-01f4-0000-e835-230600000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000006-01f4-0000-dfa7-566e00000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m00000007-01f4-0000-4c55-e3dc00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

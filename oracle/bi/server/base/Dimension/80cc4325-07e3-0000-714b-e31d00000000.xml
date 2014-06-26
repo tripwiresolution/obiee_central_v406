@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m80cc4325-07e3-0000-714b-e31d00000000" name="5 Proc Instances" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="false" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/80cc4325-07e3-0000-714b-e31d00000000.xml#m80cc43ad-07e9-0000-714b-e31d00000000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cc4320-07d0-0000-714b-e31d00000000.xml#m80cc4320-07d0-0000-714b-e31d00000000">
+<LogicalLevel mdsid="m80cc43ad-07e9-0000-714b-e31d00000000" name="All Instances" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;All Instances&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="m80cc43ad-07e9-0000-714b-e31d00000000_m80cc43ae-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cc4325-07e3-0000-714b-e31d00000000.xml#m80cc43ae-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cc43ae-07e9-0000-714b-e31d00000000" name="Processes" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Processes&apos;">
+<LogicalKey mdsid="m80cc43ca-07d8-0000-714b-e31d00000000" name="Process Id" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cc43ca-07d8-0000-714b-e31d00000000-m80cc437b-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc432f-07f3-0000-714b-e31d00000000.xml#m80cc437b-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cc43ae-07e9-0000-714b-e31d00000000_m80cc43af-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cc4325-07e3-0000-714b-e31d00000000.xml#m80cc43af-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cc43ae-07e9-0000-714b-e31d00000000-m80cc437b-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc432f-07f3-0000-714b-e31d00000000.xml#m80cc437b-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cc43af-07e9-0000-714b-e31d00000000" name="Instance Details" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Instance Details&apos;">
+<LogicalKey mdsid="m80cc43cb-07d8-0000-714b-e31d00000000" name="Process Instance" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cc43cb-07d8-0000-714b-e31d00000000-m80cc437b-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc432f-07f3-0000-714b-e31d00000000.xml#m80cc437b-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cc43cb-07d8-0000-714b-e31d00000000-m80cc437d-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc432f-07f3-0000-714b-e31d00000000.xml#m80cc437d-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cc43af-07e9-0000-714b-e31d00000000-m80cc437c-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc432f-07f3-0000-714b-e31d00000000.xml#m80cc437c-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cc43af-07e9-0000-714b-e31d00000000-m80cc437d-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc432f-07f3-0000-714b-e31d00000000.xml#m80cc437d-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cc43af-07e9-0000-714b-e31d00000000-m80cc4385-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc432f-07f3-0000-714b-e31d00000000.xml#m80cc4385-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

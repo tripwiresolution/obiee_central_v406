@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m575b68c1-0c2d-1000-87a7-0af06a760000" name="16 Dest Airport Map" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="false" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/575b68c1-0c2d-1000-87a7-0af06a760000.xml#m575b6ab0-0c2d-1000-87a7-0af06a760000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/575b68b0-0c2d-1000-87a7-0af06a760000.xml#m575b68b0-0c2d-1000-87a7-0af06a760000">
+<LogicalLevel mdsid="m575b6ab0-0c2d-1000-87a7-0af06a760000" name="16 Dest Map Total" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;16 Dest Map Total&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="m575b6ab0-0c2d-1000-87a7-0af06a760000_m575b6ab3-0c2d-1000-87a7-0af06a760000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/575b68c1-0c2d-1000-87a7-0af06a760000.xml#m575b6ab3-0c2d-1000-87a7-0af06a760000"/>
+</RefChildLevels>
+</LogicalLevel>
+<LogicalLevel mdsid="m575b6ab3-0c2d-1000-87a7-0af06a760000" name="16 Dest Region Map" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;16 Dest Region Map&apos;">
+<LogicalKey mdsid="m575b6ba2-0c2d-1000-87a7-0af06a760000" name="Dest Region Name" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6ba2-0c2d-1000-87a7-0af06a760000-m575b69da-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69d2-0c2d-1000-87a7-0af06a760000.xml#m575b69da-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m575b6ab3-0c2d-1000-87a7-0af06a760000_m575b6ab2-0c2d-1000-87a7-0af06a760000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/575b68c1-0c2d-1000-87a7-0af06a760000.xml#m575b6ab2-0c2d-1000-87a7-0af06a760000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m575b6ab3-0c2d-1000-87a7-0af06a760000-m575b69d9-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69d2-0c2d-1000-87a7-0af06a760000.xml#m575b69d9-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6ab3-0c2d-1000-87a7-0af06a760000-m575b69da-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69d2-0c2d-1000-87a7-0af06a760000.xml#m575b69da-0c2d-1000-87a7-0af06a760000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m575b6ab2-0c2d-1000-87a7-0af06a760000" name="16 Dest Division Map" isGTA="false" isFDUC="true" memberCount="10" levelConst="&apos;16 Dest Division Map&apos;">
+<LogicalKey mdsid="m575b6ba1-0c2d-1000-87a7-0af06a760000" name="Dest Division Name" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6ba1-0c2d-1000-87a7-0af06a760000-m575b69dc-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69d2-0c2d-1000-87a7-0af06a760000.xml#m575b69dc-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m575b6ab2-0c2d-1000-87a7-0af06a760000_m575b6ab1-0c2d-1000-87a7-0af06a760000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/575b68c1-0c2d-1000-87a7-0af06a760000.xml#m575b6ab1-0c2d-1000-87a7-0af06a760000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m575b6ab2-0c2d-1000-87a7-0af06a760000-m575b69db-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69d2-0c2d-1000-87a7-0af06a760000.xml#m575b69db-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6ab2-0c2d-1000-87a7-0af06a760000-m575b69dc-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69d2-0c2d-1000-87a7-0af06a760000.xml#m575b69dc-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6ab2-0c2d-1000-87a7-0af06a760000-m575b69dd-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69d2-0c2d-1000-87a7-0af06a760000.xml#m575b69dd-0c2d-1000-87a7-0af06a760000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m575b6ab1-0c2d-1000-87a7-0af06a760000" name="16 Dest State Map" isGTA="false" isFDUC="true" memberCount="50" levelConst="&apos;16 Dest State Map&apos;">
+<LogicalKey mdsid="m575b6b9f-0c2d-1000-87a7-0af06a760000" name="Dest State Name" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6b9f-0c2d-1000-87a7-0af06a760000-m575b69df-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69d2-0c2d-1000-87a7-0af06a760000.xml#m575b69df-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m575b6ba0-0c2d-1000-87a7-0af06a760000" name="Dest State Name Vis" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6ba0-0c2d-1000-87a7-0af06a760000-m575b69e3-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69d2-0c2d-1000-87a7-0af06a760000.xml#m575b69e3-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m575b6ab1-0c2d-1000-87a7-0af06a760000_m575b6aaf-0c2d-1000-87a7-0af06a760000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/575b68c1-0c2d-1000-87a7-0af06a760000.xml#m575b6aaf-0c2d-1000-87a7-0af06a760000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m575b6ab1-0c2d-1000-87a7-0af06a760000-m575b69de-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69d2-0c2d-1000-87a7-0af06a760000.xml#m575b69de-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6ab1-0c2d-1000-87a7-0af06a760000-m575b69df-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69d2-0c2d-1000-87a7-0af06a760000.xml#m575b69df-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6ab1-0c2d-1000-87a7-0af06a760000-m575b69e3-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69d2-0c2d-1000-87a7-0af06a760000.xml#m575b69e3-0c2d-1000-87a7-0af06a760000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m575b6aaf-0c2d-1000-87a7-0af06a760000" name="16 Dest Airport Map Detail" isGTA="false" isFDUC="true" memberCount="350" levelConst="&apos;16 Dest Airport Map Detail&apos;">
+<LogicalKey mdsid="m575b6b9d-0c2d-1000-87a7-0af06a760000" name="16 Dest Airport Map Detail_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6b9d-0c2d-1000-87a7-0af06a760000-m575b69d3-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69d2-0c2d-1000-87a7-0af06a760000.xml#m575b69d3-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m575b6b9e-0c2d-1000-87a7-0af06a760000" name="Dest Airport Name" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6b9e-0c2d-1000-87a7-0af06a760000-m575b69e4-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69d2-0c2d-1000-87a7-0af06a760000.xml#m575b69e4-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefPreferredDrillDown>
+<RefLogicalLevel refId="m575b6aaf-0c2d-1000-87a7-0af06a760000-m575b6aad-0c2d-1000-87a7-0af06a760000" logicalLevelRef="/oracle/bi/server/base/Dimension/575b68c0-0c2d-1000-87a7-0af06a760000.xml#m575b6aad-0c2d-1000-87a7-0af06a760000"/>
+</RefPreferredDrillDown>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m575b6aaf-0c2d-1000-87a7-0af06a760000-m575b69d3-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69d2-0c2d-1000-87a7-0af06a760000.xml#m575b69d3-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6aaf-0c2d-1000-87a7-0af06a760000-m575b69d4-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69d2-0c2d-1000-87a7-0af06a760000.xml#m575b69d4-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6aaf-0c2d-1000-87a7-0af06a760000-m575b69d5-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69d2-0c2d-1000-87a7-0af06a760000.xml#m575b69d5-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6aaf-0c2d-1000-87a7-0af06a760000-m575b69d6-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69d2-0c2d-1000-87a7-0af06a760000.xml#m575b69d6-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6aaf-0c2d-1000-87a7-0af06a760000-m575b69d7-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69d2-0c2d-1000-87a7-0af06a760000.xml#m575b69d7-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6aaf-0c2d-1000-87a7-0af06a760000-m575b69d8-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69d2-0c2d-1000-87a7-0af06a760000.xml#m575b69d8-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6aaf-0c2d-1000-87a7-0af06a760000-m575b69e4-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69d2-0c2d-1000-87a7-0af06a760000.xml#m575b69e4-0c2d-1000-87a7-0af06a760000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

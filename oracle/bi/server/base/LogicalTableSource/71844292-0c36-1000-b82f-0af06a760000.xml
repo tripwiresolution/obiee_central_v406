@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m71844292-0c36-1000-b82f-0af06a760000" name="LTS1 GL Hierarchical" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/718440da-0c36-1000-b82f-0af06a760000.xml#m718440da-0c36-1000-b82f-0af06a760000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-27ed-effb00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL"."Scenarios"."Scenarios"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-27ed-effb00000000-m718440db-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440da-0c36-1000-b82f-0af06a760000.xml#m718440db-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-4172-bb5f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen2,Scenarios"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-4172-bb5f00000000-m7180993b-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m7180993b-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-b911-919c00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL"."Scenarios"."Gen2 Scenarios - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-b911-919c00000000-m718440dc-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440da-0c36-1000-b82f-0af06a760000.xml#m718440dc-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-db5a-233600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen2,Scenarios - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-db5a-233600000000-m7180993e-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m7180993e-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-c6f0-12d300000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL"."Scenarios"."Scenarios - Default"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-c6f0-12d300000000-m718440dd-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440da-0c36-1000-b82f-0af06a760000.xml#m718440dd-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-cf4b-b5ba00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Scenarios - Default"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-cf4b-b5ba00000000-m7180998d-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m7180998d-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m71809900-0c36-1000-b82f-0af06a760000">
+</Link>
+<WhereClause mdsid="m00000007-01f4-0000-e41e-5da500000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000008-01f4-0000-565b-8d0900000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("03 - Essbase GL"."Scenarios"."Scenarios")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-565b-8d0900000000-m7184413c-0c36-1000-b82f-0af06a760000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/718440a3-0c36-1000-b82f-0af06a760000.xml#m7184413c-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m00000009-01f4-0000-d71a-4b3a00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

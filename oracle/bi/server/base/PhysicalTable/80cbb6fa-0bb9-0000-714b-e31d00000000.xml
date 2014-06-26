@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cbb6fa-0bb9-0000-714b-e31d00000000" name="ADDRESS_USAGES" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" x="715" y="139" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cbb6f4-0bd3-0000-714b-e31d00000000.xml#m80cbb6f4-0bd3-0000-714b-e31d00000000">
+<PhysicalColumn mdsid="m80cbb753-0bbb-0000-714b-e31d00000000" name="ADDRESS_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb754-0bbb-0000-714b-e31d00000000" name="ADDRESS_USAGES_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb755-0bbb-0000-714b-e31d00000000" name="ASSOCIATED_OWNER_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb756-0bbb-0000-714b-e31d00000000" name="CREATED_BY" dataType="VARCHAR" precision="60" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb757-0bbb-0000-714b-e31d00000000" name="CREATION_DATE" dataType="DATETIME" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb758-0bbb-0000-714b-e31d00000000" name="EXPIRED_FLAG" dataType="VARCHAR" precision="1" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb759-0bbb-0000-714b-e31d00000000" name="LAST_UPDATED_BY" dataType="VARCHAR" precision="60" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb75a-0bbb-0000-714b-e31d00000000" name="LAST_UPDATE_DATE" dataType="DATETIME" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb75b-0bbb-0000-714b-e31d00000000" name="OBJECT_VERSION_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb75c-0bbb-0000-714b-e31d00000000" name="OWNER_TYPE_CODE" dataType="VARCHAR" precision="30" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb75d-0bbb-0000-714b-e31d00000000" name="USAGE_TYPE_CODE" dataType="VARCHAR" precision="30" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cbb8d7-0bc0-0000-714b-e31d00000000" name="ADDRESS_USAGES_ID">
+<RefColumns>
+<RefColumn refId="m80cbb8d7-0bc0-0000-714b-e31d00000000-m80cbb754-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cbb6fa-0bb9-0000-714b-e31d00000000.xml#m80cbb754-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m80cbb8f3-0bbe-0000-714b-e31d00000000" name="ASSOCIATED_OWNER_ID" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cbb70e-0bb9-0000-714b-e31d00000000.xml#m80cbb8e9-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cbb8f3-0bbe-0000-714b-e31d00000000-m80cbb755-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cbb6fa-0bb9-0000-714b-e31d00000000.xml#m80cbb755-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cbb8f4-0bbe-0000-714b-e31d00000000" name="ADDRESS_ID" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cbc435-0bb9-0000-714b-e31d00000000.xml#m80cbc445-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cbb8f4-0bbe-0000-714b-e31d00000000-m80cbb753-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cbb6fa-0bb9-0000-714b-e31d00000000.xml#m80cbb753-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m678b1850-0c61-1000-99f2-7f0000010000" name="X0 - Airlines Demo Dbs (ORCL)__BI_AIRLINES_AGG_SA_01_Day_00039D11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" isSysGen="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/575b69fa-0c2d-1000-87a7-0af06a760000.xml#m575b69fa-0c2d-1000-87a7-0af06a760000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-2945-c08400000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."01 Time Day Attributes"."Day of Month"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-2945-c08400000000-m575b69fc-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b69fa-0c2d-1000-87a7-0af06a760000.xml#m575b69fc-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-a595-706700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES_AGG"."SA_01_Day_00039D11"."Day_of_Mon00039C53"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-a595-706700000000-m677c4b42-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/677c4b40-0c61-1000-99f2-7f0000010000.xml#m677c4b42-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/677c4b40-0c61-1000-99f2-7f0000010000.xml#m677c4b40-0c61-1000-99f2-7f0000010000">
+</Link>
+<WhereClause mdsid="m00000003-01f4-0000-dd2b-95c000000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000004-01f4-0000-fcbd-1af100000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("X0 - Airlines"."01 Day Attrib"."01 Day of Mth")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-fcbd-1af100000000-m575b6aba-0c2d-1000-87a7-0af06a760000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/575b68c3-0c2d-1000-87a7-0af06a760000.xml#m575b6aba-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m00000005-01f4-0000-aee5-50d800000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

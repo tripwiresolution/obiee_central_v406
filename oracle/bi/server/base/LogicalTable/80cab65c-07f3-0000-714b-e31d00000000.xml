@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cab65c-07f3-0000-714b-e31d00000000" name="F4 Headcount Base Measures" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="329" y="1084" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cab573-07d0-0000-714b-e31d00000000.xml#m80cab573-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cab65d-07d6-0000-714b-e31d00000000" name="9- Full Time Empl  (Beg Period)" isWriteable="false">
+<MeasureDefn mdsid="m80cab67e-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cab693-0802-0000-714b-e31d00000000" name="AggRule_2050:119021262767587" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-40ed-568c00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("01 - Sample App"."F4 Headcount Base Measures"."9- Full Time Empl  (Beg Period)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-40ed-568c00000000-m80cab65d-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab65c-07f3-0000-714b-e31d00000000.xml#m80cab65d-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+<AggrRule mdsid="m80cab694-0802-0000-714b-e31d00000000" name="AggRule_2050:119031262767587" basedOnDimensionRef="/oracle/bi/server/base/Dimension/80cab574-07e3-0000-714b-e31d00000000.xml#m80cab574-07e3-0000-714b-e31d00000000">
+<Expr mdsid="m00000002-01f4-0000-594e-87cf00000000" name="Expr">
+<ExprText><![CDATA[ FIRST("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ FIRST("01 - Sample App"."F4 Headcount Base Measures"."9- Full Time Empl  (Beg Period)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-594e-87cf00000000-m80cab65d-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab65c-07f3-0000-714b-e31d00000000.xml#m80cab65d-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cab7ce-0f3c-0000-714b-e31d00000000" name="AD_3900:123501262767587">
+<Expr mdsid="m00000003-01f4-0000-9b69-b43b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F50 Facts Headcount"."Fte"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-9b69-b43b00000000-m80cb6aa6-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb6845-0bb9-0000-714b-e31d00000000.xml#m80cb6aa6-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab65e-07d6-0000-714b-e31d00000000" name="9- Full Time Empl  (End Period)" isWriteable="false">
+<MeasureDefn mdsid="m80cab67f-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cab695-0802-0000-714b-e31d00000000" name="AggRule_2050:119041262767587" isDefault="true">
+<Expr mdsid="m00000004-01f4-0000-8e49-4efb00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("01 - Sample App"."F4 Headcount Base Measures"."9- Full Time Empl  (End Period)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-8e49-4efb00000000-m80cab65e-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab65c-07f3-0000-714b-e31d00000000.xml#m80cab65e-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+<AggrRule mdsid="m80cab696-0802-0000-714b-e31d00000000" name="AggRule_2050:119051262767587" basedOnDimensionRef="/oracle/bi/server/base/Dimension/80cab574-07e3-0000-714b-e31d00000000.xml#m80cab574-07e3-0000-714b-e31d00000000">
+<Expr mdsid="m00000005-01f4-0000-313d-245c00000000" name="Expr">
+<ExprText><![CDATA[ LAST("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ LAST("01 - Sample App"."F4 Headcount Base Measures"."9- Full Time Empl  (End Period)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-313d-245c00000000-m80cab65e-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab65c-07f3-0000-714b-e31d00000000.xml#m80cab65e-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cab7cf-0f3c-0000-714b-e31d00000000" name="AD_3900:123511262767587">
+<Expr mdsid="m00000006-01f4-0000-c058-9c7f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F50 Facts Headcount"."Fte"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-c058-9c7f00000000-m80cb6aa6-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb6845-0bb9-0000-714b-e31d00000000.xml#m80cb6aa6-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cab65c-07f3-0000-714b-e31d00000000-m80cab7ee-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cab7ee-07f5-0000-714b-e31d00000000.xml#m80cab7ee-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

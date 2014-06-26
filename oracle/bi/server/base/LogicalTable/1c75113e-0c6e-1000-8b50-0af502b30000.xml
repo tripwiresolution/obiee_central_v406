@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m1c75113e-0c6e-1000-8b50-0af502b30000" name="India Demographics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cde354-07d0-0000-714b-e31d00000000.xml#m80cde354-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m1c751141-0c6e-1000-8b50-0af502b30000" name="District" iconIndex="91" isWriteable="false">
+<AttrDefn mdsid="m1c75114e-0c6e-1000-8b50-0af502b30000" name="AD_3900:2593421366709356">
+<Expr mdsid="m00000001-01f4-0000-1ba1-9bdc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_SAMPLE_DATA"."DISTRICT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-1ba1-9bdc00000000-mfa386b2e-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b13-0c6d-1000-a280-0af502b20000.xml#mfa386b2e-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1c751142-0c6e-1000-8b50-0af502b30000" name="# of Districts" isWriteable="false">
+<MeasureDefn mdsid="m1ed436c0-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1ed436c1-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2604291366710671" isDefault="true">
+<Expr mdsid="m00000002-01f4-0000-b746-228800000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "07 - Spatial Samples"."India Demographics"."# of Districts")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-b746-228800000000-m1c751142-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1c751142-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1c75114f-0c6e-1000-8b50-0af502b30000" name="AD_3900:2593431366709356">
+<Expr mdsid="m00000003-01f4-0000-f277-990000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_SAMPLE_DATA"."DISTRICT_CODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-f277-990000000000-mfa386b2f-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b13-0c6d-1000-a280-0af502b20000.xml#mfa386b2f-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1c751143-0c6e-1000-8b50-0af502b30000" name="Neighbourhood" iconIndex="91" isWriteable="false">
+<AttrDefn mdsid="m1c751150-0c6e-1000-8b50-0af502b30000" name="AD_3900:2593441366709356">
+<Expr mdsid="m00000004-01f4-0000-e467-e54c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_SAMPLE_DATA"."NEIGHBOURHOOD"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-e467-e54c00000000-mfa386b30-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b13-0c6d-1000-a280-0af502b20000.xml#mfa386b30-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1c751144-0c6e-1000-8b50-0af502b30000" name="# of Neighbourhoods" isWriteable="false">
+<MeasureDefn mdsid="m1ed436c2-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1ed436c3-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2604311366710671" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-2101-fff200000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "07 - Spatial Samples"."India Demographics"."# of Neighbourhoods")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-2101-fff200000000-m1c751144-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1c751144-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1c751151-0c6e-1000-8b50-0af502b30000" name="AD_3900:2593451366709356">
+<Expr mdsid="m00000006-01f4-0000-164c-192e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_SAMPLE_DATA"."NEIGHBOURHOOD_CODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-164c-192e00000000-mfa386b31-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b13-0c6d-1000-a280-0af502b20000.xml#mfa386b31-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1c751145-0c6e-1000-8b50-0af502b30000" name="State" iconIndex="91" isWriteable="false">
+<AttrDefn mdsid="m1c751152-0c6e-1000-8b50-0af502b30000" name="AD_3900:2593461366709356">
+<Expr mdsid="m00000007-01f4-0000-ab94-9da400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_SAMPLE_DATA"."STATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-ab94-9da400000000-mfa386b32-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b13-0c6d-1000-a280-0af502b20000.xml#mfa386b32-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1c751146-0c6e-1000-8b50-0af502b30000" name="# of States" isWriteable="false">
+<MeasureDefn mdsid="m1ed436c4-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1ed436c5-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2604331366710671" isDefault="true">
+<Expr mdsid="m00000008-01f4-0000-dcae-7bd200000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "07 - Spatial Samples"."India Demographics"."# of States")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-dcae-7bd200000000-m1c751146-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1c751146-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1c751153-0c6e-1000-8b50-0af502b30000" name="AD_3900:2593471366709356">
+<Expr mdsid="m00000009-01f4-0000-a8eb-fe2400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_SAMPLE_DATA"."STATE_CODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-a8eb-fe2400000000-mfa386b33-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b13-0c6d-1000-a280-0af502b20000.xml#mfa386b33-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1c751147-0c6e-1000-8b50-0af502b30000" name="Sub District" iconIndex="91" isWriteable="false">
+<AttrDefn mdsid="m1c751154-0c6e-1000-8b50-0af502b30000" name="AD_3900:2593481366709356">
+<Expr mdsid="m0000000a-01f4-0000-bcd2-a00b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_SAMPLE_DATA"."SUB_DISTRICT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-bcd2-a00b00000000-mfa386b34-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b13-0c6d-1000-a280-0af502b20000.xml#mfa386b34-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1c751148-0c6e-1000-8b50-0af502b30000" name="# of Sub Districts" isWriteable="false">
+<MeasureDefn mdsid="m1ed436c6-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1ed436c7-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2604351366710671" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-796a-bcb900000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "07 - Spatial Samples"."India Demographics"."# of Sub Districts")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-796a-bcb900000000-m1c751148-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1c751148-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1c751155-0c6e-1000-8b50-0af502b30000" name="AD_3900:2593491366709356">
+<Expr mdsid="m0000000c-01f4-0000-bb7a-ec3400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_SAMPLE_DATA"."SUB_DISTRICT_CODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-bb7a-ec3400000000-mfa386b35-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b13-0c6d-1000-a280-0af502b20000.xml#mfa386b35-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1c751149-0c6e-1000-8b50-0af502b30000" name="Total Household Expenditure" isWriteable="false">
+<MeasureDefn mdsid="m1e578cb0-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1e578cb1-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2602281366709524" isDefault="true">
+<Expr mdsid="m0000000d-01f4-0000-fcb9-109a00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."India Demographics"."Total Household Expenditure")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-fcb9-109a00000000-m1c751149-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1c751149-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1c751156-0c6e-1000-8b50-0af502b30000" name="AD_3900:2593501366709356">
+<Expr mdsid="m0000000e-01f4-0000-5962-dc1000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_SAMPLE_DATA"."TOTAL_HOUSEHOLD_EXPENDITURE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-5962-dc1000000000-mfa386b37-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b13-0c6d-1000-a280-0af502b20000.xml#mfa386b37-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1c75114a-0c6e-1000-8b50-0af502b30000" name="Total Household Income" isWriteable="false">
+<MeasureDefn mdsid="m1e578cb2-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1e578cb3-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2602301366709524" isDefault="true">
+<Expr mdsid="m0000000f-01f4-0000-5743-8bb400000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."India Demographics"."Total Household Income")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-5743-8bb400000000-m1c75114a-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1c75114a-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1c751157-0c6e-1000-8b50-0af502b30000" name="AD_3900:2593511366709356">
+<Expr mdsid="m00000010-01f4-0000-09e2-86ec00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_SAMPLE_DATA"."TOTAL_HOUSEHOLD_INCOME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-09e2-86ec00000000-mfa386b38-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b13-0c6d-1000-a280-0af502b20000.xml#mfa386b38-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1c75114b-0c6e-1000-8b50-0af502b30000" name="Total Household Savings" isWriteable="false">
+<MeasureDefn mdsid="m1e578cb4-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1e578cb5-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2602321366709524" isDefault="true">
+<Expr mdsid="m00000011-01f4-0000-1c48-718e00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."India Demographics"."Total Household Savings")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-1c48-718e00000000-m1c75114b-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1c75114b-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1c751158-0c6e-1000-8b50-0af502b30000" name="AD_3900:2593521366709356">
+<Expr mdsid="m00000012-01f4-0000-a868-2ee500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_SAMPLE_DATA"."TOTAL_HOUSEHOLD_SAVINGS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-a868-2ee500000000-mfa386b39-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b13-0c6d-1000-a280-0af502b20000.xml#mfa386b39-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1c75114c-0c6e-1000-8b50-0af502b30000" name="Total Households" isWriteable="false">
+<MeasureDefn mdsid="m1e578cb6-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1e578cb7-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2602341366709524" isDefault="true">
+<Expr mdsid="m00000013-01f4-0000-f333-d9a900000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."India Demographics"."Total Households")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-f333-d9a900000000-m1c75114c-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1c75114c-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1c751159-0c6e-1000-8b50-0af502b30000" name="AD_3900:2593531366709356">
+<Expr mdsid="m00000014-01f4-0000-ff3c-20cc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_SAMPLE_DATA"."TOTAL_HOUSEHOLDS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-ff3c-20cc00000000-mfa386b36-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b13-0c6d-1000-a280-0af502b20000.xml#mfa386b36-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1c75114d-0c6e-1000-8b50-0af502b30000" name="Total Population" isWriteable="false">
+<MeasureDefn mdsid="m1e578cb8-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1e578cb9-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2602361366709524" isDefault="true">
+<Expr mdsid="m00000015-01f4-0000-e548-a37700000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."India Demographics"."Total Population")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-e548-a37700000000-m1c75114d-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1c75114d-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1c75115a-0c6e-1000-8b50-0af502b30000" name="AD_3900:2593541366709356">
+<Expr mdsid="m00000016-01f4-0000-05f9-c92200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_SAMPLE_DATA"."TOTAL_POPULATION"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-05f9-c92200000000-mfa386b3a-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b13-0c6d-1000-a280-0af502b20000.xml#mfa386b3a-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1ec087b3-0c6e-1000-8b50-0af502b30000" name="Total State Area" isWriteable="false">
+<MeasureDefn mdsid="m1ec7b3a0-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1ec7b3a1-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2602851366710671" isDefault="true">
+<Expr mdsid="m00000017-01f4-0000-80b4-ceec00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."India Demographics"."Total State Area")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-80b4-ceec00000000-m1ec087b3-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1ec087b3-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1ec087b4-0c6e-1000-8b50-0af502b30000" name="AD_3900:2602481366710671">
+<Expr mdsid="m00000018-01f4-0000-ea31-506c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_STATES"."AREA"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000018-01f4-0000-ea31-506c00000000-mfa386b43-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b15-0c6d-1000-a280-0af502b20000.xml#mfa386b43-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1ec087b8-0c6e-1000-8b50-0af502b30000" name="Total State Area New" isWriteable="false">
+<MeasureDefn mdsid="m1ec7b3a2-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1ec7b3a3-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2602871366710671" isDefault="true">
+<Expr mdsid="m00000019-01f4-0000-241a-adbb00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."India Demographics"."Total State Area New")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000019-01f4-0000-241a-adbb00000000-m1ec087b8-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1ec087b8-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1ec087b9-0c6e-1000-8b50-0af502b30000" name="AD_3900:2602531366710671">
+<Expr mdsid="m0000001a-01f4-0000-6e77-fcd100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_STATES"."AREA_NEW"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001a-01f4-0000-6e77-fcd100000000-mfa386b44-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b15-0c6d-1000-a280-0af502b20000.xml#mfa386b44-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1ec087bc-0c6e-1000-8b50-0af502b30000" name="Total State Length" isWriteable="false">
+<MeasureDefn mdsid="m1ec7b3a4-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1ec7b3a5-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2602891366710671" isDefault="true">
+<Expr mdsid="m0000001b-01f4-0000-4778-030f00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."India Demographics"."Total State Length")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001b-01f4-0000-4778-030f00000000-m1ec087bc-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1ec087bc-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1ec087bd-0c6e-1000-8b50-0af502b30000" name="AD_3900:2602571366710671">
+<Expr mdsid="m0000001c-01f4-0000-344f-967100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_STATES"."LENGTH"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001c-01f4-0000-344f-967100000000-mfa386b47-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b15-0c6d-1000-a280-0af502b20000.xml#mfa386b47-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1ec087c0-0c6e-1000-8b50-0af502b30000" name="Total State Parts" isWriteable="false">
+<MeasureDefn mdsid="m1ec7b3a6-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1ec7b3a7-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2602911366710671" isDefault="true">
+<Expr mdsid="m0000001d-01f4-0000-5cea-383400000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."India Demographics"."Total State Parts")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001d-01f4-0000-5cea-383400000000-m1ec087c0-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1ec087c0-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1ec087c1-0c6e-1000-8b50-0af502b30000" name="AD_3900:2602611366710671">
+<Expr mdsid="m0000001e-01f4-0000-6389-057b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_STATES"."PARTS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001e-01f4-0000-6389-057b00000000-mfa386b4a-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b15-0c6d-1000-a280-0af502b20000.xml#mfa386b4a-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1ec087c4-0c6e-1000-8b50-0af502b30000" name="Total State Points" isWriteable="false">
+<MeasureDefn mdsid="m1ec7b3a8-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1ec7b3a9-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2602931366710671" isDefault="true">
+<Expr mdsid="m0000001f-01f4-0000-d228-617f00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."India Demographics"."Total State Points")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001f-01f4-0000-d228-617f00000000-m1ec087c4-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1ec087c4-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1ec087c5-0c6e-1000-8b50-0af502b30000" name="AD_3900:2602651366710671">
+<Expr mdsid="m00000020-01f4-0000-e4e1-de3100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_STATES"."POINTS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000020-01f4-0000-e4e1-de3100000000-mfa386b4b-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b15-0c6d-1000-a280-0af502b20000.xml#mfa386b4b-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1ec0aec0-0c6e-1000-8b50-0af502b30000" name="Total District Area" isWriteable="false">
+<MeasureDefn mdsid="m1ec7b3aa-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1ec7b3ab-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2602951366710671" isDefault="true">
+<Expr mdsid="m00000021-01f4-0000-c274-35d600000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."India Demographics"."Total District Area")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000021-01f4-0000-c274-35d600000000-m1ec0aec0-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1ec0aec0-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1ec0aec1-0c6e-1000-8b50-0af502b30000" name="AD_3900:2602701366710671">
+<Expr mdsid="m00000022-01f4-0000-b35d-fd2b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_DISTRICTS"."AREA"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000022-01f4-0000-b35d-fd2b00000000-mfa386b18-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b11-0c6d-1000-a280-0af502b20000.xml#mfa386b18-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1ec0aec5-0c6e-1000-8b50-0af502b30000" name="Total District Length" isWriteable="false">
+<MeasureDefn mdsid="m1ec7b3ac-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1ec7b3ad-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2602971366710671" isDefault="true">
+<Expr mdsid="m00000023-01f4-0000-2207-a98300000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."India Demographics"."Total District Length")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000023-01f4-0000-2207-a98300000000-m1ec0aec5-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1ec0aec5-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1ec0aec6-0c6e-1000-8b50-0af502b30000" name="AD_3900:2602751366710671">
+<Expr mdsid="m00000024-01f4-0000-3184-3f5f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_DISTRICTS"."LENGTH"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000024-01f4-0000-3184-3f5f00000000-mfa386b1b-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b11-0c6d-1000-a280-0af502b20000.xml#mfa386b1b-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1ec0aec9-0c6e-1000-8b50-0af502b30000" name="Total District Parts" isWriteable="false">
+<MeasureDefn mdsid="m1ec7b3ae-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1ec7b3af-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2602991366710671" isDefault="true">
+<Expr mdsid="m00000025-01f4-0000-8ada-ee3900000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."India Demographics"."Total District Parts")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000025-01f4-0000-8ada-ee3900000000-m1ec0aec9-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1ec0aec9-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1ec0aeca-0c6e-1000-8b50-0af502b30000" name="AD_3900:2602791366710671">
+<Expr mdsid="m00000026-01f4-0000-e939-f3c700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_DISTRICTS"."PARTS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000026-01f4-0000-e939-f3c700000000-mfa386b1e-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b11-0c6d-1000-a280-0af502b20000.xml#mfa386b1e-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1ec0aecd-0c6e-1000-8b50-0af502b30000" name="Total District Points" isWriteable="false">
+<MeasureDefn mdsid="m1ec7b3b0-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1ec7b3b1-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2603011366710671" isDefault="true">
+<Expr mdsid="m00000027-01f4-0000-22d9-870c00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."India Demographics"."Total District Points")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000027-01f4-0000-22d9-870c00000000-m1ec0aecd-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1ec0aecd-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1ec0aece-0c6e-1000-8b50-0af502b30000" name="AD_3900:2602831366710671">
+<Expr mdsid="m00000028-01f4-0000-cc58-22d600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_DISTRICTS"."POINTS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000028-01f4-0000-cc58-22d600000000-mfa386b1f-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b11-0c6d-1000-a280-0af502b20000.xml#mfa386b1f-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1ecc2074-0c6e-1000-8b50-0af502b30000" name="Avg Household Expenditure" isWriteable="false">
+<MeasureDefn mdsid="m1ecc2075-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1ecdf530-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2604141366710671" isDefault="true">
+<Expr mdsid="m00000029-01f4-0000-bf13-fd7600000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("07 - Spatial Samples"."India Demographics"."Avg Household Expenditure")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000029-01f4-0000-bf13-fd7600000000-m1ecc2074-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1ecc2074-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1ecc2077-0c6e-1000-8b50-0af502b30000" name="AD_3900:2603091366710671">
+<Expr mdsid="m0000002a-01f4-0000-c2df-a98d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_SAMPLE_DATA"."TOTAL_HOUSEHOLD_EXPENDITURE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002a-01f4-0000-c2df-a98d00000000-mfa386b37-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b13-0c6d-1000-a280-0af502b20000.xml#mfa386b37-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1ecc207c-0c6e-1000-8b50-0af502b30000" name="Avg Household Income" isWriteable="false">
+<MeasureDefn mdsid="m1ecc207d-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1ecdf531-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2604151366710671" isDefault="true">
+<Expr mdsid="m0000002b-01f4-0000-b989-a74500000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("07 - Spatial Samples"."India Demographics"."Avg Household Income")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002b-01f4-0000-b989-a74500000000-m1ecc207c-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1ecc207c-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1ecc207f-0c6e-1000-8b50-0af502b30000" name="AD_3900:2603171366710671">
+<Expr mdsid="m0000002c-01f4-0000-3ef8-b3ba00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_SAMPLE_DATA"."TOTAL_HOUSEHOLD_INCOME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002c-01f4-0000-3ef8-b3ba00000000-mfa386b38-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b13-0c6d-1000-a280-0af502b20000.xml#mfa386b38-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1ecc4780-0c6e-1000-8b50-0af502b30000" name="Avg Household Savings" isWriteable="false">
+<MeasureDefn mdsid="m1ecc4781-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1ecdf532-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2604161366710671" isDefault="true">
+<Expr mdsid="m0000002d-01f4-0000-3490-8d3400000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("07 - Spatial Samples"."India Demographics"."Avg Household Savings")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002d-01f4-0000-3490-8d3400000000-m1ecc4780-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1ecc4780-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1ecc4783-0c6e-1000-8b50-0af502b30000" name="AD_3900:2603251366710671">
+<Expr mdsid="m0000002e-01f4-0000-191d-42bf00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_SAMPLE_DATA"."TOTAL_HOUSEHOLD_SAVINGS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002e-01f4-0000-191d-42bf00000000-mfa386b39-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b13-0c6d-1000-a280-0af502b20000.xml#mfa386b39-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1ecc4790-0c6e-1000-8b50-0af502b30000" name="Avg Population" isWriteable="false">
+<MeasureDefn mdsid="m1ecc4791-0c6e-1000-8b50-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1ecdf534-0c6e-1000-8b50-0af502b30000" name="AggRule_2050:2604181366710671" isDefault="true">
+<Expr mdsid="m0000002f-01f4-0000-da91-429800000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("07 - Spatial Samples"."India Demographics"."Avg Population")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002f-01f4-0000-da91-429800000000-m1ecc4790-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1ecc4790-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1ecc4793-0c6e-1000-8b50-0af502b30000" name="AD_3900:2603411366710671">
+<Expr mdsid="m00000030-01f4-0000-37a9-837200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_SAMPLE_DATA"."TOTAL_POPULATION"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000030-01f4-0000-37a9-837200000000-mfa386b3a-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b13-0c6d-1000-a280-0af502b20000.xml#mfa386b3a-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m20c7f074-0c6e-1000-8b50-0af502b30000" name="Avg Hh Members" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000031-01f4-0000-b781-078100000000" name="Expr">
+<ExprText><![CDATA[cast("%1" as double)/"%2" ]]></ExprText>
+<ExprTextDesc><![CDATA[cast("07 - Spatial Samples"."India Demographics"."Total Population" as double)/"07 - Spatial Samples"."India Demographics"."Total Households" ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000031-01f4-0000-b781-078100000000-m1c75114d-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1c75114d-0c6e-1000-8b50-0af502b30000"/>
+<RefObject refId="m00000031-01f4-0000-b781-078100000000-m1c75114c-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1c75114c-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m20c7f077-0c6e-1000-8b50-0af502b30000" name="AD_3900:2608501366713769">
+<Expr mdsid="m00000032-01f4-0000-3ea3-12a500000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m213187b2-0c6e-1000-8b50-0af502b30000" name="Population Density (State-District)" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000033-01f4-0000-d139-624400000000" name="Expr">
+<ExprText><![CDATA[cast("%1" as double)/"%2" ]]></ExprText>
+<ExprTextDesc><![CDATA[cast("07 - Spatial Samples"."India Demographics"."Total Population" as double)/"07 - Spatial Samples"."India Demographics"."Total District Area" ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000033-01f4-0000-d139-624400000000-m1c75114d-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1c75114d-0c6e-1000-8b50-0af502b30000"/>
+<RefObject refId="m00000033-01f4-0000-d139-624400000000-m1ec0aec0-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75113e-0c6e-1000-8b50-0af502b30000.xml#m1ec0aec0-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m213187b3-0c6e-1000-8b50-0af502b30000" name="AD_3900:2608741366714499">
+<Expr mdsid="m00000034-01f4-0000-f627-023500000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m1c75113e-0c6e-1000-8b50-0af502b30000-m1c751140-0c6e-1000-8b50-0af502b30000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/1c751140-0c6e-1000-8b50-0af502b30000.xml#m1c751140-0c6e-1000-8b50-0af502b30000"/>
+<RefLogicalTableSource refId="m1c75113e-0c6e-1000-8b50-0af502b30000-m1ec087b5-0c6e-1000-8b50-0af502b30000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/1ec087b5-0c6e-1000-8b50-0af502b30000.xml#m1ec087b5-0c6e-1000-8b50-0af502b30000"/>
+<RefLogicalTableSource refId="m1c75113e-0c6e-1000-8b50-0af502b30000-m1ec0aec2-0c6e-1000-8b50-0af502b30000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/1ec0aec2-0c6e-1000-8b50-0af502b30000.xml#m1ec0aec2-0c6e-1000-8b50-0af502b30000"/>
+</RefTableSources>
+</LogicalTable>

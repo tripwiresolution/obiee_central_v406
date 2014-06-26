@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cc4613-0bb9-0000-714b-e31d00000000" name="Instance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" x="496" y="186" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cc4612-0bd3-0000-714b-e31d00000000.xml#m80cc4612-0bd3-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[select JOB_ID, INSTANCE_ID,
+case
+when STATUS = 0 then 'Completed'
+when STATUS = 1 then 'Running'
+when STATUS = 2 then 'Failed'
+when STATUS = 3 then 'Cancelled'
+when STATUS = 4 then 'Timed Out'
+when STATUS = 5 then 'Warning'
+when STATUS = 6 then 'Try Again'
+else 'Unknown'
+end as STATUS,
+BEGIN_TS, END_TS,
+to_number(
+substr(
+(
+(
+(END_TS - BEGIN_TS)*
+(24*60*60)
+)
+),1,10)
+)
+AS EXECUTION_TIME,
+EXIT_CODE,
+ERROR_MSG_FLG
+FROM S_NQ_INSTANCE
+WHERE DELETE_FLG = 0]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cc4619-0bbb-0000-714b-e31d00000000" name="BEGIN_TS" dataType="DATETIME" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc461a-0bbb-0000-714b-e31d00000000" name="END_TS" dataType="DATETIME" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc461b-0bbb-0000-714b-e31d00000000" name="EXECUTION_TIME" dataType="UINT" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc461c-0bbb-0000-714b-e31d00000000" name="EXIT_CODE" dataType="UINT" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc461d-0bbb-0000-714b-e31d00000000" name="INSTANCE_ID" dataType="UINT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc461e-0bbb-0000-714b-e31d00000000" name="JOB_ID" dataType="UINT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc461f-0bbb-0000-714b-e31d00000000" name="STATUS" dataType="VARCHAR" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cc4626-0bc0-0000-714b-e31d00000000" name="KEY">
+<RefColumns>
+<RefColumn refId="m80cc4626-0bc0-0000-714b-e31d00000000-m80cc461d-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc4613-0bb9-0000-714b-e31d00000000.xml#m80cc461d-0bbb-0000-714b-e31d00000000"/>
+<RefColumn refId="m80cc4626-0bc0-0000-714b-e31d00000000-m80cc461e-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc4613-0bb9-0000-714b-e31d00000000.xml#m80cc461e-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m80cc4629-0bbe-0000-714b-e31d00000000" name="Instance_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cc4614-0bb9-0000-714b-e31d00000000.xml#m80cc4627-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cc4629-0bbe-0000-714b-e31d00000000-m80cc461d-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc4613-0bb9-0000-714b-e31d00000000.xml#m80cc461d-0bbb-0000-714b-e31d00000000"/>
+<RefColumn refId="m80cc4629-0bbe-0000-714b-e31d00000000-m80cc461e-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc4613-0bb9-0000-714b-e31d00000000.xml#m80cc461e-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cc462a-0bbe-0000-714b-e31d00000000" name="Instance_FKey#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cc4615-0bb9-0000-714b-e31d00000000.xml#m80cc4628-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cc462a-0bbe-0000-714b-e31d00000000-m80cc461e-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc4613-0bb9-0000-714b-e31d00000000.xml#m80cc461e-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

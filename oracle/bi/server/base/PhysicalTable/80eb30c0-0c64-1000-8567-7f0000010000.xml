@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80eb30c0-0c64-1000-8567-7f0000010000" name="SAMP_EMPL_PARENT_CHILD_MAP" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" x="295" y="1548" uri="VALUEOF(BI_EE_HOME)/sample/SampleAppFiles/Data/SAMP_EMPL_PARENT_CHILD_MAP.xml" maxConn="0" containerRef="/oracle/bi/server/base/Schema/9449bd23-0c1f-1000-b9aa-0af502b10000.xml#m9449bd23-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Employee Parent Child Map: Stores the employee parent child information in a specific format that is required to create parent-child hierarchies within OBIEE. For every employee, it stores the complete hierarchical path upto the root node.]]></Description>
+<PhysicalColumn mdsid="m80eb30c1-0c64-1000-8567-7f0000010000" name="Member_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Member Key: Stores the member key information as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80eb30c2-0c64-1000-8567-7f0000010000" name="Ancestor_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Ancestor Key: Stores the parent information as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80eb30c3-0c64-1000-8567-7f0000010000" name="Distance" dataType="INT" specialType="none">
+<Description><![CDATA[Distance: Stores the distance between the employee and it's ancestor. The ancestor could be the immediate parent or any other parent up in the hierarchy.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80eb30c4-0c64-1000-8567-7f0000010000" name="Is_Leaf" dataType="INT" specialType="none">
+<Description><![CDATA[Is Leaf: Flag to indicate if a member is leaf or not. Possible values are 1 or 0.]]></Description>
+</PhysicalColumn>
+</PhysicalTable>

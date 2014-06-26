@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationHierarchy mdsid="m945556e9-0c1f-1000-b9aa-0af502b10000" name="Products Hierarchy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Products_Products_Hierarchy)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationTable/945556d1-0c1f-1000-b9aa-0af502b10000.xml#m945556d1-0c1f-1000-b9aa-0af502b10000" logicalDimensionRef="/oracle/bi/server/base/Dimension/94530bf3-0c1f-1000-b9aa-0af502b10000.xml#m94530bf3-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Help : 
+Presentation hierarchy with drill path 
+Total->Brand->LOB->Type->Detail Product]]></Description>
+<PresentationLevel mdsid="m94555703-0c1f-1000-b9aa-0af502b10000" name="Total Products" dispName="VALUEOF(NQ_SESSION.CN_Products_Products_Hierarchy_Total_Products)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationHierarchy/945556e9-0c1f-1000-b9aa-0af502b10000.xml#m945556e9-0c1f-1000-b9aa-0af502b10000" logicalLevelRef="/oracle/bi/server/base/Dimension/94530bf3-0c1f-1000-b9aa-0af502b10000.xml#m94530d83-0c1f-1000-b9aa-0af502b10000">
+<Alias name="Total"/>
+</PresentationLevel>
+<PresentationLevel mdsid="m94555700-0c1f-1000-b9aa-0af502b10000" name="Brand" dispName="VALUEOF(NQ_SESSION.CN_Products_Products_Hierarchy_Brand)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationHierarchy/945556e9-0c1f-1000-b9aa-0af502b10000.xml#m945556e9-0c1f-1000-b9aa-0af502b10000" logicalLevelRef="/oracle/bi/server/base/Dimension/94530bf3-0c1f-1000-b9aa-0af502b10000.xml#m94530d86-0c1f-1000-b9aa-0af502b10000">
+<RefDisplayColumns>
+<RefPresentationColumn refId="m94555700-0c1f-1000-b9aa-0af502b10000-m94555624-0c1f-1000-b9aa-0af502b10000" presentationColumnRef="/oracle/bi/server/base/PresentationTable/945556d1-0c1f-1000-b9aa-0af502b10000.xml#m94555624-0c1f-1000-b9aa-0af502b10000"/>
+</RefDisplayColumns>
+</PresentationLevel>
+<PresentationLevel mdsid="m94555701-0c1f-1000-b9aa-0af502b10000" name="LOB" dispName="VALUEOF(NQ_SESSION.CN_Products_Products_Hierarchy_LOB)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationHierarchy/945556e9-0c1f-1000-b9aa-0af502b10000.xml#m945556e9-0c1f-1000-b9aa-0af502b10000" logicalLevelRef="/oracle/bi/server/base/Dimension/94530bf3-0c1f-1000-b9aa-0af502b10000.xml#m94530d85-0c1f-1000-b9aa-0af502b10000">
+<RefDisplayColumns>
+<RefPresentationColumn refId="m94555701-0c1f-1000-b9aa-0af502b10000-m94555623-0c1f-1000-b9aa-0af502b10000" presentationColumnRef="/oracle/bi/server/base/PresentationTable/945556d1-0c1f-1000-b9aa-0af502b10000.xml#m94555623-0c1f-1000-b9aa-0af502b10000"/>
+</RefDisplayColumns>
+</PresentationLevel>
+<PresentationLevel mdsid="m94555704-0c1f-1000-b9aa-0af502b10000" name="Type" dispName="VALUEOF(NQ_SESSION.CN_Products_Products_Hierarchy_Type)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationHierarchy/945556e9-0c1f-1000-b9aa-0af502b10000.xml#m945556e9-0c1f-1000-b9aa-0af502b10000" logicalLevelRef="/oracle/bi/server/base/Dimension/94530bf3-0c1f-1000-b9aa-0af502b10000.xml#m94530d84-0c1f-1000-b9aa-0af502b10000">
+<RefDisplayColumns>
+<RefPresentationColumn refId="m94555704-0c1f-1000-b9aa-0af502b10000-m94555628-0c1f-1000-b9aa-0af502b10000" presentationColumnRef="/oracle/bi/server/base/PresentationTable/945556d1-0c1f-1000-b9aa-0af502b10000.xml#m94555628-0c1f-1000-b9aa-0af502b10000"/>
+</RefDisplayColumns>
+</PresentationLevel>
+<PresentationLevel mdsid="m94555702-0c1f-1000-b9aa-0af502b10000" name="Product" dispName="VALUEOF(NQ_SESSION.CN_Products_Products_Hierarchy_Product)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationHierarchy/945556e9-0c1f-1000-b9aa-0af502b10000.xml#m945556e9-0c1f-1000-b9aa-0af502b10000" logicalLevelRef="/oracle/bi/server/base/Dimension/94530bf3-0c1f-1000-b9aa-0af502b10000.xml#m94530d87-0c1f-1000-b9aa-0af502b10000">
+<Alias name="Detail Product"/>
+<RefDisplayColumns>
+<RefPresentationColumn refId="m94555702-0c1f-1000-b9aa-0af502b10000-m94555622-0c1f-1000-b9aa-0af502b10000" presentationColumnRef="/oracle/bi/server/base/PresentationTable/945556d1-0c1f-1000-b9aa-0af502b10000.xml#m94555622-0c1f-1000-b9aa-0af502b10000"/>
+</RefDisplayColumns>
+</PresentationLevel>
+</PresentationHierarchy>

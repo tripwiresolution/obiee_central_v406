@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cb684c-0bb9-0000-714b-e31d00000000" name="L2 Other Lookups" iconIndex="77" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" x="519" y="1494" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cb680f-0bb9-0000-714b-e31d00000000.xml#m80cb680f-0bb9-0000-714b-e31d00000000">
+<Description><![CDATA[Other Lookups Alias: Stores various description lookup information for dimension attributes]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SAMP_LOOKUPS_D]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cb6ad2-0bbb-0000-714b-e31d00000000" name="Lookup_Type" dataType="VARCHAR" precision="255" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb680f-0bb9-0000-714b-e31d00000000.xml#m80cb6892-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Lookup Type: Stores the name of the dimension attribute. Some possible values are 'Marital Status', 'Customer Type' and so on.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6ad3-0bbb-0000-714b-e31d00000000" name="Language_Key" dataType="VARCHAR" precision="255" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb680f-0bb9-0000-714b-e31d00000000.xml#m80cb6893-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Language Key: Stores the language information in short form like 'en', 'fr', 'es' and so on.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6ad4-0bbb-0000-714b-e31d00000000" name="Lookup_Dsc" dataType="VARCHAR" precision="255" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb680f-0bb9-0000-714b-e31d00000000.xml#m80cb6894-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Lookup Description: Stores the description of a dimension attribute in a specific language]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6ad5-0bbb-0000-714b-e31d00000000" name="Lookup_Key" dataType="VARCHAR" precision="255" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb680f-0bb9-0000-714b-e31d00000000.xml#m80cb6895-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Lookup Key: Stores the key value of a dimension attribute in a specific language]]></Description>
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cb6b14-0bc0-0000-714b-e31d00000000" name="ok">
+<RefColumns>
+<RefColumn refId="m80cb6b14-0bc0-0000-714b-e31d00000000-m80cb6ad3-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb684c-0bb9-0000-714b-e31d00000000.xml#m80cb6ad3-0bbb-0000-714b-e31d00000000"/>
+<RefColumn refId="m80cb6b14-0bc0-0000-714b-e31d00000000-m80cb6ad5-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb684c-0bb9-0000-714b-e31d00000000.xml#m80cb6ad5-0bbb-0000-714b-e31d00000000"/>
+<RefColumn refId="m80cb6b14-0bc0-0000-714b-e31d00000000-m80cb6ad2-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb684c-0bb9-0000-714b-e31d00000000.xml#m80cb6ad2-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="m80cb6b15-0bc0-0000-714b-e31d00000000" name="D42 Product Color (Lookup Table)_Key">
+<RefColumns>
+<RefColumn refId="m80cb6b15-0bc0-0000-714b-e31d00000000-m80cb6ad5-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb684c-0bb9-0000-714b-e31d00000000.xml#m80cb6ad5-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

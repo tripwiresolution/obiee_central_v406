@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="ma71bdf30-0c62-1000-adfc-7f0000010000" name="SAMP_DB_FREQUENT_ITEMSET" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SELECT  SERIES_ID, column_value as PROD_KEY, OCCURS, SERIES_LENGTH, TOTAL_TRANX 
+from (
+select SERIES_ID, column_value, OCCURS, SERIES_LENGTH, TOTAL_TRANX 
+from (
+select rownum as SERIES_ID, ITEMSET AS PROD_KEY, SUPPORT as OCCURS , length as SERIES_LENGTH, TOTAL_TRANX
+from table(DBMS_FREQUENT_ITEMSET.FI_TRANSACTIONAL(
+cursor(select CUST_KEY||'-'||OFFICE_KEY||'-'||ORDER_TYPE, PROD_KEY
+from SAMP_REVENUE_F
+where bill_mth_key between valueof(NQ_SESSION.DB_FRQITEM_MTH1) and valueof(NQ_SESSION.DB_FRQITEM_MTH2) 
+), 0.0 , valueof(NQ_SESSION.DB_FRQITEM_LO), valueof(NQ_SESSION.DB_FRQITEM_HI), null, null)) 
+) T1, 
+table(T1.PROD_KEY)T2) ]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="ma71bdf31-0c62-1000-adfc-7f0000010000" name="PROD_KEY" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="ma71bdf32-0c62-1000-adfc-7f0000010000" name="TOTAL_TRANX" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="ma71bdf33-0c62-1000-adfc-7f0000010000" name="SERIES_ID" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="ma71bdf34-0c62-1000-adfc-7f0000010000" name="SERIES_LENGTH" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="ma71bdf35-0c62-1000-adfc-7f0000010000" name="OCCURS" dataType="INT" specialType="none">
+</PhysicalColumn>
+</PhysicalTable>

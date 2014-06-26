@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m80cd92cf-07e3-0000-714b-e31d00000000" name="H3 Offices" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="false" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/80cd92cf-07e3-0000-714b-e31d00000000.xml#m80cd94f8-07e9-0000-714b-e31d00000000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cd92c7-07d0-0000-714b-e31d00000000.xml#m80cd92c7-07d0-0000-714b-e31d00000000">
+<Description><![CDATA[Office Dimension:
+Type - Regular
+Drill Path - Company->Organization->Department->Detail]]></Description>
+<LogicalLevel mdsid="m80cd94f8-07e9-0000-714b-e31d00000000" name="Offices Total" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;Offices Total&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="m80cd94f8-07e9-0000-714b-e31d00000000_m80cd94fb-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cd92cf-07e3-0000-714b-e31d00000000.xml#m80cd94fb-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cd94f8-07e9-0000-714b-e31d00000000-m80cd9389-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd9365-07f3-0000-714b-e31d00000000.xml#m80cd9389-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cd94f8-07e9-0000-714b-e31d00000000-m80cd938d-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd9365-07f3-0000-714b-e31d00000000.xml#m80cd938d-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cd94f8-07e9-0000-714b-e31d00000000-m80cd940d-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd9406-07f3-0000-714b-e31d00000000.xml#m80cd940d-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cd94fb-07e9-0000-714b-e31d00000000" name="Offices Company" isGTA="false" isFDUC="true" memberCount="3" levelConst="&apos;Offices Company&apos;">
+<LogicalKey mdsid="m80cd9569-07d8-0000-714b-e31d00000000" name="D4k  Company Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cd9569-07d8-0000-714b-e31d00000000-m80cd9424-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd941c-07f3-0000-714b-e31d00000000.xml#m80cd9424-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m80cd956a-07d8-0000-714b-e31d00000000" name="D4  Company" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cd956a-07d8-0000-714b-e31d00000000-m80cd9423-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd941c-07f3-0000-714b-e31d00000000.xml#m80cd9423-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cd94fb-07e9-0000-714b-e31d00000000_m80cd94fa-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cd92cf-07e3-0000-714b-e31d00000000.xml#m80cd94fa-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cd94fb-07e9-0000-714b-e31d00000000-m80cd9423-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd941c-07f3-0000-714b-e31d00000000.xml#m80cd9423-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cd94fb-07e9-0000-714b-e31d00000000-m80cd9424-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd941c-07f3-0000-714b-e31d00000000.xml#m80cd9424-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cd94fa-07e9-0000-714b-e31d00000000" name="Offices Organization" isGTA="false" isFDUC="true" memberCount="6" levelConst="&apos;Offices Organization&apos;">
+<LogicalKey mdsid="m80cd9567-07d8-0000-714b-e31d00000000" name="D2k  Org_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cd9567-07d8-0000-714b-e31d00000000-m80cd9422-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd941c-07f3-0000-714b-e31d00000000.xml#m80cd9422-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m80cd9568-07d8-0000-714b-e31d00000000" name="D3  Organization" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cd9568-07d8-0000-714b-e31d00000000-m80cd9421-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd941c-07f3-0000-714b-e31d00000000.xml#m80cd9421-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cd94fa-07e9-0000-714b-e31d00000000_m80cd94f9-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cd92cf-07e3-0000-714b-e31d00000000.xml#m80cd94f9-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cd94fa-07e9-0000-714b-e31d00000000-m80cd9421-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd941c-07f3-0000-714b-e31d00000000.xml#m80cd9421-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cd94fa-07e9-0000-714b-e31d00000000-m80cd9422-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd941c-07f3-0000-714b-e31d00000000.xml#m80cd9422-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cd94f9-07e9-0000-714b-e31d00000000" name="Offices Department" isGTA="false" isFDUC="true" memberCount="10" levelConst="&apos;Offices Department&apos;">
+<LogicalKey mdsid="m80cd9565-07d8-0000-714b-e31d00000000" name="D3k  Dept_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cd9565-07d8-0000-714b-e31d00000000-m80cd9420-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd941c-07f3-0000-714b-e31d00000000.xml#m80cd9420-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m80cd9566-07d8-0000-714b-e31d00000000" name="D2  Department" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cd9566-07d8-0000-714b-e31d00000000-m80cd941f-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd941c-07f3-0000-714b-e31d00000000.xml#m80cd941f-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cd94f9-07e9-0000-714b-e31d00000000_m80cd94f7-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cd92cf-07e3-0000-714b-e31d00000000.xml#m80cd94f7-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cd94f9-07e9-0000-714b-e31d00000000-m80cd941f-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd941c-07f3-0000-714b-e31d00000000.xml#m80cd941f-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cd94f9-07e9-0000-714b-e31d00000000-m80cd9420-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd941c-07f3-0000-714b-e31d00000000.xml#m80cd9420-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cd94f7-07e9-0000-714b-e31d00000000" name="Offices Detail" isGTA="false" isFDUC="true" memberCount="20" levelConst="&apos;Offices Detail&apos;">
+<LogicalKey mdsid="m80cd9563-07d8-0000-714b-e31d00000000" name="D20 Offices_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cd9563-07d8-0000-714b-e31d00000000-m80cd941e-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd941c-07f3-0000-714b-e31d00000000.xml#m80cd941e-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m80cd9564-07d8-0000-714b-e31d00000000" name="Display" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cd9564-07d8-0000-714b-e31d00000000-m80cd941d-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd941c-07f3-0000-714b-e31d00000000.xml#m80cd941d-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cd94f7-07e9-0000-714b-e31d00000000-m80cd941d-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd941c-07f3-0000-714b-e31d00000000.xml#m80cd941d-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cd94f7-07e9-0000-714b-e31d00000000-m80cd941e-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd941c-07f3-0000-714b-e31d00000000.xml#m80cd941e-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

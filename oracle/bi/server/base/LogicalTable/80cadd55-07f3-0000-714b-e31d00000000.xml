@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cadd55-07f3-0000-714b-e31d00000000" name="L1 Lookups FX" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isLookupTable="true" x="1659" y="1248" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cab573-07d0-0000-714b-e31d00000000.xml#m80cab573-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cadd68-07d6-0000-714b-e31d00000000" name="From_Curr" isWriteable="false">
+<AttrDefn mdsid="m80cadd6b-0f3c-0000-714b-e31d00000000" name="AD_3900:220641263829260">
+<Expr mdsid="m00000001-01f4-0000-b882-292500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."L1 Currency FX Lookup"."From_Curr"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-b882-292500000000-m80cb6ad0-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb684b-0bb9-0000-714b-e31d00000000.xml#m80cb6ad0-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cadd69-07d6-0000-714b-e31d00000000" name="Fx_Rate" isWriteable="false">
+<AttrDefn mdsid="m80cadd6c-0f3c-0000-714b-e31d00000000" name="AD_3900:220651263829260">
+<Expr mdsid="m00000002-01f4-0000-20a9-a31d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."L1 Currency FX Lookup"."Fx_Rate"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-20a9-a31d00000000-m80cb6acf-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb684b-0bb9-0000-714b-e31d00000000.xml#m80cb6acf-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cadd6a-07d6-0000-714b-e31d00000000" name="Qtr_Key" isWriteable="false">
+<AttrDefn mdsid="m80cadd6d-0f3c-0000-714b-e31d00000000" name="AD_3900:220661263829260">
+<Expr mdsid="m00000003-01f4-0000-d14f-7aed00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."L1 Currency FX Lookup"."Qtr_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-d14f-7aed00000000-m80cb6ace-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb684b-0bb9-0000-714b-e31d00000000.xml#m80cb6ace-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cadd67-07d6-0000-714b-e31d00000000" name="To_Curr" isWriteable="false">
+<AttrDefn mdsid="m80cadd6e-0f3c-0000-714b-e31d00000000" name="AD_3900:220671263829260">
+<Expr mdsid="m00000004-01f4-0000-e958-801e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."L1 Currency FX Lookup"."To_Curr"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-e958-801e00000000-m80cb6ad1-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb684b-0bb9-0000-714b-e31d00000000.xml#m80cb6ad1-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cadd6f-07d8-0000-714b-e31d00000000" name="PK" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cadd6f-07d8-0000-714b-e31d00000000-m80cadd68-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cadd55-07f3-0000-714b-e31d00000000.xml#m80cadd68-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cadd6f-07d8-0000-714b-e31d00000000-m80cadd6a-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cadd55-07f3-0000-714b-e31d00000000.xml#m80cadd6a-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cadd6f-07d8-0000-714b-e31d00000000-m80cadd67-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cadd55-07f3-0000-714b-e31d00000000.xml#m80cadd67-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cadd55-07f3-0000-714b-e31d00000000-m80cadd5e-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cadd5e-07f5-0000-714b-e31d00000000.xml#m80cadd5e-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

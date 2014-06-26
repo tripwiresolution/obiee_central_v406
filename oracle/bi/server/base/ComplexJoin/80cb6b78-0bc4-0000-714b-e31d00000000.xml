@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ComplexJoin mdsid="m80cb6b78-0bc4-0000-714b-e31d00000000" name="D04 Time Rolling Mth_F90 Facts Rolling Time Mth" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" table1Ref="/oracle/bi/server/base/PhysicalTable/80cb6847-0bb9-0000-714b-e31d00000000.xml#m80cb6847-0bb9-0000-714b-e31d00000000" table2Ref="/oracle/bi/server/base/PhysicalTable/80cb6820-0bb9-0000-714b-e31d00000000.xml#m80cb6820-0bb9-0000-714b-e31d00000000">
+<Expr mdsid="m00000001-01f4-0000-a150-936b00000000" name="Expr">
+<ExprText><![CDATA["%1" >= "%2"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D04 Time Rolling Mth"."Mth_Key" >= "01 - Sample App Data (ORCL)".""."BISAMPLE"."F90 Facts Rolling Time Mth"."Mth_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-a150-936b00000000-m80cb6979-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb6820-0bb9-0000-714b-e31d00000000.xml#m80cb6979-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m00000001-01f4-0000-a150-936b00000000-m80cb6abf-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb6847-0bb9-0000-714b-e31d00000000.xml#m80cb6abf-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ComplexJoin>

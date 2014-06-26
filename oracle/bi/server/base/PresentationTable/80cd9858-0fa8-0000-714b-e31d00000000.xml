@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationTable mdsid="m80cd9858-0fa8-0000-714b-e31d00000000" name="Base Facts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" hasDispName="false" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationCatalog/80cd9842-0fa4-0000-714b-e31d00000000.xml#m80cd9842-0fa4-0000-714b-e31d00000000">
+<Description><![CDATA[This folder contains all the base facts like Revenue, Quantity, Target, Headcount and so on. All the metrics in this folder have the aggregation type as Sum unless explicitly specified.]]></Description>
+<PresentationColumn mdsid="m80cd97dd-0faa-0000-714b-e31d00000000" name="1- Revenue" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Base_Facts_1-_Revenue)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd9341-07f3-0000-714b-e31d00000000.xml#m80cd9343-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cd97de-0faa-0000-714b-e31d00000000" name="2- Billed Quantity" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Base_Facts_2-_Billed_Quantity)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd9341-07f3-0000-714b-e31d00000000.xml#m80cd9344-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Billed Quantity data. Sources from Units physical column in 'Sample Revenue Fact' table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimension]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cd97df-0faa-0000-714b-e31d00000000" name="3- Discount Amount" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Base_Facts_3-_Discount_Amount)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd9341-07f3-0000-714b-e31d00000000.xml#m80cd9345-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Discount Amount data. Sources from Discount Value physical column in 'Sample Revenue Fact' table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimension]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cd97e0-0faa-0000-714b-e31d00000000" name="4- Paid Amount" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Base_Facts_4-_Paid_Amount)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd9341-07f3-0000-714b-e31d00000000.xml#m80cd9346-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Paid Amount data. Sources from Revenue column in 'Sample Revenue Fact' table joining to time using Paid time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cd97db-0faa-0000-714b-e31d00000000" name="5- Target Revenue" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Base_Facts_5-_Target_Revenue)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd93db-07f3-0000-714b-e31d00000000.xml#m80cd93dc-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Target Revenue data. Sources from Revenue physical column in 'Sample Targets Fact' table joining to time using Billed time.  Target Revenue is available at the Month level grain.
+
+- Returns sum of data over any selected dimension]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cd97dc-0faa-0000-714b-e31d00000000" name="6- Target Quantity" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Base_Facts_6-_Target_Quantity)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd93db-07f3-0000-714b-e31d00000000.xml#m80cd93dd-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Target Quantity data. Sources from Units physical column in 'Sample Targets Fact' table joining to time using Billed time.  Target Quantity is available at the Month level grain.
+
+- Returns sum of data over any selected dimension]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cd97e1-0faa-0000-714b-e31d00000000" name="7- Shipped Amount" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Base_Facts_7-_Shipped_Amount)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd9341-07f3-0000-714b-e31d00000000.xml#m80cd9347-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Booked Amount data. Sources from Dollars column in FactsRev table joining to time using Booked time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cd97e2-0faa-0000-714b-e31d00000000" name="8- Booked Amount" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Base_Facts_8-_Booked_Amount)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd9341-07f3-0000-714b-e31d00000000.xml#m80cd9349-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Booked Amount data. Sources from Dollars column in FactsRev table joining to time using Booked time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cd97e3-0faa-0000-714b-e31d00000000" name="10- Variable Costs" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Base_Facts_10-_Variable_Costs)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd9341-07f3-0000-714b-e31d00000000.xml#m80cd934b-07d6-0000-714b-e31d00000000">
+</PresentationColumn>
+<PresentationColumn mdsid="m80cd97e4-0faa-0000-714b-e31d00000000" name="11- Fixed Costs" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Base_Facts_11-_Fixed_Costs)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd9341-07f3-0000-714b-e31d00000000.xml#m80cd934c-07d6-0000-714b-e31d00000000">
+</PresentationColumn>
+</PresentationTable>

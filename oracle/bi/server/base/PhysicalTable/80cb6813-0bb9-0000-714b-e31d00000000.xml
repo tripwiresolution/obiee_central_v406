@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cb6813-0bb9-0000-714b-e31d00000000" name="SAMP_QUOTAS_F" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" x="269" y="1551" uri="VALUEOF(BI_EE_HOME)/sample/SampleAppFiles/Data/SAMP_QUOTAS_F.xml" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000">
+<Description><![CDATA[Quotas Fact table: Stores the fact information at channel, month and product grain.]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SAMP_QUOTAS_F]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cb68b0-0bbb-0000-714b-e31d00000000" name="CHNL_KEY" dataType="INT" specialType="none">
+<Description><![CDATA[Channel Key: Joins to Channel_Key of Channels dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb68b1-0bbb-0000-714b-e31d00000000" name="VALUE" dataType="INT" specialType="none">
+<Description><![CDATA[Value: Stores Quotas value as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb68b2-0bbb-0000-714b-e31d00000000" name="MTH_KEY" dataType="INT" specialType="none">
+<Description><![CDATA[Month Key: Joins to Mth_Key of Time dimension table (Mth grain).]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb68b3-0bbb-0000-714b-e31d00000000" name="PROD_KEY" dataType="INT" specialType="none">
+<Description><![CDATA[Product Key: Joins to Prod_Key of Products dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cb6ae0-0bc0-0000-714b-e31d00000000" name="PK">
+<RefColumns>
+<RefColumn refId="m80cb6ae0-0bc0-0000-714b-e31d00000000-m80cb68b2-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6813-0bb9-0000-714b-e31d00000000.xml#m80cb68b2-0bbb-0000-714b-e31d00000000"/>
+<RefColumn refId="m80cb6ae0-0bc0-0000-714b-e31d00000000-m80cb68b3-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6813-0bb9-0000-714b-e31d00000000.xml#m80cb68b3-0bbb-0000-714b-e31d00000000"/>
+<RefColumn refId="m80cb6ae0-0bc0-0000-714b-e31d00000000-m80cb68b0-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6813-0bb9-0000-714b-e31d00000000.xml#m80cb68b0-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

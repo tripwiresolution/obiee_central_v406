@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m80cdb621-07f5-0000-714b-e31d00000000" name="LTS03 Orcl OLAP Source" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cb94d3-07f3-0000-714b-e31d00000000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-0e02-778800000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - Federated Sources"."F0 Revenue Base Measures"."1d- Revenue (Orcl Db Cube Only)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-0e02-778800000000-m80cdb639-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb639-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-c3e8-c4f100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Revenue Cube"."Gross Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-c3e8-c4f100000000-m80cd5b2b-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWCube/80cd5af0-0bee-0000-714b-e31d00000000.xml#m80cd5b2b-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-917f-50a300000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - Federated Sources"."F0 Revenue Base Measures"."2d- Qty (Orcl Db Cubes Federated)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-917f-50a300000000-m80cdb72e-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb72e-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-2200-36d600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Revenue Cube"."Units"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-2200-36d600000000-m80cd5b25-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWCube/80cd5af0-0bee-0000-714b-e31d00000000.xml#m80cd5b25-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-8982-6b2900000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - Federated Sources"."F0 Revenue Base Measures"."Source Database Info"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-8982-6b2900000000-m4a7cd8b4-0c21-1000-b709-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m4a7cd8b4-0c21-1000-b709-0af502b10000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-b7de-bd1400000000" name="Expr">
+<ExprText><![CDATA['Oracle Olap Cube']]></ExprText>
+<ExprTextDesc><![CDATA['Oracle Olap Cube']]></ExprTextDesc>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/AWCube/80cd5af0-0bee-0000-714b-e31d00000000.xml#m80cd5af0-0bee-0000-714b-e31d00000000">
+</Link>
+<WhereClause mdsid="m00000007-01f4-0000-268e-48d000000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000008-01f4-0000-b969-249c00000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1", "%2")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("06 - Federated Sources"."H0 Time"."Quarter", "06 - Federated Sources"."H1 Products"."Products Detail")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-b969-249c00000000-m80cb960d-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cb9463-07e3-0000-714b-e31d00000000.xml#m80cb960d-07e9-0000-714b-e31d00000000"/>
+<RefObject refId="m00000008-01f4-0000-b969-249c00000000-m80cb962e-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cb9466-07e3-0000-714b-e31d00000000.xml#m80cb962e-07e9-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m00000009-01f4-0000-ab15-dcab00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

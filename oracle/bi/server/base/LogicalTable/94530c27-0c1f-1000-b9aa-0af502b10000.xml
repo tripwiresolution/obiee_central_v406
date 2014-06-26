@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m94530c27-0c1f-1000-b9aa-0af502b10000" name="D1 Products (Level Based Hier)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="700" y="709" subjectAreaRef="/oracle/bi/server/base/BusinessModel/94530bf0-0c1f-1000-b9aa-0af502b10000.xml#m94530bf0-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[This logical table maps to the physical Products Dimension table with various attributes like Product Name, Brand, Type and so on.
+It is mapped to 1 LTS
+LTS1 Product - Maps the physical Product table where each product entry in the table has values for all the levels. ]]></Description>
+<LogicalColumn mdsid="m94530c28-0c1f-1000-b9aa-0af502b10000" name="P0  Product Number" isWriteable="false">
+<Description><![CDATA[Help : 
+Product Number: An integer that uniquely identifies each record in the Product dimension table.]]></Description>
+<AttrDefn mdsid="m94530e9a-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979181332977199">
+<Expr mdsid="m00000001-01f4-0000-030d-7c8800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["DMA_DB"."ESSCUBE1".""."ESSCUBE1"."Products Detail"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-030d-7c8800000000-mc0000033-1efa-14da-be73-7f0000010000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/c0000001-1efa-14da-be73-7f0000010000.xml#mc0000033-1efa-14da-be73-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c29-0c1f-1000-b9aa-0af502b10000" name="P1  Product" isWriteable="false">
+<Description><![CDATA[Help : 
+Product: Stores the product description information as text]]></Description>
+<AttrDefn mdsid="m94530e9b-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979191332977199">
+<Expr mdsid="m00000002-01f4-0000-21df-4a5c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Product0003040B"."P1_Produc000302AD"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-21df-4a5c00000000-m2817dbe2-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/2817dbdf-0c71-1000-a576-0af502b30000.xml#m2817dbe2-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c2a-0c1f-1000-b9aa-0af502b10000" name="P2  Product Type" isWriteable="false">
+<Description><![CDATA[Help : 
+Product Type: Stores the product type information as text]]></Description>
+<AttrDefn mdsid="m94530e9c-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979201332977199">
+<Expr mdsid="m00000003-01f4-0000-1123-f1a700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["DMA_DB"."ESSCUBE1".""."ESSCUBE1"."Products Type"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-1123-f1a700000000-mc000002e-1efa-14da-be73-7f0000010000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/c0000001-1efa-14da-be73-7f0000010000.xml#mc000002e-1efa-14da-be73-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c2b-0c1f-1000-b9aa-0af502b10000" name="P3  LOB" isWriteable="false">
+<Description><![CDATA[Help : 
+LOB: Stores the product LOB information as text]]></Description>
+<AttrDefn mdsid="m94530e9d-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979211332977199">
+<Expr mdsid="m00000004-01f4-0000-9e35-ac6e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Product0003040B"."P3_LOB000302AF"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-9e35-ac6e00000000-m2817dbe4-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/2817dbdf-0c71-1000-a576-0af502b30000.xml#m2817dbe4-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c2c-0c1f-1000-b9aa-0af502b10000" name="P4  Brand" isWriteable="false">
+<Description><![CDATA[Help : 
+Brand: Stores the product brand information as text]]></Description>
+<AttrDefn mdsid="m94530e9e-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979221332977199">
+<Expr mdsid="m00000005-01f4-0000-7d96-856700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["DMA_DB"."ESSCUBE1".""."ESSCUBE1"."Products Brand"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-7d96-856700000000-mc0000024-1efa-14da-be73-7f0000010000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/c0000001-1efa-14da-be73-7f0000010000.xml#mc0000024-1efa-14da-be73-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c2d-0c1f-1000-b9aa-0af502b10000" name="P5  Attribute 1" isWriteable="true">
+<Description><![CDATA[Help : 
+Attribute 1: Stores product attribute1 information as text]]></Description>
+<AttrDefn mdsid="m94530e9f-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979231332977199">
+<Expr mdsid="m00000006-01f4-0000-48a7-05dd00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Product0003040B"."P5_Attrib000302B1"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-48a7-05dd00000000-m2817dbe6-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/2817dbdf-0c71-1000-a576-0af502b30000.xml#m2817dbe6-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c2e-0c1f-1000-b9aa-0af502b10000" name="P6  Attribute 2" isWriteable="false">
+<Description><![CDATA[Help : 
+Attribute 2: Stores product attribute2 information as text]]></Description>
+<AttrDefn mdsid="m94530ea0-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979241332977199">
+<Expr mdsid="m00000007-01f4-0000-273c-663100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Product0003040B"."P6_Attrib000302B2"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-273c-663100000000-m2817dbe7-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/2817dbdf-0c71-1000-a576-0af502b30000.xml#m2817dbe7-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c2f-0c1f-1000-b9aa-0af502b10000" name="P7  Product Sequence" isWriteable="false">
+<Description><![CDATA[Help : 
+Sequence: Stores product sequence as an integer]]></Description>
+<AttrDefn mdsid="m94530ea1-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979251332977199">
+<Expr mdsid="m00000008-01f4-0000-7086-e6fc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Product0003040B"."P7_Produc000302B3"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-7086-e6fc00000000-m2817dbe8-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/2817dbdf-0c71-1000-a576-0af502b30000.xml#m2817dbe8-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c30-0c1f-1000-b9aa-0af502b10000" name="P2k  Product Type Key" isWriteable="false">
+<Description><![CDATA[Help : 
+Type Key: Stores product type key as an integer]]></Description>
+<AttrDefn mdsid="m94530ea2-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979261332977199">
+<Expr mdsid="m00000009-01f4-0000-4a11-c05600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Product0003040B"."P2k_Produ000302B4"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-4a11-c05600000000-m2817dbe9-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/2817dbdf-0c71-1000-a576-0af502b30000.xml#m2817dbe9-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c31-0c1f-1000-b9aa-0af502b10000" name="P3k  LOB Key" isWriteable="false">
+<Description><![CDATA[Help : 
+LOB Key: Stores product LOB key as an integer]]></Description>
+<AttrDefn mdsid="m94530ea3-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979271332977199">
+<Expr mdsid="m0000000a-01f4-0000-1546-9b1d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["DMA_DB"."ESSCUBE1".""."ESSCUBE1"."Products LOB"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-1546-9b1d00000000-mc0000029-1efa-14da-be73-7f0000010000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/c0000001-1efa-14da-be73-7f0000010000.xml#mc0000029-1efa-14da-be73-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c32-0c1f-1000-b9aa-0af502b10000" name="P4k  Brand Key" isWriteable="false">
+<Description><![CDATA[Help :
+Brand Key: Stores product brand key as an integer]]></Description>
+<AttrDefn mdsid="m94530ea4-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979281332977199">
+<Expr mdsid="m0000000b-01f4-0000-037f-1af600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Product0003040B"."P4k_Brand000302B6"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-037f-1af600000000-m2817dbeb-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/2817dbdf-0c71-1000-a576-0af502b30000.xml#m2817dbeb-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c33-0c1f-1000-b9aa-0af502b10000" name="P10  Product (Dble Column)" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/94530c27-0c1f-1000-b9aa-0af502b10000.xml#m94530c2f-0c1f-1000-b9aa-0af502b10000" descriptorIDRef="/oracle/bi/server/base/LogicalTable/94530c27-0c1f-1000-b9aa-0af502b10000.xml#m94530c28-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Help : 
+Product: Stores the product description information as text]]></Description>
+<AttrDefn mdsid="m94530ea5-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979291332977199">
+<Expr mdsid="m0000000c-01f4-0000-93c1-2e9e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Product0003040B"."P10_Produ000302B7"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-93c1-2e9e00000000-m2817dbec-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/2817dbdf-0c71-1000-a576-0af502b30000.xml#m2817dbec-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c34-0c1f-1000-b9aa-0af502b10000" name="P12  Product Type (Dble Column)" isWriteable="false" descriptorIDRef="/oracle/bi/server/base/LogicalTable/94530c27-0c1f-1000-b9aa-0af502b10000.xml#m94530c30-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Help : 
+Product Type: Stores the product type information as text]]></Description>
+<AttrDefn mdsid="m94530ea6-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979301332977199">
+<Expr mdsid="m0000000d-01f4-0000-dc9a-dbdf00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Product0003040B"."P12_Produ000302B8"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-dc9a-dbdf00000000-m2817dbed-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/2817dbdf-0c71-1000-a576-0af502b30000.xml#m2817dbed-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c35-0c1f-1000-b9aa-0af502b10000" name="P13  LOB (Dble Column)" isWriteable="false" descriptorIDRef="/oracle/bi/server/base/LogicalTable/94530c27-0c1f-1000-b9aa-0af502b10000.xml#m94530c31-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Help : 
+LOB: Stores the product LOB information as text]]></Description>
+<AttrDefn mdsid="m94530ea7-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979311332977199">
+<Expr mdsid="m0000000e-01f4-0000-76cf-f84b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Product0003040B"."P13_LOB_000302B9"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-76cf-f84b00000000-m2817dbee-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/2817dbdf-0c71-1000-a576-0af502b30000.xml#m2817dbee-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c36-0c1f-1000-b9aa-0af502b10000" name="P14  Brand (Dble Column)" isWriteable="false" descriptorIDRef="/oracle/bi/server/base/LogicalTable/94530c27-0c1f-1000-b9aa-0af502b10000.xml#m94530c32-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Help : 
+Brand: Stores the product brand information as text]]></Description>
+<AttrDefn mdsid="m94530ea8-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979321332977199">
+<Expr mdsid="m0000000f-01f4-0000-660b-ec0c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Product0003040B"."P14_Brand000302BA"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-660b-ec0c00000000-m2817dbef-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/2817dbdf-0c71-1000-a576-0af502b30000.xml#m2817dbef-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m94530e62-0c1f-1000-b9aa-0af502b10000" name="Dim 05 Product_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m94530e62-0c1f-1000-b9aa-0af502b10000-m94530c28-0c1f-1000-b9aa-0af502b10000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530c27-0c1f-1000-b9aa-0af502b10000.xml#m94530c28-0c1f-1000-b9aa-0af502b10000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m94530c27-0c1f-1000-b9aa-0af502b10000-m94533393-0c1f-1000-b9aa-0af502b10000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/94533393-0c1f-1000-b9aa-0af502b10000.xml#m94533393-0c1f-1000-b9aa-0af502b10000"/>
+<RefLogicalTableSource refId="m94530c27-0c1f-1000-b9aa-0af502b10000-m28198981-0c71-1000-a576-0af502b30000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/28198981-0c71-1000-a576-0af502b30000.xml#m28198981-0c71-1000-a576-0af502b30000"/>
+<RefLogicalTableSource refId="m94530c27-0c1f-1000-b9aa-0af502b10000-m80000001-1e56-14da-be73-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80000001-1e56-14da-be73-7f0000010000.xml#m80000001-1e56-14da-be73-7f0000010000"/>
+<RefLogicalTableSource refId="m94530c27-0c1f-1000-b9aa-0af502b10000-m80000001-1eff-14da-be73-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80000001-1eff-14da-be73-7f0000010000.xml#m80000001-1eff-14da-be73-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

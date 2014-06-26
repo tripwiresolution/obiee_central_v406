@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m4f80bb3e-0c30-1000-a9e6-7f0000010000" name="Fact_RTDCORRELATION" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" pollFreq="0" x="191" y="379" maxConn="0" containerRef="/oracle/bi/server/base/Schema/4f80bac3-0c30-1000-a9e6-7f0000010000.xml#m4f80bac3-0c30-1000-a9e6-7f0000010000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/4f80bad7-0c30-1000-a9e6-7f0000010000.xml#m4f80bad7-0c30-1000-a9e6-7f0000010000">
+<PhysicalColumn mdsid="m4f80bb3f-0c30-1000-a9e6-7f0000010000" name="MODEL_INSTANCE_ID" dataType="DOUBLE" precision="38" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/4f80bad7-0c30-1000-a9e6-7f0000010000.xml#m4f80bad8-0c30-1000-a9e6-7f0000010000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m4f80bb40-0c30-1000-a9e6-7f0000010000" name="ATTRIBUTE_ID" dataType="DOUBLE" precision="38" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/4f80bad7-0c30-1000-a9e6-7f0000010000.xml#m4f80bad9-0c30-1000-a9e6-7f0000010000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m4f80bb41-0c30-1000-a9e6-7f0000010000" name="COUNT_OUTPUT_INPUT" dataType="DOUBLE" precision="38" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/4f80bad7-0c30-1000-a9e6-7f0000010000.xml#m4f80bada-0c30-1000-a9e6-7f0000010000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m4f80bb42-0c30-1000-a9e6-7f0000010000" name="CORRELATION" dataType="DOUBLE" precision="15" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/4f80bad7-0c30-1000-a9e6-7f0000010000.xml#m4f80badb-0c30-1000-a9e6-7f0000010000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m4f80bb43-0c30-1000-a9e6-7f0000010000" name="COUNT_INPUT" dataType="DOUBLE" precision="38" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/4f80bad7-0c30-1000-a9e6-7f0000010000.xml#m4f80badc-0c30-1000-a9e6-7f0000010000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m4f80bb44-0c30-1000-a9e6-7f0000010000" name="VALUE" dataType="VARCHAR" precision="200" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/4f80bad7-0c30-1000-a9e6-7f0000010000.xml#m4f80badd-0c30-1000-a9e6-7f0000010000">
+</PhysicalColumn>
+<PhysicalKey mdsid="m4f80bb73-0c30-1000-a9e6-7f0000010000" name="ATTRIBUTE_ID">
+<RefColumns>
+<RefColumn refId="m4f80bb73-0c30-1000-a9e6-7f0000010000-m4f80bb3f-0c30-1000-a9e6-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/4f80bb3e-0c30-1000-a9e6-7f0000010000.xml#m4f80bb3f-0c30-1000-a9e6-7f0000010000"/>
+<RefColumn refId="m4f80bb73-0c30-1000-a9e6-7f0000010000-m4f80bb40-0c30-1000-a9e6-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/4f80bb3e-0c30-1000-a9e6-7f0000010000.xml#m4f80bb40-0c30-1000-a9e6-7f0000010000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m4f80bb87-0c30-1000-a9e6-7f0000010000" name="Fact_RTDCORRELATION_FKey#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/4f80bae5-0c30-1000-a9e6-7f0000010000.xml#m4f80bb66-0c30-1000-a9e6-7f0000010000">
+<RefColumns>
+<RefColumn refId="m4f80bb87-0c30-1000-a9e6-7f0000010000-m4f80bb40-0c30-1000-a9e6-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/4f80bb3e-0c30-1000-a9e6-7f0000010000.xml#m4f80bb40-0c30-1000-a9e6-7f0000010000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m4f80bb88-0c30-1000-a9e6-7f0000010000" name="Fact_RTDCORRELATION_FKey#2" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/4f80bb33-0c30-1000-a9e6-7f0000010000.xml#m4f80bb72-0c30-1000-a9e6-7f0000010000">
+<RefColumns>
+<RefColumn refId="m4f80bb88-0c30-1000-a9e6-7f0000010000-m4f80bb3f-0c30-1000-a9e6-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/4f80bb3e-0c30-1000-a9e6-7f0000010000.xml#m4f80bb3f-0c30-1000-a9e6-7f0000010000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

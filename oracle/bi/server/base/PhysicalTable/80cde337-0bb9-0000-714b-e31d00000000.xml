@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cde337-0bb9-0000-714b-e31d00000000" name="V_POI_Block_Group" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" x="546" y="404" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cde2bb-0bd3-0000-714b-e31d00000000.xml#m80cde2bb-0bd3-0000-714b-e31d00000000">
+<DBMapItem name="Oracle11g">
+<Value><![CDATA[select distinct 
+b.id as block_group_id, 
+s.poi_id as poi_id, 
+d.name as category_name
+from 
+OBIEE_NAVTEQ.block_groups b, 
+OBIEE_NAVTEQ.ntc_map_poi_shop s, 
+OBIEE_NAVTEQ.ntc_meta_poi_cat_ref d 
+where
+s.iso_country_code='USA' and 
+s.cat_id = d.cat_id and
+d.name = 'VALUEOF(NQ_SESSION.OGS_CATEGORY)' and
+s.poi_postcode = 'VALUEOF(NQ_SESSION.OGS_POSTCODE)' and 
+sdo_within_distance(
+b.geometry, s.geometry, 'distance=VALUEOF(NQ_SESSION.OGS_DIST_M)'
+)='TRUE']]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cde338-0bbb-0000-714b-e31d00000000" name="block_group_id" dataType="VARCHAR" precision="12" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cde339-0bbb-0000-714b-e31d00000000" name="poi_id" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cde9dd-0bbb-0000-714b-e31d00000000" name="category_name" dataType="VARCHAR" precision="50" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cde34f-0bc0-0000-714b-e31d00000000" name="Poi id key">
+<RefColumns>
+<RefColumn refId="m80cde34f-0bc0-0000-714b-e31d00000000-m80cde339-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cde337-0bb9-0000-714b-e31d00000000.xml#m80cde339-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="m80cde9df-0bc0-0000-714b-e31d00000000" name="V_POI_Block_Group_Key">
+<RefColumns>
+<RefColumn refId="m80cde9df-0bc0-0000-714b-e31d00000000-m80cde9dd-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cde337-0bb9-0000-714b-e31d00000000.xml#m80cde9dd-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m80cde351-0bbe-0000-714b-e31d00000000" name="V_POI_Block_Group_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cde2dd-0bb9-0000-714b-e31d00000000.xml#m80cde34e-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cde351-0bbe-0000-714b-e31d00000000-m80cde338-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cde337-0bb9-0000-714b-e31d00000000.xml#m80cde338-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

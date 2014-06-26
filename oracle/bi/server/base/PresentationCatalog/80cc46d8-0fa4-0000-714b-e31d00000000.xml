@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationCatalog mdsid="m80cc46d8-0fa4-0000-714b-e31d00000000" name="X2 - Scheduled Jobs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" hasDispName="false" hasDispDescription="false" isAutoAggr="true" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cc4699-07d0-0000-714b-e31d00000000.xml#m80cc4699-07d0-0000-714b-e31d00000000">
+<Description><![CDATA[OBIEE Scheduler Job Status Monitoring Examples]]></Description>
+<RefTables>
+<RefPresentationTable refId="m80cc46d8-0fa4-0000-714b-e31d00000000-m80cc46d9-0fa8-0000-714b-e31d00000000" presentationTableRef="/oracle/bi/server/base/PresentationTable/80cc46d9-0fa8-0000-714b-e31d00000000.xml#m80cc46d9-0fa8-0000-714b-e31d00000000"/>
+<RefPresentationTable refId="m80cc46d8-0fa4-0000-714b-e31d00000000-m80cc46db-0fa8-0000-714b-e31d00000000" presentationTableRef="/oracle/bi/server/base/PresentationTable/80cc46db-0fa8-0000-714b-e31d00000000.xml#m80cc46db-0fa8-0000-714b-e31d00000000"/>
+</RefTables>
+<VisibilityFilter mdsid="m00000001-01f4-0000-eb99-f46a00000000" name="VisibilityFilter">
+<ExprText><![CDATA[VALUEOF(NQ_SESSION."%1") =1]]></ExprText>
+<ExprTextDesc><![CDATA[VALUEOF(NQ_SESSION."VISIBILITY_PRES_LAYER") =1]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-eb99-f46a00000000-m2fe516b0-0c36-1000-b86b-7f0000010000" objectRef="/oracle/bi/server/base/Variable/2fe516b0-0c36-1000-b86b-7f0000010000.xml#m2fe516b0-0c36-1000-b86b-7f0000010000"/>
+</ObjectRefList>
+</VisibilityFilter>
+</PresentationCatalog>

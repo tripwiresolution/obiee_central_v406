@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m575b694a-0c2d-1000-87a7-0af06a760000" name="22 Dept Delay Grp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/575b68b0-0c2d-1000-87a7-0af06a760000.xml#m575b68b0-0c2d-1000-87a7-0af06a760000">
+<LogicalColumn mdsid="m575b694b-0c2d-1000-87a7-0af06a760000" name="Dept Delay Group" isWriteable="false" descriptorIDRef="/oracle/bi/server/base/LogicalTable/575b694a-0c2d-1000-87a7-0af06a760000.xml#m575b694c-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Departure Delay intervals, every (15 minutes from <-15 to >180)]]></Description>
+<AttrDefn mdsid="m575b6c45-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372121338887867">
+<Expr mdsid="m00000001-01f4-0000-558b-b24500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."SA_22_Dept00039CE5"."Dept_Delay00039BA2"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-558b-b24500000000-m6ac89017-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6ac89015-0c61-1000-99f2-7f0000010000.xml#m6ac89017-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b694c-0c2d-1000-87a7-0af06a760000" name="Dept Delay Code" isWriteable="false">
+<Description><![CDATA[Departure Delay intervals, every (15 minutes from <-15 to >180)]]></Description>
+<AttrDefn mdsid="m575b6c46-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372131338887867">
+<Expr mdsid="m00000002-01f4-0000-ce02-c09700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."SA_22_Dept00039CE5"."Dept_Delay00039BA3"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-ce02-c09700000000-m6ac89018-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6ac89015-0c61-1000-99f2-7f0000010000.xml#m6ac89018-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b694d-0c2d-1000-87a7-0af06a760000" name="Dept Delay Class" isDerived="true" isWriteable="false">
+<Description><![CDATA[Departure Delay intervals, every (15 minutes from <-15 to >180)]]></Description>
+<Expr mdsid="m00000003-01f4-0000-4372-bf5600000000" name="Expr">
+<ExprText><![CDATA[ CASE  WHEN "%1" < 0 THEN '1 - In Advance' WHEN "%1" = 0 THEN '2 - Within 15 Min Delay' WHEN "%1" < 4 THEN '3 - From 15 to 60 Min Delay' ELSE '4 - Over 1hr Delay' END ]]></ExprText>
+<ExprTextDesc><![CDATA[ CASE  WHEN "X0 - Airlines"."22 Dept Delay Grp"."Dept Delay Code" < 0 THEN '1 - In Advance' WHEN "X0 - Airlines"."22 Dept Delay Grp"."Dept Delay Code" = 0 THEN '2 - Within 15 Min Delay' WHEN "X0 - Airlines"."22 Dept Delay Grp"."Dept Delay Code" < 4 THEN '3 - From 15 to 60 Min Delay' ELSE '4 - Over 1hr Delay' END ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-4372-bf5600000000-m575b694c-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b694a-0c2d-1000-87a7-0af06a760000.xml#m575b694c-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6c47-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372141338887867">
+<Expr mdsid="m00000004-01f4-0000-03df-0d0000000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m575b6bb2-0c2d-1000-87a7-0af06a760000" name="Time Block" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6bb2-0c2d-1000-87a7-0af06a760000-m575b694b-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b694a-0c2d-1000-87a7-0af06a760000.xml#m575b694b-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m575b694a-0c2d-1000-87a7-0af06a760000-m575b6d43-0c2d-1000-87a7-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/575b6d43-0c2d-1000-87a7-0af06a760000.xml#m575b6d43-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalTableSource refId="m575b694a-0c2d-1000-87a7-0af06a760000-m66f3e162-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/66f3e162-0c61-1000-99f2-7f0000010000.xml#m66f3e162-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b694a-0c2d-1000-87a7-0af06a760000-m6add77a1-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/6add77a1-0c61-1000-99f2-7f0000010000.xml#m6add77a1-0c61-1000-99f2-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

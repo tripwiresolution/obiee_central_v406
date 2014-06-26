@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="mc000003c-249e-14e2-b095-7f0000010000" name="Weather Facts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/00000034-249f-14e2-b095-7f0000010000.xml#m00000034-249f-14e2-b095-7f0000010000">
+<LogicalColumn mdsid="mc000003f-249e-14e2-b095-7f0000010000" name="Croploss" isWriteable="false">
+<MeasureDefn mdsid="m80000000-26fc-14e2-b095-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80000001-26fc-14e2-b095-7f0000010000" name="AggRule_2050:2853581401465824" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-531c-7a0e00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y11 - Other Demos"."Weather Facts"."Croploss")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-531c-7a0e00000000-mc000003f-249e-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/c000003c-249e-14e2-b095-7f0000010000.xml#mc000003f-249e-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mc000005b-249e-14e2-b095-7f0000010000" name="AD_3900:2846891401465833">
+<Expr mdsid="m00000002-01f4-0000-1d8d-1c7a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."WEATHER"."WEATHER_WIND"."CROPLOSS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-1d8d-1c7a00000000-mc000001f-23ad-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/00000016-23ad-14e2-b095-7f0000010000.xml#mc000001f-23ad-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mc0000044-249e-14e2-b095-7f0000010000" name="F1" isWriteable="false">
+<AttrDefn mdsid="mc0000060-249e-14e2-b095-7f0000010000" name="AD_3900:2846941401465833">
+<Expr mdsid="m00000003-01f4-0000-0ace-70e500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."WEATHER"."WEATHER_WIND"."F1"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-0ace-70e500000000-mc0000024-23ad-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/00000016-23ad-14e2-b095-7f0000010000.xml#mc0000024-23ad-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mc0000045-249e-14e2-b095-7f0000010000" name="F2" isWriteable="false">
+<AttrDefn mdsid="mc0000061-249e-14e2-b095-7f0000010000" name="AD_3900:2846951401465833">
+<Expr mdsid="m00000004-01f4-0000-b51e-399600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."WEATHER"."WEATHER_WIND"."F2"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-b51e-399600000000-mc0000025-23ad-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/00000016-23ad-14e2-b095-7f0000010000.xml#mc0000025-23ad-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mc0000046-249e-14e2-b095-7f0000010000" name="F3" isWriteable="false">
+<AttrDefn mdsid="mc0000062-249e-14e2-b095-7f0000010000" name="AD_3900:2846961401465833">
+<Expr mdsid="m00000005-01f4-0000-91c1-226600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."WEATHER"."WEATHER_WIND"."F3"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-91c1-226600000000-mc0000026-23ad-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/00000016-23ad-14e2-b095-7f0000010000.xml#mc0000026-23ad-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mc0000047-249e-14e2-b095-7f0000010000" name="F4" isWriteable="false">
+<AttrDefn mdsid="mc0000063-249e-14e2-b095-7f0000010000" name="AD_3900:2846971401465833">
+<Expr mdsid="m00000006-01f4-0000-0c15-0e3d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."WEATHER"."WEATHER_WIND"."F4"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-0c15-0e3d00000000-mc0000027-23ad-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/00000016-23ad-14e2-b095-7f0000010000.xml#mc0000027-23ad-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mc0000048-249e-14e2-b095-7f0000010000" name="Fatalities" isWriteable="false">
+<MeasureDefn mdsid="m80000002-26fc-14e2-b095-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80000003-26fc-14e2-b095-7f0000010000" name="AggRule_2050:2853601401465824" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-5287-b5e600000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y11 - Other Demos"."Weather Facts"."Fatalities")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-5287-b5e600000000-mc0000048-249e-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/c000003c-249e-14e2-b095-7f0000010000.xml#mc0000048-249e-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mc0000064-249e-14e2-b095-7f0000010000" name="AD_3900:2846981401465833">
+<Expr mdsid="m00000008-01f4-0000-ca53-832300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."WEATHER"."WEATHER_WIND"."FATALITIES"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-ca53-832300000000-mc0000028-23ad-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/00000016-23ad-14e2-b095-7f0000010000.xml#mc0000028-23ad-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mc000004a-249e-14e2-b095-7f0000010000" name="Injuries" isWriteable="false">
+<MeasureDefn mdsid="m80000004-26fc-14e2-b095-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80000005-26fc-14e2-b095-7f0000010000" name="AggRule_2050:2853621401465824" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-3dd5-770e00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y11 - Other Demos"."Weather Facts"."Injuries")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-3dd5-770e00000000-mc000004a-249e-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/c000003c-249e-14e2-b095-7f0000010000.xml#mc000004a-249e-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mc0000066-249e-14e2-b095-7f0000010000" name="AD_3900:2847001401465833">
+<Expr mdsid="m0000000a-01f4-0000-792f-9d8600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."WEATHER"."WEATHER_WIND"."INJURIES"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-792f-9d8600000000-mc000002a-23ad-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/00000016-23ad-14e2-b095-7f0000010000.xml#mc000002a-23ad-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mc000004c-249e-14e2-b095-7f0000010000" name="Loss" isWriteable="false">
+<MeasureDefn mdsid="m80000006-26fc-14e2-b095-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80000007-26fc-14e2-b095-7f0000010000" name="AggRule_2050:2853641401465824" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-fa32-9eaf00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y11 - Other Demos"."Weather Facts"."Loss")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-fa32-9eaf00000000-mc000004c-249e-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/c000003c-249e-14e2-b095-7f0000010000.xml#mc000004c-249e-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mc0000068-249e-14e2-b095-7f0000010000" name="AD_3900:2847021401465833">
+<Expr mdsid="m0000000c-01f4-0000-8ac5-d5a700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."WEATHER"."WEATHER_WIND"."LOSS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-8ac5-d5a700000000-mc000002c-23ad-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/00000016-23ad-14e2-b095-7f0000010000.xml#mc000002c-23ad-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mc000004e-249e-14e2-b095-7f0000010000" name="Ns" isWriteable="false">
+<AttrDefn mdsid="mc000006a-249e-14e2-b095-7f0000010000" name="AD_3900:2847041401465833">
+<Expr mdsid="m0000000d-01f4-0000-40a3-74d500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."WEATHER"."WEATHER_WIND"."NS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-40a3-74d500000000-mc0000030-23ad-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/00000016-23ad-14e2-b095-7f0000010000.xml#mc0000030-23ad-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mc000004f-249e-14e2-b095-7f0000010000" name="Om" isWriteable="false">
+<AttrDefn mdsid="mc000006b-249e-14e2-b095-7f0000010000" name="AD_3900:2847051401465833">
+<Expr mdsid="m0000000e-01f4-0000-93b2-ed9e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."WEATHER"."WEATHER_WIND"."OM"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-93b2-ed9e00000000-mc0000031-23ad-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/00000016-23ad-14e2-b095-7f0000010000.xml#mc0000031-23ad-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mc0000050-249e-14e2-b095-7f0000010000" name="Sg" isWriteable="false">
+<AttrDefn mdsid="mc000006c-249e-14e2-b095-7f0000010000" name="AD_3900:2847061401465833">
+<Expr mdsid="m0000000f-01f4-0000-c223-75fd00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."WEATHER"."WEATHER_WIND"."SG"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-c223-75fd00000000-mc0000032-23ad-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/00000016-23ad-14e2-b095-7f0000010000.xml#mc0000032-23ad-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mc0000054-249e-14e2-b095-7f0000010000" name="Sn" isWriteable="false">
+<AttrDefn mdsid="mc0000070-249e-14e2-b095-7f0000010000" name="AD_3900:2847101401465833">
+<Expr mdsid="m00000010-01f4-0000-aa1f-368900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."WEATHER"."WEATHER_WIND"."SN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-aa1f-368900000000-mc0000035-23ad-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/00000016-23ad-14e2-b095-7f0000010000.xml#mc0000035-23ad-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m00000002-29ad-14e2-b095-7f0000010000" name="# Of Phenomenons" isWriteable="false">
+<MeasureDefn mdsid="mc0000000-29af-14e2-b095-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m00000000-2b72-14e2-b095-7f0000010000" name="AggRule_2050:2857851401466477" isDefault="true">
+<Expr mdsid="m00000011-01f4-0000-fcba-b80600000000" name="Expr">
+<ExprText><![CDATA[ COUNT("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT("Y11 - Other Demos"."Weather Facts"."# Of Phenomenons")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-fcba-b80600000000-m00000002-29ad-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/c000003c-249e-14e2-b095-7f0000010000.xml#m00000002-29ad-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m00000003-29ad-14e2-b095-7f0000010000" name="AD_3900:2854601401465833">
+<Expr mdsid="m00000012-01f4-0000-966a-343700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."WEATHER"."WEATHER_WIND"."ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-966a-343700000000-m00000001-294f-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/00000016-23ad-14e2-b095-7f0000010000.xml#m00000001-294f-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="mc000003c-249e-14e2-b095-7f0000010000-mc000003e-249e-14e2-b095-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/c000003e-249e-14e2-b095-7f0000010000.xml#mc000003e-249e-14e2-b095-7f0000010000"/>
+<RefLogicalTableSource refId="mc000003c-249e-14e2-b095-7f0000010000-m80000005-26c1-14e2-b095-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80000005-26c1-14e2-b095-7f0000010000.xml#m80000005-26c1-14e2-b095-7f0000010000"/>
+<RefLogicalTableSource refId="mc000003c-249e-14e2-b095-7f0000010000-m40000004-26cf-14e2-b095-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/40000004-26cf-14e2-b095-7f0000010000.xml#m40000004-26cf-14e2-b095-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

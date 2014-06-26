@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m575865f9-0c2d-1000-87a7-0af06a760000" name="OBIEE_TIME_MTH_D" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" x="243" y="1652" uri="VALUEOF(BI_EE_HOME)/sample/SampleAppFiles/Data/SAMP_TIME_MTH_D.xml" maxConn="0" containerRef="/oracle/bi/server/base/Schema/57583469-0c2d-1000-87a7-0af06a760000.xml#m57583469-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Time dimension table at month grain. Stores one record for each month.]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[OBIEE_TIME_MTH_D]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m575865fa-0c2d-1000-87a7-0af06a760000" name="Beg_of_Qtr_Wid" dataType="INT" specialType="none">
+<Description><![CDATA[Beginning of Qtr Wid: Stores the value in the format YYYYMMDD.
+For the day key 20100202, Beg_of_Qtr_Wid will be 20100101.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m575865fb-0c2d-1000-87a7-0af06a760000" name="Cal_Half" dataType="INT" specialType="none">
+<Description><![CDATA[Calendar Half: Stores value 1 or 2]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m575865fc-0c2d-1000-87a7-0af06a760000" name="Cal_Month" dataType="INT" specialType="none">
+<Description><![CDATA[Calendar Month: Stores value 1,2,3 ..upto 12]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m575865fd-0c2d-1000-87a7-0af06a760000" name="Cal_Qtr" dataType="INT" specialType="none">
+<Description><![CDATA[Calendar Quarter: Stores value 1,2,3 or 4]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m575865fe-0c2d-1000-87a7-0af06a760000" name="Cal_Year" dataType="INT" specialType="none">
+<Description><![CDATA[Calendar Year: Stores value in the format YYYY]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m575865ff-0c2d-1000-87a7-0af06a760000" name="Days_in_Mth" dataType="INT" specialType="none">
+<Description><![CDATA[Days in Month : Stores value 28, 29, 30 or 31.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m57586600-0c2d-1000-87a7-0af06a760000" name="Days_in_Qtr" dataType="INT" specialType="none">
+<Description><![CDATA[Days in Quarter : Stores value 90, 91 or 92]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m57586601-0c2d-1000-87a7-0af06a760000" name="Fscl_Half" dataType="INT" specialType="none">
+<Description><![CDATA[Fiscal Half : Stores the value 1 or 2]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m57586602-0c2d-1000-87a7-0af06a760000" name="Fscl_Month" dataType="INT" specialType="none">
+<Description><![CDATA[Fiscal Month : Stores the value 1, 2, 3.. upto 12.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m57586603-0c2d-1000-87a7-0af06a760000" name="Fscl_Qtr" dataType="INT" specialType="none">
+<Description><![CDATA[Fiscal Quarter : Stores the value 1, 2, 3 or 4]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m57586604-0c2d-1000-87a7-0af06a760000" name="Fscl_Year" dataType="INT" specialType="none">
+<Description><![CDATA[Fiscal Year : Stores the fiscal year in the format YYYY]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m57586605-0c2d-1000-87a7-0af06a760000" name="Julian_Month_Num" dataType="INT" specialType="none">
+<Description><![CDATA[Julian Month Number : Stores the month number in the Julian Calendar format. 
+Eg:- 500, 501 and so on.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m57586606-0c2d-1000-87a7-0af06a760000" name="Julian_Qtr_Num" dataType="INT" specialType="none">
+<Description><![CDATA[Julian Quarter Number : Stores the quarter number in the Julian Calendar format. 
+Eg:- 151, 152 and so on.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m57586607-0c2d-1000-87a7-0af06a760000" name="Month_Ago_Wid" dataType="INT" specialType="none">
+<Description><![CDATA[Month Ago Wid:Stores the value in the format YYYYMM.
+For the month key 201001, Month_Ago_Wid will be 200912.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m57586608-0c2d-1000-87a7-0af06a760000" name="Per_Name_Half" dataType="VARCHAR" precision="8" specialType="none">
+<Description><![CDATA[Period Name Half: Stores the Half year information in the format YYYY HYHalfYearNumber.
+Eg:- 2009 HY1]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m57586609-0c2d-1000-87a7-0af06a760000" name="Per_Name_Month" dataType="VARCHAR" precision="9" specialType="none">
+<Description><![CDATA[Period Name Month: Stores the year information in the format YYYY / MM.
+Eg:- 2009 / 01]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m5758660a-0c2d-1000-87a7-0af06a760000" name="Per_Name_Qtr" dataType="VARCHAR" precision="7" specialType="none">
+<Description><![CDATA[Period Name Quarter: Stores the quarter information in the format YYYY QQuarterNumber.
+Eg:- 2009 Q1]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m5758660b-0c2d-1000-87a7-0af06a760000" name="Per_Name_Year" dataType="VARCHAR" precision="4" specialType="none">
+<Description><![CDATA[Period Name Year: Stores the year information in the format YYYY.
+Eg:- 2009]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m5758660c-0c2d-1000-87a7-0af06a760000" name="Quarter_Ago_Wid" dataType="INT" specialType="none">
+<Description><![CDATA[Quarter Ago Wid: Stores the value in the format YYYYMM.
+For the month key 201001, Quarter_Ago_Wid will be 200910.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m5758660d-0c2d-1000-87a7-0af06a760000" name="Mth_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Month Key: Surrogate key of the table. Stores the month information in the format YYYYMM.
+Eg:- 200901]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m5758660e-0c2d-1000-87a7-0af06a760000" name="Year_Ago_Wid" dataType="INT" specialType="none">
+<Description><![CDATA[Year Ago Wid: Stores the value in the format YYYYMM.
+For the month key 201001, Year_Ago_Wid will be 200901.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m5758660f-0c2d-1000-87a7-0af06a760000" name="Loaded" dataType="INT" specialType="none">
+<Description><![CDATA[Loaded: Flag to indicate if data is loaded for the specific month. 
+Possible values are 1 or 0.]]></Description>
+</PhysicalColumn>
+<PhysicalKey mdsid="m5758843a-0c2d-1000-87a7-0af06a760000" name="Row_Wid">
+<RefColumns>
+<RefColumn refId="m5758843a-0c2d-1000-87a7-0af06a760000-m5758660d-0c2d-1000-87a7-0af06a760000" columnRef="/oracle/bi/server/base/PhysicalTable/575865f9-0c2d-1000-87a7-0af06a760000.xml#m5758660d-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

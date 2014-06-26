@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationHierarchy mdsid="m80caba91-0fbc-0000-714b-e31d00000000" name="Orders Hierarchy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Orders_Orders_Hierarchy)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationTable/80cab85c-0fa8-0000-714b-e31d00000000.xml#m80cab85c-0fa8-0000-714b-e31d00000000" logicalDimensionRef="/oracle/bi/server/base/Dimension/80cab578-07e3-0000-714b-e31d00000000.xml#m80cab578-07e3-0000-714b-e31d00000000">
+<Description><![CDATA[Help : 
+Presentation hierarchy with drill path 
+Total->Order Status->Detail Order]]></Description>
+<PresentationLevel mdsid="m80caba93-0fbe-0000-714b-e31d00000000" name="Total Orders" dispName="VALUEOF(NQ_SESSION.CN_Orders_Orders_Hierarchy_Total_Orders)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationHierarchy/80caba91-0fbc-0000-714b-e31d00000000.xml#m80caba91-0fbc-0000-714b-e31d00000000" logicalLevelRef="/oracle/bi/server/base/Dimension/80cab578-07e3-0000-714b-e31d00000000.xml#m80cab6b6-07e9-0000-714b-e31d00000000">
+<Alias name="Total"/>
+</PresentationLevel>
+<PresentationLevel mdsid="m80cb2ae1-0fbe-0000-714b-e31d00000000" name="Order Types" dispName="VALUEOF(NQ_SESSION.CN_Orders_Orders_Hierarchy_Order_Types)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationHierarchy/80caba91-0fbc-0000-714b-e31d00000000.xml#m80caba91-0fbc-0000-714b-e31d00000000" logicalLevelRef="/oracle/bi/server/base/Dimension/80cab578-07e3-0000-714b-e31d00000000.xml#m80cb2add-07e9-0000-714b-e31d00000000">
+<RefDisplayColumns>
+<RefPresentationColumn refId="m80cb2ae1-0fbe-0000-714b-e31d00000000-m80cb2ae3-0faa-0000-714b-e31d00000000" presentationColumnRef="/oracle/bi/server/base/PresentationTable/80cab85c-0fa8-0000-714b-e31d00000000.xml#m80cb2ae3-0faa-0000-714b-e31d00000000"/>
+</RefDisplayColumns>
+</PresentationLevel>
+<PresentationLevel mdsid="m80caba94-0fbe-0000-714b-e31d00000000" name="Order Status" dispName="VALUEOF(NQ_SESSION.CN_Orders_Orders_Hierarchy_Order_Status)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationHierarchy/80caba91-0fbc-0000-714b-e31d00000000.xml#m80caba91-0fbc-0000-714b-e31d00000000" logicalLevelRef="/oracle/bi/server/base/Dimension/80cab578-07e3-0000-714b-e31d00000000.xml#m80cab6b8-07e9-0000-714b-e31d00000000">
+<RefDisplayColumns>
+<RefPresentationColumn refId="m80caba94-0fbe-0000-714b-e31d00000000-m80cab85e-0faa-0000-714b-e31d00000000" presentationColumnRef="/oracle/bi/server/base/PresentationTable/80cab85c-0fa8-0000-714b-e31d00000000.xml#m80cab85e-0faa-0000-714b-e31d00000000"/>
+</RefDisplayColumns>
+</PresentationLevel>
+<PresentationLevel mdsid="m80caba92-0fbe-0000-714b-e31d00000000" name="Detail Order" dispName="VALUEOF(NQ_SESSION.CN_Orders_Orders_Hierarchy_Detail_Order)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationHierarchy/80caba91-0fbc-0000-714b-e31d00000000.xml#m80caba91-0fbc-0000-714b-e31d00000000" logicalLevelRef="/oracle/bi/server/base/Dimension/80cab578-07e3-0000-714b-e31d00000000.xml#m80cab6b7-07e9-0000-714b-e31d00000000">
+<RefDisplayColumns>
+<RefPresentationColumn refId="m80caba92-0fbe-0000-714b-e31d00000000-m80cab85d-0faa-0000-714b-e31d00000000" presentationColumnRef="/oracle/bi/server/base/PresentationTable/80cab85c-0fa8-0000-714b-e31d00000000.xml#m80cab85d-0faa-0000-714b-e31d00000000"/>
+</RefDisplayColumns>
+</PresentationLevel>
+</PresentationHierarchy>

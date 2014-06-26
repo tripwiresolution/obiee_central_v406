@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m80cc4322-07e3-0000-714b-e31d00000000" name="2 Processes Hier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="false" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/80cc4322-07e3-0000-714b-e31d00000000.xml#m80cc43a4-07e9-0000-714b-e31d00000000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cc4320-07d0-0000-714b-e31d00000000.xml#m80cc4320-07d0-0000-714b-e31d00000000">
+<LogicalLevel mdsid="m80cc43a4-07e9-0000-714b-e31d00000000" name="All Processes" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;All Processes&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="m80cc43a4-07e9-0000-714b-e31d00000000_m80cc43a6-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cc4322-07e3-0000-714b-e31d00000000.xml#m80cc43a6-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cc43a6-07e9-0000-714b-e31d00000000" name="Process Type" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Process Type&apos;">
+<LogicalKey mdsid="m80cc43c5-07d8-0000-714b-e31d00000000" name="PROCESSTYPE" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cc43c5-07d8-0000-714b-e31d00000000-m80cc433c-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc4327-07f3-0000-714b-e31d00000000.xml#m80cc433c-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cc43a6-07e9-0000-714b-e31d00000000_m80cc43a5-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cc4322-07e3-0000-714b-e31d00000000.xml#m80cc43a5-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cc43a6-07e9-0000-714b-e31d00000000-m80cc433c-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc4327-07f3-0000-714b-e31d00000000.xml#m80cc433c-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cc43a5-07e9-0000-714b-e31d00000000" name="Process Status" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Process Status&apos;">
+<LogicalKey mdsid="m80cc43c4-07d8-0000-714b-e31d00000000" name="STATUS" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cc43c4-07d8-0000-714b-e31d00000000-m80cc433f-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc4327-07f3-0000-714b-e31d00000000.xml#m80cc433f-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cc43a5-07e9-0000-714b-e31d00000000_m80cc43a3-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cc4322-07e3-0000-714b-e31d00000000.xml#m80cc43a3-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cc43a5-07e9-0000-714b-e31d00000000-m80cc433f-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc4327-07f3-0000-714b-e31d00000000.xml#m80cc433f-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cc43a3-07e9-0000-714b-e31d00000000" name="Process Detail" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Process Detail&apos;">
+<LogicalKey mdsid="m80cc43c3-07d8-0000-714b-e31d00000000" name="2 Dim Processes Detail_Key" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cc43c3-07d8-0000-714b-e31d00000000-m80cc433a-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc4327-07f3-0000-714b-e31d00000000.xml#m80cc433a-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cc43a3-07e9-0000-714b-e31d00000000-m80cc433a-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc4327-07f3-0000-714b-e31d00000000.xml#m80cc433a-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

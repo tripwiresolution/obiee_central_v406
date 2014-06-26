@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cb682a-0bb9-0000-714b-e31d00000000" name="D44 Chnls Offs Bridge (Quotas)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" x="1417" y="1299" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cb6806-0bb9-0000-714b-e31d00000000.xml#m80cb6806-0bb9-0000-714b-e31d00000000">
+<Description><![CDATA[ZZZ - Not yet filled]]></Description>
+<PhysicalColumn mdsid="m80cb69a9-0bbb-0000-714b-e31d00000000" name="Chnl_Key" dataType="DOUBLE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6806-0bb9-0000-714b-e31d00000000.xml#m80cb6869-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb69aa-0bbb-0000-714b-e31d00000000" name="Office_key" dataType="DOUBLE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6806-0bb9-0000-714b-e31d00000000.xml#m80cb686a-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb69ab-0bbb-0000-714b-e31d00000000" name="Chnl_Weighting" dataType="DOUBLE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6806-0bb9-0000-714b-e31d00000000.xml#m80cb6868-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="m80cb6b19-0bbe-0000-714b-e31d00000000" name="D61 Sales Teams Membership (Bridge Table)_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb6828-0bb9-0000-714b-e31d00000000.xml#m80cb6af2-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cb6b19-0bbe-0000-714b-e31d00000000-m80cb69a9-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb682a-0bb9-0000-714b-e31d00000000.xml#m80cb69a9-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cb6b1a-0bbe-0000-714b-e31d00000000" name="D63 Channels Custs Bridge (Costs)_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb6826-0bb9-0000-714b-e31d00000000.xml#m80cb6af0-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cb6b1a-0bbe-0000-714b-e31d00000000-m80cb69aa-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb682a-0bb9-0000-714b-e31d00000000.xml#m80cb69aa-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

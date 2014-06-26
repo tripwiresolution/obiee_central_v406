@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m1f301260-0c6e-1000-8b50-0af502b30000" name="India Areas" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="false" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/1f301260-0c6e-1000-8b50-0af502b30000.xml#m1f3171f0-0c6e-1000-8b50-0af502b30000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cde354-07d0-0000-714b-e31d00000000.xml#m80cde354-07d0-0000-714b-e31d00000000">
+<LogicalLevel mdsid="m1f3171f0-0c6e-1000-8b50-0af502b30000" name="All India" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;All India&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="m1f3171f0-0c6e-1000-8b50-0af502b30000_m1f331fa0-0c6e-1000-8b50-0af502b30000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/1f301260-0c6e-1000-8b50-0af502b30000.xml#m1f331fa0-0c6e-1000-8b50-0af502b30000"/>
+</RefChildLevels>
+</LogicalLevel>
+<LogicalLevel mdsid="m1f331fa0-0c6e-1000-8b50-0af502b30000" name="State" isGTA="false" isFDUC="true" memberCount="50" levelConst="&apos;State&apos;">
+<LogicalKey mdsid="m1f61f7d0-0c6e-1000-8b50-0af502b30000" name="State Code" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m1f61f7d0-0c6e-1000-8b50-0af502b30000-m1c751171-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1c75116c-0c6e-1000-8b50-0af502b30000.xml#m1c751171-0c6e-1000-8b50-0af502b30000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m1f6727f0-0c6e-1000-8b50-0af502b30000" name="State Name 1" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m1f6727f0-0c6e-1000-8b50-0af502b30000-m1c751173-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1c75116c-0c6e-1000-8b50-0af502b30000.xml#m1c751173-0c6e-1000-8b50-0af502b30000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m1f331fa0-0c6e-1000-8b50-0af502b30000_m1f50b9c0-0c6e-1000-8b50-0af502b30000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/1f301260-0c6e-1000-8b50-0af502b30000.xml#m1f50b9c0-0c6e-1000-8b50-0af502b30000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m1f331fa0-0c6e-1000-8b50-0af502b30000-m1c751171-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1c75116c-0c6e-1000-8b50-0af502b30000.xml#m1c751171-0c6e-1000-8b50-0af502b30000"/>
+<RefLogicalColumn refId="m1f331fa0-0c6e-1000-8b50-0af502b30000-m1c751173-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1c75116c-0c6e-1000-8b50-0af502b30000.xml#m1c751173-0c6e-1000-8b50-0af502b30000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m1f50b9c0-0c6e-1000-8b50-0af502b30000" name="Districts" isGTA="false" isFDUC="true" memberCount="500" levelConst="&apos;Districts&apos;">
+<LogicalKey mdsid="m1f626d00-0c6e-1000-8b50-0af502b30000" name="District Code" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m1f626d00-0c6e-1000-8b50-0af502b30000-m1d8ce9b8-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1c75116c-0c6e-1000-8b50-0af502b30000.xml#m1d8ce9b8-0c6e-1000-8b50-0af502b30000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m1f6af880-0c6e-1000-8b50-0af502b30000" name="District Name 1" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m1f6af880-0c6e-1000-8b50-0af502b30000-m1d8d10c4-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1c75116c-0c6e-1000-8b50-0af502b30000.xml#m1d8d10c4-0c6e-1000-8b50-0af502b30000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m1f50b9c0-0c6e-1000-8b50-0af502b30000_m1f5574b0-0c6e-1000-8b50-0af502b30000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/1f301260-0c6e-1000-8b50-0af502b30000.xml#m1f5574b0-0c6e-1000-8b50-0af502b30000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m1f50b9c0-0c6e-1000-8b50-0af502b30000-m1d8ce9b8-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1c75116c-0c6e-1000-8b50-0af502b30000.xml#m1d8ce9b8-0c6e-1000-8b50-0af502b30000"/>
+<RefLogicalColumn refId="m1f50b9c0-0c6e-1000-8b50-0af502b30000-m1d8d10c4-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1c75116c-0c6e-1000-8b50-0af502b30000.xml#m1d8d10c4-0c6e-1000-8b50-0af502b30000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m1f5574b0-0c6e-1000-8b50-0af502b30000" name="Subdistricts" isGTA="false" isFDUC="true" memberCount="5000" levelConst="&apos;Subdistricts&apos;">
+<LogicalKey mdsid="m1f62bb20-0c6e-1000-8b50-0af502b30000" name="Subdistricts Code" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m1f62bb20-0c6e-1000-8b50-0af502b30000-m1c751189-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1c75116c-0c6e-1000-8b50-0af502b30000.xml#m1c751189-0c6e-1000-8b50-0af502b30000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m1f6cf450-0c6e-1000-8b50-0af502b30000" name="Subdistricts Name 1" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m1f6cf450-0c6e-1000-8b50-0af502b30000-m1c751182-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1c75116c-0c6e-1000-8b50-0af502b30000.xml#m1c751182-0c6e-1000-8b50-0af502b30000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m1f5574b0-0c6e-1000-8b50-0af502b30000_m1f58a900-0c6e-1000-8b50-0af502b30000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/1f301260-0c6e-1000-8b50-0af502b30000.xml#m1f58a900-0c6e-1000-8b50-0af502b30000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m1f5574b0-0c6e-1000-8b50-0af502b30000-m1c751182-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1c75116c-0c6e-1000-8b50-0af502b30000.xml#m1c751182-0c6e-1000-8b50-0af502b30000"/>
+<RefLogicalColumn refId="m1f5574b0-0c6e-1000-8b50-0af502b30000-m1c751189-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1c75116c-0c6e-1000-8b50-0af502b30000.xml#m1c751189-0c6e-1000-8b50-0af502b30000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m1f58a900-0c6e-1000-8b50-0af502b30000" name="Neighbourhoods" isGTA="false" isFDUC="true" memberCount="5500" levelConst="&apos;Neighbourhoods&apos;">
+<LogicalKey mdsid="m1f633050-0c6e-1000-8b50-0af502b30000" name="Neighbourhoods Code" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m1f633050-0c6e-1000-8b50-0af502b30000-m1c751135-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1c75116c-0c6e-1000-8b50-0af502b30000.xml#m1c751135-0c6e-1000-8b50-0af502b30000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m1f700190-0c6e-1000-8b50-0af502b30000" name="Neighbourhood Name 1" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m1f700190-0c6e-1000-8b50-0af502b30000-m1c75112e-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1c75116c-0c6e-1000-8b50-0af502b30000.xml#m1c75112e-0c6e-1000-8b50-0af502b30000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m1f58a900-0c6e-1000-8b50-0af502b30000-m1c75112e-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1c75116c-0c6e-1000-8b50-0af502b30000.xml#m1c75112e-0c6e-1000-8b50-0af502b30000"/>
+<RefLogicalColumn refId="m1f58a900-0c6e-1000-8b50-0af502b30000-m1c751135-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1c75116c-0c6e-1000-8b50-0af502b30000.xml#m1c751135-0c6e-1000-8b50-0af502b30000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

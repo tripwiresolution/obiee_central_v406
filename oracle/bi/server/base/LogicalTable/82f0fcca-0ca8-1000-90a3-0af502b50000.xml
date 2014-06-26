@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0fcca-0ca8-1000-90a3-0af502b50000" name="Fact - Recruitment Costs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acdc-0ca8-1000-90a3-0af502b50000.xml#m82f0acdc-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0fccb-0ca8-1000-90a3-0af502b50000" name="WE Apps &amp; EMEA BI/EPM" isWriteable="false">
+<MeasureDefn mdsid="m82f17050-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1979a-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737281391789375" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-5058-15c300000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA Recruitment"."Fact - Recruitment Costs"."WE Apps & EMEA BI/EPM")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-5058-15c300000000-m82f0fccb-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fcca-0ca8-1000-90a3-0af502b50000.xml#m82f0fccb-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2cfb1-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761761391789375">
+<Expr mdsid="m00000002-01f4-0000-1705-f09800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC_RECRUITMENT"."LOIC_RECRUITMENT_COSTS"."IC1_3"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-1705-f09800000000-m82e3dce9-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dce5-0ca8-1000-90a3-0af502b50000.xml#m82e3dce9-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fccc-0ca8-1000-90a3-0af502b50000" name="ECEMEA" isWriteable="false">
+<MeasureDefn mdsid="m82f17051-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1979b-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737291391789375" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-ea96-312000000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA Recruitment"."Fact - Recruitment Costs"."ECEMEA")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-ea96-312000000000-m82f0fccc-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fcca-0ca8-1000-90a3-0af502b50000.xml#m82f0fccc-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2cfb2-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761771391789375">
+<Expr mdsid="m00000004-01f4-0000-a06c-bcd000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC_RECRUITMENT"."LOIC_RECRUITMENT_COSTS"."IC4_6"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-a06c-bcd000000000-m82e3dcea-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dce5-0ca8-1000-90a3-0af502b50000.xml#m82e3dcea-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fccd-0ca8-1000-90a3-0af502b50000" name="UK Tech" isWriteable="false">
+<MeasureDefn mdsid="m82f17052-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1979c-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737301391789375" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-fccd-e48800000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA Recruitment"."Fact - Recruitment Costs"."UK Tech")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-fccd-e48800000000-m82f0fccd-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fcca-0ca8-1000-90a3-0af502b50000.xml#m82f0fccd-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2cfb3-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761781391789375">
+<Expr mdsid="m00000006-01f4-0000-73e0-de6800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC_RECRUITMENT"."LOIC_RECRUITMENT_COSTS"."M1_3"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-73e0-de6800000000-m82e3dceb-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dce5-0ca8-1000-90a3-0af502b50000.xml#m82e3dceb-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fcce-0ca8-1000-90a3-0af502b50000" name="Tech South" isWriteable="false">
+<MeasureDefn mdsid="m82f17053-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1979d-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737311391789375" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-6de4-a0ac00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA Recruitment"."Fact - Recruitment Costs"."Tech South")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-6de4-a0ac00000000-m82f0fcce-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fcca-0ca8-1000-90a3-0af502b50000.xml#m82f0fcce-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2cfb4-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761791391789375">
+<Expr mdsid="m00000008-01f4-0000-069c-407c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC_RECRUITMENT"."LOIC_RECRUITMENT_COSTS"."M4_6"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-069c-407c00000000-m82e3dcec-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dce5-0ca8-1000-90a3-0af502b50000.xml#m82e3dcec-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fccf-0ca8-1000-90a3-0af502b50000" name="Tech North" isWriteable="false">
+<MeasureDefn mdsid="m82f17054-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1979e-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737321391789375" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-0933-509100000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA Recruitment"."Fact - Recruitment Costs"."Tech North")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-0933-509100000000-m82f0fccf-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fcca-0ca8-1000-90a3-0af502b50000.xml#m82f0fccf-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2cfb5-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761801391789375">
+<Expr mdsid="m0000000a-01f4-0000-de19-326b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC_RECRUITMENT"."LOIC_RECRUITMENT_COSTS"."REG2"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-de19-326b00000000-m82e3dcee-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dce5-0ca8-1000-90a3-0af502b50000.xml#m82e3dcee-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fcd0-0ca8-1000-90a3-0af502b50000" name="Oracle Direct" isWriteable="false">
+<MeasureDefn mdsid="m82f17055-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1979f-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737331391789375" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-de0b-bf1b00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA Recruitment"."Fact - Recruitment Costs"."Oracle Direct")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-de0b-bf1b00000000-m82f0fcd0-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fcca-0ca8-1000-90a3-0af502b50000.xml#m82f0fcd0-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2cfb6-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761811391789375">
+<Expr mdsid="m0000000c-01f4-0000-0ace-118800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC_RECRUITMENT"."LOIC_RECRUITMENT_COSTS"."REG3"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-0ace-118800000000-m82e3dcef-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dce5-0ca8-1000-90a3-0af502b50000.xml#m82e3dcef-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fcd1-0ca8-1000-90a3-0af502b50000" name="Total" isWriteable="false">
+<MeasureDefn mdsid="m82f17056-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f197a0-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737341391789375" isDefault="true">
+<Expr mdsid="m0000000d-01f4-0000-b4eb-035b00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA Recruitment"."Fact - Recruitment Costs"."Total")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-b4eb-035b00000000-m82f0fcd1-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fcca-0ca8-1000-90a3-0af502b50000.xml#m82f0fcd1-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2cfb7-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761821391789375">
+<Expr mdsid="m0000000e-01f4-0000-46af-d29400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC_RECRUITMENT"."LOIC_RECRUITMENT_COSTS"."TOTAL_EMEA"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-46af-d29400000000-m82e3dcf0-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dce5-0ca8-1000-90a3-0af502b50000.xml#m82e3dcf0-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fcd2-0ca8-1000-90a3-0af502b50000" name="Oracle Systems EMEA" isWriteable="false">
+<MeasureDefn mdsid="m82f17057-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f197a1-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737351391789375" isDefault="true">
+<Expr mdsid="m0000000f-01f4-0000-f07a-c8a400000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA Recruitment"."Fact - Recruitment Costs"."Oracle Systems EMEA")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-f07a-c8a400000000-m82f0fcd2-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fcca-0ca8-1000-90a3-0af502b50000.xml#m82f0fcd2-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2cfb8-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761831391789375">
+<Expr mdsid="m00000010-01f4-0000-69ce-ba5100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC_RECRUITMENT"."LOIC_RECRUITMENT_COSTS"."REG1"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-69ce-ba5100000000-m82e3dced-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dce5-0ca8-1000-90a3-0af502b50000.xml#m82e3dced-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0fcca-0ca8-1000-90a3-0af502b50000-m82f344eb-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f344eb-0ca8-1000-90a3-0af502b50000.xml#m82f344eb-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

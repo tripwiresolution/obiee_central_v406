@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m12ec6e35-0c33-1000-8c32-0af0613a0000" name="NTC_META_POI_CAT_REF" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/80cdea79-07f3-0000-714b-e31d00000000.xml#m80cdea79-07f3-0000-714b-e31d00000000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-db9b-ffe200000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["07 - Spatial Samples"."POI Details"."POI Category"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-db9b-ffe200000000-m136d5e02-0c33-1000-8c32-0af0613a0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdea79-07f3-0000-714b-e31d00000000.xml#m136d5e02-0c33-1000-8c32-0af0613a0000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-cb11-973300000000" name="Expr">
+<ExprText><![CDATA[ substring("%1" from 13) 
+]]></ExprText>
+<ExprTextDesc><![CDATA[ substring("09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."NTC_META_POI_CAT_REF"."TABLE_NAME" from 13) 
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-cb11-973300000000-m80cde2bf-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cde2bc-0bb9-0000-714b-e31d00000000.xml#m80cde2bf-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-e190-3aa800000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["07 - Spatial Samples"."POI Details"."POI Sub Category"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-e190-3aa800000000-m12ec6e33-0c33-1000-8c32-0af0613a0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdea79-07f3-0000-714b-e31d00000000.xml#m12ec6e33-0c33-1000-8c32-0af0613a0000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-cdb0-b14500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."NTC_META_POI_CAT_REF"."NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-cdb0-b14500000000-m80cde2be-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cde2bc-0bb9-0000-714b-e31d00000000.xml#m80cde2be-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/80cde2bc-0bb9-0000-714b-e31d00000000.xml#m80cde2bc-0bb9-0000-714b-e31d00000000">
+</Link>
+<WhereClause mdsid="m00000005-01f4-0000-8ce7-e9ea00000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000006-01f4-0000-27e1-19b800000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m00000007-01f4-0000-6a74-520f00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

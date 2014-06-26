@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cb6808-0bb9-0000-714b-e31d00000000" name="SAMP_CURRENCY_D" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" x="233" y="1552" uri="VALUEOF(BI_EE_HOME)/sample/SampleAppFiles/Data/SAMP_CURRENCY_D.xml" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000">
+<Description><![CDATA[Currency Dimension table: Stores currency conversion rate information at quarter grain]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SAMP_CURRENCY_D]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cb686e-0bbb-0000-714b-e31d00000000" name="Qtr_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Quarter Key: Joins to Qtr_Key of Time dimension table (Qtr grain).]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb686f-0bbb-0000-714b-e31d00000000" name="Fx_Rate" iconIndex="32768" dataType="DOUBLE" specialType="none">
+<Description><![CDATA[Fx Rate: Stores FX rate as a double]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6870-0bbb-0000-714b-e31d00000000" name="From_Curr" dataType="VARCHAR" precision="3" specialType="none">
+<Description><![CDATA[From Currency: Stores the 'From Currency' code]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6871-0bbb-0000-714b-e31d00000000" name="To_Curr" dataType="VARCHAR" precision="3" specialType="none">
+<Description><![CDATA[To Currency: Stores the 'To currency' code]]></Description>
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cb6ad9-0bc0-0000-714b-e31d00000000" name="PK">
+<RefColumns>
+<RefColumn refId="m80cb6ad9-0bc0-0000-714b-e31d00000000-m80cb6870-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6808-0bb9-0000-714b-e31d00000000.xml#m80cb6870-0bbb-0000-714b-e31d00000000"/>
+<RefColumn refId="m80cb6ad9-0bc0-0000-714b-e31d00000000-m80cb686e-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6808-0bb9-0000-714b-e31d00000000.xml#m80cb686e-0bbb-0000-714b-e31d00000000"/>
+<RefColumn refId="m80cb6ad9-0bc0-0000-714b-e31d00000000-m80cb6871-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6808-0bb9-0000-714b-e31d00000000.xml#m80cb6871-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cc47a2-0bb9-0000-714b-e31d00000000" name="M01 Mktg Cache Customers" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" x="179" y="50" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cc479d-0bb9-0000-714b-e31d00000000.xml#m80cc479d-0bb9-0000-714b-e31d00000000">
+<PhysicalColumn mdsid="m80cc47ac-0bbb-0000-714b-e31d00000000" name="GUID" dataType="VARCHAR" precision="50" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cc479d-0bb9-0000-714b-e31d00000000.xml#m80cc47f5-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc47ad-0bbb-0000-714b-e31d00000000" name="QUALIFIED_ID" dataType="DOUBLE" precision="15" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cc479d-0bb9-0000-714b-e31d00000000.xml#m80cc47f6-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="m80cc487c-0bbe-0000-714b-e31d00000000" name="M1 Segment Cache Customers_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb6835-0bb9-0000-714b-e31d00000000.xml#m80cb6aff-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cc487c-0bbe-0000-714b-e31d00000000-m80cc47ad-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc47a2-0bb9-0000-714b-e31d00000000.xml#m80cc47ad-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m086adc30-0c83-1000-8c4a-0ab22f360000" name="M01 Mktg Cache Customers_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/082e2151-0c83-1000-8c4a-0ab22f360000.xml#m082e2162-0c83-1000-8c4a-0ab22f360000">
+<RefColumns>
+<RefColumn refId="m086adc30-0c83-1000-8c4a-0ab22f360000-m80cc47ad-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc47a2-0bb9-0000-714b-e31d00000000.xml#m80cc47ad-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m088da670-0c83-1000-8c4a-0ab22f360000" name="M01 Mktg Cache Customers_Foreign Key#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/083a0830-0c83-1000-8c4a-0ab22f360000.xml#m083a0841-0c83-1000-8c4a-0ab22f360000">
+<RefColumns>
+<RefColumn refId="m088da670-0c83-1000-8c4a-0ab22f360000-m80cc47ad-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc47a2-0bb9-0000-714b-e31d00000000.xml#m80cc47ad-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

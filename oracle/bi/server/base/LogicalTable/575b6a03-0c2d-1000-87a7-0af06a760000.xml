@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m575b6a03-0c2d-1000-87a7-0af06a760000" name="25 Cancelled" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/575b68b0-0c2d-1000-87a7-0af06a760000.xml#m575b68b0-0c2d-1000-87a7-0af06a760000">
+<LogicalColumn mdsid="m575b6a04-0c2d-1000-87a7-0af06a760000" name="Cancelled Code" isWriteable="false">
+<AttrDefn mdsid="m575b6cec-0c2d-1000-87a7-0af06a760000" name="AD_3900:2373791338887867">
+<Expr mdsid="m00000001-01f4-0000-a4f4-3c5700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."SA_25_Canc00039D16"."Cancelled_00039C5B"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-a4f4-3c5700000000-m6ac8b732-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6ac8b730-0c61-1000-99f2-7f0000010000.xml#m6ac8b732-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6a05-0c2d-1000-87a7-0af06a760000" name="Cancelled" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000002-01f4-0000-756e-b18300000000" name="Expr">
+<ExprText><![CDATA[ CASE  WHEN "%1" = '0.00' THEN 'Departed' ELSE 'Cancelled' END ]]></ExprText>
+<ExprTextDesc><![CDATA[ CASE  WHEN "X0 - Airlines"."25 Cancelled"."Cancelled Code" = '0.00' THEN 'Departed' ELSE 'Cancelled' END ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-756e-b18300000000-m575b6a04-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6a03-0c2d-1000-87a7-0af06a760000.xml#m575b6a04-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6ced-0c2d-1000-87a7-0af06a760000" name="AD_3900:2373801338887867">
+<Expr mdsid="m00000003-01f4-0000-2fc3-9d0500000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m575b6bc4-0c2d-1000-87a7-0af06a760000" name="Primary" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6bc4-0c2d-1000-87a7-0af06a760000-m575b6a04-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6a03-0c2d-1000-87a7-0af06a760000.xml#m575b6a04-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m575b6a03-0c2d-1000-87a7-0af06a760000-m575b6d81-0c2d-1000-87a7-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/575b6d81-0c2d-1000-87a7-0af06a760000.xml#m575b6d81-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalTableSource refId="m575b6a03-0c2d-1000-87a7-0af06a760000-m670ce7a2-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/670ce7a2-0c61-1000-99f2-7f0000010000.xml#m670ce7a2-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b6a03-0c2d-1000-87a7-0af06a760000-m6add77a6-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/6add77a6-0c61-1000-99f2-7f0000010000.xml#m6add77a6-0c61-1000-99f2-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

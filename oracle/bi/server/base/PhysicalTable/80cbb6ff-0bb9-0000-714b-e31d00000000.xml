@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cbb6ff-0bb9-0000-714b-e31d00000000" name="CUSTOMER_IDENTIFICATIONS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" x="256" y="241" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cbb6f4-0bd3-0000-714b-e31d00000000.xml#m80cbb6f4-0bd3-0000-714b-e31d00000000">
+<PhysicalColumn mdsid="m80cbb781-0bbb-0000-714b-e31d00000000" name="ADDITIONAL_INFORMATION" dataType="VARCHAR" precision="1000" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb782-0bbb-0000-714b-e31d00000000" name="CREATED_BY" dataType="VARCHAR" precision="60" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb783-0bbb-0000-714b-e31d00000000" name="CREATION_DATE" dataType="DATETIME" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb784-0bbb-0000-714b-e31d00000000" name="CUSTOMER_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb785-0bbb-0000-714b-e31d00000000" name="ID_DETAIL" dataType="VARCHAR" precision="20" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb786-0bbb-0000-714b-e31d00000000" name="ID_TYPE_CODE" dataType="VARCHAR" precision="30" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb787-0bbb-0000-714b-e31d00000000" name="LAST_UPDATED_BY" dataType="VARCHAR" precision="60" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb788-0bbb-0000-714b-e31d00000000" name="LAST_UPDATE_DATE" dataType="DATETIME" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb789-0bbb-0000-714b-e31d00000000" name="OBJECT_VERSION_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb78a-0bbb-0000-714b-e31d00000000" name="VERIFICATION_METHOD_CODE" dataType="VARCHAR" precision="30" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb78b-0bbb-0000-714b-e31d00000000" name="VERIFIED_BY" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb78c-0bbb-0000-714b-e31d00000000" name="VERIFIED_DATE" dataType="DATETIME" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb78d-0bbb-0000-714b-e31d00000000" name="VERIFIED_FLAG" dataType="VARCHAR" precision="1" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cbb8dc-0bc0-0000-714b-e31d00000000" name="CUSTOMER_ID">
+<RefColumns>
+<RefColumn refId="m80cbb8dc-0bc0-0000-714b-e31d00000000-m80cbb784-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cbb6ff-0bb9-0000-714b-e31d00000000.xml#m80cbb784-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m80cbbb35-0bbe-0000-714b-e31d00000000" name="CUSTOMER_IDENTIFICATIONS_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cbb70e-0bb9-0000-714b-e31d00000000.xml#m80cbb8e9-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cbbb35-0bbe-0000-714b-e31d00000000-m80cbb784-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cbb6ff-0bb9-0000-714b-e31d00000000.xml#m80cbb784-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

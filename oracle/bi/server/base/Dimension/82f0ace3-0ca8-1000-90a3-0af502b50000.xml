@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m82f0ace3-0ca8-1000-90a3-0af502b50000" name="Book" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="true" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/82f0ace3-0ca8-1000-90a3-0af502b50000.xml#m82f197ce-0ca8-1000-90a3-0af502b50000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd0-0ca8-1000-90a3-0af502b50000.xml#m82f0acd0-0ca8-1000-90a3-0af502b50000">
+<LogicalLevel mdsid="m82f197ce-0ca8-1000-90a3-0af502b50000" name="Gen1,Book" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Gen1,Book&apos;">
+<LogicalKey mdsid="m82f23372-0ca8-1000-90a3-0af502b50000" name="Gen1,Book - Member Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f23372-0ca8-1000-90a3-0af502b50000-m82f0d44a-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d447-0ca8-1000-90a3-0af502b50000.xml#m82f0d44a-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m82f23373-0ca8-1000-90a3-0af502b50000" name="Gen1,Book" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f23373-0ca8-1000-90a3-0af502b50000-m82f0d448-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d447-0ca8-1000-90a3-0af502b50000.xml#m82f0d448-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m82f197ce-0ca8-1000-90a3-0af502b50000_m82f197cf-0ca8-1000-90a3-0af502b50000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/82f0ace3-0ca8-1000-90a3-0af502b50000.xml#m82f197cf-0ca8-1000-90a3-0af502b50000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m82f197ce-0ca8-1000-90a3-0af502b50000-m82f0d448-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d447-0ca8-1000-90a3-0af502b50000.xml#m82f0d448-0ca8-1000-90a3-0af502b50000"/>
+<RefLogicalColumn refId="m82f197ce-0ca8-1000-90a3-0af502b50000-m82f0d449-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d447-0ca8-1000-90a3-0af502b50000.xml#m82f0d449-0ca8-1000-90a3-0af502b50000"/>
+<RefLogicalColumn refId="m82f197ce-0ca8-1000-90a3-0af502b50000-m82f0d44a-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d447-0ca8-1000-90a3-0af502b50000.xml#m82f0d44a-0ca8-1000-90a3-0af502b50000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m82f197cf-0ca8-1000-90a3-0af502b50000" name="Book Name" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Book Name&apos;">
+<LogicalKey mdsid="m82f23374-0ca8-1000-90a3-0af502b50000" name="Book Name - Member Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f23374-0ca8-1000-90a3-0af502b50000-m82f0d44d-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d447-0ca8-1000-90a3-0af502b50000.xml#m82f0d44d-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m82f23375-0ca8-1000-90a3-0af502b50000" name="Book Name" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f23375-0ca8-1000-90a3-0af502b50000-m82f0d44b-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d447-0ca8-1000-90a3-0af502b50000.xml#m82f0d44b-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefPreferredDrillDown>
+<RefLogicalLevel refId="m82f197cf-0ca8-1000-90a3-0af502b50000-m82f197d5-0ca8-1000-90a3-0af502b50000" logicalLevelRef="/oracle/bi/server/base/Dimension/82f0ace5-0ca8-1000-90a3-0af502b50000.xml#m82f197d5-0ca8-1000-90a3-0af502b50000"/>
+</RefPreferredDrillDown>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m82f197cf-0ca8-1000-90a3-0af502b50000-m82f0d44b-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d447-0ca8-1000-90a3-0af502b50000.xml#m82f0d44b-0ca8-1000-90a3-0af502b50000"/>
+<RefLogicalColumn refId="m82f197cf-0ca8-1000-90a3-0af502b50000-m82f0d44c-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d447-0ca8-1000-90a3-0af502b50000.xml#m82f0d44c-0ca8-1000-90a3-0af502b50000"/>
+<RefLogicalColumn refId="m82f197cf-0ca8-1000-90a3-0af502b50000-m82f0d44d-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d447-0ca8-1000-90a3-0af502b50000.xml#m82f0d44d-0ca8-1000-90a3-0af502b50000"/>
+<RefLogicalColumn refId="m82f197cf-0ca8-1000-90a3-0af502b50000-m82f0d44f-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d447-0ca8-1000-90a3-0af502b50000.xml#m82f0d44f-0ca8-1000-90a3-0af502b50000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

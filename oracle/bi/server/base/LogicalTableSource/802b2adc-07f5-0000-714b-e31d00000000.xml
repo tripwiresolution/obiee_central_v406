@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m802b2adc-07f5-0000-714b-e31d00000000" name="NQ_ACCT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/802b290b-07f3-0000-714b-e31d00000000.xml#m802b290b-07f3-0000-714b-e31d00000000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-9905-6bb200000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - Usage Tracking"."UT L Query Time"."Start Time"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-9905-6bb200000000-m802b290c-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/802b290b-07f3-0000-714b-e31d00000000.xml#m802b290c-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-a2b1-739f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_TS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-a2b1-739f00000000-mbb20f8fa-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8fa-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-ba3e-59b800000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - Usage Tracking"."UT L Query Time"."Year"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-ba3e-59b800000000-m802b290d-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/802b290b-07f3-0000-714b-e31d00000000.xml#m802b290d-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-fdb0-e2ca00000000" name="Expr">
+<ExprText><![CDATA[ CAST ( EXTRACT( YEAR  FROM "%1") AS VARCHAR ( 4 ))]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ( EXTRACT( YEAR  FROM "10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT") AS VARCHAR ( 4 ))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-fdb0-e2ca00000000-mbb20f8f8-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8f8-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-1986-83d500000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - Usage Tracking"."UT L Query Time"."Year Quarter"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-1986-83d500000000-m802b290e-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/802b290b-07f3-0000-714b-e31d00000000.xml#m802b290e-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-6290-0e9900000000" name="Expr">
+<ExprText><![CDATA[ CAST ( EXTRACT( YEAR  FROM "%1") AS VARCHAR ( 4 )) || ' Q' ||  CAST ( EXTRACT( QUARTER_OF_YEAR  FROM "%1") AS VARCHAR ( 1 ))]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ( EXTRACT( YEAR  FROM "10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT") AS VARCHAR ( 4 )) || ' Q' ||  CAST ( EXTRACT( QUARTER_OF_YEAR  FROM "10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT") AS VARCHAR ( 1 ))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-6290-0e9900000000-mbb20f8f8-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8f8-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000007-01f4-0000-1eb5-017400000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - Usage Tracking"."UT L Query Time"."Year Month"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-1eb5-017400000000-m802b290f-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/802b290b-07f3-0000-714b-e31d00000000.xml#m802b290f-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000008-01f4-0000-02bd-2afe00000000" name="Expr">
+<ExprText><![CDATA[ CAST ( EXTRACT( YEAR  FROM "%1") AS VARCHAR ( 4 )) || ' ' ||  LEFT( MONTHNAME("%1"), 3)]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ( EXTRACT( YEAR  FROM "10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT") AS VARCHAR ( 4 )) || ' ' ||  LEFT( MONTHNAME("10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT"), 3)]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-02bd-2afe00000000-mbb20f8f8-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8f8-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000009-01f4-0000-c2dc-b23500000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - Usage Tracking"."UT L Query Time"."Month"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-c2dc-b23500000000-m802b2910-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/802b290b-07f3-0000-714b-e31d00000000.xml#m802b2910-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000a-01f4-0000-f2ae-0dd700000000" name="Expr">
+<ExprText><![CDATA[ MONTHNAME("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ MONTHNAME("10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-f2ae-0dd700000000-mbb20f8f8-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8f8-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000000b-01f4-0000-695f-a5e800000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - Usage Tracking"."UT L Query Time"."Month Number"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-695f-a5e800000000-m802b2911-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/802b290b-07f3-0000-714b-e31d00000000.xml#m802b2911-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000c-01f4-0000-9a0e-969a00000000" name="Expr">
+<ExprText><![CDATA[ EXTRACT( MONTH  FROM "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ EXTRACT( MONTH  FROM "10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-9a0e-969a00000000-mbb20f8f8-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8f8-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000000d-01f4-0000-5861-d57b00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - Usage Tracking"."UT L Query Time"."Day Name"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-5861-d57b00000000-m802b2912-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/802b290b-07f3-0000-714b-e31d00000000.xml#m802b2912-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000e-01f4-0000-cb47-d71700000000" name="Expr">
+<ExprText><![CDATA[ DAYNAME("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ DAYNAME("10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-cb47-d71700000000-mbb20f8f8-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8f8-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000000f-01f4-0000-16a3-e9a200000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - Usage Tracking"."UT L Query Time"."Week Number"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-16a3-e9a200000000-m802b2913-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/802b290b-07f3-0000-714b-e31d00000000.xml#m802b2913-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000010-01f4-0000-a5d6-d84b00000000" name="Expr">
+<ExprText><![CDATA[ CAST ( EXTRACT( YEAR  FROM "%1") AS VARCHAR ( 4 )) || ' WEEK ' ||  CAST ( EXTRACT( WEEK_OF_YEAR  FROM "%1") AS VARCHAR ( 2 ))]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ( EXTRACT( YEAR  FROM "10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT") AS VARCHAR ( 4 )) || ' WEEK ' ||  CAST ( EXTRACT( WEEK_OF_YEAR  FROM "10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT") AS VARCHAR ( 2 ))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-a5d6-d84b00000000-mbb20f8f8-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8f8-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000011-01f4-0000-b532-e3e300000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - Usage Tracking"."UT L Query Time"."Day Number"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-b532-e3e300000000-m802b2914-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/802b290b-07f3-0000-714b-e31d00000000.xml#m802b2914-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000012-01f4-0000-bd47-d8cb00000000" name="Expr">
+<ExprText><![CDATA[ DAYOFWEEK("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ DAYOFWEEK("10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-bd47-d8cb00000000-mbb20f8f8-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8f8-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000013-01f4-0000-eebd-832300000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - Usage Tracking"."UT L Query Time"."Day in Month"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-eebd-832300000000-m802b2915-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/802b290b-07f3-0000-714b-e31d00000000.xml#m802b2915-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000014-01f4-0000-46e6-33fe00000000" name="Expr">
+<ExprText><![CDATA[ DAYOFMONTH("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ DAYOFMONTH("10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-46e6-33fe00000000-mbb20f8f8-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8f8-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000015-01f4-0000-24a8-6c5300000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - Usage Tracking"."UT L Query Time"."Start Hour Min"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-24a8-6c5300000000-me4c2d2e2-0c20-1000-8c4a-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/802b290b-07f3-0000-714b-e31d00000000.xml#me4c2d2e2-0c20-1000-8c4a-0af502b10000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000016-01f4-0000-bedb-0ca100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_HOUR_MIN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-bedb-0ca100000000-mbb20f8f9-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8f9-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000017-01f4-0000-bc4f-75f300000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - Usage Tracking"."UT L Query Time"."End Hour Min"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-bc4f-75f300000000-me9649592-0c20-1000-ab76-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/802b290b-07f3-0000-714b-e31d00000000.xml#me9649592-0c20-1000-ab76-0af502b10000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000018-01f4-0000-5879-23f800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."END_HOUR_MIN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000018-01f4-0000-5879-23f800000000-mbb20f8e6-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8e6-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000019-01f4-0000-4df1-a04600000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - Usage Tracking"."UT L Query Time"."End Time"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000019-01f4-0000-4df1-a04600000000-me9672da2-0c20-1000-ab76-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/802b290b-07f3-0000-714b-e31d00000000.xml#me9672da2-0c20-1000-ab76-0af502b10000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000001a-01f4-0000-a1a2-bc6a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."END_TS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001a-01f4-0000-a1a2-bc6a00000000-mbb20f8e7-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8e7-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000001b-01f4-0000-42b5-a51000000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - Usage Tracking"."UT L Query Time"."Start Date"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001b-01f4-0000-42b5-a51000000000-m4c31e640-0c22-1000-9f09-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/802b290b-07f3-0000-714b-e31d00000000.xml#m4c31e640-0c22-1000-9f09-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000001c-01f4-0000-ab3f-047100000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DATE )]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_TS" AS DATE )]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001c-01f4-0000-ab3f-047100000000-mbb20f8fa-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8fa-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000001d-01f4-0000-ba63-1e6400000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - Usage Tracking"."UT L Query Time"."Ran"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001d-01f4-0000-ba63-1e6400000000-m1bf55b93-0c33-1000-a35a-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/802b290b-07f3-0000-714b-e31d00000000.xml#m1bf55b93-0c33-1000-a35a-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000001e-01f4-0000-6a91-8a0100000000" name="Expr">
+<ExprText><![CDATA[cast(TIMESTAMPDIFF(SQL_TSI_SECOND,  "%1" , CURRENT_TIMESTAMP(1)) as varchar (7))||' seconds ago']]></ExprText>
+<ExprTextDesc><![CDATA[cast(TIMESTAMPDIFF(SQL_TSI_SECOND,  "10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_TS" , CURRENT_TIMESTAMP(1)) as varchar (7))||' seconds ago']]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001e-01f4-0000-6a91-8a0100000000-mbb20f8fa-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8fa-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8e0-0c2a-1000-ac17-0af06a760000">
+</Link>
+<WhereClause mdsid="m0000001f-01f4-0000-e6bf-3dce00000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000020-01f4-0000-e61d-7a6800000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("10 - Usage Tracking"."UT L Query Time"."Hour Min Detail")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000020-01f4-0000-e61d-7a6800000000-me50de5a1-0c20-1000-ab76-0af502b10000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/802b28a1-07e3-0000-714b-e31d00000000.xml#me50de5a1-0c20-1000-ab76-0af502b10000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m00000021-01f4-0000-a0d3-fb6800000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

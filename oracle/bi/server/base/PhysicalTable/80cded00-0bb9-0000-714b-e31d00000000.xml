@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cded00-0bb9-0000-714b-e31d00000000" name="WS_DASHBOARD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/802b29ac-0bd3-0000-714b-e31d00000000.xml#m802b29ac-0bd3-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[WS_DASHBOARD]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cded01-0bbb-0000-714b-e31d00000000" name="ANALYSISNAME" dataType="VARCHAR" precision="150" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cded02-0bbb-0000-714b-e31d00000000" name="ANALYSISPATH" dataType="VARCHAR" precision="400" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cded03-0bbb-0000-714b-e31d00000000" name="DASHBOARDNAME" dataType="VARCHAR" precision="150" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cded05-0bbb-0000-714b-e31d00000000" name="DASHBOARDPAGENAME" dataType="VARCHAR" precision="100" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cded06-0bbb-0000-714b-e31d00000000" name="DASHBOARDPAGEPATH" dataType="VARCHAR" precision="200" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cded07-0bbb-0000-714b-e31d00000000" name="DASHBOARDSTYLE" dataType="VARCHAR" precision="100" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cded08-0bbb-0000-714b-e31d00000000" name="PATH" dataType="VARCHAR" precision="400" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cded09-0bbb-0000-714b-e31d00000000" name="SEQUENCEID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cded1b-0bc0-0000-714b-e31d00000000" name="SEQUENCEID">
+<RefColumns>
+<RefColumn refId="m80cded1b-0bc0-0000-714b-e31d00000000-m80cded09-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cded00-0bb9-0000-714b-e31d00000000.xml#m80cded09-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="m80cded1c-0bc0-0000-714b-e31d00000000" name="DASHBOARD_Key">
+<RefColumns>
+<RefColumn refId="m80cded1c-0bc0-0000-714b-e31d00000000-m80cded08-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cded00-0bb9-0000-714b-e31d00000000.xml#m80cded08-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="m1eddf530-0c36-1000-9a3e-7f0000010000" name="WS_DASHBOARD_Key">
+<RefColumns>
+<RefColumn refId="m1eddf530-0c36-1000-9a3e-7f0000010000-m80cded06-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cded00-0bb9-0000-714b-e31d00000000.xml#m80cded06-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

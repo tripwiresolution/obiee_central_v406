@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationTable mdsid="m575e4f9d-0c2d-1000-87a7-0af06a760000" name="Delay Facts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" hasDispName="false" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationCatalog/575e4f99-0c2d-1000-87a7-0af06a760000.xml#m575e4f99-0c2d-1000-87a7-0af06a760000">
+<Alias name="F2"/>
+<Alias name="FctsD"/>
+<PresentationColumn mdsid="m575e4ef4-0c2d-1000-87a7-0af06a760000" name="Delay Perf % (0=Ontime,  &gt;0=Late)" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68ff-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Index of Arrival delay expressed as Percentage of Air time. If Air time = 100 and Arr delay = 5, Perf = 5%]]></Description>
+<Alias name="Delay Perf %"/>
+<Alias name="Delay Perf Index"/>
+<Alias name="Delay Perf Index (1=Ontime,  &gt;1=Late)"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4ef5-0c2d-1000-87a7-0af06a760000" name="# of Late Flights" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b6907-0c2d-1000-87a7-0af06a760000">
+<Alias name="Late Flights"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4ef6-0c2d-1000-87a7-0af06a760000" name="% of Sch Fl Within 30 Min Late" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b6916-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Percent of flights that arrive on time. Note: If you select Origin as a category, you get percent of flights that depart from those airports and arrive on time.]]></Description>
+<Alias name="% of Sch Fl &lt; 30 Min Late"/>
+<Alias name="% of Sch Fl Arr Less than 30 Min Late"/>
+<Alias name="% of Sched Fl Arr Less than 30 Min Late"/>
+<Alias name="% of Sched Fl Within 30 Min Arr Delay"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4ef7-0c2d-1000-87a7-0af06a760000" name="% of Sch Fl Over 30 Min Late" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b6917-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Percent of flights that arrive on time. Note: If you select Origin as a category, you get percent of flights that depart from those airports and arrive on time.]]></Description>
+<Alias name="% of Sch Fl Arr Over than 30 Min Late"/>
+<Alias name="% of Sched Fl Arr Over than 30 Min Late"/>
+<Alias name="% of Sched Fl Over 30 Min Arr Delay"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4efa-0c2d-1000-87a7-0af06a760000" name="Avg Delay per Pax-K-Miles (Min)" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b6919-0c2d-1000-87a7-0af06a760000">
+<Alias name="Avg Delay P. PAX-Miles (Min)"/>
+<Alias name="Avg Delay per 1K Pax.Miles (Min)"/>
+<Alias name="Avg Delay per Pax.K.Miles (Min)"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4ef9-0c2d-1000-87a7-0af06a760000" name="-- Delay Catchup during Flight ----------------" hasDispName="false" hasDispDescription="false" overrideLogicalName="true" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b6908-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Percent of flights that arrive on time. Note: If you select Origin as a category, you get percent of flights that depart from those airports and arrive on time.]]></Description>
+<Alias name="-- Carrier Delay -------------------------------"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4ef3-0c2d-1000-87a7-0af06a760000" name="% Delay Increase After Dept" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68fd-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[% increase of delay after departure. If plane left 10 min late and arrived 15 min late, % increase = 50%]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4ef2-0c2d-1000-87a7-0af06a760000" name="Diff Arr - Dept Delay" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68fc-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Difference in minutes between Arrival and Departure delay. If plane left 10 min late and arrived 15 min late, difference = 5.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4ef1-0c2d-1000-87a7-0af06a760000" name="Ratio Arr to Dept Delay" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68fb-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Ratio of Arrival dealy in minutes divided by Departure Delay. If plane left 10 min late and arrived 15 min late, ratio = 1.5.]]></Description>
+</PresentationColumn>
+</PresentationTable>

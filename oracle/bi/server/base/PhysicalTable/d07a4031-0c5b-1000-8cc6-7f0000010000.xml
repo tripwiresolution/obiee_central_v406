@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="md07a4031-0c5b-1000-8cc6-7f0000010000" name="ORE_GRAPHICS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Database/ac71f401-0c31-1000-8edd-0af0613a0000.xml#mac71f401-0c31-1000-8edd-0af0613a0000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[select id, image
+from table(rqTableEval(
+VALUEOF(NQ_SESSION.ORE_PARAM1), 
+VALUEOF(NQ_SESSION.ORE_PARAM2),
+'PNG',
+'valueof(NQ_SESSION.ORE_SCRIPTNAME)'))]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="md07a4032-0c5b-1000-8cc6-7f0000010000" name="ID" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="md07a4033-0c5b-1000-8cc6-7f0000010000" name="IMAGE" dataType="LONGVARBINARY" precision="400000" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="md07a4034-0c5b-1000-8cc6-7f0000010000" name="key">
+<RefColumns>
+<RefColumn refId="md07a4034-0c5b-1000-8cc6-7f0000010000-md07a4032-0c5b-1000-8cc6-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/d07a4031-0c5b-1000-8cc6-7f0000010000.xml#md07a4032-0c5b-1000-8cc6-7f0000010000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

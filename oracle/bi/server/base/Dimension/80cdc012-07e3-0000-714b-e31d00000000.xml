@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m80cdc012-07e3-0000-714b-e31d00000000" name="Year" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="true" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/80cdc012-07e3-0000-714b-e31d00000000.xml#m80cdc0a8-07e9-0000-714b-e31d00000000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cdc011-07d0-0000-714b-e31d00000000.xml#m80cdc011-07d0-0000-714b-e31d00000000">
+<LogicalLevel mdsid="m80cdc0a8-07e9-0000-714b-e31d00000000" name="History" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;History&apos;">
+<LogicalKey mdsid="m80cdc0bd-07d8-0000-714b-e31d00000000" name="History - Member Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cdc0bd-07d8-0000-714b-e31d00000000-m80cdc033-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc030-07f3-0000-714b-e31d00000000.xml#m80cdc033-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m80cdc0be-07d8-0000-714b-e31d00000000" name="History" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cdc0be-07d8-0000-714b-e31d00000000-m80cdc031-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc030-07f3-0000-714b-e31d00000000.xml#m80cdc031-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cdc0a8-07e9-0000-714b-e31d00000000_m80cdc0a9-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cdc012-07e3-0000-714b-e31d00000000.xml#m80cdc0a9-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cdc0a8-07e9-0000-714b-e31d00000000-m80cdc031-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc030-07f3-0000-714b-e31d00000000.xml#m80cdc031-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cdc0a8-07e9-0000-714b-e31d00000000-m80cdc032-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc030-07f3-0000-714b-e31d00000000.xml#m80cdc032-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cdc0a8-07e9-0000-714b-e31d00000000-m80cdc033-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc030-07f3-0000-714b-e31d00000000.xml#m80cdc033-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cdc0a9-07e9-0000-714b-e31d00000000" name="Quarter" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Quarter&apos;">
+<LogicalKey mdsid="m80cdc0bf-07d8-0000-714b-e31d00000000" name="Quarter - Member Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cdc0bf-07d8-0000-714b-e31d00000000-m80cdc036-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc030-07f3-0000-714b-e31d00000000.xml#m80cdc036-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m80cdc0c0-07d8-0000-714b-e31d00000000" name="Quarter" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cdc0c0-07d8-0000-714b-e31d00000000-m80cdc034-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc030-07f3-0000-714b-e31d00000000.xml#m80cdc034-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cdc0a9-07e9-0000-714b-e31d00000000_m80cdc0aa-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cdc012-07e3-0000-714b-e31d00000000.xml#m80cdc0aa-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cdc0a9-07e9-0000-714b-e31d00000000-m80cdc034-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc030-07f3-0000-714b-e31d00000000.xml#m80cdc034-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cdc0a9-07e9-0000-714b-e31d00000000-m80cdc035-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc030-07f3-0000-714b-e31d00000000.xml#m80cdc035-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cdc0a9-07e9-0000-714b-e31d00000000-m80cdc036-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc030-07f3-0000-714b-e31d00000000.xml#m80cdc036-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cdc0aa-07e9-0000-714b-e31d00000000" name="Months" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Months&apos;">
+<LogicalKey mdsid="m80cdc0c1-07d8-0000-714b-e31d00000000" name="Months - Member Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cdc0c1-07d8-0000-714b-e31d00000000-m80cdc039-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc030-07f3-0000-714b-e31d00000000.xml#m80cdc039-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m80cdc0c2-07d8-0000-714b-e31d00000000" name="Months" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cdc0c2-07d8-0000-714b-e31d00000000-m80cdc037-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc030-07f3-0000-714b-e31d00000000.xml#m80cdc037-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cdc0aa-07e9-0000-714b-e31d00000000-m80cdc037-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc030-07f3-0000-714b-e31d00000000.xml#m80cdc037-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cdc0aa-07e9-0000-714b-e31d00000000-m80cdc038-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc030-07f3-0000-714b-e31d00000000.xml#m80cdc038-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cdc0aa-07e9-0000-714b-e31d00000000-m80cdc039-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc030-07f3-0000-714b-e31d00000000.xml#m80cdc039-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

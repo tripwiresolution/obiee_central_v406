@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m5b3ff660-0c2d-1000-87a7-0af06a760000" name="LTS01 Revenue (Billed Time Join)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" canCombine="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/5b3ff5e0-0c2d-1000-87a7-0af06a760000.xml#m5b3ff5e0-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F10 Billed Rev"."Bill_Day_Dt" < '15-DEC-11']]></Description>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-602d-8c1800000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F1 Time Based Fragmentation"."1a- Revenue (DW History Data)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-602d-8c1800000000-m5b3ff5e2-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/5b3ff5e0-0c2d-1000-87a7-0af06a760000.xml#m5b3ff5e2-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-4e5e-84c200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F10 Billed Rev"."Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-4e5e-84c200000000-m80cb6a0b-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb683a-0bb9-0000-714b-e31d00000000.xml#m80cb6a0b-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-7e03-9f4f00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F1 Time Based Fragmentation"."1c- Revenue Fragmented Sources"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-7e03-9f4f00000000-m653a2114-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/5b3ff5e0-0c2d-1000-87a7-0af06a760000.xml#m653a2114-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-d9a6-cbeb00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F10 Billed Rev"."Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-d9a6-cbeb00000000-m80cb6a0b-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb683a-0bb9-0000-714b-e31d00000000.xml#m80cb6a0b-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/80cb683a-0bb9-0000-714b-e31d00000000.xml#m80cb683a-0bb9-0000-714b-e31d00000000">
+</Link>
+<WhereClause mdsid="m00000005-01f4-0000-01a2-f14200000000" name="WhereClause">
+<ExprText><![CDATA["%1" 
+<= VALUEOF(NQ_SESSION."%2") ]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F10 Billed Rev"."Bill_Day_Dt" 
+<= VALUEOF(NQ_SESSION."FRAGM_DATE_DW") ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-01a2-f14200000000-m80cb6a0e-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb683a-0bb9-0000-714b-e31d00000000.xml#m80cb6a0e-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m00000005-01f4-0000-01a2-f14200000000-m195c6131-0c33-1000-be81-7f0000010000" objectRef="/oracle/bi/server/base/Variable/195c6131-0c33-1000-be81-7f0000010000.xml#m195c6131-0c33-1000-be81-7f0000010000"/>
+</ObjectRefList>
+</WhereClause>
+<GroupBy mdsid="m00000006-01f4-0000-e777-78e000000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m00000007-01f4-0000-a7b3-817300000000" name="FragmentContent">
+<ExprText><![CDATA["%1" 
+<= date '2012-12-31']]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."D0 Time"."T00 Calendar Date" 
+<= date '2012-12-31']]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-a7b3-817300000000-m80cab5b7-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5b6-07f3-0000-714b-e31d00000000.xml#m80cab5b7-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</FragmentContent>
+</LogicalTableSource>

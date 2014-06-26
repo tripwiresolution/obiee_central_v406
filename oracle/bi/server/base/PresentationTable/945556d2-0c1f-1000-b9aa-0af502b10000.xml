@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationTable mdsid="m945556d2-0c1f-1000-b9aa-0af502b10000" name="Orders" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Orders)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationCatalog/945556c9-0c1f-1000-b9aa-0af502b10000.xml#m945556c9-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Orders dimension attribute objects]]></Description>
+<Alias name="R"/>
+<PresentationColumn mdsid="m9455562a-0c1f-1000-b9aa-0af502b10000" name="R1  Order Status" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Orders_R1__Order_Status)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530c9c-0c1f-1000-b9aa-0af502b10000.xml#m94530c9e-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Help : 
+Stores the order status description.]]></Description>
+<Alias name="OrderStatus"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m9455562c-0c1f-1000-b9aa-0af502b10000" name="R2  Order Type" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Orders_R2__Order_Type)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530c9c-0c1f-1000-b9aa-0af502b10000.xml#m94530c9f-0c1f-1000-b9aa-0af502b10000">
+<Alias name="OrderType"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m9455562b-0c1f-1000-b9aa-0af502b10000" name="R3  Order Currency" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Orders_R3__Order_Currency)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530c9c-0c1f-1000-b9aa-0af502b10000.xml#m94530ca0-0c1f-1000-b9aa-0af502b10000">
+</PresentationColumn>
+<PresentationColumn mdsid="m9455562d-0c1f-1000-b9aa-0af502b10000" name="R5  Order Discount Rate" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Orders_R5__Order_Discount_Rate)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530c9c-0c1f-1000-b9aa-0af502b10000.xml#m94530ca2-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Help : 
+Mapped to Order date in the fact table.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m94555629-0c1f-1000-b9aa-0af502b10000" name="R0  Order Key" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Orders_R0__Order_Number)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530c9c-0c1f-1000-b9aa-0af502b10000.xml#m94530c9d-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Help : 
+This maps to the order key in the fact table.]]></Description>
+<Alias name="Order"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m9455562e-0c1f-1000-b9aa-0af502b10000" name="R6  Transactional Order Number" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530c9c-0c1f-1000-b9aa-0af502b10000.xml#m94530ca3-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Help : 
+This maps to the order key in the fact table.]]></Description>
+</PresentationColumn>
+<RefHierarchies>
+<RefPresentationHierarchy refId="m945556d2-0c1f-1000-b9aa-0af502b10000-m945556ea-0c1f-1000-b9aa-0af502b10000" presentationHierarchyRef="/oracle/bi/server/base/PresentationHierarchy/945556ea-0c1f-1000-b9aa-0af502b10000.xml#m945556ea-0c1f-1000-b9aa-0af502b10000"/>
+<RefPresentationHierarchy refId="m945556d2-0c1f-1000-b9aa-0af502b10000-m945556eb-0c1f-1000-b9aa-0af502b10000" presentationHierarchyRef="/oracle/bi/server/base/PresentationHierarchy/945556eb-0c1f-1000-b9aa-0af502b10000.xml#m945556eb-0c1f-1000-b9aa-0af502b10000"/>
+</RefHierarchies>
+<RefContentFolders>
+<RefPresentationTable refId="m945556d2-0c1f-1000-b9aa-0af502b10000-m945556d0-0c1f-1000-b9aa-0af502b10000" presentationTableRef="/oracle/bi/server/base/PresentationTable/945556d0-0c1f-1000-b9aa-0af502b10000.xml#m945556d0-0c1f-1000-b9aa-0af502b10000"/>
+<RefPresentationTable refId="m945556d2-0c1f-1000-b9aa-0af502b10000-m945556d3-0c1f-1000-b9aa-0af502b10000" presentationTableRef="/oracle/bi/server/base/PresentationTable/945556d3-0c1f-1000-b9aa-0af502b10000.xml#m945556d3-0c1f-1000-b9aa-0af502b10000"/>
+<RefPresentationTable refId="m945556d2-0c1f-1000-b9aa-0af502b10000-m945556db-0c1f-1000-b9aa-0af502b10000" presentationTableRef="/oracle/bi/server/base/PresentationTable/945556db-0c1f-1000-b9aa-0af502b10000.xml#m945556db-0c1f-1000-b9aa-0af502b10000"/>
+<RefPresentationTable refId="m945556d2-0c1f-1000-b9aa-0af502b10000-m945556df-0c1f-1000-b9aa-0af502b10000" presentationTableRef="/oracle/bi/server/base/PresentationTable/945556df-0c1f-1000-b9aa-0af502b10000.xml#m945556df-0c1f-1000-b9aa-0af502b10000"/>
+</RefContentFolders>
+</PresentationTable>

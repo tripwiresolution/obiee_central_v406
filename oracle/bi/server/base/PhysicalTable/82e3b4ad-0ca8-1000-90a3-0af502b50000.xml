@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m82e3b4ad-0ca8-1000-90a3-0af502b50000" name="INS_CONTRACT_CLAIMS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/82e3b499-0ca8-1000-90a3-0af502b50000.xml#m82e3b499-0ca8-1000-90a3-0af502b50000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[INS_CONTRACT_CLAIMS]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m82e3b4ae-0ca8-1000-90a3-0af502b50000" name="AMOUNT_CLAIMED" dataType="DOUBLE" precision="126" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4af-0ca8-1000-90a3-0af502b50000" name="AMOUNT_PAID" dataType="DOUBLE" precision="126" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4b0-0ca8-1000-90a3-0af502b50000" name="CALENDAR_DATE" dataType="DATETIME" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4b1-0ca8-1000-90a3-0af502b50000" name="CATEGORY_ID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4b2-0ca8-1000-90a3-0af502b50000" name="CHANNELID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4b3-0ca8-1000-90a3-0af502b50000" name="CLAIMID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4b4-0ca8-1000-90a3-0af502b50000" name="CUSTOMERID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4b5-0ca8-1000-90a3-0af502b50000" name="EARNED_PREMIUM" dataType="DOUBLE" precision="126" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4b6-0ca8-1000-90a3-0af502b50000" name="ENTITYID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4b7-0ca8-1000-90a3-0af502b50000" name="POLICY_COVERED_AMOUNT" dataType="DOUBLE" precision="126" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4b8-0ca8-1000-90a3-0af502b50000" name="PRODUCTID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4b9-0ca8-1000-90a3-0af502b50000" name="UNEARNED_PREMIUM" dataType="DOUBLE" precision="126" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4ba-0ca8-1000-90a3-0af502b50000" name="CLAIMED" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4bb-0ca8-1000-90a3-0af502b50000" name="START_DATE" dataType="DATE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4bc-0ca8-1000-90a3-0af502b50000" name="END_DATE" dataType="DATE" specialType="none">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="m82e429fc-0ca8-1000-90a3-0af502b50000" name="CONTRACT_CLAIMS_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3b4a5-0ca8-1000-90a3-0af502b50000.xml#m82e429b6-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e429fc-0ca8-1000-90a3-0af502b50000-m82e3b4b2-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3b4ad-0ca8-1000-90a3-0af502b50000.xml#m82e3b4b2-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82e429fd-0ca8-1000-90a3-0af502b50000" name="CONTRACT_CLAIMS_Foreign Key#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3b4de-0ca8-1000-90a3-0af502b50000.xml#m82e429bd-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e429fd-0ca8-1000-90a3-0af502b50000-m82e3b4b8-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3b4ad-0ca8-1000-90a3-0af502b50000.xml#m82e3b4b8-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82e429fe-0ca8-1000-90a3-0af502b50000" name="CONTRACT_CLAIMS_Foreign Key#2" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3b4a9-0ca8-1000-90a3-0af502b50000.xml#m82e429b7-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e429fe-0ca8-1000-90a3-0af502b50000-m82e3b4b3-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3b4ad-0ca8-1000-90a3-0af502b50000.xml#m82e3b4b3-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82e429ff-0ca8-1000-90a3-0af502b50000" name="CONTRACT_CLAIMS_Foreign Key#3" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3b4ce-0ca8-1000-90a3-0af502b50000.xml#m82e429ba-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e429ff-0ca8-1000-90a3-0af502b50000-m82e3b4b4-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3b4ad-0ca8-1000-90a3-0af502b50000.xml#m82e3b4b4-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82e42a00-0ca8-1000-90a3-0af502b50000" name="CONTRACT_CLAIMS_Foreign Key#4" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3b4e3-0ca8-1000-90a3-0af502b50000.xml#m82e429be-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a00-0ca8-1000-90a3-0af502b50000-m82e3b4b0-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3b4ad-0ca8-1000-90a3-0af502b50000.xml#m82e3b4b0-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82e42a01-0ca8-1000-90a3-0af502b50000" name="CONTRACT_CLAIMS_Foreign Key#5" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3b4bd-0ca8-1000-90a3-0af502b50000.xml#m82e429b8-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a01-0ca8-1000-90a3-0af502b50000-m82e3b4b6-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3b4ad-0ca8-1000-90a3-0af502b50000.xml#m82e3b4b6-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

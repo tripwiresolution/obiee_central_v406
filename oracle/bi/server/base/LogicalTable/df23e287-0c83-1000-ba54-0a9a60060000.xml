@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="mdf23e287-0c83-1000-ba54-0a9a60060000" name="Risk" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/df23e280-0c83-1000-ba54-0a9a60060000.xml#mdf23e280-0c83-1000-ba54-0a9a60060000">
+<LogicalColumn mdsid="mdf23e288-0c83-1000-ba54-0a9a60060000" name="Risk - measure" isWriteable="false">
+<MeasureDefn mdsid="mdf23e2b7-0c83-1000-ba54-0a9a60060000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mdf23e2b8-0c83-1000-ba54-0a9a60060000" name="AggRule_2050:2653581376052392" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-5bf6-ea8600000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y09 -Trading Hierarchy (Essbase)"."Risk"."Risk - measure")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-5bf6-ea8600000000-mdf23e288-0c83-1000-ba54-0a9a60060000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/df23e287-0c83-1000-ba54-0a9a60060000.xml#mdf23e288-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mdf23e2f5-0c83-1000-ba54-0a9a60060000" name="AD_3900:2654191376052392">
+<Expr mdsid="m00000002-01f4-0000-4df1-8a2500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y09 -Trading Market Risk "."Trading".""."Risk"."Risk - measure"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-4df1-8a2500000000-mdf212371-0c83-1000-ba54-0a9a60060000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/df212370-0c83-1000-ba54-0a9a60060000.xml#mdf212371-0c83-1000-ba54-0a9a60060000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="mdf23e287-0c83-1000-ba54-0a9a60060000-mdf23e317-0c83-1000-ba54-0a9a60060000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/df23e317-0c83-1000-ba54-0a9a60060000.xml#mdf23e317-0c83-1000-ba54-0a9a60060000"/>
+</RefTableSources>
+</LogicalTable>

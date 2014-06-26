@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0fb05-0ca8-1000-90a3-0af502b50000" name="Fact - Contract Risks" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd6-0ca8-1000-90a3-0af502b50000.xml#m82f0acd6-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0fb06-0ca8-1000-90a3-0af502b50000" name="Comments" isWriteable="false">
+<AttrDefn mdsid="m82f28264-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757891391789375">
+<Expr mdsid="m00000001-01f4-0000-154c-62d600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_PT"."ADS_BI_PT_RISKS_FACT"."COMMENTS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-154c-62d600000000-m82dde8ea-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde8e8-0ca8-1000-90a3-0af502b50000.xml#m82dde8ea-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fb07-0ca8-1000-90a3-0af502b50000" name="Impact" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/82f0fb05-0ca8-1000-90a3-0af502b50000.xml#m82f0fb0b-0ca8-1000-90a3-0af502b50000">
+<AttrDefn mdsid="m82f28265-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757901391789375">
+<Expr mdsid="m00000002-01f4-0000-feea-15da00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_PT"."ADS_BI_PT_RISKS_FACT"."IMPACT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-feea-15da00000000-m82dde8eb-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde8e8-0ca8-1000-90a3-0af502b50000.xml#m82dde8eb-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fb08-0ca8-1000-90a3-0af502b50000" name="Probability" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/82f0fb05-0ca8-1000-90a3-0af502b50000.xml#m82f0fb0c-0ca8-1000-90a3-0af502b50000">
+<AttrDefn mdsid="m82f28266-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757911391789375">
+<Expr mdsid="m00000003-01f4-0000-f927-389700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_PT"."ADS_BI_PT_RISKS_FACT"."PROBABILITY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-f927-389700000000-m82dde8ec-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde8e8-0ca8-1000-90a3-0af502b50000.xml#m82dde8ec-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fb09-0ca8-1000-90a3-0af502b50000" name="No. Risks" isWriteable="false">
+<MeasureDefn mdsid="m82f14976-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1974d-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736511391789375" isDefault="true">
+<Expr mdsid="m00000004-01f4-0000-e003-26f200000000" name="Expr">
+<ExprText><![CDATA[ COUNT("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT("Y05 - Demo Procurement Contracts"."Fact - Contract Risks"."No. Risks")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-e003-26f200000000-m82f0fb09-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fb05-0ca8-1000-90a3-0af502b50000.xml#m82f0fb09-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f28267-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757921391789375">
+<Expr mdsid="m00000005-01f4-0000-de5a-74e400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_PT"."ADS_BI_PT_RISKS_FACT"."RISK_EVENT_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-de5a-74e400000000-m82dde8ed-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde8e8-0ca8-1000-90a3-0af502b50000.xml#m82dde8ed-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fb0a-0ca8-1000-90a3-0af502b50000" name="Risk Occurred" isWriteable="false">
+<AttrDefn mdsid="m82f28268-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757931391789375">
+<Expr mdsid="m00000006-01f4-0000-00d2-9a5300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_PT"."ADS_BI_PT_RISKS_FACT"."RISK_OCCURRED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-00d2-9a5300000000-m82dde8ee-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde8e8-0ca8-1000-90a3-0af502b50000.xml#m82dde8ee-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fb0b-0ca8-1000-90a3-0af502b50000" name="Impact Order" isWriteable="false">
+<AttrDefn mdsid="m82f28269-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757941391789375">
+<Expr mdsid="m00000007-01f4-0000-21af-bd2100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_PT"."ADS_BI_PT_RISKS_FACT"."IMPACT_ORDER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-21af-bd2100000000-m82dde8ef-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde8e8-0ca8-1000-90a3-0af502b50000.xml#m82dde8ef-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fb0c-0ca8-1000-90a3-0af502b50000" name="Probability Order" isWriteable="false">
+<AttrDefn mdsid="m82f2826a-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757951391789375">
+<Expr mdsid="m00000008-01f4-0000-e63f-634800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_PT"."ADS_BI_PT_RISKS_FACT"."PROBABILITY_ORDER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-e63f-634800000000-m82dde8f0-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde8e8-0ca8-1000-90a3-0af502b50000.xml#m82dde8f0-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0fb05-0ca8-1000-90a3-0af502b50000-m82f31ddb-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f31ddb-0ca8-1000-90a3-0af502b50000.xml#m82f31ddb-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

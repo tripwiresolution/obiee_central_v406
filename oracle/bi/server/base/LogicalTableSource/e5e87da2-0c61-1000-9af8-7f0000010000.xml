@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="me5e87da2-0c61-1000-9af8-7f0000010000" name="F81 Facts Forecast Model from Db Function" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/e5e87da0-0c61-1000-9af8-7f0000010000.xml#me5e87da0-0c61-1000-9af8-7f0000010000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-ac3a-582100000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F81 Database Functions Facts"."170  Projected Revenue Estimation"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-ac3a-582100000000-me5e87da6-0c61-1000-9af8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/e5e87da0-0c61-1000-9af8-7f0000010000.xml#me5e87da6-0c61-1000-9af8-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-9c76-e34500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F81 Db Facts Forecast Model from Db Function"."PROJECTED_REV"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-9c76-e34500000000-me5d0d6f4-0c61-1000-9af8-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/e5ce8d00-0c61-1000-9af8-7f0000010000.xml#me5d0d6f4-0c61-1000-9af8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/e5ce8d00-0c61-1000-9af8-7f0000010000.xml#me5ce8d00-0c61-1000-9af8-7f0000010000">
+</Link>
+<WhereClause mdsid="m00000003-01f4-0000-738e-3b8100000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000004-01f4-0000-a0c5-28cb00000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m00000005-01f4-0000-58b1-700700000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

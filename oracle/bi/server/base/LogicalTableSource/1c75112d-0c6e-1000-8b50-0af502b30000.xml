@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m1c75112d-0c6e-1000-8b50-0af502b30000" name="Indc Ind Neighbourhoods" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/1c75116c-0c6e-1000-8b50-0af502b30000.xml#m1c75116c-0c6e-1000-8b50-0af502b30000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-a5d0-d02f00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["07 - Spatial Samples"."India Areas"."Neighbourhood Name 1"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-a5d0-d02f00000000-m1c75112e-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75116c-0c6e-1000-8b50-0af502b30000.xml#m1c75112e-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-3543-3c6900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_NEIGHBOURHOODS"."NAME1"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-3543-3c6900000000-mfa386b26-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b12-0c6d-1000-a280-0af502b20000.xml#mfa386b26-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-e0a5-02e400000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["07 - Spatial Samples"."India Areas"."Neighbourhood Name 2"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-e0a5-02e400000000-m1c75112f-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75116c-0c6e-1000-8b50-0af502b30000.xml#m1c75112f-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-bbdf-aae100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_NEIGHBOURHOODS"."NAME2"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-bbdf-aae100000000-mfa386b27-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b12-0c6d-1000-a280-0af502b20000.xml#mfa386b27-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-9305-d96100000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["07 - Spatial Samples"."India Areas"."Neighbourhood Code"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-9305-d96100000000-m1c751135-0c6e-1000-8b50-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1c75116c-0c6e-1000-8b50-0af502b30000.xml#m1c751135-0c6e-1000-8b50-0af502b30000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-c9ac-608000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."INDC_IND_NEIGHBOURHOODS"."WARDCODE_G"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-c9ac-608000000000-mfa386b2d-0c6d-1000-a280-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fa386b12-0c6d-1000-a280-0af502b20000.xml#mfa386b2d-0c6d-1000-a280-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/fa386b12-0c6d-1000-a280-0af502b20000.xml#mfa386b12-0c6d-1000-a280-0af502b20000">
+</Link>
+<WhereClause mdsid="m00000007-01f4-0000-8bfd-1f6300000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000008-01f4-0000-8918-bafb00000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m00000009-01f4-0000-cf62-96fd00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

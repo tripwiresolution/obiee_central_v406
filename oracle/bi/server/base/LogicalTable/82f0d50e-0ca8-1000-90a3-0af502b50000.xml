@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0d50e-0ca8-1000-90a3-0af502b50000" name="Dim - Purchase Order" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd4-0ca8-1000-90a3-0af502b50000.xml#m82f0acd4-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0d50f-0ca8-1000-90a3-0af502b50000" name="PO Distribution ID" isWriteable="false">
+<AttrDefn mdsid="m82f2819e-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755911391789375">
+<Expr mdsid="m00000001-01f4-0000-8290-530900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_DISTRIBUTIONS"."PO_DISTRIBUTION_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-8290-530900000000-m82ddc171-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc16f-0ca8-1000-90a3-0af502b50000.xml#m82ddc171-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d510-0ca8-1000-90a3-0af502b50000" name="PO Line Total Quantity Invoiced" isWriteable="false">
+<AttrDefn mdsid="m82f2819f-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755921391789375">
+<Expr mdsid="m00000002-01f4-0000-ac6a-54a100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_DISTRIBUTIONS"."QUANTITY_BILLED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-ac6a-54a100000000-m82ddc173-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc16f-0ca8-1000-90a3-0af502b50000.xml#m82ddc173-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d511-0ca8-1000-90a3-0af502b50000" name="PO Line Total Quantity Delivered" isWriteable="false">
+<AttrDefn mdsid="m82f281a0-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755931391789375">
+<Expr mdsid="m00000003-01f4-0000-c807-035600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_DISTRIBUTIONS"."QUANTITY_DELIVERED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-c807-035600000000-m82ddc174-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc16f-0ca8-1000-90a3-0af502b50000.xml#m82ddc174-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d512-0ca8-1000-90a3-0af502b50000" name="PO Line Total Quantity Ordered" isWriteable="false">
+<AttrDefn mdsid="m82f281a1-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755941391789375">
+<Expr mdsid="m00000004-01f4-0000-6780-bd8200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_DISTRIBUTIONS"."QUANTITY_ORDERED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-6780-bd8200000000-m82ddc175-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc16f-0ca8-1000-90a3-0af502b50000.xml#m82ddc175-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d513-0ca8-1000-90a3-0af502b50000" name="Requestor ID" isWriteable="false">
+<AttrDefn mdsid="m82f281a2-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755951391789375">
+<Expr mdsid="m00000005-01f4-0000-a352-7cff00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_DISTRIBUTIONS"."REQUESTOR_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-a352-7cff00000000-m82ddc176-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc16f-0ca8-1000-90a3-0af502b50000.xml#m82ddc176-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d514-0ca8-1000-90a3-0af502b50000" name="Name of Requestor" isWriteable="false">
+<AttrDefn mdsid="m82f281a3-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755961391789375">
+<Expr mdsid="m00000006-01f4-0000-7d78-c64100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_DISTRIBUTIONS"."REQUESTOR_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-7d78-c64100000000-m82ddc177-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc16f-0ca8-1000-90a3-0af502b50000.xml#m82ddc177-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d515-0ca8-1000-90a3-0af502b50000" name="PO Line ID" isWriteable="false">
+<AttrDefn mdsid="m82f281a4-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755971391789375">
+<Expr mdsid="m00000007-01f4-0000-b72f-afb500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_LINES"."PO_LINE_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-b72f-afb500000000-m82ddc181-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc17f-0ca8-1000-90a3-0af502b50000.xml#m82ddc181-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d516-0ca8-1000-90a3-0af502b50000" name="PO Line Number" isWriteable="false">
+<AttrDefn mdsid="m82f281a5-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755981391789375">
+<Expr mdsid="m00000008-01f4-0000-70e1-c97700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_LINES"."PO_LINE_NUM"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-70e1-c97700000000-m82ddc182-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc17f-0ca8-1000-90a3-0af502b50000.xml#m82ddc182-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d517-0ca8-1000-90a3-0af502b50000" name="PO Unit Price" isWriteable="false">
+<AttrDefn mdsid="m82f281a6-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755991391789375">
+<Expr mdsid="m00000009-01f4-0000-1df3-f55600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_LINES"."PO_UNIT_PRICE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-1df3-f55600000000-m82ddc184-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc17f-0ca8-1000-90a3-0af502b50000.xml#m82ddc184-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d518-0ca8-1000-90a3-0af502b50000" name="Buyer ID" isWriteable="false">
+<AttrDefn mdsid="m82f281a7-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756001391789375">
+<Expr mdsid="m0000000a-01f4-0000-9335-204100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_HEADERS"."BUYER_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-9335-204100000000-m82ddc17a-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc179-0ca8-1000-90a3-0af502b50000.xml#m82ddc17a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d519-0ca8-1000-90a3-0af502b50000" name="Buyer Name" isWriteable="false">
+<AttrDefn mdsid="m82f281a8-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756011391789375">
+<Expr mdsid="m0000000b-01f4-0000-f332-f34100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_HEADERS"."BUYER_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-f332-f34100000000-m82ddc17b-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc179-0ca8-1000-90a3-0af502b50000.xml#m82ddc17b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d51a-0ca8-1000-90a3-0af502b50000" name="PO Number" isWriteable="false">
+<AttrDefn mdsid="m82f281a9-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756021391789375">
+<Expr mdsid="m0000000c-01f4-0000-361b-a06200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_HEADERS"."PO_NUM"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-361b-a06200000000-m82ddc17d-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc179-0ca8-1000-90a3-0af502b50000.xml#m82ddc17d-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d51b-0ca8-1000-90a3-0af502b50000" name="PO Header ID" isWriteable="false">
+<AttrDefn mdsid="m82f281aa-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756031391789375">
+<Expr mdsid="m0000000d-01f4-0000-872e-4b4800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_HEADERS"."PO_HEADER_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-872e-4b4800000000-m82ddc17e-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc179-0ca8-1000-90a3-0af502b50000.xml#m82ddc17e-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d51c-0ca8-1000-90a3-0af502b50000" name="PO Distribution Number" isWriteable="false">
+<AttrDefn mdsid="m82f281ab-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756041391789375">
+<Expr mdsid="m0000000e-01f4-0000-d6f1-4fd700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_DISTRIBUTIONS"."PO_DISTRIBUTION_NUM"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-d6f1-4fd700000000-m82ddc178-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc16f-0ca8-1000-90a3-0af502b50000.xml#m82ddc178-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m82f233b9-0ca8-1000-90a3-0af502b50000" name="MOJ_PO_DISTRIBUTIONS_Key#1" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f233b9-0ca8-1000-90a3-0af502b50000-m82f0d50f-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d50e-0ca8-1000-90a3-0af502b50000.xml#m82f0d50f-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0d50e-0ca8-1000-90a3-0af502b50000-m82f2f6df-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f2f6df-0ca8-1000-90a3-0af502b50000.xml#m82f2f6df-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

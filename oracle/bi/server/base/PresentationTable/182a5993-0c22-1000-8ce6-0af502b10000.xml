@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationTable mdsid="m182a5993-0c22-1000-8ce6-0af502b10000" name="Time Span Variations" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" hasDispName="false" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationCatalog/80cab7ef-0fa4-0000-714b-e31d00000000.xml#m80cab7ef-0fa4-0000-714b-e31d00000000">
+<Description><![CDATA[This folder contains various Variation metrics on Revenue like Variations to Period Ago and Time span variations.]]></Description>
+<Alias name="Variations"/>
+<PresentationColumn mdsid="m182a5990-0c22-1000-8ce6-0af502b10000" name="954  FTE Headcount  (Value Var)" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab60f-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- For any time interval specified in the query row, this aggregation returns the difference between value at beginning of the interval and value at end of the interval. The values at beginning and end date that make up the variation can be displayed by adding aggregation objects Fst oT and Last oT. Info about beginning date and end date for each row are available with time facts objects : First Time Day Dt and Last Time Day Dt. For example, if a query is filtered for a quarter, this will show the value variation between first and last day of the quarter. If the query objects are at week level, This aggregation will returns for each row (week level) the value of the last day of each week minus value of the first day in that week.]]></Description>
+<Alias name="9-54  FTE Headcount  (Value Var)"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m182a5991-0c22-1000-8ce6-0af502b10000" name="955  FTE Headcount  (Pct Var)" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab610-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- This aggregation converts the Value Var aggregation metric into a percentage variation to first value (Value Var / initial value *100)]]></Description>
+<Alias name="9-55  FTE Headcount  (Pct Var)"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m182a5992-0c22-1000-8ce6-0af502b10000" name="956  FTE Headcount  (Cmpd Yrly Gwth)" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cadd0e-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- For any time interval specified in the query row, this aggregation returns the difference between value at beginning of the interval and value at end of the interval. The values at beginning and end date that make up the variation can be displayed by adding aggregation objects Fst oT and Last oT. Info about beginning date and end date for each row are available with time facts objects : First Time Day Dt and Last Time Day Dt. For example, if a query is filtered for a quarter, this will show the value variation between first and last day of the quarter. If the query objects are at week level, This aggregation will returns for each row (week level) the value of the last day of each week minus value of the first day in that week.]]></Description>
+<Alias name="9-56  FTE Headcount  (Cmpd Yrly Gwth)"/>
+</PresentationColumn>
+</PresentationTable>

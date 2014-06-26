@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="mee3feb23-0caa-1000-995d-0af502b50000" name="F10 Billed Rev" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/ee3feb20-0caa-1000-995d-0af502b50000.xml#mee3feb20-0caa-1000-995d-0af502b50000">
+<LogicalColumn mdsid="mee3feb24-0caa-1000-995d-0af502b50000" name="Order_Key" isWriteable="false">
+<AttrDefn mdsid="mee3feb2d-0caa-1000-995d-0af502b50000" name="AD_3900:2781041392828569">
+<Expr mdsid="m00000001-01f4-0000-dd62-db9000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F10 Billed Rev"."Order_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-dd62-db9000000000-m80cb6a0d-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb683a-0bb9-0000-714b-e31d00000000.xml#m80cb6a0d-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="mee3feb2b-0caa-1000-995d-0af502b50000" name="Order_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="mee3feb2b-0caa-1000-995d-0af502b50000-mee3feb24-0caa-1000-995d-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/ee3feb23-0caa-1000-995d-0af502b50000.xml#mee3feb24-0caa-1000-995d-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="mee3feb23-0caa-1000-995d-0af502b50000-mee3feb2f-0caa-1000-995d-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/ee3feb2f-0caa-1000-995d-0af502b50000.xml#mee3feb2f-0caa-1000-995d-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

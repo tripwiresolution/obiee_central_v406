@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cc4877-07f3-0000-714b-e31d00000000" name="M1 Segment Cache Customers" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="179" y="50" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cab573-07d0-0000-714b-e31d00000000.xml#m80cab573-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cc4879-07d6-0000-714b-e31d00000000" name="X01 Cache GUID" isWriteable="false">
+<AttrDefn mdsid="m80cc487d-0f3c-0000-714b-e31d00000000" name="AD_3900:878011286193391">
+<Expr mdsid="m00000001-01f4-0000-1ed6-eb3600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."M01 Mktg Cache Customers"."GUID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-1ed6-eb3600000000-m80cc47ac-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc47a2-0bb9-0000-714b-e31d00000000.xml#m80cc47ac-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc487a-07d6-0000-714b-e31d00000000" name="X02 Cache Qualified ID" isWriteable="false">
+<AttrDefn mdsid="m80cc487e-0f3c-0000-714b-e31d00000000" name="AD_3900:878021286193391">
+<Expr mdsid="m00000002-01f4-0000-715c-1a9b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."M01 Mktg Cache Customers"."QUALIFIED_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-715c-1a9b00000000-m80cc47ad-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc47a2-0bb9-0000-714b-e31d00000000.xml#m80cc47ad-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cc4877-07f3-0000-714b-e31d00000000-m80cc487f-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cc487f-07f5-0000-714b-e31d00000000.xml#m80cc487f-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

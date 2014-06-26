@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m575b69fa-0c2d-1000-87a7-0af06a760000" name="01 Time Day Attributes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/575b68b0-0c2d-1000-87a7-0af06a760000.xml#m575b68b0-0c2d-1000-87a7-0af06a760000">
+<LogicalColumn mdsid="m575b69fb-0c2d-1000-87a7-0af06a760000" name="Qtr of Year" isWriteable="false">
+<AttrDefn mdsid="m575b6ce5-0c2d-1000-87a7-0af06a760000" name="AD_3900:2373721338887867">
+<Expr mdsid="m00000001-01f4-0000-833f-505000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."40 TIME DAY"."Cal_Qtr"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-833f-505000000000-m5758662b-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586627-0c2d-1000-87a7-0af06a760000.xml#m5758662b-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b69fc-0c2d-1000-87a7-0af06a760000" name="Day of Month" isWriteable="false">
+<AttrDefn mdsid="m575b6ce6-0c2d-1000-87a7-0af06a760000" name="AD_3900:2373731338887867">
+<Expr mdsid="m00000002-01f4-0000-cf01-194e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES_AGG"."SA_01_Day_00039D11"."Day_of_Mon00039C53"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-cf01-194e00000000-m677c4b42-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/677c4b40-0c61-1000-99f2-7f0000010000.xml#m677c4b42-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b69fd-0c2d-1000-87a7-0af06a760000" name="Day of Year !" isWriteable="false">
+<AttrDefn mdsid="m575b6ce7-0c2d-1000-87a7-0af06a760000" name="AD_3900:2373741338887867">
+<Expr mdsid="m00000003-01f4-0000-022d-633300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."40 TIME DAY"."Day_Of_Year"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-022d-633300000000-m57586640-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586627-0c2d-1000-87a7-0af06a760000.xml#m57586640-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b69fe-0c2d-1000-87a7-0af06a760000" name="Day Key" isWriteable="false">
+<AttrDefn mdsid="m575b6ce8-0c2d-1000-87a7-0af06a760000" name="AD_3900:2373751338887867">
+<Expr mdsid="m00000004-01f4-0000-48f2-536500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."40 TIME DAY"."Day_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-48f2-536500000000-m57586646-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586627-0c2d-1000-87a7-0af06a760000.xml#m57586646-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m575b6bc2-0c2d-1000-87a7-0af06a760000" name="Primary" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6bc2-0c2d-1000-87a7-0af06a760000-m575b69fe-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69fa-0c2d-1000-87a7-0af06a760000.xml#m575b69fe-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m575b69fa-0c2d-1000-87a7-0af06a760000-m575b6d7a-0c2d-1000-87a7-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/575b6d7a-0c2d-1000-87a7-0af06a760000.xml#m575b6d7a-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalTableSource refId="m575b69fa-0c2d-1000-87a7-0af06a760000-m575b6d7b-0c2d-1000-87a7-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/575b6d7b-0c2d-1000-87a7-0af06a760000.xml#m575b6d7b-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalTableSource refId="m575b69fa-0c2d-1000-87a7-0af06a760000-m678b1850-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/678b1850-0c61-1000-99f2-7f0000010000.xml#m678b1850-0c61-1000-99f2-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

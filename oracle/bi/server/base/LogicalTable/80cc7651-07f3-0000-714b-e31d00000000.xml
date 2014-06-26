@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cc7651-07f3-0000-714b-e31d00000000" name="F92 Report Comments" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="1028" y="780" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cab573-07d0-0000-714b-e31d00000000.xml#m80cab573-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cc7654-07d6-0000-714b-e31d00000000" name="Id" isWriteable="false">
+<AttrDefn mdsid="m80cc7659-0f3c-0000-714b-e31d00000000" name="AD_3900:978051290688580">
+<Expr mdsid="m00000001-01f4-0000-7a94-fddb00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F92 Report Comments"."COMMENT_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-7a94-fddb00000000-m80cc7618-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc7616-0bb9-0000-714b-e31d00000000.xml#m80cc7618-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc7655-07d6-0000-714b-e31d00000000" name="Commentary" isWriteable="false">
+<MeasureDefn mdsid="m80cdc1e4-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc1e5-0802-0000-714b-e31d00000000" name="AggRule_2050:1809891294830181" isDefault="true">
+<Expr mdsid="m00000002-01f4-0000-e09a-2d2800000000" name="Expr">
+<ExprText><![CDATA[ MAX("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ MAX("01 - Sample App"."F92 Report Comments"."Commentary")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-e09a-2d2800000000-m80cc7655-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cc7651-07f3-0000-714b-e31d00000000.xml#m80cc7655-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cc765a-0f3c-0000-714b-e31d00000000" name="AD_3900:978061290688580">
+<Expr mdsid="m00000003-01f4-0000-fe65-fac900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F92 Report Comments"."COMMENTARY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-fe65-fac900000000-m80cc7617-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc7616-0bb9-0000-714b-e31d00000000.xml#m80cc7617-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc7656-07d6-0000-714b-e31d00000000" name="Day key" isWriteable="false">
+<AttrDefn mdsid="m80cc765b-0f3c-0000-714b-e31d00000000" name="AD_3900:978071290688580">
+<Expr mdsid="m00000004-01f4-0000-15c9-941400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F92 Report Comments"."DAY_KEY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-15c9-941400000000-m80cc7619-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc7616-0bb9-0000-714b-e31d00000000.xml#m80cc7619-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc7657-07d6-0000-714b-e31d00000000" name="Empl key" isWriteable="false">
+<AttrDefn mdsid="m80cc765c-0f3c-0000-714b-e31d00000000" name="AD_3900:978081290688580">
+<Expr mdsid="m00000005-01f4-0000-e8db-ba1e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F92 Report Comments"."EMPL_KEY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-e8db-ba1e00000000-m80cc761b-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc7616-0bb9-0000-714b-e31d00000000.xml#m80cc761b-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc7658-07d6-0000-714b-e31d00000000" name="Lob key" isWriteable="false">
+<AttrDefn mdsid="m80cc765d-0f3c-0000-714b-e31d00000000" name="AD_3900:978091290688580">
+<Expr mdsid="m00000006-01f4-0000-c75b-12a600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F92 Report Comments"."LOB_KEY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-c75b-12a600000000-m80cc761a-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc7616-0bb9-0000-714b-e31d00000000.xml#m80cc761a-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc7662-07d6-0000-714b-e31d00000000" name="# of Cumulated Comments" isWriteable="false">
+<MeasureDefn mdsid="m80cc7666-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc1d2-0802-0000-714b-e31d00000000" name="AggRule_2050:1809701294334669" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-0d71-bea100000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "01 - Sample App"."F92 Report Comments"."# of Cumulated Comments")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-0d71-bea100000000-m80cc7662-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cc7651-07f3-0000-714b-e31d00000000.xml#m80cc7662-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cc7663-0f3c-0000-714b-e31d00000000" name="AD_3900:978191290688655">
+<Expr mdsid="m00000008-01f4-0000-7b6f-067000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F92 Report Comments"."COMMENT_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-7b6f-067000000000-m80cc7618-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc7616-0bb9-0000-714b-e31d00000000.xml#m80cc7618-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc1c5-07d6-0000-714b-e31d00000000" name="# of Comments" isWriteable="false">
+<MeasureDefn mdsid="m80cdc1ce-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc1d3-0802-0000-714b-e31d00000000" name="AggRule_2050:1809711294334669" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-b3aa-f18000000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "01 - Sample App"."F92 Report Comments"."# of Comments")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-b3aa-f18000000000-m80cdc1c5-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cc7651-07f3-0000-714b-e31d00000000.xml#m80cdc1c5-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc1c8-0f3c-0000-714b-e31d00000000" name="AD_3900:1809601294332331">
+<Expr mdsid="m0000000a-01f4-0000-0ed6-98eb00000000" name="Expr">
+<ExprText><![CDATA[case when 
+ "%1" =0 
+then 
+"%2"
+
+when 
+ "%1" is null
+then 
+"%2" end]]></ExprText>
+<ExprTextDesc><![CDATA[case when 
+ "01 - Sample App Data (ORCL)".""."BISAMPLE"."D51 Closure Table Sales Rep Parent Child"."Distance" =0 
+then 
+"01 - Sample App Data (ORCL)".""."BISAMPLE"."F92 Report Comments"."COMMENT_ID"
+
+when 
+ "01 - Sample App Data (ORCL)".""."BISAMPLE"."D51 Closure Table Sales Rep Parent Child"."Distance" is null
+then 
+"01 - Sample App Data (ORCL)".""."BISAMPLE"."F92 Report Comments"."COMMENT_ID" end]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-0ed6-98eb00000000-m80cb69b4-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb682d-0bb9-0000-714b-e31d00000000.xml#m80cb69b4-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m0000000a-01f4-0000-0ed6-98eb00000000-m80cc7618-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc7616-0bb9-0000-714b-e31d00000000.xml#m80cc7618-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdc1d8-07d6-0000-714b-e31d00000000" name="Comment id" isWriteable="false">
+<MeasureDefn mdsid="m80cdc1d9-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdc1e3-0802-0000-714b-e31d00000000" name="AggRule_2050:1809871294758338" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-3502-dac700000000" name="Expr">
+<ExprText><![CDATA[ MAX("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ MAX("01 - Sample App"."F92 Report Comments"."Comment id")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-3502-dac700000000-m80cdc1d8-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cc7651-07f3-0000-714b-e31d00000000.xml#m80cdc1d8-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdc1db-0f3c-0000-714b-e31d00000000" name="AD_3900:1809791294758111">
+<Expr mdsid="m0000000c-01f4-0000-0b39-937b00000000" name="Expr">
+<ExprText><![CDATA[case when 
+ "%1" =0 
+then 
+"%2"
+
+when 
+ "%1" is null
+then 
+"%2" end]]></ExprText>
+<ExprTextDesc><![CDATA[case when 
+ "01 - Sample App Data (ORCL)".""."BISAMPLE"."D51 Closure Table Sales Rep Parent Child"."Distance" =0 
+then 
+"01 - Sample App Data (ORCL)".""."BISAMPLE"."F92 Report Comments"."COMMENT_ID"
+
+when 
+ "01 - Sample App Data (ORCL)".""."BISAMPLE"."D51 Closure Table Sales Rep Parent Child"."Distance" is null
+then 
+"01 - Sample App Data (ORCL)".""."BISAMPLE"."F92 Report Comments"."COMMENT_ID" end]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-0b39-937b00000000-m80cb69b4-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb682d-0bb9-0000-714b-e31d00000000.xml#m80cb69b4-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m0000000c-01f4-0000-0b39-937b00000000-m80cc7618-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc7616-0bb9-0000-714b-e31d00000000.xml#m80cc7618-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cc7651-07f3-0000-714b-e31d00000000-m80cc7653-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cc7653-07f5-0000-714b-e31d00000000.xml#m80cc7653-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

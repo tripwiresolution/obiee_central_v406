@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cdcb72-0bb9-0000-714b-e31d00000000" name="D85 Cust LTV Nodes (PC Hierarchy)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cdc38e-0bb9-0000-714b-e31d00000000.xml#m80cdc38e-0bb9-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[ODM_LTV_BIN_RULES]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cdcb73-0bbb-0000-714b-e31d00000000" name="FULL_RULE" dataType="VARCHAR" precision="4000" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cdc38e-0bb9-0000-714b-e31d00000000.xml#m80cdc390-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdcb74-0bbb-0000-714b-e31d00000000" name="IS_LEAF" dataType="DOUBLE" precision="15" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cdc38e-0bb9-0000-714b-e31d00000000.xml#m80cdc391-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdcb75-0bbb-0000-714b-e31d00000000" name="LOCAL_RULE" dataType="VARCHAR" precision="4000" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cdc38e-0bb9-0000-714b-e31d00000000.xml#m80cdc392-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdcb76-0bbb-0000-714b-e31d00000000" name="LOCAL_SURROGATE" dataType="VARCHAR" precision="4000" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cdc38e-0bb9-0000-714b-e31d00000000.xml#m80cdc393-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdcb77-0bbb-0000-714b-e31d00000000" name="NODE" dataType="DOUBLE" precision="15" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cdc38e-0bb9-0000-714b-e31d00000000.xml#m80cdc394-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdcb78-0bbb-0000-714b-e31d00000000" name="PARENT_NODE" dataType="DOUBLE" precision="15" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cdc38e-0bb9-0000-714b-e31d00000000.xml#m80cdc395-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdcb79-0bbb-0000-714b-e31d00000000" name="PREDICTION" dataType="VARCHAR" precision="15" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cdc38e-0bb9-0000-714b-e31d00000000.xml#m80cdc396-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdcb7a-0bbb-0000-714b-e31d00000000" name="RECORD_COUNT" dataType="DOUBLE" precision="15" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cdc38e-0bb9-0000-714b-e31d00000000.xml#m80cdc397-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cdcb7b-0bc0-0000-714b-e31d00000000" name="D64 Cust Tree Node (Orcl Data Mining)_Key">
+<RefColumns>
+<RefColumn refId="m80cdcb7b-0bc0-0000-714b-e31d00000000-m80cdcb77-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cdcb72-0bb9-0000-714b-e31d00000000.xml#m80cdcb77-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

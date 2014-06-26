@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m6989a770-0c61-1000-99f2-7f0000010000" name="FACT_AGG_ORMK_05Y" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" cacheExpiry="86400" isSysGen="true" maxConn="0" containerRef="/oracle/bi/server/base/Schema/5758346a-0c2d-1000-87a7-0af06a760000.xml#m5758346a-0c2d-1000-87a7-0af06a760000" aggrConnPoolRef="/oracle/bi/server/base/ConnectionPool/57583464-0c2d-1000-87a7-0af06a760000.xml#m57583464-0c2d-1000-87a7-0af06a760000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[FACT_AGG_ORMK_05Y]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m6989a771-0c61-1000-99f2-7f0000010000" name="Carrier_Co00039BAA" dataType="VARCHAR" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a772-0c61-1000-99f2-7f0000010000" name="Freight_T00039BE0" dataType="DOUBLE" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a773-0c61-1000-99f2-7f0000010000" name="Mail_Tons00039BE1" dataType="DOUBLE" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a774-0c61-1000-99f2-7f0000010000" name="Passengers00039BE2" dataType="DOUBLE" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a775-0c61-1000-99f2-7f0000010000" name="Payload_T00039BE3" dataType="DOUBLE" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a776-0c61-1000-99f2-7f0000010000" name="Z_of_Seats00039BE5" dataType="DOUBLE" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a777-0c61-1000-99f2-7f0000010000" name="Freight_T00039BEF" dataType="DOUBLE" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a778-0c61-1000-99f2-7f0000010000" name="Passengers00039BF0" dataType="DOUBLE" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a779-0c61-1000-99f2-7f0000010000" name="Avg_PAX_pe00039BF3" dataType="DOUBLE" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a77a-0c61-1000-99f2-7f0000010000" name="CODE00039BF9" dataType="VARCHAR" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a77b-0c61-1000-99f2-7f0000010000" name="CODE00039BFC" dataType="VARCHAR" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a77c-0c61-1000-99f2-7f0000010000" name="Dep_Year00039C0A" dataType="VARCHAR" precision="4" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a77d-0c61-1000-99f2-7f0000010000" name="Route00039C28" dataType="VARCHAR" precision="8" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a77e-0c61-1000-99f2-7f0000010000" name="Orig_Airpo00039C3D" dataType="VARCHAR" precision="250" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a77f-0c61-1000-99f2-7f0000010000" name="Pax_per_Fl00039C5E" dataType="INT" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="m6989a780-0c61-1000-99f2-7f0000010000" name="FK_SA__0003EA07_0003E4F0" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/670a9db0-0c61-1000-99f2-7f0000010000.xml#m670a9db1-0c61-1000-99f2-7f0000010000">
+<RefColumns>
+<RefColumn refId="m6989a780-0c61-1000-99f2-7f0000010000-m6989a771-0c61-1000-99f2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/6989a770-0c61-1000-99f2-7f0000010000.xml#m6989a771-0c61-1000-99f2-7f0000010000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m6989a781-0c61-1000-99f2-7f0000010000" name="FK_SA__0003EA07_0003E9C7" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/69867320-0c61-1000-99f2-7f0000010000.xml#m69867321-0c61-1000-99f2-7f0000010000">
+<RefColumns>
+<RefColumn refId="m6989a781-0c61-1000-99f2-7f0000010000-m6989a77a-0c61-1000-99f2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/6989a770-0c61-1000-99f2-7f0000010000.xml#m6989a77a-0c61-1000-99f2-7f0000010000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m6989a782-0c61-1000-99f2-7f0000010000" name="FK_SA__0003EA07_0003E9A3" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/69700513-0c61-1000-99f2-7f0000010000.xml#m69700514-0c61-1000-99f2-7f0000010000">
+<RefColumns>
+<RefColumn refId="m6989a782-0c61-1000-99f2-7f0000010000-m6989a77b-0c61-1000-99f2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/6989a770-0c61-1000-99f2-7f0000010000.xml#m6989a77b-0c61-1000-99f2-7f0000010000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m6989a783-0c61-1000-99f2-7f0000010000" name="FK_SA__0003EA07_0003E4BF" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/66f233d2-0c61-1000-99f2-7f0000010000.xml#m66f233d3-0c61-1000-99f2-7f0000010000">
+<RefColumns>
+<RefColumn refId="m6989a783-0c61-1000-99f2-7f0000010000-m6989a77c-0c61-1000-99f2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/6989a770-0c61-1000-99f2-7f0000010000.xml#m6989a77c-0c61-1000-99f2-7f0000010000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m6989a784-0c61-1000-99f2-7f0000010000" name="FK_SA__0003EA07_0003E574" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/672aa8ed-0c61-1000-99f2-7f0000010000.xml#m672aa8ee-0c61-1000-99f2-7f0000010000">
+<RefColumns>
+<RefColumn refId="m6989a784-0c61-1000-99f2-7f0000010000-m6989a77d-0c61-1000-99f2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/6989a770-0c61-1000-99f2-7f0000010000.xml#m6989a77d-0c61-1000-99f2-7f0000010000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m6989a785-0c61-1000-99f2-7f0000010000" name="FK_SA__0003EA07_0003E557" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/672aa8d0-0c61-1000-99f2-7f0000010000.xml#m672aa8d1-0c61-1000-99f2-7f0000010000">
+<RefColumns>
+<RefColumn refId="m6989a785-0c61-1000-99f2-7f0000010000-m6989a77e-0c61-1000-99f2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/6989a770-0c61-1000-99f2-7f0000010000.xml#m6989a77e-0c61-1000-99f2-7f0000010000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m6989a786-0c61-1000-99f2-7f0000010000" name="FK_SA__0003EA07_0003E9AA" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/6970051a-0c61-1000-99f2-7f0000010000.xml#m6970051b-0c61-1000-99f2-7f0000010000">
+<RefColumns>
+<RefColumn refId="m6989a786-0c61-1000-99f2-7f0000010000-m6989a77f-0c61-1000-99f2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/6989a770-0c61-1000-99f2-7f0000010000.xml#m6989a77f-0c61-1000-99f2-7f0000010000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

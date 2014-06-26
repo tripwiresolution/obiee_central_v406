@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m82dde899-0ca8-1000-90a3-0af502b50000" name="Alias - ADS_BI_PT_DATE_DIM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" pollFreq="0" maxConn="0" containerRef="/oracle/bi/server/base/Schema/82ddc126-0ca8-1000-90a3-0af502b50000.xml#m82ddc126-0ca8-1000-90a3-0af502b50000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/82dde8b1-0ca8-1000-90a3-0af502b50000.xml#m82dde8b1-0ca8-1000-90a3-0af502b50000">
+<Description><![CDATA[Old name Deliverable_Due_Date_DIM (W_DATE_DIM))]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[ADS_BI_PT_DATE_DIM]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m82dde89a-0ca8-1000-90a3-0af502b50000" name="CALENDAR_DATE" dataType="DATE" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/82dde8b1-0ca8-1000-90a3-0af502b50000.xml#m82dde8b2-0ca8-1000-90a3-0af502b50000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde89b-0ca8-1000-90a3-0af502b50000" name="MONTH_DESC" dataType="VARCHAR" precision="25" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/82dde8b1-0ca8-1000-90a3-0af502b50000.xml#m82dde8b3-0ca8-1000-90a3-0af502b50000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde89c-0ca8-1000-90a3-0af502b50000" name="MONTH_ID" dataType="DOUBLE" precision="15" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/82dde8b1-0ca8-1000-90a3-0af502b50000.xml#m82dde8b4-0ca8-1000-90a3-0af502b50000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde89d-0ca8-1000-90a3-0af502b50000" name="YEAR_DESC" dataType="VARCHAR" precision="4" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/82dde8b1-0ca8-1000-90a3-0af502b50000.xml#m82dde8b5-0ca8-1000-90a3-0af502b50000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde89e-0ca8-1000-90a3-0af502b50000" name="YEAR_ID" dataType="DOUBLE" precision="15" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/82dde8b1-0ca8-1000-90a3-0af502b50000.xml#m82dde8b6-0ca8-1000-90a3-0af502b50000">
+</PhysicalColumn>
+<PhysicalKey mdsid="m82de1079-0ca8-1000-90a3-0af502b50000" name="Deliverable_Due_Date_DIM (W_DATE_DIM))_Key">
+<RefColumns>
+<RefColumn refId="m82de1079-0ca8-1000-90a3-0af502b50000-m82dde89a-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82dde899-0ca8-1000-90a3-0af502b50000.xml#m82dde89a-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

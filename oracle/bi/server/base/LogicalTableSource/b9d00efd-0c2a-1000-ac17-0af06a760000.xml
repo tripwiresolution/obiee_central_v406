@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="mb9d00efd-0c2a-1000-ac17-0af06a760000" name="UT_SOURCE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/b9d00ee0-0c2a-1000-ac17-0af06a760000.xml#mb9d00ee0-0c2a-1000-ac17-0af06a760000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-1c06-f0c300000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - Usage Tracking"."UT Phys SQL"."Physical Sources"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-1c06-f0c300000000-mb9d00ee1-0c2a-1000-ac17-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/b9d00ee0-0c2a-1000-ac17-0af06a760000.xml#mb9d00ee1-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-93f6-74d900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."UT_SOURCE"."sources"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-93f6-74d900000000-maa392032-0c1f-1000-9565-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/aa392030-0c1f-1000-9565-0af502b10000.xml#maa392032-0c1f-1000-9565-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/aa392030-0c1f-1000-9565-0af502b10000.xml#maa392030-0c1f-1000-9565-0af502b10000">
+</Link>
+<WhereClause mdsid="m00000003-01f4-0000-2720-d13a00000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000004-01f4-0000-e8db-558200000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m00000005-01f4-0000-94f3-aa6000000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m08b68b30-0c83-1000-8c4a-0ab22f360000" name="D6a Customers (SCD ViewQuery)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="649" y="202" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cab573-07d0-0000-714b-e31d00000000.xml#m80cab573-07d0-0000-714b-e31d00000000">
+<Description><![CDATA[This logical table maps to the physical Customer Dimension table with various attributes like Customer Name, Status, Type and so on.
+It maps to 3 LTS and showcases snowflake dimension modelling.
+LTS1 Customers - Maps to the lowest grain of information.
+LTS2 Customer Segments - Maps to higher grain of information. Every customer belongs to a customer segment.
+LTS3 Customer Adresses - Maps to higher grain of information.
+]]></Description>
+<LogicalColumn mdsid="m08b68b31-0c83-1000-8c4a-0ab22f360000" name="QC0  Customer Number" isWriteable="false">
+<Description><![CDATA[Help : 
+Customer Key is an integer that uniquely identifies each record in the Customer dimension table.]]></Description>
+<AttrDefn mdsid="m08b68b66-0c83-1000-8c4a-0ab22f360000" name="AD_3900:2641331375692643">
+<Expr mdsid="m00000001-01f4-0000-5501-defd00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D63 Customers (SCD Time Temporal View Query)"."Cust_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-5501-defd00000000-m082e2153-0c83-1000-8c4a-0ab22f360000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/082e2151-0c83-1000-8c4a-0ab22f360000.xml#m082e2153-0c83-1000-8c4a-0ab22f360000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m08b68b32-0c83-1000-8c4a-0ab22f360000" name="QC1  Customer Name" isWriteable="false">
+<Description><![CDATA[Help : 
+Customer Name stores the first name followed by the last name.]]></Description>
+<AttrDefn mdsid="m08b68b67-0c83-1000-8c4a-0ab22f360000" name="AD_3900:2641341375692643">
+<Expr mdsid="m00000002-01f4-0000-fca7-20b400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D63 Customers (SCD Time Temporal View Query)"."Name"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-fca7-20b400000000-m082e2156-0c83-1000-8c4a-0ab22f360000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/082e2151-0c83-1000-8c4a-0ab22f360000.xml#m082e2156-0c83-1000-8c4a-0ab22f360000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m7013eb54-0c84-1000-866c-0af502b20000" name="QC4  Start_Time" isWriteable="false">
+<AttrDefn mdsid="m7013eb57-0c84-1000-866c-0af502b20000" name="AD_3900:2663051376295579">
+<Expr mdsid="m00000003-01f4-0000-1892-bd4800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D63 Customers (SCD Time Temporal View Query)"."Start_Time"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-1892-bd4800000000-m0ab20d11-0c83-1000-be8d-0ab22f360000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/082e2151-0c83-1000-8c4a-0ab22f360000.xml#m0ab20d11-0c83-1000-be8d-0ab22f360000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m7013eb55-0c84-1000-866c-0af502b20000" name="QC5  End_Time" isWriteable="false">
+<AttrDefn mdsid="m7013eb56-0c84-1000-866c-0af502b20000" name="AD_3900:2663041376295579">
+<Expr mdsid="m00000004-01f4-0000-9b05-56b000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D63 Customers (SCD Time Temporal View Query)"."End_Time"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-9b05-56b000000000-m0ab20d10-0c83-1000-be8d-0ab22f360000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/082e2151-0c83-1000-8c4a-0ab22f360000.xml#m0ab20d10-0c83-1000-be8d-0ab22f360000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m08b68b3d-0c83-1000-8c4a-0ab22f360000" name="QC6  Credit Rate" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the Customer credit rate desription.]]></Description>
+<AttrDefn mdsid="m08b68b72-0c83-1000-8c4a-0ab22f360000" name="AD_3900:2641451375692643">
+<Expr mdsid="m00000005-01f4-0000-3d25-caf900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D63 Customers (SCD Time Temporal View Query)"."Crdt_Rate"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-3d25-caf900000000-m082e2152-0c83-1000-8c4a-0ab22f360000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/082e2151-0c83-1000-8c4a-0ab22f360000.xml#m082e2152-0c83-1000-8c4a-0ab22f360000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m08b68b41-0c83-1000-8c4a-0ab22f360000" name="QC7  Marital Status" isWriteable="false">
+<AttrDefn mdsid="m08b68b76-0c83-1000-8c4a-0ab22f360000" name="AD_3900:2641491375692643">
+<Expr mdsid="m00000006-01f4-0000-e71d-15c500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D63 Customers (SCD Time Temporal View Query)"."Marital_St"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-e71d-15c500000000-m082e215f-0c83-1000-8c4a-0ab22f360000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/082e2151-0c83-1000-8c4a-0ab22f360000.xml#m082e215f-0c83-1000-8c4a-0ab22f360000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m08b68b3a-0c83-1000-8c4a-0ab22f360000" name="QC7x Changed Marital Status" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the customer segment ID.]]></Description>
+<AttrDefn mdsid="m08b68b6f-0c83-1000-8c4a-0ab22f360000" name="AD_3900:2641421375692643">
+<Expr mdsid="m00000007-01f4-0000-b9d0-6ff200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D63 Customers (SCD Time Temporal View Query)"."Segment_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-b9d0-6ff200000000-m082e2157-0c83-1000-8c4a-0ab22f360000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/082e2151-0c83-1000-8c4a-0ab22f360000.xml#m082e2157-0c83-1000-8c4a-0ab22f360000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m08b68b3c-0c83-1000-8c4a-0ab22f360000" name="QC8 Income Level" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the customer industry description.]]></Description>
+<AttrDefn mdsid="m08b68b71-0c83-1000-8c4a-0ab22f360000" name="AD_3900:2641441375692643">
+<Expr mdsid="m00000008-01f4-0000-9cf8-e4da00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D63 Customers (SCD Time Temporal View Query)"."Income_Lvl"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-9cf8-e4da00000000-m082e2158-0c83-1000-8c4a-0ab22f360000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/082e2151-0c83-1000-8c4a-0ab22f360000.xml#m082e2158-0c83-1000-8c4a-0ab22f360000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m08b68b35-0c83-1000-8c4a-0ab22f360000" name="QC9  Cust Status Key" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the status of the customer.]]></Description>
+<AttrDefn mdsid="m08b68b6a-0c83-1000-8c4a-0ab22f360000" name="AD_3900:2641371375692643">
+<Expr mdsid="m00000009-01f4-0000-0704-c9e800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D63 Customers (SCD Time Temporal View Query)"."Status_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-0704-c9e800000000-m082e2159-0c83-1000-8c4a-0ab22f360000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/082e2151-0c83-1000-8c4a-0ab22f360000.xml#m082e2159-0c83-1000-8c4a-0ab22f360000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m08b68b65-0c83-1000-8c4a-0ab22f360000" name="Dim 01 Customer_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m08b68b65-0c83-1000-8c4a-0ab22f360000-m08b68b31-0c83-1000-8c4a-0ab22f360000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/08b68b30-0c83-1000-8c4a-0ab22f360000.xml#m08b68b31-0c83-1000-8c4a-0ab22f360000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m08b68b30-0c83-1000-8c4a-0ab22f360000-m08b68b99-0c83-1000-8c4a-0ab22f360000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/08b68b99-0c83-1000-8c4a-0ab22f360000.xml#m08b68b99-0c83-1000-8c4a-0ab22f360000"/>
+</RefTableSources>
+</LogicalTable>

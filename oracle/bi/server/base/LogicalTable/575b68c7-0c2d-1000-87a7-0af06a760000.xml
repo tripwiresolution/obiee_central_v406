@@ -1,0 +1,1791 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m575b68c7-0c2d-1000-87a7-0af06a760000" name="Flight Facts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/575b68b0-0c2d-1000-87a7-0af06a760000.xml#m575b68b0-0c2d-1000-87a7-0af06a760000">
+<LogicalColumn mdsid="m575b68c8-0c2d-1000-87a7-0af06a760000" name="Actual Elapsed Time (Min)" isWriteable="false">
+<Description><![CDATA[Elapsed Time of Flight, in Minutes]]></Description>
+<MeasureDefn mdsid="m575b6a21-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a55-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367161338887867" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-1aa4-d1c300000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Actual Elapsed Time (Min)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-1aa4-d1c300000000-m575b68c8-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68c8-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bc6-0c2d-1000-87a7-0af06a760000" name="AD_3900:2370851338887867">
+<Expr mdsid="m00000002-01f4-0000-64ca-899700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Actual_Ela00039B1F"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-64ca-899700000000-m6adf2551-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf2551-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68c9-0c2d-1000-87a7-0af06a760000" name="Air Time (Min)" isWriteable="false">
+<MeasureDefn mdsid="m575b6a22-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a56-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367171338887867" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-a09b-f90d00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Air Time (Min)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-a09b-f90d00000000-m575b68c9-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68c9-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bc7-0c2d-1000-87a7-0af06a760000" name="AD_3900:2370861338887867">
+<Expr mdsid="m00000004-01f4-0000-59ab-385000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Air_Time_00039B20"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-59ab-385000000000-m6adf2552-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf2552-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68ca-0c2d-1000-87a7-0af06a760000" name="Arr Lag (Min)" isWriteable="false">
+<Description><![CDATA[Difference in minutes between scheduled and actual arrival time. Early arrivals show negative numbers.]]></Description>
+<MeasureDefn mdsid="m575b6a23-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a57-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367181338887867" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-10ea-2cad00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Arr Lag (Min)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-10ea-2cad00000000-m575b68ca-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68ca-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bc8-0c2d-1000-87a7-0af06a760000" name="AD_3900:2370871338887867">
+<Expr mdsid="m00000006-01f4-0000-5fa2-889e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Arr_Lag_M00039B21"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-5fa2-889e00000000-m6adf2553-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf2553-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68cb-0c2d-1000-87a7-0af06a760000" name="Arr Delay (Min)" isWriteable="false">
+<Description><![CDATA[Difference in minutes between scheduled and actual arrival time. Early arrivals set to 0.]]></Description>
+<MeasureDefn mdsid="m575b6a24-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a58-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367191338887867" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-79b1-079c00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Arr Delay (Min)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-79b1-079c00000000-m575b68cb-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cb-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bc9-0c2d-1000-87a7-0af06a760000" name="AD_3900:2370881338887867">
+<Expr mdsid="m00000008-01f4-0000-55ef-d90500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Arr_Delay_00039B22"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-55ef-d90500000000-m6adf2554-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf2554-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68cc-0c2d-1000-87a7-0af06a760000" name="Carrier Delay (Min)" isWriteable="false">
+<MeasureDefn mdsid="m575b6a25-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a59-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367201338887867" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-e88c-f0e700000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Carrier Delay (Min)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-e88c-f0e700000000-m575b68cc-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cc-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bca-0c2d-1000-87a7-0af06a760000" name="AD_3900:2370891338887867">
+<Expr mdsid="m0000000a-01f4-0000-09f4-475d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Carrier_De00039B23"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-09f4-475d00000000-m6adf2555-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf2555-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68cd-0c2d-1000-87a7-0af06a760000" name="Crs Elapsed Time (Min)" isWriteable="false">
+<MeasureDefn mdsid="m575b6a26-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a5a-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367211338887867" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-0d6c-671100000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Crs Elapsed Time (Min)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-0d6c-671100000000-m575b68cd-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cd-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bcb-0c2d-1000-87a7-0af06a760000" name="AD_3900:2370901338887867">
+<Expr mdsid="m0000000c-01f4-0000-6c1e-9dcd00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Crs_Elapse00039B24"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-6c1e-9dcd00000000-m6adf2556-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf2556-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68ce-0c2d-1000-87a7-0af06a760000" name="Dep Lag (Min)" isWriteable="false">
+<Description><![CDATA[Difference in minutes between scheduled and actual departure time. Early departures show negative numbers.]]></Description>
+<MeasureDefn mdsid="m575b6a27-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a5b-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367221338887867" isDefault="true">
+<Expr mdsid="m0000000d-01f4-0000-5629-e4b400000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Dep Lag (Min)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-5629-e4b400000000-m575b68ce-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68ce-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bcc-0c2d-1000-87a7-0af06a760000" name="AD_3900:2370911338887867">
+<Expr mdsid="m0000000e-01f4-0000-702e-74b300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Dep_Lag_M00039B25"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-702e-74b300000000-m6adf2557-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf2557-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68cf-0c2d-1000-87a7-0af06a760000" name="Dep Delay (Min)" isWriteable="false">
+<Description><![CDATA[Difference in minutes between scheduled and actual departure time. Early departures set to 0.]]></Description>
+<MeasureDefn mdsid="m575b6a28-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a5c-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367231338887867" isDefault="true">
+<Expr mdsid="m0000000f-01f4-0000-ffd1-4d4200000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Dep Delay (Min)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-ffd1-4d4200000000-m575b68cf-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cf-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bcd-0c2d-1000-87a7-0af06a760000" name="AD_3900:2370921338887867">
+<Expr mdsid="m00000010-01f4-0000-830e-3ae900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Dep_Delay_00039B26"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-830e-3ae900000000-m6adf2558-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf2558-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68d0-0c2d-1000-87a7-0af06a760000" name="Distance (Miles)" isWriteable="false">
+<MeasureDefn mdsid="m575b6a29-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a5d-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367241338887867" isDefault="true">
+<Expr mdsid="m00000011-01f4-0000-a651-1c9c00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Distance (Miles)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-a651-1c9c00000000-m575b68d0-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d0-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bce-0c2d-1000-87a7-0af06a760000" name="AD_3900:2370931338887867">
+<Expr mdsid="m00000012-01f4-0000-ab3e-839d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Distance_00039B27"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-ab3e-839d00000000-m6adf2559-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf2559-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68d1-0c2d-1000-87a7-0af06a760000" name="# of Flights" isWriteable="false">
+<MeasureDefn mdsid="m856dac70-0c34-1000-9b69-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m08005700-0c35-1000-ba2a-8c5486920000" name="AggRule_2050:2493881342190711" isDefault="true">
+<Expr mdsid="m00000013-01f4-0000-1df5-550700000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."# of Flights")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-1df5-550700000000-m575b68d1-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d1-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bcf-0c2d-1000-87a7-0af06a760000" name="AD_3900:2370941338887867">
+<Expr mdsid="m00000014-01f4-0000-be9f-926e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Z_of_Fligh00039B28"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-be9f-926e00000000-m6adf255a-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf255a-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6905-0c2d-1000-87a7-0af06a760000" name="# of Cancelled Flights" isWriteable="false">
+<Description><![CDATA[Number of cancelled flights]]></Description>
+<MeasureDefn mdsid="m95609ed1-0c34-1000-b8f0-8c5486920000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m95609ed2-0c34-1000-b8f0-8c5486920000" name="AggRule_2050:2452541341998398" isDefault="true">
+<Expr mdsid="m00000015-01f4-0000-6c37-787700000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."# of Cancelled Flights")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-6c37-787700000000-m575b6905-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b6905-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6c03-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371461338887867">
+<Expr mdsid="m00000016-01f4-0000-65b8-64f200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Z_of_Cance00039B5C"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-65b8-64f200000000-m6adf2565-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf2565-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6906-0c2d-1000-87a7-0af06a760000" name="# of Scheduled Flights" isWriteable="false">
+<MeasureDefn mdsid="m575b6a39-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a6d-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367401338887867" isDefault="true">
+<Expr mdsid="m00000017-01f4-0000-5b0c-158200000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."# of Scheduled Flights")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-5b0c-158200000000-m575b6906-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b6906-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6c04-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371471338887867">
+<Expr mdsid="m00000018-01f4-0000-7b8c-c18000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Z_of_Sched00039B5D"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000018-01f4-0000-7b8c-c18000000000-m6adf2566-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf2566-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6904-0c2d-1000-87a7-0af06a760000" name="% Cancel Ratio" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000019-01f4-0000-1244-4aef00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."# of Cancelled Flights" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."# of Scheduled Flights" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000019-01f4-0000-1244-4aef00000000-m575b6905-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b6905-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000019-01f4-0000-1244-4aef00000000-m575b6906-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b6906-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6c02-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371451338887867">
+<Expr mdsid="m0000001a-01f4-0000-0cfb-bda500000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68d6-0c2d-1000-87a7-0af06a760000" name="# of Airlines !" isWriteable="false">
+<MeasureDefn mdsid="m575b6a2e-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a62-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367291338887867" isDefault="true">
+<Expr mdsid="m0000001b-01f4-0000-28d1-c45500000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "X0 - Airlines"."Flight Facts"."# of Airlines !")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001b-01f4-0000-28d1-c45500000000-m575b68d6-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d6-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bd4-0c2d-1000-87a7-0af06a760000" name="AD_3900:2370991338887867">
+<Expr mdsid="m0000001c-01f4-0000-fa83-660900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."AIRLINEID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001c-01f4-0000-fa83-660900000000-m575866e5-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866e5-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68d7-0c2d-1000-87a7-0af06a760000" name="# of Airports !" isWriteable="false">
+<MeasureDefn mdsid="m575b6a2f-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a63-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367301338887867" isDefault="true">
+<Expr mdsid="m0000001d-01f4-0000-6959-a40200000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "X0 - Airlines"."Flight Facts"."# of Airports !")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001d-01f4-0000-6959-a40200000000-m575b68d7-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d7-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bd5-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371001338887867">
+<Expr mdsid="m0000001e-01f4-0000-2a93-cd1d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."ORIGIN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001e-01f4-0000-2a93-cd1d00000000-m575866e9-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866e9-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68f2-0c2d-1000-87a7-0af06a760000" name="# of Aircrafts" isWriteable="false">
+<MeasureDefn mdsid="m575b6a38-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m85499f20-0c33-1000-a9e6-7f0000010000" name="AggRule_2050:2416101341541965" isDefault="true">
+<Expr mdsid="m0000001f-01f4-0000-5bcc-b61600000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "X0 - Airlines"."Flight Facts"."# of Aircrafts")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001f-01f4-0000-5bcc-b61600000000-m575b68f2-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f2-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bf0-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371271338887867">
+<Expr mdsid="m00000020-01f4-0000-fcd3-334500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."TAILNUM"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000020-01f4-0000-fcd3-334500000000-m575866e7-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866e7-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6907-0c2d-1000-87a7-0af06a760000" name="# of Late Flights" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000021-01f4-0000-d942-0a0e00000000" name="Expr">
+<ExprText><![CDATA["%1" - "%2"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."Flight Facts"."# of Flights" - "X0 - Airlines"."Flight Facts"."# of Fl Arr Ontime or Early"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000021-01f4-0000-d942-0a0e00000000-m575b68d1-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d1-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000021-01f4-0000-d942-0a0e00000000-m575b68f5-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f5-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6c05-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371481338887867">
+<Expr mdsid="m00000022-01f4-0000-6fa9-ceba00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6900-0c2d-1000-87a7-0af06a760000" name="% of Fl Arrived Late" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000023-01f4-0000-57af-755300000000" name="Expr">
+<ExprText><![CDATA[100 - "%1"]]></ExprText>
+<ExprTextDesc><![CDATA[100 - "X0 - Airlines"."Flight Facts"."% of Fl Arr Ontime or Early"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000023-01f4-0000-57af-755300000000-m575b68f6-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f6-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6bfe-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371411338887867">
+<Expr mdsid="m00000024-01f4-0000-554d-25f700000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68f5-0c2d-1000-87a7-0af06a760000" name="# of Fl Arr Ontime or Early" isWriteable="false">
+<Description><![CDATA[Number of flights with 0 minutes delay]]></Description>
+<MeasureDefn mdsid="m84f8e710-0c33-1000-a9e6-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m84f8e711-0c33-1000-a9e6-7f0000010000" name="AggRule_2050:2415961341541728" isDefault="true">
+<Expr mdsid="m00000025-01f4-0000-164b-8faf00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."# of Fl Arr Ontime or Early")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000025-01f4-0000-164b-8faf00000000-m575b68f5-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f5-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bf3-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371301338887867">
+<Expr mdsid="m00000026-01f4-0000-c0f0-891f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Z_of_Fl_Ar00039B4C"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000026-01f4-0000-c0f0-891f00000000-m6adf2562-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf2562-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68f6-0c2d-1000-87a7-0af06a760000" name="% of Fl Arr Ontime or Early" isDerived="true" isWriteable="false">
+<Description><![CDATA[Percent of flights that arrive on time. Note: If you select Origin as a category, you get percent of flights that depart from those airports and arrive on time.]]></Description>
+<Expr mdsid="m00000027-01f4-0000-fcf3-0da900000000" name="Expr">
+<ExprText><![CDATA[0 +  CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[0 +  CAST ("X0 - Airlines"."Flight Facts"."# of Fl Arr Ontime or Early" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."# of Flights" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000027-01f4-0000-fcf3-0da900000000-m575b68f5-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f5-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000027-01f4-0000-fcf3-0da900000000-m575b68d1-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d1-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6bf4-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371311338887867">
+<Expr mdsid="m00000028-01f4-0000-aa81-c5ef00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68f4-0c2d-1000-87a7-0af06a760000" name="# of Fl Arr 1 to 30 Min Late" isWriteable="false">
+<Description><![CDATA[Number of flights with less of 15 minutes delay]]></Description>
+<MeasureDefn mdsid="m85080240-0c33-1000-a9e6-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m85080241-0c33-1000-a9e6-7f0000010000" name="AggRule_2050:2415991341541728" isDefault="true">
+<Expr mdsid="m00000029-01f4-0000-bc82-efb900000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."# of Fl Arr 1 to 30 Min Late")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000029-01f4-0000-bc82-efb900000000-m575b68f4-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f4-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bf2-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371291338887867">
+<Expr mdsid="m0000002a-01f4-0000-9552-e55f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Z_of_Fl_Ar00039B4B"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002a-01f4-0000-9552-e55f00000000-m6adf2561-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf2561-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68f3-0c2d-1000-87a7-0af06a760000" name="% of Fl Arr 1 to 30 Min Late" isDerived="true" isWriteable="false">
+<Description><![CDATA[Percent of flights that arrive on time. Note: If you select Origin as a category, you get percent of flights that depart from those airports and arrive on time.]]></Description>
+<Expr mdsid="m0000002b-01f4-0000-4671-b69100000000" name="Expr">
+<ExprText><![CDATA[0 +  CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[0 +  CAST ("X0 - Airlines"."Flight Facts"."# of Fl Arr 1 to 30 Min Late" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."# of Flights" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002b-01f4-0000-4671-b69100000000-m575b68f4-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f4-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000002b-01f4-0000-4671-b69100000000-m575b68d1-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d1-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6bf1-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371281338887867">
+<Expr mdsid="m0000002c-01f4-0000-397f-8d2700000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6901-0c2d-1000-87a7-0af06a760000" name="# of Fl Arr Over 30 Min Late" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000002d-01f4-0000-fe9f-de2b00000000" name="Expr">
+<ExprText><![CDATA["%1" - "%2" - "%3"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."Flight Facts"."# of Flights" - "X0 - Airlines"."Flight Facts"."# of Fl Arr Ontime or Early" - "X0 - Airlines"."Flight Facts"."# of Fl Arr 1 to 30 Min Late"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002d-01f4-0000-fe9f-de2b00000000-m575b68d1-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d1-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000002d-01f4-0000-fe9f-de2b00000000-m575b68f5-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f5-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000002d-01f4-0000-fe9f-de2b00000000-m575b68f4-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f4-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6bff-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371421338887867">
+<Expr mdsid="m0000002e-01f4-0000-06fb-daf000000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6902-0c2d-1000-87a7-0af06a760000" name="% of Fl Arr Over 30 Min Late" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000002f-01f4-0000-4d21-bd5100000000" name="Expr">
+<ExprText><![CDATA[100 - "%1" - "%2"]]></ExprText>
+<ExprTextDesc><![CDATA[100 - "X0 - Airlines"."Flight Facts"."% of Fl Arr Ontime or Early" - "X0 - Airlines"."Flight Facts"."% of Fl Arr 1 to 30 Min Late"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002f-01f4-0000-4d21-bd5100000000-m575b68f6-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f6-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000002f-01f4-0000-4d21-bd5100000000-m575b68f3-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f3-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6c00-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371431338887867">
+<Expr mdsid="m00000030-01f4-0000-178d-071700000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6903-0c2d-1000-87a7-0af06a760000" name="% of Fl Departing Late" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000031-01f4-0000-73fe-bebc00000000" name="Expr">
+<ExprText><![CDATA[100 - "%1"]]></ExprText>
+<ExprTextDesc><![CDATA[100 - "X0 - Airlines"."Flight Facts"."% of Fl Dep Ontime or Early"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000031-01f4-0000-73fe-bebc00000000-m575b68fa-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68fa-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6c01-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371441338887867">
+<Expr mdsid="m00000032-01f4-0000-8b2e-0daf00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68f9-0c2d-1000-87a7-0af06a760000" name="# of Fl Dep Ontime or Early" isWriteable="false">
+<Description><![CDATA[Number of flights with 0 minutes delay]]></Description>
+<MeasureDefn mdsid="m85254e40-0c33-1000-a9e6-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m85254e41-0c33-1000-a9e6-7f0000010000" name="AggRule_2050:2416071341541728" isDefault="true">
+<Expr mdsid="m00000033-01f4-0000-1add-715300000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."# of Fl Dep Ontime or Early")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000033-01f4-0000-1add-715300000000-m575b68f9-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f9-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bf7-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371341338887867">
+<Expr mdsid="m00000034-01f4-0000-9142-7d6600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Z_of_Fl_De00039B50"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000034-01f4-0000-9142-7d6600000000-m6adf2564-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf2564-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68fa-0c2d-1000-87a7-0af06a760000" name="% of Fl Dep Ontime or Early" isDerived="true" isWriteable="false">
+<Description><![CDATA[Percent of flights that arrive on time. Note: If you select Origin as a category, you get percent of flights that depart from those airports and arrive on time.]]></Description>
+<Expr mdsid="m00000035-01f4-0000-097b-506500000000" name="Expr">
+<ExprText><![CDATA[0 +  CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[0 +  CAST ("X0 - Airlines"."Flight Facts"."# of Fl Dep Ontime or Early" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."# of Flights" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000035-01f4-0000-097b-506500000000-m575b68f9-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f9-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000035-01f4-0000-097b-506500000000-m575b68d1-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d1-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6bf8-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371351338887867">
+<Expr mdsid="m00000036-01f4-0000-fe94-ddaf00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68f7-0c2d-1000-87a7-0af06a760000" name="% of Fl Dep 1 to 30 Min Late" isDerived="true" isWriteable="false">
+<Description><![CDATA[Percent of flights that arrive on time. Note: If you select Origin as a category, you get percent of flights that depart from those airports and arrive on time.]]></Description>
+<Expr mdsid="m00000037-01f4-0000-4bdc-43fc00000000" name="Expr">
+<ExprText><![CDATA[0 +  CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[0 +  CAST ("X0 - Airlines"."Flight Facts"."# of Fl Dep 1 to 30 Min Late" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."# of Flights" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000037-01f4-0000-4bdc-43fc00000000-m575b68f8-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f8-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000037-01f4-0000-4bdc-43fc00000000-m575b68d1-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d1-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6bf5-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371321338887867">
+<Expr mdsid="m00000038-01f4-0000-60f0-393c00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68f8-0c2d-1000-87a7-0af06a760000" name="# of Fl Dep 1 to 30 Min Late" isWriteable="false">
+<Description><![CDATA[Number of flights with less of 15 minutes delay]]></Description>
+<MeasureDefn mdsid="m85265fb0-0c33-1000-a9e6-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m85265fb1-0c33-1000-a9e6-7f0000010000" name="AggRule_2050:2416091341541728" isDefault="true">
+<Expr mdsid="m00000039-01f4-0000-f627-736f00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."# of Fl Dep 1 to 30 Min Late")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000039-01f4-0000-f627-736f00000000-m575b68f8-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f8-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bf6-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371331338887867">
+<Expr mdsid="m0000003a-01f4-0000-4158-4d8700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Z_of_Fl_De00039B4F"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000003a-01f4-0000-4158-4d8700000000-m6adf2563-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf2563-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68d2-0c2d-1000-87a7-0af06a760000" name="Late Aircraft Delay (Min)" isWriteable="false">
+<MeasureDefn mdsid="m575b6a2a-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a5e-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367251338887867" isDefault="true">
+<Expr mdsid="m0000003b-01f4-0000-2c99-fe1100000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Late Aircraft Delay (Min)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000003b-01f4-0000-2c99-fe1100000000-m575b68d2-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d2-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bd0-0c2d-1000-87a7-0af06a760000" name="AD_3900:2370951338887867">
+<Expr mdsid="m0000003c-01f4-0000-6c59-aff400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Late_Aircr00039B29"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000003c-01f4-0000-6c59-aff400000000-m6adf255b-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf255b-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6916-0c2d-1000-87a7-0af06a760000" name="% of Sch Fl Within 30 Min Late" isDerived="true" isWriteable="false">
+<Description><![CDATA[Percent of flights that arrive on time. Note: If you select Origin as a category, you get percent of flights that depart from those airports and arrive on time.]]></Description>
+<Expr mdsid="m0000003d-01f4-0000-195e-b99c00000000" name="Expr">
+<ExprText><![CDATA[0 +  CAST ("%1" + "%2" AS DOUBLE PRECISION ) / "%3" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[0 +  CAST ("X0 - Airlines"."Flight Facts"."# of Fl Arr 1 to 30 Min Late" + "X0 - Airlines"."Flight Facts"."# of Fl Arr Ontime or Early" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."# of Scheduled Flights" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000003d-01f4-0000-195e-b99c00000000-m575b68f4-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f4-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000003d-01f4-0000-195e-b99c00000000-m575b68f5-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f5-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000003d-01f4-0000-195e-b99c00000000-m575b6906-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b6906-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6c14-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371631338887867">
+<Expr mdsid="m0000003e-01f4-0000-a754-6bcf00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6917-0c2d-1000-87a7-0af06a760000" name="% of Sch Fl Over 30 Min Late" isDerived="true" isWriteable="false">
+<Description><![CDATA[Percent of flights that arrive on time. Note: If you select Origin as a category, you get percent of flights that depart from those airports and arrive on time.]]></Description>
+<Expr mdsid="m0000003f-01f4-0000-ac46-a91e00000000" name="Expr">
+<ExprText><![CDATA[100 - "%1"]]></ExprText>
+<ExprTextDesc><![CDATA[100 - "X0 - Airlines"."Flight Facts"."% of Sch Fl Within 30 Min Late"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000003f-01f4-0000-ac46-a91e00000000-m575b6916-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b6916-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6c15-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371641338887867">
+<Expr mdsid="m00000040-01f4-0000-ad22-c3c000000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68d3-0c2d-1000-87a7-0af06a760000" name="Nas Delay (Min)" isWriteable="false">
+<MeasureDefn mdsid="m575b6a2b-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a5f-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367261338887867" isDefault="true">
+<Expr mdsid="m00000041-01f4-0000-1e58-09ca00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Nas Delay (Min)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000041-01f4-0000-1e58-09ca00000000-m575b68d3-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d3-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bd1-0c2d-1000-87a7-0af06a760000" name="AD_3900:2370961338887867">
+<Expr mdsid="m00000042-01f4-0000-872f-352b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Nas_Delay_00039B2A"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000042-01f4-0000-872f-352b00000000-m6adf255c-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf255c-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68d4-0c2d-1000-87a7-0af06a760000" name="Security Delay (Min)" isWriteable="false">
+<MeasureDefn mdsid="m575b6a2c-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a60-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367271338887867" isDefault="true">
+<Expr mdsid="m00000043-01f4-0000-cb46-f7b700000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Security Delay (Min)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000043-01f4-0000-cb46-f7b700000000-m575b68d4-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d4-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bd2-0c2d-1000-87a7-0af06a760000" name="AD_3900:2370971338887867">
+<Expr mdsid="m00000044-01f4-0000-0e32-0f5200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Security_D00039B2B"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000044-01f4-0000-0e32-0f5200000000-m6adf255d-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf255d-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68d5-0c2d-1000-87a7-0af06a760000" name="Weather Delay (Min)" isWriteable="false">
+<MeasureDefn mdsid="m575b6a2d-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a61-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367281338887867" isDefault="true">
+<Expr mdsid="m00000045-01f4-0000-c923-db3000000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Weather Delay (Min)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000045-01f4-0000-c923-db3000000000-m575b68d5-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d5-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bd3-0c2d-1000-87a7-0af06a760000" name="AD_3900:2370981338887867">
+<Expr mdsid="m00000046-01f4-0000-5779-43b100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Weather_De00039B2C"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000046-01f4-0000-5779-43b100000000-m6adf255e-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf255e-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68d8-0c2d-1000-87a7-0af06a760000" name="Longest Addg Time (Min) !" isWriteable="false">
+<Description><![CDATA[Longest Time Away from Gate for Gate Return or Cancelled Flight]]></Description>
+<MeasureDefn mdsid="m575b6a30-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a64-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367311338887867" isDefault="true">
+<Expr mdsid="m00000047-01f4-0000-1482-6cc700000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Longest Addg Time (Min) !")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000047-01f4-0000-1482-6cc700000000-m575b68d8-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d8-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bd6-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371011338887867">
+<Expr mdsid="m00000048-01f4-0000-a696-b98700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."LONGESTADDGTIME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000048-01f4-0000-a696-b98700000000-m57586717-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m57586717-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68d9-0c2d-1000-87a7-0af06a760000" name="Taxi In (Min)" isWriteable="false">
+<Description><![CDATA[Taxi In Time, in Minutes]]></Description>
+<MeasureDefn mdsid="m575b6a31-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a65-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367321338887867" isDefault="true">
+<Expr mdsid="m00000049-01f4-0000-8b99-441200000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Taxi In (Min)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000049-01f4-0000-8b99-441200000000-m575b68d9-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d9-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bd7-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371021338887867">
+<Expr mdsid="m0000004a-01f4-0000-60d7-15ec00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Taxi_In_M00039B30"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000004a-01f4-0000-60d7-15ec00000000-m6adf255f-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf255f-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68da-0c2d-1000-87a7-0af06a760000" name="Taxi Out (Min)" isWriteable="false">
+<Description><![CDATA[Taxi Out Time, in Minutes]]></Description>
+<MeasureDefn mdsid="m575b6a32-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m85d1e1f0-0c33-1000-a9e6-7f0000010000" name="AggRule_2050:2416111341542821" isDefault="true">
+<Expr mdsid="m0000004b-01f4-0000-8c19-93b400000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Taxi Out (Min)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000004b-01f4-0000-8c19-93b400000000-m575b68da-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68da-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bd8-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371031338887867">
+<Expr mdsid="m0000004c-01f4-0000-e1ae-c67400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Taxi_Out_00039B31"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000004c-01f4-0000-e1ae-c67400000000-m6adf2560-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf2560-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68db-0c2d-1000-87a7-0af06a760000" name="Total Addg Time (Min) !" isWriteable="false">
+<Description><![CDATA[Total Ground Time Away from Gate for Gate Return or Cancelled Flight]]></Description>
+<MeasureDefn mdsid="m575b6a33-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a67-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367341338887867" isDefault="true">
+<Expr mdsid="m0000004d-01f4-0000-7d1c-eb6d00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Total Addg Time (Min) !")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000004d-01f4-0000-7d1c-eb6d00000000-m575b68db-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68db-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bd9-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371041338887867">
+<Expr mdsid="m0000004e-01f4-0000-9642-a2ab00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."TOTALADDGTIME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000004e-01f4-0000-9642-a2ab00000000-m57586716-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m57586716-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68dc-0c2d-1000-87a7-0af06a760000" name="Diverted Distance (Miles) !" isWriteable="false">
+<Description><![CDATA[Distance between scheduled destination and final diverted airport (miles). Value will be 0 for diverted flight reaching scheduled destination.]]></Description>
+<MeasureDefn mdsid="m575b6a34-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a68-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367351338887867" isDefault="true">
+<Expr mdsid="m0000004f-01f4-0000-7152-94f000000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Diverted Distance (Miles) !")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000004f-01f4-0000-7152-94f000000000-m575b68dc-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68dc-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bda-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371051338887867">
+<Expr mdsid="m00000050-01f4-0000-0676-67b400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."DIVDISTANCE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000050-01f4-0000-0676-67b400000000-m5758671c-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m5758671c-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68dd-0c2d-1000-87a7-0af06a760000" name="Diverted Actual Elapsed Time (Min) !" isWriteable="false">
+<Description><![CDATA[Elapsed Time of Diverted Flight Reaching Scheduled Destination, in Minutes. The ActualElapsedTime column remains NULL for all diverted flights.]]></Description>
+<MeasureDefn mdsid="m575b6a35-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a69-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367361338887867" isDefault="true">
+<Expr mdsid="m00000051-01f4-0000-bfab-737300000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Diverted Actual Elapsed Time (Min) !")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000051-01f4-0000-bfab-737300000000-m575b68dd-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68dd-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bdb-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371061338887867">
+<Expr mdsid="m00000052-01f4-0000-961b-b0e800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."DIVACTUALELAPSEDTIME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000052-01f4-0000-961b-b0e800000000-m5758671a-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m5758671a-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68de-0c2d-1000-87a7-0af06a760000" name="Diverted Airport Landings !" isWriteable="false">
+<Description><![CDATA[Number of Diverted Airport Landings]]></Description>
+<MeasureDefn mdsid="m575b6a36-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a6a-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367371338887867" isDefault="true">
+<Expr mdsid="m00000053-01f4-0000-95d7-f88000000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Diverted Airport Landings !")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000053-01f4-0000-95d7-f88000000000-m575b68de-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68de-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bdc-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371071338887867">
+<Expr mdsid="m00000054-01f4-0000-0cbd-e2ce00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."DIVAIRPORTLANDINGS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000054-01f4-0000-0cbd-e2ce00000000-m57586718-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m57586718-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68df-0c2d-1000-87a7-0af06a760000" name="Diverted Arr Delay (Min) !" isWriteable="false">
+<Description><![CDATA[Difference in minutes between scheduled and actual arrival time for a diverted flight reaching scheduled destination. The ArrDelay column remains NULL for all diverted flights.]]></Description>
+<MeasureDefn mdsid="m575b6a37-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m575b6a6b-0c2d-1000-87a7-0af06a760000" name="AggRule_2050:2367381338887867" isDefault="true">
+<Expr mdsid="m00000055-01f4-0000-6806-22c400000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Diverted Arr Delay (Min) !")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000055-01f4-0000-6806-22c400000000-m575b68df-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68df-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m575b6bdd-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371081338887867">
+<Expr mdsid="m00000056-01f4-0000-c436-603b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."DIVACTUALELAPSEDTIME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000056-01f4-0000-c436-603b00000000-m5758671a-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m5758671a-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68e0-0c2d-1000-87a7-0af06a760000" name="Arr Delay as % of Flight Time" isDerived="true" isWriteable="false">
+<Description><![CDATA[Percent of flights that arrive on time. Note: If you select Origin as a category, you get percent of flights that depart from those airports and arrive on time.]]></Description>
+<Expr mdsid="m00000057-01f4-0000-2ab2-822800000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Arr Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Actual Elapsed Time (Min)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000057-01f4-0000-2ab2-822800000000-m575b68cb-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cb-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000057-01f4-0000-2ab2-822800000000-m575b68c8-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68c8-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6bde-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371091338887867">
+<Expr mdsid="m00000058-01f4-0000-fee8-77aa00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68e1-0c2d-1000-87a7-0af06a760000" name="Dept Delay as % of Flight Time" isDerived="true" isWriteable="false">
+<Description><![CDATA[Percent of flights that arrive on time. Note: If you select Origin as a category, you get percent of flights that depart from those airports and arrive on time.]]></Description>
+<Expr mdsid="m00000059-01f4-0000-4fbd-b7e400000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Dep Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Actual Elapsed Time (Min)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000059-01f4-0000-4fbd-b7e400000000-m575b68cf-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cf-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000059-01f4-0000-4fbd-b7e400000000-m575b68c8-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68c8-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6bdf-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371101338887867">
+<Expr mdsid="m0000005a-01f4-0000-12ea-c72c00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68e2-0c2d-1000-87a7-0af06a760000" name="Avg Air Time (Min)" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000005b-01f4-0000-cb5d-d89100000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2"]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Air Time (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."# of Flights"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000005b-01f4-0000-cb5d-d89100000000-m575b68c9-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68c9-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000005b-01f4-0000-cb5d-d89100000000-m575b68d1-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d1-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6be0-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371111338887867">
+<Expr mdsid="m0000005c-01f4-0000-d4b7-86a100000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68e3-0c2d-1000-87a7-0af06a760000" name="Avg Arr Delay (Min)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Difference in minutes between scheduled and actual arrival time. Early arrivals set to 0.]]></Description>
+<Expr mdsid="m0000005d-01f4-0000-94a4-188600000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2"]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Arr Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."# of Flights"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000005d-01f4-0000-94a4-188600000000-m575b68cb-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cb-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000005d-01f4-0000-94a4-188600000000-m575b68d1-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d1-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6be1-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371121338887867">
+<Expr mdsid="m0000005e-01f4-0000-549d-892600000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68e4-0c2d-1000-87a7-0af06a760000" name="Avg Carrier Delay (Min)" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000005f-01f4-0000-dffa-cbc500000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2"]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Carrier Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."# of Flights"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000005f-01f4-0000-dffa-cbc500000000-m575b68cc-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cc-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000005f-01f4-0000-dffa-cbc500000000-m575b68d1-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d1-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6be2-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371131338887867">
+<Expr mdsid="m00000060-01f4-0000-db17-30b700000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68e5-0c2d-1000-87a7-0af06a760000" name="Avg Dep Delay (Min)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Difference in minutes between scheduled and actual departure time. Early departures set to 0.]]></Description>
+<Expr mdsid="m00000061-01f4-0000-a831-bc0a00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2"]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Dep Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."# of Flights"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000061-01f4-0000-a831-bc0a00000000-m575b68cf-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cf-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000061-01f4-0000-a831-bc0a00000000-m575b68d1-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d1-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6be3-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371141338887867">
+<Expr mdsid="m00000062-01f4-0000-8ae4-232200000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68e6-0c2d-1000-87a7-0af06a760000" name="Avg Late Aircraft Delay (Min)" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000063-01f4-0000-5833-271200000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2"]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Late Aircraft Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."# of Flights"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000063-01f4-0000-5833-271200000000-m575b68d2-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d2-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000063-01f4-0000-5833-271200000000-m575b68d1-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d1-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6be4-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371151338887867">
+<Expr mdsid="m00000064-01f4-0000-13d3-f55f00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68e7-0c2d-1000-87a7-0af06a760000" name="Avg Nas Delay (Min)" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000065-01f4-0000-ecde-21d300000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2"]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Nas Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."# of Flights"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000065-01f4-0000-ecde-21d300000000-m575b68d3-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d3-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000065-01f4-0000-ecde-21d300000000-m575b68d1-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d1-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6be5-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371161338887867">
+<Expr mdsid="m00000066-01f4-0000-7723-92be00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68e8-0c2d-1000-87a7-0af06a760000" name="Avg Security Delay (Min)" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000067-01f4-0000-e9ce-778b00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2"]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Security Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."# of Flights"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000067-01f4-0000-e9ce-778b00000000-m575b68d4-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d4-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000067-01f4-0000-e9ce-778b00000000-m575b68d1-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d1-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6be6-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371171338887867">
+<Expr mdsid="m00000068-01f4-0000-3d90-daf000000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68e9-0c2d-1000-87a7-0af06a760000" name="Avg Weather Delay (Min)" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000069-01f4-0000-38db-a60800000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2"]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Weather Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."# of Flights"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000069-01f4-0000-38db-a60800000000-m575b68d5-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d5-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000069-01f4-0000-38db-a60800000000-m575b68d1-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d1-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6be7-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371181338887867">
+<Expr mdsid="m0000006a-01f4-0000-554d-967c00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68ea-0c2d-1000-87a7-0af06a760000" name="Avg Distance (Miles)" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000006b-01f4-0000-4a4d-4f6000000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2"]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Distance (Miles)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."# of Flights"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000006b-01f4-0000-4a4d-4f6000000000-m575b68d0-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d0-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000006b-01f4-0000-4a4d-4f6000000000-m575b68d1-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d1-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6be8-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371191338887867">
+<Expr mdsid="m0000006c-01f4-0000-3703-880200000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68eb-0c2d-1000-87a7-0af06a760000" name="Taxi In as % of Flight Time" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000006d-01f4-0000-9492-4cbe00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Taxi In (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Actual Elapsed Time (Min)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000006d-01f4-0000-9492-4cbe00000000-m575b68d9-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d9-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000006d-01f4-0000-9492-4cbe00000000-m575b68c8-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68c8-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6be9-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371201338887867">
+<Expr mdsid="m0000006e-01f4-0000-3f03-22bb00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68ec-0c2d-1000-87a7-0af06a760000" name="Taxi Out as % of Flight Time" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000006f-01f4-0000-eabd-a5dc00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Taxi Out (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Actual Elapsed Time (Min)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000006f-01f4-0000-eabd-a5dc00000000-m575b68da-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68da-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000006f-01f4-0000-eabd-a5dc00000000-m575b68c8-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68c8-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6bea-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371211338887867">
+<Expr mdsid="m00000070-01f4-0000-0234-9f8d00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68ed-0c2d-1000-87a7-0af06a760000" name="Carrier Delay as % of Arrival Delay" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000071-01f4-0000-8405-78f600000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Carrier Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Arr Delay (Min)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000071-01f4-0000-8405-78f600000000-m575b68cc-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cc-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000071-01f4-0000-8405-78f600000000-m575b68cb-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cb-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6beb-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371221338887867">
+<Expr mdsid="m00000072-01f4-0000-4b48-2c5e00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68ee-0c2d-1000-87a7-0af06a760000" name="Late Aircraft Delay as % of Arrival Delay" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000073-01f4-0000-571a-e71a00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Late Aircraft Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Arr Delay (Min)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000073-01f4-0000-571a-e71a00000000-m575b68d2-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d2-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000073-01f4-0000-571a-e71a00000000-m575b68cb-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cb-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6bec-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371231338887867">
+<Expr mdsid="m00000074-01f4-0000-7ada-8b7b00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68ef-0c2d-1000-87a7-0af06a760000" name="Security Delay as % of Arrival Delay" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000075-01f4-0000-8094-689e00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Security Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Arr Delay (Min)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000075-01f4-0000-8094-689e00000000-m575b68d4-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d4-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000075-01f4-0000-8094-689e00000000-m575b68cb-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cb-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6bed-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371241338887867">
+<Expr mdsid="m00000076-01f4-0000-dc67-0f0d00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68f0-0c2d-1000-87a7-0af06a760000" name="Weather Delay as % of Arrival Delay" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000077-01f4-0000-8020-f8e900000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Weather Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Arr Delay (Min)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000077-01f4-0000-8020-f8e900000000-m575b68d5-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d5-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000077-01f4-0000-8020-f8e900000000-m575b68cb-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cb-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6bee-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371251338887867">
+<Expr mdsid="m00000078-01f4-0000-0482-678d00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68f1-0c2d-1000-87a7-0af06a760000" name="Nas Delay as % of Arrival Delay" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000079-01f4-0000-1b8b-6a0100000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Nas Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Arr Delay (Min)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000079-01f4-0000-1b8b-6a0100000000-m575b68d3-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d3-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000079-01f4-0000-1b8b-6a0100000000-m575b68cb-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cb-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6bef-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371261338887867">
+<Expr mdsid="m0000007a-01f4-0000-72c0-69eb00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68fb-0c2d-1000-87a7-0af06a760000" name="Ratio Arr to Dept Delay" isDerived="true" isWriteable="false">
+<Description><![CDATA[Difference in minutes between scheduled and actual departure time. Early departures set to 0.]]></Description>
+<Expr mdsid="m0000007b-01f4-0000-e741-c76000000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2"]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Arr Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Dep Delay (Min)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000007b-01f4-0000-e741-c76000000000-m575b68cb-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cb-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000007b-01f4-0000-e741-c76000000000-m575b68cf-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cf-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6bf9-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371361338887867">
+<Expr mdsid="m0000007c-01f4-0000-cfaa-9c4200000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68fc-0c2d-1000-87a7-0af06a760000" name="Diff Arr - Dept Delay" isDerived="true" isWriteable="false">
+<Description><![CDATA[Difference in minutes between scheduled and actual departure time. Early departures set to 0.]]></Description>
+<Expr mdsid="m0000007d-01f4-0000-ea93-8d1e00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) - "%2"]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Arr Delay (Min)" AS DOUBLE PRECISION ) - "X0 - Airlines"."Flight Facts"."Dep Delay (Min)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000007d-01f4-0000-ea93-8d1e00000000-m575b68cb-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cb-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000007d-01f4-0000-ea93-8d1e00000000-m575b68cf-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cf-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6bfa-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371371338887867">
+<Expr mdsid="m0000007e-01f4-0000-221a-3ed900000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68fd-0c2d-1000-87a7-0af06a760000" name="% Delay Increase After Dept" isDerived="true" isWriteable="false">
+<Description><![CDATA[Difference in minutes between scheduled and actual departure time. Early departures set to 0.]]></Description>
+<Expr mdsid="m0000007f-01f4-0000-c4b4-0a4400000000" name="Expr">
+<ExprText><![CDATA[0 +  CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[0 +  CAST ("X0 - Airlines"."Flight Facts"."Diff Arr - Dept Delay" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Dep Delay (Min)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000007f-01f4-0000-c4b4-0a4400000000-m575b68fc-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68fc-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000007f-01f4-0000-c4b4-0a4400000000-m575b68cf-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cf-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6bfb-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371381338887867">
+<Expr mdsid="m00000080-01f4-0000-e43e-b1ac00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68fe-0c2d-1000-87a7-0af06a760000" name="Period Ago # of Flights" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000081-01f4-0000-968c-da4500000000" name="Expr">
+<ExprText><![CDATA[ AGO("%1", 1)]]></ExprText>
+<ExprTextDesc><![CDATA[ AGO("X0 - Airlines"."Flight Facts"."# of Flights", 1)]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000081-01f4-0000-968c-da4500000000-m575b68d1-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d1-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6bfc-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371391338887867">
+<Expr mdsid="m00000082-01f4-0000-0cac-514400000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b68ff-0c2d-1000-87a7-0af06a760000" name="Delay Perf % (0=Ontime,  &gt;0=Late)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Percent of flights that arrive on time. Note: If you select Origin as a category, you get percent of flights that depart from those airports and arrive on time.]]></Description>
+<Expr mdsid="m00000083-01f4-0000-f54d-0a1200000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Arr Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Actual Elapsed Time (Min)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000083-01f4-0000-f54d-0a1200000000-m575b68cb-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cb-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000083-01f4-0000-f54d-0a1200000000-m575b68c8-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68c8-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6bfd-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371401338887867">
+<Expr mdsid="m00000084-01f4-0000-6fe0-611c00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6908-0c2d-1000-87a7-0af06a760000" name="Pres Folder Header" iconIndex="91" isDerived="true" isWriteable="false">
+<Description><![CDATA[Percent of flights that arrive on time. Note: If you select Origin as a category, you get percent of flights that depart from those airports and arrive on time.]]></Description>
+<Expr mdsid="m00000085-01f4-0000-e138-7f3100000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m575b6c06-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371491338887867">
+<Expr mdsid="m00000086-01f4-0000-5fec-503b00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6909-0c2d-1000-87a7-0af06a760000" name="Source Fact Table" iconIndex="86" isWriteable="false">
+<Description><![CDATA[Elapsed Time of Flight, in Minutes]]></Description>
+<AttrDefn mdsid="m575b6c07-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371501338887867">
+<Expr mdsid="m00000087-01f4-0000-5f26-3e1400000000" name="Expr">
+<ExprText><![CDATA['Granular Source Table 6.360k Rows']]></ExprText>
+<ExprTextDesc><![CDATA['Granular Source Table 6.360k Rows']]></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b690d-0c2d-1000-87a7-0af06a760000" name="PerAgo % increase of Flights" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000088-01f4-0000-ee98-6c1300000000" name="Expr">
+<ExprText><![CDATA[( CAST ("%1" AS DOUBLE PRECISION ) / "%2" - 1) * 100]]></ExprText>
+<ExprTextDesc><![CDATA[( CAST ("X0 - Airlines"."Flight Facts"."# of Flights" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Period Ago # of Flights" - 1) * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000088-01f4-0000-ee98-6c1300000000-m575b68d1-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d1-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000088-01f4-0000-ee98-6c1300000000-m575b68fe-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68fe-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6c0b-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371541338887867">
+<Expr mdsid="m00000089-01f4-0000-ffc9-46b800000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b690e-0c2d-1000-87a7-0af06a760000" name="PerAgo # of Late Flights" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000008a-01f4-0000-b8d6-121d00000000" name="Expr">
+<ExprText><![CDATA[ AGO("%1", 1)]]></ExprText>
+<ExprTextDesc><![CDATA[ AGO("X0 - Airlines"."Flight Facts"."# of Late Flights", 1)]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000008a-01f4-0000-b8d6-121d00000000-m575b6907-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b6907-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6c0c-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371551338887867">
+<Expr mdsid="m0000008b-01f4-0000-684e-c71300000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b690f-0c2d-1000-87a7-0af06a760000" name="PerAgo % increase of Late Flights" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000008c-01f4-0000-f959-120c00000000" name="Expr">
+<ExprText><![CDATA[( CAST ("%1" AS DOUBLE PRECISION ) / "%2" - 1) * 100]]></ExprText>
+<ExprTextDesc><![CDATA[( CAST ("X0 - Airlines"."Flight Facts"."# of Late Flights" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."PerAgo # of Late Flights" - 1) * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000008c-01f4-0000-f959-120c00000000-m575b6907-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b6907-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000008c-01f4-0000-f959-120c00000000-m575b690e-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b690e-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6c0d-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371561338887867">
+<Expr mdsid="m0000008d-01f4-0000-7cfa-4cd400000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6919-0c2d-1000-87a7-0af06a760000" name="Avg Delay per Pax-K-Miles (Min)" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000008e-01f4-0000-16f4-ed8f00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 1000]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Dep Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Market Facts"."Passengers x Miles" * 1000]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000008e-01f4-0000-16f4-ed8f00000000-m575b68cf-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cf-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000008e-01f4-0000-16f4-ed8f00000000-m575b6999-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6982-0c2d-1000-87a7-0af06a760000.xml#m575b6999-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6c17-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371661338887867">
+<Expr mdsid="m0000008f-01f4-0000-d634-931400000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b691a-0c2d-1000-87a7-0af06a760000" name="Carrier Delay as % of Flight Time" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000090-01f4-0000-0012-b22900000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Carrier Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Actual Elapsed Time (Min)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000090-01f4-0000-0012-b22900000000-m575b68cc-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cc-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000090-01f4-0000-0012-b22900000000-m575b68c8-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68c8-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6c18-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371671338887867">
+<Expr mdsid="m00000091-01f4-0000-71cb-c64800000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b691b-0c2d-1000-87a7-0af06a760000" name="Late Aircraft Delay as % of Flight Time" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000092-01f4-0000-c32c-42fd00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Late Aircraft Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Actual Elapsed Time (Min)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000092-01f4-0000-c32c-42fd00000000-m575b68d2-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d2-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000092-01f4-0000-c32c-42fd00000000-m575b68c8-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68c8-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6c19-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371681338887867">
+<Expr mdsid="m00000093-01f4-0000-643d-61f800000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b691c-0c2d-1000-87a7-0af06a760000" name="Security Delay as % of Flight Time" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000094-01f4-0000-eb1e-77ca00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Security Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Actual Elapsed Time (Min)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000094-01f4-0000-eb1e-77ca00000000-m575b68d4-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d4-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000094-01f4-0000-eb1e-77ca00000000-m575b68c8-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68c8-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6c1a-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371691338887867">
+<Expr mdsid="m00000095-01f4-0000-a4ac-fb1e00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b691d-0c2d-1000-87a7-0af06a760000" name="Weather Delay as % of Flight Time" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000096-01f4-0000-50d6-0fdb00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Weather Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Actual Elapsed Time (Min)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000096-01f4-0000-50d6-0fdb00000000-m575b68d5-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d5-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000096-01f4-0000-50d6-0fdb00000000-m575b68c8-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68c8-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6c1b-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371701338887867">
+<Expr mdsid="m00000097-01f4-0000-810c-3e6200000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b691e-0c2d-1000-87a7-0af06a760000" name="Nas Delay as % of Flight Time" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000098-01f4-0000-dd83-35d800000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Nas Delay (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Actual Elapsed Time (Min)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000098-01f4-0000-dd83-35d800000000-m575b68d3-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d3-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000098-01f4-0000-dd83-35d800000000-m575b68c8-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68c8-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6c1c-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371711338887867">
+<Expr mdsid="m00000099-01f4-0000-fd77-4cf000000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b691f-0c2d-1000-87a7-0af06a760000" name="Other Causes (Min)" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000009a-01f4-0000-0747-5a2700000000" name="Expr">
+<ExprText><![CDATA["%1" - "%2" - "%3" - "%4" - "%5" - "%6"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."Flight Facts"."Arr Delay (Min)" - "X0 - Airlines"."Flight Facts"."Carrier Delay (Min)" - "X0 - Airlines"."Flight Facts"."Late Aircraft Delay (Min)" - "X0 - Airlines"."Flight Facts"."Nas Delay (Min)" - "X0 - Airlines"."Flight Facts"."Security Delay (Min)" - "X0 - Airlines"."Flight Facts"."Weather Delay (Min)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000009a-01f4-0000-0747-5a2700000000-m575b68cb-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cb-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000009a-01f4-0000-0747-5a2700000000-m575b68cc-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cc-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000009a-01f4-0000-0747-5a2700000000-m575b68d2-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d2-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000009a-01f4-0000-0747-5a2700000000-m575b68d3-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d3-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000009a-01f4-0000-0747-5a2700000000-m575b68d4-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d4-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000009a-01f4-0000-0747-5a2700000000-m575b68d5-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68d5-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6c1d-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371721338887867">
+<Expr mdsid="m0000009b-01f4-0000-3932-ec4300000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6920-0c2d-1000-87a7-0af06a760000" name="Other Causes as % of Flight Time" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000009c-01f4-0000-2b4c-7d9600000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Other Causes (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Actual Elapsed Time (Min)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000009c-01f4-0000-2b4c-7d9600000000-m575b691f-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b691f-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000009c-01f4-0000-2b4c-7d9600000000-m575b68c8-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68c8-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6c1e-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371731338887867">
+<Expr mdsid="m0000009d-01f4-0000-75f0-197c00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6921-0c2d-1000-87a7-0af06a760000" name="Other Causes as % of Arrival Delay" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000009e-01f4-0000-ce01-1db800000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Other Causes (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Arr Delay (Min)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000009e-01f4-0000-ce01-1db800000000-m575b691f-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b691f-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m0000009e-01f4-0000-ce01-1db800000000-m575b68cb-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cb-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6c1f-0c2d-1000-87a7-0af06a760000" name="AD_3900:2371741338887867">
+<Expr mdsid="m0000009f-01f4-0000-d5fb-ae8e00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m07ede074-0c35-1000-ba2a-8c5486920000" name="# of Flights - Atomic Source Only" isWriteable="false">
+<MeasureDefn mdsid="m07ede075-0c35-1000-ba2a-8c5486920000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m07f66bf0-0c35-1000-ba2a-8c5486920000" name="AggRule_2050:2493861342190676" isDefault="true">
+<Expr mdsid="m000000a0-01f4-0000-74ae-c91200000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."# of Flights - Atomic Source Only")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m000000a0-01f4-0000-74ae-c91200000000-m07ede074-0c35-1000-ba2a-8c5486920000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m07ede074-0c35-1000-ba2a-8c5486920000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m07ede077-0c35-1000-ba2a-8c5486920000" name="AD_3900:2493761342190583">
+<Expr mdsid="m000000a1-01f4-0000-597a-c31500000000" name="Expr">
+<ExprText><![CDATA[IFNULL(case when   "%1" <1 then  "%2"  end,0)]]></ExprText>
+<ExprTextDesc><![CDATA[IFNULL(case when   "X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."CANCELLED" <1 then  "X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."FLIGHTS"  end,0)]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m000000a1-01f4-0000-597a-c31500000000-m57586707-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m57586707-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m000000a1-01f4-0000-597a-c31500000000-m5758670d-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m5758670d-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m07f09f94-0c35-1000-ba2a-8c5486920000" name="# of Flights - TT Aggregate Only" isWriteable="false">
+<MeasureDefn mdsid="me6da1420-0c62-1000-a26c-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="me6da1421-0c62-1000-a26c-7f0000010000" name="AggRule_2050:2572651361891948" isDefault="true">
+<Expr mdsid="m000000a2-01f4-0000-47b3-439100000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."# of Flights - TT Aggregate Only")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m000000a2-01f4-0000-47b3-439100000000-m07f09f94-0c35-1000-ba2a-8c5486920000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m07f09f94-0c35-1000-ba2a-8c5486920000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m07f09f97-0c35-1000-ba2a-8c5486920000" name="AD_3900:2493841342190601">
+<Expr mdsid="m000000a3-01f4-0000-4547-ec0700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."FACT_AGG_TT_04M"."Z_of_Fligh00039B28"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m000000a3-01f4-0000-4547-ec0700000000-m6adf255a-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6adf2550-0c61-1000-99f2-7f0000010000.xml#m6adf255a-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m69336360-0c5c-1000-b87d-7f0000010000" name="Actual Elapsed Time (Min) ESSAgg" iconIndex="32768" isWriteable="false">
+<Description><![CDATA[Elapsed Time of Flight, in Minutes]]></Description>
+<MeasureDefn mdsid="m69336361-0c5c-1000-b87d-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m694abbf0-0c5c-1000-b87d-7f0000010000" name="AggRule_2050:2529001359104482" isDefault="true">
+<Expr mdsid="m000000a4-01f4-0000-450c-dc4000000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Actual Elapsed Time (Min) ESSAgg")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m000000a4-01f4-0000-450c-dc4000000000-m69336360-0c5c-1000-b87d-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m69336360-0c5c-1000-b87d-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m69336363-0c5c-1000-b87d-7f0000010000" name="AD_3900:2528471359104482">
+<Expr mdsid="m000000a5-01f4-0000-2a37-37b100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."ACTUALELAPSEDTIME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m000000a5-01f4-0000-2a37-37b100000000-m5758670b-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m5758670b-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m69349be0-0c5c-1000-b87d-7f0000010000" name="Arr Delay (Min) ESSAgg" iconIndex="32768" isWriteable="false">
+<Description><![CDATA[Difference in minutes between scheduled and actual arrival time. Early arrivals set to 0.]]></Description>
+<MeasureDefn mdsid="m69349be1-0c5c-1000-b87d-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m694d2cf0-0c5c-1000-b87d-7f0000010000" name="AggRule_2050:2529011359104482" isDefault="true">
+<Expr mdsid="m000000a6-01f4-0000-c929-5f5300000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Arr Delay (Min) ESSAgg")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m000000a6-01f4-0000-c929-5f5300000000-m69349be0-0c5c-1000-b87d-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m69349be0-0c5c-1000-b87d-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m69349be3-0c5c-1000-b87d-7f0000010000" name="AD_3900:2528551359104482">
+<Expr mdsid="m000000a7-01f4-0000-da55-ad3100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."ARRDELAYMINUTES"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m000000a7-01f4-0000-da55-ad3100000000-m57586703-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m57586703-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m6935d460-0c5c-1000-b87d-7f0000010000" name="Distance (Miles) ESSAgg" iconIndex="32768" isWriteable="false">
+<MeasureDefn mdsid="m6935d461-0c5c-1000-b87d-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m695e1ce0-0c5c-1000-b87d-7f0000010000" name="AggRule_2050:2529061359104482" isDefault="true">
+<Expr mdsid="m000000a8-01f4-0000-6446-a22b00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."Distance (Miles) ESSAgg")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m000000a8-01f4-0000-6446-a22b00000000-m6935d460-0c5c-1000-b87d-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m6935d460-0c5c-1000-b87d-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m6935d463-0c5c-1000-b87d-7f0000010000" name="AD_3900:2528631359104482">
+<Expr mdsid="m000000a9-01f4-0000-d2b4-8e1a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."DISTANCE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m000000a9-01f4-0000-d2b4-8e1a00000000-m5758670e-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m5758670e-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m69375b00-0c5c-1000-b87d-7f0000010000" name="# of Flights ESSAgg" iconIndex="32768" isWriteable="false">
+<Description><![CDATA[IFNULL(case when   "X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."CANCELLED" <1 then  "X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."FLIGHTS"  end,0)]]></Description>
+<MeasureDefn mdsid="m69375b01-0c5c-1000-b87d-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m42524951-0c61-1000-99f2-7f0000010000" name="AggRule_2050:2551201361186533" isDefault="true">
+<Expr mdsid="m000000aa-01f4-0000-fc42-4dca00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."# of Flights ESSAgg")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m000000aa-01f4-0000-fc42-4dca00000000-m69375b00-0c5c-1000-b87d-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m69375b00-0c5c-1000-b87d-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m69375b03-0c5c-1000-b87d-7f0000010000" name="AD_3900:2528711359104482">
+<Expr mdsid="m000000ab-01f4-0000-591f-573f00000000" name="Expr">
+<ExprText><![CDATA[IFNULL(case when   "%1" <1 then  "%2"  end,0)]]></ExprText>
+<ExprTextDesc><![CDATA[IFNULL(case when   "X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."CANCELLED" <1 then  "X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."FLIGHTS"  end,0)]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m000000ab-01f4-0000-591f-573f00000000-m57586707-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m57586707-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m000000ab-01f4-0000-591f-573f00000000-m5758670d-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m5758670d-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m6938e1a0-0c5c-1000-b87d-7f0000010000" name="# of Late Flights ESSAgg" iconIndex="32768" isDerived="true" isWriteable="false">
+<Expr mdsid="m000000ac-01f4-0000-fff3-046700000000" name="Expr">
+<ExprText><![CDATA["%1" - "%2"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines"."Flight Facts"."# of Flights ESSAgg" - "X0 - Airlines"."Flight Facts"."# of Fl Arr Ontime or Early ESSAgg"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m000000ac-01f4-0000-fff3-046700000000-m69375b00-0c5c-1000-b87d-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m69375b00-0c5c-1000-b87d-7f0000010000"/>
+<RefObject refId="m000000ac-01f4-0000-fff3-046700000000-m69392fc0-0c5c-1000-b87d-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m69392fc0-0c5c-1000-b87d-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m6938e1a1-0c5c-1000-b87d-7f0000010000" name="AD_3900:2528751359104482">
+<Expr mdsid="m000000ad-01f4-0000-d8ad-b02700000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m69392fc0-0c5c-1000-b87d-7f0000010000" name="# of Fl Arr Ontime or Early ESSAgg" iconIndex="32768" isWriteable="false">
+<Description><![CDATA[Number of flights with 0 minutes delay]]></Description>
+<MeasureDefn mdsid="m69392fc1-0c5c-1000-b87d-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m6ca0ebd0-0c5c-1000-b87d-7f0000010000" name="AggRule_2050:2529411359110205" isDefault="true">
+<Expr mdsid="m000000ae-01f4-0000-9931-bffc00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X0 - Airlines"."Flight Facts"."# of Fl Arr Ontime or Early ESSAgg")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m000000ae-01f4-0000-9931-bffc00000000-m69392fc0-0c5c-1000-b87d-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m69392fc0-0c5c-1000-b87d-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m69392fc3-0c5c-1000-b87d-7f0000010000" name="AD_3900:2528831359104482">
+<Expr mdsid="m000000af-01f4-0000-1425-d62b00000000" name="Expr">
+<ExprText><![CDATA[ifnull(case when  "%1" < 0 then  "%2"  end,0)]]></ExprText>
+<ExprTextDesc><![CDATA[ifnull(case when  "X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."ARRIVALDELAYGROUPS" < 0 then  "X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."FLIGHTS"  end,0)]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m000000af-01f4-0000-1425-d62b00000000-m57586705-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m57586705-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m000000af-01f4-0000-1425-d62b00000000-m5758670d-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m5758670d-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m693ab660-0c5c-1000-b87d-7f0000010000" name="Arr Delay as % of Flight Time ESSAgg" iconIndex="32768" isDerived="true" isWriteable="false">
+<Description><![CDATA[Percent of flights that arrive on time. Note: If you select Origin as a category, you get percent of flights that depart from those airports and arrive on time.]]></Description>
+<Expr mdsid="m000000b0-01f4-0000-6029-725b00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Arr Delay (Min) ESSAgg" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Actual Elapsed Time (Min) ESSAgg" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m000000b0-01f4-0000-6029-725b00000000-m69349be0-0c5c-1000-b87d-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m69349be0-0c5c-1000-b87d-7f0000010000"/>
+<RefObject refId="m000000b0-01f4-0000-6029-725b00000000-m69336360-0c5c-1000-b87d-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m69336360-0c5c-1000-b87d-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m693ab661-0c5c-1000-b87d-7f0000010000" name="AD_3900:2528871359104482">
+<Expr mdsid="m000000b1-01f4-0000-4320-3b1d00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m693b0480-0c5c-1000-b87d-7f0000010000" name="Delay Perf % (0=Ontime,  &gt;0=Late) ESSAgg" iconIndex="32768" isDerived="true" isWriteable="false">
+<Description><![CDATA[Percent of flights that arrive on time. Note: If you select Origin as a category, you get percent of flights that depart from those airports and arrive on time.]]></Description>
+<Expr mdsid="m000000b2-01f4-0000-215b-c34c00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Arr Delay (Min) ESSAgg" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Actual Elapsed Time (Min) ESSAgg" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m000000b2-01f4-0000-215b-c34c00000000-m69349be0-0c5c-1000-b87d-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m69349be0-0c5c-1000-b87d-7f0000010000"/>
+<RefObject refId="m000000b2-01f4-0000-215b-c34c00000000-m69336360-0c5c-1000-b87d-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m69336360-0c5c-1000-b87d-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m693b0481-0c5c-1000-b87d-7f0000010000" name="AD_3900:2528951359104482">
+<Expr mdsid="m000000b3-01f4-0000-d3f9-391f00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb4aa3f90-0c60-1000-9471-7f0000010000" name="# of Carrier Flight Numbers" isWriteable="false">
+<MeasureDefn mdsid="mb4aa3f91-0c60-1000-9471-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mb4b9cff0-0c60-1000-9471-7f0000010000" name="AggRule_2050:2551171360948904" isDefault="true">
+<Expr mdsid="m000000b4-01f4-0000-81ef-d09d00000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "X0 - Airlines"."Flight Facts"."# of Carrier Flight Numbers")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m000000b4-01f4-0000-81ef-d09d00000000-mb4aa3f90-0c60-1000-9471-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#mb4aa3f90-0c60-1000-9471-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb4aa3f93-0c60-1000-9471-7f0000010000" name="AD_3900:2551151360948904">
+<Expr mdsid="m000000b5-01f4-0000-a72c-4b6b00000000" name="Expr">
+<ExprText><![CDATA["%1" ]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."00 PERFORMANCE FULL"."FLIGHTNUM" ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m000000b5-01f4-0000-a72c-4b6b00000000-m575866e8-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575866dd-0c2d-1000-87a7-0af06a760000.xml#m575866e8-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m48835e90-0c61-1000-99f2-7f0000010000" name="Arr Lag as % of Flight Time" isDerived="true" isWriteable="false">
+<Description><![CDATA[Percent of flights that arrive on time. Note: If you select Origin as a category, you get percent of flights that depart from those airports and arrive on time.]]></Description>
+<Expr mdsid="m000000b6-01f4-0000-27e8-761700000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Arr Lag (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Actual Elapsed Time (Min)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m000000b6-01f4-0000-27e8-761700000000-m575b68ca-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68ca-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m000000b6-01f4-0000-27e8-761700000000-m575b68c8-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68c8-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m48835e91-0c61-1000-99f2-7f0000010000" name="AD_3900:2551241361196890">
+<Expr mdsid="m000000b7-01f4-0000-b42c-e6fa00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m4b072340-0c61-1000-99f2-7f0000010000" name="Dept Lag as % of Flight Time" isDerived="true" isWriteable="false">
+<Description><![CDATA[Percent of flights that arrive on time. Note: If you select Origin as a category, you get percent of flights that depart from those airports and arrive on time.]]></Description>
+<Expr mdsid="m000000b8-01f4-0000-9db4-ecff00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X0 - Airlines"."Flight Facts"."Dep Lag (Min)" AS DOUBLE PRECISION ) / "X0 - Airlines"."Flight Facts"."Actual Elapsed Time (Min)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m000000b8-01f4-0000-9db4-ecff00000000-m575b68ce-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68ce-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m000000b8-01f4-0000-9db4-ecff00000000-m575b68c8-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68c8-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m4b072341-0c61-1000-99f2-7f0000010000" name="AD_3900:2551301361201117">
+<Expr mdsid="m000000b9-01f4-0000-5750-7af100000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m575b6cf0-0c2d-1000-87a7-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/575b6cf0-0c2d-1000-87a7-0af06a760000.xml#m575b6cf0-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m66fbf7b0-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/66fbf7b0-0c61-1000-99f2-7f0000010000.xml#m66fbf7b0-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m67154c10-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/67154c10-0c61-1000-99f2-7f0000010000.xml#m67154c10-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m671e73d0-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/671e73d0-0c61-1000-99f2-7f0000010000.xml#m671e73d0-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m67355730-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/67355730-0c61-1000-99f2-7f0000010000.xml#m67355730-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m6737c830-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/6737c830-0c61-1000-99f2-7f0000010000.xml#m6737c830-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m6757d351-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/6757d351-0c61-1000-99f2-7f0000010000.xml#m6757d351-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m676b0d30-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/676b0d30-0c61-1000-99f2-7f0000010000.xml#m676b0d30-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m676b0d31-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/676b0d31-0c61-1000-99f2-7f0000010000.xml#m676b0d31-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m678b1851-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/678b1851-0c61-1000-99f2-7f0000010000.xml#m678b1851-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m67b6e340-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/67b6e340-0c61-1000-99f2-7f0000010000.xml#m67b6e340-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m67b6e341-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/67b6e341-0c61-1000-99f2-7f0000010000.xml#m67b6e341-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m67d7d8c0-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/67d7d8c0-0c61-1000-99f2-7f0000010000.xml#m67d7d8c0-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m67d7d8c1-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/67d7d8c1-0c61-1000-99f2-7f0000010000.xml#m67d7d8c1-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m67de1a50-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/67de1a50-0c61-1000-99f2-7f0000010000.xml#m67de1a50-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m686e4c60-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/686e4c60-0c61-1000-99f2-7f0000010000.xml#m686e4c60-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m686e4c61-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/686e4c61-0c61-1000-99f2-7f0000010000.xml#m686e4c61-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m68750320-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/68750320-0c61-1000-99f2-7f0000010000.xml#m68750320-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m68bf2b80-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/68bf2b80-0c61-1000-99f2-7f0000010000.xml#m68bf2b80-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m68cb6080-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/68cb6080-0c61-1000-99f2-7f0000010000.xml#m68cb6080-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m68cf7f30-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/68cf7f30-0c61-1000-99f2-7f0000010000.xml#m68cf7f30-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m6923e0c1-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/6923e0c1-0c61-1000-99f2-7f0000010000.xml#m6923e0c1-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m6923e0c0-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/6923e0c0-0c61-1000-99f2-7f0000010000.xml#m6923e0c0-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m6929fb40-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/6929fb40-0c61-1000-99f2-7f0000010000.xml#m6929fb40-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m6937ddf0-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/6937ddf0-0c61-1000-99f2-7f0000010000.xml#m6937ddf0-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m6937ddf1-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/6937ddf1-0c61-1000-99f2-7f0000010000.xml#m6937ddf1-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m6937ddf2-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/6937ddf2-0c61-1000-99f2-7f0000010000.xml#m6937ddf2-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m693a4ef0-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/693a4ef0-0c61-1000-99f2-7f0000010000.xml#m693a4ef0-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m697a1710-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/697a1710-0c61-1000-99f2-7f0000010000.xml#m697a1710-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b68c7-0c2d-1000-87a7-0af06a760000-m6ae7b0d0-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/6ae7b0d0-0c61-1000-99f2-7f0000010000.xml#m6ae7b0d0-0c61-1000-99f2-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

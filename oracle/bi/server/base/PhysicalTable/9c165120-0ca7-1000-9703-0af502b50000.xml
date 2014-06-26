@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m9c165120-0ca7-1000-9703-0af502b50000" name="mileage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" rowCount="88.0" lastUpdated="2014-02-07 13:51:20" maxConn="0" containerRef="/oracle/bi/server/base/Database/3365eeb0-0ca7-1000-9703-0af502b50000.xml#m3365eeb0-0ca7-1000-9703-0af502b50000">
+<Description><![CDATA[where xyz = VALUEOF(NQ_SESSION.EID_param1)
+
+SELECT E1 AS CLAIM_PERIOD, E2 AS SALES_DATE, E3 AS TOTAL_MILEAGE, E4 AS VEHICLE_MAKE
+FROM TABLE(EQL('SELECT 
+sum(pCLAIM_ODMTR_MILEAGE) as TOTMILEAGE
+group by 
+SALE_DATE,CLAIM_PERIOD,Vehicle_Make'))]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SELECT E1 AS CLAIM_PERIOD, E2 AS SALES_DATE, E3 AS TOTAL_MILEAGE, E4 AS VEHICLE_MAKE
+FROM TABLE(EQL('SELECT 
+sum(pCLAIM_ODMTR_MILEAGE) as TOTMILEAGE
+group by 
+SALE_DATE,CLAIM_PERIOD,Vehicle_Make'))
+WHERE E1 IN '2010-04']]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m9c1b0c10-0ca7-1000-9703-0af502b50000" name="TOTAL_MILEAGE" dataType="VARCHAR" precision="10" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9c1f51d0-0ca7-1000-9703-0af502b50000" name="CLAIM_PERIOD" dataType="VARCHAR" precision="10" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9c234970-0ca7-1000-9703-0af502b50000" name="VEHICLE_MAKE" dataType="VARCHAR" precision="50" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9c24d010-0ca7-1000-9703-0af502b50000" name="SALES_DATE" dataType="VARCHAR" precision="10" specialType="none">
+</PhysicalColumn>
+</PhysicalTable>

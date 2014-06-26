@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m80cb2a08-07f5-0000-714b-e31d00000000" name="LTS02 Revenue (Billed Dt Individual Contrib.)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d5-07f3-0000-714b-e31d00000000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-616b-c26c00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F0 Sales Base Measures"."114  Individual Contrib (Flat Rev Agg)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-616b-c26c00000000-m80cb2a06-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cb2a06-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-aad8-3edd00000000" name="Expr">
+<ExprText><![CDATA[case when 
+ "%1" =0 
+then 
+"%2"
+
+when 
+ "%1" is null
+then 
+"%2"
+end]]></ExprText>
+<ExprTextDesc><![CDATA[case when 
+ "01 - Sample App Data (ORCL)".""."BISAMPLE"."D51 Closure Table Sales Rep Parent Child"."Distance" =0 
+then 
+"01 - Sample App Data (ORCL)".""."BISAMPLE"."F18 Rev. (Individual Contrib)"."Revenue"
+
+when 
+ "01 - Sample App Data (ORCL)".""."BISAMPLE"."D51 Closure Table Sales Rep Parent Child"."Distance" is null
+then 
+"01 - Sample App Data (ORCL)".""."BISAMPLE"."F18 Rev. (Individual Contrib)"."Revenue"
+end]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-aad8-3edd00000000-m80cb69b4-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb682d-0bb9-0000-714b-e31d00000000.xml#m80cb69b4-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m00000002-01f4-0000-aad8-3edd00000000-m80cb6a61-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb683f-0bb9-0000-714b-e31d00000000.xml#m80cb6a61-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-00e9-f14100000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F0 Sales Base Measures"."X03  Physical Fact Table Hit"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-00e9-f14100000000-m5c480950-0c28-1000-accc-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m5c480950-0c28-1000-accc-0af502b10000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-f9bb-b64500000000" name="Expr">
+<ExprText><![CDATA['SAMP_REVENUE_F']]></ExprText>
+<ExprTextDesc><![CDATA['SAMP_REVENUE_F']]></ExprTextDesc>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-b47b-86e000000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F0 Sales Base Measures"."X01  LTS Selected"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-b47b-86e000000000-m5d28cc62-0c28-1000-accc-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m5d28cc62-0c28-1000-accc-0af502b10000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-9ac7-27b500000000" name="Expr">
+<ExprText><![CDATA['LTS02 Revenue (Billed Dt Individual Contrib.)']]></ExprText>
+<ExprTextDesc><![CDATA['LTS02 Revenue (Billed Dt Individual Contrib.)']]></ExprTextDesc>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000007-01f4-0000-ccb5-5ba900000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F0 Sales Base Measures"."X02  Physical Fact Alias Hit"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-ccb5-5ba900000000-m5d5f45b2-0c28-1000-accc-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m5d5f45b2-0c28-1000-accc-0af502b10000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000008-01f4-0000-dc09-c76f00000000" name="Expr">
+<ExprText><![CDATA['F18 Billed Rev']]></ExprText>
+<ExprTextDesc><![CDATA['F18 Billed Rev']]></ExprTextDesc>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/80cb682d-0bb9-0000-714b-e31d00000000.xml#m80cb682d-0bb9-0000-714b-e31d00000000">
+<Join type="Inner" cardinality=" ONE TO MANY" physicalTable1Ref="/oracle/bi/server/base/PhysicalTable/80cb682d-0bb9-0000-714b-e31d00000000.xml#m80cb682d-0bb9-0000-714b-e31d00000000" physicalTable2Ref="/oracle/bi/server/base/PhysicalTable/80cb683f-0bb9-0000-714b-e31d00000000.xml#m80cb683f-0bb9-0000-714b-e31d00000000" physicalJoinRef="/oracle/bi/server/base/PhysicalTable/80cb683f-0bb9-0000-714b-e31d00000000.xml#m80cbdcfc-0bbe-0000-714b-e31d00000000"/>
+</Link>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/80cb683f-0bb9-0000-714b-e31d00000000.xml#m80cb683f-0bb9-0000-714b-e31d00000000">
+<Join type="Inner" cardinality="MANY TO ONE" physicalTable1Ref="/oracle/bi/server/base/PhysicalTable/80cb683f-0bb9-0000-714b-e31d00000000.xml#m80cb683f-0bb9-0000-714b-e31d00000000" physicalTable2Ref="/oracle/bi/server/base/PhysicalTable/80cb682d-0bb9-0000-714b-e31d00000000.xml#m80cb682d-0bb9-0000-714b-e31d00000000" physicalJoinRef="/oracle/bi/server/base/PhysicalTable/80cb683f-0bb9-0000-714b-e31d00000000.xml#m80cbdcfc-0bbe-0000-714b-e31d00000000"/>
+</Link>
+<WhereClause mdsid="m00000009-01f4-0000-0869-4c6b00000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m0000000a-01f4-0000-8ef0-ae4b00000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m0000000b-01f4-0000-b833-2af100000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

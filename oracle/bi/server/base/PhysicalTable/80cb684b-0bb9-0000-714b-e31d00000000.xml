@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cb684b-0bb9-0000-714b-e31d00000000" name="L1 Currency FX Lookup" iconIndex="77" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" x="550" y="1427" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cb6808-0bb9-0000-714b-e31d00000000.xml#m80cb6808-0bb9-0000-714b-e31d00000000">
+<Description><![CDATA[Currency Lookup Alias: Stores currency conversion rate information at quarter grain]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SAMP_CURRENCY_D]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cb6ace-0bbb-0000-714b-e31d00000000" name="Qtr_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6808-0bb9-0000-714b-e31d00000000.xml#m80cb686e-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Quarter Key: Joins to Qtr_Key of Time dimension table (Qtr grain).]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6acf-0bbb-0000-714b-e31d00000000" name="Fx_Rate" dataType="DOUBLE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6808-0bb9-0000-714b-e31d00000000.xml#m80cb686f-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Fx Rate: Stores FX rate as a double]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6ad0-0bbb-0000-714b-e31d00000000" name="From_Curr" dataType="VARCHAR" precision="3" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6808-0bb9-0000-714b-e31d00000000.xml#m80cb6870-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[From Currency: Stores the 'From Currency' code]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6ad1-0bbb-0000-714b-e31d00000000" name="To_Curr" dataType="VARCHAR" precision="3" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6808-0bb9-0000-714b-e31d00000000.xml#m80cb6871-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[To Currency: Stores the 'To currency' code]]></Description>
+</PhysicalColumn>
+</PhysicalTable>

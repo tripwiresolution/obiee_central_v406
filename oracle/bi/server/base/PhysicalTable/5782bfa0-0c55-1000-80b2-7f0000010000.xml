@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m5782bfa0-0c55-1000-80b2-7f0000010000" name="PERSPGRAPH" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Database/ac71f401-0c31-1000-8edd-0af0613a0000.xml#mac71f401-0c31-1000-8edd-0af0613a0000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[select id, image from table(rqTableEval(cursor(
+select valueof(NQ_SESSION.OR_PERSP_THETA) THETA, 
+valueof(NQ_SESSION.OR_PERSP_PHI) PHI, 
+'valueof(NQ_SESSION.OR_PERSP_COLOR)' COLOR from dual), NULL,'PNG','sincFunction'));]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m57a42a50-0c55-1000-80b2-7f0000010000" name="id" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m57a71080-0c55-1000-80b2-7f0000010000" name="image" dataType="LONGVARBINARY" precision="256000" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m57b0d480-0c55-1000-80b2-7f0000010000" name="id">
+<RefColumns>
+<RefColumn refId="m57b0d480-0c55-1000-80b2-7f0000010000-m57a42a50-0c55-1000-80b2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/5782bfa0-0c55-1000-80b2-7f0000010000.xml#m57a42a50-0c55-1000-80b2-7f0000010000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<InitBlock mdsid="mc0000001-619d-14e1-88f6-7f0000010000" name="ODM_CLUST_MOD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isSessionVar="true" refreshPeriod="86400" connectionPoolRef="/oracle/bi/server/base/ConnectionPool/80cb28c8-0bd5-0000-714b-e31d00000000.xml#m80cb28c8-0bd5-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[select max(model_name) from ODM_CLUSTER_DETAILS_V]]></Value>
+</DBMapItem>
+<RefVariables>
+<RefVariable refId="mc0000001-619d-14e1-88f6-7f0000010000-mc0000000-619d-14e1-88f6-7f0000010000" variableRef="/oracle/bi/server/base/Variable/c0000000-619d-14e1-88f6-7f0000010000.xml#mc0000000-619d-14e1-88f6-7f0000010000"/>
+</RefVariables>
+<InitString><![CDATA[select max(model_name) from ODM_CLUSTER_DETAILS_V]]></InitString>
+</InitBlock>

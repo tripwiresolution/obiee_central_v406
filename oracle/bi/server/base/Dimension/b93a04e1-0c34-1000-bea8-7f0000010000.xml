@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="mb93a04e1-0c34-1000-bea8-7f0000010000" name="WP All Accounts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="false" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/b93a04e1-0c34-1000-bea8-7f0000010000.xml#mb93a2bf0-0c34-1000-bea8-7f0000010000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/802b289f-07d0-0000-714b-e31d00000000.xml#m802b289f-07d0-0000-714b-e31d00000000">
+<LogicalLevel mdsid="mb93a2bf0-0c34-1000-bea8-7f0000010000" name="All Accounts" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;All Accounts&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="mb93a2bf0-0c34-1000-bea8-7f0000010000_mb96f45b0-0c34-1000-bea8-7f0000010000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/b93a04e1-0c34-1000-bea8-7f0000010000.xml#mb96f45b0-0c34-1000-bea8-7f0000010000"/>
+</RefChildLevels>
+</LogicalLevel>
+<LogicalLevel mdsid="mb96f45b0-0c34-1000-bea8-7f0000010000" name="WP Account Type" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;WP Account Type&apos;">
+<LogicalKey mdsid="mb9733d50-0c34-1000-bea8-7f0000010000" name="Account Type" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="mb9733d50-0c34-1000-bea8-7f0000010000-mbba00864-0c34-1000-a434-0a9f65cc0000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/bba00860-0c34-1000-a434-0a9f65cc0000.xml#mbba00864-0c34-1000-a434-0a9f65cc0000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="mb96f45b0-0c34-1000-bea8-7f0000010000_mb93a04e2-0c34-1000-bea8-7f0000010000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/b93a04e1-0c34-1000-bea8-7f0000010000.xml#mb93a04e2-0c34-1000-bea8-7f0000010000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="mb96f45b0-0c34-1000-bea8-7f0000010000-mbba00864-0c34-1000-a434-0a9f65cc0000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/bba00860-0c34-1000-a434-0a9f65cc0000.xml#mbba00864-0c34-1000-a434-0a9f65cc0000"/>
+<RefLogicalColumn refId="mb96f45b0-0c34-1000-bea8-7f0000010000-mba7e6bc0-0c34-1000-bea8-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/bb47884a-0c34-1000-a434-0a9f65cc0000.xml#mba7e6bc0-0c34-1000-bea8-7f0000010000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="mb93a04e2-0c34-1000-bea8-7f0000010000" name="WP Account Detail" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;WP Account Detail&apos;">
+<LogicalKey mdsid="mb93a04e3-0c34-1000-bea8-7f0000010000" name="WP Account Detail_Key" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="mb93a04e3-0c34-1000-bea8-7f0000010000-mbba00863-0c34-1000-a434-0a9f65cc0000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/bba00860-0c34-1000-a434-0a9f65cc0000.xml#mbba00863-0c34-1000-a434-0a9f65cc0000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="mb93a04e2-0c34-1000-bea8-7f0000010000-mbba00863-0c34-1000-a434-0a9f65cc0000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/bba00860-0c34-1000-a434-0a9f65cc0000.xml#mbba00863-0c34-1000-a434-0a9f65cc0000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

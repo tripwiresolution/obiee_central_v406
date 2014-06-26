@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m718440a5-0c36-1000-b82f-0af06a760000" name="Entities" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="true" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/718440a5-0c36-1000-b82f-0af06a760000.xml#m7184413e-0c36-1000-b82f-0af06a760000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/718440a0-0c36-1000-b82f-0af06a760000.xml#m718440a0-0c36-1000-b82f-0af06a760000">
+<LogicalLevel mdsid="m7184413e-0c36-1000-b82f-0af06a760000" name="Geo" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Geo&apos;">
+<LogicalKey mdsid="m718441e8-0c36-1000-b82f-0af06a760000" name="Gen2,Entities - Member Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m718441e8-0c36-1000-b82f-0af06a760000-m718440e4-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440e4-0c36-1000-b82f-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m718441e9-0c36-1000-b82f-0af06a760000" name="Gen2,Entities" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m718441e9-0c36-1000-b82f-0af06a760000-m718440e3-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440e3-0c36-1000-b82f-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m7184413e-0c36-1000-b82f-0af06a760000_m7184413f-0c36-1000-b82f-0af06a760000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/718440a5-0c36-1000-b82f-0af06a760000.xml#m7184413f-0c36-1000-b82f-0af06a760000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m7184413e-0c36-1000-b82f-0af06a760000-m718440e3-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440e3-0c36-1000-b82f-0af06a760000"/>
+<RefLogicalColumn refId="m7184413e-0c36-1000-b82f-0af06a760000-m718440e4-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440e4-0c36-1000-b82f-0af06a760000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m7184413f-0c36-1000-b82f-0af06a760000" name="Region" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Region&apos;">
+<LogicalKey mdsid="m718441ea-0c36-1000-b82f-0af06a760000" name="Gen3,Entities - Member Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m718441ea-0c36-1000-b82f-0af06a760000-m718440e6-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440e6-0c36-1000-b82f-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m718441eb-0c36-1000-b82f-0af06a760000" name="Gen3,Entities" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m718441eb-0c36-1000-b82f-0af06a760000-m718440e5-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440e5-0c36-1000-b82f-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m7184413f-0c36-1000-b82f-0af06a760000_m71844140-0c36-1000-b82f-0af06a760000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/718440a5-0c36-1000-b82f-0af06a760000.xml#m71844140-0c36-1000-b82f-0af06a760000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m7184413f-0c36-1000-b82f-0af06a760000-m718440e5-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440e5-0c36-1000-b82f-0af06a760000"/>
+<RefLogicalColumn refId="m7184413f-0c36-1000-b82f-0af06a760000-m718440e6-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440e6-0c36-1000-b82f-0af06a760000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m71844140-0c36-1000-b82f-0af06a760000" name="Country" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Country&apos;">
+<LogicalKey mdsid="m718441ec-0c36-1000-b82f-0af06a760000" name="Gen4,Entities - Member Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m718441ec-0c36-1000-b82f-0af06a760000-m718440e8-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440e8-0c36-1000-b82f-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m718441ed-0c36-1000-b82f-0af06a760000" name="Gen4,Entities" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m718441ed-0c36-1000-b82f-0af06a760000-m718440e7-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440e7-0c36-1000-b82f-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m71844140-0c36-1000-b82f-0af06a760000_m71844141-0c36-1000-b82f-0af06a760000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/718440a5-0c36-1000-b82f-0af06a760000.xml#m71844141-0c36-1000-b82f-0af06a760000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m71844140-0c36-1000-b82f-0af06a760000-m718440e7-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440e7-0c36-1000-b82f-0af06a760000"/>
+<RefLogicalColumn refId="m71844140-0c36-1000-b82f-0af06a760000-m718440e8-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440e8-0c36-1000-b82f-0af06a760000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m71844141-0c36-1000-b82f-0af06a760000" name="Entity" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Entity&apos;">
+<LogicalKey mdsid="m718441ee-0c36-1000-b82f-0af06a760000" name="Gen5,Entities - Member Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m718441ee-0c36-1000-b82f-0af06a760000-m718440ea-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440ea-0c36-1000-b82f-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m718441ef-0c36-1000-b82f-0af06a760000" name="Gen5,Entities" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m718441ef-0c36-1000-b82f-0af06a760000-m718440e9-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440e9-0c36-1000-b82f-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m71844141-0c36-1000-b82f-0af06a760000_m71844142-0c36-1000-b82f-0af06a760000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/718440a5-0c36-1000-b82f-0af06a760000.xml#m71844142-0c36-1000-b82f-0af06a760000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m71844141-0c36-1000-b82f-0af06a760000-m718440e9-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440e9-0c36-1000-b82f-0af06a760000"/>
+<RefLogicalColumn refId="m71844141-0c36-1000-b82f-0af06a760000-m718440ea-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440ea-0c36-1000-b82f-0af06a760000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m71844142-0c36-1000-b82f-0af06a760000" name="Domain" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Domain&apos;">
+<LogicalKey mdsid="m718441f0-0c36-1000-b82f-0af06a760000" name="Gen6,Entities - Member Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m718441f0-0c36-1000-b82f-0af06a760000-m718440ec-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440ec-0c36-1000-b82f-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m718441f1-0c36-1000-b82f-0af06a760000" name="Gen6,Entities" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m718441f1-0c36-1000-b82f-0af06a760000-m718440eb-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440eb-0c36-1000-b82f-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m71844142-0c36-1000-b82f-0af06a760000_m71844143-0c36-1000-b82f-0af06a760000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/718440a5-0c36-1000-b82f-0af06a760000.xml#m71844143-0c36-1000-b82f-0af06a760000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m71844142-0c36-1000-b82f-0af06a760000-m718440eb-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440eb-0c36-1000-b82f-0af06a760000"/>
+<RefLogicalColumn refId="m71844142-0c36-1000-b82f-0af06a760000-m718440ec-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440ec-0c36-1000-b82f-0af06a760000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m71844143-0c36-1000-b82f-0af06a760000" name="Department" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Department&apos;">
+<LogicalKey mdsid="m718441f2-0c36-1000-b82f-0af06a760000" name="Gen7,Entities - Member Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m718441f2-0c36-1000-b82f-0af06a760000-m718440ee-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440ee-0c36-1000-b82f-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m718441f3-0c36-1000-b82f-0af06a760000" name="Gen7,Entities" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m718441f3-0c36-1000-b82f-0af06a760000-m718440ed-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440ed-0c36-1000-b82f-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m71844143-0c36-1000-b82f-0af06a760000_m71844144-0c36-1000-b82f-0af06a760000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/718440a5-0c36-1000-b82f-0af06a760000.xml#m71844144-0c36-1000-b82f-0af06a760000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m71844143-0c36-1000-b82f-0af06a760000-m718440ed-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440ed-0c36-1000-b82f-0af06a760000"/>
+<RefLogicalColumn refId="m71844143-0c36-1000-b82f-0af06a760000-m718440ee-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440ee-0c36-1000-b82f-0af06a760000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m71844144-0c36-1000-b82f-0af06a760000" name="Unit" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Unit&apos;">
+<LogicalKey mdsid="m718441f4-0c36-1000-b82f-0af06a760000" name="Gen8,Entities - Member Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m718441f4-0c36-1000-b82f-0af06a760000-m718440f0-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440f0-0c36-1000-b82f-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m718441f5-0c36-1000-b82f-0af06a760000" name="Gen8,Entities" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m718441f5-0c36-1000-b82f-0af06a760000-m718440ef-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440ef-0c36-1000-b82f-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m71844144-0c36-1000-b82f-0af06a760000-m718440ef-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440ef-0c36-1000-b82f-0af06a760000"/>
+<RefLogicalColumn refId="m71844144-0c36-1000-b82f-0af06a760000-m718440f0-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440e2-0c36-1000-b82f-0af06a760000.xml#m718440f0-0c36-1000-b82f-0af06a760000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

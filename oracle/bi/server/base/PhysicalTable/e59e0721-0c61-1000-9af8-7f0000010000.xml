@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="me59e0721-0c61-1000-9af8-7f0000010000" name="SAMP_DB_MODEL_FORECAST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SELECT PRODUCT, OFFICE, MONTH, REVENUE,PROJECTED_REV FROM (
+ SELECT
+  PROD_KEY AS PRODUCT, OFFICE_KEY AS OFFICE, 
+  T.JULIAN_MONTH_NUM AS MONTH,
+  SUM(REVENUE) REVENUE
+FROM SAMP_REVENUE_F A, SAMP_TIME_MTH_D T
+WHERE A.BILL_MTH_KEY=T.MTH_KEY
+GROUP BY  PROD_KEY, T.JULIAN_MONTH_NUM, OFFICE_KEY  
+ )
+MODEL 
+ RETURN UPDATED ROWS
+ DIMENSION BY (PRODUCT, OFFICE, MONTH) 
+ MEASURES ( REVENUE, CAST(NULL AS NUMBER) PROJECTED_REV) 
+RULES UPSERT ALL
+(
+PROJECTED_REV [ANY, ANY, FOR MONTH IN (SELECT JULIAN_MONTH_NUM FROM SAMP_TIME_MTH_D WHERE JULIAN_MONTH_NUM BETWEEN 450 AND 520)] 
+= (FLOOR( 
+    (PRESENTV(REVENUE [CV(), CV(), CV()-1],REVENUE [CV(), CV(), CV()-1]*(1+valueof(NQ_SESSION.DB_MODEL_ARG)),
+    PRESENTV(REVENUE [CV(), CV(), CV()-2],REVENUE [CV(), CV(), CV()-2]*power((1+valueof(NQ_SESSION.DB_MODEL_ARG)),2),
+    PRESENTV(REVENUE [CV(), CV(), CV()-3],REVENUE [CV(), CV(), CV()-3]*POWER((1+valueof(NQ_SESSION.DB_MODEL_ARG)),3),
+    PRESENTV(REVENUE [CV(), CV(), CV()-4],REVENUE [CV(), CV(), CV()-4]*POWER((1+valueof(NQ_SESSION.DB_MODEL_ARG)),4),
+    PRESENTV(REVENUE [CV(), CV(), CV()-5],REVENUE [CV(), CV(), CV()-5]*POWER((1+valueof(NQ_SESSION.DB_MODEL_ARG)),5),
+    REVENUE [CV(), CV(), CV()-6]*power((1+valueof(NQ_SESSION.DB_MODEL_ARG)),6)))))))
+ /  (PRESENTV(REVENUE [CV(), CV(), CV()-1],REVENUE [CV(), CV(), CV()-13],
+    PRESENTV(REVENUE [CV(), CV(), CV()-2],REVENUE [CV(), CV(), CV()-14],
+    PRESENTV(REVENUE [CV(), CV(), CV()-3],REVENUE [CV(), CV(), CV()-15],
+    PRESENTV(REVENUE [CV(), CV(), CV()-4],REVENUE [CV(), CV(), CV()-16],
+    PRESENTV(REVENUE [CV(), CV(), CV()-5],REVENUE [CV(), CV(), CV()-17],
+    REVENUE [CV(), CV(), CV()-18]))))))
+ * REVENUE [CV(), CV(), CV()-12]
+ )))
+ORDER BY 3 DESC,2,1]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="me5b40020-0c61-1000-9af8-7f0000010000" name="PRODUCT" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="me5b5add0-0c61-1000-9af8-7f0000010000" name="OFFICE" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="me5b73470-0c61-1000-9af8-7f0000010000" name="MONTH" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="me5b9f390-0c61-1000-9af8-7f0000010000" name="REVENUE" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="me5bba140-0c61-1000-9af8-7f0000010000" name="PROJECTED_REV" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+</PhysicalTable>

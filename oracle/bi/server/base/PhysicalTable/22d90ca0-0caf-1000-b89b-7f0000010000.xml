@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m22d90ca0-0caf-1000-b89b-7f0000010000" name="AA_INDEX_LINKS_AGG" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/802b29ac-0bd3-0000-714b-e31d00000000.xml#m802b29ac-0bd3-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SELECT 
+TEXT_LVL3, TEXT_LVL2, TEXT_LVL1,
+LISTAGG('<a href='||URL||'target="_blank">'||TEXT_LVL0||'</a>', ',  ') WITHIN GROUP(ORDER BY TEXT_LVL0_SEQ)  as LINKS_AGG
+FROM AA_DBPAGES_INDEX 
+WHERE EXCLUDED IS NULL
+GROUP BY TEXT_LVL3, TEXT_LVL2, TEXT_LVL1
+ORDER BY TEXT_LVL3, TEXT_LVL2, TEXT_LVL1 ]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m22d90ca1-0caf-1000-b89b-7f0000010000" name="TEXT_LVL3" dataType="VARCHAR" precision="200" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m22d90ca4-0caf-1000-b89b-7f0000010000" name="LINKS_AGG" dataType="VARCHAR" precision="4000" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m22d90ca6-0caf-1000-b89b-7f0000010000" name="TEXT_LVL2" dataType="VARCHAR" precision="200" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m22d90ca7-0caf-1000-b89b-7f0000010000" name="TEXT_LVL1" dataType="VARCHAR" precision="200" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="m588599f1-0cb3-1000-8567-7f0000010000" name="AA_INDEX_LINKS_AGG_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/f5dd8be1-0cae-1000-9ae1-7f0000010000.xml#m5888f550-0cb3-1000-8567-7f0000010000">
+<RefColumns>
+<RefColumn refId="m588599f1-0cb3-1000-8567-7f0000010000-m22d90ca1-0caf-1000-b89b-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/22d90ca0-0caf-1000-b89b-7f0000010000.xml#m22d90ca1-0caf-1000-b89b-7f0000010000"/>
+<RefColumn refId="m588599f1-0cb3-1000-8567-7f0000010000-m22d90ca6-0caf-1000-b89b-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/22d90ca0-0caf-1000-b89b-7f0000010000.xml#m22d90ca6-0caf-1000-b89b-7f0000010000"/>
+<RefColumn refId="m588599f1-0cb3-1000-8567-7f0000010000-m22d90ca7-0caf-1000-b89b-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/22d90ca0-0caf-1000-b89b-7f0000010000.xml#m22d90ca7-0caf-1000-b89b-7f0000010000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

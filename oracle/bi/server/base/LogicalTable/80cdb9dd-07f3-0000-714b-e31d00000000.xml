@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cdb9dd-07f3-0000-714b-e31d00000000" name="F0 Base Measures" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="980" y="460" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cdb963-07d0-0000-714b-e31d00000000.xml#m80cdb963-07d0-0000-714b-e31d00000000">
+<Description><![CDATA[This logical table contains metrics like Revenue, Billed Qty, Booked Amt and Booked Qty with different types of aggregation like Sum, First on Time , Last on Time and Count Distinct. 
+All the metrics in this table are physically mapped to columns in the Revenue fact table.
+]]></Description>
+<LogicalColumn mdsid="m80cdb9de-07d6-0000-714b-e31d00000000" name="1 ==== Revenue Base Metrics ========" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m00000001-01f4-0000-55bb-80f700000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m80cdbc84-0f3c-0000-714b-e31d00000000" name="AD_3900:1796401293026589">
+<Expr mdsid="m00000002-01f4-0000-f2e5-b85a00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdb9df-07d6-0000-714b-e31d00000000" name="1- Revenue" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+<MeasureDefn mdsid="m80cdbb08-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdbb2d-0802-0000-714b-e31d00000000" name="AggRule_2050:1790331293026589" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-57d5-02b600000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("02 - Flat XML files Sample"."F0 Base Measures"."1- Revenue")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-57d5-02b600000000-m80cdb9df-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdb9dd-07f3-0000-714b-e31d00000000.xml#m80cdb9df-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdbc85-0f3c-0000-714b-e31d00000000" name="AD_3900:1796411293026589">
+<Expr mdsid="m00000004-01f4-0000-f5cb-c1c100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["08 - Sample App Xml Target Data"."".""."F10 Billed Rev. Aggregate (XML Source)"."Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-f5cb-c1c100000000-m80cdb8b1-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdb8b0-0bb9-0000-714b-e31d00000000.xml#m80cdb8b1-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdb9e0-07d6-0000-714b-e31d00000000" name="2- Billed Quantity" isWriteable="false">
+<Description><![CDATA[Help :
+Billed Quantity data. Sources from Units column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+<MeasureDefn mdsid="m80cdbb09-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdbb2e-0802-0000-714b-e31d00000000" name="AggRule_2050:1790341293026589" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-433e-169700000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("02 - Flat XML files Sample"."F0 Base Measures"."2- Billed Quantity")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-433e-169700000000-m80cdb9e0-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdb9dd-07f3-0000-714b-e31d00000000.xml#m80cdb9e0-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdbc86-0f3c-0000-714b-e31d00000000" name="AD_3900:1796421293026589">
+<Expr mdsid="m00000006-01f4-0000-2b0f-555b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["08 - Sample App Xml Target Data"."".""."F10 Billed Rev. Aggregate (XML Source)"."Units"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-2b0f-555b00000000-m80cdb8b3-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdb8b0-0bb9-0000-714b-e31d00000000.xml#m80cdb8b3-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdba80-07d6-0000-714b-e31d00000000" name="20  Actual Unit Price" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Billed Unit Price is computed as Revenue divided by Billed Quantity]]></Description>
+<Expr mdsid="m00000007-01f4-0000-360f-f43e00000000" name="Expr">
+<ExprText><![CDATA["%1" / "%2"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Flat XML files Sample"."F0 Base Measures"."1- Revenue" / "02 - Flat XML files Sample"."F0 Base Measures"."2- Billed Quantity"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-360f-f43e00000000-m80cdb9df-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdb9dd-07f3-0000-714b-e31d00000000.xml#m80cdb9df-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000007-01f4-0000-360f-f43e00000000-m80cdb9e0-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdb9dd-07f3-0000-714b-e31d00000000.xml#m80cdb9e0-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cdbd1e-0f3c-0000-714b-e31d00000000" name="AD_3900:1797941293026589">
+<Expr mdsid="m00000008-01f4-0000-048c-ce8100000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cdb9dd-07f3-0000-714b-e31d00000000-m80cdbf04-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cdbf04-07f5-0000-714b-e31d00000000.xml#m80cdbf04-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

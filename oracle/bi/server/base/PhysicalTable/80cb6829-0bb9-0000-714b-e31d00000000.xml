@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cb6829-0bb9-0000-714b-e31d00000000" name="D43 Chnls Offs Bridge (Rev)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" x="1066" y="1298" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cb6806-0bb9-0000-714b-e31d00000000.xml#m80cb6806-0bb9-0000-714b-e31d00000000">
+<Description><![CDATA[ZZZ - Not yet filled]]></Description>
+<PhysicalColumn mdsid="m80cb69a6-0bbb-0000-714b-e31d00000000" name="Chnl_Key" dataType="DOUBLE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6806-0bb9-0000-714b-e31d00000000.xml#m80cb6869-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb69a7-0bbb-0000-714b-e31d00000000" name="Office_key" dataType="DOUBLE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6806-0bb9-0000-714b-e31d00000000.xml#m80cb686a-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb69a8-0bbb-0000-714b-e31d00000000" name="Chnl_Weighting" dataType="DOUBLE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6806-0bb9-0000-714b-e31d00000000.xml#m80cb6868-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="m80cb6b17-0bbe-0000-714b-e31d00000000" name="D53 Teams Membership Bridge (Revenue Facts)_FKey#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb6827-0bb9-0000-714b-e31d00000000.xml#m80cb6af1-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cb6b17-0bbe-0000-714b-e31d00000000-m80cb69a6-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6829-0bb9-0000-714b-e31d00000000.xml#m80cb69a6-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cb6b18-0bbe-0000-714b-e31d00000000" name="D43 Chnls Offcs Bridge (Revenue)_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb6825-0bb9-0000-714b-e31d00000000.xml#m80cb6aef-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cb6b18-0bbe-0000-714b-e31d00000000-m80cb69a7-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6829-0bb9-0000-714b-e31d00000000.xml#m80cb69a7-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

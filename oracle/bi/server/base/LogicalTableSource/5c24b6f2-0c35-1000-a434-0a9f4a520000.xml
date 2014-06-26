@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m5c24b6f2-0c35-1000-a434-0a9f4a520000" name="WR_SEARCH_PATTERN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/5c24b6f0-0c35-1000-a434-0a9f4a520000.xml#m5c24b6f0-0c35-1000-a434-0a9f4a520000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-42c5-28af00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - Usage Tracking"."WR Search Criteria"."Search Pattern"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-42c5-28af00000000-m5c24b6f3-0c35-1000-a434-0a9f4a520000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/5c24b6f0-0c35-1000-a434-0a9f4a520000.xml#m5c24b6f3-0c35-1000-a434-0a9f4a520000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-40c5-c05700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."WR_SEARCH_PATTERN"."SEARCH_PATTERN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-40c5-c05700000000-m5c1f86d3-0c35-1000-a434-0a9f4a520000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/5c1f86d2-0c35-1000-a434-0a9f4a520000.xml#m5c1f86d3-0c35-1000-a434-0a9f4a520000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/5c1f86d2-0c35-1000-a434-0a9f4a520000.xml#m5c1f86d2-0c35-1000-a434-0a9f4a520000">
+</Link>
+<WhereClause mdsid="m00000003-01f4-0000-cb92-ecc400000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000004-01f4-0000-7587-1a4e00000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m00000005-01f4-0000-a1d0-e4ef00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

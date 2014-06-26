@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m80cb9998-07f5-0000-714b-e31d00000000" name="LTS02 Essbase Source" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cb94d3-07f3-0000-714b-e31d00000000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-732f-262800000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - Federated Sources"."F0 Revenue Base Measures"."1b- Revenue (Essbase Cube Only)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-732f-262800000000-m80cdb629-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb629-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-39a1-4faa00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase Sample E1 Flat"."BISAMPLE Flat".""."Sample Flattened"."Gross Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-39a1-4faa00000000-m80cc0cdb-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cb9c63-0bdf-0000-714b-e31d00000000.xml#m80cc0cdb-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-7399-9d4700000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - Federated Sources"."F0 Revenue Base Measures"."2b- Qty (Essbase Cube Federated)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-7399-9d4700000000-m80cdb71e-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb71e-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-8a88-d8a100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase Sample E1 Flat"."BISAMPLE Flat".""."Sample Flattened"."Units"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-8a88-d8a100000000-m80cb9cd9-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cb9c63-0bdf-0000-714b-e31d00000000.xml#m80cb9cd9-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-a7f0-f85c00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - Federated Sources"."F0 Revenue Base Measures"."Source Database Info"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-a7f0-f85c00000000-m4a7cd8b4-0c21-1000-b709-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m4a7cd8b4-0c21-1000-b709-0af502b10000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-fd72-af6300000000" name="Expr">
+<ExprText><![CDATA['Essbase Cube']]></ExprText>
+<ExprTextDesc><![CDATA['Essbase Cube']]></ExprTextDesc>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/CubeTable/80cb9c63-0bdf-0000-714b-e31d00000000.xml#m80cb9c63-0bdf-0000-714b-e31d00000000">
+</Link>
+<WhereClause mdsid="m00000007-01f4-0000-dff1-a41c00000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000008-01f4-0000-cf73-510400000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1", "%2", "%3", "%4")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("06 - Federated Sources"."H6 Customers"."Customers Detail", "06 - Federated Sources"."H0 Time"."Quarter", "06 - Federated Sources"."H3 Offices"."Offices Total", "06 - Federated Sources"."H1 Products"."Products Detail")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-cf73-510400000000-m80cb9619-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cb9464-07e3-0000-714b-e31d00000000.xml#m80cb9619-07e9-0000-714b-e31d00000000"/>
+<RefObject refId="m00000008-01f4-0000-cf73-510400000000-m80cb960d-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cb9463-07e3-0000-714b-e31d00000000.xml#m80cb960d-07e9-0000-714b-e31d00000000"/>
+<RefObject refId="m00000008-01f4-0000-cf73-510400000000-m80cb9646-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cb946a-07e3-0000-714b-e31d00000000.xml#m80cb9646-07e9-0000-714b-e31d00000000"/>
+<RefObject refId="m00000008-01f4-0000-cf73-510400000000-m80cb962e-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cb9466-07e3-0000-714b-e31d00000000.xml#m80cb962e-07e9-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m00000009-01f4-0000-6bc1-7a3300000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

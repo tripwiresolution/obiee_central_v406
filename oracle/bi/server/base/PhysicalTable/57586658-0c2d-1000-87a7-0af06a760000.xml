@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m57586658-0c2d-1000-87a7-0af06a760000" name="18 ROUTE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" pollFreq="0" maxConn="0" containerRef="/oracle/bi/server/base/Schema/57583469-0c2d-1000-87a7-0af06a760000.xml#m57583469-0c2d-1000-87a7-0af06a760000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/57586653-0c2d-1000-87a7-0af06a760000.xml#m57586653-0c2d-1000-87a7-0af06a760000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[OBIEE_ROUTE]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m57586659-0c2d-1000-87a7-0af06a760000" name="ORIGIN" dataType="VARCHAR" precision="3" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/57586653-0c2d-1000-87a7-0af06a760000.xml#m57586654-0c2d-1000-87a7-0af06a760000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m5758665a-0c2d-1000-87a7-0af06a760000" name="ROUTE" dataType="VARCHAR" precision="8" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/57586653-0c2d-1000-87a7-0af06a760000.xml#m57586655-0c2d-1000-87a7-0af06a760000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m5758665b-0c2d-1000-87a7-0af06a760000" name="DEST" dataType="VARCHAR" precision="3" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/57586653-0c2d-1000-87a7-0af06a760000.xml#m57586656-0c2d-1000-87a7-0af06a760000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m5758665c-0c2d-1000-87a7-0af06a760000" name="DESCRIPTION" dataType="VARCHAR" precision="250" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/57586653-0c2d-1000-87a7-0af06a760000.xml#m57586657-0c2d-1000-87a7-0af06a760000">
+</PhysicalColumn>
+<PhysicalKey mdsid="m57588440-0c2d-1000-87a7-0af06a760000" name="15 ROUTE_Key">
+<RefColumns>
+<RefColumn refId="m57588440-0c2d-1000-87a7-0af06a760000-m57586659-0c2d-1000-87a7-0af06a760000" columnRef="/oracle/bi/server/base/PhysicalTable/57586658-0c2d-1000-87a7-0af06a760000.xml#m57586659-0c2d-1000-87a7-0af06a760000"/>
+<RefColumn refId="m57588440-0c2d-1000-87a7-0af06a760000-m5758665b-0c2d-1000-87a7-0af06a760000" columnRef="/oracle/bi/server/base/PhysicalTable/57586658-0c2d-1000-87a7-0af06a760000.xml#m5758665b-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

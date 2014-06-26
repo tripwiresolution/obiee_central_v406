@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0d560-0ca8-1000-90a3-0af502b50000" name="Fact - Transaction Lines" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd5-0ca8-1000-90a3-0af502b50000.xml#m82f0acd5-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0d561-0ca8-1000-90a3-0af502b50000" name="Amount Due Original" isWriteable="false">
+<AttrDefn mdsid="m82f281ea-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756671391789375">
+<Expr mdsid="m00000001-01f4-0000-7c11-4c7900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TRANSACTION_LINES"."AMOUNT_DUE_ORIGINAL_LINE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-7c11-4c7900000000-m82dde827-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde826-0ca8-1000-90a3-0af502b50000.xml#m82dde827-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d562-0ca8-1000-90a3-0af502b50000" name="Amount Due Remaining" isWriteable="false">
+<AttrDefn mdsid="m82f281eb-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756681391789375">
+<Expr mdsid="m00000002-01f4-0000-3458-c6f700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TRANSACTION_LINES"."AMOUNT_DUE_REMAINING_LINE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-3458-c6f700000000-m82dde828-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde826-0ca8-1000-90a3-0af502b50000.xml#m82dde828-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d563-0ca8-1000-90a3-0af502b50000" name="Amount In Dispute" isWriteable="false">
+<AttrDefn mdsid="m82f281ec-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756691391789375">
+<Expr mdsid="m00000003-01f4-0000-4ea8-193200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TRANSACTION_LINES"."AMOUNT_IN_DISPUTE_LINE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-4ea8-193200000000-m82dde829-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde826-0ca8-1000-90a3-0af502b50000.xml#m82dde829-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d564-0ca8-1000-90a3-0af502b50000" name="Currency Code" isWriteable="false">
+<AttrDefn mdsid="m82f281ed-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756701391789375">
+<Expr mdsid="m00000004-01f4-0000-4163-c9ed00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TRANSACTION_LINES"."CURRENCY_CODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-4163-c9ed00000000-m82dde82a-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde826-0ca8-1000-90a3-0af502b50000.xml#m82dde82a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d565-0ca8-1000-90a3-0af502b50000" name="Customer Trx Id" isWriteable="false">
+<AttrDefn mdsid="m82f281ee-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756711391789375">
+<Expr mdsid="m00000005-01f4-0000-dd76-d2c000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TRANSACTION_LINES"."CUSTOMER_TRX_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-dd76-d2c000000000-m82dde82b-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde826-0ca8-1000-90a3-0af502b50000.xml#m82dde82b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d566-0ca8-1000-90a3-0af502b50000" name="Transaction Line Id" isWriteable="false">
+<AttrDefn mdsid="m82f281ef-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756721391789375">
+<Expr mdsid="m00000006-01f4-0000-5fd7-440100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TRANSACTION_LINES"."CUSTOMER_TRX_LINE_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-5fd7-440100000000-m82dde82c-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde826-0ca8-1000-90a3-0af502b50000.xml#m82dde82c-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0d560-0ca8-1000-90a3-0af502b50000-m82f2f6e5-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f2f6e5-0ca8-1000-90a3-0af502b50000.xml#m82f2f6e5-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="ma78a11e0-0c84-1000-9d09-0af502b20000" name="SAMP_REVENUE_F_DST_QUERY" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" x="286" y="1544" rowCount="71000.0" lastUpdated="2013-08-13 08:00:07" uri="VALUEOF(BI_EE_HOME)/sample/SampleAppFiles/Data/SAMP_CUSTOMERS_D.xml" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SELECT ORDER_KEY, ORDER_DTIME1_DB_TZ,
+to_char(SESSIONTIMEZONE) AS DB_TIMEZONE,'valueof(NQ_SESSION.TIMEZONE_VALUE)' AS SELECTED_TZ,
+cast(TO_CHAR((ORDER_DTIME1_DB_TZ AT TIME ZONE 'valueof(NQ_SESSION.TIMEZONE_VALUE)'), 'DD-MON-YYYY HH:MI:SS PM') as timestamp) AS ORDER_DTIME1_SELECTED_TZ, 
+cast(TO_CHAR(ORDER_DTIME2_CUSTOM_TZ, 'DD-MON-YYYY HH:MI:SS PM') as timestamp) AS ORDER_DTIME2_CUSTOM_TZ, ORDER_DTIME2_TIMEZONE,
+cast(TO_CHAR((ORDER_DTIME2_CUSTOM_TZ AT LOCAL), 'DD-MON-YYYY HH:MI:SS pm') as timestamp) AS ORDER_DTIME2_AT_DB_TZ,
+cast(TO_CHAR((ORDER_DTIME2_CUSTOM_TZ AT TIME ZONE 'valueof(NQ_SESSION.TIMEZONE_VALUE)'), 'DD-MON-YYYY HH:MI:SS PM') as timestamp) AS ORDER_DTIME2_SELECTED_TZ
+from samp_revenue_f]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="ma78a11ea-0c84-1000-9d09-0af502b20000" name="ORDER_DTIME1_DB_TZ" dataType="DATETIME" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="ma78a11eb-0c84-1000-9d09-0af502b20000" name="Order_key" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="maf34ced2-0c84-1000-9d09-0af502b20000" name="DB_TIMEZONE" dataType="VARCHAR" precision="200" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="maf360752-0c84-1000-9d09-0af502b20000" name="ORDER_DTIME1_SELECTED_TZ" dataType="DATETIME" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="maf365572-0c84-1000-9d09-0af502b20000" name="ORDER_DTIME2_AT_DB_TZ" dataType="DATETIME" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="maf36caa2-0c84-1000-9d09-0af502b20000" name="ORDER_DTIME2_TIMEZONE" dataType="VARCHAR" precision="200" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb0139612-0c84-1000-9d09-0af502b20000" name="SELECTED_TZ" dataType="VARCHAR" precision="200" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb0ee65b2-0c84-1000-9d09-0af502b20000" name="ORDER_DTIME2_SELECTED_TZ" dataType="DATETIME" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb128af92-0c84-1000-9d09-0af502b20000" name="ORDER_DTIME2_CUSTOM_TZ" dataType="DATETIME" specialType="none">
+</PhysicalColumn>
+</PhysicalTable>

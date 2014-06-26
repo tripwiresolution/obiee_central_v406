@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cb6842-0bb9-0000-714b-e31d00000000" name="F20 Rev. (Aggregate 1)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" pollFreq="0" x="246" y="899" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cb6816-0bb9-0000-714b-e31d00000000.xml#m80cb6816-0bb9-0000-714b-e31d00000000">
+<Description><![CDATA[Reveue Fact Aggregate Alias: Stores the aggregated fact information at Employee and Product grain.]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SAMP_REVENUE_FA1]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cb6a95-0bbb-0000-714b-e31d00000000" name="Revenue" dataType="DOUBLE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6816-0bb9-0000-714b-e31d00000000.xml#m80cb68d5-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Revenue: Stores revenue information as a double.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6a96-0bbb-0000-714b-e31d00000000" name="Prod_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6816-0bb9-0000-714b-e31d00000000.xml#m80cb68d6-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Product Key: Joins to Prod_Key of Products dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6a97-0bbb-0000-714b-e31d00000000" name="Units" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6816-0bb9-0000-714b-e31d00000000.xml#m80cb68d7-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Units: Stores units information as an integer.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6a98-0bbb-0000-714b-e31d00000000" name="Empl_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6816-0bb9-0000-714b-e31d00000000.xml#m80cb68d8-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Employee Key: Joins to Empl_Key of Employees dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="m80cb6b61-0bbe-0000-714b-e31d00000000" name="F20 Facts Revenue Aggregate 1_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb6822-0bb9-0000-714b-e31d00000000.xml#m80cb6aed-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cb6b61-0bbe-0000-714b-e31d00000000-m80cb6a96-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6842-0bb9-0000-714b-e31d00000000.xml#m80cb6a96-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cb6b62-0bbe-0000-714b-e31d00000000" name="F20 Facts Revenue Aggregate 1_FKey#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb682d-0bb9-0000-714b-e31d00000000.xml#m80cb6af5-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cb6b62-0bbe-0000-714b-e31d00000000-m80cb6a98-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6842-0bb9-0000-714b-e31d00000000.xml#m80cb6a98-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cb6b63-0bbe-0000-714b-e31d00000000" name="F20 Facts Revenue Aggregate 1_FKey#2" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb6823-0bb9-0000-714b-e31d00000000.xml#m80cb6aee-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cb6b63-0bbe-0000-714b-e31d00000000-m80cb6a96-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6842-0bb9-0000-714b-e31d00000000.xml#m80cb6a96-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m8dff504c-0c26-1000-9bbc-0af502b10000" name="GV$SQLTEXT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/78682d26-0c20-1000-b5b8-0af502b10000.xml#m78682d26-0c20-1000-b5b8-0af502b10000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[GV$SQLTEXT]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m8dff504d-0c26-1000-9bbc-0af502b10000" name="ADDRESS" dataType="VARBINARY" precision="4" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8dff504e-0c26-1000-9bbc-0af502b10000" name="COMMAND_TYPE" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8dff504f-0c26-1000-9bbc-0af502b10000" name="HASH_VALUE" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8dff5050-0c26-1000-9bbc-0af502b10000" name="INST_ID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8dff5051-0c26-1000-9bbc-0af502b10000" name="PIECE" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8dff5052-0c26-1000-9bbc-0af502b10000" name="SQL_ID" dataType="VARCHAR" precision="13" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8dff5053-0c26-1000-9bbc-0af502b10000" name="SQL_TEXT" dataType="VARCHAR" precision="64" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="mbafec7b0-0c26-1000-b8db-0af502b10000" name="GV_$SQLTEXT_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/8dff4fc7-0c26-1000-9bbc-0af502b10000.xml#mbafe5280-0c26-1000-b8db-0af502b10000">
+<RefColumns>
+<RefColumn refId="mbafec7b0-0c26-1000-b8db-0af502b10000-m8dff5052-0c26-1000-9bbc-0af502b10000" columnRef="/oracle/bi/server/base/PhysicalTable/8dff504c-0c26-1000-9bbc-0af502b10000.xml#m8dff5052-0c26-1000-9bbc-0af502b10000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

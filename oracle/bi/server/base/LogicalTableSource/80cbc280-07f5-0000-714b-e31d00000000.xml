@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m80cbc280-07f5-0000-714b-e31d00000000" name="PRODUCT_CATEGORIES_BASE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/80cbc268-07f3-0000-714b-e31d00000000.xml#m80cbc268-07f3-0000-714b-e31d00000000" closureTableRef="/oracle/bi/server/base/PhysicalTable/80cbcfcf-0bb9-0000-714b-e31d00000000.xml#m80cbcfcf-0bb9-0000-714b-e31d00000000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-caaf-7e5e00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X5 - OLTP Source (Fusion Order)"."D06 Product Categories"."Category ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-caaf-7e5e00000000-m80cbc26c-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cbc268-07f3-0000-714b-e31d00000000.xml#m80cbc26c-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-78bc-418800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BIFOD"."PRODUCT_CATEGORIES_BASE"."CATEGORY_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-78bc-418800000000-m80cbc12c-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbc11f-0bb9-0000-714b-e31d00000000.xml#m80cbc12c-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-30da-09b500000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X5 - OLTP Source (Fusion Order)"."D06 Product Categories"."Category Locked Flag"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-30da-09b500000000-m80cbc26d-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cbc268-07f3-0000-714b-e31d00000000.xml#m80cbc26d-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-b9d0-c89000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BIFOD"."PRODUCT_CATEGORIES_BASE"."CATEGORY_LOCKED_FLAG"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-b9d0-c89000000000-m80cbc12d-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbc11f-0bb9-0000-714b-e31d00000000.xml#m80cbc12d-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-784f-1ce100000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X5 - OLTP Source (Fusion Order)"."D06 Product Categories"."Parent Category ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-784f-1ce100000000-m80cbc26a-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cbc268-07f3-0000-714b-e31d00000000.xml#m80cbc26a-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-4b31-08c700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BIFOD"."PRODUCT_CATEGORIES_BASE"."PARENT_CATEGORY_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-4b31-08c700000000-m80cbc133-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbc11f-0bb9-0000-714b-e31d00000000.xml#m80cbc133-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000007-01f4-0000-ae4e-1aa400000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X5 - OLTP Source (Fusion Order)"."D06 Product Categories"."Representative Product ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-ae4e-1aa400000000-m80cbc26b-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cbc268-07f3-0000-714b-e31d00000000.xml#m80cbc26b-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000008-01f4-0000-8f5c-b57300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BIFOD"."PRODUCT_CATEGORIES_BASE"."REPRESENTATIVE_PRODUCT_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-8f5c-b57300000000-m80cbc134-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbc11f-0bb9-0000-714b-e31d00000000.xml#m80cbc134-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000009-01f4-0000-2620-f60b00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X5 - OLTP Source (Fusion Order)"."D06 Product Categories"."Cat Description (Lookup Phys)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-2620-f60b00000000-m80cbce64-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cbc268-07f3-0000-714b-e31d00000000.xml#m80cbce64-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000a-01f4-0000-544c-021f00000000" name="Expr">
+<ExprText><![CDATA[LOOKUP ( SPARSE
+ "%1" ,
+'No data for this record',
+ "%2" ,
+'FR')
+
+
+]]></ExprText>
+<ExprTextDesc><![CDATA[LOOKUP ( SPARSE
+ "01 - Sample App Data (ORCL)".""."BIFOD"."CATEGORY_TRANSLATIONS"."CATEGORY_DESCRIPTION" ,
+'No data for this record',
+ "01 - Sample App Data (ORCL)".""."BIFOD"."PRODUCT_CATEGORIES_BASE"."CATEGORY_ID" ,
+'FR')
+
+
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-544c-021f00000000-m80cbc122-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbc11e-0bb9-0000-714b-e31d00000000.xml#m80cbc122-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m0000000a-01f4-0000-544c-021f00000000-m80cbc12c-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbc11f-0bb9-0000-714b-e31d00000000.xml#m80cbc12c-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000000b-01f4-0000-3d13-f5c900000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X5 - OLTP Source (Fusion Order)"."D06 Product Categories"."Cat Name (Lookup Phys)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-3d13-f5c900000000-m80cbce71-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cbc268-07f3-0000-714b-e31d00000000.xml#m80cbce71-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000c-01f4-0000-5ed8-c40a00000000" name="Expr">
+<ExprText><![CDATA[LOOKUP ( SPARSE
+ "%1" ,
+'No data for this record',
+ "%2" ,
+'FR')
+
+
+]]></ExprText>
+<ExprTextDesc><![CDATA[LOOKUP ( SPARSE
+ "01 - Sample App Data (ORCL)".""."BIFOD"."CATEGORY_TRANSLATIONS"."CATEGORY_NAME" ,
+'No data for this record',
+ "01 - Sample App Data (ORCL)".""."BIFOD"."PRODUCT_CATEGORIES_BASE"."CATEGORY_ID" ,
+'FR')
+
+
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-5ed8-c40a00000000-m80cbc124-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbc11e-0bb9-0000-714b-e31d00000000.xml#m80cbc124-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m0000000c-01f4-0000-5ed8-c40a00000000-m80cbc12c-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbc11f-0bb9-0000-714b-e31d00000000.xml#m80cbc12c-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000000d-01f4-0000-96b1-615d00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X5 - OLTP Source (Fusion Order)"."D06 Product Categories"."Category ID (from Product)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-96b1-615d00000000-m80cbcfd6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cbc268-07f3-0000-714b-e31d00000000.xml#m80cbcfd6-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000e-01f4-0000-d708-2fe100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BIFOD"."PRODUCTS_BASE"."CATEGORY_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-d708-2fe100000000-m80cbc14f-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbc121-0bb9-0000-714b-e31d00000000.xml#m80cbc14f-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/80cbc11f-0bb9-0000-714b-e31d00000000.xml#m80cbc11f-0bb9-0000-714b-e31d00000000">
+<Join type="Inner" cardinality=" ONE TO MANY" physicalTable1Ref="/oracle/bi/server/base/PhysicalTable/80cbc11f-0bb9-0000-714b-e31d00000000.xml#m80cbc11f-0bb9-0000-714b-e31d00000000" physicalTable2Ref="/oracle/bi/server/base/PhysicalTable/80cbc121-0bb9-0000-714b-e31d00000000.xml#m80cbc121-0bb9-0000-714b-e31d00000000" physicalJoinRef="/oracle/bi/server/base/PhysicalTable/80cbc121-0bb9-0000-714b-e31d00000000.xml#m80cbc166-0bbe-0000-714b-e31d00000000"/>
+</Link>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/80cbc121-0bb9-0000-714b-e31d00000000.xml#m80cbc121-0bb9-0000-714b-e31d00000000">
+<Join type="Inner" cardinality="MANY TO ONE" physicalTable1Ref="/oracle/bi/server/base/PhysicalTable/80cbc121-0bb9-0000-714b-e31d00000000.xml#m80cbc121-0bb9-0000-714b-e31d00000000" physicalTable2Ref="/oracle/bi/server/base/PhysicalTable/80cbc11f-0bb9-0000-714b-e31d00000000.xml#m80cbc11f-0bb9-0000-714b-e31d00000000" physicalJoinRef="/oracle/bi/server/base/PhysicalTable/80cbc121-0bb9-0000-714b-e31d00000000.xml#m80cbc166-0bbe-0000-714b-e31d00000000"/>
+</Link>
+<WhereClause mdsid="m0000000f-01f4-0000-7458-c7ea00000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000010-01f4-0000-74e4-30d600000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("X5 - OLTP Source (Fusion Order)"."H06 Product Cat (PCH)"."Detail")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-74e4-30d600000000-m80cbcfcc-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cbcfca-07e3-0000-714b-e31d00000000.xml#m80cbcfcc-07e9-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m00000011-01f4-0000-d1c4-42fb00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cb6816-0bb9-0000-714b-e31d00000000" name="SAMP_REVENUE_FA1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" x="260" y="1552" uri="VALUEOF(BI_EE_HOME)/sample/SampleAppFiles/Data/SAMP_REVENUE_FA1.xml" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000">
+<Description><![CDATA[Reveue Fact Aggregate table: Stores the aggregated fact information at Employee and Product grain.]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SAMP_REVENUE_FA1]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cb68d5-0bbb-0000-714b-e31d00000000" name="Revenue" iconIndex="32768" dataType="DOUBLE" specialType="none">
+<Description><![CDATA[Revenue: Stores revenue information as a double.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb68d6-0bbb-0000-714b-e31d00000000" name="Prod_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Product Key: Joins to Prod_Key of Products dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb68d7-0bbb-0000-714b-e31d00000000" name="Units" iconIndex="32768" dataType="INT" specialType="none">
+<Description><![CDATA[Units: Stores units information as an integer.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb68d8-0bbb-0000-714b-e31d00000000" name="Empl_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Employee Key: Joins to Empl_Key of Employees dimension table.]]></Description>
+</PhysicalColumn>
+</PhysicalTable>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cb6809-0bb9-0000-714b-e31d00000000" name="SAMP_CUST_SEGMENTS_D" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" x="284" y="1556" uri="VALUEOF(BI_EE_HOME)/sample/SampleAppFiles/Data/SAMP_CUST_SEGMENTS_D.xml" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000">
+<Description><![CDATA[Customer Segment Dimension table: Stores customer segment attribute information]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SAMP_CUST_SEGMENTS_D]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cb6872-0bbb-0000-714b-e31d00000000" name="Segment_Desc" dataType="VARCHAR" precision="255" specialType="none">
+<Description><![CDATA[Segmnent Desc: Stores customer segment description as text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6873-0bbb-0000-714b-e31d00000000" name="Segment_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Segment Key: Surrogate key of the customer segment dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cb6ada-0bc0-0000-714b-e31d00000000" name="Segment_ID">
+<RefColumns>
+<RefColumn refId="m80cb6ada-0bc0-0000-714b-e31d00000000-m80cb6873-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6809-0bb9-0000-714b-e31d00000000.xml#m80cb6873-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

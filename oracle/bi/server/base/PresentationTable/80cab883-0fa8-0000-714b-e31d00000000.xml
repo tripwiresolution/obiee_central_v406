@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationTable mdsid="m80cab883-0fa8-0000-714b-e31d00000000" name="Time Series" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_Series)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationCatalog/80cab7ef-0fa4-0000-714b-e31d00000000.xml#m80cab7ef-0fa4-0000-714b-e31d00000000">
+<Description><![CDATA[This folder contains several Period-To-Date and Period-Ago metrics based on Revenue fact.]]></Description>
+<PresentationColumn mdsid="m80cb6c05-0faa-0000-714b-e31d00000000" name="121  ---- Dynamic Time Level ---------------------" iconIndex="86" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_Series_121__----_Dynamic_Time_Level_---------------------)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cb67bb-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cb67ef-0faa-0000-714b-e31d00000000" name="121  Period Ago Rev" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_Series_121__Period_Ago_Rev)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cb66d4-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns data as of previous month vs. month selected in the query.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab89c-0faa-0000-714b-e31d00000000" name="122  Rev Var to Period Ago" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_Series_122__Rev_Var_to_Period_Ago)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab601-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- Value change to last month]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab89d-0faa-0000-714b-e31d00000000" name="123  Rev Pct Var to Period Ago" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_Series_123__Rev_Pct_Var_to_Period_Ago)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab602-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- Average % change to last month value]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab885-0faa-0000-714b-e31d00000000" name="125  N Period Agos Rev" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_Series_125__N_Period_Agos_Rev)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab5eb-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time.  
+
+- Returns data as of 2 months before month selected in the query.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cb6c35-0faa-0000-714b-e31d00000000" name="126  Rev Pct Var to N Period Ago" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_Series_126__Rev_Pct_Var_to_N_Period_Ago)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cb6c33-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Average % change to last month value]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cb6c06-0faa-0000-714b-e31d00000000" name="127  ---- Fixed Time Level ---------------------------" iconIndex="86" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_Series_127__----_Fixed_Time_Level_---------------------------)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab5e9-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab884-0faa-0000-714b-e31d00000000" name="127  Mth Ago Rev  (Fix Time Lvl)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_Series_127__Mth_Ago_Rev__(Fix_Time_Lvl))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab5ea-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time.  
+
+- Returns data as of previous month vs. month selected in the query.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab887-0faa-0000-714b-e31d00000000" name="128  Qtr Ago Rev  (Fix Time Lvl)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_Series_128__Qtr_Ago_Rev__(Fix_Time_Lvl))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab5ed-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time.  
+
+- Returns Quarter Ago value]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab888-0faa-0000-714b-e31d00000000" name="129  Year Ago Rev  (Fix Time Lvl)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_Series_129__Year_Ago_Rev__(Fix_Time_Lvl))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab5ee-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time.  
+
+- Returns Year Ago value]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab8a0-0faa-0000-714b-e31d00000000" name="131  Rev Var to Qtr Ago" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_Series_131__Rev_Var_to_Qtr_Ago)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab605-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- Value change to last quarter]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab8a1-0faa-0000-714b-e31d00000000" name="132  Rev Pct Var to Qtr Ago" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_Series_132__Rev_Pct_Var_to_Qtr_Ago)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab606-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- Difference of the value of the metric in the current period with the value of the metric in the same period the previous quarter / Value of the metric in the same period of the previous quarter]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab8a2-0faa-0000-714b-e31d00000000" name="133  Rev QAgo Compounded Yrly Gwth" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_Series_133__Rev_QAgo_Compounded_Yrly_Gwth)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab607-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- % variation to last quarter expressed in a compounded yearly % growth rate.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab88d-0faa-0000-714b-e31d00000000" name="135  Qtr To Dt Rev Sum" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_Series_135__Qtr_To_Dt_Rev_Sum)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab5f3-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time.  
+
+- Sums all the values from the first day of the quarter to the current period]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab88e-0faa-0000-714b-e31d00000000" name="136  Qtr Ago QTD Rev sum" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_Series_136__Qtr_Ago_QTD_Rev_sum)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab5f4-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time.  
+
+- Quarter Ago Quarter-To-Date Value for the same period. For the same period in the previous quarter, it returns the sum of all the values from the first day of the quarter to that period.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab8a3-0faa-0000-714b-e31d00000000" name="137  QTD Rev Pct Var to Qago QTD" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_Series_137__QTD_Rev_Pct_Var_to_Qago_QTD)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab608-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- Average % change of Quarter to date current value to last Quarter quarter to date value]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cb67f2-0faa-0000-714b-e31d00000000" name="1-41 ---- Alias Based Modelling -------" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_Series_1-41_----_Alias_Based_Modelling_-------)" hasDispName="true" hasDispDescription="false" overrideLogicalName="true" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5e7-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cb67a8-0faa-0000-714b-e31d00000000" name="113  Mago Rev (Alias Based)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Time_Series_113__Mago_Rev_(Alias_Based))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cb67a3-07d6-0000-714b-e31d00000000">
+</PresentationColumn>
+</PresentationTable>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m802b290b-07f3-0000-714b-e31d00000000" name="UT L Query Time" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/802b289f-07d0-0000-714b-e31d00000000.xml#m802b289f-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m802b290c-07d6-0000-714b-e31d00000000" name="Start Time" isWriteable="false">
+<AttrDefn mdsid="m80cb08ca-0f3c-0000-714b-e31d00000000" name="AD_3900:228081263925773">
+<Expr mdsid="m00000001-01f4-0000-4935-c99f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_TS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-4935-c99f00000000-mbb20f8fa-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8fa-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m802b290d-07d6-0000-714b-e31d00000000" name="Year" isWriteable="false">
+<AttrDefn mdsid="m80cb08cc-0f3c-0000-714b-e31d00000000" name="AD_3900:228101263925773">
+<Expr mdsid="m00000002-01f4-0000-f740-6b0f00000000" name="Expr">
+<ExprText><![CDATA[ CAST ( EXTRACT( YEAR  FROM "%1") AS VARCHAR ( 4 ))]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ( EXTRACT( YEAR  FROM "10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT") AS VARCHAR ( 4 ))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-f740-6b0f00000000-mbb20f8f8-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8f8-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m802b290e-07d6-0000-714b-e31d00000000" name="Year Quarter" isWriteable="false">
+<AttrDefn mdsid="m80cb08ce-0f3c-0000-714b-e31d00000000" name="AD_3900:228121263925773">
+<Expr mdsid="m00000003-01f4-0000-ab34-f1f800000000" name="Expr">
+<ExprText><![CDATA[ CAST ( EXTRACT( YEAR  FROM "%1") AS VARCHAR ( 4 )) || ' Q' ||  CAST ( EXTRACT( QUARTER_OF_YEAR  FROM "%1") AS VARCHAR ( 1 ))]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ( EXTRACT( YEAR  FROM "10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT") AS VARCHAR ( 4 )) || ' Q' ||  CAST ( EXTRACT( QUARTER_OF_YEAR  FROM "10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT") AS VARCHAR ( 1 ))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-ab34-f1f800000000-mbb20f8f8-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8f8-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m802b290f-07d6-0000-714b-e31d00000000" name="Year Month" isWriteable="false">
+<AttrDefn mdsid="m80cb08d0-0f3c-0000-714b-e31d00000000" name="AD_3900:228141263925773">
+<Expr mdsid="m00000004-01f4-0000-3b01-d59d00000000" name="Expr">
+<ExprText><![CDATA[ CAST ( EXTRACT( YEAR  FROM "%1") AS VARCHAR ( 4 )) || ' ' ||  LEFT( MONTHNAME("%1"), 3)]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ( EXTRACT( YEAR  FROM "10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT") AS VARCHAR ( 4 )) || ' ' ||  LEFT( MONTHNAME("10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT"), 3)]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-3b01-d59d00000000-mbb20f8f8-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8f8-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m802b2910-07d6-0000-714b-e31d00000000" name="Month" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/802b290b-07f3-0000-714b-e31d00000000.xml#m802b2911-07d6-0000-714b-e31d00000000">
+<AttrDefn mdsid="m80cb08d2-0f3c-0000-714b-e31d00000000" name="AD_3900:228161263925773">
+<Expr mdsid="m00000005-01f4-0000-93c2-59d800000000" name="Expr">
+<ExprText><![CDATA[ MONTHNAME("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ MONTHNAME("10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-93c2-59d800000000-mbb20f8f8-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8f8-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m802b2911-07d6-0000-714b-e31d00000000" name="Month Number" isWriteable="false">
+<AttrDefn mdsid="m80cb08d4-0f3c-0000-714b-e31d00000000" name="AD_3900:228181263925773">
+<Expr mdsid="m00000006-01f4-0000-0f65-540400000000" name="Expr">
+<ExprText><![CDATA[ EXTRACT( MONTH  FROM "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ EXTRACT( MONTH  FROM "10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-0f65-540400000000-mbb20f8f8-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8f8-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m802b2912-07d6-0000-714b-e31d00000000" name="Day Name" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/802b290b-07f3-0000-714b-e31d00000000.xml#m802b2914-07d6-0000-714b-e31d00000000">
+<AttrDefn mdsid="m80cb08d6-0f3c-0000-714b-e31d00000000" name="AD_3900:228201263925773">
+<Expr mdsid="m00000007-01f4-0000-619e-6ec500000000" name="Expr">
+<ExprText><![CDATA[ DAYNAME("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ DAYNAME("10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-619e-6ec500000000-mbb20f8f8-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8f8-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m802b2913-07d6-0000-714b-e31d00000000" name="Week Number" isWriteable="false">
+<AttrDefn mdsid="m80cb08d8-0f3c-0000-714b-e31d00000000" name="AD_3900:228221263925773">
+<Expr mdsid="m00000008-01f4-0000-d82f-87fb00000000" name="Expr">
+<ExprText><![CDATA[ CAST ( EXTRACT( YEAR  FROM "%1") AS VARCHAR ( 4 )) || ' WEEK ' ||  CAST ( EXTRACT( WEEK_OF_YEAR  FROM "%1") AS VARCHAR ( 2 ))]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ( EXTRACT( YEAR  FROM "10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT") AS VARCHAR ( 4 )) || ' WEEK ' ||  CAST ( EXTRACT( WEEK_OF_YEAR  FROM "10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT") AS VARCHAR ( 2 ))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-d82f-87fb00000000-mbb20f8f8-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8f8-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m802b2914-07d6-0000-714b-e31d00000000" name="Day Number" isWriteable="false">
+<AttrDefn mdsid="m80cb08da-0f3c-0000-714b-e31d00000000" name="AD_3900:228241263925773">
+<Expr mdsid="m00000009-01f4-0000-efb9-78c400000000" name="Expr">
+<ExprText><![CDATA[ DAYOFWEEK("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ DAYOFWEEK("10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-efb9-78c400000000-mbb20f8f8-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8f8-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m802b2915-07d6-0000-714b-e31d00000000" name="Day in Month" isWriteable="false">
+<AttrDefn mdsid="m80cb08dc-0f3c-0000-714b-e31d00000000" name="AD_3900:228261263925773">
+<Expr mdsid="m0000000a-01f4-0000-4490-25e800000000" name="Expr">
+<ExprText><![CDATA[ DAYOFMONTH("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ DAYOFMONTH("10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_DT")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-4490-25e800000000-mbb20f8f8-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8f8-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="me4c2d2e2-0c20-1000-8c4a-0af502b10000" name="Start Hour Min" isWriteable="false">
+<AttrDefn mdsid="me4c2d2e3-0c20-1000-8c4a-0af502b10000" name="AD_3900:2025771333541646">
+<Expr mdsid="m0000000b-01f4-0000-3450-95c400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_HOUR_MIN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-3450-95c400000000-mbb20f8f9-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8f9-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="me9649592-0c20-1000-ab76-0af502b10000" name="End Hour Min" isWriteable="false">
+<AttrDefn mdsid="me964bca0-0c20-1000-ab76-0af502b10000" name="AD_3900:2026701333549418">
+<Expr mdsid="m0000000c-01f4-0000-e654-315800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."END_HOUR_MIN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-e654-315800000000-mbb20f8e6-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8e6-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="me9672da2-0c20-1000-ab76-0af502b10000" name="End Time" isWriteable="false">
+<AttrDefn mdsid="me9672da3-0c20-1000-ab76-0af502b10000" name="AD_3900:2026741333549434">
+<Expr mdsid="m0000000d-01f4-0000-3aa9-0d1300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."END_TS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-3aa9-0d1300000000-mbb20f8e7-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8e7-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m4c31e640-0c22-1000-9f09-7f0000010000" name="Start Date" isWriteable="false">
+<AttrDefn mdsid="m4c320d50-0c22-1000-9f09-7f0000010000" name="AD_3900:2028161334144994">
+<Expr mdsid="m0000000e-01f4-0000-ba82-1a5f00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DATE )]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_TS" AS DATE )]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-ba82-1a5f00000000-mbb20f8fa-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8fa-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1bf55b93-0c33-1000-a35a-7f0000010000" name="Ran" isWriteable="false">
+<AttrDefn mdsid="m1bf55b94-0c33-1000-a35a-7f0000010000" name="AD_3900:2403811341365652">
+<Expr mdsid="m0000000f-01f4-0000-7713-3a3800000000" name="Expr">
+<ExprText><![CDATA[cast(TIMESTAMPDIFF(SQL_TSI_SECOND,  "%1" , CURRENT_TIMESTAMP(1)) as varchar (7))||' seconds ago']]></ExprText>
+<ExprTextDesc><![CDATA[cast(TIMESTAMPDIFF(SQL_TSI_SECOND,  "10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."START_TS" , CURRENT_TIMESTAMP(1)) as varchar (7))||' seconds ago']]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-7713-3a3800000000-mbb20f8fa-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8fa-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m802b29a2-07d8-0000-714b-e31d00000000" name="Calendar_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m802b29a2-07d8-0000-714b-e31d00000000-m802b290c-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b290b-07f3-0000-714b-e31d00000000.xml#m802b290c-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m802b29a2-07d8-0000-714b-e31d00000000-me4c2d2e2-0c20-1000-8c4a-0af502b10000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b290b-07f3-0000-714b-e31d00000000.xml#me4c2d2e2-0c20-1000-8c4a-0af502b10000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m802b290b-07f3-0000-714b-e31d00000000-m802b2adc-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/802b2adc-07f5-0000-714b-e31d00000000.xml#m802b2adc-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="mb04aada0-0c6e-1000-8a68-0af502b30000" name="WS_USDollar_ExhangeRate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cab573-07d0-0000-714b-e31d00000000.xml#m80cab573-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="mb04aada3-0c6e-1000-8a68-0af502b30000" name="DollarValue" isWriteable="false">
+<AttrDefn mdsid="mb04aada5-0c6e-1000-8a68-0af502b30000" name="AD_3900:2611231366954715">
+<Expr mdsid="m00000001-01f4-0000-96cb-597400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."WS_GET_DOLLARVALUE"."DollarValue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-96cb-597400000000-maf7ef931-0c6e-1000-8a68-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/af7ef930-0c6e-1000-8a68-0af502b30000.xml#maf7ef931-0c6e-1000-8a68-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="mb04aada4-0c6e-1000-8a68-0af502b30000" name="id" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="mb04aada4-0c6e-1000-8a68-0af502b30000-mb04aada3-0c6e-1000-8a68-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/b04aada0-0c6e-1000-8a68-0af502b30000.xml#mb04aada3-0c6e-1000-8a68-0af502b30000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="mb04aada0-0c6e-1000-8a68-0af502b30000-mb04aada2-0c6e-1000-8a68-0af502b30000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/b04aada2-0c6e-1000-8a68-0af502b30000.xml#mb04aada2-0c6e-1000-8a68-0af502b30000"/>
+</RefTableSources>
+</LogicalTable>

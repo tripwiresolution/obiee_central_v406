@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cc469a-07f3-0000-714b-e31d00000000" name="Instance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cc4699-07d0-0000-714b-e31d00000000.xml#m80cc4699-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cc46a6-07d6-0000-714b-e31d00000000" name="Begin Time" isWriteable="false">
+<AttrDefn mdsid="m80cc46bb-0f3c-0000-714b-e31d00000000" name="AD_3900:874711285916665">
+<Expr mdsid="m00000001-01f4-0000-eea7-7eb400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X2 - Scheduled Jobs (ORCL)"."Agent Status"."Job"."Instance"."BEGIN_TS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-eea7-7eb400000000-m80cc4619-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc4613-0bb9-0000-714b-e31d00000000.xml#m80cc4619-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc46a7-07d6-0000-714b-e31d00000000" name="End Time" isWriteable="false">
+<AttrDefn mdsid="m80cc46bc-0f3c-0000-714b-e31d00000000" name="AD_3900:874721285916665">
+<Expr mdsid="m00000002-01f4-0000-ac2e-736d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X2 - Scheduled Jobs (ORCL)"."Agent Status"."Job"."Instance"."END_TS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-ac2e-736d00000000-m80cc461a-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc4613-0bb9-0000-714b-e31d00000000.xml#m80cc461a-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc46a8-07d6-0000-714b-e31d00000000" name="Execution Time" isWriteable="false">
+<AttrDefn mdsid="m80cc46bd-0f3c-0000-714b-e31d00000000" name="AD_3900:874731285916665">
+<Expr mdsid="m00000003-01f4-0000-86f2-2ea100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X2 - Scheduled Jobs (ORCL)"."Agent Status"."Job"."Instance"."EXECUTION_TIME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-86f2-2ea100000000-m80cc461b-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc4613-0bb9-0000-714b-e31d00000000.xml#m80cc461b-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc46a9-07d6-0000-714b-e31d00000000" name="Exit Code" isWriteable="false">
+<AttrDefn mdsid="m80cc46be-0f3c-0000-714b-e31d00000000" name="AD_3900:874741285916665">
+<Expr mdsid="m00000004-01f4-0000-3355-36e400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X2 - Scheduled Jobs (ORCL)"."Agent Status"."Job"."Instance"."EXIT_CODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-3355-36e400000000-m80cc461c-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc4613-0bb9-0000-714b-e31d00000000.xml#m80cc461c-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc46aa-07d6-0000-714b-e31d00000000" name="Instance Id" isWriteable="false">
+<AttrDefn mdsid="m80cc46bf-0f3c-0000-714b-e31d00000000" name="AD_3900:874751285916665">
+<Expr mdsid="m00000005-01f4-0000-9573-d48900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X2 - Scheduled Jobs (ORCL)"."Agent Status"."Job"."Instance"."INSTANCE_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-9573-d48900000000-m80cc461d-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc4613-0bb9-0000-714b-e31d00000000.xml#m80cc461d-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc46ab-07d6-0000-714b-e31d00000000" name="Job Id" isWriteable="false">
+<AttrDefn mdsid="m80cc46c0-0f3c-0000-714b-e31d00000000" name="AD_3900:874761285916665">
+<Expr mdsid="m00000006-01f4-0000-c9c5-edbe00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X2 - Scheduled Jobs (ORCL)"."Agent Status"."Job"."Instance"."JOB_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-c9c5-edbe00000000-m80cc461e-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc4613-0bb9-0000-714b-e31d00000000.xml#m80cc461e-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc46ac-07d6-0000-714b-e31d00000000" name="Status" isWriteable="false">
+<AttrDefn mdsid="m80cc46c1-0f3c-0000-714b-e31d00000000" name="AD_3900:874771285916665">
+<Expr mdsid="m00000007-01f4-0000-648e-17a600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X2 - Scheduled Jobs (ORCL)"."Agent Status"."Job"."Instance"."STATUS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-648e-17a600000000-m80cc461f-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc4613-0bb9-0000-714b-e31d00000000.xml#m80cc461f-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cc46b3-07d8-0000-714b-e31d00000000" name="KEY" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cc46b3-07d8-0000-714b-e31d00000000-m80cc46aa-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc469a-07f3-0000-714b-e31d00000000.xml#m80cc46aa-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cc46b3-07d8-0000-714b-e31d00000000-m80cc46ab-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc469a-07f3-0000-714b-e31d00000000.xml#m80cc46ab-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cc469a-07f3-0000-714b-e31d00000000-m80cc46c5-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cc46c5-07f5-0000-714b-e31d00000000.xml#m80cc46c5-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

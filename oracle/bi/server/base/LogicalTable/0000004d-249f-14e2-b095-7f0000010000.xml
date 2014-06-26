@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m0000004d-249f-14e2-b095-7f0000010000" name="Bbil Fact Bookings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/00000034-249f-14e2-b095-7f0000010000.xml#m00000034-249f-14e2-b095-7f0000010000">
+<LogicalColumn mdsid="m00000050-249f-14e2-b095-7f0000010000" name="# Of Billtocust Id" isWriteable="false">
+<MeasureDefn mdsid="mc0000000-29d4-14e2-b095-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mc0000001-29d4-14e2-b095-7f0000010000" name="AggRule_2050:2854831401465824" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-9826-ad9c00000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "Y11 - Other Demos"."Bbil Fact Bookings"."# Of Billtocust Id")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-9826-ad9c00000000-m00000050-249f-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/0000004d-249f-14e2-b095-7f0000010000.xml#m00000050-249f-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m0000005f-249f-14e2-b095-7f0000010000" name="AD_3900:2848801401465833">
+<Expr mdsid="m00000002-01f4-0000-2897-6b5b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_FACT_BOOKINGS"."BILLTOCUST_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-2897-6b5b00000000-m0000000c-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/0000000b-23f4-14e2-b095-7f0000010000.xml#m0000000c-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m00000051-249f-14e2-b095-7f0000010000" name="Comments" isWriteable="false">
+<AttrDefn mdsid="m00000060-249f-14e2-b095-7f0000010000" name="AD_3900:2848811401465833">
+<Expr mdsid="m00000003-01f4-0000-ac63-ebdc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_FACT_BOOKINGS"."COMMENTS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-ac63-ebdc00000000-m0000000d-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/0000000b-23f4-14e2-b095-7f0000010000.xml#m0000000d-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m00000052-249f-14e2-b095-7f0000010000" name="Date Id" isWriteable="false">
+<AttrDefn mdsid="m00000061-249f-14e2-b095-7f0000010000" name="AD_3900:2848821401465833">
+<Expr mdsid="m00000004-01f4-0000-c96c-6eba00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_FACT_BOOKINGS"."DATE_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-c96c-6eba00000000-m0000000e-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/0000000b-23f4-14e2-b095-7f0000010000.xml#m0000000e-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m00000053-249f-14e2-b095-7f0000010000" name="Debit Number" isWriteable="false">
+<AttrDefn mdsid="m00000062-249f-14e2-b095-7f0000010000" name="AD_3900:2848831401465833">
+<Expr mdsid="m00000005-01f4-0000-efe5-e44c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_FACT_BOOKINGS"."DEBIT_NUMBER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-efe5-e44c00000000-m0000000f-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/0000000b-23f4-14e2-b095-7f0000010000.xml#m0000000f-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m00000054-249f-14e2-b095-7f0000010000" name="# Of Endcust Id" isWriteable="false">
+<MeasureDefn mdsid="mc0000002-29d4-14e2-b095-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mc0000003-29d4-14e2-b095-7f0000010000" name="AggRule_2050:2854851401465824" isDefault="true">
+<Expr mdsid="m00000006-01f4-0000-33a8-3c6d00000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "Y11 - Other Demos"."Bbil Fact Bookings"."# Of Endcust Id")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-33a8-3c6d00000000-m00000054-249f-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/0000004d-249f-14e2-b095-7f0000010000.xml#m00000054-249f-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m00000063-249f-14e2-b095-7f0000010000" name="AD_3900:2848841401465833">
+<Expr mdsid="m00000007-01f4-0000-e6e9-de2a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_FACT_BOOKINGS"."ENDCUST_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-e6e9-de2a00000000-m00000010-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/0000000b-23f4-14e2-b095-7f0000010000.xml#m00000010-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m00000055-249f-14e2-b095-7f0000010000" name="Ext Amount" isWriteable="false">
+<MeasureDefn mdsid="m80000000-29db-14e2-b095-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80000001-29db-14e2-b095-7f0000010000" name="AggRule_2050:2854911401465824" isDefault="true">
+<Expr mdsid="m00000008-01f4-0000-9474-3bad00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y11 - Other Demos"."Bbil Fact Bookings"."Ext Amount")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-9474-3bad00000000-m00000055-249f-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/0000004d-249f-14e2-b095-7f0000010000.xml#m00000055-249f-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m00000064-249f-14e2-b095-7f0000010000" name="AD_3900:2848851401465833">
+<Expr mdsid="m00000009-01f4-0000-7f1f-901000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_FACT_BOOKINGS"."EXT_AMOUNT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-7f1f-901000000000-m00000011-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/0000000b-23f4-14e2-b095-7f0000010000.xml#m00000011-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m00000056-249f-14e2-b095-7f0000010000" name="Line Number" isWriteable="false">
+<AttrDefn mdsid="m00000065-249f-14e2-b095-7f0000010000" name="AD_3900:2848861401465833">
+<Expr mdsid="m0000000a-01f4-0000-95ba-1a7d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_FACT_BOOKINGS"."LINE_NUMBER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-95ba-1a7d00000000-m00000012-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/0000000b-23f4-14e2-b095-7f0000010000.xml#m00000012-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m00000057-249f-14e2-b095-7f0000010000" name="# Of Order Number" isWriteable="false">
+<MeasureDefn mdsid="mc0000004-29d4-14e2-b095-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mc0000005-29d4-14e2-b095-7f0000010000" name="AggRule_2050:2854871401465824" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-bd06-850100000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "Y11 - Other Demos"."Bbil Fact Bookings"."# Of Order Number")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-bd06-850100000000-m00000057-249f-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/0000004d-249f-14e2-b095-7f0000010000.xml#m00000057-249f-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m00000066-249f-14e2-b095-7f0000010000" name="AD_3900:2848871401465833">
+<Expr mdsid="m0000000c-01f4-0000-b50a-907e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_FACT_BOOKINGS"."ORDER_NUMBER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-b50a-907e00000000-m00000013-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/0000000b-23f4-14e2-b095-7f0000010000.xml#m00000013-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m00000058-249f-14e2-b095-7f0000010000" name="# Of Part Id" isWriteable="false">
+<MeasureDefn mdsid="mc0000006-29d4-14e2-b095-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mc0000007-29d4-14e2-b095-7f0000010000" name="AggRule_2050:2854891401465824" isDefault="true">
+<Expr mdsid="m0000000d-01f4-0000-ea1e-39eb00000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "Y11 - Other Demos"."Bbil Fact Bookings"."# Of Part Id")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-ea1e-39eb00000000-m00000058-249f-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/0000004d-249f-14e2-b095-7f0000010000.xml#m00000058-249f-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m00000067-249f-14e2-b095-7f0000010000" name="AD_3900:2848881401465833">
+<Expr mdsid="m0000000e-01f4-0000-d30d-4cee00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_FACT_BOOKINGS"."PART_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-d30d-4cee00000000-m00000014-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/0000000b-23f4-14e2-b095-7f0000010000.xml#m00000014-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m00000059-249f-14e2-b095-7f0000010000" name="Po#" isWriteable="false">
+<AttrDefn mdsid="m00000068-249f-14e2-b095-7f0000010000" name="AD_3900:2848891401465833">
+<Expr mdsid="m0000000f-01f4-0000-ec76-a30b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_FACT_BOOKINGS"."PO#"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-ec76-a30b00000000-m00000015-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/0000000b-23f4-14e2-b095-7f0000010000.xml#m00000015-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m0000005a-249f-14e2-b095-7f0000010000" name="Saleschannel Id" isWriteable="false">
+<AttrDefn mdsid="m00000069-249f-14e2-b095-7f0000010000" name="AD_3900:2848901401465833">
+<Expr mdsid="m00000010-01f4-0000-5791-a72800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_FACT_BOOKINGS"."SALESCHANNEL_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-5791-a72800000000-m00000016-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/0000000b-23f4-14e2-b095-7f0000010000.xml#m00000016-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m0000005b-249f-14e2-b095-7f0000010000" name="Salesrep Id" isWriteable="false">
+<AttrDefn mdsid="m0000006a-249f-14e2-b095-7f0000010000" name="AD_3900:2848911401465833">
+<Expr mdsid="m00000011-01f4-0000-bfec-b0ae00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_FACT_BOOKINGS"."SALESREP_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-bfec-b0ae00000000-m00000017-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/0000000b-23f4-14e2-b095-7f0000010000.xml#m00000017-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m0000005c-249f-14e2-b095-7f0000010000" name="Scenario Id" isWriteable="false">
+<AttrDefn mdsid="m0000006b-249f-14e2-b095-7f0000010000" name="AD_3900:2848921401465833">
+<Expr mdsid="m00000012-01f4-0000-c8c1-cc5500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_FACT_BOOKINGS"."SCENARIO_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-c8c1-cc5500000000-m00000018-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/0000000b-23f4-14e2-b095-7f0000010000.xml#m00000018-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m0000005d-249f-14e2-b095-7f0000010000" name="Unit Price" isWriteable="false">
+<MeasureDefn mdsid="m40000000-29e7-14e2-b095-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m40000001-29e7-14e2-b095-7f0000010000" name="AggRule_2050:2854981401465824" isDefault="true">
+<Expr mdsid="m00000013-01f4-0000-462c-0ebc00000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y11 - Other Demos"."Bbil Fact Bookings"."Unit Price")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-462c-0ebc00000000-m0000005d-249f-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/0000004d-249f-14e2-b095-7f0000010000.xml#m0000005d-249f-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m0000006c-249f-14e2-b095-7f0000010000" name="AD_3900:2848931401465833">
+<Expr mdsid="m00000014-01f4-0000-4bc2-d7d300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_FACT_BOOKINGS"."UNIT_PRICE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-4bc2-d7d300000000-m0000001a-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/0000000b-23f4-14e2-b095-7f0000010000.xml#m0000001a-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m0000005e-249f-14e2-b095-7f0000010000" name="Units" isWriteable="false">
+<MeasureDefn mdsid="m80000004-29db-14e2-b095-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80000005-29db-14e2-b095-7f0000010000" name="AggRule_2050:2854951401465824" isDefault="true">
+<Expr mdsid="m00000015-01f4-0000-263c-5b7b00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y11 - Other Demos"."Bbil Fact Bookings"."Units")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-263c-5b7b00000000-m0000005e-249f-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/0000004d-249f-14e2-b095-7f0000010000.xml#m0000005e-249f-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m0000006d-249f-14e2-b095-7f0000010000" name="AD_3900:2848941401465833">
+<Expr mdsid="m00000016-01f4-0000-ed61-c5ea00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_FACT_BOOKINGS"."UNITS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-ed61-c5ea00000000-m00000019-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/0000000b-23f4-14e2-b095-7f0000010000.xml#m00000019-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m0000004d-249f-14e2-b095-7f0000010000-m0000004f-249f-14e2-b095-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/0000004f-249f-14e2-b095-7f0000010000.xml#m0000004f-249f-14e2-b095-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

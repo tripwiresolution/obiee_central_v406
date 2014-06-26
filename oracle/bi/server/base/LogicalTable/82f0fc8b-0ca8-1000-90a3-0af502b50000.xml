@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0fc8b-0ca8-1000-90a3-0af502b50000" name="Fact - Attrition Country" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acdb-0ca8-1000-90a3-0af502b50000.xml#m82f0acdb-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0fc8c-0ca8-1000-90a3-0af502b50000" name="Average" isWriteable="false">
+<MeasureDefn mdsid="m82f1703c-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19786-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737081391789375" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-b526-ead000000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y02 - Demo HR Oracle EMEA HCM"."Fact - Attrition Country"."Average")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-b526-ead000000000-m82f0fc8c-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc8b-0ca8-1000-90a3-0af502b50000.xml#m82f0fc8c-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a99f-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761201391789375">
+<Expr mdsid="m00000002-01f4-0000-3ebb-f24900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."HCM"."LOIC_ATTR_COUNTRY"."TOTAL"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-3ebb-f24900000000-m82e3dca4-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc9e-0ca8-1000-90a3-0af502b50000.xml#m82e3dca4-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc8d-0ca8-1000-90a3-0af502b50000" name="Consulting" isWriteable="false">
+<MeasureDefn mdsid="m82f1703d-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19787-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737091391789375" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-fe68-645800000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y02 - Demo HR Oracle EMEA HCM"."Fact - Attrition Country"."Consulting")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-fe68-645800000000-m82f0fc8d-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc8b-0ca8-1000-90a3-0af502b50000.xml#m82f0fc8d-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a9a0-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761211391789375">
+<Expr mdsid="m00000004-01f4-0000-399a-c54000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."HCM"."LOIC_ATTR_COUNTRY"."CONSULTING"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-399a-c54000000000-m82e3dca7-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc9e-0ca8-1000-90a3-0af502b50000.xml#m82e3dca7-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc8e-0ca8-1000-90a3-0af502b50000" name="Development" isWriteable="false">
+<MeasureDefn mdsid="m82f1703e-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19788-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737101391789375" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-36d3-47fa00000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y02 - Demo HR Oracle EMEA HCM"."Fact - Attrition Country"."Development")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-36d3-47fa00000000-m82f0fc8e-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc8b-0ca8-1000-90a3-0af502b50000.xml#m82f0fc8e-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a9a1-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761221391789375">
+<Expr mdsid="m00000006-01f4-0000-3c75-7e8900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."HCM"."LOIC_ATTR_COUNTRY"."DEVELOPMENT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-3c75-7e8900000000-m82e3dca8-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc9e-0ca8-1000-90a3-0af502b50000.xml#m82e3dca8-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc8f-0ca8-1000-90a3-0af502b50000" name="G&amp;A" isWriteable="false">
+<MeasureDefn mdsid="m82f1703f-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19789-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737111391789375" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-d160-7c3000000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y02 - Demo HR Oracle EMEA HCM"."Fact - Attrition Country"."G&A")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-d160-7c3000000000-m82f0fc8f-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc8b-0ca8-1000-90a3-0af502b50000.xml#m82f0fc8f-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a9a2-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761231391789375">
+<Expr mdsid="m00000008-01f4-0000-6b30-31cf00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."HCM"."LOIC_ATTR_COUNTRY"."GA"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-6b30-31cf00000000-m82e3dca9-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc9e-0ca8-1000-90a3-0af502b50000.xml#m82e3dca9-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc90-0ca8-1000-90a3-0af502b50000" name="License" isWriteable="false">
+<MeasureDefn mdsid="m82f17040-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1978a-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737121391789375" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-702f-e27800000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y02 - Demo HR Oracle EMEA HCM"."Fact - Attrition Country"."License")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-702f-e27800000000-m82f0fc90-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc8b-0ca8-1000-90a3-0af502b50000.xml#m82f0fc90-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a9a3-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761241391789375">
+<Expr mdsid="m0000000a-01f4-0000-1fe9-0aaa00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."HCM"."LOIC_ATTR_COUNTRY"."LICENSE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-1fe9-0aaa00000000-m82e3dcaa-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc9e-0ca8-1000-90a3-0af502b50000.xml#m82e3dcaa-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc91-0ca8-1000-90a3-0af502b50000" name="Support and IT and Education" isWriteable="false">
+<MeasureDefn mdsid="m82f17041-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1978b-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737131391789375" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-d6da-bf9200000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y02 - Demo HR Oracle EMEA HCM"."Fact - Attrition Country"."Support and IT and Education")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-d6da-bf9200000000-m82f0fc91-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc8b-0ca8-1000-90a3-0af502b50000.xml#m82f0fc91-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a9a4-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761251391789375">
+<Expr mdsid="m0000000c-01f4-0000-5977-66a400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."HCM"."LOIC_ATTR_COUNTRY"."SUPPORT_IT_EDUCATION"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-5977-66a400000000-m82e3dcac-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc9e-0ca8-1000-90a3-0af502b50000.xml#m82e3dcac-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc92-0ca8-1000-90a3-0af502b50000" name="Systems Product Sales" isWriteable="false">
+<MeasureDefn mdsid="m82f17042-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1978c-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737141391789375" isDefault="true">
+<Expr mdsid="m0000000d-01f4-0000-1fd5-9ce100000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y02 - Demo HR Oracle EMEA HCM"."Fact - Attrition Country"."Systems Product Sales")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-1fd5-9ce100000000-m82f0fc92-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc8b-0ca8-1000-90a3-0af502b50000.xml#m82f0fc92-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a9a5-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761261391789375">
+<Expr mdsid="m0000000e-01f4-0000-a1e9-85d600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."HCM"."LOIC_ATTR_COUNTRY"."SYSTEMS_PRODUCT_SALES"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-a1e9-85d600000000-m82e3dcad-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc9e-0ca8-1000-90a3-0af502b50000.xml#m82e3dcad-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc93-0ca8-1000-90a3-0af502b50000" name="Leavers" isWriteable="false">
+<MeasureDefn mdsid="m82f17043-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1978d-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737151391789375" isDefault="true">
+<Expr mdsid="m0000000f-01f4-0000-b4dc-d7df00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA HCM"."Fact - Attrition Country"."Leavers")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-b4dc-d7df00000000-m82f0fc93-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc8b-0ca8-1000-90a3-0af502b50000.xml#m82f0fc93-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a9a6-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761271391789375">
+<Expr mdsid="m00000010-01f4-0000-e646-09c300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."HCM"."LOIC_ATTR_COUNTRY"."LEAVERS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-e646-09c300000000-m82e3dcaf-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc9e-0ca8-1000-90a3-0af502b50000.xml#m82e3dcaf-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc94-0ca8-1000-90a3-0af502b50000" name="Employees" isWriteable="false">
+<MeasureDefn mdsid="m82f17044-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1978e-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737161391789375" isDefault="true">
+<Expr mdsid="m00000011-01f4-0000-1dc4-ed3500000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA HCM"."Fact - Attrition Country"."Employees")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-1dc4-ed3500000000-m82f0fc94-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc8b-0ca8-1000-90a3-0af502b50000.xml#m82f0fc94-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a9a7-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761281391789375">
+<Expr mdsid="m00000012-01f4-0000-64fe-e65700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."HCM"."LOIC_ATTR_COUNTRY"."EMPLOYEES"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-64fe-e65700000000-m82e3dcb0-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc9e-0ca8-1000-90a3-0af502b50000.xml#m82e3dcb0-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc95-0ca8-1000-90a3-0af502b50000" name="Joiners" isWriteable="false">
+<MeasureDefn mdsid="m82f17045-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1978f-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737171391789375" isDefault="true">
+<Expr mdsid="m00000013-01f4-0000-4829-943800000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA HCM"."Fact - Attrition Country"."Joiners")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-4829-943800000000-m82f0fc95-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc8b-0ca8-1000-90a3-0af502b50000.xml#m82f0fc95-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a9a8-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761291391789375">
+<Expr mdsid="m00000014-01f4-0000-2763-795100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."HCM"."LOIC_ATTR_COUNTRY"."JOINERS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-2763-795100000000-m82e3dcae-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc9e-0ca8-1000-90a3-0af502b50000.xml#m82e3dcae-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc96-0ca8-1000-90a3-0af502b50000" name="Marketing" isWriteable="false">
+<MeasureDefn mdsid="m82f17046-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19790-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737181391789375" isDefault="true">
+<Expr mdsid="m00000015-01f4-0000-2740-adff00000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y02 - Demo HR Oracle EMEA HCM"."Fact - Attrition Country"."Marketing")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-2740-adff00000000-m82f0fc96-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc8b-0ca8-1000-90a3-0af502b50000.xml#m82f0fc96-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a9a9-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761301391789375">
+<Expr mdsid="m00000016-01f4-0000-8504-e63e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."HCM"."LOIC_ATTR_COUNTRY"."MARKETING"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-8504-e63e00000000-m82e3dcab-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc9e-0ca8-1000-90a3-0af502b50000.xml#m82e3dcab-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc97-0ca8-1000-90a3-0af502b50000" name="Average Four Rolling Quarters" isWriteable="false">
+<MeasureDefn mdsid="m82f17047-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19791-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737191391789375" isDefault="true">
+<Expr mdsid="m00000017-01f4-0000-3f77-009b00000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y02 - Demo HR Oracle EMEA HCM"."Fact - Attrition Country"."Average Four Rolling Quarters")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-3f77-009b00000000-m82f0fc97-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc8b-0ca8-1000-90a3-0af502b50000.xml#m82f0fc97-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a9aa-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761311391789375">
+<Expr mdsid="m00000018-01f4-0000-5f08-5e0600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."HCM"."LOIC_ATTR_COUNTRY"."DATARQ"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000018-01f4-0000-5f08-5e0600000000-m82e3dcb2-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc9e-0ca8-1000-90a3-0af502b50000.xml#m82e3dcb2-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0fc8b-0ca8-1000-90a3-0af502b50000-m82f344e4-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f344e4-0ca8-1000-90a3-0af502b50000.xml#m82f344e4-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

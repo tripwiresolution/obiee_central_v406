@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationTable mdsid="m802b2b5f-0fa8-0000-714b-e31d00000000" name="Measures" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" dispName="VALUEOF(NQ_SESSION.CN_Usage_Tracking_Measures)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationCatalog/802b2b5b-0fa4-0000-714b-e31d00000000.xml#m802b2b5b-0fa4-0000-714b-e31d00000000">
+<Description><![CDATA[Basic nQuire Usage Metrics that use SUM, MAX, AVG COUNT aggregration rules.]]></Description>
+<PresentationColumn mdsid="m802b2afa-0faa-0000-714b-e31d00000000" name="# of Queries" dispName="VALUEOF(NQ_SESSION.CN_Usage_Tracking_Measures_Query_Count)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#m802b28ac-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[A count of all queries executed against the nQuire Server.  Count is the aggregration rule for this calc]]></Description>
+<Alias name="Query Count"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m802b2afb-0faa-0000-714b-e31d00000000" name="Max Total Time in Secs" dispName="VALUEOF(NQ_SESSION.CN_Usage_Tracking_Measures_Max_Total_Time_in_Secs)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#m802b28b4-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Maximum amount of time (total) for a request.  MAX is the aggregration rule for this calculation.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m802b2afc-0faa-0000-714b-e31d00000000" name="Avg Total Time In Secs" dispName="VALUEOF(NQ_SESSION.CN_Usage_Tracking_Measures_Avg_Total_Time_In_Secs)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#m802b28a8-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Average amount of time (total time) for a request.  AVG is the aggregration rule for this calculation.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m802b2afd-0faa-0000-714b-e31d00000000" name="Total Time in Secs" dispName="VALUEOF(NQ_SESSION.CN_Usage_Tracking_Measures_Total_Time_in_Secs)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#m802b28a7-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Total amount of time for a request. SUM is the aggregration rule for this calculation.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m802b2afe-0faa-0000-714b-e31d00000000" name="Max Row Count" dispName="VALUEOF(NQ_SESSION.CN_Usage_Tracking_Measures_Max_Row_Count)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#m802b28b3-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Maximum number of rows returned for a request.  MAX is the aggregration rule for this calculation.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m802b2aff-0faa-0000-714b-e31d00000000" name="Avg Row Count" dispName="VALUEOF(NQ_SESSION.CN_Usage_Tracking_Measures_Avg_Row_Count)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#m802b28a6-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Average number of rows returned for a request.  AVG is the aggregration rule for this calculation.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m802b2b00-0faa-0000-714b-e31d00000000" name="Max Compile Time in Secs" dispName="VALUEOF(NQ_SESSION.CN_Usage_Tracking_Measures_Max_Compile_Time_in_Secs)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#m802b28b5-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Maximum amount of time in seconds for a request to be complied on the nQuire Server.  MAX is the aggregration rule for this calculation.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m802b2b01-0faa-0000-714b-e31d00000000" name="Avg Compile Time In Secs" dispName="VALUEOF(NQ_SESSION.CN_Usage_Tracking_Measures_Avg_Compile_Time_In_Secs)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#m802b28a9-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Average amount of time in seconds for a request to be complied on the nQuire Server.  AVG is the aggregration rule for this calculation.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m802b2b02-0faa-0000-714b-e31d00000000" name="Max Time Spent in dB" dispName="VALUEOF(NQ_SESSION.CN_Usage_Tracking_Measures_Max_Time_Spent_in_dB)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#m802b28b6-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Maximum amount of time spent in the DataSource (Database) for a request.  MAX is the aggregration rule for this calculation.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m802b2b03-0faa-0000-714b-e31d00000000" name="Avg Time Spent in dB" dispName="VALUEOF(NQ_SESSION.CN_Usage_Tracking_Measures_Avg_Time_Spent_in_dB)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#m802b28ae-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[AVG amount of time spent in the DataSource (Database) for a request.  AVG is the aggregration rule for this calculation.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m802b2b04-0faa-0000-714b-e31d00000000" name="Total Time Spent in dB" dispName="VALUEOF(NQ_SESSION.CN_Usage_Tracking_Measures_Total_Time_Spent_in_dB)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#m802b28ad-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Total amount of time spent in the DataSource (Database) for a request.  SUM is the aggregration rule for this calculation.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m802b2b05-0faa-0000-714b-e31d00000000" name="Total Num dB Queries" dispName="VALUEOF(NQ_SESSION.CN_Usage_Tracking_Measures_Total_Num_dB_Queries)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#m802b28aa-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Total Number of Queries executed on the nQuire server.  SUM is the aggregration rulee for this calculation.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m802b2b06-0faa-0000-714b-e31d00000000" name="Avg Num dB Queries" dispName="VALUEOF(NQ_SESSION.CN_Usage_Tracking_Measures_Avg_Num_dB_Queries)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#m802b28ab-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Average Number of Queries executed on the nQuire server.  AVG is the aggregration rulee for this calculation.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m802b2b08-0faa-0000-714b-e31d00000000" name="Number of cache entries inserted" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#m802b2909-07d6-0000-714b-e31d00000000">
+</PresentationColumn>
+<PresentationColumn mdsid="m802b2b09-0faa-0000-714b-e31d00000000" name="Number of cache hits" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#m802b290a-07d6-0000-714b-e31d00000000">
+</PresentationColumn>
+<PresentationColumn mdsid="me58167f1-0c20-1000-ab76-0af502b10000" name="Dashboard Count" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#me53088d0-0c20-1000-ab76-0af502b10000">
+</PresentationColumn>
+<PresentationColumn mdsid="me58167f3-0c20-1000-ab76-0af502b10000" name="Dashboard Page Count" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#me53088d1-0c20-1000-ab76-0af502b10000">
+</PresentationColumn>
+<PresentationColumn mdsid="me58167f5-0c20-1000-ab76-0af502b10000" name="Report Count" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#me53088d2-0c20-1000-ab76-0af502b10000">
+</PresentationColumn>
+<PresentationColumn mdsid="me58167f7-0c20-1000-ab76-0af502b10000" name="# of Distinct Users" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#me53088d3-0c20-1000-ab76-0af502b10000">
+</PresentationColumn>
+<PresentationColumn mdsid="me58167f9-0c20-1000-ab76-0af502b10000" name="% of Cache Hits" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#me53088d4-0c20-1000-ab76-0af502b10000">
+</PresentationColumn>
+<PresentationColumn mdsid="me58167fb-0c20-1000-ab76-0af502b10000" name="# of Queries Hitting Cache" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#me53088d5-0c20-1000-ab76-0af502b10000">
+</PresentationColumn>
+<PresentationColumn mdsid="me58167fd-0c20-1000-ab76-0af502b10000" name="# of Users" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#me53088d7-0c20-1000-ab76-0af502b10000">
+</PresentationColumn>
+<PresentationColumn mdsid="mc7c05371-0c2a-1000-ac17-0af06a760000" name="# of Queries#1" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b28a4-07f3-0000-714b-e31d00000000.xml#mc7ba11e4-0c2a-1000-ac17-0af06a760000">
+</PresentationColumn>
+</PresentationTable>

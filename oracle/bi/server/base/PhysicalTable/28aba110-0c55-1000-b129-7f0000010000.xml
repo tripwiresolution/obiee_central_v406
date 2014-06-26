@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m28aba110-0c55-1000-b129-7f0000010000" name="RANDOMREDDOTS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Database/ac71f401-0c31-1000-8edd-0af0613a0000.xml#mac71f401-0c31-1000-8edd-0af0613a0000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[select id, image
+from table(rqTableEval(cursor(
+select valueof(NQ_SESSION.OR_REDDOTS) n from dual), 
+NULL,'PNG','RandomRedDots'))]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m28b90e90-0c55-1000-b129-7f0000010000" name="ID" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m28c36ed0-0c55-1000-b129-7f0000010000" name="IMAGE" dataType="LONGVARBINARY" precision="32000" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m2a5bc210-0c55-1000-b129-7f0000010000" name="key">
+<RefColumns>
+<RefColumn refId="m2a5bc210-0c55-1000-b129-7f0000010000-m28b90e90-0c55-1000-b129-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/28aba110-0c55-1000-b129-7f0000010000.xml#m28b90e90-0c55-1000-b129-7f0000010000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m8e6eb2fe-0c26-1000-9bbc-0af502b10000" name="DBA_TEMP_FREE_SPACE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/78682d26-0c20-1000-b5b8-0af502b10000.xml#m78682d26-0c20-1000-b5b8-0af502b10000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[DBA_TEMP_FREE_SPACE]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m8e6eb2ff-0c26-1000-9bbc-0af502b10000" name="ALLOCATED_SPACE" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8e6eb300-0c26-1000-9bbc-0af502b10000" name="FREE_SPACE" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8e6eb301-0c26-1000-9bbc-0af502b10000" name="TABLESPACE_NAME" dataType="VARCHAR" precision="30" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8e6eb302-0c26-1000-9bbc-0af502b10000" name="TABLESPACE_SIZE" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="mba7db0d0-0c26-1000-b8db-0af502b10000" name="DBA_TEMP_FREE_SPACE_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/8e6e8d11-0c26-1000-9bbc-0af502b10000.xml#mba7d62b0-0c26-1000-b8db-0af502b10000">
+<RefColumns>
+<RefColumn refId="mba7db0d0-0c26-1000-b8db-0af502b10000-m8e6eb301-0c26-1000-9bbc-0af502b10000" columnRef="/oracle/bi/server/base/PhysicalTable/8e6eb2fe-0c26-1000-9bbc-0af502b10000.xml#m8e6eb301-0c26-1000-9bbc-0af502b10000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

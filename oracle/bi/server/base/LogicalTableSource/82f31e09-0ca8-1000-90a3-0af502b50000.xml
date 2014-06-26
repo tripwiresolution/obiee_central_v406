@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m82f31e09-0ca8-1000-90a3-0af502b50000" name="LOIC_METRICS_CLQ_AGL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/82f0fc49-0ca8-1000-90a3-0af502b50000.xml#m82f0fc49-0ca8-1000-90a3-0af502b50000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-d01f-2b2d00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y02 - Demo HR Oracle EMEA"."Fact - Metrics CLQ AGL"."Leavers"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-d01f-2b2d00000000-m82f0fc4a-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc49-0ca8-1000-90a3-0af502b50000.xml#m82f0fc4a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-e858-cfb700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_METRICS_CLQ_AGL"."LEAVERS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-e858-cfb700000000-m82e3dc46-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc41-0ca8-1000-90a3-0af502b50000.xml#m82e3dc46-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-99cb-807900000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y02 - Demo HR Oracle EMEA"."Fact - Metrics CLQ AGL"."Leavers (all reasons)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-99cb-807900000000-m82f0fc4b-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc49-0ca8-1000-90a3-0af502b50000.xml#m82f0fc4b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-c328-ddfc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_METRICS_CLQ_AGL"."LEAVERS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-c328-ddfc00000000-m82e3dc46-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc41-0ca8-1000-90a3-0af502b50000.xml#m82e3dc46-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-b8c9-ae5000000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y02 - Demo HR Oracle EMEA"."Fact - Metrics CLQ AGL"."Involuntary Leavers"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-b8c9-ae5000000000-m82f0fc4c-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc49-0ca8-1000-90a3-0af502b50000.xml#m82f0fc4c-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-37fe-42d900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_METRICS_CLQ_AGL"."INV_LEAVERS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-37fe-42d900000000-m82e3dc49-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc41-0ca8-1000-90a3-0af502b50000.xml#m82e3dc49-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/82e3dc41-0ca8-1000-90a3-0af502b50000.xml#m82e3dc41-0ca8-1000-90a3-0af502b50000">
+</Link>
+<WhereClause mdsid="m00000007-01f4-0000-5d35-22f100000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000008-01f4-0000-53d2-860300000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1", "%2", "%3", "%4", "%5", "%6")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("Y02 - Demo HR Oracle EMEA"."Time"."Date", "Y02 - Demo HR Oracle EMEA"."Age Band"."Detail", "Y02 - Demo HR Oracle EMEA"."Country"."Detail", "Y02 - Demo HR Oracle EMEA"."Gender"."Detail", "Y02 - Demo HR Oracle EMEA"."Leaving Reasons"."Detail", "Y02 - Demo HR Oracle EMEA"."LOB"."Detail")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-53d2-860300000000-m82f19858-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0d404-0ca8-1000-90a3-0af502b50000.xml#m82f19858-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000008-01f4-0000-53d2-860300000000-m82f19845-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0d3fd-0ca8-1000-90a3-0af502b50000.xml#m82f19845-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000008-01f4-0000-53d2-860300000000-m82f19847-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0d3fe-0ca8-1000-90a3-0af502b50000.xml#m82f19847-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000008-01f4-0000-53d2-860300000000-m82f1984a-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0d3ff-0ca8-1000-90a3-0af502b50000.xml#m82f1984a-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000008-01f4-0000-53d2-860300000000-m82f1984c-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0d400-0ca8-1000-90a3-0af502b50000.xml#m82f1984c-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000008-01f4-0000-53d2-860300000000-m82f1984f-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0d401-0ca8-1000-90a3-0af502b50000.xml#m82f1984f-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m00000009-01f4-0000-e2ce-58fc00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

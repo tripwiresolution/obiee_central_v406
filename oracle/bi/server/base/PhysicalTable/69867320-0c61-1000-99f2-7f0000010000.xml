@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m69867320-0c61-1000-99f2-7f0000010000" name="SA_32_Airc00039CF2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" cacheExpiry="86400" isSysGen="true" maxConn="0" containerRef="/oracle/bi/server/base/Schema/5758346a-0c2d-1000-87a7-0af06a760000.xml#m5758346a-0c2d-1000-87a7-0af06a760000" aggrConnPoolRef="/oracle/bi/server/base/ConnectionPool/57583464-0c2d-1000-87a7-0af06a760000.xml#m57583464-0c2d-1000-87a7-0af06a760000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SA_32_Airc00039CF2]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m69867322-0c61-1000-99f2-7f0000010000" name="CODE00039BF9" dataType="VARCHAR" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m69867323-0c61-1000-99f2-7f0000010000" name="Aircraft_G00039BFA" dataType="VARCHAR" precision="250" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m69867324-0c61-1000-99f2-7f0000010000" name="Aircraf_00039CF2SK" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m69867326-0c61-1000-99f2-7f0000010000" name="ALL_AW_LEVEL_KEY" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m69867321-0c61-1000-99f2-7f0000010000" name="K_CODE">
+<RefColumns>
+<RefColumn refId="m69867321-0c61-1000-99f2-7f0000010000-m69867322-0c61-1000-99f2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/69867320-0c61-1000-99f2-7f0000010000.xml#m69867322-0c61-1000-99f2-7f0000010000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="m69867325-0c61-1000-99f2-7f0000010000" name="Aircraf_00039CF2SK">
+<RefColumns>
+<RefColumn refId="m69867325-0c61-1000-99f2-7f0000010000-m69867324-0c61-1000-99f2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/69867320-0c61-1000-99f2-7f0000010000.xml#m69867324-0c61-1000-99f2-7f0000010000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

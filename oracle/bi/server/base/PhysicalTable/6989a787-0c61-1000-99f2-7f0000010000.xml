@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m6989a787-0c61-1000-99f2-7f0000010000" name="FACT_AGG_ORMK_01M" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" cacheExpiry="86400" isSysGen="true" maxConn="0" containerRef="/oracle/bi/server/base/Schema/5758346a-0c2d-1000-87a7-0af06a760000.xml#m5758346a-0c2d-1000-87a7-0af06a760000" aggrConnPoolRef="/oracle/bi/server/base/ConnectionPool/57583464-0c2d-1000-87a7-0af06a760000.xml#m57583464-0c2d-1000-87a7-0af06a760000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[FACT_AGG_ORMK_01M]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m6989a788-0c61-1000-99f2-7f0000010000" name="Distance_G00039B9F" dataType="VARCHAR" precision="250" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a789-0c61-1000-99f2-7f0000010000" name="Freight_T00039BE0" dataType="DOUBLE" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a78a-0c61-1000-99f2-7f0000010000" name="Mail_Tons00039BE1" dataType="DOUBLE" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a78b-0c61-1000-99f2-7f0000010000" name="Passengers00039BE2" dataType="DOUBLE" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a78c-0c61-1000-99f2-7f0000010000" name="Payload_T00039BE3" dataType="DOUBLE" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a78d-0c61-1000-99f2-7f0000010000" name="Z_of_Seats00039BE5" dataType="DOUBLE" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a78e-0c61-1000-99f2-7f0000010000" name="Freight_T00039BEF" dataType="DOUBLE" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a78f-0c61-1000-99f2-7f0000010000" name="Passengers00039BF0" dataType="DOUBLE" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a790-0c61-1000-99f2-7f0000010000" name="Avg_PAX_pe00039BF3" dataType="DOUBLE" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a791-0c61-1000-99f2-7f0000010000" name="Dep_Month00039C07" dataType="VARCHAR" precision="9" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6989a792-0c61-1000-99f2-7f0000010000" name="Orig_Airpo00039C3D" dataType="VARCHAR" precision="250" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="m6989a793-0c61-1000-99f2-7f0000010000" name="FK_SA__0003EA1E_0003E49D" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/66f233b0-0c61-1000-99f2-7f0000010000.xml#m66f233b1-0c61-1000-99f2-7f0000010000">
+<RefColumns>
+<RefColumn refId="m6989a793-0c61-1000-99f2-7f0000010000-m6989a788-0c61-1000-99f2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/6989a787-0c61-1000-99f2-7f0000010000.xml#m6989a788-0c61-1000-99f2-7f0000010000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m6989a794-0c61-1000-99f2-7f0000010000" name="FK_SA__0003EA1E_0003E6F9" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/67c31840-0c61-1000-99f2-7f0000010000.xml#m67c31841-0c61-1000-99f2-7f0000010000">
+<RefColumns>
+<RefColumn refId="m6989a794-0c61-1000-99f2-7f0000010000-m6989a791-0c61-1000-99f2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/6989a787-0c61-1000-99f2-7f0000010000.xml#m6989a791-0c61-1000-99f2-7f0000010000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m6989a795-0c61-1000-99f2-7f0000010000" name="FK_SA__0003EA1E_0003E557" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/672aa8d0-0c61-1000-99f2-7f0000010000.xml#m672aa8d1-0c61-1000-99f2-7f0000010000">
+<RefColumns>
+<RefColumn refId="m6989a795-0c61-1000-99f2-7f0000010000-m6989a792-0c61-1000-99f2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/6989a787-0c61-1000-99f2-7f0000010000.xml#m6989a792-0c61-1000-99f2-7f0000010000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

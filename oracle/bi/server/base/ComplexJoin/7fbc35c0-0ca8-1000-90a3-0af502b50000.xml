@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ComplexJoin mdsid="m7fbc35c0-0ca8-1000-90a3-0af502b50000" name="Complex Join" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" cardinality="MANY TO MANY" table1Ref="/oracle/bi/server/base/PhysicalTable/80cb683a-0bb9-0000-714b-e31d00000000.xml#m80cb683a-0bb9-0000-714b-e31d00000000" table2Ref="/oracle/bi/server/base/PhysicalTable/80cb682d-0bb9-0000-714b-e31d00000000.xml#m80cb682d-0bb9-0000-714b-e31d00000000">
+<Expr mdsid="m00000001-01f4-0000-9dfd-7f9600000000" name="Expr">
+<ExprText><![CDATA["%1" = "%2"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D51 Closure Table Sales Rep Parent Child"."Member_Key" = "01 - Sample App Data (ORCL)".""."BISAMPLE"."F10 Billed Rev"."Empl_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-9dfd-7f9600000000-m80cb69b2-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb682d-0bb9-0000-714b-e31d00000000.xml#m80cb69b2-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m00000001-01f4-0000-9dfd-7f9600000000-m80cb6a11-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb683a-0bb9-0000-714b-e31d00000000.xml#m80cb6a11-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ComplexJoin>

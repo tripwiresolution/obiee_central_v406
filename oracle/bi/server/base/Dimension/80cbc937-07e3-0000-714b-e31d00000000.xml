@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m80cbc937-07e3-0000-714b-e31d00000000" name="H05 Suppliers" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="false" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/80cbc937-07e3-0000-714b-e31d00000000.xml#m80cbc93d-07e9-0000-714b-e31d00000000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cbbdd2-07d0-0000-714b-e31d00000000.xml#m80cbbdd2-07d0-0000-714b-e31d00000000">
+<LogicalLevel mdsid="m80cbc93d-07e9-0000-714b-e31d00000000" name="Total" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;Total&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="m80cbc93d-07e9-0000-714b-e31d00000000_m80cbc955-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cbc937-07e3-0000-714b-e31d00000000.xml#m80cbc955-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cbc955-07e9-0000-714b-e31d00000000" name="Status" isGTA="false" isFDUC="true" memberCount="5" levelConst="&apos;Status&apos;">
+<LogicalKey mdsid="m80cbc957-07d8-0000-714b-e31d00000000" name="Supplier Status" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cbc957-07d8-0000-714b-e31d00000000-m80cbbec0-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cbbde1-07f3-0000-714b-e31d00000000.xml#m80cbbec0-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cbc955-07e9-0000-714b-e31d00000000_m80cbc93f-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cbc937-07e3-0000-714b-e31d00000000.xml#m80cbc93f-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cbc955-07e9-0000-714b-e31d00000000-m80cbbec0-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cbbde1-07f3-0000-714b-e31d00000000.xml#m80cbbec0-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cbc93f-07e9-0000-714b-e31d00000000" name="Supplier Detail" isGTA="false" isFDUC="true" memberCount="15" levelConst="&apos;Supplier Detail&apos;">
+<LogicalKey mdsid="m80cbc941-07d8-0000-714b-e31d00000000" name="Supplier ID" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cbc941-07d8-0000-714b-e31d00000000-m80cbbebe-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cbbde1-07f3-0000-714b-e31d00000000.xml#m80cbbebe-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cbc941-07d8-0000-714b-e31d00000000-m80cbcb74-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cbbde1-07f3-0000-714b-e31d00000000.xml#m80cbcb74-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cbc93f-07e9-0000-714b-e31d00000000-m80cbbebe-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cbbde1-07f3-0000-714b-e31d00000000.xml#m80cbbebe-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cbc93f-07e9-0000-714b-e31d00000000-m80cbcb74-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cbbde1-07f3-0000-714b-e31d00000000.xml#m80cbcb74-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

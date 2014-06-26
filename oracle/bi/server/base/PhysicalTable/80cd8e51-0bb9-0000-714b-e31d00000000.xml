@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cd8e51-0bb9-0000-714b-e31d00000000" name="SAMP_REVENUE_CURR_F" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" x="262" y="1552" uri="VALUEOF(BI_EE_HOME)/sample/SampleAppFiles/Data/SAMP_REVENUE_CURR_F.xml" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cd8dda-0bd3-0000-714b-e31d00000000.xml#m80cd8dda-0bd3-0000-714b-e31d00000000">
+<Description><![CDATA[Reveue Currency Fact table: Stores the converted fact information in different currencies.]]></Description>
+<PhysicalColumn mdsid="m80cd8e52-0bbb-0000-714b-e31d00000000" name="Shipto_Addr_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Shipto Address Key: Joins to Address_Key column of Addresses dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8e53-0bbb-0000-714b-e31d00000000" name="Cust_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Customer Key: Joins to Cust_Key of Customers dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8e54-0bbb-0000-714b-e31d00000000" name="Revenue_Usd" iconIndex="32768" dataType="DOUBLE" specialType="none">
+<Description><![CDATA[Revenue: Stores revenue converted to US Dollars as a double.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8e55-0bbb-0000-714b-e31d00000000" name="Order_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Order Number: Uniquely identifies each record in the fact table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8e56-0bbb-0000-714b-e31d00000000" name="Bill_Day_Dt" dataType="DATE" specialType="none">
+<Description><![CDATA[Bill Day Date: Joins to Calendar_date of Time dimension table (Day grain).]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8e57-0bbb-0000-714b-e31d00000000" name="Prod_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Product Key: Joins to Prod_Key of Products dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8e58-0bbb-0000-714b-e31d00000000" name="Empl_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Employee Key: Joins to Empl_Key of Employees dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8e59-0bbb-0000-714b-e31d00000000" name="Bill_Mth_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Bill Month Key: Joins to Mth_Key of Time dimension table (Mth grain).]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8e5a-0bbb-0000-714b-e31d00000000" name="Revenue_Eur" iconIndex="32768" dataType="DOUBLE" specialType="none">
+<Description><![CDATA[Revenue: Stores revenue converted to Euros as a double.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8e5b-0bbb-0000-714b-e31d00000000" name="Bill_Qtr_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Bill Quarter Key: Joins to Qtr_Key of Time dimension table (Qtr grain).]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8e5c-0bbb-0000-714b-e31d00000000" name="Revenue_Aud" iconIndex="32768" dataType="DOUBLE" specialType="none">
+<Description><![CDATA[Revenue: Stores revenue converted to Australian Dollars as a double.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8e5d-0bbb-0000-714b-e31d00000000" name="Office_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Office Key: Joins to Office_Key of Employees dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8e5e-0bbb-0000-714b-e31d00000000" name="Currency" dataType="VARCHAR" precision="3" specialType="none">
+<Description><![CDATA[Currency: Stores currency information like AUD, USD, EUR..]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8e5f-0bbb-0000-714b-e31d00000000" name="Revenue" iconIndex="32768" dataType="DOUBLE" specialType="none">
+<Description><![CDATA[Revenue: Stores revenue information as a double.]]></Description>
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cd91f2-0bc0-0000-714b-e31d00000000" name="Cust_Key">
+<RefColumns>
+<RefColumn refId="m80cd91f2-0bc0-0000-714b-e31d00000000-m80cd8e55-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cd8e51-0bb9-0000-714b-e31d00000000.xml#m80cd8e55-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

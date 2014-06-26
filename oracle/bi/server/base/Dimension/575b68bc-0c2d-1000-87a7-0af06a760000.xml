@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m575b68bc-0c2d-1000-87a7-0af06a760000" name="00 Time" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isTimeDim="true" isValueBased="false" isRagged="false" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/575b68bc-0c2d-1000-87a7-0af06a760000.xml#m575b6aa1-0c2d-1000-87a7-0af06a760000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/575b68b0-0c2d-1000-87a7-0af06a760000.xml#m575b68b0-0c2d-1000-87a7-0af06a760000">
+<LogicalLevel mdsid="m575b6aa1-0c2d-1000-87a7-0af06a760000" name="Time Total" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;Time Total&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="m575b6aa1-0c2d-1000-87a7-0af06a760000_m575b6aa2-0c2d-1000-87a7-0af06a760000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/575b68bc-0c2d-1000-87a7-0af06a760000.xml#m575b6aa2-0c2d-1000-87a7-0af06a760000"/>
+</RefChildLevels>
+</LogicalLevel>
+<LogicalLevel mdsid="m575b6aa2-0c2d-1000-87a7-0af06a760000" name="Time Year" isGTA="false" isFDUC="true" memberCount="2" levelConst="&apos;Time Year&apos;">
+<LogicalKey mdsid="m575b6b94-0c2d-1000-87a7-0af06a760000" name="Per Year" isPrimary="true" isChronKey="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6b94-0c2d-1000-87a7-0af06a760000-m575b69b3-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69aa-0c2d-1000-87a7-0af06a760000.xml#m575b69b3-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m575b6aa2-0c2d-1000-87a7-0af06a760000_m575b6aa6-0c2d-1000-87a7-0af06a760000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/575b68bc-0c2d-1000-87a7-0af06a760000.xml#m575b6aa6-0c2d-1000-87a7-0af06a760000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m575b6aa2-0c2d-1000-87a7-0af06a760000-m575b69b3-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69aa-0c2d-1000-87a7-0af06a760000.xml#m575b69b3-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6aa2-0c2d-1000-87a7-0af06a760000-m575b69bb-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69aa-0c2d-1000-87a7-0af06a760000.xml#m575b69bb-0c2d-1000-87a7-0af06a760000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m575b6aa6-0c2d-1000-87a7-0af06a760000" name="Time Half" isGTA="false" isFDUC="true" memberCount="4" levelConst="&apos;Time Half&apos;">
+<LogicalKey mdsid="m575b6b98-0c2d-1000-87a7-0af06a760000" name="Per Name Half" isPrimary="true" isChronKey="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6b98-0c2d-1000-87a7-0af06a760000-m575b69af-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69aa-0c2d-1000-87a7-0af06a760000.xml#m575b69af-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m575b6aa6-0c2d-1000-87a7-0af06a760000_m575b6aa3-0c2d-1000-87a7-0af06a760000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/575b68bc-0c2d-1000-87a7-0af06a760000.xml#m575b6aa3-0c2d-1000-87a7-0af06a760000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m575b6aa6-0c2d-1000-87a7-0af06a760000-m575b69af-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69aa-0c2d-1000-87a7-0af06a760000.xml#m575b69af-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6aa6-0c2d-1000-87a7-0af06a760000-m575b69b7-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69aa-0c2d-1000-87a7-0af06a760000.xml#m575b69b7-0c2d-1000-87a7-0af06a760000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m575b6aa3-0c2d-1000-87a7-0af06a760000" name="Time Qtr" isGTA="false" isFDUC="true" memberCount="8" levelConst="&apos;Time Qtr&apos;">
+<LogicalKey mdsid="m575b6b95-0c2d-1000-87a7-0af06a760000" name="Per Name Qtr" isPrimary="true" isChronKey="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6b95-0c2d-1000-87a7-0af06a760000-m575b69b1-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69aa-0c2d-1000-87a7-0af06a760000.xml#m575b69b1-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m575b6aa3-0c2d-1000-87a7-0af06a760000_m575b6aa4-0c2d-1000-87a7-0af06a760000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/575b68bc-0c2d-1000-87a7-0af06a760000.xml#m575b6aa4-0c2d-1000-87a7-0af06a760000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m575b6aa3-0c2d-1000-87a7-0af06a760000-m575b69b1-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69aa-0c2d-1000-87a7-0af06a760000.xml#m575b69b1-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6aa3-0c2d-1000-87a7-0af06a760000-m575b69b9-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69aa-0c2d-1000-87a7-0af06a760000.xml#m575b69b9-0c2d-1000-87a7-0af06a760000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m575b6aa4-0c2d-1000-87a7-0af06a760000" name="Time Month" isGTA="false" isFDUC="true" memberCount="25" levelConst="&apos;Time Month&apos;">
+<LogicalKey mdsid="m575b6b96-0c2d-1000-87a7-0af06a760000" name="Per Name Month" isPrimary="true" isChronKey="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6b96-0c2d-1000-87a7-0af06a760000-m575b69b0-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69aa-0c2d-1000-87a7-0af06a760000.xml#m575b69b0-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m575b6aa4-0c2d-1000-87a7-0af06a760000_m575b6aa5-0c2d-1000-87a7-0af06a760000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/575b68bc-0c2d-1000-87a7-0af06a760000.xml#m575b6aa5-0c2d-1000-87a7-0af06a760000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m575b6aa4-0c2d-1000-87a7-0af06a760000-m575b69b0-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69aa-0c2d-1000-87a7-0af06a760000.xml#m575b69b0-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6aa4-0c2d-1000-87a7-0af06a760000-m575b69b8-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69aa-0c2d-1000-87a7-0af06a760000.xml#m575b69b8-0c2d-1000-87a7-0af06a760000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m575b6aa5-0c2d-1000-87a7-0af06a760000" name="Time Date" isGTA="false" isFDUC="true" memberCount="800" levelConst="&apos;Time Date&apos;">
+<LogicalKey mdsid="m575b6b97-0c2d-1000-87a7-0af06a760000" name="Calendar Date" isPrimary="true" isChronKey="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6b97-0c2d-1000-87a7-0af06a760000-m575b69bc-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69aa-0c2d-1000-87a7-0af06a760000.xml#m575b69bc-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m575b6aa5-0c2d-1000-87a7-0af06a760000-m575b69bc-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69aa-0c2d-1000-87a7-0af06a760000.xml#m575b69bc-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6aa5-0c2d-1000-87a7-0af06a760000-m575b69bd-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69aa-0c2d-1000-87a7-0af06a760000.xml#m575b69bd-0c2d-1000-87a7-0af06a760000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

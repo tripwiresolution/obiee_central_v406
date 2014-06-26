@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationHierarchy mdsid="m80caba65-0fbc-0000-714b-e31d00000000" name="Cust Segments Hier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Customers_Cust_Segments_Hier)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationTable/80cab814-0fa8-0000-714b-e31d00000000.xml#m80cab814-0fa8-0000-714b-e31d00000000" logicalDimensionRef="/oracle/bi/server/base/Dimension/80cab575-07e3-0000-714b-e31d00000000.xml#m80cab575-07e3-0000-714b-e31d00000000">
+<Description><![CDATA[Help : 
+Presentation hierarchy with drill path 
+Total->Segment->Detail Customer]]></Description>
+<PresentationLevel mdsid="m80caba6a-0fbe-0000-714b-e31d00000000" name="Total Customers" dispName="VALUEOF(NQ_SESSION.CN_Customers_Cust_Segments_Hier_Total_Customers)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationHierarchy/80caba65-0fbc-0000-714b-e31d00000000.xml#m80caba65-0fbc-0000-714b-e31d00000000" logicalLevelRef="/oracle/bi/server/base/Dimension/80cab575-07e3-0000-714b-e31d00000000.xml#m80cab6a3-07e9-0000-714b-e31d00000000">
+<Alias name="All Customers"/>
+<Alias name="Total"/>
+<RefDisplayColumns>
+<RefPresentationColumn refId="m80caba6a-0fbe-0000-714b-e31d00000000-m842d6e30-0c8a-1000-8bc9-0af502b30000" presentationColumnRef="/oracle/bi/server/base/PresentationTable/80cab81f-0fa8-0000-714b-e31d00000000.xml#m842d6e30-0c8a-1000-8bc9-0af502b30000"/>
+</RefDisplayColumns>
+</PresentationLevel>
+<PresentationLevel mdsid="m80caba6b-0fbe-0000-714b-e31d00000000" name="Segment" dispName="VALUEOF(NQ_SESSION.CN_Customers_Cust_Segments_Hier_Segment)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationHierarchy/80caba65-0fbc-0000-714b-e31d00000000.xml#m80caba65-0fbc-0000-714b-e31d00000000" logicalLevelRef="/oracle/bi/server/base/Dimension/80cab575-07e3-0000-714b-e31d00000000.xml#m80cab6a5-07e9-0000-714b-e31d00000000">
+<RefDisplayColumns>
+<RefPresentationColumn refId="m80caba6b-0fbe-0000-714b-e31d00000000-m80cab819-0faa-0000-714b-e31d00000000" presentationColumnRef="/oracle/bi/server/base/PresentationTable/80cab814-0fa8-0000-714b-e31d00000000.xml#m80cab819-0faa-0000-714b-e31d00000000"/>
+</RefDisplayColumns>
+</PresentationLevel>
+<PresentationLevel mdsid="m80caba6c-0fbe-0000-714b-e31d00000000" name="Customers" dispName="VALUEOF(NQ_SESSION.CN_Customers_Cust_Segments_Hier_Customers)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationHierarchy/80caba65-0fbc-0000-714b-e31d00000000.xml#m80caba65-0fbc-0000-714b-e31d00000000" logicalLevelRef="/oracle/bi/server/base/Dimension/80cab575-07e3-0000-714b-e31d00000000.xml#m80cab6a6-07e9-0000-714b-e31d00000000">
+<Alias name="Detail Customer"/>
+<RefDisplayColumns>
+<RefPresentationColumn refId="m80caba6c-0fbe-0000-714b-e31d00000000-m80cab816-0faa-0000-714b-e31d00000000" presentationColumnRef="/oracle/bi/server/base/PresentationTable/80cab814-0fa8-0000-714b-e31d00000000.xml#m80cab816-0faa-0000-714b-e31d00000000"/>
+</RefDisplayColumns>
+</PresentationLevel>
+</PresentationHierarchy>

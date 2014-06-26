@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cdec2f-07f3-0000-714b-e31d00000000" name="BIP Audit Facts" iconIndex="32768" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/802b289f-07d0-0000-714b-e31d00000000.xml#m802b289f-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cdec58-07d6-0000-714b-e31d00000000" name="Counts" isWriteable="false">
+<MeasureDefn mdsid="m80cdec59-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdec5a-0802-0000-714b-e31d00000000" name="AggRule_2050:1920401310649887" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-9d5c-d3f100000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "10 - Usage Tracking"."BIP Audit Facts"."Counts")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-9d5c-d3f100000000-m80cdec58-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdec2f-07f3-0000-714b-e31d00000000.xml#m80cdec58-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdec83-0f3c-0000-714b-e31d00000000" name="AD_3900:1920811310649887">
+<Expr mdsid="m00000002-01f4-0000-7d6f-20ec00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - BI Publisher Audit".""."BIAUDIT_IAU"."IAU_BASE"."IAU_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-7d6f-20ec00000000-m80cdec19-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdec06-0bb9-0000-714b-e31d00000000.xml#m80cdec19-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cdec5c-07d8-0000-714b-e31d00000000" name="Primary" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cdec5c-07d8-0000-714b-e31d00000000-m80cdec58-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdec2f-07f3-0000-714b-e31d00000000.xml#m80cdec58-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cdec2f-07f3-0000-714b-e31d00000000-m80cdec85-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cdec85-07f5-0000-714b-e31d00000000.xml#m80cdec85-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

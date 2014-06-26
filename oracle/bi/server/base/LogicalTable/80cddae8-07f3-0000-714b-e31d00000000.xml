@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cddae8-07f3-0000-714b-e31d00000000" name="F80 Data Mining LTV Tree Facts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cab573-07d0-0000-714b-e31d00000000.xml#m80cab573-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cddae9-07d6-0000-714b-e31d00000000" name="M10 === LTV Classification Prediction ===" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m00000001-01f4-0000-0774-2b2c00000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m80cddb00-0f3c-0000-714b-e31d00000000" name="AD_3900:1875521301653200">
+<Expr mdsid="m00000002-01f4-0000-80d5-4bcd00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cddaf5-07d6-0000-714b-e31d00000000" name="M13  Cust Probab Low LTV" isWriteable="false">
+<MeasureDefn mdsid="m80cddb17-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cddb18-0802-0000-714b-e31d00000000" name="AggRule_2050:1875801301653200" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-a762-11dd00000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("01 - Sample App"."F80 Data Mining LTV Tree Facts"."M13  Cust Probab Low LTV")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-a762-11dd00000000-m80cddaf5-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cddae8-07f3-0000-714b-e31d00000000.xml#m80cddaf5-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cddb0c-0f3c-0000-714b-e31d00000000" name="AD_3900:1875641301653200">
+<Expr mdsid="m00000004-01f4-0000-9db4-b62600000000" name="Expr">
+<ExprText><![CDATA["%1" * 100]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D87 Cust LTV Facts"."M_PRED_PROB_L" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-9db4-b62600000000-m80cdd425-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdd40e-0bb9-0000-714b-e31d00000000.xml#m80cdd425-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cddaf6-07d6-0000-714b-e31d00000000" name="M14  Cust Probab Medium LTV" isWriteable="false">
+<MeasureDefn mdsid="m80cddb19-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cddb1a-0802-0000-714b-e31d00000000" name="AggRule_2050:1875821301653200" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-6c48-ad6b00000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("01 - Sample App"."F80 Data Mining LTV Tree Facts"."M14  Cust Probab Medium LTV")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-6c48-ad6b00000000-m80cddaf6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cddae8-07f3-0000-714b-e31d00000000.xml#m80cddaf6-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cddb0d-0f3c-0000-714b-e31d00000000" name="AD_3900:1875651301653200">
+<Expr mdsid="m00000006-01f4-0000-7965-d46f00000000" name="Expr">
+<ExprText><![CDATA["%1" * 100]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D87 Cust LTV Facts"."M_PRED_PROB_M" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-7965-d46f00000000-m80cdd426-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdd40e-0bb9-0000-714b-e31d00000000.xml#m80cdd426-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cddaf7-07d6-0000-714b-e31d00000000" name="M15  Cust Probab High LTV" isWriteable="false">
+<MeasureDefn mdsid="m80cddb1b-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cddb1c-0802-0000-714b-e31d00000000" name="AggRule_2050:1875841301653200" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-04f5-123400000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("01 - Sample App"."F80 Data Mining LTV Tree Facts"."M15  Cust Probab High LTV")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-04f5-123400000000-m80cddaf7-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cddae8-07f3-0000-714b-e31d00000000.xml#m80cddaf7-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cddb0e-0f3c-0000-714b-e31d00000000" name="AD_3900:1875661301653200">
+<Expr mdsid="m00000008-01f4-0000-dc0e-c61d00000000" name="Expr">
+<ExprText><![CDATA["%1" * 100]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D87 Cust LTV Facts"."M_PRED_PROB_H" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-dc0e-c61d00000000-m80cdd424-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdd40e-0bb9-0000-714b-e31d00000000.xml#m80cdd424-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cddaf8-07d6-0000-714b-e31d00000000" name="M16  Cust Probab Very High LTV" isWriteable="false">
+<MeasureDefn mdsid="m80cddafd-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cddafe-0802-0000-714b-e31d00000000" name="AggRule_2050:1875501301653200" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-a33c-474200000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("01 - Sample App"."F80 Data Mining LTV Tree Facts"."M16  Cust Probab Very High LTV")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-a33c-474200000000-m80cddaf8-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cddae8-07f3-0000-714b-e31d00000000.xml#m80cddaf8-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cddb0f-0f3c-0000-714b-e31d00000000" name="AD_3900:1875671301653200">
+<Expr mdsid="m0000000a-01f4-0000-7f93-c05d00000000" name="Expr">
+<ExprText><![CDATA["%1" * 100]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D87 Cust LTV Facts"."M_PRED_PROB_VH" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-7f93-c05d00000000-m80cdd422-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdd40e-0bb9-0000-714b-e31d00000000.xml#m80cdd422-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cddb43-07d6-0000-714b-e31d00000000" name="M17  Cust LTV Probability" isWriteable="false">
+<MeasureDefn mdsid="m80cddb44-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cddc05-0802-0000-714b-e31d00000000" name="AggRule_2050:1878101302192004" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-49ca-1b7700000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("01 - Sample App"."F80 Data Mining LTV Tree Facts"."M17  Cust LTV Probability")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-49ca-1b7700000000-m80cddb43-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cddae8-07f3-0000-714b-e31d00000000.xml#m80cddb43-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cddb46-0f3c-0000-714b-e31d00000000" name="AD_3900:1876261301997491">
+<Expr mdsid="m0000000c-01f4-0000-c203-aff600000000" name="Expr">
+<ExprText><![CDATA[100 * case 
+when "%1" = 'HIGH' then "%2" 
+
+WHEN "%1" = 'LOW' then "%3" 
+
+WHEN "%1" = 'VERY HIGH' then "%4" 
+
+ELSE 
+"%5" 
+
+END
+]]></ExprText>
+<ExprTextDesc><![CDATA[100 * case 
+when "01 - Sample App Data (ORCL)".""."BISAMPLE"."D87 Cust LTV Facts"."M_PRED_BIN" = 'HIGH' then "01 - Sample App Data (ORCL)".""."BISAMPLE"."D87 Cust LTV Facts"."M_PRED_PROB_H" 
+
+WHEN "01 - Sample App Data (ORCL)".""."BISAMPLE"."D87 Cust LTV Facts"."M_PRED_BIN" = 'LOW' then "01 - Sample App Data (ORCL)".""."BISAMPLE"."D87 Cust LTV Facts"."M_PRED_PROB_L" 
+
+WHEN "01 - Sample App Data (ORCL)".""."BISAMPLE"."D87 Cust LTV Facts"."M_PRED_BIN" = 'VERY HIGH' then "01 - Sample App Data (ORCL)".""."BISAMPLE"."D87 Cust LTV Facts"."M_PRED_PROB_VH" 
+
+ELSE 
+"01 - Sample App Data (ORCL)".""."BISAMPLE"."D87 Cust LTV Facts"."M_PRED_PROB_M" 
+
+END
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-c203-aff600000000-m80cdd423-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdd40e-0bb9-0000-714b-e31d00000000.xml#m80cdd423-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m0000000c-01f4-0000-c203-aff600000000-m80cdd424-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdd40e-0bb9-0000-714b-e31d00000000.xml#m80cdd424-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m0000000c-01f4-0000-c203-aff600000000-m80cdd425-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdd40e-0bb9-0000-714b-e31d00000000.xml#m80cdd425-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m0000000c-01f4-0000-c203-aff600000000-m80cdd422-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdd40e-0bb9-0000-714b-e31d00000000.xml#m80cdd422-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m0000000c-01f4-0000-c203-aff600000000-m80cdd426-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdd40e-0bb9-0000-714b-e31d00000000.xml#m80cdd426-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cddbf8-07d6-0000-714b-e31d00000000" name="M40 LTV Attribute Name" isWriteable="false">
+<AttrDefn mdsid="m80cddbf9-0f3c-0000-714b-e31d00000000" name="AD_3900:1877981302171196">
+<Expr mdsid="m0000000d-01f4-0000-0ad1-081a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D88 DBMS Explain LTV Tabe"."ATTRIBUTE_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-0ad1-081a00000000-m80cddbed-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cddbec-0bb9-0000-714b-e31d00000000.xml#m80cddbed-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cddbfd-07d6-0000-714b-e31d00000000" name="M41 Explanatory Value" isWriteable="false">
+<MeasureDefn mdsid="m80cddc03-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cddc04-0802-0000-714b-e31d00000000" name="AggRule_2050:1878091302171753" isDefault="true">
+<Expr mdsid="m0000000e-01f4-0000-b136-f68f00000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("01 - Sample App"."F80 Data Mining LTV Tree Facts"."M41 Explanatory Value")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-b136-f68f00000000-m80cddbfd-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cddae8-07f3-0000-714b-e31d00000000.xml#m80cddbfd-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cddbfe-0f3c-0000-714b-e31d00000000" name="AD_3900:1878031302171196">
+<Expr mdsid="m0000000f-01f4-0000-aed2-ba1a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D88 DBMS Explain LTV Tabe"."EXPLANATORY_VALUE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-aed2-ba1a00000000-m80cddbee-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cddbec-0bb9-0000-714b-e31d00000000.xml#m80cddbee-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cddae8-07f3-0000-714b-e31d00000000-m80cddb13-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cddb13-07f5-0000-714b-e31d00000000.xml#m80cddb13-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cddae8-07f3-0000-714b-e31d00000000-m80cddbfa-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cddbfa-07f5-0000-714b-e31d00000000.xml#m80cddbfa-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

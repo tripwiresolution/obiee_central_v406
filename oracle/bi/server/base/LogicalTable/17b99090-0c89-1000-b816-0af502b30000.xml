@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m17b99090-0c89-1000-b816-0af502b30000" name="Complaint Tokens Facts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/6974aaf0-0c84-1000-8c5b-0ae4f18a0000.xml#m6974aaf0-0c84-1000-8c5b-0ae4f18a0000">
+<LogicalColumn mdsid="m17b99092-0c89-1000-b816-0af502b30000" name="# of Tokens" isWriteable="false">
+<MeasureDefn mdsid="m17bc9dd0-0c89-1000-b816-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m17bc9dd1-0c89-1000-b816-0af502b30000" name="AggRule_2050:2668321378295268" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-5820-63eb00000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "X6 - Warranty Claims"."Complaint Tokens Facts"."# of Tokens")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-5820-63eb00000000-m17b99092-0c89-1000-b816-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/17b99090-0c89-1000-b816-0af502b30000.xml#m17b99092-0c89-1000-b816-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m17b9b7a2-0c89-1000-b816-0af502b30000" name="AD_3900:2668281378295268">
+<Expr mdsid="m00000002-01f4-0000-527e-354b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."DIM_CLAIM_COMMENTS_TOK"."TOKEN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-527e-354b00000000-m69710210-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6971020e-0c84-1000-8c5b-0ae4f18a0000.xml#m69710210-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m17b99093-0c89-1000-b816-0af502b30000" name="Sum of Token Freq" isWriteable="false">
+<MeasureDefn mdsid="m17b99095-0c89-1000-b816-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m17b99096-0c89-1000-b816-0af502b30000" name="AggRule_2050:2668251378295268" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-73b4-cd2200000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X6 - Warranty Claims"."Complaint Tokens Facts"."Sum of Token Freq")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-73b4-cd2200000000-m17b99093-0c89-1000-b816-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/17b99090-0c89-1000-b816-0af502b30000.xml#m17b99093-0c89-1000-b816-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m17b9b7a3-0c89-1000-b816-0af502b30000" name="AD_3900:2668291378295268">
+<Expr mdsid="m00000004-01f4-0000-0d30-0c2600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."DIM_CLAIM_COMMENTS_TOK"."FREQUENCY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-0d30-0c2600000000-m69710211-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6971020e-0c84-1000-8c5b-0ae4f18a0000.xml#m69710211-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m17de56a4-0c89-1000-b816-0af502b30000" name="# of Claims" iconIndex="91" isWriteable="false">
+<MeasureDefn mdsid="m17de56a5-0c89-1000-b816-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m17df6810-0c89-1000-b816-0af502b30000" name="AggRule_2050:2668631378295268" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-99f0-35dc00000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "X6 - Warranty Claims"."Complaint Tokens Facts"."# of Claims")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-99f0-35dc00000000-m17de56a4-0c89-1000-b816-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/17b99090-0c89-1000-b816-0af502b30000.xml#m17de56a4-0c89-1000-b816-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m17de56a7-0c89-1000-b816-0af502b30000" name="AD_3900:2668621378295268">
+<Expr mdsid="m00000006-01f4-0000-11e5-34a400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."RECORDID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-11e5-34a400000000-m697101a1-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101a1-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m18e08464-0c89-1000-b816-0af502b30000" name="Avg of Token Freq" isWriteable="false">
+<MeasureDefn mdsid="m18e08465-0c89-1000-b816-0af502b30000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m18e28030-0c89-1000-b816-0af502b30000" name="AggRule_2050:2669151378296762" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-5486-cc4000000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("X6 - Warranty Claims"."Complaint Tokens Facts"."Avg of Token Freq")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-5486-cc4000000000-m18e08464-0c89-1000-b816-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/17b99090-0c89-1000-b816-0af502b30000.xml#m18e08464-0c89-1000-b816-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m18e08467-0c89-1000-b816-0af502b30000" name="AD_3900:2669131378296762">
+<Expr mdsid="m00000008-01f4-0000-6aef-d08100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."DIM_CLAIM_COMMENTS_TOK"."FREQUENCY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-6aef-d08100000000-m69710211-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6971020e-0c84-1000-8c5b-0ae4f18a0000.xml#m69710211-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m17b99090-0c89-1000-b816-0af502b30000-m17b9b7a4-0c89-1000-b816-0af502b30000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/17b9b7a4-0c89-1000-b816-0af502b30000.xml#m17b9b7a4-0c89-1000-b816-0af502b30000"/>
+<RefLogicalTableSource refId="m17b99090-0c89-1000-b816-0af502b30000-m17ce2a01-0c89-1000-b816-0af502b30000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/17ce2a01-0c89-1000-b816-0af502b30000.xml#m17ce2a01-0c89-1000-b816-0af502b30000"/>
+</RefTableSources>
+</LogicalTable>

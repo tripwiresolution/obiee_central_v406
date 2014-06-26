@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0fb47-0ca8-1000-90a3-0af502b50000" name="Fact - Supplier Survey" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd7-0ca8-1000-90a3-0af502b50000.xml#m82f0acd7-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0fb48-0ca8-1000-90a3-0af502b50000" name="Overall Supplier Score" isWriteable="false">
+<MeasureDefn mdsid="m82f14983-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1975a-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736641391789375" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-7148-0eca00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y06 - Demo Supplier Survey"."Fact - Supplier Survey"."Overall Supplier Score")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-7148-0eca00000000-m82f0fb48-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fb47-0ca8-1000-90a3-0af502b50000.xml#m82f0fb48-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2829d-0ca8-1000-90a3-0af502b50000" name="AD_3900:2758461391789375">
+<Expr mdsid="m00000002-01f4-0000-002c-bf0600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_SS"."ADS_BI_SS_SURVEY"."N_EXT_ATTR2"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-002c-bf0600000000-m82ddea58-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddea1c-0ca8-1000-90a3-0af502b50000.xml#m82ddea58-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fb49-0ca8-1000-90a3-0af502b50000" name="Responsiveness Score" isWriteable="false">
+<MeasureDefn mdsid="m82f14984-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1975b-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736651391789375" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-dace-fe8900000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y06 - Demo Supplier Survey"."Fact - Supplier Survey"."Responsiveness Score")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-dace-fe8900000000-m82f0fb49-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fb47-0ca8-1000-90a3-0af502b50000.xml#m82f0fb49-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2829e-0ca8-1000-90a3-0af502b50000" name="AD_3900:2758471391789375">
+<Expr mdsid="m00000004-01f4-0000-b278-376400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_SS"."ADS_BI_SS_SURVEY"."N_EXT_ATTR3"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-b278-376400000000-m82ddea59-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddea1c-0ca8-1000-90a3-0af502b50000.xml#m82ddea59-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fb4a-0ca8-1000-90a3-0af502b50000" name="Punctuality Score" isWriteable="false">
+<MeasureDefn mdsid="m82f14985-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1975c-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736661391789375" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-47b0-d5dc00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y06 - Demo Supplier Survey"."Fact - Supplier Survey"."Punctuality Score")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-47b0-d5dc00000000-m82f0fb4a-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fb47-0ca8-1000-90a3-0af502b50000.xml#m82f0fb4a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2829f-0ca8-1000-90a3-0af502b50000" name="AD_3900:2758481391789375">
+<Expr mdsid="m00000006-01f4-0000-7ec5-5c5700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_SS"."ADS_BI_SS_SURVEY"."N_EXT_ATTR4"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-7ec5-5c5700000000-m82ddea5a-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddea1c-0ca8-1000-90a3-0af502b50000.xml#m82ddea5a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fb4b-0ca8-1000-90a3-0af502b50000" name="Standard of Work Score" isWriteable="false">
+<MeasureDefn mdsid="m82f14986-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1975d-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736671391789375" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-4f93-431900000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y06 - Demo Supplier Survey"."Fact - Supplier Survey"."Standard of Work Score")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-4f93-431900000000-m82f0fb4b-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fb47-0ca8-1000-90a3-0af502b50000.xml#m82f0fb4b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f282a0-0ca8-1000-90a3-0af502b50000" name="AD_3900:2758491391789375">
+<Expr mdsid="m00000008-01f4-0000-cdcd-32ce00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_SS"."ADS_BI_SS_SURVEY"."N_EXT_ATTR5"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-cdcd-32ce00000000-m82ddea5b-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddea1c-0ca8-1000-90a3-0af502b50000.xml#m82ddea5b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fb4c-0ca8-1000-90a3-0af502b50000" name="Financial Viability Score" isWriteable="false">
+<MeasureDefn mdsid="m82f14987-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1975e-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736681391789375" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-8665-b09400000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y06 - Demo Supplier Survey"."Fact - Supplier Survey"."Financial Viability Score")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-8665-b09400000000-m82f0fb4c-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fb47-0ca8-1000-90a3-0af502b50000.xml#m82f0fb4c-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f282a1-0ca8-1000-90a3-0af502b50000" name="AD_3900:2758501391789375">
+<Expr mdsid="m0000000a-01f4-0000-2bf3-988c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_SS"."ADS_BI_SS_SURVEY"."N_EXT_ATTR6"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-2bf3-988c00000000-m82ddea5c-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddea1c-0ca8-1000-90a3-0af502b50000.xml#m82ddea5c-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fb4d-0ca8-1000-90a3-0af502b50000" name="Green Credentials Score" isWriteable="false">
+<MeasureDefn mdsid="m82f14988-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1975f-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736691391789375" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-ffc8-4b1b00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y06 - Demo Supplier Survey"."Fact - Supplier Survey"."Green Credentials Score")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-ffc8-4b1b00000000-m82f0fb4d-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fb47-0ca8-1000-90a3-0af502b50000.xml#m82f0fb4d-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f282a2-0ca8-1000-90a3-0af502b50000" name="AD_3900:2758511391789375">
+<Expr mdsid="m0000000c-01f4-0000-f7a9-339e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_SS"."ADS_BI_SS_SURVEY"."N_EXT_ATTR7"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-f7a9-339e00000000-m82ddea5d-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddea1c-0ca8-1000-90a3-0af502b50000.xml#m82ddea5d-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0fb47-0ca8-1000-90a3-0af502b50000-m82f31de4-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f31de4-0ca8-1000-90a3-0af502b50000.xml#m82f31de4-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

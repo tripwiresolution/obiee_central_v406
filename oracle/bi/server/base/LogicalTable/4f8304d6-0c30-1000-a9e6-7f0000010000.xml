@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m4f8304d6-0c30-1000-a9e6-7f0000010000" name="Dim - Correlation Attribute" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/4f82dda0-0c30-1000-a9e6-7f0000010000.xml#m4f82dda0-0c30-1000-a9e6-7f0000010000">
+<LogicalColumn mdsid="m4f8304d7-0c30-1000-a9e6-7f0000010000" name="ID" isWriteable="false">
+<AttrDefn mdsid="m4f832bfb-0c30-1000-a9e6-7f0000010000" name="AD_3900:2399601340163242">
+<Expr mdsid="m00000001-01f4-0000-f926-a82d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."RTD"."Dim_RTDATTRIBUTE_Correlation"."ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-f926-a82d00000000-m4f80bae6-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bae5-0c30-1000-a9e6-7f0000010000.xml#m4f80bae6-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m4f8304d8-0c30-1000-a9e6-7f0000010000" name="Attribute Name" isWriteable="false">
+<AttrDefn mdsid="m4f832bfc-0c30-1000-a9e6-7f0000010000" name="AD_3900:2399611340163242">
+<Expr mdsid="m00000002-01f4-0000-fb8b-db8f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."RTD"."Dim_RTDATTRIBUTE_Correlation"."NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-fb8b-db8f00000000-m4f80bae7-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bae5-0c30-1000-a9e6-7f0000010000.xml#m4f80bae7-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m4f8304d9-0c30-1000-a9e6-7f0000010000" name="Attribute Path" isWriteable="false">
+<AttrDefn mdsid="m4f832bfd-0c30-1000-a9e6-7f0000010000" name="AD_3900:2399621340163242">
+<Expr mdsid="m00000003-01f4-0000-a5d0-a15500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."RTD"."Dim_RTDATTRIBUTE_Correlation"."PATH"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-a5d0-a15500000000-m4f80bae8-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bae5-0c30-1000-a9e6-7f0000010000.xml#m4f80bae8-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m4f832bd4-0c30-1000-a9e6-7f0000010000" name="ROW_ID" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m4f832bd4-0c30-1000-a9e6-7f0000010000-m4f8304d7-0c30-1000-a9e6-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/4f8304d6-0c30-1000-a9e6-7f0000010000.xml#m4f8304d7-0c30-1000-a9e6-7f0000010000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m4f8304d6-0c30-1000-a9e6-7f0000010000-m4f832c11-0c30-1000-a9e6-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/4f832c11-0c30-1000-a9e6-7f0000010000.xml#m4f832c11-0c30-1000-a9e6-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

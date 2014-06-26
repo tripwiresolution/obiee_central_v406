@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationCatalog mdsid="m80cdbdbb-0fa4-0000-714b-e31d00000000" name="K - Sample Flat Files" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" hasDispName="false" hasDispDescription="false" isAutoAggr="true" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cdb963-07d0-0000-714b-e31d00000000.xml#m80cdb963-07d0-0000-714b-e31d00000000" defaultFactColumnRef="/oracle/bi/server/base/LogicalTable/80cdb9dd-07f3-0000-714b-e31d00000000.xml#m80cdb9df-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Flat XML Files Datasource Examples]]></Description>
+<RefTables>
+<RefPresentationTable refId="m80cdbdbb-0fa4-0000-714b-e31d00000000-m80cdbdbc-0fa8-0000-714b-e31d00000000" presentationTableRef="/oracle/bi/server/base/PresentationTable/80cdbdbc-0fa8-0000-714b-e31d00000000.xml#m80cdbdbc-0fa8-0000-714b-e31d00000000"/>
+<RefPresentationTable refId="m80cdbdbb-0fa4-0000-714b-e31d00000000-m80cdbde5-0fa8-0000-714b-e31d00000000" presentationTableRef="/oracle/bi/server/base/PresentationTable/80cdbde5-0fa8-0000-714b-e31d00000000.xml#m80cdbde5-0fa8-0000-714b-e31d00000000"/>
+<RefPresentationTable refId="m80cdbdbb-0fa4-0000-714b-e31d00000000-m80cdbe8d-0fa8-0000-714b-e31d00000000" presentationTableRef="/oracle/bi/server/base/PresentationTable/80cdbe8d-0fa8-0000-714b-e31d00000000.xml#m80cdbe8d-0fa8-0000-714b-e31d00000000"/>
+</RefTables>
+<VisibilityFilter mdsid="m00000001-01f4-0000-1bec-878100000000" name="VisibilityFilter">
+<ExprText><![CDATA[VALUEOF(NQ_SESSION."%1") =1]]></ExprText>
+<ExprTextDesc><![CDATA[VALUEOF(NQ_SESSION."VISIBILITY_PRES_LAYER") =1]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-1bec-878100000000-m2fe516b0-0c36-1000-b86b-7f0000010000" objectRef="/oracle/bi/server/base/Variable/2fe516b0-0c36-1000-b86b-7f0000010000.xml#m2fe516b0-0c36-1000-b86b-7f0000010000"/>
+</ObjectRefList>
+</VisibilityFilter>
+</PresentationCatalog>

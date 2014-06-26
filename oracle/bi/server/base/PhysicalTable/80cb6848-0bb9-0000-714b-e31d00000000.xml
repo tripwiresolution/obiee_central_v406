@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cb6848-0bb9-0000-714b-e31d00000000" name="F91 Actions Entries" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" x="209" y="133" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cb6804-0bb9-0000-714b-e31d00000000.xml#m80cb6804-0bb9-0000-714b-e31d00000000">
+<Description><![CDATA[Actions Alias: This alias is primarily used to showcase the Action framework within OBIEE. Some of the SampleApp examples will writeback to this alias using the Action framework.]]></Description>
+<PhysicalColumn mdsid="m80cb6ac2-0bbb-0000-714b-e31d00000000" name="Flag" dataType="VARCHAR" precision="20" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6804-0bb9-0000-714b-e31d00000000.xml#m80cb684d-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6ac3-0bbb-0000-714b-e31d00000000" name="Status" dataType="VARCHAR" precision="20" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6804-0bb9-0000-714b-e31d00000000.xml#m80cb684e-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6ac4-0bbb-0000-714b-e31d00000000" name="Message" dataType="VARCHAR" precision="512" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6804-0bb9-0000-714b-e31d00000000.xml#m80cb684f-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6ac5-0bbb-0000-714b-e31d00000000" name="Order_Id" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6804-0bb9-0000-714b-e31d00000000.xml#m80cb6850-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6ac6-0bbb-0000-714b-e31d00000000" name="Timestamp" dataType="VARCHAR" precision="20" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6804-0bb9-0000-714b-e31d00000000.xml#m80cb6851-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6ac7-0bbb-0000-714b-e31d00000000" name="Userid" dataType="VARCHAR" precision="20" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6804-0bb9-0000-714b-e31d00000000.xml#m80cb6852-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6ac8-0bbb-0000-714b-e31d00000000" name="Message_Type" dataType="VARCHAR" precision="50" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6804-0bb9-0000-714b-e31d00000000.xml#m80cb6853-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6ac9-0bbb-0000-714b-e31d00000000" name="ID" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6804-0bb9-0000-714b-e31d00000000.xml#m80cb6854-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cb6b11-0bc0-0000-714b-e31d00000000" name="D90 Actions Entries_Key">
+<RefColumns>
+<RefColumn refId="m80cb6b11-0bc0-0000-714b-e31d00000000-m80cb6ac5-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6848-0bb9-0000-714b-e31d00000000.xml#m80cb6ac5-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m80cb6b72-0bbe-0000-714b-e31d00000000" name="D90 Actions Entries_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb683a-0bb9-0000-714b-e31d00000000.xml#m80cb6b03-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cb6b72-0bbe-0000-714b-e31d00000000-m80cb6ac5-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6848-0bb9-0000-714b-e31d00000000.xml#m80cb6ac5-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

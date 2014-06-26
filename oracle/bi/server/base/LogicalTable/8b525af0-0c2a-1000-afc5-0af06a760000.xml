@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m8b525af0-0c2a-1000-afc5-0af06a760000" name="UT Navigation Facts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/802b289f-07d0-0000-714b-e31d00000000.xml#m802b289f-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m8b5cbb45-0c2a-1000-afc5-0af06a760000" name="# of Logical Queries" isWriteable="false">
+<MeasureDefn mdsid="mba52ac60-0c2a-1000-ac17-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mba52ac61-0c2a-1000-ac17-0af06a760000" name="AggregationRule" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-0ef0-3db200000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "10 - Usage Tracking"."UT Navigation Facts"."# of Logical Queries")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-0ef0-3db200000000-m8b5cbb45-0c2a-1000-afc5-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/8b525af0-0c2a-1000-afc5-0af06a760000.xml#m8b5cbb45-0c2a-1000-afc5-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m8b5cbb49-0c2a-1000-afc5-0af06a760000" name="AD_3900:2302961337686627">
+<Expr mdsid="m00000002-01f4-0000-917c-672200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_SUMMARY_ADVISOR"."LOGICAL_QUERY_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-917c-672200000000-m5f8aec30-0c10-1000-8529-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/5f848390-0c10-1000-8529-7f0000010000.xml#m5f8aec30-0c10-1000-8529-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m8b5cbb46-0c2a-1000-afc5-0af06a760000" name="# of Logical Fact Tables" isWriteable="false">
+<MeasureDefn mdsid="mba52ac62-0c2a-1000-ac17-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mba52ac63-0c2a-1000-ac17-0af06a760000" name="AggregationRule" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-a44d-057800000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "10 - Usage Tracking"."UT Navigation Facts"."# of Logical Fact Tables")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-a44d-057800000000-m8b5cbb46-0c2a-1000-afc5-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/8b525af0-0c2a-1000-afc5-0af06a760000.xml#m8b5cbb46-0c2a-1000-afc5-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m8b5cbb4a-0c2a-1000-afc5-0af06a760000" name="AD_3900:2302971337686627">
+<Expr mdsid="m00000004-01f4-0000-599b-f40400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_SUMMARY_ADVISOR"."LOGICALFACTTABLEID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-599b-f40400000000-m5f909180-0c10-1000-8529-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/5f848390-0c10-1000-8529-7f0000010000.xml#m5f909180-0c10-1000-8529-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m8b5cbb48-0c2a-1000-afc5-0af06a760000" name="Avg Process Time in Sec" isWriteable="false">
+<MeasureDefn mdsid="mba536fb0-0c2a-1000-ac17-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mba53bdd0-0c2a-1000-ac17-0af06a760000" name="AggRule_2050:2306631337765422" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-012e-97e100000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("10 - Usage Tracking"."UT Navigation Facts"."Avg Process Time in Sec")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-012e-97e100000000-m8b5cbb48-0c2a-1000-afc5-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/8b525af0-0c2a-1000-afc5-0af06a760000.xml#m8b5cbb48-0c2a-1000-afc5-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m8b5cbb4c-0c2a-1000-afc5-0af06a760000" name="AD_3900:2302991337686627">
+<Expr mdsid="m00000006-01f4-0000-5548-db2400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_SUMMARY_ADVISOR"."PROCESSINGTIMEINMILLISEC"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-5548-db2400000000-m5f99b940-0c10-1000-8529-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/5f848390-0c10-1000-8529-7f0000010000.xml#m5f99b940-0c10-1000-8529-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m8b525af0-0c2a-1000-afc5-0af06a760000-m8b5cbb51-0c2a-1000-afc5-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/8b5cbb51-0c2a-1000-afc5-0af06a760000.xml#m8b5cbb51-0c2a-1000-afc5-0af06a760000"/>
+</RefTableSources>
+</LogicalTable>

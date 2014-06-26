@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cb682d-0bb9-0000-714b-e31d00000000" name="D51 Closure Table Sales Rep Parent Child" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" x="1252" y="184" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cb680c-0bb9-0000-714b-e31d00000000.xml#m80cb680c-0bb9-0000-714b-e31d00000000" memberKeyRef="/oracle/bi/server/base/PhysicalTable/80cb682d-0bb9-0000-714b-e31d00000000.xml#m80cb69b2-0bbb-0000-714b-e31d00000000" parentKeyRef="/oracle/bi/server/base/PhysicalTable/80cb682d-0bb9-0000-714b-e31d00000000.xml#m80cb69b3-0bbb-0000-714b-e31d00000000" distanceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb682d-0bb9-0000-714b-e31d00000000.xml#m80cb69b4-0bbb-0000-714b-e31d00000000" leafColumnRef="/oracle/bi/server/base/PhysicalTable/80cb682d-0bb9-0000-714b-e31d00000000.xml#m80cb69b5-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[ZZZ - Not yet filled]]></Description>
+<PhysicalColumn mdsid="m80cb69b2-0bbb-0000-714b-e31d00000000" name="Member_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb680c-0bb9-0000-714b-e31d00000000.xml#m80cb6888-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Member Key: Stores the member key information as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb69b3-0bbb-0000-714b-e31d00000000" name="Ancestor_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb680c-0bb9-0000-714b-e31d00000000.xml#m80cb6889-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Ancestor Key: Stores the parent information as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb69b4-0bbb-0000-714b-e31d00000000" name="Distance" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb680c-0bb9-0000-714b-e31d00000000.xml#m80cb688a-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Distance: Stores the distance between the employee and it's ancestor. The ancestor could be the immediate parent or any other parent up in the hierarchy.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb69b5-0bbb-0000-714b-e31d00000000" name="Is_Leaf" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb680c-0bb9-0000-714b-e31d00000000.xml#m80cb688b-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Is Leaf: Flag to indicate if a member is leaf or not. Possible values are 1 or 0.]]></Description>
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cb6af5-0bc0-0000-714b-e31d00000000" name="A061a Employee Closure_Key">
+<RefColumns>
+<RefColumn refId="m80cb6af5-0bc0-0000-714b-e31d00000000-m80cb69b2-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb682d-0bb9-0000-714b-e31d00000000.xml#m80cb69b2-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m80cb6b1c-0bbe-0000-714b-e31d00000000" name="emp-closure" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb682c-0bb9-0000-714b-e31d00000000.xml#m80cb6af3-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cb6b1c-0bbe-0000-714b-e31d00000000-m80cb69b3-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb682d-0bb9-0000-714b-e31d00000000.xml#m80cb69b3-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m8178a3b0-0c64-1000-8567-7f0000010000" name="D51 Closure Table Sales Rep Parent Child_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/8111f2a0-0c64-1000-8567-7f0000010000.xml#m8125c8c0-0c64-1000-8567-7f0000010000">
+<RefColumns>
+<RefColumn refId="m8178a3b0-0c64-1000-8567-7f0000010000-m80cb69b3-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb682d-0bb9-0000-714b-e31d00000000.xml#m80cb69b3-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

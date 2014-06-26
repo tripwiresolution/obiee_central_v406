@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationHierarchy mdsid="m945556eb-0c1f-1000-b9aa-0af502b10000" name="Ship To Region Hier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Orders_Ship_To_Region_Hier)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationTable/945556d2-0c1f-1000-b9aa-0af502b10000.xml#m945556d2-0c1f-1000-b9aa-0af502b10000" logicalDimensionRef="/oracle/bi/server/base/Dimension/94530bf4-0c1f-1000-b9aa-0af502b10000.xml#m94530bf4-0c1f-1000-b9aa-0af502b10000">
+<PresentationLevel mdsid="m94555709-0c1f-1000-b9aa-0af502b10000" name="All Regions" dispName="VALUEOF(NQ_SESSION.CN_Orders_Ship_To_Region_Hier_All_Regions)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationHierarchy/945556eb-0c1f-1000-b9aa-0af502b10000.xml#m945556eb-0c1f-1000-b9aa-0af502b10000" logicalLevelRef="/oracle/bi/server/base/Dimension/94530bf4-0c1f-1000-b9aa-0af502b10000.xml#m94530d88-0c1f-1000-b9aa-0af502b10000">
+<Alias name="Detail Orders"/>
+</PresentationLevel>
+<PresentationLevel mdsid="m9455570a-0c1f-1000-b9aa-0af502b10000" name="Ship to Region" dispName="VALUEOF(NQ_SESSION.CN_Orders_Ship_To_Region_Hier_Ship_to_Region)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationHierarchy/945556eb-0c1f-1000-b9aa-0af502b10000.xml#m945556eb-0c1f-1000-b9aa-0af502b10000" logicalLevelRef="/oracle/bi/server/base/Dimension/94530bf4-0c1f-1000-b9aa-0af502b10000.xml#m94530d8c-0c1f-1000-b9aa-0af502b10000">
+<Alias name="Bill to Region"/>
+<RefDisplayColumns>
+<RefPresentationColumn refId="m9455570a-0c1f-1000-b9aa-0af502b10000-m9455561d-0c1f-1000-b9aa-0af502b10000" presentationColumnRef="/oracle/bi/server/base/PresentationTable/945556d0-0c1f-1000-b9aa-0af502b10000.xml#m9455561d-0c1f-1000-b9aa-0af502b10000"/>
+</RefDisplayColumns>
+</PresentationLevel>
+<PresentationLevel mdsid="m9455570e-0c1f-1000-b9aa-0af502b10000" name="Ship to Area" dispName="VALUEOF(NQ_SESSION.CN_Orders_Ship_To_Region_Hier_Ship_to_Area)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationHierarchy/945556eb-0c1f-1000-b9aa-0af502b10000.xml#m945556eb-0c1f-1000-b9aa-0af502b10000" logicalLevelRef="/oracle/bi/server/base/Dimension/94530bf4-0c1f-1000-b9aa-0af502b10000.xml#m94530d94-0c1f-1000-b9aa-0af502b10000">
+<Alias name="Area"/>
+<RefDisplayColumns>
+<RefPresentationColumn refId="m9455570e-0c1f-1000-b9aa-0af502b10000-m94555620-0c1f-1000-b9aa-0af502b10000" presentationColumnRef="/oracle/bi/server/base/PresentationTable/945556d0-0c1f-1000-b9aa-0af502b10000.xml#m94555620-0c1f-1000-b9aa-0af502b10000"/>
+</RefDisplayColumns>
+</PresentationLevel>
+<PresentationLevel mdsid="m9455570b-0c1f-1000-b9aa-0af502b10000" name="Ship to Country" dispName="VALUEOF(NQ_SESSION.CN_Orders_Ship_To_Region_Hier_Ship_to_Country)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationHierarchy/945556eb-0c1f-1000-b9aa-0af502b10000.xml#m945556eb-0c1f-1000-b9aa-0af502b10000" logicalLevelRef="/oracle/bi/server/base/Dimension/94530bf4-0c1f-1000-b9aa-0af502b10000.xml#m94530d8d-0c1f-1000-b9aa-0af502b10000">
+<Alias name="Bill To Country"/>
+<RefDisplayColumns>
+<RefPresentationColumn refId="m9455570b-0c1f-1000-b9aa-0af502b10000-m94555617-0c1f-1000-b9aa-0af502b10000" presentationColumnRef="/oracle/bi/server/base/PresentationTable/945556d0-0c1f-1000-b9aa-0af502b10000.xml#m94555617-0c1f-1000-b9aa-0af502b10000"/>
+</RefDisplayColumns>
+</PresentationLevel>
+<PresentationLevel mdsid="m9455570c-0c1f-1000-b9aa-0af502b10000" name="Ship to State" dispName="VALUEOF(NQ_SESSION.CN_Orders_Ship_To_Region_Hier_Ship_to_State)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationHierarchy/945556eb-0c1f-1000-b9aa-0af502b10000.xml#m945556eb-0c1f-1000-b9aa-0af502b10000" logicalLevelRef="/oracle/bi/server/base/Dimension/94530bf4-0c1f-1000-b9aa-0af502b10000.xml#m94530d8e-0c1f-1000-b9aa-0af502b10000">
+<Alias name="Bill To State"/>
+<RefDisplayColumns>
+<RefPresentationColumn refId="m9455570c-0c1f-1000-b9aa-0af502b10000-m94555619-0c1f-1000-b9aa-0af502b10000" presentationColumnRef="/oracle/bi/server/base/PresentationTable/945556d0-0c1f-1000-b9aa-0af502b10000.xml#m94555619-0c1f-1000-b9aa-0af502b10000"/>
+</RefDisplayColumns>
+</PresentationLevel>
+<PresentationLevel mdsid="m9455570d-0c1f-1000-b9aa-0af502b10000" name="Ship to City" dispName="VALUEOF(NQ_SESSION.CN_Orders_Ship_To_Region_Hier_Ship_to_City)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationHierarchy/945556eb-0c1f-1000-b9aa-0af502b10000.xml#m945556eb-0c1f-1000-b9aa-0af502b10000" logicalLevelRef="/oracle/bi/server/base/Dimension/94530bf4-0c1f-1000-b9aa-0af502b10000.xml#m94530d8f-0c1f-1000-b9aa-0af502b10000">
+<Alias name="Bill To City"/>
+<RefDisplayColumns>
+<RefPresentationColumn refId="m9455570d-0c1f-1000-b9aa-0af502b10000-m94555618-0c1f-1000-b9aa-0af502b10000" presentationColumnRef="/oracle/bi/server/base/PresentationTable/945556d0-0c1f-1000-b9aa-0af502b10000.xml#m94555618-0c1f-1000-b9aa-0af502b10000"/>
+</RefDisplayColumns>
+</PresentationLevel>
+<PresentationLevel mdsid="m9455570f-0c1f-1000-b9aa-0af502b10000" name="Ship To Zip" hasDispName="false" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationHierarchy/945556eb-0c1f-1000-b9aa-0af502b10000.xml#m945556eb-0c1f-1000-b9aa-0af502b10000" logicalLevelRef="/oracle/bi/server/base/Dimension/94530bf4-0c1f-1000-b9aa-0af502b10000.xml#m94530d96-0c1f-1000-b9aa-0af502b10000">
+<RefDisplayColumns>
+<RefPresentationColumn refId="m9455570f-0c1f-1000-b9aa-0af502b10000-m9455561a-0c1f-1000-b9aa-0af502b10000" presentationColumnRef="/oracle/bi/server/base/PresentationTable/945556d0-0c1f-1000-b9aa-0af502b10000.xml#m9455561a-0c1f-1000-b9aa-0af502b10000"/>
+</RefDisplayColumns>
+</PresentationLevel>
+<PresentationLevel mdsid="m94555710-0c1f-1000-b9aa-0af502b10000" name="Ship To Estab" hasDispName="false" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationHierarchy/945556eb-0c1f-1000-b9aa-0af502b10000.xml#m945556eb-0c1f-1000-b9aa-0af502b10000" logicalLevelRef="/oracle/bi/server/base/Dimension/94530bf4-0c1f-1000-b9aa-0af502b10000.xml#m94530d97-0c1f-1000-b9aa-0af502b10000">
+<RefDisplayColumns>
+<RefPresentationColumn refId="m94555710-0c1f-1000-b9aa-0af502b10000-m9455561f-0c1f-1000-b9aa-0af502b10000" presentationColumnRef="/oracle/bi/server/base/PresentationTable/945556d0-0c1f-1000-b9aa-0af502b10000.xml#m9455561f-0c1f-1000-b9aa-0af502b10000"/>
+</RefDisplayColumns>
+</PresentationLevel>
+</PresentationHierarchy>

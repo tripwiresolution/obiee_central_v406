@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m80cbc864-07e3-0000-714b-e31d00000000" name="H09 Order Shipment Options" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="false" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/80cbc864-07e3-0000-714b-e31d00000000.xml#m80cbc87d-07e9-0000-714b-e31d00000000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cbbdd2-07d0-0000-714b-e31d00000000.xml#m80cbbdd2-07d0-0000-714b-e31d00000000">
+<LogicalLevel mdsid="m80cbc87d-07e9-0000-714b-e31d00000000" name="Total" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;Total&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="m80cbc87d-07e9-0000-714b-e31d00000000_m80cbc94d-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cbc864-07e3-0000-714b-e31d00000000.xml#m80cbc94d-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cbc94d-07e9-0000-714b-e31d00000000" name="Shipping Method" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Shipping Method&apos;">
+<LogicalKey mdsid="m80cbc94f-07d8-0000-714b-e31d00000000" name="Shipping Method" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cbc94f-07d8-0000-714b-e31d00000000-m80cbbeb5-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cbbde0-07f3-0000-714b-e31d00000000.xml#m80cbbeb5-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cbc94d-07e9-0000-714b-e31d00000000_m80cbc86b-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cbc864-07e3-0000-714b-e31d00000000.xml#m80cbc86b-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cbc94d-07e9-0000-714b-e31d00000000-m80cbbeb5-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cbbde0-07f3-0000-714b-e31d00000000.xml#m80cbbeb5-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cbc86b-07e9-0000-714b-e31d00000000" name="Odr Shipment Detail" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Odr Shipment Detail&apos;">
+<LogicalKey mdsid="m80cbc86c-07d8-0000-714b-e31d00000000" name="D Order Shipment Options_Key" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cbc86c-07d8-0000-714b-e31d00000000-m80cbbeb6-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cbbde0-07f3-0000-714b-e31d00000000.xml#m80cbbeb6-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cbc86b-07e9-0000-714b-e31d00000000-m80cbbeb6-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cbbde0-07f3-0000-714b-e31d00000000.xml#m80cbbeb6-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

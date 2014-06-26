@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cdb8b0-0bb9-0000-714b-e31d00000000" name="F10 Billed Rev. Aggregate (XML Source)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" pollFreq="0" x="224" y="348" maxConn="0" containerRef="/oracle/bi/server/base/Database/80ca62be-0bcf-0000-714b-e31d00000000.xml#m80ca62be-0bcf-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cdb89a-0bb9-0000-714b-e31d00000000.xml#m80cdb89a-0bb9-0000-714b-e31d00000000">
+<PhysicalColumn mdsid="m80cdb8b1-0bbb-0000-714b-e31d00000000" name="Revenue" dataType="DOUBLE" extName="//Table/SAMP_XML_REVENUE_F/Revenue" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cdb89a-0bb9-0000-714b-e31d00000000.xml#m80cdb89b-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdb8b2-0bbb-0000-714b-e31d00000000" name="Prod_key" dataType="INT" extName="//Table/SAMP_XML_REVENUE_F/PROD_KEY" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cdb89a-0bb9-0000-714b-e31d00000000.xml#m80cdb89c-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdb8b3-0bbb-0000-714b-e31d00000000" name="Units" dataType="DOUBLE" extName="//Table/SAMP_XML_REVENUE_F/Units" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cdb89a-0bb9-0000-714b-e31d00000000.xml#m80cdb89d-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdb8b4-0bbb-0000-714b-e31d00000000" name="Mth_key" dataType="INT" extName="//Table/SAMP_XML_REVENUE_F/MTH_KEY" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cdb89a-0bb9-0000-714b-e31d00000000.xml#m80cdb89e-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="m80cdb8bc-0bbe-0000-714b-e31d00000000" name="F10 Billed Rev. Aggregate (XML Source)_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cdb8b5-0bb9-0000-714b-e31d00000000.xml#m80cdb8bd-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cdb8bc-0bbe-0000-714b-e31d00000000-m80cdb8b4-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cdb8b0-0bb9-0000-714b-e31d00000000.xml#m80cdb8b4-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cdb8be-0bbe-0000-714b-e31d00000000" name="F10 Billed Rev. Aggregate (XML Source)_FKey#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cdb8a6-0bb9-0000-714b-e31d00000000.xml#m80cdb8bf-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cdb8be-0bbe-0000-714b-e31d00000000-m80cdb8b2-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cdb8b0-0bb9-0000-714b-e31d00000000.xml#m80cdb8b2-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

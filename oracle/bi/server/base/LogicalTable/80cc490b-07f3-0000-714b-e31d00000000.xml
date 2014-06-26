@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cc490b-07f3-0000-714b-e31d00000000" name="M03 Mktg Saved Res Set Customers" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="216" y="169" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cab573-07d0-0000-714b-e31d00000000.xml#m80cab573-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cc492c-07d6-0000-714b-e31d00000000" name="X06 Channel" isWriteable="false">
+<AttrDefn mdsid="m80cc4941-0f3c-0000-714b-e31d00000000" name="AD_3900:879001286194785">
+<Expr mdsid="m00000001-01f4-0000-40e7-b77800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."M03 Mktg Saved Res Set Customers"."CHANNEL"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-40e7-b77800000000-m80cc47be-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc47a6-0bb9-0000-714b-e31d00000000.xml#m80cc47be-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc490e-07d6-0000-714b-e31d00000000" name="X05 SR Guid" isWriteable="false">
+<AttrDefn mdsid="m80cc4942-0f3c-0000-714b-e31d00000000" name="AD_3900:879011286194785">
+<Expr mdsid="m00000002-01f4-0000-75ac-8aa500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."M03 Mktg Saved Res Set Customers"."GUID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-75ac-8aa500000000-m80cc47b2-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc47a6-0bb9-0000-714b-e31d00000000.xml#m80cc47b2-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc490f-07d6-0000-714b-e31d00000000" name="X04 Offer code" isWriteable="false">
+<AttrDefn mdsid="m80cc4943-0f3c-0000-714b-e31d00000000" name="AD_3900:879021286194785">
+<Expr mdsid="m00000003-01f4-0000-327b-80c500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."M03 Mktg Saved Res Set Customers"."OFFER_CODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-327b-80c500000000-m80cc47bf-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc47a6-0bb9-0000-714b-e31d00000000.xml#m80cc47bf-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc491f-07d6-0000-714b-e31d00000000" name="SR Target level ID" isWriteable="false">
+<AttrDefn mdsid="m80cc4953-0f3c-0000-714b-e31d00000000" name="AD_3900:879181286194785">
+<Expr mdsid="m00000004-01f4-0000-aa6b-e60100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."M03 Mktg Saved Res Set Customers"."TARGET_LEVEL_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-aa6b-e60100000000-m80cc47cf-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc47a6-0bb9-0000-714b-e31d00000000.xml#m80cc47cf-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cc492f-07d8-0000-714b-e31d00000000" name="Primary" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cc492f-07d8-0000-714b-e31d00000000-m80cc491f-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc490b-07f3-0000-714b-e31d00000000.xml#m80cc491f-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cc490b-07f3-0000-714b-e31d00000000-m80cc4961-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cc4961-07f5-0000-714b-e31d00000000.xml#m80cc4961-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="maa1485c0-0c62-1000-adfc-7f0000010000" name="WS_GET_WEATHER" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[select 1 id, sys.ws_get_weather( 'VALUEOF(NQ_SESSION.WS_CITY)' , 'VALUEOF(NQ_SESSION.WS_COUNTRY)' , 'VALUEOF(NQ_SESSION.WS_PROXY)') report  from dual]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="maa2eeb90-0c62-1000-adfc-7f0000010000" name="ID" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="maa3183a0-0c62-1000-adfc-7f0000010000" name="REPORT" dataType="VARCHAR" precision="4000" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="maadb0a10-0c62-1000-adfc-7f0000010000" name="id">
+<RefColumns>
+<RefColumn refId="maadb0a10-0c62-1000-adfc-7f0000010000-maa2eeb90-0c62-1000-adfc-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/aa1485c0-0c62-1000-adfc-7f0000010000.xml#maa2eeb90-0c62-1000-adfc-7f0000010000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationTable mdsid="m575e4fa9-0c2d-1000-87a7-0af06a760000" name="Depart Delay" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" hasDispName="false" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationCatalog/575e4f99-0c2d-1000-87a7-0af06a760000.xml#m575e4f99-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[->]]></Description>
+<Alias name="Departure Delay"/>
+<Alias name="F4"/>
+<PresentationColumn mdsid="m575e4f60-0c2d-1000-87a7-0af06a760000" name="Dep Delay (Min)" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68cf-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Difference in minutes between scheduled and actual departure time. Early departures set to 0.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4f5f-0c2d-1000-87a7-0af06a760000" name="Dep Lag (Min)" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68ce-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Difference in minutes between scheduled and actual departure time. Early departures negative values.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4f61-0c2d-1000-87a7-0af06a760000" name="Dept Delay as % of Flight Time" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68e1-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Departure Delay expressed as % of total trip time.]]></Description>
+<Alias name="Dept Delay Time as % of Flight Time"/>
+<Alias name="Dept Delayas % of Flight Time"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m4b13a661-0c61-1000-99f2-7f0000010000" name="Dept Lag as % of Flight Time" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m4b072340-0c61-1000-99f2-7f0000010000">
+<Description><![CDATA[Percent of flights that arrive on time. Note: If you select Origin as a category, you get percent of flights that depart from those airports and arrive on time.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4f62-0c2d-1000-87a7-0af06a760000" name="Avg Dep Delay (Min)" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68e5-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Avg difference in minutes between scheduled and actual departure time. Early departures set to 0.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4f65-0c2d-1000-87a7-0af06a760000" name="# of Fl Dep Ontime or Early" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f9-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Number of flights that depart ontime or early.]]></Description>
+<Alias name="# of Dep Ontime or Early"/>
+<Alias name="# of Departures Ontime or Early"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4f64-0c2d-1000-87a7-0af06a760000" name="# of Fl Dep 1 to 30 Min Late" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f8-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Number of flights that departed with less of 30 minutes delay]]></Description>
+<Alias name="# of Dep 1 to 30 Min Late"/>
+<Alias name="# of Departures 1 to 30 Min Late"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4f63-0c2d-1000-87a7-0af06a760000" name="% of Fl Dep 1 to 30 Min Late" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68f7-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Percent of flights that Depart with less of 30 minutes delay]]></Description>
+<Alias name="% of Dep 1 to 30 Min Late"/>
+<Alias name="% of Departures 1 to 30 Min Late"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4f5d-0c2d-1000-87a7-0af06a760000" name="% of Fl Dep Ontime or Early" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b68fa-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[% of Flights that departed ontime or early.]]></Description>
+<Alias name="% of Dep Ontime or Early"/>
+<Alias name="% of Departures Ontime or Early"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m575e4f5e-0c2d-1000-87a7-0af06a760000" name="% of Fl Departing Late" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b68c7-0c2d-1000-87a7-0af06a760000.xml#m575b6903-0c2d-1000-87a7-0af06a760000">
+</PresentationColumn>
+</PresentationTable>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<InitBlock mdsid="mab83adb0-0c84-1000-9d09-0af502b20000" name="DB_DEFAULT_TIMEZONE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isSessionVar="true" refreshPeriod="86400" connectionPoolRef="/oracle/bi/server/base/ConnectionPool/80cb28c8-0bd5-0000-714b-e31d00000000.xml#m80cb28c8-0bd5-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SELECT SESSIONTIMEZONE FROM DUAL DUAL]]></Value>
+</DBMapItem>
+<RefVariables>
+<RefVariable refId="mab83adb0-0c84-1000-9d09-0af502b20000-mab9512d0-0c84-1000-9d09-0af502b20000" variableRef="/oracle/bi/server/base/Variable/ab9512d0-0c84-1000-9d09-0af502b20000.xml#mab9512d0-0c84-1000-9d09-0af502b20000"/>
+</RefVariables>
+<InitString><![CDATA[SELECT SESSIONTIMEZONE FROM DUAL DUAL]]></InitString>
+</InitBlock>

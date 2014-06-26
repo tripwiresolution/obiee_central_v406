@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="meb2d8260-0ca7-1000-89c9-0af502b50000" name="Vehicleclaims" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" rowCount="70.0" lastUpdated="2014-02-05 12:03:54" maxConn="0" containerRef="/oracle/bi/server/base/Database/3365eeb0-0ca7-1000-9703-0af502b50000.xml#m3365eeb0-0ca7-1000-9703-0af502b50000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SELECT E1 AS CLAIM_YEAR, E2 AS Commodity, E3 AS Vehicle_Make, E4 AS Vehicle_Model, E5 AS pCLAIM_TOT_GLOBL_AMT FROM TABLE(EQL('SELECT 
+sum(pCLAIM_TOT_GLOBL_AMT) as _TotalClaimAmt 
+group by 
+CLAIM_YEAR, Vehicle_Make, Vehicle_Model, Commodity'))
+]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="mebc57ca0-0ca7-1000-89c9-0af502b50000" name="pCLAIM_TOT_GLOBL_AMT" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mebc99b50-0ca7-1000-89c9-0af502b50000" name="CLAIM_YEAR" dataType="VARCHAR" precision="10" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mebcd92f0-0ca7-1000-89c9-0af502b50000" name="Vehicle_Make" dataType="VARCHAR" precision="10" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mebd0a030-0ca7-1000-89c9-0af502b50000" name="Vehicle_Model" dataType="VARCHAR" precision="10" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mebd2ea20-0ca7-1000-89c9-0af502b50000" name="Commodity" dataType="VARCHAR" precision="10" specialType="none">
+</PhysicalColumn>
+</PhysicalTable>

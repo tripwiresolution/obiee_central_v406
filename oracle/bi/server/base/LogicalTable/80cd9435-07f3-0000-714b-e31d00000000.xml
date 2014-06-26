@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cd9435-07f3-0000-714b-e31d00000000" name="F1 Targets Base Measures" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="774" y="1142" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cd92c7-07d0-0000-714b-e31d00000000.xml#m80cd92c7-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cd9436-07d6-0000-714b-e31d00000000" name="5a  Target Rev  (Source A)" isWriteable="false">
+<MeasureDefn mdsid="m80cd948e-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cd94b5-0802-0000-714b-e31d00000000" name="AggRule_2050:1697991292245695" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-2460-761000000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("05 - TimesTen Sample"."F1 Targets Base Measures"."5a  Target Rev  (Source A)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-2460-761000000000-m80cd9436-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cd9435-07f3-0000-714b-e31d00000000.xml#m80cd9436-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cd96cd-0f3c-0000-714b-e31d00000000" name="AD_3900:1705991292245695">
+<Expr mdsid="m00000002-01f4-0000-216f-a66800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."F40 Facts Targets"."Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-216f-a66800000000-m80cd9081-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd9080-0bb9-0000-714b-e31d00000000.xml#m80cd9081-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd9437-07d6-0000-714b-e31d00000000" name="5b  Target Rev  (Source B)" isWriteable="false">
+<MeasureDefn mdsid="m80cd948f-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cd94b6-0802-0000-714b-e31d00000000" name="AggRule_2050:1698001292245695" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-8abf-cd7e00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("05 - TimesTen Sample"."F1 Targets Base Measures"."5b  Target Rev  (Source B)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-8abf-cd7e00000000-m80cd9437-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cd9435-07f3-0000-714b-e31d00000000.xml#m80cd9437-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cd96ce-0f3c-0000-714b-e31d00000000" name="AD_3900:1706001292245695">
+<Expr mdsid="m00000004-01f4-0000-e8c4-ebad00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["08 - Sample App Xml Target Data"."".""."F31 Facts Targets (XML Source)"."Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-e8c4-ebad00000000-m80cb19de-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb19dd-0bb9-0000-714b-e31d00000000.xml#m80cb19de-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cd9435-07f3-0000-714b-e31d00000000-m80cd9719-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cd9719-07f5-0000-714b-e31d00000000.xml#m80cd9719-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cd9435-07f3-0000-714b-e31d00000000-m80cd971a-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cd971a-07f5-0000-714b-e31d00000000.xml#m80cd971a-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="mfe34e0a2-0c82-1000-806e-0af170e40000" name="Time" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/fe34e080-0c82-1000-806e-0af170e40000.xml#mfe34e080-0c82-1000-806e-0af170e40000">
+<LogicalColumn mdsid="mfe34e0a3-0c82-1000-806e-0af170e40000" name="Year" isWriteable="false">
+<AttrDefn mdsid="mfe34e33b-0c82-1000-806e-0af170e40000" name="AD_3900:2634331375675016">
+<Expr mdsid="m00000001-01f4-0000-d97a-902700000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION )]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."TIMES"."YEAR_ID" AS DOUBLE PRECISION )]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-d97a-902700000000-mfe33334a-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe333336-0c82-1000-806e-0af170e40000.xml#mfe33334a-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0a4-0c82-1000-806e-0af170e40000" name="End of Year" isWriteable="false">
+<AttrDefn mdsid="mfe34e33c-0c82-1000-806e-0af170e40000" name="AD_3900:2634341375675016">
+<Expr mdsid="m00000002-01f4-0000-e0d7-6f3000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."TIMES"."END_OF_YEAR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-e0d7-6f3000000000-mfe333340-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe333336-0c82-1000-806e-0af170e40000.xml#mfe333340-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0a5-0c82-1000-806e-0af170e40000" name="Days in Year" isWriteable="false">
+<AttrDefn mdsid="mfe34e33d-0c82-1000-806e-0af170e40000" name="AD_3900:2634351375675016">
+<Expr mdsid="m00000003-01f4-0000-313b-74c100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."TIMES"."DAYS_IN_YEAR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-313b-74c100000000-mfe33333a-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe333336-0c82-1000-806e-0af170e40000.xml#mfe33333a-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0a6-0c82-1000-806e-0af170e40000" name="Quarter" isWriteable="false">
+<AttrDefn mdsid="mfe34e33e-0c82-1000-806e-0af170e40000" name="AD_3900:2634361375675016">
+<Expr mdsid="m00000004-01f4-0000-a03c-401600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."TIMES"."QUARTER_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-a03c-401600000000-mfe333346-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe333336-0c82-1000-806e-0af170e40000.xml#mfe333346-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0a7-0c82-1000-806e-0af170e40000" name="Quarter Number" isWriteable="false">
+<AttrDefn mdsid="mfe34e33f-0c82-1000-806e-0af170e40000" name="AD_3900:2634371375675016">
+<Expr mdsid="m00000005-01f4-0000-284e-c45600000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION )]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."TIMES"."QUARTER_NUMBER" AS DOUBLE PRECISION )]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-284e-c45600000000-mfe333347-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe333336-0c82-1000-806e-0af170e40000.xml#mfe333347-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0a8-0c82-1000-806e-0af170e40000" name="End of Quarter" isWriteable="false">
+<AttrDefn mdsid="mfe34e340-0c82-1000-806e-0af170e40000" name="AD_3900:2634381375675016">
+<Expr mdsid="m00000006-01f4-0000-7ee7-ec6f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."TIMES"."END_OF_QUARTER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-7ee7-ec6f00000000-mfe33333f-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe333336-0c82-1000-806e-0af170e40000.xml#mfe33333f-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0a9-0c82-1000-806e-0af170e40000" name="Days in Quarter" isWriteable="false">
+<AttrDefn mdsid="mfe34e341-0c82-1000-806e-0af170e40000" name="AD_3900:2634391375675016">
+<Expr mdsid="m00000007-01f4-0000-e5dc-a93900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."TIMES"."DAYS_IN_QUARTER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-e5dc-a93900000000-mfe333339-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe333336-0c82-1000-806e-0af170e40000.xml#mfe333339-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0aa-0c82-1000-806e-0af170e40000" name="Month" isWriteable="false">
+<AttrDefn mdsid="mfe34e342-0c82-1000-806e-0af170e40000" name="AD_3900:2634401375675016">
+<Expr mdsid="m00000008-01f4-0000-3611-950100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."TIMES"."MONTH_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-3611-950100000000-mfe333342-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe333336-0c82-1000-806e-0af170e40000.xml#mfe333342-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0ab-0c82-1000-806e-0af170e40000" name="Month Name" isWriteable="false">
+<AttrDefn mdsid="mfe34e343-0c82-1000-806e-0af170e40000" name="AD_3900:2634411375675016">
+<Expr mdsid="m00000009-01f4-0000-bd80-6c6900000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS VARCHAR ( 10 ))]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."TIMES"."MONTH_NAME" AS VARCHAR ( 10 ))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-bd80-6c6900000000-mfe333343-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe333336-0c82-1000-806e-0af170e40000.xml#mfe333343-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0ac-0c82-1000-806e-0af170e40000" name="Month Number" isWriteable="false">
+<AttrDefn mdsid="mfe34e344-0c82-1000-806e-0af170e40000" name="AD_3900:2634421375675016">
+<Expr mdsid="m0000000a-01f4-0000-8d58-303200000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION )]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."TIMES"."MONTH_NUMBER" AS DOUBLE PRECISION )]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-8d58-303200000000-mfe333344-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe333336-0c82-1000-806e-0af170e40000.xml#mfe333344-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0ad-0c82-1000-806e-0af170e40000" name="End of Month" isWriteable="false">
+<AttrDefn mdsid="mfe34e345-0c82-1000-806e-0af170e40000" name="AD_3900:2634431375675016">
+<Expr mdsid="m0000000b-01f4-0000-a3df-ff1700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."TIMES"."END_OF_MONTH"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-a3df-ff1700000000-mfe33333e-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe333336-0c82-1000-806e-0af170e40000.xml#mfe33333e-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0ae-0c82-1000-806e-0af170e40000" name="Days in Month" isWriteable="false">
+<AttrDefn mdsid="mfe34e346-0c82-1000-806e-0af170e40000" name="AD_3900:2634441375675016">
+<Expr mdsid="m0000000c-01f4-0000-9874-635100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."TIMES"."DAYS_IN_MONTH"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-9874-635100000000-mfe333338-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe333336-0c82-1000-806e-0af170e40000.xml#mfe333338-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0af-0c82-1000-806e-0af170e40000" name="Day Number in Month" isWriteable="false">
+<AttrDefn mdsid="mfe34e347-0c82-1000-806e-0af170e40000" name="AD_3900:2634451375675016">
+<Expr mdsid="m0000000d-01f4-0000-06a0-428700000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION )]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."TIMES"."DAY_NUMBER_IN_MONTH" AS DOUBLE PRECISION )]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-06a0-428700000000-mfe33333c-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe333336-0c82-1000-806e-0af170e40000.xml#mfe33333c-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0b0-0c82-1000-806e-0af170e40000" name="Day Name" isWriteable="false">
+<AttrDefn mdsid="mfe34e348-0c82-1000-806e-0af170e40000" name="AD_3900:2634461375675016">
+<Expr mdsid="m0000000e-01f4-0000-98a0-8f3400000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS VARCHAR ( 10 ))]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."TIMES"."DAY_NAME" AS VARCHAR ( 10 ))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-98a0-8f3400000000-mfe33333b-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe333336-0c82-1000-806e-0af170e40000.xml#mfe33333b-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0b1-0c82-1000-806e-0af170e40000" name="Day Number in Week" isWriteable="false">
+<AttrDefn mdsid="mfe34e349-0c82-1000-806e-0af170e40000" name="AD_3900:2634471375675016">
+<Expr mdsid="m0000000f-01f4-0000-cee3-2b3300000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION )]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."TIMES"."DAY_NUMBER_IN_WEEK" AS DOUBLE PRECISION )]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-cee3-2b3300000000-mfe33333d-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe333336-0c82-1000-806e-0af170e40000.xml#mfe33333d-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0b2-0c82-1000-806e-0af170e40000" name="Day-Date" isWriteable="false">
+<AttrDefn mdsid="mfe34e34a-0c82-1000-806e-0af170e40000" name="AD_3900:2634481375675016">
+<Expr mdsid="m00000010-01f4-0000-ce47-1c5200000000" name="Expr">
+<ExprText><![CDATA[CAST("%1" AS DATE)]]></ExprText>
+<ExprTextDesc><![CDATA[CAST("Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."TIME_ID" AS DATE)]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-ce47-1c5200000000-mfe333352-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe333352-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="mfe34e308-0c82-1000-806e-0af170e40000" name="TIME_ID" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="mfe34e308-0c82-1000-806e-0af170e40000-mfe34e0b2-0c82-1000-806e-0af170e40000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/fe34e0a2-0c82-1000-806e-0af170e40000.xml#mfe34e0b2-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="mfe34e0a2-0c82-1000-806e-0af170e40000-mfe34e3f8-0c82-1000-806e-0af170e40000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/fe34e3f8-0c82-1000-806e-0af170e40000.xml#mfe34e3f8-0c82-1000-806e-0af170e40000"/>
+<RefLogicalTableSource refId="mfe34e0a2-0c82-1000-806e-0af170e40000-mfe34e3f9-0c82-1000-806e-0af170e40000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/fe34e3f9-0c82-1000-806e-0af170e40000.xml#mfe34e3f9-0c82-1000-806e-0af170e40000"/>
+</RefTableSources>
+</LogicalTable>

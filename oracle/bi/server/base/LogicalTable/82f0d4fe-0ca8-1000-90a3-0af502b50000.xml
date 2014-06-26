@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0d4fe-0ca8-1000-90a3-0af502b50000" name="Fact - Succession Planning" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd3-0ca8-1000-90a3-0af502b50000.xml#m82f0acd3-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0d4ff-0ca8-1000-90a3-0af502b50000" name="No. Potential Successors" isWriteable="false">
+<MeasureDefn mdsid="m82f14955-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f17084-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736181391789375" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-9631-a14800000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "Y01 - Demo HR Succession Planning"."Fact - Succession Planning"."No. Potential Successors")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-9631-a14800000000-m82f0d4ff-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d4fe-0ca8-1000-90a3-0af502b50000.xml#m82f0d4ff-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f28191-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755781391789375">
+<Expr mdsid="m00000002-01f4-0000-5bf7-3a6000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRV"."ADS_BI_HRV_PER_SP"."SUCCESSION_PLAN_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-5bf7-3a6000000000-m82dde918-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde8f1-0ca8-1000-90a3-0af502b50000.xml#m82dde918-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d500-0ca8-1000-90a3-0af502b50000" name="Earliest Succession Date" isWriteable="false">
+<AttrDefn mdsid="m82f28192-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755791391789375">
+<Expr mdsid="m00000003-01f4-0000-8b85-48e600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRV"."ADS_BI_HRV_PER_SP"."START_DATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-8b85-48e600000000-m82dde916-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde8f1-0ca8-1000-90a3-0af502b50000.xml#m82dde916-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d501-0ca8-1000-90a3-0af502b50000" name="Latest Succession Date" isWriteable="false">
+<AttrDefn mdsid="m82f28193-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755801391789375">
+<Expr mdsid="m00000004-01f4-0000-4300-1fcf00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRV"."ADS_BI_HRV_PER_SP"."END_DATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-4300-1fcf00000000-m82dde90b-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde8f1-0ca8-1000-90a3-0af502b50000.xml#m82dde90b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d502-0ca8-1000-90a3-0af502b50000" name="Readiness Level" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000005-01f4-0000-d671-61a600000000" name="Expr">
+<ExprText><![CDATA[ CASE "%1" WHEN 'ONEYR' THEN 'One Year' WHEN 'TWOYR' THEN 'Two Years' WHEN 'THYR' THEN 'Three Years' WHEN 'FOURYR' THEN 'Four Years' WHEN 'FIVEYR' THEN 'Five Years' WHEN 'TENYR' THEN 'Ten Years' WHEN 'SIXMO' THEN 'Six Months' WHEN 'INDEF' THEN 'Indefinite' ELSE  NULL  END ]]></ExprText>
+<ExprTextDesc><![CDATA[ CASE "Y01 - Demo HR Succession Planning"."Fact - Succession Planning"."Time Scales" WHEN 'ONEYR' THEN 'One Year' WHEN 'TWOYR' THEN 'Two Years' WHEN 'THYR' THEN 'Three Years' WHEN 'FOURYR' THEN 'Four Years' WHEN 'FIVEYR' THEN 'Five Years' WHEN 'TENYR' THEN 'Ten Years' WHEN 'SIXMO' THEN 'Six Months' WHEN 'INDEF' THEN 'Indefinite' ELSE  NULL  END ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-d671-61a600000000-m82f0d503-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d4fe-0ca8-1000-90a3-0af502b50000.xml#m82f0d503-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m82f28194-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755811391789375">
+<Expr mdsid="m00000006-01f4-0000-54f8-a67f00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d503-0ca8-1000-90a3-0af502b50000" name="Time Scales" isWriteable="false">
+<AttrDefn mdsid="m82f28195-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755821391789375">
+<Expr mdsid="m00000007-01f4-0000-a32f-c75400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRV"."ADS_BI_HRV_PER_SP"."TIME_SCALE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-a32f-c75400000000-m82dde919-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde8f1-0ca8-1000-90a3-0af502b50000.xml#m82dde919-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d504-0ca8-1000-90a3-0af502b50000" name="Eligible for Promotion" isWriteable="false">
+<AttrDefn mdsid="m82f28196-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755831391789375">
+<Expr mdsid="m00000008-01f4-0000-3651-35d200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRV"."ADS_BI_HRV_PER_SP"."AVAILABLE_FOR_PROMOTION"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-3651-35d200000000-m82dde907-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde8f1-0ca8-1000-90a3-0af502b50000.xml#m82dde907-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d505-0ca8-1000-90a3-0af502b50000" name="Manager Comments" isWriteable="false">
+<AttrDefn mdsid="m82f28197-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755841391789375">
+<Expr mdsid="m00000009-01f4-0000-a6a2-e0c400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRV"."ADS_BI_HRV_PER_SP"."MANAGER_COMMENTS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-a6a2-e0c400000000-m82dde910-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde8f1-0ca8-1000-90a3-0af502b50000.xml#m82dde910-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m82f233b0-0ca8-1000-90a3-0af502b50000" name="SUCCESSION_PLAN_ID" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f233b0-0ca8-1000-90a3-0af502b50000-m82f0d4ff-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d4fe-0ca8-1000-90a3-0af502b50000.xml#m82f0d4ff-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0d4fe-0ca8-1000-90a3-0af502b50000-m82f2f6dc-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f2f6dc-0ca8-1000-90a3-0af502b50000.xml#m82f2f6dc-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

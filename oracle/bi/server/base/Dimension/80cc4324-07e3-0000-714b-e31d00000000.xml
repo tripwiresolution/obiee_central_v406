@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m80cc4324-07e3-0000-714b-e31d00000000" name="1 Composite Hier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="false" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/80cc4324-07e3-0000-714b-e31d00000000.xml#m80cc43aa-07e9-0000-714b-e31d00000000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cc4320-07d0-0000-714b-e31d00000000.xml#m80cc4320-07d0-0000-714b-e31d00000000">
+<LogicalLevel mdsid="m80cc43aa-07e9-0000-714b-e31d00000000" name="All Composites" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;All Composites&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="m80cc43aa-07e9-0000-714b-e31d00000000_m80cc43ac-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cc4324-07e3-0000-714b-e31d00000000.xml#m80cc43ac-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cc43ac-07e9-0000-714b-e31d00000000" name="Composite Domain" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Composite Domain&apos;">
+<LogicalKey mdsid="m80cc43c9-07d8-0000-714b-e31d00000000" name="DOMAIN_NAME" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cc43c9-07d8-0000-714b-e31d00000000-m80cc435d-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc432b-07f3-0000-714b-e31d00000000.xml#m80cc435d-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cc43ac-07e9-0000-714b-e31d00000000_m80cc43ab-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cc4324-07e3-0000-714b-e31d00000000.xml#m80cc43ab-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cc43ac-07e9-0000-714b-e31d00000000-m80cc435d-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc432b-07f3-0000-714b-e31d00000000.xml#m80cc435d-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cc43ab-07e9-0000-714b-e31d00000000" name="Composite Revision" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Composite Revision&apos;">
+<LogicalKey mdsid="m80cc43c8-07d8-0000-714b-e31d00000000" name="COMPOSITE_REVISION" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cc43c8-07d8-0000-714b-e31d00000000-m80cc435c-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc432b-07f3-0000-714b-e31d00000000.xml#m80cc435c-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cc43ab-07e9-0000-714b-e31d00000000_m80cc43a9-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cc4324-07e3-0000-714b-e31d00000000.xml#m80cc43a9-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cc43ab-07e9-0000-714b-e31d00000000-m80cc435c-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc432b-07f3-0000-714b-e31d00000000.xml#m80cc435c-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cc43a9-07e9-0000-714b-e31d00000000" name="Composites Detail" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Composites Detail&apos;">
+<LogicalKey mdsid="m80cc43c7-07d8-0000-714b-e31d00000000" name="4 Dim Composite Detail_Key" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cc43c7-07d8-0000-714b-e31d00000000-m80cc4359-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc432b-07f3-0000-714b-e31d00000000.xml#m80cc4359-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cc43c7-07d8-0000-714b-e31d00000000-m80cc4358-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc432b-07f3-0000-714b-e31d00000000.xml#m80cc4358-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cc43a9-07e9-0000-714b-e31d00000000-m80cc4358-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc432b-07f3-0000-714b-e31d00000000.xml#m80cc4358-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cc43a9-07e9-0000-714b-e31d00000000-m80cc4359-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc432b-07f3-0000-714b-e31d00000000.xml#m80cc4359-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cc43a9-07e9-0000-714b-e31d00000000-m80cc435a-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc432b-07f3-0000-714b-e31d00000000.xml#m80cc435a-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cc43a9-07e9-0000-714b-e31d00000000-m80cc435b-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc432b-07f3-0000-714b-e31d00000000.xml#m80cc435b-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

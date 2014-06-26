@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationTable mdsid="m80cab8ae-0fa8-0000-714b-e31d00000000" name="Level Based Measures" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Level_Based_Measures)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationCatalog/80cab7ef-0fa4-0000-714b-e31d00000000.xml#m80cab7ef-0fa4-0000-714b-e31d00000000">
+<Description><![CDATA[This folder contains Revenue at a specific level of a dimension like Revenue at Month, Revenue at Year, Revenue for All Products and so on.]]></Description>
+<PresentationColumn mdsid="m80cb6c28-0faa-0000-714b-e31d00000000" name="150  ---- Time Level Based ---------" iconIndex="86" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Level_Based_Measures_150__----_Time_Level_Based_---------)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab612-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab8b0-0faa-0000-714b-e31d00000000" name="150  Rev  (Full Mth Sum)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Level_Based_Measures_150__Rev__(Full_Mth_Sum))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab613-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- Sum of the metric value for the full month. This aggregation is always calculated at the month level.. For example, when viewed against Week level, it shows the same total month's value for all the weeks in that month]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab8b3-0faa-0000-714b-e31d00000000" name="151  Rev  (Full Qtr Sum)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Level_Based_Measures_151__Rev__(Full_Qtr_Sum))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab616-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- Sum of the metric value for the full quarter. This aggregation is always calculated at the quarter level. When viewed against Month or Week level, it shows the quarter's value for all the weeks and months in that quarter.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab8b5-0faa-0000-714b-e31d00000000" name="152  Rev  (Full Year Sum)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Level_Based_Measures_152__Rev__(Full_Year_Sum))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab618-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- Sum of the metric value for the full year. This aggregation is always calculated at the year level. When viewed against quarter, month or week level, it shows the year's value for all the quarters, month, and weeks in that year.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab8b1-0faa-0000-714b-e31d00000000" name="153  Rev  (Mago Full Mth Sum)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Level_Based_Measures_153__Rev__(Mago_Full_Mth_Sum))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab614-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- Full month's value of the metric for the previous month. This aggregation is always calculated at the month level. For example, when viewed against Week level, it shows the same total month's value for all the weeks in that month.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab8b2-0faa-0000-714b-e31d00000000" name="154  Rev  (Yago Full Mth Sum)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Level_Based_Measures_154__Rev__(Yago_Full_Mth_Sum))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab615-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- Full month's value of the metric for the same month in the previous year. This aggregation is always calculated at the year level. For example, when viewed against Week level, it shows the same total month's value for all the weeks in that month.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab8b6-0faa-0000-714b-e31d00000000" name="155  Rev  (Yago Full Year Sum)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Level_Based_Measures_155__Rev__(Yago_Full_Year_Sum))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab619-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- Full year's value of the metric for the previous year. This aggregation is always calculated at the year level]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cb6c29-0faa-0000-714b-e31d00000000" name="160  ---- Other Dims Level Based ---------" iconIndex="86" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Level_Based_Measures_160__----_Other_Dims_Level_Based_---------)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab61d-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab8b9-0faa-0000-714b-e31d00000000" name="160  Rev  (Sum for All Customers)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Level_Based_Measures_160__Rev__(Sum_for_All_Customers))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab61e-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- Sum of the metric for all the Customers. It always returns the value at Total level irrespective of the level within the Customer dimension that is used in the query.
+]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab8ba-0faa-0000-714b-e31d00000000" name="161  Rev  (Sum for All Offices)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Level_Based_Measures_161__Rev__(Sum_for_All_Offices))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab61f-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- Sum of the metric for all the Offices. It always returns the value at Total level irrespective of the level within the Office dimension that is used in the query.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab8bb-0faa-0000-714b-e31d00000000" name="162  Rev  (Sum for All Products)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Level_Based_Measures_162__Rev__(Sum_for_All_Products))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab620-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- Sum of the metric for all the Products. It always returns the value at Total level irrespective of the level within the Product dimension that is used in the query.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab8bc-0faa-0000-714b-e31d00000000" name="163  Rev  (Sum for All Employees)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Level_Based_Measures_163__Rev__(Sum_for_All_Employees))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab621-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- Sum of the metric for all the Employees. It always returns the value at Total level irrespective of the level within the Employee dimension that is used in the query.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cbdc0c-0faa-0000-714b-e31d00000000" name="164  Rev  (Sum for All Orders)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Level_Based_Measures_164__Rev__(Sum_for_All_Orders))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cbdc08-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Sum of the metric for all the Customers. It always returns the value at Total level irrespective of the level within the Customer dimension that is used in the query]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab8bd-0faa-0000-714b-e31d00000000" name="165  Rev  (Sum for All Dims But Time)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Level_Based_Measures_165__Rev__(Sum_for_All_Dims_But_Time))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab622-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time. 
+
+- Sum of the metric for all the dimensions except Time. It always returns the value at the Total level when viewed against all the dimensions except time.  When viewed against Time, it returns the value at that level.]]></Description>
+</PresentationColumn>
+</PresentationTable>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m089a9ec0-0c83-1000-8c4a-0ab22f360000" name="SAMP_CUSTOMERS_SCD_VIEWQUERY" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" x="286" y="1544" uri="VALUEOF(BI_EE_HOME)/sample/SampleAppFiles/Data/SAMP_CUSTOMERS_D.xml" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000">
+<Description><![CDATA[Customers Dimension table: Stores customer dimension attribute information]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SELECT * from SAMP_CUSTOMERS_SCD 
+AS OF PERIOD FOR user_valid_time 
+TO_TIMESTAMP('valueof(NQ_SESSION.TIME_TEMPORAL_ASOF)')]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m089a9ec1-0c83-1000-8c4a-0ab22f360000" name="Crdt_Rate" dataType="INT" specialType="none">
+<Description><![CDATA[Credit Rate: Stores customer credit rate information as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m089a9ec2-0c83-1000-8c4a-0ab22f360000" name="Cust_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Cust Key: Surrogate key of the customer dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m089a9ec3-0c83-1000-8c4a-0ab22f360000" name="Fst_Contact_Dt" dataType="DATE" specialType="none">
+<Description><![CDATA[First Contact Date: Stores the information in date format]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m089a9ec4-0c83-1000-8c4a-0ab22f360000" name="Lst_Order_Dt" dataType="DATETIME" specialType="none">
+<Description><![CDATA[Last Order Date: Stores the information in date format]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m089a9ec5-0c83-1000-8c4a-0ab22f360000" name="Name" dataType="VARCHAR" precision="255" specialType="none">
+<Description><![CDATA[Name: Stores the customer name in text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m089a9ec6-0c83-1000-8c4a-0ab22f360000" name="Segment_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Segment Key: Joins to segment_key in customer segments dimension table]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m089a9ec7-0c83-1000-8c4a-0ab22f360000" name="Income_Lvl" dataType="VARCHAR" precision="255" specialType="none">
+<Description><![CDATA[Income level: Stores the information in text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m089a9ec8-0c83-1000-8c4a-0ab22f360000" name="Status_Key" dataType="VARCHAR" precision="255" specialType="none">
+<Description><![CDATA[Status Key: Stores customer status as text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m089a9ec9-0c83-1000-8c4a-0ab22f360000" name="Type_Key" dataType="VARCHAR" precision="255" specialType="none">
+<Description><![CDATA[Type Key: Stores the information as text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m089a9eca-0c83-1000-8c4a-0ab22f360000" name="Birth_Dt" dataType="DATE" specialType="none">
+<Description><![CDATA[Birth Date: Stores the information in date format]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m089a9ecb-0c83-1000-8c4a-0ab22f360000" name="Address_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Address Key: Joins to Address_Key of Addresses dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m089a9ece-0c83-1000-8c4a-0ab22f360000" name="Marital_St" dataType="VARCHAR" precision="255" specialType="none">
+<Description><![CDATA[Marital Status: Stores the information in text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m089a9ecf-0c83-1000-8c4a-0ab22f360000" name="Gender" dataType="VARCHAR" precision="20" specialType="none">
+<Description><![CDATA[Income level: Stores the information in text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m089a9ed0-0c83-1000-8c4a-0ab22f360000" name="Num_Attribute" dataType="INT" specialType="none">
+<Description><![CDATA[Credit Rate: Stores customer credit rate information as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m0aadee60-0c83-1000-be8d-0ab22f360000" name="Start_Time" dataType="TIMESTAMP" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m0ab08670-0c83-1000-be8d-0ab22f360000" name="End_Time" dataType="TIMESTAMP" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m089a9ed1-0c83-1000-8c4a-0ab22f360000" name="Customer_Key">
+<RefColumns>
+<RefColumn refId="m089a9ed1-0c83-1000-8c4a-0ab22f360000-m089a9ec2-0c83-1000-8c4a-0ab22f360000" columnRef="/oracle/bi/server/base/PhysicalTable/089a9ec0-0c83-1000-8c4a-0ab22f360000.xml#m089a9ec2-0c83-1000-8c4a-0ab22f360000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

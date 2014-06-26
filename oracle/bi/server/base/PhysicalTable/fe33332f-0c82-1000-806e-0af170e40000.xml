@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="mfe33332f-0c82-1000-806e-0af170e40000" name="MOVIE_CREW" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" rowCount="604304.0" lastUpdated="2012-10-24 11:58:54" maxConn="0" containerRef="/oracle/bi/server/base/Schema/fe3332da-0c82-1000-806e-0af170e40000.xml#mfe3332da-0c82-1000-806e-0af170e40000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[MOVIE_CREW]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="mfe333330-0c82-1000-806e-0af170e40000" name="CREW_ID" dataType="DOUBLE" precision="22" rowCount="255719.0" lastUpdated="2012-07-18 11:37:57" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe333331-0c82-1000-806e-0af170e40000" name="JOB" dataType="VARCHAR" precision="32" rowCount="2.0" lastUpdated="2012-07-18 11:37:58" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe333332-0c82-1000-806e-0af170e40000" name="MOVIE_ID" dataType="DOUBLE" precision="22" rowCount="196094.0" lastUpdated="2012-07-18 11:37:58" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="mfe333431-0c82-1000-806e-0af170e40000" name="MOVIE_ID">
+<RefColumns>
+<RefColumn refId="mfe333431-0c82-1000-806e-0af170e40000-mfe333330-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe33332f-0c82-1000-806e-0af170e40000.xml#mfe333330-0c82-1000-806e-0af170e40000"/>
+<RefColumn refId="mfe333431-0c82-1000-806e-0af170e40000-mfe333332-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe33332f-0c82-1000-806e-0af170e40000.xml#mfe333332-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="mfe333453-0c82-1000-806e-0af170e40000" name="CREW_ID" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/fe3332f2-0c82-1000-806e-0af170e40000.xml#mfe33342b-0c82-1000-806e-0af170e40000">
+<RefColumns>
+<RefColumn refId="mfe333453-0c82-1000-806e-0af170e40000-mfe333330-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe33332f-0c82-1000-806e-0af170e40000.xml#mfe333330-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="mfe333454-0c82-1000-806e-0af170e40000" name="MOVIE_ID" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/fe333325-0c82-1000-806e-0af170e40000.xml#mfe33342f-0c82-1000-806e-0af170e40000">
+<RefColumns>
+<RefColumn refId="mfe333454-0c82-1000-806e-0af170e40000-mfe333332-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe33332f-0c82-1000-806e-0af170e40000.xml#mfe333332-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

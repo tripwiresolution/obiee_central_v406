@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m1e0aff40-0cae-1000-8972-7f0000010000" name="Arena Facts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cde354-07d0-0000-714b-e31d00000000.xml#m80cde354-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m1e0aff44-0cae-1000-8972-7f0000010000" name="Male Attendance" isWriteable="false">
+<MeasureDefn mdsid="m243b0310-0cae-1000-8972-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m243b0311-0cae-1000-8972-7f0000010000" name="AggRule_2050:2787071394207222" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-c1fe-4ed700000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."Arena Facts"."Male Attendance")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-c1fe-4ed700000000-m1e0aff44-0cae-1000-8972-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1e0aff40-0cae-1000-8972-7f0000010000.xml#m1e0aff44-0cae-1000-8972-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1e0aff4b-0cae-1000-8972-7f0000010000" name="AD_3900:2786741394197301">
+<Expr mdsid="m00000002-01f4-0000-8c2c-697c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."ARENA_DATA"."MALE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-8c2c-697c00000000-m1deacd10-0cae-1000-8972-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/1dd9dd21-0cae-1000-8972-7f0000010000.xml#m1deacd10-0cae-1000-8972-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1e0aff43-0cae-1000-8972-7f0000010000" name="Female Attendance" isWriteable="false">
+<MeasureDefn mdsid="m243c3b90-0cae-1000-8972-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m25e88c00-0cae-1000-8972-7f0000010000" name="AggRule_2050:2787151394210001" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-2c49-bbe200000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."Arena Facts"."Female Attendance")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-2c49-bbe200000000-m1e0aff43-0cae-1000-8972-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1e0aff40-0cae-1000-8972-7f0000010000.xml#m1e0aff43-0cae-1000-8972-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1e0aff4a-0cae-1000-8972-7f0000010000" name="AD_3900:2786731394197301">
+<Expr mdsid="m00000004-01f4-0000-248b-ee8000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."ARENA_DATA"."FEMALE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-248b-ee8000000000-m1dec7ac0-0cae-1000-8972-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/1dd9dd21-0cae-1000-8972-7f0000010000.xml#m1dec7ac0-0cae-1000-8972-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1e0aff42-0cae-1000-8972-7f0000010000" name="Child Attendance" isWriteable="false">
+<MeasureDefn mdsid="m243d4d00-0cae-1000-8972-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m243d4d01-0cae-1000-8972-7f0000010000" name="AggRule_2050:2787111394207222" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-b18b-321500000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."Arena Facts"."Child Attendance")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-b18b-321500000000-m1e0aff42-0cae-1000-8972-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1e0aff40-0cae-1000-8972-7f0000010000.xml#m1e0aff42-0cae-1000-8972-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1e0aff49-0cae-1000-8972-7f0000010000" name="AD_3900:2786721394197301">
+<Expr mdsid="m00000006-01f4-0000-3612-9b5900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."ARENA_DATA"."CHILD"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-3612-9b5900000000-m1dee4f80-0cae-1000-8972-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/1dd9dd21-0cae-1000-8972-7f0000010000.xml#m1dee4f80-0cae-1000-8972-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1e0aff41-0cae-1000-8972-7f0000010000" name="Total Attendance" isWriteable="false">
+<MeasureDefn mdsid="m243e5e70-0cae-1000-8972-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m243e5e71-0cae-1000-8972-7f0000010000" name="AggRule_2050:2787131394207222" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-4a1d-f3c000000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."Arena Facts"."Total Attendance")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-4a1d-f3c000000000-m1e0aff41-0cae-1000-8972-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/1e0aff40-0cae-1000-8972-7f0000010000.xml#m1e0aff41-0cae-1000-8972-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1e0aff48-0cae-1000-8972-7f0000010000" name="AD_3900:2786711394197301">
+<Expr mdsid="m00000008-01f4-0000-c9f0-0efa00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."ARENA_DATA"."ATTENDANCE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-c9f0-0efa00000000-m1de8f850-0cae-1000-8972-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/1dd9dd21-0cae-1000-8972-7f0000010000.xml#m1de8f850-0cae-1000-8972-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m1e0aff40-0cae-1000-8972-7f0000010000-m1e0aff4e-0cae-1000-8972-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/1e0aff4e-0cae-1000-8972-7f0000010000.xml#m1e0aff4e-0cae-1000-8972-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0fc7a-0ca8-1000-90a3-0af502b50000" name="Dim - Organisation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acda-0ca8-1000-90a3-0af502b50000.xml#m82f0acda-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0fc7b-0ca8-1000-90a3-0af502b50000" name="Organisation ID" isWriteable="false">
+<AttrDefn mdsid="m82f2a991-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761061391789375">
+<Expr mdsid="m00000001-01f4-0000-7759-f29a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_ORG"."ORG_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-7759-f29a00000000-m82e3dc91-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc90-0ca8-1000-90a3-0af502b50000.xml#m82e3dc91-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc7c-0ca8-1000-90a3-0af502b50000" name="Organisation Leader" isWriteable="false">
+<AttrDefn mdsid="m82f2a992-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761071391789375">
+<Expr mdsid="m00000002-01f4-0000-6c8e-06f600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_ORG"."ORG_LEADER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-6c8e-06f600000000-m82e3dc94-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc90-0ca8-1000-90a3-0af502b50000.xml#m82e3dc94-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc7d-0ca8-1000-90a3-0af502b50000" name="Organisation Name" isWriteable="false">
+<AttrDefn mdsid="m82f2a993-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761081391789375">
+<Expr mdsid="m00000003-01f4-0000-1a10-27f700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_ORG"."ORG_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-1a10-27f700000000-m82e3dc92-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc90-0ca8-1000-90a3-0af502b50000.xml#m82e3dc92-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc7e-0ca8-1000-90a3-0af502b50000" name="Parent Organisation Leader" isWriteable="false">
+<AttrDefn mdsid="m82f2a994-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761091391789375">
+<Expr mdsid="m00000004-01f4-0000-463c-e30f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_ORG"."ORG_PARENT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-463c-e30f00000000-m82e3dc93-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc90-0ca8-1000-90a3-0af502b50000.xml#m82e3dc93-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc7f-0ca8-1000-90a3-0af502b50000" name="Function" isWriteable="false">
+<AttrDefn mdsid="m82f2a995-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761101391789375">
+<Expr mdsid="m00000005-01f4-0000-bc6c-d35800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_ORG"."DEPT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-bc6c-d35800000000-m82e3dc95-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc90-0ca8-1000-90a3-0af502b50000.xml#m82e3dc95-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m82f23454-0ca8-1000-90a3-0af502b50000" name="LOIC_ORG_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f23454-0ca8-1000-90a3-0af502b50000-m82f0fc7b-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0fc7a-0ca8-1000-90a3-0af502b50000.xml#m82f0fc7b-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0fc7a-0ca8-1000-90a3-0af502b50000-m82f344e1-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f344e1-0ca8-1000-90a3-0af502b50000.xml#m82f344e1-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

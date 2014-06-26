@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m80cbc80c-07e3-0000-714b-e31d00000000" name="H10 Order Payment Options" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="false" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/80cbc80c-07e3-0000-714b-e31d00000000.xml#m80cbc825-07e9-0000-714b-e31d00000000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cbbdd2-07d0-0000-714b-e31d00000000.xml#m80cbbdd2-07d0-0000-714b-e31d00000000">
+<LogicalLevel mdsid="m80cbc825-07e9-0000-714b-e31d00000000" name="Total" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;Total&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="m80cbc825-07e9-0000-714b-e31d00000000_m80cbc949-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cbc80c-07e3-0000-714b-e31d00000000.xml#m80cbc949-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cbc949-07e9-0000-714b-e31d00000000" name="Payment Type" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Payment Type&apos;">
+<LogicalKey mdsid="m80cbc94b-07d8-0000-714b-e31d00000000" name="Payment Type Code" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cbc94b-07d8-0000-714b-e31d00000000-m80cbc835-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cbc829-07f3-0000-714b-e31d00000000.xml#m80cbc835-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cbc949-07e9-0000-714b-e31d00000000_m80cbc837-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cbc80c-07e3-0000-714b-e31d00000000.xml#m80cbc837-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cbc949-07e9-0000-714b-e31d00000000-m80cbc835-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cbc829-07f3-0000-714b-e31d00000000.xml#m80cbc835-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cbc837-07e9-0000-714b-e31d00000000" name="Odr Payment Detail" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Odr Payment Detail&apos;">
+<LogicalKey mdsid="m80cbc83e-07d8-0000-714b-e31d00000000" name="D Order Payment Options_Key" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cbc83e-07d8-0000-714b-e31d00000000-m80cbc834-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cbc829-07f3-0000-714b-e31d00000000.xml#m80cbc834-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cbc837-07e9-0000-714b-e31d00000000-m80cbc834-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cbc829-07f3-0000-714b-e31d00000000.xml#m80cbc834-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

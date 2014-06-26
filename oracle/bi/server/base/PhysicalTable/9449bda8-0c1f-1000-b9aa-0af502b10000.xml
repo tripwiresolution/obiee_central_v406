@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m9449bda8-0c1f-1000-b9aa-0af502b10000" name="SAMP_TIME_DAY_D" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" x="264" y="1550" uri="VALUEOF(BI_EE_HOME)/sample/SampleAppFiles/Data/SAMP_TIME_DAY_D.xml" maxConn="0" containerRef="/oracle/bi/server/base/Schema/9449bd23-0c1f-1000-b9aa-0af502b10000.xml#m9449bd23-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Time dimension table at day grain. Stores one record for each day.]]></Description>
+<PhysicalColumn mdsid="m9449bda9-0c1f-1000-b9aa-0af502b10000" name="Beg_of_Mth_Wid" dataType="INT" specialType="none">
+<Description><![CDATA[Beginning of Mth Wid: Stores the value in the format YYYYMMDD.
+For the day key 20100202, Beg_of_Qtr_Wid will be 20100201.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdaa-0c1f-1000-b9aa-0af502b10000" name="Beg_of_Qtr_Wid" dataType="INT" specialType="none">
+<Description><![CDATA[Beginning of Qtr Wid: Stores the value in the format YYYYMMDD.
+For the day key 20100202, Beg_of_Qtr_Wid will be 20100101.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdab-0c1f-1000-b9aa-0af502b10000" name="Beg_of_Week_Wid" dataType="INT" specialType="none">
+<Description><![CDATA[Beginning of Week Wid: Stores the value in the format YYYYMMDD.
+For the day key 20100202, Beg_of_Week_Wid will be 20100131.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdac-0c1f-1000-b9aa-0af502b10000" name="Cal_Half" dataType="INT" specialType="none">
+<Description><![CDATA[Calendar Half: Stores value 1 or 2]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdad-0c1f-1000-b9aa-0af502b10000" name="Cal_Month" dataType="INT" specialType="none">
+<Description><![CDATA[Calendar Month: Stores value 1,2,3 ..upto 12]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdae-0c1f-1000-b9aa-0af502b10000" name="Cal_Qtr" dataType="INT" specialType="none">
+<Description><![CDATA[Calendar Quarter: Stores value 1,2,3 or 4]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdaf-0c1f-1000-b9aa-0af502b10000" name="Cal_Week" dataType="INT" specialType="none">
+<Description><![CDATA[Calendar Week: Stores value 1,2,3 ..upto 53.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdb0-0c1f-1000-b9aa-0af502b10000" name="Cal_Year" dataType="INT" specialType="none">
+<Description><![CDATA[Calendar Year: Stores value in the format YYYY]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdb1-0c1f-1000-b9aa-0af502b10000" name="Calendar_Date" dataType="DATE" specialType="none">
+<Description><![CDATA[Calendar Date: Stores the information in date format .
+]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdb2-0c1f-1000-b9aa-0af502b10000" name="Day_Of_Month" dataType="INT" specialType="none">
+<Description><![CDATA[Day of Month: Stores the values 1, 2, 3.. upto 31.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdb3-0c1f-1000-b9aa-0af502b10000" name="Day_Of_Week" dataType="INT" specialType="none">
+<Description><![CDATA[Day of Week: Stores the values 1, 2, 3.. upto 7.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdb4-0c1f-1000-b9aa-0af502b10000" name="Day_Of_Year" dataType="INT" specialType="none">
+<Description><![CDATA[Day of Year: Stores the values 1, 2, 3.. upto 366.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdb5-0c1f-1000-b9aa-0af502b10000" name="Days_in_Mth" dataType="INT" specialType="none">
+<Description><![CDATA[Days in Month : Stores value 28, 29, 30 or 31.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdb6-0c1f-1000-b9aa-0af502b10000" name="Days_in_Qtr" dataType="INT" specialType="none">
+<Description><![CDATA[Days in Quarter : Stores value 90, 91 or 92]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdb7-0c1f-1000-b9aa-0af502b10000" name="Fscl_Half" dataType="INT" specialType="none">
+<Description><![CDATA[Fiscal Half : Stores the value 1 or 2]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdb8-0c1f-1000-b9aa-0af502b10000" name="Fscl_Month" dataType="INT" specialType="none">
+<Description><![CDATA[Fiscal Month : Stores the value 1, 2, 3.. upto 12.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdb9-0c1f-1000-b9aa-0af502b10000" name="Fscl_Qtr" dataType="INT" specialType="none">
+<Description><![CDATA[Fiscal Quarter : Stores the value 1, 2, 3 or 4]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdba-0c1f-1000-b9aa-0af502b10000" name="Fscl_Week" dataType="INT" specialType="none">
+<Description><![CDATA[Fiscal Week : Stores the value 1, 2, 3.. upto 53]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdbb-0c1f-1000-b9aa-0af502b10000" name="Fscl_Year" dataType="INT" specialType="none">
+<Description><![CDATA[Fiscal Year : Stores the fiscal year in the format YYYY]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdbc-0c1f-1000-b9aa-0af502b10000" name="Holiday" dataType="VARCHAR" precision="1" specialType="none">
+<Description><![CDATA[Holiday : Flag to indicate if a day is holiday or not.
+Possible vlaues are 0 or 1.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdbd-0c1f-1000-b9aa-0af502b10000" name="Julian_Day_Num" dataType="INT" specialType="none">
+<Description><![CDATA[Julian Day Number : Stores the day number in the Julian Calendar format.
+Eg:- 40570, 40571 and so on.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdbe-0c1f-1000-b9aa-0af502b10000" name="Julian_Month_Num" dataType="INT" specialType="none">
+<Description><![CDATA[Julian Month Number : Stores the month number in the Julian Calendar format. 
+Eg:- 500, 501 and so on.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdbf-0c1f-1000-b9aa-0af502b10000" name="Julian_Qtr_Num" dataType="INT" specialType="none">
+<Description><![CDATA[Julian Quarter Number : Stores the quarter number in the Julian Calendar format. 
+Eg:- 151, 152 and so on.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdc0-0c1f-1000-b9aa-0af502b10000" name="Julian_Week_Num" dataType="INT" specialType="none">
+<Description><![CDATA[Julian Week Number : Stores the week number in the Julian Calendar format. 
+Eg:- 2180, 2181 and so on.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdc1-0c1f-1000-b9aa-0af502b10000" name="Loaded" dataType="INT" specialType="none">
+<Description><![CDATA[Loaded: Flag to indicate if data is loaded for the specific month. 
+Possible values are 1 or 0.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdc2-0c1f-1000-b9aa-0af502b10000" name="Per_Name_Half" dataType="VARCHAR" precision="8" specialType="none">
+<Description><![CDATA[Period Name Half: Stores the Half year information in the format YYYY HYHalfYearNumber.
+Eg:- 2009 HY1]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdc3-0c1f-1000-b9aa-0af502b10000" name="Per_Name_Month" dataType="VARCHAR" precision="9" specialType="none">
+<Description><![CDATA[Period Name Month: Stores the year information in the format YYYY / MM.
+Eg:- 2009 / 01]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdc4-0c1f-1000-b9aa-0af502b10000" name="Per_Name_Qtr" dataType="VARCHAR" precision="7" specialType="none">
+<Description><![CDATA[Period Name Quarter: Stores the quarter information in the format YYYY QQuarterNumber.
+Eg:- 2009 Q1]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdc5-0c1f-1000-b9aa-0af502b10000" name="Per_Name_Week" dataType="VARCHAR" precision="12" specialType="none">
+<Description><![CDATA[Period Name Week: Stores the week information in the format YYYY Week Weeknumber.
+Eg:- 2009 Week 1]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdc6-0c1f-1000-b9aa-0af502b10000" name="Per_Name_Year" dataType="VARCHAR" precision="4" specialType="none">
+<Description><![CDATA[Period Name Year: Stores the year information in the format YYYY.
+Eg:- 2009]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bdc7-0c1f-1000-b9aa-0af502b10000" name="Day_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Day Key: Surrogate key of the table. Stores the day information in the format YYYYMMDD.
+Eg:- 20090101]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m84904eb0-0c8a-1000-8bc9-0af502b30000" name="TOTAL_VALUE" dataType="VARCHAR" precision="20" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m9449bf77-0c1f-1000-b9aa-0af502b10000" name="Row_Wid">
+<RefColumns>
+<RefColumn refId="m9449bf77-0c1f-1000-b9aa-0af502b10000-m9449bdc7-0c1f-1000-b9aa-0af502b10000" columnRef="/oracle/bi/server/base/PhysicalTable/9449bda8-0c1f-1000-b9aa-0af502b10000.xml#m9449bdc7-0c1f-1000-b9aa-0af502b10000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

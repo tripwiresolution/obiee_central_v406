@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m5f848390-0c10-1000-8529-7f0000010000" name="S_NQ_SUMMARY_ADVISOR" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/802b29ac-0bd3-0000-714b-e31d00000000.xml#m802b29ac-0bd3-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[S_NQ_SUMMARY_ADVISOR]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m5f8aec30-0c10-1000-8529-7f0000010000" name="LOGICAL_QUERY_ID" dataType="VARCHAR" precision="50" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m5f909180-0c10-1000-8529-7f0000010000" name="LOGICALFACTTABLEID" dataType="CHAR" precision="255" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m5f9413f0-0c10-1000-8529-7f0000010000" name="LOGICALTABLESOURCEIDVECTOR" dataType="VARCHAR" precision="4000" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m5f99b940-0c10-1000-8529-7f0000010000" name="PROCESSINGTIMEINMILLISEC" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m5f9ec250-0c10-1000-8529-7f0000010000" name="QUERYLEVELIDVECTOR" dataType="LONGVARCHAR" precision="4000" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m5fa41980-0c10-1000-8529-7f0000010000" name="QUERYSTATUS" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m5fa774e0-0c10-1000-8529-7f0000010000" name="SOURCECELLLEVELIDVECTOR" dataType="LONGVARCHAR" precision="4000" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m5faaf750-0c10-1000-8529-7f0000010000" name="VERSION" dataType="CHAR" precision="32" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="mbbadf6a0-0c2a-1000-ac17-0af06a760000" name="S_NQ_SUMMARY_ADVISOR_Key">
+<RefColumns>
+<RefColumn refId="mbbadf6a0-0c2a-1000-ac17-0af06a760000-m5f8aec30-0c10-1000-8529-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/5f848390-0c10-1000-8529-7f0000010000.xml#m5f8aec30-0c10-1000-8529-7f0000010000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="mc6412620-0c2d-1000-8868-0af06a760000" name="S_NQ_SUMMARY_ADVISOR_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mc63f0340-0c2d-1000-8868-0af06a760000">
+<RefColumns>
+<RefColumn refId="mc6412620-0c2d-1000-8868-0af06a760000-m5f8aec30-0c10-1000-8529-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/5f848390-0c10-1000-8529-7f0000010000.xml#m5f8aec30-0c10-1000-8529-7f0000010000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

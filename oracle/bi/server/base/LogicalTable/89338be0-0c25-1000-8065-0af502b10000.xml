@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m89338be0-0c25-1000-8065-0af502b10000" name="Us County Dim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cde354-07d0-0000-714b-e31d00000000.xml#m80cde354-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m89338be1-0c25-1000-8065-0af502b10000" name="Area" isWriteable="false">
+<AttrDefn mdsid="m89338bf4-0c25-1000-8065-0af502b10000" name="AD_3900:2124411335535518">
+<Expr mdsid="m00000001-01f4-0000-7093-026800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."AREA"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-7093-026800000000-m88d69eda-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m88d69eda-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m89338be2-0c25-1000-8065-0af502b10000" name="Area_id" isWriteable="false">
+<AttrDefn mdsid="m89338bf5-0c25-1000-8065-0af502b10000" name="AD_3900:2124421335535518">
+<Expr mdsid="m00000002-01f4-0000-bfbc-54f000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."AREA_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-bfbc-54f000000000-m88d69ed2-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m88d69ed2-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m89338be3-0c25-1000-8065-0af502b10000" name="Cbsa_id" isWriteable="false">
+<AttrDefn mdsid="m89338bf6-0c25-1000-8065-0af502b10000" name="AD_3900:2124431335535518">
+<Expr mdsid="m00000003-01f4-0000-3923-c05a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."CBSA_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-3923-c05a00000000-m88d69ed8-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m88d69ed8-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m89338be4-0c25-1000-8065-0af502b10000" name="County" isWriteable="false" descriptorIDRef="/oracle/bi/server/base/LogicalTable/89338be0-0c25-1000-8065-0af502b10000.xml#m8cc60170-0c25-1000-95d0-7f0000010000">
+<AttrDefn mdsid="m89338bf7-0c25-1000-8065-0af502b10000" name="AD_3900:2124441335535518">
+<Expr mdsid="m00000004-01f4-0000-0bd4-15cb00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."COUNTY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-0bd4-15cb00000000-m88d69ed1-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m88d69ed1-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m89338be5-0c25-1000-8065-0af502b10000" name="CTY_FIPS" isWriteable="false">
+<AttrDefn mdsid="m89338bf8-0c25-1000-8065-0af502b10000" name="AD_3900:2124451335535518">
+<Expr mdsid="m00000005-01f4-0000-1ebf-0d3000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."CTYFIPS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-1ebf-0d3000000000-m88d69ed4-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m88d69ed4-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m89338be6-0c25-1000-8065-0af502b10000" name="Msa_id" isWriteable="false">
+<AttrDefn mdsid="m89338bf9-0c25-1000-8065-0af502b10000" name="AD_3900:2124461335535518">
+<Expr mdsid="m00000006-01f4-0000-b7e3-309100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."MSA_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-b7e3-309100000000-m88d69ed7-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m88d69ed7-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m89338be7-0c25-1000-8065-0af502b10000" name="State" isWriteable="false">
+<AttrDefn mdsid="m89338bfa-0c25-1000-8065-0af502b10000" name="AD_3900:2124471335535518">
+<Expr mdsid="m00000007-01f4-0000-9247-10f300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."STATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-9247-10f300000000-m88d69ed5-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m88d69ed5-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m89338be8-0c25-1000-8065-0af502b10000" name="ST_FIPS" isWriteable="false">
+<AttrDefn mdsid="m89338bfb-0c25-1000-8065-0af502b10000" name="AD_3900:2124481335535518">
+<Expr mdsid="m00000008-01f4-0000-822d-101400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."STFIPS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-822d-101400000000-m88d69ed6-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m88d69ed6-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m89338be9-0c25-1000-8065-0af502b10000" name="Stname" isWriteable="false">
+<AttrDefn mdsid="m89338bfc-0c25-1000-8065-0af502b10000" name="AD_3900:2124491335535518">
+<Expr mdsid="m00000009-01f4-0000-3463-6c7800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."STNAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-3463-6c7800000000-m88d69ed3-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m88d69ed3-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m8cc60170-0c25-1000-95d0-7f0000010000" name="ST_CTY_FIPS" isWriteable="false">
+<AttrDefn mdsid="m8cc60171-0c25-1000-95d0-7f0000010000" name="AD_3900:2125261335541633">
+<Expr mdsid="m0000000a-01f4-0000-4310-448000000000" name="Expr">
+<ExprText><![CDATA["%1"||"%2" ]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."STFIPS"||"09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."CTYFIPS" ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-4310-448000000000-m88d69ed6-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m88d69ed6-0c25-1000-8065-0af502b10000"/>
+<RefObject refId="m0000000a-01f4-0000-4310-448000000000-m88d69ed4-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m88d69ed4-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m896c2810-0c25-1000-8065-0af502b10000" name="Primary" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m896c2810-0c25-1000-8065-0af502b10000-m89338be5-0c25-1000-8065-0af502b10000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/89338be0-0c25-1000-8065-0af502b10000.xml#m89338be5-0c25-1000-8065-0af502b10000"/>
+<RefLogicalColumn refId="m896c2810-0c25-1000-8065-0af502b10000-m89338be8-0c25-1000-8065-0af502b10000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/89338be0-0c25-1000-8065-0af502b10000.xml#m89338be8-0c25-1000-8065-0af502b10000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m89338be0-0c25-1000-8065-0af502b10000-m89338c06-0c25-1000-8065-0af502b10000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/89338c06-0c25-1000-8065-0af502b10000.xml#m89338c06-0c25-1000-8065-0af502b10000"/>
+</RefTableSources>
+</LogicalTable>

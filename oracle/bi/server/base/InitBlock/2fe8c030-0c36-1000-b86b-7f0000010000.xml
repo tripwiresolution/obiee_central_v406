@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<InitBlock mdsid="m2fe8c030-0c36-1000-b86b-7f0000010000" name="Custom Visibility Pres Layer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isSessionVar="true" refreshPeriod="86400" connectionPoolRef="/oracle/bi/server/base/ConnectionPool/80cb28c8-0bd5-0000-714b-e31d00000000.xml#m80cb28c8-0bd5-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SELECT
+case when 'GKENDAL'=upper(':USER') THEN 1 ELSE 0 END FROM  DUAL
+]]></Value>
+</DBMapItem>
+<RefVariables>
+<RefVariable refId="m2fe8c030-0c36-1000-b86b-7f0000010000-m2fe516b0-0c36-1000-b86b-7f0000010000" variableRef="/oracle/bi/server/base/Variable/2fe516b0-0c36-1000-b86b-7f0000010000.xml#m2fe516b0-0c36-1000-b86b-7f0000010000"/>
+</RefVariables>
+<InitString><![CDATA[SELECT
+case when 'GKENDAL'=upper(':USER') THEN 1 ELSE 0 END FROM  DUAL
+]]></InitString>
+</InitBlock>

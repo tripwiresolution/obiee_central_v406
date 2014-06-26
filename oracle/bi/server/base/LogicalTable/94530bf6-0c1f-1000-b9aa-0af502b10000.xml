@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m94530bf6-0c1f-1000-b9aa-0af502b10000" name="D6 Customers (Snowflakes)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="649" y="202" subjectAreaRef="/oracle/bi/server/base/BusinessModel/94530bf0-0c1f-1000-b9aa-0af502b10000.xml#m94530bf0-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[This logical table maps to the physical Customer Dimension table with various attributes like Customer Name, Status, Type and so on.
+It maps to 3 LTS and showcases snowflake dimension modelling.
+LTS1 Customers - Maps to the lowest grain of information.
+LTS2 Customer Segments - Maps to higher grain of information. Every customer belongs to a customer segment.
+LTS3 Customer Adresses - Maps to higher grain of information.
+]]></Description>
+<LogicalColumn mdsid="m94530bf7-0c1f-1000-b9aa-0af502b10000" name="C0  Customer Number" isWriteable="false">
+<Description><![CDATA[Help : 
+Customer Key is an integer that uniquely identifies each record in the Customer dimension table.]]></Description>
+<AttrDefn mdsid="m94530e6a-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978701332977199">
+<Expr mdsid="m00000001-01f4-0000-ae9d-573400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C0_Custom0003027B"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-ae9d-573400000000-m28348b92-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348b92-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530bf8-0c1f-1000-b9aa-0af502b10000" name="C1  Customer Name" isWriteable="false">
+<Description><![CDATA[Help : 
+Customer Name stores the first name followed by the last name.]]></Description>
+<AttrDefn mdsid="m94530e6b-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978711332977199">
+<Expr mdsid="m00000002-01f4-0000-6020-aae200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C1_Custom0003027C"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-6020-aae200000000-m28348b93-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348b93-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530bf9-0c1f-1000-b9aa-0af502b10000" name="C2  Customer Status" iconIndex="77" isDerived="true" isWriteable="false" descriptorIDRef="/oracle/bi/server/base/LogicalTable/94530bf6-0c1f-1000-b9aa-0af502b10000.xml#m94530bfa-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Help : 
+Stores the customer segment ID.]]></Description>
+<Expr mdsid="m00000003-01f4-0000-e72d-c9fa00000000" name="Expr">
+<ExprText><![CDATA[ LOOKUP( SPARSE "%1", "%2", "%2", 'Customer Status',  VALUEOF(NQ_SESSION."USERLOCALE"))]]></ExprText>
+<ExprTextDesc><![CDATA[ LOOKUP( SPARSE "01 - Sample App Exa"."L2 Lookups Other"."Lookup_Dsc", "01 - Sample App Exa"."D6 Customers (Snowflakes)"."C2k  Cust Status Key", "01 - Sample App Exa"."D6 Customers (Snowflakes)"."C2k  Cust Status Key", 'Customer Status',  VALUEOF(NQ_SESSION."USERLOCALE"))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-e72d-c9fa00000000-m94530cd8-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530cd5-0c1f-1000-b9aa-0af502b10000.xml#m94530cd8-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m00000003-01f4-0000-e72d-c9fa00000000-m94530bfa-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530bf6-0c1f-1000-b9aa-0af502b10000.xml#m94530bfa-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94530e6c-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978721332977199">
+<Expr mdsid="m00000004-01f4-0000-20ad-cf6900000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530bfa-0c1f-1000-b9aa-0af502b10000" name="C2k  Cust Status Key" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the status of the customer.]]></Description>
+<AttrDefn mdsid="m94530e6d-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978731332977199">
+<Expr mdsid="m00000005-01f4-0000-0c46-8db100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C2k_Cust_0003027E"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-0c46-8db100000000-m28348b94-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348b94-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530bfb-0c1f-1000-b9aa-0af502b10000" name="C3  Customer Type" iconIndex="77" isDerived="true" isWriteable="false" descriptorIDRef="/oracle/bi/server/base/LogicalTable/94530bf6-0c1f-1000-b9aa-0af502b10000.xml#m94530bfc-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Help : 
+Stores the customer segment ID.]]></Description>
+<Expr mdsid="m00000006-01f4-0000-6c09-3e7200000000" name="Expr">
+<ExprText><![CDATA[ LOOKUP( SPARSE "%1", "%2", "%2", 'Customer Type',  VALUEOF(NQ_SESSION."USERLOCALE"))]]></ExprText>
+<ExprTextDesc><![CDATA[ LOOKUP( SPARSE "01 - Sample App Exa"."L2 Lookups Other"."Lookup_Dsc", "01 - Sample App Exa"."D6 Customers (Snowflakes)"."C3k  Cust Type Key", "01 - Sample App Exa"."D6 Customers (Snowflakes)"."C3k  Cust Type Key", 'Customer Type',  VALUEOF(NQ_SESSION."USERLOCALE"))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-6c09-3e7200000000-m94530cd8-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530cd5-0c1f-1000-b9aa-0af502b10000.xml#m94530cd8-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m00000006-01f4-0000-6c09-3e7200000000-m94530bfc-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530bf6-0c1f-1000-b9aa-0af502b10000.xml#m94530bfc-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94530e6e-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978741332977199">
+<Expr mdsid="m00000007-01f4-0000-dfc1-f70b00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530bfc-0c1f-1000-b9aa-0af502b10000" name="C3k  Cust Type Key" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the customer type.]]></Description>
+<AttrDefn mdsid="m94530e6f-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978751332977199">
+<Expr mdsid="m00000008-01f4-0000-116e-89ea00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C3k_Cust_00030280"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-116e-89ea00000000-m28348b95-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348b95-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530bfd-0c1f-1000-b9aa-0af502b10000" name="C4  Customer Segment" isWriteable="false" descriptorIDRef="/oracle/bi/server/base/LogicalTable/94530bf6-0c1f-1000-b9aa-0af502b10000.xml#m94530bfe-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Help : 
+Stores the customer segment description.]]></Description>
+<AttrDefn mdsid="m94530e70-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978761332977199">
+<Expr mdsid="m00000009-01f4-0000-cb64-8f3200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C4_Custom00030281"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-cb64-8f3200000000-m28348b96-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348b96-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530bfe-0c1f-1000-b9aa-0af502b10000" name="C4k  Cust Segment Key" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the customer segment ID.]]></Description>
+<AttrDefn mdsid="m94530e71-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978771332977199">
+<Expr mdsid="m0000000a-01f4-0000-99f1-9f3500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C4k_Cust_00030282"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-99f1-9f3500000000-m28348b97-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348b97-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530bff-0c1f-1000-b9aa-0af502b10000" name="C5  Income Level" iconIndex="77" isDerived="true" isWriteable="false" descriptorIDRef="/oracle/bi/server/base/LogicalTable/94530bf6-0c1f-1000-b9aa-0af502b10000.xml#m94530c00-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Help : 
+Stores the customer segment ID.]]></Description>
+<Expr mdsid="m0000000b-01f4-0000-5c95-a94f00000000" name="Expr">
+<ExprText><![CDATA[ LOOKUP( SPARSE "%1", "%2", "%2", 'Income Level',  VALUEOF(NQ_SESSION."USERLOCALE"))]]></ExprText>
+<ExprTextDesc><![CDATA[ LOOKUP( SPARSE "01 - Sample App Exa"."L2 Lookups Other"."Lookup_Dsc", "01 - Sample App Exa"."D6 Customers (Snowflakes)"."C5k  Income Level Key", "01 - Sample App Exa"."D6 Customers (Snowflakes)"."C5k  Income Level Key", 'Income Level',  VALUEOF(NQ_SESSION."USERLOCALE"))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-5c95-a94f00000000-m94530cd8-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530cd5-0c1f-1000-b9aa-0af502b10000.xml#m94530cd8-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m0000000b-01f4-0000-5c95-a94f00000000-m94530c00-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530bf6-0c1f-1000-b9aa-0af502b10000.xml#m94530c00-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94530e72-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978781332977199">
+<Expr mdsid="m0000000c-01f4-0000-f7ad-978000000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c00-0c1f-1000-b9aa-0af502b10000" name="C5k  Income Level Key" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the customer industry description.]]></Description>
+<AttrDefn mdsid="m94530e73-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978791332977199">
+<Expr mdsid="m0000000d-01f4-0000-03e5-45c100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C5k_Incom00030284"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-03e5-45c100000000-m28348b98-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348b98-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c01-0c1f-1000-b9aa-0af502b10000" name="C6  Credit Rate" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the Customer credit rate desription.]]></Description>
+<AttrDefn mdsid="m94530e74-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978801332977199">
+<Expr mdsid="m0000000e-01f4-0000-6e59-36dc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C6_Credit00030285"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-6e59-36dc00000000-m28348b99-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348b99-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c02-0c1f-1000-b9aa-0af502b10000" name="C7a Marital Status (Dense Lookup)" iconIndex="77" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the product's color description.]]></Description>
+<Expr mdsid="m0000000f-01f4-0000-92b7-1a6800000000" name="Expr">
+<ExprText><![CDATA[ LOOKUP( DENSE "%1", "%2", 'Marital Status',  VALUEOF(NQ_SESSION."USERLOCALE"))]]></ExprText>
+<ExprTextDesc><![CDATA[ LOOKUP( DENSE "01 - Sample App Exa"."L2 Lookups Other"."Lookup_Dsc", "01 - Sample App Exa"."D6 Customers (Snowflakes)"."C7k  Marital Status Key", 'Marital Status',  VALUEOF(NQ_SESSION."USERLOCALE"))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-92b7-1a6800000000-m94530cd8-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530cd5-0c1f-1000-b9aa-0af502b10000.xml#m94530cd8-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m0000000f-01f4-0000-92b7-1a6800000000-m94530c04-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530bf6-0c1f-1000-b9aa-0af502b10000.xml#m94530c04-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94530e75-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978811332977199">
+<Expr mdsid="m00000010-01f4-0000-242c-1e3400000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c03-0c1f-1000-b9aa-0af502b10000" name="C7b Marital Status (Sparse Lookup)" iconIndex="77" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the product's color description.]]></Description>
+<Expr mdsid="m00000011-01f4-0000-d00d-caf300000000" name="Expr">
+<ExprText><![CDATA[ LOOKUP( SPARSE "%1", "%2", "%2", 'Marital Status',  VALUEOF(NQ_SESSION."USERLOCALE"))]]></ExprText>
+<ExprTextDesc><![CDATA[ LOOKUP( SPARSE "01 - Sample App Exa"."L2 Lookups Other"."Lookup_Dsc", "01 - Sample App Exa"."D6 Customers (Snowflakes)"."C7k  Marital Status Key", "01 - Sample App Exa"."D6 Customers (Snowflakes)"."C7k  Marital Status Key", 'Marital Status',  VALUEOF(NQ_SESSION."USERLOCALE"))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-d00d-caf300000000-m94530cd8-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530cd5-0c1f-1000-b9aa-0af502b10000.xml#m94530cd8-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m00000011-01f4-0000-d00d-caf300000000-m94530c04-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530bf6-0c1f-1000-b9aa-0af502b10000.xml#m94530c04-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94530e76-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978821332977199">
+<Expr mdsid="m00000012-01f4-0000-3b00-fd7c00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c04-0c1f-1000-b9aa-0af502b10000" name="C7k  Marital Status Key" isWriteable="false">
+<AttrDefn mdsid="m94530e77-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978831332977199">
+<Expr mdsid="m00000013-01f4-0000-04b4-a08000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C7k_Marit00030288"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-04b4-a08000000000-m28348b9a-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348b9a-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c05-0c1f-1000-b9aa-0af502b10000" name="C8  Prev Marital St" isWriteable="false">
+<AttrDefn mdsid="m94530e78-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978841332977199">
+<Expr mdsid="m00000014-01f4-0000-6afc-b0a100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C8_Prev_M00030289"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-6afc-b0a100000000-m28348b9b-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348b9b-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c06-0c1f-1000-b9aa-0af502b10000" name="C9  Gender" isWriteable="false">
+<AttrDefn mdsid="m94530e79-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978851332977199">
+<Expr mdsid="m00000015-01f4-0000-6bc9-406300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C9_Gender0003028A"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-6bc9-406300000000-m28348b9c-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348b9c-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c07-0c1f-1000-b9aa-0af502b10000" name="C10  Prev Marital St Date" isWriteable="false">
+<AttrDefn mdsid="m94530e7a-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978861332977199">
+<Expr mdsid="m00000016-01f4-0000-cceb-dad100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C10_Prev_0003028B"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-cceb-dad100000000-m28348b9d-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348b9d-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c08-0c1f-1000-b9aa-0af502b10000" name="C12  First Contact Date" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the customer's first contact date in the format YYYY-MM-DD.]]></Description>
+<AttrDefn mdsid="m94530e7b-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978871332977199">
+<Expr mdsid="m00000017-01f4-0000-60ee-5ae300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C12_First0003028C"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-60ee-5ae300000000-m28348b9e-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348b9e-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c09-0c1f-1000-b9aa-0af502b10000" name="C13  Last Order Date-Time" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the customer's last order date in the format YYYY-MM-DD.]]></Description>
+<AttrDefn mdsid="m94530e7c-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978881332977199">
+<Expr mdsid="m00000018-01f4-0000-571c-fe1100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C13_Last_0003028D"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000018-01f4-0000-571c-fe1100000000-m28348b9f-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348b9f-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c0a-0c1f-1000-b9aa-0af502b10000" name="C14  Birth Date" isWriteable="false">
+<AttrDefn mdsid="m94530e7d-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978891332977199">
+<Expr mdsid="m00000019-01f4-0000-d8f2-955700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C14_Birth0003028E"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000019-01f4-0000-d8f2-955700000000-m28348ba0-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348ba0-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c0b-0c1f-1000-b9aa-0af502b10000" name="C18  Numerical Attribute" isWriteable="false">
+<AttrDefn mdsid="m94530e7e-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978901332977199">
+<Expr mdsid="m0000001a-01f4-0000-1074-a89600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C18_Numer0003028F"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001a-01f4-0000-1074-a89600000000-m28348ba1-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348ba1-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c0c-0c1f-1000-b9aa-0af502b10000" name="C19  Months as Customer" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the customer's first contact date in the format YYYY-MM-DD.]]></Description>
+<Expr mdsid="m0000001b-01f4-0000-3105-391700000000" name="Expr">
+<ExprText><![CDATA[ TIMESTAMPDIFF( SQL_TSI_MONTH , "%1",  CAST ( VALUEOF(NQ_SESSION."%2") AS DATE ))]]></ExprText>
+<ExprTextDesc><![CDATA[ TIMESTAMPDIFF( SQL_TSI_MONTH , "01 - Sample App Exa"."D6 Customers (Snowflakes)"."C12  First Contact Date",  CAST ( VALUEOF(NQ_SESSION."LAST_REFRESH_DT") AS DATE ))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001b-01f4-0000-3105-391700000000-m94530c08-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530bf6-0c1f-1000-b9aa-0af502b10000.xml#m94530c08-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m0000001b-01f4-0000-3105-391700000000-m80cab558-0bd7-0000-714b-e31d00000000" objectRef="/oracle/bi/server/base/Variable/80cab558-0bd7-0000-714b-e31d00000000.xml#m80cab558-0bd7-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94530e7f-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978911332977199">
+<Expr mdsid="m0000001c-01f4-0000-ac43-9d7f00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c0d-0c1f-1000-b9aa-0af502b10000" name="C20  Years as Customer" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the customer's first contact date in the format YYYY-MM-DD.]]></Description>
+<Expr mdsid="m0000001d-01f4-0000-eb01-f35b00000000" name="Expr">
+<ExprText><![CDATA[ TIMESTAMPDIFF( SQL_TSI_YEAR , "%1",  CAST ( VALUEOF(NQ_SESSION."%2") AS DATE ))]]></ExprText>
+<ExprTextDesc><![CDATA[ TIMESTAMPDIFF( SQL_TSI_YEAR , "01 - Sample App Exa"."D6 Customers (Snowflakes)"."C12  First Contact Date",  CAST ( VALUEOF(NQ_SESSION."LAST_REFRESH_DT") AS DATE ))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001d-01f4-0000-eb01-f35b00000000-m94530c08-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530bf6-0c1f-1000-b9aa-0af502b10000.xml#m94530c08-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m0000001d-01f4-0000-eb01-f35b00000000-m80cab558-0bd7-0000-714b-e31d00000000" objectRef="/oracle/bi/server/base/Variable/80cab558-0bd7-0000-714b-e31d00000000.xml#m80cab558-0bd7-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94530e80-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978921332977199">
+<Expr mdsid="m0000001e-01f4-0000-7397-cae300000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c0e-0c1f-1000-b9aa-0af502b10000" name="C19 === Calculated Attributes =======" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m0000001f-01f4-0000-90dd-25b500000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m94530e81-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978931332977199">
+<Expr mdsid="m00000020-01f4-0000-c0cf-97ab00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c0f-0c1f-1000-b9aa-0af502b10000" name="C21  Customer Age" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the customer's first contact date in the format YYYY-MM-DD.]]></Description>
+<Expr mdsid="m00000021-01f4-0000-2cdf-4c7700000000" name="Expr">
+<ExprText><![CDATA[ TIMESTAMPDIFF( SQL_TSI_YEAR , "%1",  CAST ( VALUEOF(NQ_SESSION."%2") AS DATE ))]]></ExprText>
+<ExprTextDesc><![CDATA[ TIMESTAMPDIFF( SQL_TSI_YEAR , "01 - Sample App Exa"."D6 Customers (Snowflakes)"."C14  Birth Date",  CAST ( VALUEOF(NQ_SESSION."LAST_REFRESH_DT") AS DATE ))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000021-01f4-0000-2cdf-4c7700000000-m94530c0a-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530bf6-0c1f-1000-b9aa-0af502b10000.xml#m94530c0a-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m00000021-01f4-0000-2cdf-4c7700000000-m80cab558-0bd7-0000-714b-e31d00000000" objectRef="/oracle/bi/server/base/Variable/80cab558-0bd7-0000-714b-e31d00000000.xml#m80cab558-0bd7-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94530e82-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978941332977199">
+<Expr mdsid="m00000022-01f4-0000-8234-af7200000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c10-0c1f-1000-b9aa-0af502b10000" name="C50  === Addresses Objects =====" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m00000023-01f4-0000-c13b-eb6a00000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m94530e83-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978951332977199">
+<Expr mdsid="m00000024-01f4-0000-beda-965400000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c11-0c1f-1000-b9aa-0af502b10000" name="C50  Region" isWriteable="false">
+<AttrDefn mdsid="m94530e84-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978961332977199">
+<Expr mdsid="m00000025-01f4-0000-8bd7-586d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C50_Regio00030295"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000025-01f4-0000-8bd7-586d00000000-m28348ba2-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348ba2-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c12-0c1f-1000-b9aa-0af502b10000" name="C51  Area" isWriteable="false">
+<AttrDefn mdsid="m94530e85-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978971332977199">
+<Expr mdsid="m00000026-01f4-0000-ef4e-836400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C51_Area00030296"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000026-01f4-0000-ef4e-836400000000-m28348ba3-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348ba3-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c13-0c1f-1000-b9aa-0af502b10000" name="C52  Country Name" isWriteable="false">
+<AttrDefn mdsid="m94530e86-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978981332977199">
+<Expr mdsid="m00000027-01f4-0000-5002-8e3100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C52_Count00030297"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000027-01f4-0000-5002-8e3100000000-m28348ba4-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348ba4-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c14-0c1f-1000-b9aa-0af502b10000" name="C53  State Province" isWriteable="false">
+<AttrDefn mdsid="m94530e87-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1978991332977199">
+<Expr mdsid="m00000028-01f4-0000-f517-dae100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C53_State00030298"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000028-01f4-0000-f517-dae100000000-m28348ba5-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348ba5-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c15-0c1f-1000-b9aa-0af502b10000" name="C54  State Code" isWriteable="false">
+<AttrDefn mdsid="m94530e88-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979001332977199">
+<Expr mdsid="m00000029-01f4-0000-40ea-d7bd00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C54_State00030299"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000029-01f4-0000-40ea-d7bd00000000-m28348ba6-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348ba6-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c16-0c1f-1000-b9aa-0af502b10000" name="C55  City" isWriteable="false">
+<AttrDefn mdsid="m94530e89-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979011332977199">
+<Expr mdsid="m0000002a-01f4-0000-1fc3-027400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C55_City0003029A"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002a-01f4-0000-1fc3-027400000000-m28348ba7-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348ba7-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c17-0c1f-1000-b9aa-0af502b10000" name="C56  Postal Code" isWriteable="false">
+<AttrDefn mdsid="m94530e8a-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979021332977199">
+<Expr mdsid="m0000002b-01f4-0000-c20b-2b9a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C56_Posta0003029B"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002b-01f4-0000-c20b-2b9a00000000-m28348ba8-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348ba8-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c18-0c1f-1000-b9aa-0af502b10000" name="C57  Address Line 1" isWriteable="false">
+<AttrDefn mdsid="m94530e8b-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979031332977199">
+<Expr mdsid="m0000002c-01f4-0000-6c1f-12e700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C57_Addre0003029C"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002c-01f4-0000-6c1f-12e700000000-m28348ba9-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348ba9-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c19-0c1f-1000-b9aa-0af502b10000" name="C58  Address Line 2" isWriteable="false">
+<AttrDefn mdsid="m94530e8c-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979041332977199">
+<Expr mdsid="m0000002d-01f4-0000-50a5-4f0900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C58_Addre0003029D"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002d-01f4-0000-50a5-4f0900000000-m28348baa-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348baa-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c1a-0c1f-1000-b9aa-0af502b10000" name="C59  Establishment Name" isWriteable="false">
+<AttrDefn mdsid="m94530e8d-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979051332977199">
+<Expr mdsid="m0000002e-01f4-0000-66da-2d1d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C59_Estab0003029E"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002e-01f4-0000-66da-2d1d00000000-m28348bab-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348bab-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c1b-0c1f-1000-b9aa-0af502b10000" name="C60  Full Address" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000002f-01f4-0000-3dfc-65cc00000000" name="Expr">
+<ExprText><![CDATA["%1" || ' ' || "%2" || ', ' || "%3" || ', ' || "%4" || ' ' || "%5"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Exa"."D6 Customers (Snowflakes)"."C57  Address Line 1" || ' ' || "01 - Sample App Exa"."D6 Customers (Snowflakes)"."C58  Address Line 2" || ', ' || "01 - Sample App Exa"."D6 Customers (Snowflakes)"."C55  City" || ', ' || "01 - Sample App Exa"."D6 Customers (Snowflakes)"."C54  State Code" || ' ' || "01 - Sample App Exa"."D6 Customers (Snowflakes)"."C56  Postal Code"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002f-01f4-0000-3dfc-65cc00000000-m94530c18-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530bf6-0c1f-1000-b9aa-0af502b10000.xml#m94530c18-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m0000002f-01f4-0000-3dfc-65cc00000000-m94530c19-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530bf6-0c1f-1000-b9aa-0af502b10000.xml#m94530c19-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m0000002f-01f4-0000-3dfc-65cc00000000-m94530c16-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530bf6-0c1f-1000-b9aa-0af502b10000.xml#m94530c16-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m0000002f-01f4-0000-3dfc-65cc00000000-m94530c15-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530bf6-0c1f-1000-b9aa-0af502b10000.xml#m94530c15-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m0000002f-01f4-0000-3dfc-65cc00000000-m94530c17-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530bf6-0c1f-1000-b9aa-0af502b10000.xml#m94530c17-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94530e8e-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979061332977199">
+<Expr mdsid="m00000030-01f4-0000-54bb-f1d000000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c1c-0c1f-1000-b9aa-0af502b10000" name="C60k  Address Key" iconIndex="91" isWriteable="false">
+<AttrDefn mdsid="m94530e8f-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979071332977199">
+<Expr mdsid="m00000031-01f4-0000-7ee5-d75700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C60k_Addr000302A0"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000031-01f4-0000-7ee5-d75700000000-m28348bac-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348bac-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c1d-0c1f-1000-b9aa-0af502b10000" name="C61  ------- Adress Geo Codes -----------" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m00000032-01f4-0000-8036-cef400000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m94530e90-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979081332977199">
+<Expr mdsid="m00000033-01f4-0000-580a-a93e00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c1e-0c1f-1000-b9aa-0af502b10000" name="C61  Geo Country Code" isWriteable="false">
+<AttrDefn mdsid="m94530e91-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979091332977199">
+<Expr mdsid="m00000034-01f4-0000-0d71-405d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C61_Geo_C000302A2"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000034-01f4-0000-0d71-405d00000000-m28348bad-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348bad-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c1f-0c1f-1000-b9aa-0af502b10000" name="C62  Geo Ctry State Name" isWriteable="false">
+<AttrDefn mdsid="m94530e92-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979101332977199">
+<Expr mdsid="m00000035-01f4-0000-90f7-dda800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C62_Geo_C000302A3"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000035-01f4-0000-90f7-dda800000000-m28348bae-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348bae-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c20-0c1f-1000-b9aa-0af502b10000" name="C63  Geo Ctry State City Name" isWriteable="false">
+<AttrDefn mdsid="m94530e93-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979111332977199">
+<Expr mdsid="m00000036-01f4-0000-19b7-df9c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C63_Geo_C000302A4"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000036-01f4-0000-19b7-df9c00000000-m28348baf-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348baf-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c21-0c1f-1000-b9aa-0af502b10000" name="C64  Latitude" isWriteable="false">
+<AttrDefn mdsid="m94530e94-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979121332977199">
+<Expr mdsid="m00000037-01f4-0000-8017-a3d600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C64_Latit000302A5"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000037-01f4-0000-8017-a3d600000000-m28348bb0-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348bb0-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c22-0c1f-1000-b9aa-0af502b10000" name="C65  Longitude" isWriteable="false">
+<AttrDefn mdsid="m94530e95-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979131332977199">
+<Expr mdsid="m00000038-01f4-0000-67d6-3bc900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C65_Longi000302A6"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000038-01f4-0000-67d6-3bc900000000-m28348bb1-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348bb1-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c23-0c1f-1000-b9aa-0af502b10000" name="C66  Lat_Long" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000039-01f4-0000-6dcd-2f7600000000" name="Expr">
+<ExprText><![CDATA[ CAST ( ROUND("%1", 7) AS VARCHAR ( 15 )) || '_' ||  CAST ( ROUND("%2", 7) AS VARCHAR ( 15 ))]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ( ROUND("01 - Sample App Exa"."D6 Customers (Snowflakes)"."C64  Latitude", 7) AS VARCHAR ( 15 )) || '_' ||  CAST ( ROUND("01 - Sample App Exa"."D6 Customers (Snowflakes)"."C65  Longitude", 7) AS VARCHAR ( 15 ))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000039-01f4-0000-6dcd-2f7600000000-m94530c21-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530bf6-0c1f-1000-b9aa-0af502b10000.xml#m94530c21-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m00000039-01f4-0000-6dcd-2f7600000000-m94530c22-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530bf6-0c1f-1000-b9aa-0af502b10000.xml#m94530c22-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94530e96-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979141332977199">
+<Expr mdsid="m0000003a-01f4-0000-8c3b-096400000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c24-0c1f-1000-b9aa-0af502b10000" name="C67  Geo Postal Code" isWriteable="false">
+<AttrDefn mdsid="m94530e97-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979151332977199">
+<Expr mdsid="m0000003b-01f4-0000-0a82-f0ef00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C67_Geo_P000302A8"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000003b-01f4-0000-0a82-f0ef00000000-m28348bb2-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348bb2-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c25-0c1f-1000-b9aa-0af502b10000" name="C68  Region Code" isWriteable="false">
+<AttrDefn mdsid="m94530e98-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979161332977199">
+<Expr mdsid="m0000003c-01f4-0000-480b-da4200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C68_Regio000302A9"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000003c-01f4-0000-480b-da4200000000-m28348bb3-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348bb3-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530c26-0c1f-1000-b9aa-0af502b10000" name="C69  Area Code" isWriteable="false">
+<AttrDefn mdsid="m94530e99-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979171332977199">
+<Expr mdsid="m0000003d-01f4-0000-0942-c66800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."SA_Custome00030406"."C69_Area_000302AA"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000003d-01f4-0000-0942-c66800000000-m28348bb4-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28348b90-0c71-1000-a576-0af502b30000.xml#m28348bb4-0c71-1000-a576-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m94530e61-0c1f-1000-b9aa-0af502b10000" name="Dim 01 Customer_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m94530e61-0c1f-1000-b9aa-0af502b10000-m94530bf7-0c1f-1000-b9aa-0af502b10000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530bf6-0c1f-1000-b9aa-0af502b10000.xml#m94530bf7-0c1f-1000-b9aa-0af502b10000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m94530bf6-0c1f-1000-b9aa-0af502b10000-m9453338f-0c1f-1000-b9aa-0af502b10000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/9453338f-0c1f-1000-b9aa-0af502b10000.xml#m9453338f-0c1f-1000-b9aa-0af502b10000"/>
+<RefLogicalTableSource refId="m94530bf6-0c1f-1000-b9aa-0af502b10000-m94533390-0c1f-1000-b9aa-0af502b10000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/94533390-0c1f-1000-b9aa-0af502b10000.xml#m94533390-0c1f-1000-b9aa-0af502b10000"/>
+<RefLogicalTableSource refId="m94530bf6-0c1f-1000-b9aa-0af502b10000-m94533391-0c1f-1000-b9aa-0af502b10000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/94533391-0c1f-1000-b9aa-0af502b10000.xml#m94533391-0c1f-1000-b9aa-0af502b10000"/>
+<RefLogicalTableSource refId="m94530bf6-0c1f-1000-b9aa-0af502b10000-m2836fc90-0c71-1000-a576-0af502b30000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/2836fc90-0c71-1000-a576-0af502b30000.xml#m2836fc90-0c71-1000-a576-0af502b30000"/>
+</RefTableSources>
+</LogicalTable>

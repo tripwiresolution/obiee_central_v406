@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cab647-07f3-0000-714b-e31d00000000" name="D5 Sales Rep (Parent Child Hier)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="407" y="549" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cab573-07d0-0000-714b-e31d00000000.xml#m80cab573-07d0-0000-714b-e31d00000000">
+<Description><![CDATA[ZZZ - Not yet filled]]></Description>
+<LogicalColumn mdsid="m80cab648-07d6-0000-714b-e31d00000000" name="E0  Sales Rep Number" isWriteable="false">
+<AttrDefn mdsid="m80cab7bd-0f3c-0000-714b-e31d00000000" name="AD_3900:123331262767587">
+<Expr mdsid="m00000001-01f4-0000-fea9-713c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D50 Sales Rep (Parent Child Hierarchy)"."Employee_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-fea9-713c00000000-m80cb69ae-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb682c-0bb9-0000-714b-e31d00000000.xml#m80cb69ae-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab649-07d6-0000-714b-e31d00000000" name="E1  Sales Rep Name" isWriteable="false">
+<AttrDefn mdsid="m80cab7be-0f3c-0000-714b-e31d00000000" name="AD_3900:123341262767587">
+<Expr mdsid="m00000002-01f4-0000-92e7-2ac600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D50 Sales Rep (Parent Child Hierarchy)"."Empl_Name"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-92e7-2ac600000000-m80cb69ad-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb682c-0bb9-0000-714b-e31d00000000.xml#m80cb69ad-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab64a-07d6-0000-714b-e31d00000000" name="E2  Sales Rep Type" isWriteable="false">
+<AttrDefn mdsid="m80cab7bf-0f3c-0000-714b-e31d00000000" name="AD_3900:123351262767587">
+<Expr mdsid="m00000003-01f4-0000-2d47-07f400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D50 Sales Rep (Parent Child Hierarchy)"."Type"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-2d47-07f400000000-m80cb69b1-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb682c-0bb9-0000-714b-e31d00000000.xml#m80cb69b1-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab64c-07d6-0000-714b-e31d00000000" name="E4  Position" isWriteable="false" descriptorIDRef="/oracle/bi/server/base/LogicalTable/80cab647-07f3-0000-714b-e31d00000000.xml#m80cab64b-07d6-0000-714b-e31d00000000">
+<AttrDefn mdsid="m80cab7c1-0f3c-0000-714b-e31d00000000" name="AD_3900:123371262767587">
+<Expr mdsid="m00000004-01f4-0000-ef6a-251c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D52 Sales Rep Position"."Postn_Desc"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-ef6a-251c00000000-m80cb69b7-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb682e-0bb9-0000-714b-e31d00000000.xml#m80cb69b7-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab64b-07d6-0000-714b-e31d00000000" name="E4k  Position Key" isWriteable="false">
+<AttrDefn mdsid="m80cab7c0-0f3c-0000-714b-e31d00000000" name="AD_3900:123361262767587">
+<Expr mdsid="m00000005-01f4-0000-5663-c5d300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D50 Sales Rep (Parent Child Hierarchy)"."Postn_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-5663-c5d300000000-m80cb69af-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb682c-0bb9-0000-714b-e31d00000000.xml#m80cb69af-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab64d-07d6-0000-714b-e31d00000000" name="E6  Position Level" isWriteable="false">
+<AttrDefn mdsid="m80cab7c2-0f3c-0000-714b-e31d00000000" name="AD_3900:123381262767587">
+<Expr mdsid="m00000006-01f4-0000-f5d3-fd0200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D52 Sales Rep Position"."Postn_Level"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-f5d3-fd0200000000-m80cb69b8-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb682e-0bb9-0000-714b-e31d00000000.xml#m80cb69b8-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab64e-07d6-0000-714b-e31d00000000" name="E7  Hire Date" isWriteable="false">
+<AttrDefn mdsid="m80cab7c3-0f3c-0000-714b-e31d00000000" name="AD_3900:123391262767587">
+<Expr mdsid="m00000007-01f4-0000-e7c8-90f700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D50 Sales Rep (Parent Child Hierarchy)"."Hire_Dt"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-e7c8-90f700000000-m80cb69b0-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb682c-0bb9-0000-714b-e31d00000000.xml#m80cb69b0-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab64f-07d6-0000-714b-e31d00000000" name="E8  Manager Number" isWriteable="false">
+<AttrDefn mdsid="m80cab7c4-0f3c-0000-714b-e31d00000000" name="AD_3900:123401262767587">
+<Expr mdsid="m00000008-01f4-0000-50f7-3e5900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D50 Sales Rep (Parent Child Hierarchy)"."Mgr_Id"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-50f7-3e5900000000-m80cb69ac-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb682c-0bb9-0000-714b-e31d00000000.xml#m80cb69ac-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc1170-07d6-0000-714b-e31d00000000" name="E9  Manager Name" isWriteable="false">
+<AttrDefn mdsid="m80cc1171-0f3c-0000-714b-e31d00000000" name="AD_3900:787371276599470">
+<Expr mdsid="m00000009-01f4-0000-a65b-713300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D59 Sales Rep (Mgr Name)"."Empl_Name"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-a65b-713300000000-m80cc1163-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc1161-0bb9-0000-714b-e31d00000000.xml#m80cc1163-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cbdc65-07d6-0000-714b-e31d00000000" name="E10 Length Of Service" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000000a-01f4-0000-fba3-bac100000000" name="Expr">
+<ExprText><![CDATA[ TIMESTAMPDIFF( SQL_TSI_YEAR , "%1",  VALUEOF(NQ_SESSION."%2"))]]></ExprText>
+<ExprTextDesc><![CDATA[ TIMESTAMPDIFF( SQL_TSI_YEAR , "01 - Sample App"."D5 Sales Rep (Parent Child Hier)"."E7  Hire Date",  VALUEOF(NQ_SESSION."LAST_REFRESH_DT"))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-fba3-bac100000000-m80cab64e-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab647-07f3-0000-714b-e31d00000000.xml#m80cab64e-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m0000000a-01f4-0000-fba3-bac100000000-m80cab558-0bd7-0000-714b-e31d00000000" objectRef="/oracle/bi/server/base/Variable/80cab558-0bd7-0000-714b-e31d00000000.xml#m80cab558-0bd7-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cbdc66-0f3c-0000-714b-e31d00000000" name="AD_3900:690731273586016">
+<Expr mdsid="m0000000b-01f4-0000-3253-d34c00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb2a11-07d6-0000-714b-e31d00000000" name="E99  Closure Distance" isWriteable="false">
+<AttrDefn mdsid="m80cb2a12-0f3c-0000-714b-e31d00000000" name="AD_3900:297861266501032">
+<Expr mdsid="m0000000c-01f4-0000-e2f8-21de00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D51 Closure Table Sales Rep Parent Child"."Distance"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-e2f8-21de00000000-m80cb69b4-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb682d-0bb9-0000-714b-e31d00000000.xml#m80cb69b4-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cab6f6-07d8-0000-714b-e31d00000000" name="A061 Employee (Parent-Child)_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cab6f6-07d8-0000-714b-e31d00000000-m80cab648-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab647-07f3-0000-714b-e31d00000000.xml#m80cab648-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cab647-07f3-0000-714b-e31d00000000-m80cb6bc8-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cb6bc8-07f5-0000-714b-e31d00000000.xml#m80cb6bc8-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cab647-07f3-0000-714b-e31d00000000-m80cb4954-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cb4954-07f5-0000-714b-e31d00000000.xml#m80cb4954-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

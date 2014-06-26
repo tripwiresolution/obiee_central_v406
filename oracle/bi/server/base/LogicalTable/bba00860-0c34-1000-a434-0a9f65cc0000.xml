@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="mbba00860-0c34-1000-a434-0a9f65cc0000" name="WP Account" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/802b289f-07d0-0000-714b-e31d00000000.xml#m802b289f-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="mbba00863-0c34-1000-a434-0a9f65cc0000" name="Account Name" isWriteable="false">
+<AttrDefn mdsid="mbba00877-0c34-1000-a434-0a9f65cc0000" name="AD_3900:2477971342062566">
+<Expr mdsid="m00000001-01f4-0000-dc98-1a2d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Dim"."ACCOUNT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-dc98-1a2d00000000-mbb213b71-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb213b70-0c34-1000-a434-0a9f65cc0000.xml#mbb213b71-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mbba00864-0c34-1000-a434-0a9f65cc0000" name="Account Type" isWriteable="false">
+<AttrDefn mdsid="mbba00878-0c34-1000-a434-0a9f65cc0000" name="AD_3900:2477981342062566">
+<Expr mdsid="m00000002-01f4-0000-0253-c66e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."WP_ACL_Stats_Dim"."ACCOUNTTYPE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-0253-c66e00000000-mbb213b72-0c34-1000-a434-0a9f65cc0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb213b70-0c34-1000-a434-0a9f65cc0000.xml#mbb213b72-0c34-1000-a434-0a9f65cc0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="mbc0c10a0-0c34-1000-a434-0a9f65cc0000" name="key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="mbc0c10a0-0c34-1000-a434-0a9f65cc0000-mbba00863-0c34-1000-a434-0a9f65cc0000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/bba00860-0c34-1000-a434-0a9f65cc0000.xml#mbba00863-0c34-1000-a434-0a9f65cc0000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="mbba00860-0c34-1000-a434-0a9f65cc0000-mbba00862-0c34-1000-a434-0a9f65cc0000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/bba00862-0c34-1000-a434-0a9f65cc0000.xml#mbba00862-0c34-1000-a434-0a9f65cc0000"/>
+</RefTableSources>
+</LogicalTable>

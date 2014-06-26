@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="mfe33332b-0c82-1000-806e-0af170e40000" name="MOVIE_CAST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" rowCount="2892347.0" lastUpdated="2012-10-24 11:58:52" maxConn="0" containerRef="/oracle/bi/server/base/Schema/fe3332da-0c82-1000-806e-0af170e40000.xml#mfe3332da-0c82-1000-806e-0af170e40000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[MOVIE_CAST]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="mfe33332c-0c82-1000-806e-0af170e40000" name="CAST_ID" dataType="DOUBLE" precision="22" rowCount="1102373.0" lastUpdated="2012-07-18 11:37:54" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe33332d-0c82-1000-806e-0af170e40000" name="CHARACTER" dataType="VARCHAR" precision="100" nullable="true" rowCount="1093306.0" lastUpdated="2012-07-18 11:37:55" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe33332e-0c82-1000-806e-0af170e40000" name="MOVIE_ID" dataType="DOUBLE" precision="22" rowCount="188571.0" lastUpdated="2012-07-18 11:37:56" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="mfe333430-0c82-1000-806e-0af170e40000" name="MOVIE_ID">
+<RefColumns>
+<RefColumn refId="mfe333430-0c82-1000-806e-0af170e40000-mfe33332c-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe33332b-0c82-1000-806e-0af170e40000.xml#mfe33332c-0c82-1000-806e-0af170e40000"/>
+<RefColumn refId="mfe333430-0c82-1000-806e-0af170e40000-mfe33332e-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe33332b-0c82-1000-806e-0af170e40000.xml#mfe33332e-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="mfe333451-0c82-1000-806e-0af170e40000" name="MOVIE_ID" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/fe333325-0c82-1000-806e-0af170e40000.xml#mfe33342f-0c82-1000-806e-0af170e40000">
+<RefColumns>
+<RefColumn refId="mfe333451-0c82-1000-806e-0af170e40000-mfe33332e-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe33332b-0c82-1000-806e-0af170e40000.xml#mfe33332e-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="mfe333452-0c82-1000-806e-0af170e40000" name="CAST_ID" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/fe3332ef-0c82-1000-806e-0af170e40000.xml#mfe33342a-0c82-1000-806e-0af170e40000">
+<RefColumns>
+<RefColumn refId="mfe333452-0c82-1000-806e-0af170e40000-mfe33332c-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe33332b-0c82-1000-806e-0af170e40000.xml#mfe33332c-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

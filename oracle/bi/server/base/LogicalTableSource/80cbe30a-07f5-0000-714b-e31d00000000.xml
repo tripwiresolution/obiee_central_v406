@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m80cbe30a-07f5-0000-714b-e31d00000000" name="Essb Cube E2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/80cbe306-07f3-0000-714b-e31d00000000.xml#m80cbe306-07f3-0000-714b-e31d00000000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-ba97-3a9700000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase Sample"."M1 Measure Dimension (E2)"."Generic measure"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-ba97-3a9700000000-m80cc0dc9-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cbe306-07f3-0000-714b-e31d00000000.xml#m80cc0dc9-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-c8f5-e92600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase Sample E2 (Default Import)"."BISAMPLE Default".""."Sample Default Import"."Sample - measure"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-c8f5-e92600000000-m80cbf73d-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cbf73c-0bdf-0000-714b-e31d00000000.xml#m80cbf73d-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/CubeTable/80cbf73c-0bdf-0000-714b-e31d00000000.xml#m80cbf73c-0bdf-0000-714b-e31d00000000">
+</Link>
+<WhereClause mdsid="m00000003-01f4-0000-5580-a86d00000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000004-01f4-0000-8722-e1b700000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1", "%2", "%3", "%4", "%5", "%6", "%7")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("03 - Essbase Sample"."H5 Employees"."Detail", "03 - Essbase Sample"."M1 Measures Hier"."Gen4,Measures", "03 - Essbase Sample"."H0 Time"."Month Members", "03 - Essbase Sample"."H1 Products"."Product Members", "03 - Essbase Sample"."H0 Month of Year"."Month Names", "03 - Essbase Sample"."H6 Customers"."Customer Members", "03 - Essbase Sample"."H6 Marital Status"."Marital Stat")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-8722-e1b700000000-m80cb9d92-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cb9d15-07e3-0000-714b-e31d00000000.xml#m80cb9d92-07e9-0000-714b-e31d00000000"/>
+<RefObject refId="m00000004-01f4-0000-8722-e1b700000000-m80cc0e09-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cbe2e4-07e3-0000-714b-e31d00000000.xml#m80cc0e09-07e9-0000-714b-e31d00000000"/>
+<RefObject refId="m00000004-01f4-0000-8722-e1b700000000-m80cb9d9c-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cb9d18-07e3-0000-714b-e31d00000000.xml#m80cb9d9c-07e9-0000-714b-e31d00000000"/>
+<RefObject refId="m00000004-01f4-0000-8722-e1b700000000-m80cb9d8d-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cb9d13-07e3-0000-714b-e31d00000000.xml#m80cb9d8d-07e9-0000-714b-e31d00000000"/>
+<RefObject refId="m00000004-01f4-0000-8722-e1b700000000-m80cb9d96-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cb9d17-07e3-0000-714b-e31d00000000.xml#m80cb9d96-07e9-0000-714b-e31d00000000"/>
+<RefObject refId="m00000004-01f4-0000-8722-e1b700000000-m80cb9d90-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cb9d14-07e3-0000-714b-e31d00000000.xml#m80cb9d90-07e9-0000-714b-e31d00000000"/>
+<RefObject refId="m00000004-01f4-0000-8722-e1b700000000-m80cb9d94-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cb9d16-07e3-0000-714b-e31d00000000.xml#m80cb9d94-07e9-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m00000005-01f4-0000-6c72-8b7d00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

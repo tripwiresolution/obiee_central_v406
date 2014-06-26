@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m4f832c04-0c30-1000-a9e6-7f0000010000" name="Fact_RTDMODELINSTANCE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/4f82ddaa-0c30-1000-a9e6-7f0000010000.xml#m4f82ddaa-0c30-1000-a9e6-7f0000010000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-fca6-135f00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X4 - RTD Analytics"."Dim - Model Instance"."ROW_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-fca6-135f00000000-m4f82ddab-0c30-1000-a9e6-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4f82ddaa-0c30-1000-a9e6-7f0000010000.xml#m4f82ddab-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-6bfb-d5b100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDMODELINSTANCE"."ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-6bfb-d5b100000000-m4f80bb29-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb28-0c30-1000-a9e6-7f0000010000.xml#m4f80bb29-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-fecb-4c2a00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X4 - RTD Analytics"."Dim - Model Instance"."Time Window"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-fecb-4c2a00000000-m4f82ddac-0c30-1000-a9e6-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4f82ddaa-0c30-1000-a9e6-7f0000010000.xml#m4f82ddac-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-32ff-7fa400000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS CHARACTER ( 30 )) || ' - ' ||  CAST ("%2" AS CHARACTER ( 30 ))]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDMODELINSTANCE"."TIMEWINDOW_START" AS CHARACTER ( 30 )) || ' - ' ||  CAST ("01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDMODELINSTANCE"."TIMEWINDOW_END" AS CHARACTER ( 30 ))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-32ff-7fa400000000-m4f80bb30-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb28-0c30-1000-a9e6-7f0000010000.xml#m4f80bb30-0c30-1000-a9e6-7f0000010000"/>
+<RefObject refId="m00000004-01f4-0000-32ff-7fa400000000-m4f80bb31-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb28-0c30-1000-a9e6-7f0000010000.xml#m4f80bb31-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-4451-22e800000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X4 - RTD Analytics"."Dim - Model Instance"."State"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-4451-22e800000000-m4f82ddad-0c30-1000-a9e6-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4f82ddaa-0c30-1000-a9e6-7f0000010000.xml#m4f82ddad-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-1ed1-aafa00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDMODELINSTANCE"."STATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-1ed1-aafa00000000-m4f80bb2a-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb28-0c30-1000-a9e6-7f0000010000.xml#m4f80bb2a-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000007-01f4-0000-2fe3-b62d00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X4 - RTD Analytics"."Dim - Model Instance"."First Time Window"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-2fe3-b62d00000000-m4f82ddae-0c30-1000-a9e6-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4f82ddaa-0c30-1000-a9e6-7f0000010000.xml#m4f82ddae-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000008-01f4-0000-fe15-b2b300000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS CHARACTER ( 30 )) || ' - ' ||  CAST ("%2" AS CHARACTER ( 30 ))]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDMODELINSTANCE"."TIMEWINDOW_START" AS CHARACTER ( 30 )) || ' - ' ||  CAST ("01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDMODELINSTANCE"."TIMEWINDOW_END" AS CHARACTER ( 30 ))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-fe15-b2b300000000-m4f80bb30-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb28-0c30-1000-a9e6-7f0000010000.xml#m4f80bb30-0c30-1000-a9e6-7f0000010000"/>
+<RefObject refId="m00000008-01f4-0000-fe15-b2b300000000-m4f80bb31-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb28-0c30-1000-a9e6-7f0000010000.xml#m4f80bb31-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000009-01f4-0000-a6b4-a45b00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X4 - RTD Analytics"."Dim - Model Instance"."Second Time Window"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-a6b4-a45b00000000-m4f82ddaf-0c30-1000-a9e6-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4f82ddaa-0c30-1000-a9e6-7f0000010000.xml#m4f82ddaf-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000a-01f4-0000-fb10-f84c00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS CHARACTER ( 30 )) || ' - ' ||  CAST ("%2" AS CHARACTER ( 30 ))]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDMODELINSTANCE"."TIMEWINDOW_START" AS CHARACTER ( 30 )) || ' - ' ||  CAST ("01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDMODELINSTANCE"."TIMEWINDOW_END" AS CHARACTER ( 30 ))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-fb10-f84c00000000-m4f80bb30-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb28-0c30-1000-a9e6-7f0000010000.xml#m4f80bb30-0c30-1000-a9e6-7f0000010000"/>
+<RefObject refId="m0000000a-01f4-0000-fb10-f84c00000000-m4f80bb31-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb28-0c30-1000-a9e6-7f0000010000.xml#m4f80bb31-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/4f80bb28-0c30-1000-a9e6-7f0000010000.xml#m4f80bb28-0c30-1000-a9e6-7f0000010000">
+</Link>
+<WhereClause mdsid="m0000000b-01f4-0000-d273-a48e00000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m0000000c-01f4-0000-39da-6f1400000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m0000000d-01f4-0000-0937-d2b900000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m82e3dcca-0ca8-1000-90a3-0af502b50000" name="LOIC_HEADCOUNT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" maxConn="0" containerRef="/oracle/bi/server/base/Schema/82e3b49c-0ca8-1000-90a3-0af502b50000.xml#m82e3b49c-0ca8-1000-90a3-0af502b50000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[LOIC_HEADCOUNT]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m82e3dccb-0ca8-1000-90a3-0af502b50000" name="YEAR" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dccc-0ca8-1000-90a3-0af502b50000" name="QUARTER" dataType="VARCHAR" precision="10" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dccd-0ca8-1000-90a3-0af502b50000" name="COUNTRY" dataType="VARCHAR" precision="50" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dcce-0ca8-1000-90a3-0af502b50000" name="TYPE" dataType="VARCHAR" precision="50" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dccf-0ca8-1000-90a3-0af502b50000" name="REASON" dataType="VARCHAR" precision="50" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dcd0-0ca8-1000-90a3-0af502b50000" name="LOB" dataType="VARCHAR" precision="50" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dcd1-0ca8-1000-90a3-0af502b50000" name="PERFORMANCE" dataType="VARCHAR" precision="50" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dcd2-0ca8-1000-90a3-0af502b50000" name="NUMBERS" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dcd3-0ca8-1000-90a3-0af502b50000" name="FY" dataType="VARCHAR" precision="20" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m82e429e6-0ca8-1000-90a3-0af502b50000" name="HEADCOUNT_Key">
+<RefColumns>
+<RefColumn refId="m82e429e6-0ca8-1000-90a3-0af502b50000-m82e3dccb-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3dcca-0ca8-1000-90a3-0af502b50000.xml#m82e3dccb-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m82e42a42-0ca8-1000-90a3-0af502b50000" name="HEADCOUNT_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3dcd4-0ca8-1000-90a3-0af502b50000.xml#m82e429e8-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a42-0ca8-1000-90a3-0af502b50000-m82e3dccd-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3dcca-0ca8-1000-90a3-0af502b50000.xml#m82e3dccd-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

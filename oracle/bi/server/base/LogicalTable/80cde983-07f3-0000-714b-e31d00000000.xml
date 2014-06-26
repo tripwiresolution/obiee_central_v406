@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cde983-07f3-0000-714b-e31d00000000" name="POI_Business_In_Range" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cde354-07d0-0000-714b-e31d00000000.xml#m80cde354-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cde986-07d6-0000-714b-e31d00000000" name="cat_id" isWriteable="false">
+<AttrDefn mdsid="m80cde98e-0f3c-0000-714b-e31d00000000" name="AD_3900:1912911307695726">
+<Expr mdsid="m00000001-01f4-0000-9cb6-7f8800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."V_POI_In_Range_Business"."cat_id"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-9cb6-7f8800000000-m80cde864-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cde812-0bb9-0000-714b-e31d00000000.xml#m80cde864-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cde987-07d6-0000-714b-e31d00000000" name="Bus name" isWriteable="false">
+<AttrDefn mdsid="m80cde98f-0f3c-0000-714b-e31d00000000" name="AD_3900:1912921307695726">
+<Expr mdsid="m00000002-01f4-0000-377f-906d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."V_POI_In_Range_Business"."name"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-377f-906d00000000-m80cde816-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cde812-0bb9-0000-714b-e31d00000000.xml#m80cde816-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cde98a-07d6-0000-714b-e31d00000000" name="POI_ID_Bus" isWriteable="false">
+<AttrDefn mdsid="m80cde992-0f3c-0000-714b-e31d00000000" name="AD_3900:1912951307695726">
+<Expr mdsid="m00000003-01f4-0000-acd7-a83200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."V_POI_In_Range_Business"."POI_Id"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-acd7-a83200000000-m80cde813-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cde812-0bb9-0000-714b-e31d00000000.xml#m80cde813-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cde9d1-07d6-0000-714b-e31d00000000" name="Category name" isWriteable="false">
+<AttrDefn mdsid="m80cde9d2-0f3c-0000-714b-e31d00000000" name="AD_3900:1913631307699470">
+<Expr mdsid="m00000004-01f4-0000-d469-b6cd00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."NTC_META_POI_CAT_REF"."NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-d469-b6cd00000000-m80cde2be-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cde2bc-0bb9-0000-714b-e31d00000000.xml#m80cde2be-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cde98d-07d8-0000-714b-e31d00000000" name="Id" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cde98d-07d8-0000-714b-e31d00000000-m80cde98a-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cde983-07f3-0000-714b-e31d00000000.xml#m80cde98a-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cde983-07f3-0000-714b-e31d00000000-m80cde985-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cde985-07f5-0000-714b-e31d00000000.xml#m80cde985-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

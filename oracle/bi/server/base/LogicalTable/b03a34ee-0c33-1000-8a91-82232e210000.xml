@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="mb03a34ee-0c33-1000-8a91-82232e210000" name="WC Syntax Measures" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/802b289f-07d0-0000-714b-e31d00000000.xml#m802b289f-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="mb0a72752-0c33-1000-8a91-82232e210000" name="Is Error" isWriteable="false">
+<AttrDefn mdsid="mb0a72753-0c33-1000-8a91-82232e210000" name="AD_3900:2447641341614661">
+<Expr mdsid="m00000001-01f4-0000-9f36-804b00000000" name="Expr">
+<ExprText><![CDATA[CASE WHEN "%1"='OK' THEN 'No' ELSE 'Yes' END 
+]]></ExprText>
+<ExprTextDesc><![CDATA[CASE WHEN "10 - System DB (ORCL)"."Catalog"."dbo"."WC_LSQL_Facts"."ERROR_MSG"='OK' THEN 'No' ELSE 'Yes' END 
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-9f36-804b00000000-maffcb681-0c33-1000-8a91-82232e210000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/affcb680-0c33-1000-8a91-82232e210000.xml#maffcb681-0c33-1000-8a91-82232e210000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb03a34f1-0c33-1000-8a91-82232e210000" name="Error Msg" isWriteable="false">
+<AttrDefn mdsid="mb03a34f9-0c33-1000-8a91-82232e210000" name="AD_3900:2447101341613947">
+<Expr mdsid="m00000002-01f4-0000-9224-2af500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."WC_LSQL_Facts"."ERROR_MSG"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-9224-2af500000000-maffcb681-0c33-1000-8a91-82232e210000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/affcb680-0c33-1000-8a91-82232e210000.xml#maffcb681-0c33-1000-8a91-82232e210000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb03a34f7-0c33-1000-8a91-82232e210000" name="Analyses Count" isWriteable="false">
+<MeasureDefn mdsid="mb052c5c0-0c33-1000-8a91-82232e210000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mb052c5c1-0c33-1000-8a91-82232e210000" name="AggRule_2050:2447451341614110" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-fbfc-db9e00000000" name="Expr">
+<ExprText><![CDATA[ COUNT("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT("10 - Usage Tracking"."WC Syntax Measures"."Analyses Count")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-fbfc-db9e00000000-mb03a34f7-0c33-1000-8a91-82232e210000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/b03a34ee-0c33-1000-8a91-82232e210000.xml#mb03a34f7-0c33-1000-8a91-82232e210000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb03a34ff-0c33-1000-8a91-82232e210000" name="AD_3900:2447161341613947">
+<Expr mdsid="m00000004-01f4-0000-922e-aa3000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."WC_LSQL_Facts"."REPORT_PATH"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-922e-aa3000000000-maffcb687-0c33-1000-8a91-82232e210000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/affcb680-0c33-1000-8a91-82232e210000.xml#maffcb687-0c33-1000-8a91-82232e210000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1e1f4b00-0c34-1000-bb1c-7f0000010000" name="Bad Syntax Analysis" isWriteable="false">
+<MeasureDefn mdsid="m1eb410f0-0c34-1000-bb1c-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m1eb410f1-0c34-1000-bb1c-7f0000010000" name="AggRule_2050:2450161341799500" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-956d-6da100000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("10 - Usage Tracking"."WC Syntax Measures"."Bad Syntax Analysis")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-956d-6da100000000-m1e1f4b00-0c34-1000-bb1c-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/b03a34ee-0c33-1000-8a91-82232e210000.xml#m1e1f4b00-0c34-1000-bb1c-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m1e1f7212-0c34-1000-bb1c-7f0000010000" name="AD_3900:2450081341798496">
+<Expr mdsid="m00000006-01f4-0000-97c4-62e700000000" name="Expr">
+<ExprText><![CDATA[case when  "%1" ='OK' then 0 else 1 end ]]></ExprText>
+<ExprTextDesc><![CDATA[case when  "10 - System DB (ORCL)"."Catalog"."dbo"."WC_LSQL_Facts"."ERROR_MSG" ='OK' then 0 else 1 end ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-97c4-62e700000000-maffcb681-0c33-1000-8a91-82232e210000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/affcb680-0c33-1000-8a91-82232e210000.xml#maffcb681-0c33-1000-8a91-82232e210000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m1fbb47c0-0c34-1000-bb1c-7f0000010000" name="Good Syntax Analyses" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000007-01f4-0000-11f4-e79c00000000" name="Expr">
+<ExprText><![CDATA["%1" -"%2" ]]></ExprText>
+<ExprTextDesc><![CDATA["10 - Usage Tracking"."WC Syntax Measures"."Analyses Count" -"10 - Usage Tracking"."WC Syntax Measures"."Bad Syntax Analysis" ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-11f4-e79c00000000-mb03a34f7-0c33-1000-8a91-82232e210000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/b03a34ee-0c33-1000-8a91-82232e210000.xml#mb03a34f7-0c33-1000-8a91-82232e210000"/>
+<RefObject refId="m00000007-01f4-0000-11f4-e79c00000000-m1e1f4b00-0c34-1000-bb1c-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/b03a34ee-0c33-1000-8a91-82232e210000.xml#m1e1f4b00-0c34-1000-bb1c-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m1fbb6ed1-0c34-1000-bb1c-7f0000010000" name="AD_3900:2450241341801123">
+<Expr mdsid="m00000008-01f4-0000-9d93-fd4000000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="mb03a34ee-0c33-1000-8a91-82232e210000-mb03a34f0-0c33-1000-8a91-82232e210000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/b03a34f0-0c33-1000-8a91-82232e210000.xml#mb03a34f0-0c33-1000-8a91-82232e210000"/>
+</RefTableSources>
+</LogicalTable>

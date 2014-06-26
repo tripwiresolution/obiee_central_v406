@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cd8e2a-0bb9-0000-714b-e31d00000000" name="SAMP_LOOKUPS_D" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" x="271" y="1551" uri="VALUEOF(BI_EE_HOME)/sample/SampleAppFiles/Data/SAMP_LOOKUPS_D.xml" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cd8dda-0bd3-0000-714b-e31d00000000.xml#m80cd8dda-0bd3-0000-714b-e31d00000000">
+<Description><![CDATA[Lookups dimension table : Stores lookup information for various dimension attributes in different languages]]></Description>
+<PhysicalColumn mdsid="m80cd8e2b-0bbb-0000-714b-e31d00000000" name="Lookup_Type" dataType="VARCHAR" precision="25" specialType="none">
+<Description><![CDATA[Lookup Type: Stores the name of the dimension attribute. Some possible values are 'Marital Status', 'Customer Type' and so on.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8e2c-0bbb-0000-714b-e31d00000000" name="Language_Key" dataType="VARCHAR" precision="25" specialType="none">
+<Description><![CDATA[Language Key: Stores the language information in short form like 'en', 'fr', 'es' and so on.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8e2d-0bbb-0000-714b-e31d00000000" name="Lookup_Dsc" dataType="VARCHAR" precision="25" specialType="none">
+<Description><![CDATA[Lookup Description: Stores the description of a dimension attribute in a specific language]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8e2e-0bbb-0000-714b-e31d00000000" name="Lookup_Key" dataType="VARCHAR" precision="10" specialType="none">
+<Description><![CDATA[Lookup Key: Stores the key value of a dimension attribute in a specific language]]></Description>
+</PhysicalColumn>
+</PhysicalTable>

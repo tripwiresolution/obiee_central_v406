@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m575b69a7-0c2d-1000-87a7-0af06a760000" name="34 Carrier Group" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/575b68b0-0c2d-1000-87a7-0af06a760000.xml#m575b68b0-0c2d-1000-87a7-0af06a760000">
+<LogicalColumn mdsid="m575b69a8-0c2d-1000-87a7-0af06a760000" name="CODE" isWriteable="false">
+<AttrDefn mdsid="m575b6c9a-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372971338887867">
+<Expr mdsid="m00000001-01f4-0000-aca6-746200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."34 CARRIER_GROUP_NEW"."CODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-aca6-746200000000-m575865c9-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575865c7-0c2d-1000-87a7-0af06a760000.xml#m575865c9-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b69a9-0c2d-1000-87a7-0af06a760000" name="Carrier Group" isWriteable="false">
+<AttrDefn mdsid="m575b6c9b-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372981338887867">
+<Expr mdsid="m00000002-01f4-0000-11a5-28e500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."34 CARRIER_GROUP_NEW"."DESCRIPTION"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-11a5-28e500000000-m575865c8-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/575865c7-0c2d-1000-87a7-0af06a760000.xml#m575865c8-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m575b6bba-0c2d-1000-87a7-0af06a760000" name="20 ARRIVAL_DELAY_GROUPS_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6bba-0c2d-1000-87a7-0af06a760000-m575b69a8-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69a7-0c2d-1000-87a7-0af06a760000.xml#m575b69a8-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m575b69a7-0c2d-1000-87a7-0af06a760000-m575b6d5f-0c2d-1000-87a7-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/575b6d5f-0c2d-1000-87a7-0af06a760000.xml#m575b6d5f-0c2d-1000-87a7-0af06a760000"/>
+</RefTableSources>
+</LogicalTable>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0d5c1-0ca8-1000-90a3-0af502b50000" name="Fact - Agent Tasks" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd5-0ca8-1000-90a3-0af502b50000.xml#m82f0acd5-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0d5c2-0ca8-1000-90a3-0af502b50000" name="Number of Tasks" isWriteable="false">
+<MeasureDefn mdsid="m82f1496d-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19744-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736421391789375" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-0ce7-f1f500000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y04 - Demo Other Advanced Collections"."Fact - Agent Tasks"."Number of Tasks")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-0ce7-f1f500000000-m82f0d5c2-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d5c1-0ca8-1000-90a3-0af502b50000.xml#m82f0d5c2-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f28242-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757551391789375">
+<Expr mdsid="m00000002-01f4-0000-5f8b-d2d800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_AGENT_TASKS"."TASKS_COUNT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-5f8b-d2d800000000-m82dde87b-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde875-0ca8-1000-90a3-0af502b50000.xml#m82dde87b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0d5c1-0ca8-1000-90a3-0af502b50000-m82f31dd1-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f31dd1-0ca8-1000-90a3-0af502b50000.xml#m82f31dd1-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

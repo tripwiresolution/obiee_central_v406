@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m71844289-0c36-1000-b82f-0af06a760000" name="LTS1 GL Hier - All Accounts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/718440a8-0c36-1000-b82f-0af06a760000.xml#m718440a8-0c36-1000-b82f-0af06a760000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-12e5-b4ff00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL"."Measures"."Balance"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-12e5-b4ff00000000-m718440a9-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440a8-0c36-1000-b82f-0af06a760000.xml#m718440a9-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-f9c0-b59a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."GL1 - measure"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-f9c0-b59a00000000-m71809901-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m71809901-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-0d6c-f91b00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL"."Measures"."Actual (Case St)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-0d6c-f91b00000000-m718440ae-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440a8-0c36-1000-b82f-0af06a760000.xml#m718440ae-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-f901-c82d00000000" name="Expr">
+<ExprText><![CDATA[Case when 
+ "%1" ='Actual'
+
+then "%2"
+end]]></ExprText>
+<ExprTextDesc><![CDATA[Case when 
+ "03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen2,Scenarios" ='Actual'
+
+then "03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."GL1 - measure"
+end]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-f901-c82d00000000-m7180993b-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m7180993b-0c36-1000-b82f-0af06a760000"/>
+<RefObject refId="m00000004-01f4-0000-f901-c82d00000000-m71809901-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m71809901-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-091f-ecaf00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL"."Measures"."Plan (Case St)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-091f-ecaf00000000-m718440af-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440a8-0c36-1000-b82f-0af06a760000.xml#m718440af-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-d1cf-cf2400000000" name="Expr">
+<ExprText><![CDATA[Case when 
+ "%1" ='Plan'
+then "%2"
+end]]></ExprText>
+<ExprTextDesc><![CDATA[Case when 
+ "03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen2,Scenarios" ='Plan'
+then "03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."GL1 - measure"
+end]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-d1cf-cf2400000000-m7180993b-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m7180993b-0c36-1000-b82f-0af06a760000"/>
+<RefObject refId="m00000006-01f4-0000-d1cf-cf2400000000-m71809901-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m71809901-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m71809900-0c36-1000-b82f-0af06a760000">
+</Link>
+<WhereClause mdsid="m00000007-01f4-0000-9cc9-92a200000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000008-01f4-0000-3821-48eb00000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1", "%2", "%3", "%4", "%5")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("03 - Essbase GL"."All Accounts"."Gen10,Accounts", "03 - Essbase GL"."Time Periods"."Months", "03 - Essbase GL"."Scenarios"."Scenarios", "03 - Essbase GL"."Entities"."Unit", "03 - Essbase GL"."Years"."Years")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-3821-48eb00000000-m7184413b-0c36-1000-b82f-0af06a760000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/718440a2-0c36-1000-b82f-0af06a760000.xml#m7184413b-0c36-1000-b82f-0af06a760000"/>
+<RefObject refId="m00000008-01f4-0000-3821-48eb00000000-m71844132-0c36-1000-b82f-0af06a760000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/718440a1-0c36-1000-b82f-0af06a760000.xml#m71844132-0c36-1000-b82f-0af06a760000"/>
+<RefObject refId="m00000008-01f4-0000-3821-48eb00000000-m7184413c-0c36-1000-b82f-0af06a760000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/718440a3-0c36-1000-b82f-0af06a760000.xml#m7184413c-0c36-1000-b82f-0af06a760000"/>
+<RefObject refId="m00000008-01f4-0000-3821-48eb00000000-m71844144-0c36-1000-b82f-0af06a760000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/718440a5-0c36-1000-b82f-0af06a760000.xml#m71844144-0c36-1000-b82f-0af06a760000"/>
+<RefObject refId="m00000008-01f4-0000-3821-48eb00000000-m7184413d-0c36-1000-b82f-0af06a760000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/718440a4-0c36-1000-b82f-0af06a760000.xml#m7184413d-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m00000009-01f4-0000-b242-f66b00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<InitBlock mdsid="m80cb35a7-0bd9-0000-714b-e31d00000000" name="Custom Visibility Products" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isSessionVar="true" isRowWiseInit="true" isRowWiseCacheEnabled="false" refreshPeriod="86400" connectionPoolRef="/oracle/bi/server/base/ConnectionPool/80cb28c8-0bd5-0000-714b-e31d00000000.xml#m80cb28c8-0bd5-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SELECT
+'VISIBILITY_PRODUCTS',
+IDS
+FROM SAMP_USERS_VIS
+WHERE upper(USERID)=upper(':USER')
+AND TYPE = 'LOB']]></Value>
+</DBMapItem>
+<InitString><![CDATA[SELECT
+'VISIBILITY_PRODUCTS',
+IDS
+FROM SAMP_USERS_VIS
+WHERE upper(USERID)=upper(':USER')
+AND TYPE = 'LOB']]></InitString>
+</InitBlock>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m672aa8ed-0c61-1000-99f2-7f0000010000" name="SA_18_Rout00039D04" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" cacheExpiry="86400" isSysGen="true" maxConn="0" containerRef="/oracle/bi/server/base/Schema/5758346a-0c2d-1000-87a7-0af06a760000.xml#m5758346a-0c2d-1000-87a7-0af06a760000" aggrConnPoolRef="/oracle/bi/server/base/ConnectionPool/57583464-0c2d-1000-87a7-0af06a760000.xml#m57583464-0c2d-1000-87a7-0af06a760000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SA_18_Rout00039D04]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m672aa8ef-0c61-1000-99f2-7f0000010000" name="Route_Desc00039C25" dataType="VARCHAR" precision="250" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m672aa8f0-0c61-1000-99f2-7f0000010000" name="DEST00039C26" dataType="VARCHAR" precision="3" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m672aa8f1-0c61-1000-99f2-7f0000010000" name="ORIGIN00039C27" dataType="VARCHAR" precision="3" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m672aa8f2-0c61-1000-99f2-7f0000010000" name="Route00039C28" dataType="VARCHAR" precision="8" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m672aa8f3-0c61-1000-99f2-7f0000010000" name="Route_D_00039D04SK" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m672aa8f5-0c61-1000-99f2-7f0000010000" name="ALL_AW_LEVEL_KEY" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m672aa8ee-0c61-1000-99f2-7f0000010000" name="K_Route">
+<RefColumns>
+<RefColumn refId="m672aa8ee-0c61-1000-99f2-7f0000010000-m672aa8f2-0c61-1000-99f2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/672aa8ed-0c61-1000-99f2-7f0000010000.xml#m672aa8f2-0c61-1000-99f2-7f0000010000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="m672aa8f4-0c61-1000-99f2-7f0000010000" name="Route_D_00039D04SK">
+<RefColumns>
+<RefColumn refId="m672aa8f4-0c61-1000-99f2-7f0000010000-m672aa8f3-0c61-1000-99f2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/672aa8ed-0c61-1000-99f2-7f0000010000.xml#m672aa8f3-0c61-1000-99f2-7f0000010000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

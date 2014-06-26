@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m40000034-249f-14e2-b095-7f0000010000" name="Bbil Scenarios" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/00000034-249f-14e2-b095-7f0000010000.xml#m00000034-249f-14e2-b095-7f0000010000">
+<LogicalColumn mdsid="m40000037-249f-14e2-b095-7f0000010000" name="Scenario" isWriteable="false">
+<AttrDefn mdsid="m4000003b-249f-14e2-b095-7f0000010000" name="AD_3900:2850431401465833">
+<Expr mdsid="m00000001-01f4-0000-4409-c56300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_SCENARIOS"."SCENARIO"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-4409-c56300000000-m0000004c-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/0000004b-23f4-14e2-b095-7f0000010000.xml#m0000004c-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m40000038-249f-14e2-b095-7f0000010000" name="Scenario Id" isWriteable="false">
+<AttrDefn mdsid="m4000003c-249f-14e2-b095-7f0000010000" name="AD_3900:2850441401465833">
+<Expr mdsid="m00000002-01f4-0000-4985-317d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_SCENARIOS"."SCENARIO_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-4985-317d00000000-m0000004d-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/0000004b-23f4-14e2-b095-7f0000010000.xml#m0000004d-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m40000039-249f-14e2-b095-7f0000010000" name="Scenario Parent" isWriteable="false">
+<AttrDefn mdsid="m4000003d-249f-14e2-b095-7f0000010000" name="AD_3900:2850451401465833">
+<Expr mdsid="m00000003-01f4-0000-9209-845400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_SCENARIOS"."SCENARIO_PARENT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-9209-845400000000-m0000004e-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/0000004b-23f4-14e2-b095-7f0000010000.xml#m0000004e-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m4000003a-249f-14e2-b095-7f0000010000" name="BBIL_SCENARIOS_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m4000003a-249f-14e2-b095-7f0000010000-m40000038-249f-14e2-b095-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/40000034-249f-14e2-b095-7f0000010000.xml#m40000038-249f-14e2-b095-7f0000010000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m40000034-249f-14e2-b095-7f0000010000-m40000036-249f-14e2-b095-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/40000036-249f-14e2-b095-7f0000010000.xml#m40000036-249f-14e2-b095-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

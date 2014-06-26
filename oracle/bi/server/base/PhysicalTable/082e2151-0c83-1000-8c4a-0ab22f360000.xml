@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m082e2151-0c83-1000-8c4a-0ab22f360000" name="D63 Customers (SCD Time Temporal View Query)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" pollFreq="0" x="574" y="175" isOverrideCacheProp="true" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/089a9ec0-0c83-1000-8c4a-0ab22f360000.xml#m089a9ec0-0c83-1000-8c4a-0ab22f360000">
+<Description><![CDATA[Customer Alias: Alias of the customer dimension table]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SELECT * from SAMP_CUSTOMERS_SCD 
+AS OF PERIOD FOR user_valid_time 
+TO_TIMESTAMP('valueof(NQ_SESSION.TIME_TEMPORAL_ASOF)')]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m082e2152-0c83-1000-8c4a-0ab22f360000" name="Crdt_Rate" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/089a9ec0-0c83-1000-8c4a-0ab22f360000.xml#m089a9ec1-0c83-1000-8c4a-0ab22f360000">
+<Description><![CDATA[Credit Rate: Stores customer credit rate information as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m082e2153-0c83-1000-8c4a-0ab22f360000" name="Cust_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/089a9ec0-0c83-1000-8c4a-0ab22f360000.xml#m089a9ec2-0c83-1000-8c4a-0ab22f360000">
+<Description><![CDATA[Cust Key: Surrogate key of the customer dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m082e2154-0c83-1000-8c4a-0ab22f360000" name="Fst_Contact_Dt" dataType="DATE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/089a9ec0-0c83-1000-8c4a-0ab22f360000.xml#m089a9ec3-0c83-1000-8c4a-0ab22f360000">
+<Description><![CDATA[First Contact Date: Stores the information in date format]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m082e2155-0c83-1000-8c4a-0ab22f360000" name="Lst_Order_Dt" dataType="DATETIME" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/089a9ec0-0c83-1000-8c4a-0ab22f360000.xml#m089a9ec4-0c83-1000-8c4a-0ab22f360000">
+<Description><![CDATA[Last Order Date: Stores the information in date format]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m082e2156-0c83-1000-8c4a-0ab22f360000" name="Name" dataType="VARCHAR" precision="255" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/089a9ec0-0c83-1000-8c4a-0ab22f360000.xml#m089a9ec5-0c83-1000-8c4a-0ab22f360000">
+<Description><![CDATA[Name: Stores the customer name in text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m082e2157-0c83-1000-8c4a-0ab22f360000" name="Segment_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/089a9ec0-0c83-1000-8c4a-0ab22f360000.xml#m089a9ec6-0c83-1000-8c4a-0ab22f360000">
+<Description><![CDATA[Segment Key: Joins to segment_key in customer segments dimension table]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m082e2158-0c83-1000-8c4a-0ab22f360000" name="Income_Lvl" dataType="VARCHAR" precision="255" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/089a9ec0-0c83-1000-8c4a-0ab22f360000.xml#m089a9ec7-0c83-1000-8c4a-0ab22f360000">
+<Description><![CDATA[Income level: Stores the information in text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m082e2159-0c83-1000-8c4a-0ab22f360000" name="Status_Key" dataType="VARCHAR" precision="255" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/089a9ec0-0c83-1000-8c4a-0ab22f360000.xml#m089a9ec8-0c83-1000-8c4a-0ab22f360000">
+<Description><![CDATA[Status Key: Stores customer status as text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m082e215a-0c83-1000-8c4a-0ab22f360000" name="Type_Key" dataType="VARCHAR" precision="255" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/089a9ec0-0c83-1000-8c4a-0ab22f360000.xml#m089a9ec9-0c83-1000-8c4a-0ab22f360000">
+<Description><![CDATA[Type Key: Stores the information as text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m082e215b-0c83-1000-8c4a-0ab22f360000" name="Birth_Dt" dataType="DATE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/089a9ec0-0c83-1000-8c4a-0ab22f360000.xml#m089a9eca-0c83-1000-8c4a-0ab22f360000">
+<Description><![CDATA[Birth Date: Stores the information in date format]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m082e215c-0c83-1000-8c4a-0ab22f360000" name="Address_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/089a9ec0-0c83-1000-8c4a-0ab22f360000.xml#m089a9ecb-0c83-1000-8c4a-0ab22f360000">
+<Description><![CDATA[Address Key: Joins to Address_Key of Addresses dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m082e215f-0c83-1000-8c4a-0ab22f360000" name="Marital_St" dataType="VARCHAR" precision="255" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/089a9ec0-0c83-1000-8c4a-0ab22f360000.xml#m089a9ece-0c83-1000-8c4a-0ab22f360000">
+<Description><![CDATA[Marital Status: Stores the information in text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m082e2160-0c83-1000-8c4a-0ab22f360000" name="Gender" dataType="VARCHAR" precision="20" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/089a9ec0-0c83-1000-8c4a-0ab22f360000.xml#m089a9ecf-0c83-1000-8c4a-0ab22f360000">
+<Description><![CDATA[Income level: Stores the information in text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m082e2161-0c83-1000-8c4a-0ab22f360000" name="Num_Attribute" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/089a9ec0-0c83-1000-8c4a-0ab22f360000.xml#m089a9ed0-0c83-1000-8c4a-0ab22f360000">
+<Description><![CDATA[Credit Rate: Stores customer credit rate information as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m0ab20d10-0c83-1000-be8d-0ab22f360000" name="End_Time" dataType="TIMESTAMP" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/089a9ec0-0c83-1000-8c4a-0ab22f360000.xml#m0ab08670-0c83-1000-be8d-0ab22f360000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m0ab20d11-0c83-1000-be8d-0ab22f360000" name="Start_Time" dataType="TIMESTAMP" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/089a9ec0-0c83-1000-8c4a-0ab22f360000.xml#m0aadee60-0c83-1000-be8d-0ab22f360000">
+</PhysicalColumn>
+<PhysicalKey mdsid="m082e2162-0c83-1000-8c4a-0ab22f360000" name="Dim 01 Customer_Key">
+<RefColumns>
+<RefColumn refId="m082e2162-0c83-1000-8c4a-0ab22f360000-m082e2153-0c83-1000-8c4a-0ab22f360000" columnRef="/oracle/bi/server/base/PhysicalTable/082e2151-0c83-1000-8c4a-0ab22f360000.xml#m082e2153-0c83-1000-8c4a-0ab22f360000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m082e2163-0c83-1000-8c4a-0ab22f360000" name="01 Customer_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb6836-0bb9-0000-714b-e31d00000000.xml#m80cb6b00-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m082e2163-0c83-1000-8c4a-0ab22f360000-m082e2157-0c83-1000-8c4a-0ab22f360000" columnRef="/oracle/bi/server/base/PhysicalTable/082e2151-0c83-1000-8c4a-0ab22f360000.xml#m082e2157-0c83-1000-8c4a-0ab22f360000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m082e2164-0c83-1000-8c4a-0ab22f360000" name="D10 Customer_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb6837-0bb9-0000-714b-e31d00000000.xml#m80cb6b01-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m082e2164-0c83-1000-8c4a-0ab22f360000-m082e215c-0c83-1000-8c4a-0ab22f360000" columnRef="/oracle/bi/server/base/PhysicalTable/082e2151-0c83-1000-8c4a-0ab22f360000.xml#m082e215c-0c83-1000-8c4a-0ab22f360000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m082e2165-0c83-1000-8c4a-0ab22f360000" name="D60 Customers_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cdd40e-0bb9-0000-714b-e31d00000000.xml#m80cdd427-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m082e2165-0c83-1000-8c4a-0ab22f360000-m082e2153-0c83-1000-8c4a-0ab22f360000" columnRef="/oracle/bi/server/base/PhysicalTable/082e2151-0c83-1000-8c4a-0ab22f360000.xml#m082e2153-0c83-1000-8c4a-0ab22f360000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

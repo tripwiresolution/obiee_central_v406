@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ConnectionPool mdsid="m69710172-0c84-1000-8c5b-0ae4f18a0000" name="Warranty Claims Connection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" user="VALUEOF(DB_USERNAME)" password="6C6F0BE01FC4111F3AC2236A364D912EBBAF596FED61A025BECFFD7EF1D76234F902D08021A6C048B99C9EE5411155D9EF43B342CFA862159BAE62F3CE72715D E9BC8AFA4825A44E71A08A301A2D20C0B594158F2699A20883734564D1D88B2E" timeout="300" maxConnDiff="10" maxConn="100" dataSource="VALUEOF(NQ_SESSION.DSN)" type="Default" reqQualifedTableName="true" isSharedLogin="true" isConcurrentQueriesInConnection="false" isCloseAfterEveryRequest="false" outputType="xml" ignoreFirstLine="false" bulkInsertBufferSize="131072" transactionBoundary="100" xmlaUseSession="false" isSiebelJDBSecured="false" databaseRef="/oracle/bi/server/base/Database/69710171-0c84-1000-8c5b-0ae4f18a0000.xml#m69710171-0c84-1000-8c5b-0ae4f18a0000">
+<Description><![CDATA[Connection pool for Sample relational db source.
+Instead of editing connectivity parameters in each connection pool, update the RPD and Session variables that hold that information (Manage > Variables)
+
+You can also replace the 
+"VALUEOF(NQ_SESSION.DSN)" 
+by the full string below :
+(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=VALUEOF(DB_HOST))(PORT=VALUEOF(DB_PORT))))(CONNECT_DATA=(SID=VALUEOF(DB_SID))))]]></Description>
+</ConnectionPool>

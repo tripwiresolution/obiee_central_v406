@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0fc4d-0ca8-1000-90a3-0af502b50000" name="Fact - Metrics CLQ Phases" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acda-0ca8-1000-90a3-0af502b50000.xml#m82f0acda-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0fc4e-0ca8-1000-90a3-0af502b50000" name="Average Time in Days" isWriteable="false">
+<MeasureDefn mdsid="m82f1702d-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19777-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736931391789375" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-5a82-e34a00000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y02 - Demo HR Oracle EMEA"."Fact - Metrics CLQ Phases"."Average Time in Days")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-5a82-e34a00000000-m82f0fc4e-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc4d-0ca8-1000-90a3-0af502b50000.xml#m82f0fc4e-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a970-0ca8-1000-90a3-0af502b50000" name="AD_3900:2760731391789375">
+<Expr mdsid="m00000002-01f4-0000-c302-b9cd00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_METRICS_CLQ_PHASES"."AVG_TIME_DAYS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-c302-b9cd00000000-m82e3dc4b-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc4a-0ca8-1000-90a3-0af502b50000.xml#m82e3dc4b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0fc4d-0ca8-1000-90a3-0af502b50000-m82f31e0a-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f31e0a-0ca8-1000-90a3-0af502b50000.xml#m82f31e0a-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

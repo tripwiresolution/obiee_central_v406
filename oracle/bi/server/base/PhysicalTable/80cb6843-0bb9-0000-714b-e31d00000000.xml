@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cb6843-0bb9-0000-714b-e31d00000000" name="F21 Rev. (Aggregate 2)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" pollFreq="0" x="249" y="964" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cb6817-0bb9-0000-714b-e31d00000000.xml#m80cb6817-0bb9-0000-714b-e31d00000000">
+<Description><![CDATA[Reveue Fact Aggregate Alias: Stores the aggregated fact information at Qtr and Product grain.]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SAMP_REVENUE_FA2]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cb6a99-0bbb-0000-714b-e31d00000000" name="Revenue" dataType="DOUBLE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6817-0bb9-0000-714b-e31d00000000.xml#m80cb68d9-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Revenue: Stores the revenue information as a double.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6a9a-0bbb-0000-714b-e31d00000000" name="Prod_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6817-0bb9-0000-714b-e31d00000000.xml#m80cb68da-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Product Key: Joins Prod_Key of Products dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6a9b-0bbb-0000-714b-e31d00000000" name="Units" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6817-0bb9-0000-714b-e31d00000000.xml#m80cb68db-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Units: Stores the units information as an integer.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6a9c-0bbb-0000-714b-e31d00000000" name="Bill_Qtr_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6817-0bb9-0000-714b-e31d00000000.xml#m80cb68dc-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Bill Quarter Key: Joins to Qtr_Key of Time dimension table (Qtr grain).]]></Description>
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="m80cb6b64-0bbe-0000-714b-e31d00000000" name="F21 Facts Revenue Aggregate 2_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb6822-0bb9-0000-714b-e31d00000000.xml#m80cb6aed-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cb6b64-0bbe-0000-714b-e31d00000000-m80cb6a9a-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6843-0bb9-0000-714b-e31d00000000.xml#m80cb6a9a-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cb6b65-0bbe-0000-714b-e31d00000000" name="F10 Revenue (Billed Time Join)_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb681f-0bb9-0000-714b-e31d00000000.xml#m80cb6aeb-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cb6b65-0bbe-0000-714b-e31d00000000-m80cb6a9c-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6843-0bb9-0000-714b-e31d00000000.xml#m80cb6a9c-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cb6b66-0bbe-0000-714b-e31d00000000" name="F21 Facts Revenue Aggregate 2_FKey#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb6823-0bb9-0000-714b-e31d00000000.xml#m80cb6aee-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cb6b66-0bbe-0000-714b-e31d00000000-m80cb6a9a-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6843-0bb9-0000-714b-e31d00000000.xml#m80cb6a9a-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

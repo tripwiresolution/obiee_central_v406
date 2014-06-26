@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cb6827-0bb9-0000-714b-e31d00000000" name="D41 Channels (Revenue)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" x="1061" y="1437" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cb6807-0bb9-0000-714b-e31d00000000.xml#m80cb6807-0bb9-0000-714b-e31d00000000">
+<Description><![CDATA[ZZZ - Not yet filled]]></Description>
+<PhysicalColumn mdsid="m80cb69a0-0bbb-0000-714b-e31d00000000" name="Chnl_Key" dataType="DOUBLE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6807-0bb9-0000-714b-e31d00000000.xml#m80cb686b-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Channel Key: Surrogate key of the channel dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb69a1-0bbb-0000-714b-e31d00000000" name="Chnl_Name" dataType="VARCHAR" precision="50" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6807-0bb9-0000-714b-e31d00000000.xml#m80cb686c-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Channel Name: Stores channel name as text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb69a2-0bbb-0000-714b-e31d00000000" name="Chnl_Attribute_1" dataType="VARCHAR" precision="50" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6807-0bb9-0000-714b-e31d00000000.xml#m80cb686d-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Channel Attribute 1: Stores channel attribute 1 as a text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m832b8e90-0c8a-1000-8bc9-0af502b30000" name="TOTAL_VALUE" dataType="VARCHAR" precision="20" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6807-0bb9-0000-714b-e31d00000000.xml#m83254d01-0c8a-1000-8bc9-0af502b30000">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cb6af1-0bc0-0000-714b-e31d00000000" name="D60 Sales Teams_Key">
+<RefColumns>
+<RefColumn refId="m80cb6af1-0bc0-0000-714b-e31d00000000-m80cb69a0-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6827-0bb9-0000-714b-e31d00000000.xml#m80cb69a0-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

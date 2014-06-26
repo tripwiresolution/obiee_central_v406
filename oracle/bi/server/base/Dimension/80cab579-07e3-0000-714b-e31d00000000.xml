@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m80cab579-07e3-0000-714b-e31d00000000" name="H5 Sales Rep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="true" isRagged="false" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/80cab579-07e3-0000-714b-e31d00000000.xml#m80cab6b9-07e9-0000-714b-e31d00000000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cab573-07d0-0000-714b-e31d00000000.xml#m80cab573-07d0-0000-714b-e31d00000000">
+<LogicalLevel mdsid="m80cab6b9-07e9-0000-714b-e31d00000000" name="Sales Reps Total" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;Sales Reps Total&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="m80cab6b9-07e9-0000-714b-e31d00000000_m80cab6ba-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cab579-07e3-0000-714b-e31d00000000.xml#m80cab6ba-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cab6b9-07e9-0000-714b-e31d00000000-m80cab61c-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cab61c-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cab6b9-07e9-0000-714b-e31d00000000-m80cab621-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab621-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cab6b9-07e9-0000-714b-e31d00000000-m80cab622-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab622-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cab6b9-07e9-0000-714b-e31d00000000-m80cab646-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab641-07f3-0000-714b-e31d00000000.xml#m80cab646-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cab6b9-07e9-0000-714b-e31d00000000-m80cadcd6-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cadc45-07f3-0000-714b-e31d00000000.xml#m80cadcd6-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cab6b9-07e9-0000-714b-e31d00000000-m80cb1a01-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab659-07f3-0000-714b-e31d00000000.xml#m80cb1a01-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cab6b9-07e9-0000-714b-e31d00000000-m80cc1ff5-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cc1ff5-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cab6ba-07e9-0000-714b-e31d00000000" name="Sales Reps Detail" isGTA="false" isFDUC="true" memberCount="29" levelConst="&apos;Sales Reps Detail&apos;">
+<LogicalKey mdsid="m80cab6ed-07d8-0000-714b-e31d00000000" name="Employee (Parent-Child)_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cab6ed-07d8-0000-714b-e31d00000000-m80cab648-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab647-07f3-0000-714b-e31d00000000.xml#m80cab648-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m80cabe64-07d8-0000-714b-e31d00000000" name="Display Key" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cabe64-07d8-0000-714b-e31d00000000-m80cab649-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab647-07f3-0000-714b-e31d00000000.xml#m80cab649-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m7c22d0e0-0c30-1000-a0d6-7f0000010000" name="Primary key">
+<RefColumns>
+<RefLogicalColumn refId="m7c22d0e0-0c30-1000-a0d6-7f0000010000-m80cab648-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab647-07f3-0000-714b-e31d00000000.xml#m80cab648-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m7c22d0e0-0c30-1000-a0d6-7f0000010000-m80cab649-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab647-07f3-0000-714b-e31d00000000.xml#m80cab649-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m7c22d0e0-0c30-1000-a0d6-7f0000010000-m80cab64b-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab647-07f3-0000-714b-e31d00000000.xml#m80cab64b-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m80cab6ef-07d8-0000-714b-e31d00000000" name="_PARENT_KEY_" logicalLevelRef="/oracle/bi/server/base/Dimension/80cab579-07e3-0000-714b-e31d00000000.xml#m80cab6ba-07e9-0000-714b-e31d00000000">
+<RefColumns>
+<RefLogicalColumn refId="m80cab6ef-07d8-0000-714b-e31d00000000-m80cab64f-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab647-07f3-0000-714b-e31d00000000.xml#m80cab64f-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefPreferredDrillDown>
+<RefLogicalLevel refId="m80cab6ba-07e9-0000-714b-e31d00000000-m80cab6a5-07e9-0000-714b-e31d00000000" logicalLevelRef="/oracle/bi/server/base/Dimension/80cab575-07e3-0000-714b-e31d00000000.xml#m80cab6a5-07e9-0000-714b-e31d00000000"/>
+</RefPreferredDrillDown>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cab6ba-07e9-0000-714b-e31d00000000-m80cab648-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab647-07f3-0000-714b-e31d00000000.xml#m80cab648-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cab6ba-07e9-0000-714b-e31d00000000-m80cab649-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab647-07f3-0000-714b-e31d00000000.xml#m80cab649-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

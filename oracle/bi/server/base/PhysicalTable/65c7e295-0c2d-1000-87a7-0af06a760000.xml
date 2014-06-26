@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m65c7e295-0c2d-1000-87a7-0af06a760000" name="ORDER_ITEMS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" x="1296" y="797" maxConn="0" containerRef="/oracle/bi/server/base/Schema/65c7e220-0c2d-1000-87a7-0af06a760000.xml#m65c7e220-0c2d-1000-87a7-0af06a760000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[ORDER_ITEMS]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m65c7e296-0c2d-1000-87a7-0af06a760000" name="CREATED_BY" dataType="VARCHAR" precision="60" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e297-0c2d-1000-87a7-0af06a760000" name="CREATION_DATE" dataType="DATETIME" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e298-0c2d-1000-87a7-0af06a760000" name="LAST_UPDATED_BY" dataType="VARCHAR" precision="60" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e299-0c2d-1000-87a7-0af06a760000" name="LAST_UPDATE_DATE" dataType="DATETIME" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e29a-0c2d-1000-87a7-0af06a760000" name="LINE_ITEM_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e29b-0c2d-1000-87a7-0af06a760000" name="OBJECT_VERSION_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e29c-0c2d-1000-87a7-0af06a760000" name="ORDER_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e29d-0c2d-1000-87a7-0af06a760000" name="PRODUCT_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e29e-0c2d-1000-87a7-0af06a760000" name="QUANTITY" dataType="INT" precision="6" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m65c7e29f-0c2d-1000-87a7-0af06a760000" name="UNIT_PRICE" dataType="DOUBLE" scale="2" precision="8" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m65c7e464-0c2d-1000-87a7-0af06a760000" name="ORDER_ID">
+<RefColumns>
+<RefColumn refId="m65c7e464-0c2d-1000-87a7-0af06a760000-m65c7e29a-0c2d-1000-87a7-0af06a760000" columnRef="/oracle/bi/server/base/PhysicalTable/65c7e295-0c2d-1000-87a7-0af06a760000.xml#m65c7e29a-0c2d-1000-87a7-0af06a760000"/>
+<RefColumn refId="m65c7e464-0c2d-1000-87a7-0af06a760000-m65c7e29c-0c2d-1000-87a7-0af06a760000" columnRef="/oracle/bi/server/base/PhysicalTable/65c7e295-0c2d-1000-87a7-0af06a760000.xml#m65c7e29c-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="m65c7e465-0c2d-1000-87a7-0af06a760000" name="ORDER_ITEMS_Key">
+<RefColumns>
+<RefColumn refId="m65c7e465-0c2d-1000-87a7-0af06a760000-m65c7e29c-0c2d-1000-87a7-0af06a760000" columnRef="/oracle/bi/server/base/PhysicalTable/65c7e295-0c2d-1000-87a7-0af06a760000.xml#m65c7e29c-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m65c7e497-0c2d-1000-87a7-0af06a760000" name="PRODUCT_ID#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/65c7e326-0c2d-1000-87a7-0af06a760000.xml#m65c7e470-0c2d-1000-87a7-0af06a760000">
+<RefColumns>
+<RefColumn refId="m65c7e497-0c2d-1000-87a7-0af06a760000-m65c7e29d-0c2d-1000-87a7-0af06a760000" columnRef="/oracle/bi/server/base/PhysicalTable/65c7e295-0c2d-1000-87a7-0af06a760000.xml#m65c7e29d-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m65c7e498-0c2d-1000-87a7-0af06a760000" name="ORDER_ITEMS_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/65c7e27d-0c2d-1000-87a7-0af06a760000.xml#m65c7e463-0c2d-1000-87a7-0af06a760000">
+<RefColumns>
+<RefColumn refId="m65c7e498-0c2d-1000-87a7-0af06a760000-m65c7e29c-0c2d-1000-87a7-0af06a760000" columnRef="/oracle/bi/server/base/PhysicalTable/65c7e295-0c2d-1000-87a7-0af06a760000.xml#m65c7e29c-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

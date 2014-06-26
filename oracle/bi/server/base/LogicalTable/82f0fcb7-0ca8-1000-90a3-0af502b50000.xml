@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0fcb7-0ca8-1000-90a3-0af502b50000" name="D04. Headcount" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acdb-0ca8-1000-90a3-0af502b50000.xml#m82f0acdb-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0fcb8-0ca8-1000-90a3-0af502b50000" name="LOB" isWriteable="false">
+<AttrDefn mdsid="m82f2a9c7-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761601391789375">
+<Expr mdsid="m00000001-01f4-0000-f910-b22800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."HCM"."LOIC_HEADCOUNT"."LOB"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-f910-b22800000000-m82e3dcd0-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dcca-0ca8-1000-90a3-0af502b50000.xml#m82e3dcd0-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fcb9-0ca8-1000-90a3-0af502b50000" name="Reason" isWriteable="false">
+<AttrDefn mdsid="m82f2a9c8-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761611391789375">
+<Expr mdsid="m00000002-01f4-0000-5bed-d0d000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."HCM"."LOIC_HEADCOUNT"."REASON"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-5bed-d0d000000000-m82e3dccf-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dcca-0ca8-1000-90a3-0af502b50000.xml#m82e3dccf-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fcba-0ca8-1000-90a3-0af502b50000" name="Type" isWriteable="false">
+<AttrDefn mdsid="m82f2a9c9-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761621391789375">
+<Expr mdsid="m00000003-01f4-0000-993a-c55800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."HCM"."LOIC_HEADCOUNT"."TYPE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-993a-c55800000000-m82e3dcce-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dcca-0ca8-1000-90a3-0af502b50000.xml#m82e3dcce-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fcbb-0ca8-1000-90a3-0af502b50000" name="Performance" isWriteable="false">
+<AttrDefn mdsid="m82f2a9ca-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761631391789375">
+<Expr mdsid="m00000004-01f4-0000-c86a-242800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."HCM"."LOIC_HEADCOUNT"."PERFORMANCE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-c86a-242800000000-m82e3dcd1-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dcca-0ca8-1000-90a3-0af502b50000.xml#m82e3dcd1-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fcbc-0ca8-1000-90a3-0af502b50000" name="Numbers" isWriteable="false">
+<MeasureDefn mdsid="m82f17048-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19792-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737201391789375" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-9dae-34bc00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA HCM"."D04. Headcount"."Numbers")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-9dae-34bc00000000-m82f0fcbc-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fcb7-0ca8-1000-90a3-0af502b50000.xml#m82f0fcbc-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a9cb-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761641391789375">
+<Expr mdsid="m00000006-01f4-0000-01c7-57bb00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."HCM"."LOIC_HEADCOUNT"."NUMBERS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-01c7-57bb00000000-m82e3dcd2-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dcca-0ca8-1000-90a3-0af502b50000.xml#m82e3dcd2-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fcbd-0ca8-1000-90a3-0af502b50000" name="FY" isWriteable="false">
+<AttrDefn mdsid="m82f2a9cc-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761651391789375">
+<Expr mdsid="m00000007-01f4-0000-3da8-cd8c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."HCM"."LOIC_HEADCOUNT"."FY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-3da8-cd8c00000000-m82e3dcd3-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dcca-0ca8-1000-90a3-0af502b50000.xml#m82e3dcd3-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0fcb7-0ca8-1000-90a3-0af502b50000-m82f344e8-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f344e8-0ca8-1000-90a3-0af502b50000.xml#m82f344e8-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

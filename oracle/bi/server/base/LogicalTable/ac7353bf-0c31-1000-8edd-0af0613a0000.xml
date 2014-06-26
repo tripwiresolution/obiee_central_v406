@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="mac7353bf-0c31-1000-8edd-0af0613a0000" name="Dim- Airports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/ac735390-0c31-1000-8edd-0af0613a0000.xml#mac735390-0c31-1000-8edd-0af0613a0000">
+<LogicalColumn mdsid="mac7353c0-0c31-1000-8edd-0af0613a0000" name="Airport" isWriteable="false">
+<AttrDefn mdsid="mac735422-0c31-1000-8edd-0af0613a0000" name="AD_3900:2402621340748617">
+<Expr mdsid="m00000001-01f4-0000-a143-b4ab00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["07 - ORE Sample"."".""."AirportsCount"."AirportCode"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-a143-b4ab00000000-mac71f42e-0c31-1000-8edd-0af0613a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/ac71f42d-0c31-1000-8edd-0af0613a0000.xml#mac71f42e-0c31-1000-8edd-0af0613a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mac7353c1-0c31-1000-8edd-0af0613a0000" name="NumFlightsY2" isWriteable="false">
+<AttrDefn mdsid="mac735423-0c31-1000-8edd-0af0613a0000" name="AD_3900:2402631340748617">
+<Expr mdsid="m00000002-01f4-0000-cfbe-63bc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["07 - ORE Sample"."".""."AirportsCount"."NumFltYear2"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-cfbe-63bc00000000-mac71f430-0c31-1000-8edd-0af0613a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/ac71f42d-0c31-1000-8edd-0af0613a0000.xml#mac71f430-0c31-1000-8edd-0af0613a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mac7353c2-0c31-1000-8edd-0af0613a0000" name="ChangeInNumFlts" isWriteable="false">
+<AttrDefn mdsid="mac735424-0c31-1000-8edd-0af0613a0000" name="AD_3900:2402641340748617">
+<Expr mdsid="m00000003-01f4-0000-5018-f8c600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["07 - ORE Sample"."".""."AirportsCount"."Change"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-5018-f8c600000000-mac71f431-0c31-1000-8edd-0af0613a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/ac71f42d-0c31-1000-8edd-0af0613a0000.xml#mac71f431-0c31-1000-8edd-0af0613a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mac7353c3-0c31-1000-8edd-0af0613a0000" name="NumFlightsY1" isWriteable="false">
+<AttrDefn mdsid="mac735425-0c31-1000-8edd-0af0613a0000" name="AD_3900:2402651340748617">
+<Expr mdsid="m00000004-01f4-0000-b71a-839800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["07 - ORE Sample"."".""."AirportsCount"."NumFltYear1"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-b71a-839800000000-mac71f42f-0c31-1000-8edd-0af0613a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/ac71f42d-0c31-1000-8edd-0af0613a0000.xml#mac71f42f-0c31-1000-8edd-0af0613a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="mac7353f7-0c31-1000-8edd-0af0613a0000" name="AirportCode" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="mac7353f7-0c31-1000-8edd-0af0613a0000-mac7353c0-0c31-1000-8edd-0af0613a0000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/ac7353bf-0c31-1000-8edd-0af0613a0000.xml#mac7353c0-0c31-1000-8edd-0af0613a0000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="mac7353bf-0c31-1000-8edd-0af0613a0000-mac73542f-0c31-1000-8edd-0af0613a0000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/ac73542f-0c31-1000-8edd-0af0613a0000.xml#mac73542f-0c31-1000-8edd-0af0613a0000"/>
+</RefTableSources>
+</LogicalTable>

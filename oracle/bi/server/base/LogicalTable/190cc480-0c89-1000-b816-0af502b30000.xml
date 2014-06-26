@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m190cc480-0c89-1000-b816-0af502b30000" name="Claims - Dim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/6974aaf0-0c84-1000-8c5b-0ae4f18a0000.xml#m6974aaf0-0c84-1000-8c5b-0ae4f18a0000">
+<LogicalColumn mdsid="m190cc481-0c89-1000-b816-0af502b30000" name="Claim Age" isWriteable="false">
+<AttrDefn mdsid="m190cc4b0-0c89-1000-b816-0af502b30000" name="AD_3900:2669661378297308">
+<Expr mdsid="m00000001-01f4-0000-a84c-5be400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."CLAIM_AGE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-a84c-5be400000000-m697101ae-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101ae-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc482-0c89-1000-b816-0af502b30000" name="Claim Age Bucket" isWriteable="false">
+<AttrDefn mdsid="m190cc4b1-0c89-1000-b816-0af502b30000" name="AD_3900:2669671378297308">
+<Expr mdsid="m00000002-01f4-0000-5152-036e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."CLAIM_AGE_BUCKET"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-5152-036e00000000-m697101a2-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101a2-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc483-0c89-1000-b816-0af502b30000" name="Claim Date" isWriteable="false">
+<AttrDefn mdsid="m190cc4b2-0c89-1000-b816-0af502b30000" name="AD_3900:2669681378297308">
+<Expr mdsid="m00000003-01f4-0000-be9b-370900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."CLAIM_DATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-be9b-370900000000-m697101a3-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101a3-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc484-0c89-1000-b816-0af502b30000" name="Claim Dealer" isWriteable="false">
+<AttrDefn mdsid="m190cc4b3-0c89-1000-b816-0af502b30000" name="AD_3900:2669691378297308">
+<Expr mdsid="m00000004-01f4-0000-ad1c-c65500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."CLAIM_DEALER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-ad1c-c65500000000-m697101a4-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101a4-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc485-0c89-1000-b816-0af502b30000" name="Claim Labor Code" isWriteable="false">
+<AttrDefn mdsid="m190cc4b4-0c89-1000-b816-0af502b30000" name="AD_3900:2669701378297308">
+<Expr mdsid="m00000005-01f4-0000-e5cd-592100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."CLAIM_LABOR_CODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-e5cd-592100000000-m697101a5-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101a5-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc486-0c89-1000-b816-0af502b30000" name="Claim Labor Desc" isWriteable="false">
+<AttrDefn mdsid="m190cc4b5-0c89-1000-b816-0af502b30000" name="AD_3900:2669711378297308">
+<Expr mdsid="m00000006-01f4-0000-beb7-608800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."CLAIM_LABOR_DESC"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-beb7-608800000000-m697101a6-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101a6-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc487-0c89-1000-b816-0af502b30000" name="Claim Lbr Othr Globl Amt" isWriteable="false">
+<AttrDefn mdsid="m190cc4b6-0c89-1000-b816-0af502b30000" name="AD_3900:2669721378297308">
+<Expr mdsid="m00000007-01f4-0000-0454-4ebd00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."CLAIM_LBR_OTHR_GLOBL_AMT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-0454-4ebd00000000-m697101af-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101af-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc488-0c89-1000-b816-0af502b30000" name="Claim Lbr Tot Globl Amt" isWriteable="false">
+<AttrDefn mdsid="m190cc4b7-0c89-1000-b816-0af502b30000" name="AD_3900:2669731378297308">
+<Expr mdsid="m00000008-01f4-0000-7354-478300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."CLAIM_LBR_TOT_GLOBL_AMT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-7354-478300000000-m697101b0-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101b0-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc489-0c89-1000-b816-0af502b30000" name="Claim Month" isWriteable="false">
+<AttrDefn mdsid="m190cc4b8-0c89-1000-b816-0af502b30000" name="AD_3900:2669741378297308">
+<Expr mdsid="m00000009-01f4-0000-d7ca-789900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."CLAIM_MONTH"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-d7ca-789900000000-m697101a7-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101a7-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc48a-0c89-1000-b816-0af502b30000" name="Claim Month Num" isWriteable="false">
+<AttrDefn mdsid="m190cc4b9-0c89-1000-b816-0af502b30000" name="AD_3900:2669751378297308">
+<Expr mdsid="m0000000a-01f4-0000-c88e-cfe600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."CLAIM_MONTH_NUM"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-c88e-cfe600000000-m697101a8-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101a8-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc48b-0c89-1000-b816-0af502b30000" name="Claim Odmtr Mileage" isWriteable="false">
+<AttrDefn mdsid="m190cc4ba-0c89-1000-b816-0af502b30000" name="AD_3900:2669761378297308">
+<Expr mdsid="m0000000b-01f4-0000-277f-da9000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."CLAIM_ODMTR_MILEAGE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-277f-da9000000000-m697101b1-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101b1-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc48c-0c89-1000-b816-0af502b30000" name="Claim Part Tot Globl Amt" isWriteable="false">
+<AttrDefn mdsid="m190cc4bb-0c89-1000-b816-0af502b30000" name="AD_3900:2669771378297308">
+<Expr mdsid="m0000000c-01f4-0000-2754-a9e100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."CLAIM_PART_TOT_GLOBL_AMT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-2754-a9e100000000-m697101b2-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101b2-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc48d-0c89-1000-b816-0af502b30000" name="Claim Period" isWriteable="false">
+<AttrDefn mdsid="m190cc4bc-0c89-1000-b816-0af502b30000" name="AD_3900:2669781378297308">
+<Expr mdsid="m0000000d-01f4-0000-dba5-6bae00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."CLAIM_PERIOD"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-dba5-6bae00000000-m697101a9-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101a9-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc48e-0c89-1000-b816-0af502b30000" name="Claim Quarter" isWriteable="false">
+<AttrDefn mdsid="m190cc4bd-0c89-1000-b816-0af502b30000" name="AD_3900:2669791378297308">
+<Expr mdsid="m0000000e-01f4-0000-14a3-aa6a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."CLAIM_QUARTER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-14a3-aa6a00000000-m697101aa-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101aa-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc48f-0c89-1000-b816-0af502b30000" name="Claim Tot Globl Amt" isWriteable="false">
+<AttrDefn mdsid="m190ceb90-0c89-1000-b816-0af502b30000" name="AD_3900:2669801378297308">
+<Expr mdsid="m0000000f-01f4-0000-4427-717000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."CLAIM_TOT_GLOBL_AMT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-4427-717000000000-m697101b3-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101b3-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc490-0c89-1000-b816-0af502b30000" name="Claim Year" isWriteable="false">
+<AttrDefn mdsid="m190ceb91-0c89-1000-b816-0af502b30000" name="AD_3900:2669811378297308">
+<Expr mdsid="m00000010-01f4-0000-aa54-2c9400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."CLAIM_YEAR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-aa54-2c9400000000-m697101ab-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101ab-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc491-0c89-1000-b816-0af502b30000" name="Days In Service" isWriteable="false">
+<AttrDefn mdsid="m190ceb92-0c89-1000-b816-0af502b30000" name="AD_3900:2669821378297308">
+<Expr mdsid="m00000011-01f4-0000-f34d-d8b800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."DAYS_IN_SERVICE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-f34d-d8b800000000-m697101ac-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101ac-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc492-0c89-1000-b816-0af502b30000" name="Months In Service" isWriteable="false">
+<AttrDefn mdsid="m190ceb93-0c89-1000-b816-0af502b30000" name="AD_3900:2669831378297308">
+<Expr mdsid="m00000012-01f4-0000-b7c0-4e3d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."MONTHS_IN_SERVICE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-b7c0-4e3d00000000-m697101ad-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101ad-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc493-0c89-1000-b816-0af502b30000" name="Part Hist Count" isWriteable="false">
+<AttrDefn mdsid="m190ceb94-0c89-1000-b816-0af502b30000" name="AD_3900:2669841378297308">
+<Expr mdsid="m00000013-01f4-0000-079e-5c8600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."PART_HIST_COUNT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-079e-5c8600000000-m697101b4-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101b4-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc494-0c89-1000-b816-0af502b30000" name="Part Number" isWriteable="false">
+<AttrDefn mdsid="m190ceb95-0c89-1000-b816-0af502b30000" name="AD_3900:2669851378297308">
+<Expr mdsid="m00000014-01f4-0000-1698-cf9100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."PART_NUMBER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-1698-cf9100000000-m697101b6-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101b6-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc495-0c89-1000-b816-0af502b30000" name="Part Options" isWriteable="false">
+<AttrDefn mdsid="m190ceb96-0c89-1000-b816-0af502b30000" name="AD_3900:2669861378297308">
+<Expr mdsid="m00000015-01f4-0000-615b-9f9200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."PART_OPTIONS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-615b-9f9200000000-m697101b5-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101b5-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc496-0c89-1000-b816-0af502b30000" name="Recordid" isWriteable="false">
+<AttrDefn mdsid="m190ceb97-0c89-1000-b816-0af502b30000" name="AD_3900:2669871378297308">
+<Expr mdsid="m00000016-01f4-0000-555e-153a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."RECORDID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-555e-153a00000000-m697101a1-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101a1-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc497-0c89-1000-b816-0af502b30000" name="Supplier Ultimatename" isWriteable="false">
+<AttrDefn mdsid="m190ceb98-0c89-1000-b816-0af502b30000" name="AD_3900:2669881378297308">
+<Expr mdsid="m00000017-01f4-0000-1014-8c8100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."SUPPLIER_ULTIMATENAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-1014-8c8100000000-m697101b8-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101b8-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m190cc498-0c89-1000-b816-0af502b30000" name="VIN" isWriteable="false">
+<AttrDefn mdsid="m190ceb99-0c89-1000-b816-0af502b30000" name="AD_3900:2669891378297308">
+<Expr mdsid="m00000018-01f4-0000-b3ec-e7ad00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."FACT_CLAIM"."VIN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000018-01f4-0000-b3ec-e7ad00000000-m697101b7-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101a0-0c84-1000-8c5b-0ae4f18a0000.xml#m697101b7-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m190cc4af-0c89-1000-b816-0af502b30000" name="SYS_C0018207" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m190cc4af-0c89-1000-b816-0af502b30000-m190cc496-0c89-1000-b816-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/190cc480-0c89-1000-b816-0af502b30000.xml#m190cc496-0c89-1000-b816-0af502b30000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m190cc480-0c89-1000-b816-0af502b30000-m190ceba1-0c89-1000-b816-0af502b30000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/190ceba1-0c89-1000-b816-0af502b30000.xml#m190ceba1-0c89-1000-b816-0af502b30000"/>
+</RefTableSources>
+</LogicalTable>

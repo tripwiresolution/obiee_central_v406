@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m80cdc014-07e3-0000-714b-e31d00000000" name="Channels" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="true" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/80cdc014-07e3-0000-714b-e31d00000000.xml#m80cdc0ad-07e9-0000-714b-e31d00000000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cdc011-07d0-0000-714b-e31d00000000.xml#m80cdc011-07d0-0000-714b-e31d00000000">
+<LogicalLevel mdsid="m80cdc0ad-07e9-0000-714b-e31d00000000" name="Gen1,Channels" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Gen1,Channels&apos;">
+<LogicalKey mdsid="m80cdc0c7-07d8-0000-714b-e31d00000000" name="Gen1,Channels - Member Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cdc0c7-07d8-0000-714b-e31d00000000-m80cdc048-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc045-07f3-0000-714b-e31d00000000.xml#m80cdc048-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m80cdc0c8-07d8-0000-714b-e31d00000000" name="Gen1,Channels" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cdc0c8-07d8-0000-714b-e31d00000000-m80cdc046-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc045-07f3-0000-714b-e31d00000000.xml#m80cdc046-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cdc0ad-07e9-0000-714b-e31d00000000_m80cdc0ae-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cdc014-07e3-0000-714b-e31d00000000.xml#m80cdc0ae-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cdc0ad-07e9-0000-714b-e31d00000000-m80cdc046-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc045-07f3-0000-714b-e31d00000000.xml#m80cdc046-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cdc0ad-07e9-0000-714b-e31d00000000-m80cdc047-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc045-07f3-0000-714b-e31d00000000.xml#m80cdc047-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cdc0ad-07e9-0000-714b-e31d00000000-m80cdc048-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc045-07f3-0000-714b-e31d00000000.xml#m80cdc048-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cdc0ae-07e9-0000-714b-e31d00000000" name="Channel Type" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Channel Type&apos;">
+<LogicalKey mdsid="m80cdc0c9-07d8-0000-714b-e31d00000000" name="Channel Type - Member Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cdc0c9-07d8-0000-714b-e31d00000000-m80cdc04b-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc045-07f3-0000-714b-e31d00000000.xml#m80cdc04b-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m80cdc0ca-07d8-0000-714b-e31d00000000" name="Channel Type" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cdc0ca-07d8-0000-714b-e31d00000000-m80cdc049-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc045-07f3-0000-714b-e31d00000000.xml#m80cdc049-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cdc0ae-07e9-0000-714b-e31d00000000_m80cdc0af-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cdc014-07e3-0000-714b-e31d00000000.xml#m80cdc0af-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cdc0ae-07e9-0000-714b-e31d00000000-m80cdc049-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc045-07f3-0000-714b-e31d00000000.xml#m80cdc049-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cdc0ae-07e9-0000-714b-e31d00000000-m80cdc04a-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc045-07f3-0000-714b-e31d00000000.xml#m80cdc04a-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cdc0ae-07e9-0000-714b-e31d00000000-m80cdc04b-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc045-07f3-0000-714b-e31d00000000.xml#m80cdc04b-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cdc0af-07e9-0000-714b-e31d00000000" name="Channel Name" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Channel Name&apos;">
+<LogicalKey mdsid="m80cdc0cb-07d8-0000-714b-e31d00000000" name="Channel Name - Member Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cdc0cb-07d8-0000-714b-e31d00000000-m80cdc04e-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc045-07f3-0000-714b-e31d00000000.xml#m80cdc04e-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m80cdc0cc-07d8-0000-714b-e31d00000000" name="Channel Name" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cdc0cc-07d8-0000-714b-e31d00000000-m80cdc04c-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc045-07f3-0000-714b-e31d00000000.xml#m80cdc04c-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cdc0af-07e9-0000-714b-e31d00000000-m80cdc04c-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc045-07f3-0000-714b-e31d00000000.xml#m80cdc04c-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cdc0af-07e9-0000-714b-e31d00000000-m80cdc04d-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc045-07f3-0000-714b-e31d00000000.xml#m80cdc04d-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cdc0af-07e9-0000-714b-e31d00000000-m80cdc04e-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdc045-07f3-0000-714b-e31d00000000.xml#m80cdc04e-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

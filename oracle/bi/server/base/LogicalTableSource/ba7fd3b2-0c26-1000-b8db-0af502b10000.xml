@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="mba7fd3b2-0c26-1000-b8db-0af502b10000" name="DBA_TABLESPACE_GROUPS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/ba7fd3b0-0c26-1000-b8db-0af502b10000.xml#mba7fd3b0-0c26-1000-b8db-0af502b10000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-a79e-cdfb00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - Db Structure"."TS- DBA_TABLESPACE_GROUPS"."Group Name"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-a79e-cdfb00000000-mba7fd3b3-0c26-1000-b8db-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/ba7fd3b0-0c26-1000-b8db-0af502b10000.xml#mba7fd3b3-0c26-1000-b8db-0af502b10000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-150f-1c0700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."DBA_TABLESPACE_GROUPS"."GROUP_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-150f-1c0700000000-m8e6e8d0f-0c26-1000-9bbc-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8e6e8d0e-0c26-1000-9bbc-0af502b10000.xml#m8e6e8d0f-0c26-1000-9bbc-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-55c5-ae0600000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - Db Structure"."TS- DBA_TABLESPACE_GROUPS"."Tablespace Name"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-55c5-ae0600000000-mba7fd3b4-0c26-1000-b8db-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/ba7fd3b0-0c26-1000-b8db-0af502b10000.xml#mba7fd3b4-0c26-1000-b8db-0af502b10000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-993e-fb9c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."DBA_TABLESPACE_GROUPS"."TABLESPACE_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-993e-fb9c00000000-m8e6e8d10-0c26-1000-9bbc-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8e6e8d0e-0c26-1000-9bbc-0af502b10000.xml#m8e6e8d10-0c26-1000-9bbc-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/8e6e8d0e-0c26-1000-9bbc-0af502b10000.xml#m8e6e8d0e-0c26-1000-9bbc-0af502b10000">
+</Link>
+<WhereClause mdsid="m00000005-01f4-0000-64ef-c8d400000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000006-01f4-0000-394d-c55800000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m00000007-01f4-0000-4338-6a7300000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

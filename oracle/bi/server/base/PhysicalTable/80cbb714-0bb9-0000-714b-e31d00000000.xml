@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cbb714-0bb9-0000-714b-e31d00000000" name="PRODUCT_IMAGES" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" x="1872" y="679" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cbb6f4-0bd3-0000-714b-e31d00000000.xml#m80cbb6f4-0bd3-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[PRODUCT_IMAGES]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cbb8a4-0bbb-0000-714b-e31d00000000" name="CREATED_BY" dataType="VARCHAR" precision="60" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb8a5-0bbb-0000-714b-e31d00000000" name="CREATION_DATE" dataType="DATETIME" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb8a6-0bbb-0000-714b-e31d00000000" name="DEFAULT_VIEW_FLAG" dataType="VARCHAR" precision="1" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb8a7-0bbb-0000-714b-e31d00000000" name="DETAIL_IMAGE_ID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb8a8-0bbb-0000-714b-e31d00000000" name="IMAGE" dataType="LONGVARBINARY" precision="96000" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb8a9-0bbb-0000-714b-e31d00000000" name="LAST_UPDATED_BY" dataType="VARCHAR" precision="60" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb8aa-0bbb-0000-714b-e31d00000000" name="LAST_UPDATE_DATE" dataType="DATETIME" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb8ab-0bbb-0000-714b-e31d00000000" name="OBJECT_VERSION_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb8ac-0bbb-0000-714b-e31d00000000" name="PRODUCT_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cbb8ad-0bbb-0000-714b-e31d00000000" name="PRODUCT_IMAGE_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cbb8ec-0bc0-0000-714b-e31d00000000" name="PRODUCT_IMAGE_ID">
+<RefColumns>
+<RefColumn refId="m80cbb8ec-0bc0-0000-714b-e31d00000000-m80cbb8ad-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cbb714-0bb9-0000-714b-e31d00000000.xml#m80cbb8ad-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m80cbb913-0bbe-0000-714b-e31d00000000" name="PRODUCT_ID#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cbc121-0bb9-0000-714b-e31d00000000.xml#m80cbc162-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cbb913-0bbe-0000-714b-e31d00000000-m80cbb8ac-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cbb714-0bb9-0000-714b-e31d00000000.xml#m80cbb8ac-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m575b6955-0c2d-1000-87a7-0af06a760000" name="23 Arr Time Blk" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/575b68b0-0c2d-1000-87a7-0af06a760000.xml#m575b68b0-0c2d-1000-87a7-0af06a760000">
+<LogicalColumn mdsid="m575b6956-0c2d-1000-87a7-0af06a760000" name="Arr Time Blk" isWriteable="false">
+<AttrDefn mdsid="m575b6c4d-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372201338887867">
+<Expr mdsid="m00000001-01f4-0000-8b30-aee800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES_AGG"."SA_23_Arr_00039CE7"."Arr_Time_B00039BAD"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-8b30-aee800000000-m66f233c7-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/66f233c5-0c61-1000-99f2-7f0000010000.xml#m66f233c7-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m575b6bb5-0c2d-1000-87a7-0af06a760000" name="Time Block" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6bb5-0c2d-1000-87a7-0af06a760000-m575b6956-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6955-0c2d-1000-87a7-0af06a760000.xml#m575b6956-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m575b6955-0c2d-1000-87a7-0af06a760000-m575b6d4c-0c2d-1000-87a7-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/575b6d4c-0c2d-1000-87a7-0af06a760000.xml#m575b6d4c-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalTableSource refId="m575b6955-0c2d-1000-87a7-0af06a760000-m66f3e163-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/66f3e163-0c61-1000-99f2-7f0000010000.xml#m66f3e163-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b6955-0c2d-1000-87a7-0af06a760000-mf0479dd2-0cb1-1000-9163-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/f0479dd2-0cb1-1000-9163-0af502b50000.xml#mf0479dd2-0cb1-1000-9163-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

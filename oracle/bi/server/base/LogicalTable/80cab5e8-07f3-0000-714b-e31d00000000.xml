@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cab5e8-07f3-0000-714b-e31d00000000" name="F5 Time Series and Level Based Examples" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="1573" y="50" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cab573-07d0-0000-714b-e31d00000000.xml#m80cab573-07d0-0000-714b-e31d00000000">
+<Description><![CDATA[This logical table contains metrics that always return value at a particular level within a dimension. Eg:- Revenue at Month level, Billed Qtry at Year level, Booked Amt for all Products etc.
+All metrics in this table are logical calculations based on physically mapped metrics from F0 Rev Base Measures and F1 Inv Base Measures.]]></Description>
+<LogicalColumn mdsid="m80cb67bb-07d6-0000-714b-e31d00000000" name="121  ---- Dynamic Time Level ---------------------" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m00000001-01f4-0000-c673-8f0a00000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m80cb67bd-0f3c-0000-714b-e31d00000000" name="AD_3900:423301269347430">
+<Expr mdsid="m00000002-01f4-0000-1637-989300000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb66d4-07d6-0000-714b-e31d00000000" name="121  Period Ago Rev" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns data as of previous month vs. month selected in the query.]]></Description>
+<Expr mdsid="m00000003-01f4-0000-ceba-72c400000000" name="Expr">
+<ExprText><![CDATA[ AGO("%1", 1)]]></ExprText>
+<ExprTextDesc><![CDATA[ AGO("01 - Sample App"."F0 Sales Base Measures"."1- Revenue", 1)]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-ceba-72c400000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cb66d5-0f3c-0000-714b-e31d00000000" name="AD_3900:421371269337960">
+<Expr mdsid="m00000004-01f4-0000-4559-418e00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab601-07d6-0000-714b-e31d00000000" name="122  Rev Var to Period Ago" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Value change to last month]]></Description>
+<Expr mdsid="m00000005-01f4-0000-d333-5c1400000000" name="Expr">
+<ExprText><![CDATA["%1" - "%2"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F0 Sales Base Measures"."1- Revenue" - "01 - Sample App"."F5 Time Series and Level Based Examples"."121  Period Ago Rev"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-d333-5c1400000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000005-01f4-0000-d333-5c1400000000-m80cb66d4-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cb66d4-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab77a-0f3c-0000-714b-e31d00000000" name="AD_3900:122661262767587">
+<Expr mdsid="m00000006-01f4-0000-118a-7c5b00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab602-07d6-0000-714b-e31d00000000" name="123  Rev Pct Var to Period Ago" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Average % change to last month value]]></Description>
+<Expr mdsid="m00000007-01f4-0000-3953-c2b200000000" name="Expr">
+<ExprText><![CDATA["%1" / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F5 Time Series and Level Based Examples"."122  Rev Var to Period Ago" / "01 - Sample App"."F5 Time Series and Level Based Examples"."121  Period Ago Rev" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-3953-c2b200000000-m80cab601-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab601-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000007-01f4-0000-3953-c2b200000000-m80cb66d4-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cb66d4-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab77b-0f3c-0000-714b-e31d00000000" name="AD_3900:122671262767587">
+<Expr mdsid="m00000008-01f4-0000-4b50-a67000000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab5eb-07d6-0000-714b-e31d00000000" name="125  N Period Agos Rev" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns data as of 2 months before month selected in the query.]]></Description>
+<Expr mdsid="m00000009-01f4-0000-a530-2d9700000000" name="Expr">
+<ExprText><![CDATA[ AGO("%1",  VALUEOF(NQ_SESSION."%2"))]]></ExprText>
+<ExprTextDesc><![CDATA[ AGO("01 - Sample App"."F0 Sales Base Measures"."1- Revenue",  VALUEOF(NQ_SESSION."N_AGO_PERIODS"))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-a530-2d9700000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000009-01f4-0000-a530-2d9700000000-m80cb67fa-0bd7-0000-714b-e31d00000000" objectRef="/oracle/bi/server/base/Variable/80cb67fa-0bd7-0000-714b-e31d00000000.xml#m80cb67fa-0bd7-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab764-0f3c-0000-714b-e31d00000000" name="AD_3900:122441262767587">
+<Expr mdsid="m0000000a-01f4-0000-8969-0a2600000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb6c33-07d6-0000-714b-e31d00000000" name="126  Rev Pct Var to N Period Ago" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Average % change to last month value]]></Description>
+<Expr mdsid="m0000000b-01f4-0000-f3ba-0ec200000000" name="Expr">
+<ExprText><![CDATA[(("%1" 
+/
+"%2" )
+-1)
+*100
+]]></ExprText>
+<ExprTextDesc><![CDATA[(("01 - Sample App"."F0 Sales Base Measures"."1- Revenue" 
+/
+"01 - Sample App"."F5 Time Series and Level Based Examples"."125  N Period Agos Rev" )
+-1)
+*100
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-f3ba-0ec200000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m0000000b-01f4-0000-f3ba-0ec200000000-m80cab5eb-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab5eb-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cb6c34-0f3c-0000-714b-e31d00000000" name="AD_3900:434131269941684">
+<Expr mdsid="m0000000c-01f4-0000-e411-249200000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab5e9-07d6-0000-714b-e31d00000000" name="127  ---- Fixed Time Level ---------------------------" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m0000000d-01f4-0000-7955-8c6a00000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m80cab762-0f3c-0000-714b-e31d00000000" name="AD_3900:122421262767587">
+<Expr mdsid="m0000000e-01f4-0000-7a1b-4ad900000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab5ea-07d6-0000-714b-e31d00000000" name="127  Mth Ago Rev  (Fix Time Lvl)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns data as of previous month vs. month selected in the query.]]></Description>
+<Expr mdsid="m0000000f-01f4-0000-e770-169100000000" name="Expr">
+<ExprText><![CDATA[ AGO("%1",
+ "%2", 1)]]></ExprText>
+<ExprTextDesc><![CDATA[ AGO("01 - Sample App"."F0 Sales Base Measures"."1- Revenue",
+ "01 - Sample App"."H0 Time"."Month", 1)]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-e770-169100000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m0000000f-01f4-0000-e770-169100000000-m80cab69b-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cab574-07e3-0000-714b-e31d00000000.xml#m80cab69b-07e9-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab763-0f3c-0000-714b-e31d00000000" name="AD_3900:122431262767587">
+<Expr mdsid="m00000010-01f4-0000-e2c2-ee7000000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab5ed-07d6-0000-714b-e31d00000000" name="128  Qtr Ago Rev  (Fix Time Lvl)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Quarter Ago value]]></Description>
+<Expr mdsid="m00000011-01f4-0000-8d31-8d5c00000000" name="Expr">
+<ExprText><![CDATA[ AGO("%1", "%2", 1)]]></ExprText>
+<ExprTextDesc><![CDATA[ AGO("01 - Sample App"."F0 Sales Base Measures"."1- Revenue", "01 - Sample App"."H0 Time"."Quarter", 1)]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-8d31-8d5c00000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000011-01f4-0000-8d31-8d5c00000000-m80cab69a-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cab574-07e3-0000-714b-e31d00000000.xml#m80cab69a-07e9-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab766-0f3c-0000-714b-e31d00000000" name="AD_3900:122461262767587">
+<Expr mdsid="m00000012-01f4-0000-8e82-679c00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab5ee-07d6-0000-714b-e31d00000000" name="129  Year Ago Rev  (Fix Time Lvl)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns data as of previous year vs. year selected in the query.]]></Description>
+<Expr mdsid="m00000013-01f4-0000-72c1-fb2b00000000" name="Expr">
+<ExprText><![CDATA[ AGO("%1", "%2", 1)]]></ExprText>
+<ExprTextDesc><![CDATA[ AGO("01 - Sample App"."F0 Sales Base Measures"."1- Revenue", "01 - Sample App"."H0 Time"."Year", 1)]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-72c1-fb2b00000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000013-01f4-0000-72c1-fb2b00000000-m80cab698-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cab574-07e3-0000-714b-e31d00000000.xml#m80cab698-07e9-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab767-0f3c-0000-714b-e31d00000000" name="AD_3900:122471262767587">
+<Expr mdsid="m00000014-01f4-0000-b456-cfcc00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab605-07d6-0000-714b-e31d00000000" name="131  Rev Var to Qtr Ago" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Value change to last quarter]]></Description>
+<Expr mdsid="m00000015-01f4-0000-e89e-008c00000000" name="Expr">
+<ExprText><![CDATA["%1" - "%2"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F0 Sales Base Measures"."1- Revenue" - "01 - Sample App"."F5 Time Series and Level Based Examples"."128  Qtr Ago Rev  (Fix Time Lvl)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-e89e-008c00000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000015-01f4-0000-e89e-008c00000000-m80cab5ed-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab5ed-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab77e-0f3c-0000-714b-e31d00000000" name="AD_3900:122701262767587">
+<Expr mdsid="m00000016-01f4-0000-e101-49db00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab606-07d6-0000-714b-e31d00000000" name="132  Rev Pct Var to Qtr Ago" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Percent difference of the value of the metric in the current period with the value of the metric in the same period the previous quarter / Value of the metric in the same period of the previous quarter]]></Description>
+<Expr mdsid="m00000017-01f4-0000-8dbd-f00a00000000" name="Expr">
+<ExprText><![CDATA["%1" / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F5 Time Series and Level Based Examples"."131  Rev Var to Qtr Ago" / "01 - Sample App"."F5 Time Series and Level Based Examples"."128  Qtr Ago Rev  (Fix Time Lvl)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-8dbd-f00a00000000-m80cab605-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab605-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000017-01f4-0000-8dbd-f00a00000000-m80cab5ed-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab5ed-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab77f-0f3c-0000-714b-e31d00000000" name="AD_3900:122711262767587">
+<Expr mdsid="m00000018-01f4-0000-2604-fe0700000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab607-07d6-0000-714b-e31d00000000" name="133  Rev QAgo Compounded Yrly Gwth" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- % variation to last quarter expressed in a compounded yearly % growth rate.]]></Description>
+<Expr mdsid="m00000019-01f4-0000-2c27-cb4000000000" name="Expr">
+<ExprText><![CDATA[( POWER("%1" / "%2", 4) - 1) * 100]]></ExprText>
+<ExprTextDesc><![CDATA[( POWER("01 - Sample App"."F0 Sales Base Measures"."1- Revenue" / "01 - Sample App"."F5 Time Series and Level Based Examples"."128  Qtr Ago Rev  (Fix Time Lvl)", 4) - 1) * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000019-01f4-0000-2c27-cb4000000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000019-01f4-0000-2c27-cb4000000000-m80cab5ed-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab5ed-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab780-0f3c-0000-714b-e31d00000000" name="AD_3900:122721262767587">
+<Expr mdsid="m0000001a-01f4-0000-2272-006e00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab5f3-07d6-0000-714b-e31d00000000" name="135  Qtr To Dt Rev Sum" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Sums all the values from the first day of the quarter to the current period]]></Description>
+<Expr mdsid="m0000001b-01f4-0000-e0b5-507000000000" name="Expr">
+<ExprText><![CDATA[ TODATE("%1", "%2")]]></ExprText>
+<ExprTextDesc><![CDATA[ TODATE("01 - Sample App"."F0 Sales Base Measures"."1- Revenue", "01 - Sample App"."H0 Time"."Quarter")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001b-01f4-0000-e0b5-507000000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m0000001b-01f4-0000-e0b5-507000000000-m80cab69a-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cab574-07e3-0000-714b-e31d00000000.xml#m80cab69a-07e9-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab76c-0f3c-0000-714b-e31d00000000" name="AD_3900:122521262767587">
+<Expr mdsid="m0000001c-01f4-0000-d0d1-159500000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab5f4-07d6-0000-714b-e31d00000000" name="136  Qtr Ago QTD Rev sum" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Quarter Ago Quarter-To-Date Value for the same period. For the same period in the previous quarter, it returns the sum of all the values from the first day of the quarter to that period.]]></Description>
+<Expr mdsid="m0000001d-01f4-0000-0397-b53500000000" name="Expr">
+<ExprText><![CDATA[ TODATE("%1", "%2")]]></ExprText>
+<ExprTextDesc><![CDATA[ TODATE("01 - Sample App"."F5 Time Series and Level Based Examples"."128  Qtr Ago Rev  (Fix Time Lvl)", "01 - Sample App"."H0 Time"."Quarter")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001d-01f4-0000-0397-b53500000000-m80cab5ed-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab5ed-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m0000001d-01f4-0000-0397-b53500000000-m80cab69a-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cab574-07e3-0000-714b-e31d00000000.xml#m80cab69a-07e9-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab76d-0f3c-0000-714b-e31d00000000" name="AD_3900:122531262767587">
+<Expr mdsid="m0000001e-01f4-0000-b3f9-379200000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab608-07d6-0000-714b-e31d00000000" name="137  QTD Rev Pct Var to Qago QTD" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Average % change of Quarter to date current value to last Quarter quarter to date value]]></Description>
+<Expr mdsid="m0000001f-01f4-0000-c616-603800000000" name="Expr">
+<ExprText><![CDATA[("%1" / "%2" - 1) * 100]]></ExprText>
+<ExprTextDesc><![CDATA[("01 - Sample App"."F5 Time Series and Level Based Examples"."135  Qtr To Dt Rev Sum" / "01 - Sample App"."F5 Time Series and Level Based Examples"."136  Qtr Ago QTD Rev sum" - 1) * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001f-01f4-0000-c616-603800000000-m80cab5f3-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab5f3-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m0000001f-01f4-0000-c616-603800000000-m80cab5f4-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab5f4-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab781-0f3c-0000-714b-e31d00000000" name="AD_3900:122731262767587">
+<Expr mdsid="m00000020-01f4-0000-90cf-2cd100000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab5f6-07d6-0000-714b-e31d00000000" name="144   ======== Rolling Measures ========" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m00000021-01f4-0000-73d6-e8bd00000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m80cab76f-0f3c-0000-714b-e31d00000000" name="AD_3900:122551262767587">
+<Expr mdsid="m00000022-01f4-0000-42b6-0c3700000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb6c20-07d6-0000-714b-e31d00000000" name="144  ---- Alias Based Modelling -------" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m00000023-01f4-0000-725b-b10600000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m80cb6c22-0f3c-0000-714b-e31d00000000" name="AD_3900:433971269939967">
+<Expr mdsid="m00000024-01f4-0000-b812-3bf900000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab5f8-07d6-0000-714b-e31d00000000" name="144  Trailing N Mth Rev  (Alias Based)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Rolling 3 months sum as of selected month : sum of current month plus previous two months value. For January, it gives the value of January plus December and November of the previous year]]></Description>
+<Expr mdsid="m00000025-01f4-0000-5477-6f8d00000000" name="Expr">
+<ExprText><![CDATA[ FILTER("%1" USING "%2" - "%3" <  VALUEOF(NQ_SESSION."%4"))]]></ExprText>
+<ExprTextDesc><![CDATA[ FILTER("01 - Sample App"."F0 Sales Base Measures"."117  Unbound Rolling Rev  (Alias Based)" USING "01 - Sample App"."F0 Sales Base Measures"."X10  Dim Julian Mth Number" - "01 - Sample App"."F0 Sales Base Measures"."X11  Fact Julian Mth Number" <  VALUEOF(NQ_SESSION."N_TRAIL_PAST_MTHS"))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000025-01f4-0000-5477-6f8d00000000-m80cab5d7-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d7-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000025-01f4-0000-5477-6f8d00000000-m80cab5e4-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5e4-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000025-01f4-0000-5477-6f8d00000000-m80cab5e5-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5e5-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000025-01f4-0000-5477-6f8d00000000-m80cb6801-0bd7-0000-714b-e31d00000000" objectRef="/oracle/bi/server/base/Variable/80cb6801-0bd7-0000-714b-e31d00000000.xml#m80cb6801-0bd7-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab771-0f3c-0000-714b-e31d00000000" name="AD_3900:122571262767587">
+<Expr mdsid="m00000026-01f4-0000-45e9-c1ee00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab5fa-07d6-0000-714b-e31d00000000" name="145  Trailing N Mth Rev Daily Avg" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Daily average over Rolling 3 months period : Rolling 3 months sum as of selected month divided by number of days in R3M period.]]></Description>
+<Expr mdsid="m00000027-01f4-0000-4dea-758300000000" name="Expr">
+<ExprText><![CDATA["%1" / ( VALUEOF(NQ_SESSION."%2") * 30.4d)]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F5 Time Series and Level Based Examples"."144  Trailing N Mth Rev  (Alias Based)" / ( VALUEOF(NQ_SESSION."N_TRAIL_PAST_MTHS") * 30.4d)]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000027-01f4-0000-4dea-758300000000-m80cab5f8-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab5f8-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000027-01f4-0000-4dea-758300000000-m80cb6801-0bd7-0000-714b-e31d00000000" objectRef="/oracle/bi/server/base/Variable/80cb6801-0bd7-0000-714b-e31d00000000.xml#m80cb6801-0bd7-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab773-0f3c-0000-714b-e31d00000000" name="AD_3900:122591262767587">
+<Expr mdsid="m00000028-01f4-0000-bdb0-5d3800000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab5fb-07d6-0000-714b-e31d00000000" name="146  Trailing N Mth Rev Mthly Avg" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Monthly average over Rolling 3 months period : Rolling 3 months sum as of selected month divided by 3]]></Description>
+<Expr mdsid="m00000029-01f4-0000-3c29-651b00000000" name="Expr">
+<ExprText><![CDATA["%1" /  VALUEOF(NQ_SESSION."%2")]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F5 Time Series and Level Based Examples"."144  Trailing N Mth Rev  (Alias Based)" /  VALUEOF(NQ_SESSION."N_TRAIL_PAST_MTHS")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000029-01f4-0000-3c29-651b00000000-m80cab5f8-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab5f8-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000029-01f4-0000-3c29-651b00000000-m80cb6801-0bd7-0000-714b-e31d00000000" objectRef="/oracle/bi/server/base/Variable/80cb6801-0bd7-0000-714b-e31d00000000.xml#m80cb6801-0bd7-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab774-0f3c-0000-714b-e31d00000000" name="AD_3900:122601262767587">
+<Expr mdsid="m0000002a-01f4-0000-bf78-1e6900000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb6c21-07d6-0000-714b-e31d00000000" name="147  ---- Dynamic Time Level ----------" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m0000002b-01f4-0000-60cf-2d7000000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m80cb6c23-0f3c-0000-714b-e31d00000000" name="AD_3900:434011269939967">
+<Expr mdsid="m0000002c-01f4-0000-c179-cd3a00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb67bc-07d6-0000-714b-e31d00000000" name="147  Trailing 3 Periods Rev  (Dyn Time Level)" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000002d-01f4-0000-86dd-a09900000000" name="Expr">
+<ExprText><![CDATA[periodrolling("%1" ,-2,0)
+]]></ExprText>
+<ExprTextDesc><![CDATA[periodrolling("01 - Sample App"."F0 Sales Base Measures"."1- Revenue" ,-2,0)
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002d-01f4-0000-86dd-a09900000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cb67be-0f3c-0000-714b-e31d00000000" name="AD_3900:423221269347430">
+<Expr mdsid="m0000002e-01f4-0000-6121-b03600000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb67d9-07d6-0000-714b-e31d00000000" name="148  Unbound Rolling Rev  (Dyn Time Level)" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000002f-01f4-0000-aefa-484100000000" name="Expr">
+<ExprText><![CDATA[periodrolling("%1" ,-UNBOUND,0)]]></ExprText>
+<ExprTextDesc><![CDATA[periodrolling("01 - Sample App"."F0 Sales Base Measures"."1- Revenue" ,-UNBOUND,0)]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002f-01f4-0000-aefa-484100000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cb67da-0f3c-0000-714b-e31d00000000" name="AD_3900:423471269351193">
+<Expr mdsid="m00000030-01f4-0000-6380-a1f000000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb67cd-07d6-0000-714b-e31d00000000" name="149  Spanning 4 Periods Rev N-2 to +N+1" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000031-01f4-0000-7733-f48100000000" name="Expr">
+<ExprText><![CDATA[periodrolling("%1" ,-2,1)]]></ExprText>
+<ExprTextDesc><![CDATA[periodrolling("01 - Sample App"."F0 Sales Base Measures"."1- Revenue" ,-2,1)]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000031-01f4-0000-7733-f48100000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cb67ce-0f3c-0000-714b-e31d00000000" name="AD_3900:423341269350616">
+<Expr mdsid="m00000032-01f4-0000-8fbb-bcd700000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab611-07d6-0000-714b-e31d00000000" name="150   ======== Level Based Measures ========" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m00000033-01f4-0000-5697-e60800000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m80cab78a-0f3c-0000-714b-e31d00000000" name="AD_3900:122821262767587">
+<Expr mdsid="m00000034-01f4-0000-d71b-974400000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab612-07d6-0000-714b-e31d00000000" name="150  ---- Time Level Based ---------" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m00000035-01f4-0000-f56b-e74600000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m80cab78b-0f3c-0000-714b-e31d00000000" name="AD_3900:122831262767587">
+<Expr mdsid="m00000036-01f4-0000-5c25-995000000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab613-07d6-0000-714b-e31d00000000" name="150  Rev  (Full Mth Sum)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Sum of the metric value for the full month. This aggregation is always calculated at the month level.. For example, when viewed against Week level, it shows the same total month's value for all the weeks in that month.]]></Description>
+<Expr mdsid="m00000037-01f4-0000-e7e2-08fe00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F0 Sales Base Measures"."1- Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000037-01f4-0000-e7e2-08fe00000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab78c-0f3c-0000-714b-e31d00000000" name="AD_3900:122841262767587">
+<Expr mdsid="m00000038-01f4-0000-c111-1c0900000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab616-07d6-0000-714b-e31d00000000" name="151  Rev  (Full Qtr Sum)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Sum of the metric value for the full quarter. This aggregation is always calculated at the quarter level. When viewed against Month or Week level, it shows the quarter's value for all the weeks and months in that quarter.]]></Description>
+<Expr mdsid="m00000039-01f4-0000-d465-36f600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F0 Sales Base Measures"."1- Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000039-01f4-0000-d465-36f600000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab78f-0f3c-0000-714b-e31d00000000" name="AD_3900:122871262767587">
+<Expr mdsid="m0000003a-01f4-0000-9a33-b3ae00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab618-07d6-0000-714b-e31d00000000" name="152  Rev  (Full Year Sum)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Sum of the metric value for the full year. This aggregation is always calculated at the year level. When viewed against quarter, month or week level, it shows the year's value for all the quarters, month, and weeks in that year.]]></Description>
+<Expr mdsid="m0000003b-01f4-0000-f571-688f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F0 Sales Base Measures"."1- Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000003b-01f4-0000-f571-688f00000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab791-0f3c-0000-714b-e31d00000000" name="AD_3900:122891262767587">
+<Expr mdsid="m0000003c-01f4-0000-0ffb-abbf00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab614-07d6-0000-714b-e31d00000000" name="153  Rev  (Mago Full Mth Sum)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Full month's value of the metric for the previous month. This aggregation is always calculated at the month level. For example, when viewed against Week level, it shows the same total month's value for all the weeks in that month.]]></Description>
+<Expr mdsid="m0000003d-01f4-0000-8a50-0a6d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F5 Time Series and Level Based Examples"."127  Mth Ago Rev  (Fix Time Lvl)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000003d-01f4-0000-8a50-0a6d00000000-m80cab5ea-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab5ea-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab78d-0f3c-0000-714b-e31d00000000" name="AD_3900:122851262767587">
+<Expr mdsid="m0000003e-01f4-0000-8f1d-887b00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab615-07d6-0000-714b-e31d00000000" name="154  Rev  (Yago Full Mth Sum)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Full month's value of the metric for the same month in the previous year. This aggregation is always calculated at the year level. For example, when viewed against Week level, it shows the same total month's value for all the weeks in that month.]]></Description>
+<Expr mdsid="m0000003f-01f4-0000-9dde-1ec200000000" name="Expr">
+<ExprText><![CDATA[ AGO("%1", "%2", 12)]]></ExprText>
+<ExprTextDesc><![CDATA[ AGO("01 - Sample App"."F0 Sales Base Measures"."1- Revenue", "01 - Sample App"."H0 Time"."Month", 12)]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000003f-01f4-0000-9dde-1ec200000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m0000003f-01f4-0000-9dde-1ec200000000-m80cab69b-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cab574-07e3-0000-714b-e31d00000000.xml#m80cab69b-07e9-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab78e-0f3c-0000-714b-e31d00000000" name="AD_3900:122861262767587">
+<Expr mdsid="m00000040-01f4-0000-c2d6-4e7d00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab619-07d6-0000-714b-e31d00000000" name="155  Rev  (Yago Full Year Sum)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Full year's value of the metric for the previous year. This aggregation is always calculated at the year level]]></Description>
+<Expr mdsid="m00000041-01f4-0000-23e4-73d800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F5 Time Series and Level Based Examples"."129  Year Ago Rev  (Fix Time Lvl)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000041-01f4-0000-23e4-73d800000000-m80cab5ee-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab5ee-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab792-0f3c-0000-714b-e31d00000000" name="AD_3900:122901262767587">
+<Expr mdsid="m00000042-01f4-0000-3419-a78c00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab61d-07d6-0000-714b-e31d00000000" name="160  ---- Other Dims Level Based ---------" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m00000043-01f4-0000-d6f5-8e6f00000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m80cab796-0f3c-0000-714b-e31d00000000" name="AD_3900:122941262767587">
+<Expr mdsid="m00000044-01f4-0000-38e8-067d00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab61e-07d6-0000-714b-e31d00000000" name="160  Rev  (Sum for All Customers)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Sum of the metric for all the Customers. It always returns the value at Total level irrespective of the level within the Customer dimension that is used in the query]]></Description>
+<Expr mdsid="m00000045-01f4-0000-a3b2-a12200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F0 Sales Base Measures"."1- Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000045-01f4-0000-a3b2-a12200000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab797-0f3c-0000-714b-e31d00000000" name="AD_3900:122951262767587">
+<Expr mdsid="m00000046-01f4-0000-d44a-56ef00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab61f-07d6-0000-714b-e31d00000000" name="161  Rev  (Sum for All Offices)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Sum of the metric for all the Markets. It always returns the value at Total level irrespective of the level within the Market dimension that is used in the query]]></Description>
+<Expr mdsid="m00000047-01f4-0000-c8b0-50d100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F0 Sales Base Measures"."1- Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000047-01f4-0000-c8b0-50d100000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab798-0f3c-0000-714b-e31d00000000" name="AD_3900:122961262767587">
+<Expr mdsid="m00000048-01f4-0000-dcf7-3c5a00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab620-07d6-0000-714b-e31d00000000" name="162  Rev  (Sum for All Products)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Sum of the metric for all the Products. It always returns the value at Total level irrespective of the level within the Product dimension that is used in the query]]></Description>
+<Expr mdsid="m00000049-01f4-0000-4893-215c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F0 Sales Base Measures"."1- Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000049-01f4-0000-4893-215c00000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab799-0f3c-0000-714b-e31d00000000" name="AD_3900:122971262767587">
+<Expr mdsid="m0000004a-01f4-0000-0a1c-bf5e00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab621-07d6-0000-714b-e31d00000000" name="163  Rev  (Sum for All Employees)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Sum of the metric for all the Employees. It always returns the value at Total level irrespective of the level within the Employee dimension that is used in the query]]></Description>
+<Expr mdsid="m0000004b-01f4-0000-d0c4-b19400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F0 Sales Base Measures"."1- Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000004b-01f4-0000-d0c4-b19400000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab79a-0f3c-0000-714b-e31d00000000" name="AD_3900:122981262767587">
+<Expr mdsid="m0000004c-01f4-0000-7919-19aa00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cbdc08-07d6-0000-714b-e31d00000000" name="164  Rev  (Sum for All Orders)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Sum of the metric for all the Customers. It always returns the value at Total level irrespective of the level within the Customer dimension that is used in the query]]></Description>
+<Expr mdsid="m0000004d-01f4-0000-7466-c50e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F0 Sales Base Measures"."1- Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000004d-01f4-0000-7466-c50e00000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cbdc09-0f3c-0000-714b-e31d00000000" name="AD_3900:689981273581881">
+<Expr mdsid="m0000004e-01f4-0000-6c77-f1d500000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab622-07d6-0000-714b-e31d00000000" name="165  Rev  (Sum for All Dims But Time)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Sum of the metric for all the dimensions except Time. It always the value at the Total level when viewed against all the dimensions except time.  When viewed against Time, it returns the value at that level.]]></Description>
+<Expr mdsid="m0000004f-01f4-0000-faea-1eef00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F0 Sales Base Measures"."1- Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000004f-01f4-0000-faea-1eef00000000-m80cab5d6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d6-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab79b-0f3c-0000-714b-e31d00000000" name="AD_3900:122991262767587">
+<Expr mdsid="m00000050-01f4-0000-0e02-c42500000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab60e-07d6-0000-714b-e31d00000000" name="954  ---- Time Spans Var---------------------" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m00000051-01f4-0000-8b0f-778100000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m80cab787-0f3c-0000-714b-e31d00000000" name="AD_3900:122791262767587">
+<Expr mdsid="m00000052-01f4-0000-2f18-3d6a00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab60f-07d6-0000-714b-e31d00000000" name="954  FTE Headcount  (Value Var)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- For any time interval specified in the query row, this aggregation returns the difference between value at beginning of the interval and value at end of the interval. The values at beginning and end date that make up the variation can be displayed by adding aggregation objects Fst oT and Last oT. Info about beginning date and end date for each row are available with time facts objects : First Time Day Dt and Last Time Day Dt. For example, if a query is filtered for a quarter, this will show the value variation between first and last day of the quarter. If the query objects are at week level, This aggregation will returns for each row (week level) the value of the last day of each week minus value of the first day in that week.]]></Description>
+<Expr mdsid="m00000053-01f4-0000-b252-b7f500000000" name="Expr">
+<ExprText><![CDATA["%1"  - "%2" ]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."F4 Headcount Base Measures"."9- Full Time Empl  (End Period)"  - "01 - Sample App"."F4 Headcount Base Measures"."9- Full Time Empl  (Beg Period)" ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000053-01f4-0000-b252-b7f500000000-m80cab65e-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab65c-07f3-0000-714b-e31d00000000.xml#m80cab65e-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000053-01f4-0000-b252-b7f500000000-m80cab65d-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab65c-07f3-0000-714b-e31d00000000.xml#m80cab65d-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab788-0f3c-0000-714b-e31d00000000" name="AD_3900:122801262767587">
+<Expr mdsid="m00000054-01f4-0000-92c6-f28f00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab610-07d6-0000-714b-e31d00000000" name="955  FTE Headcount  (Pct Var)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- This aggregation converts the Value Var aggregation metric into a percentage variation to first value (Value Var / initial value *100)]]></Description>
+<Expr mdsid="m00000055-01f4-0000-6409-46a800000000" name="Expr">
+<ExprText><![CDATA[("%1"  - "%2" ) / "%2"  * 100]]></ExprText>
+<ExprTextDesc><![CDATA[("01 - Sample App"."F4 Headcount Base Measures"."9- Full Time Empl  (End Period)"  - "01 - Sample App"."F4 Headcount Base Measures"."9- Full Time Empl  (Beg Period)" ) / "01 - Sample App"."F4 Headcount Base Measures"."9- Full Time Empl  (Beg Period)"  * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000055-01f4-0000-6409-46a800000000-m80cab65e-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab65c-07f3-0000-714b-e31d00000000.xml#m80cab65e-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000055-01f4-0000-6409-46a800000000-m80cab65d-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab65c-07f3-0000-714b-e31d00000000.xml#m80cab65d-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cab789-0f3c-0000-714b-e31d00000000" name="AD_3900:122811262767587">
+<Expr mdsid="m00000056-01f4-0000-87a6-61da00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cadd0e-07d6-0000-714b-e31d00000000" name="956  FTE Headcount  (Cmpd Yrly Gwth)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- For any time interval specified in the query row, this aggregation returns the difference between value at beginning of the interval and value at end of the interval. The values at beginning and end date that make up the variation can be displayed by adding aggregation objects Fst oT and Last oT. Info about beginning date and end date for each row are available with time facts objects : First Time Day Dt and Last Time Day Dt. For example, if a query is filtered for a quarter, this will show the value variation between first and last day of the quarter. If the query objects are at week level, This aggregation will returns for each row (week level) the value of the last day of each week minus value of the first day in that week.]]></Description>
+<Expr mdsid="m00000057-01f4-0000-19ea-b8af00000000" name="Expr">
+<ExprText><![CDATA[( POWER(
+"%1"  / "%2" ,
+(12/  "%3" )) - 1) * 100
+
+]]></ExprText>
+<ExprTextDesc><![CDATA[( POWER(
+"01 - Sample App"."F4 Headcount Base Measures"."9- Full Time Empl  (End Period)"  / "01 - Sample App"."F4 Headcount Base Measures"."9- Full Time Empl  (Beg Period)" ,
+(12/  "01 - Sample App"."F90 Time Facts"."T64  # of Months" )) - 1) * 100
+
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000057-01f4-0000-19ea-b8af00000000-m80cab65e-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab65c-07f3-0000-714b-e31d00000000.xml#m80cab65e-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000057-01f4-0000-19ea-b8af00000000-m80cab65d-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab65c-07f3-0000-714b-e31d00000000.xml#m80cab65d-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000057-01f4-0000-19ea-b8af00000000-m80cadcd6-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cadc45-07f3-0000-714b-e31d00000000.xml#m80cadcd6-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cadd0f-0f3c-0000-714b-e31d00000000" name="AD_3900:219721263561176">
+<Expr mdsid="m00000058-01f4-0000-621b-ba3000000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+</LogicalTable>

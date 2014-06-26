@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0d492-0ca8-1000-90a3-0af502b50000" name="Fact - OTL Timecard Status" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd2-0ca8-1000-90a3-0af502b50000.xml#m82f0acd2-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0d493-0ca8-1000-90a3-0af502b50000" name="No. Completed" isWriteable="false">
+<MeasureDefn mdsid="m82f14951-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f17080-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736141391789375" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-d852-031a00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y01 - Demo HR OTL"."Fact - OTL Timecard Status"."No. Completed")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-d852-031a00000000-m82f0d493-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d492-0ca8-1000-90a3-0af502b50000.xml#m82f0d493-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f25b44-0ca8-1000-90a3-0af502b50000" name="AD_3900:2754841391789375">
+<Expr mdsid="m00000002-01f4-0000-1f33-edcf00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRT"."ADS_BI_HRT_OTL_SUMMARY"."COMPLETED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-1f33-edcf00000000-m82ddc133-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc132-0ca8-1000-90a3-0af502b50000.xml#m82ddc133-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d494-0ca8-1000-90a3-0af502b50000" name="No. Missing" isWriteable="false">
+<MeasureDefn mdsid="m82f14952-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f17081-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736151391789375" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-9c92-268500000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y01 - Demo HR OTL"."Fact - OTL Timecard Status"."No. Missing")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-9c92-268500000000-m82f0d494-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d492-0ca8-1000-90a3-0af502b50000.xml#m82f0d494-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f25b45-0ca8-1000-90a3-0af502b50000" name="AD_3900:2754851391789375">
+<Expr mdsid="m00000004-01f4-0000-6f20-749800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRT"."ADS_BI_HRT_OTL_SUMMARY"."MISSING"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-6f20-749800000000-m82ddc134-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc132-0ca8-1000-90a3-0af502b50000.xml#m82ddc134-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0d492-0ca8-1000-90a3-0af502b50000-m82f2f6ce-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f2f6ce-0ca8-1000-90a3-0af502b50000.xml#m82f2f6ce-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

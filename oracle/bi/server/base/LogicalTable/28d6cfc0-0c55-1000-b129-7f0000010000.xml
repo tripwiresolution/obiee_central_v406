@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m28d6cfc0-0c55-1000-b129-7f0000010000" name="Dummy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/ac735390-0c31-1000-8edd-0af0613a0000.xml#mac735390-0c31-1000-8edd-0af0613a0000">
+<LogicalColumn mdsid="m28d6cfc1-0c55-1000-b129-7f0000010000" name="ID" isWriteable="false">
+<AttrDefn mdsid="m28d6cfc4-0c55-1000-b129-7f0000010000" name="AD_3900:2510741355992441">
+<Expr mdsid="m00000001-01f4-0000-b073-e18a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["07 - ORE Sample"."".""."RANDOMREDDOTS"."ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-b073-e18a00000000-m28b90e90-0c55-1000-b129-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28aba110-0c55-1000-b129-7f0000010000.xml#m28b90e90-0c55-1000-b129-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m28d6cfc2-0c55-1000-b129-7f0000010000" name="IMAGE" isWriteable="false">
+<AttrDefn mdsid="m28d6cfc5-0c55-1000-b129-7f0000010000" name="AD_3900:2510751355992441">
+<Expr mdsid="m00000002-01f4-0000-02f1-0cf300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["07 - ORE Sample"."".""."RANDOMREDDOTS"."IMAGE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-02f1-0cf300000000-m28c36ed0-0c55-1000-b129-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28aba110-0c55-1000-b129-7f0000010000.xml#m28c36ed0-0c55-1000-b129-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m2a684530-0c55-1000-b129-7f0000010000" name="key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m2a684530-0c55-1000-b129-7f0000010000-m28d6cfc1-0c55-1000-b129-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/28d6cfc0-0c55-1000-b129-7f0000010000.xml#m28d6cfc1-0c55-1000-b129-7f0000010000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m28d6cfc0-0c55-1000-b129-7f0000010000-m28d6cfc6-0c55-1000-b129-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/28d6cfc6-0c55-1000-b129-7f0000010000.xml#m28d6cfc6-0c55-1000-b129-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

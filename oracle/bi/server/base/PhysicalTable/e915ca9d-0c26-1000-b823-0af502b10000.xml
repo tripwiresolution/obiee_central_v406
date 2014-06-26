@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="me915ca9d-0c26-1000-b823-0af502b10000" name="DBA_FREE_SPACE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" maxConn="0" containerRef="/oracle/bi/server/base/Schema/78682d26-0c20-1000-b5b8-0af502b10000.xml#m78682d26-0c20-1000-b5b8-0af502b10000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[DBA_FREE_SPACE]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="me915ca9e-0c26-1000-b823-0af502b10000" name="BLOCKS" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="me915ca9f-0c26-1000-b823-0af502b10000" name="BLOCK_ID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="me915caa0-0c26-1000-b823-0af502b10000" name="BYTES" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="me915caa1-0c26-1000-b823-0af502b10000" name="FILE_ID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="me915caa2-0c26-1000-b823-0af502b10000" name="RELATIVE_FNO" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="me915caa3-0c26-1000-b823-0af502b10000" name="TABLESPACE_NAME" dataType="VARCHAR" precision="30" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="me91ca860-0c26-1000-b823-0af502b10000" name="DBA_FREE_SPACE_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/8e6e8d11-0c26-1000-9bbc-0af502b10000.xml#mba7d62b0-0c26-1000-b8db-0af502b10000">
+<RefColumns>
+<RefColumn refId="me91ca860-0c26-1000-b823-0af502b10000-me915caa3-0c26-1000-b823-0af502b10000" columnRef="/oracle/bi/server/base/PhysicalTable/e915ca9d-0c26-1000-b823-0af502b10000.xml#me915caa3-0c26-1000-b823-0af502b10000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

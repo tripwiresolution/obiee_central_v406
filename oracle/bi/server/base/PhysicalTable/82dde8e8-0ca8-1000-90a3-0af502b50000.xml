@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m82dde8e8-0ca8-1000-90a3-0af502b50000" name="ADS_BI_PT_RISKS_FACT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/82ddc126-0ca8-1000-90a3-0af502b50000.xml#m82ddc126-0ca8-1000-90a3-0af502b50000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[ADS_BI_PT_RISKS_FACT]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m82dde8e9-0ca8-1000-90a3-0af502b50000" name="BUSINESS_DOCUMENT_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8ea-0ca8-1000-90a3-0af502b50000" name="COMMENTS" dataType="VARCHAR" precision="2000" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8eb-0ca8-1000-90a3-0af502b50000" name="IMPACT" dataType="VARCHAR" precision="36" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8ec-0ca8-1000-90a3-0af502b50000" name="PROBABILITY" dataType="VARCHAR" precision="36" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8ed-0ca8-1000-90a3-0af502b50000" name="RISK_EVENT_ID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8ee-0ca8-1000-90a3-0af502b50000" name="RISK_OCCURRED" dataType="VARCHAR" precision="3" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8ef-0ca8-1000-90a3-0af502b50000" name="IMPACT_ORDER" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8f0-0ca8-1000-90a3-0af502b50000" name="PROBABILITY_ORDER" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m82de3647-0ca8-1000-90a3-0af502b50000" name="BUSINESS_DOCUMENT_ID">
+<RefColumns>
+<RefColumn refId="m82de3647-0ca8-1000-90a3-0af502b50000-m82dde8e9-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82dde8e8-0ca8-1000-90a3-0af502b50000.xml#m82dde8e9-0ca8-1000-90a3-0af502b50000"/>
+<RefColumn refId="m82de3647-0ca8-1000-90a3-0af502b50000-m82dde8ed-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82dde8e8-0ca8-1000-90a3-0af502b50000.xml#m82dde8ed-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m82de3687-0ca8-1000-90a3-0af502b50000" name="ADS_BI_PV_RISKS_FACT_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82dde8e5-0ca8-1000-90a3-0af502b50000.xml#m82de3646-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82de3687-0ca8-1000-90a3-0af502b50000-m82dde8ed-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82dde8e8-0ca8-1000-90a3-0af502b50000.xml#m82dde8ed-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82de3688-0ca8-1000-90a3-0af502b50000" name="ADS_BI_PV_RISKS_FACT_FKey#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82dde8d8-0ca8-1000-90a3-0af502b50000.xml#m82de3645-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82de3688-0ca8-1000-90a3-0af502b50000-m82dde8e9-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82dde8e8-0ca8-1000-90a3-0af502b50000.xml#m82dde8e9-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

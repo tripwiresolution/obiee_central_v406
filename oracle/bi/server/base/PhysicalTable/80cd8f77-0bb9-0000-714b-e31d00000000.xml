@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cd8f77-0bb9-0000-714b-e31d00000000" name="D54 Closure Table Sales Rep (Team Agg)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" x="1231" y="514" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cd8dda-0bd3-0000-714b-e31d00000000.xml#m80cd8dda-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cd8e1d-0bb9-0000-714b-e31d00000000.xml#m80cd8e1d-0bb9-0000-714b-e31d00000000" memberKeyRef="/oracle/bi/server/base/PhysicalTable/80cd8f77-0bb9-0000-714b-e31d00000000.xml#m80cd8f78-0bbb-0000-714b-e31d00000000" parentKeyRef="/oracle/bi/server/base/PhysicalTable/80cd8f77-0bb9-0000-714b-e31d00000000.xml#m80cd8f79-0bbb-0000-714b-e31d00000000" distanceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8f77-0bb9-0000-714b-e31d00000000.xml#m80cd8f7a-0bbb-0000-714b-e31d00000000" leafColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8f77-0bb9-0000-714b-e31d00000000.xml#m80cd8f7b-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[ZZZ - Not yet filled]]></Description>
+<PhysicalColumn mdsid="m80cd8f78-0bbb-0000-714b-e31d00000000" name="Member_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e1d-0bb9-0000-714b-e31d00000000.xml#m80cd8e1e-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Member Key: Stores the member key information as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8f79-0bbb-0000-714b-e31d00000000" name="Ancestor_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e1d-0bb9-0000-714b-e31d00000000.xml#m80cd8e1f-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Ancestor Key: Stores the parent information as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8f7a-0bbb-0000-714b-e31d00000000" name="Distance" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e1d-0bb9-0000-714b-e31d00000000.xml#m80cd8e20-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Distance: Stores the distance between the employee and it's ancestor. The ancestor could be the immediate parent or any other parent up in the hierarchy.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8f7b-0bbb-0000-714b-e31d00000000" name="Is_Leaf" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e1d-0bb9-0000-714b-e31d00000000.xml#m80cd8e21-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Is Leaf: Flag to indicate if a member is leaf or not. Possible values are 1 or 0.]]></Description>
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cd920c-0bc0-0000-714b-e31d00000000" name="A061a Employee Closure_Key">
+<RefColumns>
+<RefColumn refId="m80cd920c-0bc0-0000-714b-e31d00000000-m80cd8f78-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cd8f77-0bb9-0000-714b-e31d00000000.xml#m80cd8f78-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m80cd9246-0bbe-0000-714b-e31d00000000" name="D33 Sales Rep Parent Child Closure (Pct to Parent)_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cd8f70-0bb9-0000-714b-e31d00000000.xml#m80cd920b-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cd9246-0bbe-0000-714b-e31d00000000-m80cd8f79-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cd8f77-0bb9-0000-714b-e31d00000000.xml#m80cd8f79-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

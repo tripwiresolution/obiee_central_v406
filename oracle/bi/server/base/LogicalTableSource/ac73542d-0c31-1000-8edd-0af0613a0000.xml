@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="mac73542d-0c31-1000-8edd-0af0613a0000" name="DELAY_PRED" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/ac7353af-0c31-1000-8edd-0af0613a0000.xml#mac7353af-0c31-1000-8edd-0af0613a0000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-bef3-5da800000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["08 - ORE Sample"."Delay Prediction"."Actual ArrDelay"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-bef3-5da800000000-mac7353b0-0c31-1000-8edd-0af0613a0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/ac7353af-0c31-1000-8edd-0af0613a0000.xml#mac7353b0-0c31-1000-8edd-0af0613a0000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-8839-4dbc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["07 - ORE Sample"."".""."DELAY_PRED"."ArrDelay"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-8839-4dbc00000000-mac71f41f-0c31-1000-8edd-0af0613a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/ac71f41e-0c31-1000-8edd-0af0613a0000.xml#mac71f41f-0c31-1000-8edd-0af0613a0000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-b665-b48f00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["08 - ORE Sample"."Delay Prediction"."Predicted ArrDelay"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-b665-b48f00000000-mac7353b1-0c31-1000-8edd-0af0613a0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/ac7353af-0c31-1000-8edd-0af0613a0000.xml#mac7353b1-0c31-1000-8edd-0af0613a0000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-1bfa-bbc100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["07 - ORE Sample"."".""."DELAY_PRED"."Pred"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-1bfa-bbc100000000-mac71f422-0c31-1000-8edd-0af0613a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/ac71f41e-0c31-1000-8edd-0af0613a0000.xml#mac71f422-0c31-1000-8edd-0af0613a0000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/ac71f41e-0c31-1000-8edd-0af0613a0000.xml#mac71f41e-0c31-1000-8edd-0af0613a0000">
+</Link>
+<WhereClause mdsid="m00000005-01f4-0000-5d98-11a200000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000006-01f4-0000-f716-91d800000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m00000007-01f4-0000-3bad-169700000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

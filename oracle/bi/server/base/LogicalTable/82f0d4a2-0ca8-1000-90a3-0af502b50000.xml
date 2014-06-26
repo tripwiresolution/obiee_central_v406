@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0d4a2-0ca8-1000-90a3-0af502b50000" name="Fact - OTL Timecard Hours" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd2-0ca8-1000-90a3-0af502b50000.xml#m82f0acd2-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0d4a3-0ca8-1000-90a3-0af502b50000" name="Actual Hours" isWriteable="false">
+<MeasureDefn mdsid="m82f14953-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f17082-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736161391789375" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-aa30-8b7900000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y01 - Demo HR OTL"."Fact - OTL Timecard Hours"."Actual Hours")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-aa30-8b7900000000-m82f0d4a3-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d4a2-0ca8-1000-90a3-0af502b50000.xml#m82f0d4a3-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f25b51-0ca8-1000-90a3-0af502b50000" name="AD_3900:2754971391789375">
+<Expr mdsid="m00000002-01f4-0000-02d5-06a700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRT"."ADS_BI_HRT_OTL_DETAIL"."ACTUAL_HOURS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-02d5-06a700000000-m82ddc146-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc145-0ca8-1000-90a3-0af502b50000.xml#m82ddc146-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d4a4-0ca8-1000-90a3-0af502b50000" name="Scheduled Hours" isWriteable="false">
+<MeasureDefn mdsid="m82f14954-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f17083-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736171391789375" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-7db3-817b00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y01 - Demo HR OTL"."Fact - OTL Timecard Hours"."Scheduled Hours")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-7db3-817b00000000-m82f0d4a4-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d4a2-0ca8-1000-90a3-0af502b50000.xml#m82f0d4a4-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f25b52-0ca8-1000-90a3-0af502b50000" name="AD_3900:2754981391789375">
+<Expr mdsid="m00000004-01f4-0000-8c69-1df700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRT"."ADS_BI_HRT_OTL_DETAIL"."SCHEDULED_HOURS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-8c69-1df700000000-m82ddc149-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc145-0ca8-1000-90a3-0af502b50000.xml#m82ddc149-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d4a5-0ca8-1000-90a3-0af502b50000" name="Start Date" isWriteable="false">
+<AttrDefn mdsid="m82f25b53-0ca8-1000-90a3-0af502b50000" name="AD_3900:2754991391789375">
+<Expr mdsid="m00000005-01f4-0000-5195-6d8900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRT"."ADS_BI_HRT_OTL_DETAIL"."START_DATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-5195-6d8900000000-m82ddc14a-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc145-0ca8-1000-90a3-0af502b50000.xml#m82ddc14a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d4a6-0ca8-1000-90a3-0af502b50000" name="Week End Date" isWriteable="false">
+<AttrDefn mdsid="m82f25b54-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755001391789375">
+<Expr mdsid="m00000006-01f4-0000-2006-3eff00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRT"."ADS_BI_HRT_OTL_DETAIL"."WEEK_END_DATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-2006-3eff00000000-m82ddc14c-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc145-0ca8-1000-90a3-0af502b50000.xml#m82ddc14c-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0d4a2-0ca8-1000-90a3-0af502b50000-m82f2f6d1-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f2f6d1-0ca8-1000-90a3-0af502b50000.xml#m82f2f6d1-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

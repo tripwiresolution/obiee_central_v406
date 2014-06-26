@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0fc49-0ca8-1000-90a3-0af502b50000" name="Fact - Metrics CLQ AGL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acda-0ca8-1000-90a3-0af502b50000.xml#m82f0acda-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0fc4a-0ca8-1000-90a3-0af502b50000" name="Leavers" isWriteable="false">
+<MeasureDefn mdsid="m82f1702a-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19774-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736901391789375" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-59b9-99bf00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA"."Fact - Metrics CLQ AGL"."Leavers")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-59b9-99bf00000000-m82f0fc4a-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc49-0ca8-1000-90a3-0af502b50000.xml#m82f0fc4a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a96d-0ca8-1000-90a3-0af502b50000" name="AD_3900:2760701391789375">
+<Expr mdsid="m00000002-01f4-0000-4286-250400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_METRICS_CLQ_AGL"."LEAVERS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-4286-250400000000-m82e3dc46-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc41-0ca8-1000-90a3-0af502b50000.xml#m82e3dc46-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc4b-0ca8-1000-90a3-0af502b50000" name="Leavers (all reasons)" isWriteable="false">
+<MeasureDefn mdsid="m82f1702b-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19775-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736911391789375" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-cfe3-7e7a00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA"."Fact - Metrics CLQ AGL"."Leavers (all reasons)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-cfe3-7e7a00000000-m82f0fc4b-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc49-0ca8-1000-90a3-0af502b50000.xml#m82f0fc4b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a96e-0ca8-1000-90a3-0af502b50000" name="AD_3900:2760711391789375">
+<Expr mdsid="m00000004-01f4-0000-3ee6-07ad00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_METRICS_CLQ_AGL"."LEAVERS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-3ee6-07ad00000000-m82e3dc46-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc41-0ca8-1000-90a3-0af502b50000.xml#m82e3dc46-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc4c-0ca8-1000-90a3-0af502b50000" name="Involuntary Leavers" isWriteable="false">
+<MeasureDefn mdsid="m82f1702c-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19776-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736921391789375" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-5d89-257d00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA"."Fact - Metrics CLQ AGL"."Involuntary Leavers")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-5d89-257d00000000-m82f0fc4c-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc49-0ca8-1000-90a3-0af502b50000.xml#m82f0fc4c-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a96f-0ca8-1000-90a3-0af502b50000" name="AD_3900:2760721391789375">
+<Expr mdsid="m00000006-01f4-0000-f41d-324900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_METRICS_CLQ_AGL"."INV_LEAVERS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-f41d-324900000000-m82e3dc49-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc41-0ca8-1000-90a3-0af502b50000.xml#m82e3dc49-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0fc49-0ca8-1000-90a3-0af502b50000-m82f31e09-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f31e09-0ca8-1000-90a3-0af502b50000.xml#m82f31e09-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

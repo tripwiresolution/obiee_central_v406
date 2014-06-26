@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m4000000c-249f-14e2-b095-7f0000010000" name="Bbil Sales Channels" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/00000034-249f-14e2-b095-7f0000010000.xml#m00000034-249f-14e2-b095-7f0000010000">
+<LogicalColumn mdsid="m4000000f-249f-14e2-b095-7f0000010000" name="Saleschannel" isWriteable="false">
+<AttrDefn mdsid="m40000013-249f-14e2-b095-7f0000010000" name="AD_3900:2850031401465833">
+<Expr mdsid="m00000001-01f4-0000-b50d-26b800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_SALES_CHANNELS"."SALESCHANNEL"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-b50d-26b800000000-m00000040-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/0000003f-23f4-14e2-b095-7f0000010000.xml#m00000040-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m40000010-249f-14e2-b095-7f0000010000" name="Saleschannel Id" isWriteable="false">
+<AttrDefn mdsid="m40000014-249f-14e2-b095-7f0000010000" name="AD_3900:2850041401465833">
+<Expr mdsid="m00000002-01f4-0000-e950-b8be00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_SALES_CHANNELS"."SALESCHANNEL_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-e950-b8be00000000-m00000042-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/0000003f-23f4-14e2-b095-7f0000010000.xml#m00000042-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m40000011-249f-14e2-b095-7f0000010000" name="Saleschannelregion" isWriteable="false">
+<AttrDefn mdsid="m40000015-249f-14e2-b095-7f0000010000" name="AD_3900:2850051401465833">
+<Expr mdsid="m00000003-01f4-0000-d59a-226d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_SALES_CHANNELS"."SALESCHANNELREGION"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-d59a-226d00000000-m00000041-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/0000003f-23f4-14e2-b095-7f0000010000.xml#m00000041-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m40000012-249f-14e2-b095-7f0000010000" name="BBIL_SALES_CHANNELS_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m40000012-249f-14e2-b095-7f0000010000-m40000010-249f-14e2-b095-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/4000000c-249f-14e2-b095-7f0000010000.xml#m40000010-249f-14e2-b095-7f0000010000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m4000000c-249f-14e2-b095-7f0000010000-m4000000e-249f-14e2-b095-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/4000000e-249f-14e2-b095-7f0000010000.xml#m4000000e-249f-14e2-b095-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cc432d-07f3-0000-714b-e31d00000000" name="Facts Proc Instances" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="808" y="193" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cc4320-07d0-0000-714b-e31d00000000.xml#m80cc4320-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cc436d-07d6-0000-714b-e31d00000000" name="# Of Completed Proc Inst" isWriteable="false">
+<MeasureDefn mdsid="m80cc438c-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cc4399-0802-0000-714b-e31d00000000" name="AggRule_2050:870811285346076" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-8aa7-095800000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "X3 - Bus Process Monitoring (BPM)"."Facts Proc Instances"."# Of Completed Proc Inst")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-8aa7-095800000000-m80cc436d-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cc432d-07f3-0000-714b-e31d00000000.xml#m80cc436d-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cc44e4-0f3c-0000-714b-e31d00000000" name="AD_3900:872571285346076">
+<Expr mdsid="m00000002-01f4-0000-ac2e-7c3900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X3 - BPM Data (ORCL)".""."BISAMPLE"."6 Facts ProcessPerf"."PROCESS_INSTANCE_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-ac2e-7c3900000000-m80cc442b-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43d6-0bb9-0000-714b-e31d00000000.xml#m80cc442b-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc436e-07d6-0000-714b-e31d00000000" name="Proc Inst Avg Duratn Days" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000003-01f4-0000-1389-f04700000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / 86400]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X3 - Bus Process Monitoring (BPM)"."Facts Proc Instances"."Proc Inst Avg Duratn Seconds" AS DOUBLE PRECISION ) / 86400]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-1389-f04700000000-m80cc4372-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cc432d-07f3-0000-714b-e31d00000000.xml#m80cc4372-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cc44e5-0f3c-0000-714b-e31d00000000" name="AD_3900:872581285346076">
+<Expr mdsid="m00000004-01f4-0000-455b-3c9f00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc436f-07d6-0000-714b-e31d00000000" name="Proc Inst Avg Duratn Hrs" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000005-01f4-0000-c9e9-e42e00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / 3600]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X3 - Bus Process Monitoring (BPM)"."Facts Proc Instances"."Proc Inst Avg Duratn Seconds" AS DOUBLE PRECISION ) / 3600]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-c9e9-e42e00000000-m80cc4372-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cc432d-07f3-0000-714b-e31d00000000.xml#m80cc4372-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cc44e6-0f3c-0000-714b-e31d00000000" name="AD_3900:872591285346076">
+<Expr mdsid="m00000006-01f4-0000-c7ab-3c0900000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc4370-07d6-0000-714b-e31d00000000" name="Proc Inst Avg Duratn Min" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000007-01f4-0000-a71c-20e200000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / 60]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X3 - Bus Process Monitoring (BPM)"."Facts Proc Instances"."Proc Inst Avg Duratn Seconds" AS DOUBLE PRECISION ) / 60]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-a71c-20e200000000-m80cc4372-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cc432d-07f3-0000-714b-e31d00000000.xml#m80cc4372-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cc44e7-0f3c-0000-714b-e31d00000000" name="AD_3900:872601285346076">
+<Expr mdsid="m00000008-01f4-0000-f8f6-8f8300000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc4371-07d6-0000-714b-e31d00000000" name="Proc Inst Avg Duratn Mths" isWriteable="false">
+<MeasureDefn mdsid="m80cc438d-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cc439a-0802-0000-714b-e31d00000000" name="AggRule_2050:870821285346076" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-efe4-353d00000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("X3 - Bus Process Monitoring (BPM)"."Facts Proc Instances"."Proc Inst Avg Duratn Mths")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-efe4-353d00000000-m80cc4371-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cc432d-07f3-0000-714b-e31d00000000.xml#m80cc4371-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cc44e8-0f3c-0000-714b-e31d00000000" name="AD_3900:872611285346076">
+<Expr mdsid="m0000000a-01f4-0000-91d4-b46600000000" name="Expr">
+<ExprText><![CDATA[ TIMESTAMPDIFF( SQL_TSI_MONTH , "%1", "%2")]]></ExprText>
+<ExprTextDesc><![CDATA[ TIMESTAMPDIFF( SQL_TSI_MONTH , "X3 - BPM Data (ORCL)".""."BISAMPLE"."6 Facts ProcessPerf"."PROCESS_START_TIME", "X3 - BPM Data (ORCL)".""."BISAMPLE"."6 Facts ProcessPerf"."PROCESS_END_TIME")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-91d4-b46600000000-m80cc43e3-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43d6-0bb9-0000-714b-e31d00000000.xml#m80cc43e3-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m0000000a-01f4-0000-91d4-b46600000000-m80cc442f-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43d6-0bb9-0000-714b-e31d00000000.xml#m80cc442f-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc4372-07d6-0000-714b-e31d00000000" name="Proc Inst Avg Duratn Seconds" isWriteable="false">
+<MeasureDefn mdsid="m80cc438e-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cc439b-0802-0000-714b-e31d00000000" name="AggRule_2050:870831285346076" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-aa9a-9e9600000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("X3 - Bus Process Monitoring (BPM)"."Facts Proc Instances"."Proc Inst Avg Duratn Seconds")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-aa9a-9e9600000000-m80cc4372-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cc432d-07f3-0000-714b-e31d00000000.xml#m80cc4372-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cc44e9-0f3c-0000-714b-e31d00000000" name="AD_3900:872621285346076">
+<Expr mdsid="m0000000c-01f4-0000-4afb-96fd00000000" name="Expr">
+<ExprText><![CDATA[cast("%1" as double)/1000
+]]></ExprText>
+<ExprTextDesc><![CDATA[cast("X3 - BPM Data (ORCL)".""."BISAMPLE"."6 Facts ProcessPerf"."PROCESS_RUNNING_TIME_IN_MSEC" as double)/1000
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-4afb-96fd00000000-m80cc4430-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43d6-0bb9-0000-714b-e31d00000000.xml#m80cc4430-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc4373-07d6-0000-714b-e31d00000000" name="Proc Inst Total Duratn Days" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000000d-01f4-0000-0cb5-8fdf00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / 86400]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X3 - Bus Process Monitoring (BPM)"."Facts Proc Instances"."Proc Inst Total Duratn Seconds" AS DOUBLE PRECISION ) / 86400]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-0cb5-8fdf00000000-m80cc4377-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cc432d-07f3-0000-714b-e31d00000000.xml#m80cc4377-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cc44ea-0f3c-0000-714b-e31d00000000" name="AD_3900:872631285346076">
+<Expr mdsid="m0000000e-01f4-0000-7d48-937500000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc4374-07d6-0000-714b-e31d00000000" name="Proc Inst Total Duratn Hrs" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000000f-01f4-0000-3b77-831700000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / 3600]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X3 - Bus Process Monitoring (BPM)"."Facts Proc Instances"."Proc Inst Total Duratn Seconds" AS DOUBLE PRECISION ) / 3600]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-3b77-831700000000-m80cc4377-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cc432d-07f3-0000-714b-e31d00000000.xml#m80cc4377-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cc44eb-0f3c-0000-714b-e31d00000000" name="AD_3900:872641285346076">
+<Expr mdsid="m00000010-01f4-0000-4992-37f800000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc4375-07d6-0000-714b-e31d00000000" name="Proc Inst Total Duratn Min" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000011-01f4-0000-727a-e45e00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / 60]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("X3 - Bus Process Monitoring (BPM)"."Facts Proc Instances"."Proc Inst Total Duratn Seconds" AS DOUBLE PRECISION ) / 60]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-727a-e45e00000000-m80cc4377-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cc432d-07f3-0000-714b-e31d00000000.xml#m80cc4377-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cc44ec-0f3c-0000-714b-e31d00000000" name="AD_3900:872651285346076">
+<Expr mdsid="m00000012-01f4-0000-f667-094b00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc4376-07d6-0000-714b-e31d00000000" name="Proc Inst Total Duratn Mths" isWriteable="false">
+<MeasureDefn mdsid="m80cc438f-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cc439c-0802-0000-714b-e31d00000000" name="AggRule_2050:870841285346076" isDefault="true">
+<Expr mdsid="m00000013-01f4-0000-f984-840400000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X3 - Bus Process Monitoring (BPM)"."Facts Proc Instances"."Proc Inst Total Duratn Mths")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-f984-840400000000-m80cc4376-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cc432d-07f3-0000-714b-e31d00000000.xml#m80cc4376-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cc44ed-0f3c-0000-714b-e31d00000000" name="AD_3900:872661285346076">
+<Expr mdsid="m00000014-01f4-0000-2907-008d00000000" name="Expr">
+<ExprText><![CDATA[ TIMESTAMPDIFF( SQL_TSI_MONTH , "%1", "%2")]]></ExprText>
+<ExprTextDesc><![CDATA[ TIMESTAMPDIFF( SQL_TSI_MONTH , "X3 - BPM Data (ORCL)".""."BISAMPLE"."6 Facts ProcessPerf"."PROCESS_START_TIME", "X3 - BPM Data (ORCL)".""."BISAMPLE"."6 Facts ProcessPerf"."PROCESS_END_TIME")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-2907-008d00000000-m80cc43e3-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43d6-0bb9-0000-714b-e31d00000000.xml#m80cc43e3-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m00000014-01f4-0000-2907-008d00000000-m80cc442f-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43d6-0bb9-0000-714b-e31d00000000.xml#m80cc442f-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc4377-07d6-0000-714b-e31d00000000" name="Proc Inst Total Duratn Seconds" isWriteable="false">
+<MeasureDefn mdsid="m80cc4390-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cc439d-0802-0000-714b-e31d00000000" name="AggRule_2050:870851285346076" isDefault="true">
+<Expr mdsid="m00000015-01f4-0000-4502-7ba700000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X3 - Bus Process Monitoring (BPM)"."Facts Proc Instances"."Proc Inst Total Duratn Seconds")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-4502-7ba700000000-m80cc4377-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cc432d-07f3-0000-714b-e31d00000000.xml#m80cc4377-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cc44ee-0f3c-0000-714b-e31d00000000" name="AD_3900:872671285346076">
+<Expr mdsid="m00000016-01f4-0000-cd2f-5a5300000000" name="Expr">
+<ExprText><![CDATA[cast("%1" as double)/1000
+]]></ExprText>
+<ExprTextDesc><![CDATA[cast("X3 - BPM Data (ORCL)".""."BISAMPLE"."6 Facts ProcessPerf"."PROCESS_RUNNING_TIME_IN_MSEC" as double)/1000
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-cd2f-5a5300000000-m80cc4430-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43d6-0bb9-0000-714b-e31d00000000.xml#m80cc4430-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cc432d-07f3-0000-714b-e31d00000000-m80cc450b-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cc450b-07f5-0000-714b-e31d00000000.xml#m80cc450b-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

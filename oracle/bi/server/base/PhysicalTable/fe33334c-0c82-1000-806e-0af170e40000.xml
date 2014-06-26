@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="mfe33334c-0c82-1000-806e-0af170e40000" name="MOVIE_FACT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" rowCount="3546170.0" lastUpdated="2012-10-24 11:58:56" maxConn="0" containerRef="/oracle/bi/server/base/Schema/fe3332da-0c82-1000-806e-0af170e40000.xml#mfe3332da-0c82-1000-806e-0af170e40000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[MOVIE_FACT]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="mfe33334d-0c82-1000-806e-0af170e40000" name="CUST_ID" dataType="DOUBLE" precision="22" nullable="true" rowCount="7060.0" lastUpdated="2012-07-18 11:37:59" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe33334e-0c82-1000-806e-0af170e40000" name="MOVIE_ID" dataType="DOUBLE" precision="22" nullable="true" rowCount="12968.0" lastUpdated="2012-07-18 11:38:00" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe33334f-0c82-1000-806e-0af170e40000" name="RATING" dataType="DOUBLE" precision="22" nullable="true" rowCount="10.0" lastUpdated="2012-07-18 11:38:01" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe333350-0c82-1000-806e-0af170e40000" name="RECOMMENDED" dataType="DOUBLE" nullable="true" rowCount="11.0" lastUpdated="2012-07-18 11:38:01" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe333351-0c82-1000-806e-0af170e40000" name="SALES" dataType="DOUBLE" precision="22" nullable="true" rowCount="3.0" lastUpdated="2012-07-18 11:38:02" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe333352-0c82-1000-806e-0af170e40000" name="TIME_ID" dataType="DATETIME" precision="22" nullable="true" rowCount="2193.0" lastUpdated="2012-07-18 11:38:02" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe333353-0c82-1000-806e-0af170e40000" name="GENRE_ID" dataType="DOUBLE" rowCount="28.0" lastUpdated="2012-07-18 11:38:00" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe333354-0c82-1000-806e-0af170e40000" name="ACTIVITY_ID" dataType="DOUBLE" rowCount="4.0" lastUpdated="2012-07-18 11:37:59" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe333355-0c82-1000-806e-0af170e40000" name="TIME_ID_KEY" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe333356-0c82-1000-806e-0af170e40000" name="DATE_ID_KEY" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="mfe333435-0c82-1000-806e-0af170e40000" name="MOVIE_FACT_V_Key">
+<RefColumns>
+<RefColumn refId="mfe333435-0c82-1000-806e-0af170e40000-mfe33334e-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe33334e-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="mfe333436-0c82-1000-806e-0af170e40000" name="MOVIE_FACT_V_Key#1">
+<RefColumns>
+<RefColumn refId="mfe333436-0c82-1000-806e-0af170e40000-mfe333352-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe333352-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="mfe333437-0c82-1000-806e-0af170e40000" name="MOVIE_FACT_V_Key#2">
+<RefColumns>
+<RefColumn refId="mfe333437-0c82-1000-806e-0af170e40000-mfe33334d-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe33334d-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="mfe333438-0c82-1000-806e-0af170e40000" name="MOVIE_FACT_V_Key#3">
+<RefColumns>
+<RefColumn refId="mfe333438-0c82-1000-806e-0af170e40000-mfe333353-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe333353-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="mfe333439-0c82-1000-806e-0af170e40000" name="MOVIE_FACT_KEY_ACT">
+<RefColumns>
+<RefColumn refId="mfe333439-0c82-1000-806e-0af170e40000-mfe333354-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe333354-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="mfe333456-0c82-1000-806e-0af170e40000" name="MOVIE_FACT_V_Foreign Key#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/fe333325-0c82-1000-806e-0af170e40000.xml#mfe33342f-0c82-1000-806e-0af170e40000">
+<RefColumns>
+<RefColumn refId="mfe333456-0c82-1000-806e-0af170e40000-mfe33334e-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe33334e-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="mfe333457-0c82-1000-806e-0af170e40000" name="MOVIE_FACT_V_Foreign Key#2" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/fe3332f5-0c82-1000-806e-0af170e40000.xml#mfe33342c-0c82-1000-806e-0af170e40000">
+<RefColumns>
+<RefColumn refId="mfe333457-0c82-1000-806e-0af170e40000-mfe33334d-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe33334d-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="mfe333458-0c82-1000-806e-0af170e40000" name="MOVIE_FACT_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/fe333357-0c82-1000-806e-0af170e40000.xml#mfe33343a-0c82-1000-806e-0af170e40000">
+<RefColumns>
+<RefColumn refId="mfe333458-0c82-1000-806e-0af170e40000-mfe333354-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe333354-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="mfe333459-0c82-1000-806e-0af170e40000" name="MOVIE_FACT_Foreign Key#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/fe333375-0c82-1000-806e-0af170e40000.xml#mfe33343d-0c82-1000-806e-0af170e40000">
+<RefColumns>
+<RefColumn refId="mfe333459-0c82-1000-806e-0af170e40000-mfe333353-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe333353-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="mfe33345a-0c82-1000-806e-0af170e40000" name="MOVIE_FACT_Foreign Key#2" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/fe333336-0c82-1000-806e-0af170e40000.xml#mfe333434-0c82-1000-806e-0af170e40000">
+<RefColumns>
+<RefColumn refId="mfe33345a-0c82-1000-806e-0af170e40000-mfe333352-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe333352-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="mfe33345b-0c82-1000-806e-0af170e40000" name="MOVIE_FACT_Foreign Key#3" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/fe33336d-0c82-1000-806e-0af170e40000.xml#mfe33343c-0c82-1000-806e-0af170e40000">
+<RefColumns>
+<RefColumn refId="mfe33345b-0c82-1000-806e-0af170e40000-mfe333355-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe333355-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m575b68b1-0c2d-1000-87a7-0af06a760000" name="19 Distance Group" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="false" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/575b68b1-0c2d-1000-87a7-0af06a760000.xml#m575b6a8a-0c2d-1000-87a7-0af06a760000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/575b68b0-0c2d-1000-87a7-0af06a760000.xml#m575b68b0-0c2d-1000-87a7-0af06a760000">
+<LogicalLevel mdsid="m575b6a8a-0c2d-1000-87a7-0af06a760000" name="19 DGroup Total" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;19 DGroup Total&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="m575b6a8a-0c2d-1000-87a7-0af06a760000_m575b6a89-0c2d-1000-87a7-0af06a760000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/575b68b1-0c2d-1000-87a7-0af06a760000.xml#m575b6a89-0c2d-1000-87a7-0af06a760000"/>
+</RefChildLevels>
+</LogicalLevel>
+<LogicalLevel mdsid="m575b6a89-0c2d-1000-87a7-0af06a760000" name="19 DGroup Detail" isGTA="false" isFDUC="true" memberCount="11" levelConst="&apos;19 DGroup Detail&apos;">
+<LogicalKey mdsid="m575b6b86-0c2d-1000-87a7-0af06a760000" name="12 Distance Group Detail_Key" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6b86-0c2d-1000-87a7-0af06a760000-m575b6948-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6947-0c2d-1000-87a7-0af06a760000.xml#m575b6948-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefPreferredDrillDown>
+<RefLogicalLevel refId="m575b6a89-0c2d-1000-87a7-0af06a760000-m575b6ab7-0c2d-1000-87a7-0af06a760000" logicalLevelRef="/oracle/bi/server/base/Dimension/575b68c2-0c2d-1000-87a7-0af06a760000.xml#m575b6ab7-0c2d-1000-87a7-0af06a760000"/>
+</RefPreferredDrillDown>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m575b6a89-0c2d-1000-87a7-0af06a760000-m575b6948-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6947-0c2d-1000-87a7-0af06a760000.xml#m575b6948-0c2d-1000-87a7-0af06a760000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

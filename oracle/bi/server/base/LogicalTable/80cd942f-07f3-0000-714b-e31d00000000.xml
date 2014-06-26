@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cd942f-07f3-0000-714b-e31d00000000" name="F91 SalesRep Facts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="230" y="465" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cd92c7-07d0-0000-714b-e31d00000000.xml#m80cd92c7-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cd9430-07d6-0000-714b-e31d00000000" name="E4 ---- Team  Count Metrics -------------------------" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m00000001-01f4-0000-747b-fe5400000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m80cd96c8-0f3c-0000-714b-e31d00000000" name="AD_3900:1705941292245695">
+<Expr mdsid="m00000002-01f4-0000-e71d-7b1700000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd9431-07d6-0000-714b-e31d00000000" name="E40  # of Peers" isWriteable="false">
+<MeasureDefn mdsid="m80cd948b-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cd94b2-0802-0000-714b-e31d00000000" name="AggRule_2050:1697961292245695" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-1e32-0a9e00000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "05 - TimesTen Sample"."F91 SalesRep Facts"."E40  # of Peers")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-1e32-0a9e00000000-m80cd9431-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cd942f-07f3-0000-714b-e31d00000000.xml#m80cd9431-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cd96c9-0f3c-0000-714b-e31d00000000" name="AD_3900:1705951292245695">
+<Expr mdsid="m00000004-01f4-0000-1dd7-429e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."D57 Sales Rep (PC Hier - Siblings)"."Employee_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-1dd7-429e00000000-m80cd8f86-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd8f83-0bb9-0000-714b-e31d00000000.xml#m80cd8f86-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd9432-07d6-0000-714b-e31d00000000" name="E41  Full Team Population" isWriteable="false">
+<MeasureDefn mdsid="m80cd948c-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cd94b3-0802-0000-714b-e31d00000000" name="AggRule_2050:1697971292245695" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-dd15-354a00000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "05 - TimesTen Sample"."F91 SalesRep Facts"."E41  Full Team Population")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-dd15-354a00000000-m80cd9432-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cd942f-07f3-0000-714b-e31d00000000.xml#m80cd9432-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cd96ca-0f3c-0000-714b-e31d00000000" name="AD_3900:1705961292245695">
+<Expr mdsid="m00000006-01f4-0000-c48e-945000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."D56 Closure Table Sales Rep (Descendants)"."Member_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-c48e-945000000000-m80cd8f8b-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd8f8a-0bb9-0000-714b-e31d00000000.xml#m80cd8f8b-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd9433-07d6-0000-714b-e31d00000000" name="E42  # of Direct Reports" isWriteable="false">
+<MeasureDefn mdsid="m80cd948d-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cd94b4-0802-0000-714b-e31d00000000" name="AggRule_2050:1697981292245695" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-98b3-90ce00000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "05 - TimesTen Sample"."F91 SalesRep Facts"."E42  # of Direct Reports")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-98b3-90ce00000000-m80cd9433-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cd942f-07f3-0000-714b-e31d00000000.xml#m80cd9433-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cd96cb-0f3c-0000-714b-e31d00000000" name="AD_3900:1705971292245695">
+<Expr mdsid="m00000008-01f4-0000-2c74-8d2000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."D55 Sales Rep (PC Hier - Childs)"."Employee_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-2c74-8d2000000000-m80cd8f7f-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd8f7c-0bb9-0000-714b-e31d00000000.xml#m80cd8f7f-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd9434-07d6-0000-714b-e31d00000000" name="E43  # of Descendants" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000009-01f4-0000-346d-814b00000000" name="Expr">
+<ExprText><![CDATA["%1" - 1]]></ExprText>
+<ExprTextDesc><![CDATA["05 - TimesTen Sample"."F91 SalesRep Facts"."E41  Full Team Population" - 1]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-346d-814b00000000-m80cd9432-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cd942f-07f3-0000-714b-e31d00000000.xml#m80cd9432-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cd96cc-0f3c-0000-714b-e31d00000000" name="AD_3900:1705981292245695">
+<Expr mdsid="m0000000a-01f4-0000-8e77-506900000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cd9577-07d8-0000-714b-e31d00000000" name="A061 Employee (Parent-Child)_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cd9577-07d8-0000-714b-e31d00000000-m80cd9431-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd942f-07f3-0000-714b-e31d00000000.xml#m80cd9431-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m80cd9578-07d8-0000-714b-e31d00000000" name="A061 Employee (Parent-Child)_Key#1">
+<RefColumns>
+<RefLogicalColumn refId="m80cd9578-07d8-0000-714b-e31d00000000-m80cd9433-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd942f-07f3-0000-714b-e31d00000000.xml#m80cd9433-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cd942f-07f3-0000-714b-e31d00000000-m80cd9716-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cd9716-07f5-0000-714b-e31d00000000.xml#m80cd9716-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cd942f-07f3-0000-714b-e31d00000000-m80cd9717-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cd9717-07f5-0000-714b-e31d00000000.xml#m80cd9717-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cd942f-07f3-0000-714b-e31d00000000-m80cd9718-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cd9718-07f5-0000-714b-e31d00000000.xml#m80cd9718-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

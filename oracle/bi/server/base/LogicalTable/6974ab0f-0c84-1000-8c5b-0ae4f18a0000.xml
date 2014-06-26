@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m6974ab0f-0c84-1000-8c5b-0ae4f18a0000" name="Dealer - Dimension" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/6974aaf0-0c84-1000-8c5b-0ae4f18a0000.xml#m6974aaf0-0c84-1000-8c5b-0ae4f18a0000">
+<LogicalColumn mdsid="m6974ab10-0c84-1000-8c5b-0ae4f18a0000" name="Dealer" isWriteable="false">
+<AttrDefn mdsid="m6974d21d-0c84-1000-8c5b-0ae4f18a0000" name="AD_3900:2659611376284448">
+<Expr mdsid="m00000001-01f4-0000-f1d5-a5f600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."DIM_DEALER"."DEALER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-f1d5-a5f600000000-m69710175-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/69710174-0c84-1000-8c5b-0ae4f18a0000.xml#m69710175-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m6974ab11-0c84-1000-8c5b-0ae4f18a0000" name="Dealer City" isWriteable="false">
+<AttrDefn mdsid="m6974d21e-0c84-1000-8c5b-0ae4f18a0000" name="AD_3900:2659621376284448">
+<Expr mdsid="m00000002-01f4-0000-4680-27b800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."DIM_DEALER"."DEALER_CITY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-4680-27b800000000-m69710176-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/69710174-0c84-1000-8c5b-0ae4f18a0000.xml#m69710176-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m6974ab12-0c84-1000-8c5b-0ae4f18a0000" name="Dealer Geocode" isWriteable="false">
+<AttrDefn mdsid="m6974d21f-0c84-1000-8c5b-0ae4f18a0000" name="AD_3900:2659631376284448">
+<Expr mdsid="m00000003-01f4-0000-406b-f22e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."DIM_DEALER"."DEALER_GEOCODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-406b-f22e00000000-m69710178-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/69710174-0c84-1000-8c5b-0ae4f18a0000.xml#m69710178-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m6974ab13-0c84-1000-8c5b-0ae4f18a0000" name="Dealer State Province" isWriteable="false">
+<AttrDefn mdsid="m6974d220-0c84-1000-8c5b-0ae4f18a0000" name="AD_3900:2659641376284448">
+<Expr mdsid="m00000004-01f4-0000-f73c-1e4900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."DIM_DEALER"."DEALER_STATEPROVINCE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-f73c-1e4900000000-m69710177-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/69710174-0c84-1000-8c5b-0ae4f18a0000.xml#m69710177-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m6974abbe-0c84-1000-8c5b-0ae4f18a0000" name="SYS_C0018201" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m6974abbe-0c84-1000-8c5b-0ae4f18a0000-m6974ab10-0c84-1000-8c5b-0ae4f18a0000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/6974ab0f-0c84-1000-8c5b-0ae4f18a0000.xml#m6974ab10-0c84-1000-8c5b-0ae4f18a0000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m6974ab0f-0c84-1000-8c5b-0ae4f18a0000-m6974d295-0c84-1000-8c5b-0ae4f18a0000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/6974d295-0c84-1000-8c5b-0ae4f18a0000.xml#m6974d295-0c84-1000-8c5b-0ae4f18a0000"/>
+</RefTableSources>
+</LogicalTable>

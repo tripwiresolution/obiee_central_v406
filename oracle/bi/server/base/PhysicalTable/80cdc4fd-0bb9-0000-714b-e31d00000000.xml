@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cdc4fd-0bb9-0000-714b-e31d00000000" name="D86 Closure Table Cust LTV Nodes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cdc440-0bb9-0000-714b-e31d00000000.xml#m80cdc440-0bb9-0000-714b-e31d00000000" memberKeyRef="/oracle/bi/server/base/PhysicalTable/80cdc4fd-0bb9-0000-714b-e31d00000000.xml#m80cdc4fe-0bbb-0000-714b-e31d00000000" parentKeyRef="/oracle/bi/server/base/PhysicalTable/80cdc4fd-0bb9-0000-714b-e31d00000000.xml#m80cdc4ff-0bbb-0000-714b-e31d00000000" distanceColumnRef="/oracle/bi/server/base/PhysicalTable/80cdc4fd-0bb9-0000-714b-e31d00000000.xml#m80cdc500-0bbb-0000-714b-e31d00000000" leafColumnRef="/oracle/bi/server/base/PhysicalTable/80cdc4fd-0bb9-0000-714b-e31d00000000.xml#m80cdc501-0bbb-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[ODM_LTV_PARENT_CHILD_MAP]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cdc4fe-0bbb-0000-714b-e31d00000000" name="MEMBER_KEY" dataType="DOUBLE" precision="15" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cdc440-0bb9-0000-714b-e31d00000000.xml#m80cdc441-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdc4ff-0bbb-0000-714b-e31d00000000" name="ANCESTOR_KEY" dataType="DOUBLE" precision="15" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cdc440-0bb9-0000-714b-e31d00000000.xml#m80cdc442-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdc500-0bbb-0000-714b-e31d00000000" name="DISTANCE" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cdc440-0bb9-0000-714b-e31d00000000.xml#m80cdc443-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cdc501-0bbb-0000-714b-e31d00000000" name="IS_LEAF" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cdc440-0bb9-0000-714b-e31d00000000.xml#m80cdc444-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cdc504-0bc0-0000-714b-e31d00000000" name="D65 Closure Table Cust Tree Node_Key">
+<RefColumns>
+<RefColumn refId="m80cdc504-0bc0-0000-714b-e31d00000000-m80cdc4fe-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cdc4fd-0bb9-0000-714b-e31d00000000.xml#m80cdc4fe-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m80cdcdc4-0bbe-0000-714b-e31d00000000" name="D65 Closure Table Cust Tree Node_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cdcb72-0bb9-0000-714b-e31d00000000.xml#m80cdcb7b-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cdcdc4-0bbe-0000-714b-e31d00000000-m80cdc4ff-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cdc4fd-0bb9-0000-714b-e31d00000000.xml#m80cdc4ff-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cd9022-0bb9-0000-714b-e31d00000000" name="F19 Rev. (Converted)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" x="229" y="491" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cd8dda-0bd3-0000-714b-e31d00000000.xml#m80cd8dda-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cd8e51-0bb9-0000-714b-e31d00000000.xml#m80cd8e51-0bb9-0000-714b-e31d00000000">
+<Description><![CDATA[Reveue Currency Converted Fact Alias: Stores the converted fact information in different currencies.]]></Description>
+<PhysicalColumn mdsid="m80cd9023-0bbb-0000-714b-e31d00000000" name="Shipto_Addr_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e51-0bb9-0000-714b-e31d00000000.xml#m80cd8e52-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Shipto Address Key: Joins to Address_Key column of Addresses dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd9024-0bbb-0000-714b-e31d00000000" name="Cust_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e51-0bb9-0000-714b-e31d00000000.xml#m80cd8e53-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Customer Key: Joins to Cust_Key of Customers dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd9025-0bbb-0000-714b-e31d00000000" name="Order_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e51-0bb9-0000-714b-e31d00000000.xml#m80cd8e55-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Order Number: Uniquely identifies each record in the fact table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd9026-0bbb-0000-714b-e31d00000000" name="Bill_Day_Dt" dataType="DATE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e51-0bb9-0000-714b-e31d00000000.xml#m80cd8e56-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Bill Day Date: Joins to Calendar_date of Time dimension table (Day grain).]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd9027-0bbb-0000-714b-e31d00000000" name="Prod_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e51-0bb9-0000-714b-e31d00000000.xml#m80cd8e57-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Product Key: Joins to Prod_Key of Products dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd9028-0bbb-0000-714b-e31d00000000" name="Empl_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e51-0bb9-0000-714b-e31d00000000.xml#m80cd8e58-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Employee Key: Joins to Empl_Key of Employees dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd9029-0bbb-0000-714b-e31d00000000" name="Bill_Mth_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e51-0bb9-0000-714b-e31d00000000.xml#m80cd8e59-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Bill Month Key: Joins to Mth_Key of Time dimension table (Mth grain).]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd902a-0bbb-0000-714b-e31d00000000" name="Bill_Qtr_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e51-0bb9-0000-714b-e31d00000000.xml#m80cd8e5b-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Bill Quarter Key: Joins to Qtr_Key of Time dimension table (Qtr grain).]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd902b-0bbb-0000-714b-e31d00000000" name="Office_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e51-0bb9-0000-714b-e31d00000000.xml#m80cd8e5d-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Office Key: Joins to Office_Key of Employees dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd902c-0bbb-0000-714b-e31d00000000" name="Revenue_Usd" dataType="DOUBLE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e51-0bb9-0000-714b-e31d00000000.xml#m80cd8e54-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Revenue: Stores revenue converted to US Dollars as a double.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd902d-0bbb-0000-714b-e31d00000000" name="Revenue_Eur" dataType="DOUBLE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e51-0bb9-0000-714b-e31d00000000.xml#m80cd8e5a-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Revenue: Stores revenue converted to Euros as a double.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd902e-0bbb-0000-714b-e31d00000000" name="Revenue_Aud" dataType="DOUBLE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e51-0bb9-0000-714b-e31d00000000.xml#m80cd8e5c-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Revenue: Stores revenue converted to Australian Dollars as a double.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd902f-0bbb-0000-714b-e31d00000000" name="Currency" dataType="VARCHAR" precision="3" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e51-0bb9-0000-714b-e31d00000000.xml#m80cd8e5e-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Currency: Stores currency information like AUD, USD, EUR..]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd9030-0bbb-0000-714b-e31d00000000" name="Revenue" dataType="DOUBLE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e51-0bb9-0000-714b-e31d00000000.xml#m80cd8e5f-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Revenue: Stores revenue information as a double.]]></Description>
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cd921a-0bc0-0000-714b-e31d00000000" name="Order_Key">
+<RefColumns>
+<RefColumn refId="m80cd921a-0bc0-0000-714b-e31d00000000-m80cd9025-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cd9022-0bb9-0000-714b-e31d00000000.xml#m80cd9025-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m80cd926a-0bbe-0000-714b-e31d00000000" name="F13 Facts Rev. Converted_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cd8fb4-0bb9-0000-714b-e31d00000000.xml#m80cd9215-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cd926a-0bbe-0000-714b-e31d00000000-m80cd9023-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cd9022-0bb9-0000-714b-e31d00000000.xml#m80cd9023-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cd926b-0bbe-0000-714b-e31d00000000" name="Fact 01 Revenue_FKey#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cd8f8f-0bb9-0000-714b-e31d00000000.xml#m80cd9212-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cd926b-0bbe-0000-714b-e31d00000000-m80cd9024-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cd9022-0bb9-0000-714b-e31d00000000.xml#m80cd9024-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cd926c-0bbe-0000-714b-e31d00000000" name="Fact 01 Revenue_FKey#4" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cd8f28-0bb9-0000-714b-e31d00000000.xml#m80cd91fe-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cd926c-0bbe-0000-714b-e31d00000000-m80cd9027-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cd9022-0bb9-0000-714b-e31d00000000.xml#m80cd9027-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cd926d-0bbe-0000-714b-e31d00000000" name="Fact 01 Revenue_FKey#5" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cd8f3a-0bb9-0000-714b-e31d00000000.xml#m80cd9202-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cd926d-0bbe-0000-714b-e31d00000000-m80cd902b-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cd9022-0bb9-0000-714b-e31d00000000.xml#m80cd902b-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cd926e-0bbe-0000-714b-e31d00000000" name="11 Revenue (PerKey 1)_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cd8ecd-0bb9-0000-714b-e31d00000000.xml#m80cd91f7-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cd926e-0bbe-0000-714b-e31d00000000-m80cd9026-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cd9022-0bb9-0000-714b-e31d00000000.xml#m80cd9026-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cd926f-0bbe-0000-714b-e31d00000000" name="11 Revenue (PerKey 1)_FKey#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cd8eed-0bb9-0000-714b-e31d00000000.xml#m80cd91f9-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cd926f-0bbe-0000-714b-e31d00000000-m80cd9029-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cd9022-0bb9-0000-714b-e31d00000000.xml#m80cd9029-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cd9270-0bbe-0000-714b-e31d00000000" name="a061a-a11" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cd8f67-0bb9-0000-714b-e31d00000000.xml#m80cd9208-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cd9270-0bbe-0000-714b-e31d00000000-m80cd9028-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cd9022-0bb9-0000-714b-e31d00000000.xml#m80cd9028-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cd9271-0bbe-0000-714b-e31d00000000" name="F10 Revenue (Billed Time Join)_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cd8f04-0bb9-0000-714b-e31d00000000.xml#m80cd91fc-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cd9271-0bbe-0000-714b-e31d00000000-m80cd902a-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cd9022-0bb9-0000-714b-e31d00000000.xml#m80cd902a-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cd9272-0bbe-0000-714b-e31d00000000" name="F14 Facts Converted Revenue_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cd8f34-0bb9-0000-714b-e31d00000000.xml#m80cd9201-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cd9272-0bbe-0000-714b-e31d00000000-m80cd9027-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cd9022-0bb9-0000-714b-e31d00000000.xml#m80cd9027-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

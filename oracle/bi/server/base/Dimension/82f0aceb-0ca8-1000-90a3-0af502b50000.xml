@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m82f0aceb-0ca8-1000-90a3-0af502b50000" name="Employee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="false" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/82f0aceb-0ca8-1000-90a3-0af502b50000.xml#m82f197e6-0ca8-1000-90a3-0af502b50000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd2-0ca8-1000-90a3-0af502b50000.xml#m82f0acd2-0ca8-1000-90a3-0af502b50000">
+<LogicalLevel mdsid="m82f197e6-0ca8-1000-90a3-0af502b50000" name="Total" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;Total&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="m82f197e6-0ca8-1000-90a3-0af502b50000_m82f197e7-0ca8-1000-90a3-0af502b50000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/82f0aceb-0ca8-1000-90a3-0af502b50000.xml#m82f197e7-0ca8-1000-90a3-0af502b50000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m82f197e6-0ca8-1000-90a3-0af502b50000-m82f0d48d-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d48c-0ca8-1000-90a3-0af502b50000.xml#m82f0d48d-0ca8-1000-90a3-0af502b50000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m82f197e7-0ca8-1000-90a3-0af502b50000" name="Organisation" isGTA="false" isFDUC="true" memberCount="10" levelConst="&apos;Organisation&apos;">
+<LogicalKey mdsid="m82f2339c-0ca8-1000-90a3-0af502b50000" name="Organisation" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f2339c-0ca8-1000-90a3-0af502b50000-m82f0d490-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d48c-0ca8-1000-90a3-0af502b50000.xml#m82f0d490-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m82f197e7-0ca8-1000-90a3-0af502b50000_m82f197e5-0ca8-1000-90a3-0af502b50000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/82f0aceb-0ca8-1000-90a3-0af502b50000.xml#m82f197e5-0ca8-1000-90a3-0af502b50000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m82f197e7-0ca8-1000-90a3-0af502b50000-m82f0d490-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d48c-0ca8-1000-90a3-0af502b50000.xml#m82f0d490-0ca8-1000-90a3-0af502b50000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m82f197e5-0ca8-1000-90a3-0af502b50000" name="Detail" isGTA="false" isFDUC="true" memberCount="100" levelConst="&apos;Detail&apos;">
+<LogicalKey mdsid="m82f2339b-0ca8-1000-90a3-0af502b50000" name="Dim - Employee Detail_Key" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f2339b-0ca8-1000-90a3-0af502b50000-m82f0d48e-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d48c-0ca8-1000-90a3-0af502b50000.xml#m82f0d48e-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m82f197e5-0ca8-1000-90a3-0af502b50000-m82f0d48e-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d48c-0ca8-1000-90a3-0af502b50000.xml#m82f0d48e-0ca8-1000-90a3-0af502b50000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

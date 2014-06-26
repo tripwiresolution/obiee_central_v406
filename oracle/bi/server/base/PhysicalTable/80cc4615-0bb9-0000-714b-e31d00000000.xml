@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cc4615-0bb9-0000-714b-e31d00000000" name="Job" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" x="736" y="588" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cc4612-0bd3-0000-714b-e31d00000000.xml#m80cc4612-0bd3-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[select J.JOB_ID, J.NAME, J.DESC_TEXT, J.NEXT_RUNTIME_TS,
+P.JOB_PARAM AS AGENT_PATH,J.USER_ID
+from S_NQ_JOB J inner join S_NQ_JOB_PARAM P on J.JOB_ID =
+P.JOB_ID
+where P.RELATIVE_ORDER = 1 and J.DELETE_FLG = 0
+group by J.JOB_ID, J.NAME, J.DESC_TEXT, J.NEXT_RUNTIME_TS,
+P.JOB_PARAM,J.USER_ID]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cc4623-0bbb-0000-714b-e31d00000000" name="AGENT_PATH" dataType="VARCHAR" precision="255" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4624-0bbb-0000-714b-e31d00000000" name="DESC_TEXT" dataType="VARCHAR" precision="255" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4625-0bbb-0000-714b-e31d00000000" name="JOB_ID" dataType="UINT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4616-0bbb-0000-714b-e31d00000000" name="NAME" dataType="VARCHAR" precision="50" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4617-0bbb-0000-714b-e31d00000000" name="NEXT_RUNTIME_TS" dataType="DATE" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4618-0bbb-0000-714b-e31d00000000" name="USER_ID" dataType="VARCHAR" precision="128" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cc4628-0bc0-0000-714b-e31d00000000" name="JOB_ID">
+<RefColumns>
+<RefColumn refId="m80cc4628-0bc0-0000-714b-e31d00000000-m80cc4625-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc4615-0bb9-0000-714b-e31d00000000.xml#m80cc4625-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

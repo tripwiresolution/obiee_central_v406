@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m80cb9464-07e3-0000-714b-e31d00000000" name="H6 Customers" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="false" isSkipped="true" defaultRootLevelRef="/oracle/bi/server/base/Dimension/80cb9464-07e3-0000-714b-e31d00000000.xml#m80cb9616-07e9-0000-714b-e31d00000000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cb9462-07d0-0000-714b-e31d00000000.xml#m80cb9462-07d0-0000-714b-e31d00000000">
+<LogicalLevel mdsid="m80cb9616-07e9-0000-714b-e31d00000000" name="Customers Total" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;Customers Total&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="m80cb9616-07e9-0000-714b-e31d00000000_m80cb9619-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cb9464-07e3-0000-714b-e31d00000000.xml#m80cb9619-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cb9619-07e9-0000-714b-e31d00000000" name="Customers Detail" isGTA="false" isFDUC="true" memberCount="1000" levelConst="&apos;Customers Detail&apos;">
+<LogicalKey mdsid="m80cb9670-07d8-0000-714b-e31d00000000" name="Cust Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cb9670-07d8-0000-714b-e31d00000000-m80cb946c-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb946b-07f3-0000-714b-e31d00000000.xml#m80cb946c-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m80cb9671-07d8-0000-714b-e31d00000000" name="C1  Cust Name" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cb9671-07d8-0000-714b-e31d00000000-m80cb946d-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb946b-07f3-0000-714b-e31d00000000.xml#m80cb946d-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cb9619-07e9-0000-714b-e31d00000000-m80cb946c-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb946b-07f3-0000-714b-e31d00000000.xml#m80cb946c-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cb9619-07e9-0000-714b-e31d00000000-m80cb946d-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb946b-07f3-0000-714b-e31d00000000.xml#m80cb946d-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

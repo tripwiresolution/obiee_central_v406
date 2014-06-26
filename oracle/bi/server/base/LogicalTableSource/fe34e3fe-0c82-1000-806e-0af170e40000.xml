@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="mfe34e3fe-0c82-1000-806e-0af170e40000" name="Genre (Movie Level - M:M)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" allowUnmappedTable="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/fe34e0e1-0c82-1000-806e-0af170e40000.xml#mfe34e0e1-0c82-1000-806e-0af170e40000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-9129-fa0200000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movie Demo (ORCL)"."Movie Genre"."Genre ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-9129-fa0200000000-mfe34e0e2-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e0e1-0c82-1000-806e-0af170e40000.xml#mfe34e0e2-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-4cbe-e7c700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."Genre (Movie Level - M:M)"."GENRE_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-4cbe-e7c700000000-mfe333379-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe333378-0c82-1000-806e-0af170e40000.xml#mfe333379-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-8424-c36600000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movie Demo (ORCL)"."Movie Genre"."Genre Name"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-8424-c36600000000-mfe34e0e3-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e0e1-0c82-1000-806e-0af170e40000.xml#mfe34e0e3-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-4346-5f2900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."Genre (Movie Level - M:M)"."NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-4346-5f2900000000-mfe33337a-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe333378-0c82-1000-806e-0af170e40000.xml#mfe33337a-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/fe333333-0c82-1000-806e-0af170e40000.xml#mfe333333-0c82-1000-806e-0af170e40000">
+<Join type="Inner" cardinality="MANY TO ONE" physicalTable1Ref="/oracle/bi/server/base/PhysicalTable/fe333333-0c82-1000-806e-0af170e40000.xml#mfe333333-0c82-1000-806e-0af170e40000" physicalTable2Ref="/oracle/bi/server/base/PhysicalTable/fe333378-0c82-1000-806e-0af170e40000.xml#mfe333378-0c82-1000-806e-0af170e40000" physicalJoinRef="/oracle/bi/server/base/PhysicalTable/fe333333-0c82-1000-806e-0af170e40000.xml#mfe333455-0c82-1000-806e-0af170e40000"/>
+</Link>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/fe333378-0c82-1000-806e-0af170e40000.xml#mfe333378-0c82-1000-806e-0af170e40000">
+<Join type="Inner" cardinality=" ONE TO MANY" physicalTable1Ref="/oracle/bi/server/base/PhysicalTable/fe333378-0c82-1000-806e-0af170e40000.xml#mfe333378-0c82-1000-806e-0af170e40000" physicalTable2Ref="/oracle/bi/server/base/PhysicalTable/fe333333-0c82-1000-806e-0af170e40000.xml#mfe333333-0c82-1000-806e-0af170e40000" physicalJoinRef="/oracle/bi/server/base/PhysicalTable/fe333333-0c82-1000-806e-0af170e40000.xml#mfe333455-0c82-1000-806e-0af170e40000"/>
+</Link>
+<WhereClause mdsid="m00000005-01f4-0000-84b5-d74400000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000006-01f4-0000-91c5-408600000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m00000007-01f4-0000-745c-1f5a00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

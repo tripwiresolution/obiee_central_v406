@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m80cbced7-07f5-0000-714b-e31d00000000" name="MEMBERSHIPS_BASE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/80cbbddc-07f3-0000-714b-e31d00000000.xml#m80cbbddc-07f3-0000-714b-e31d00000000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-9c79-d0f600000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X5 - OLTP Source (Fusion Order)"."D01 Customers"."Membership ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-9c79-d0f600000000-m80cbbe78-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cbbddc-07f3-0000-714b-e31d00000000.xml#m80cbbe78-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-1a4e-62ac00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BIFOD"."MEMBERSHIPS_BASE"."MEMBERSHIP_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-1a4e-62ac00000000-m80cbceaf-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbce86-0bb9-0000-714b-e31d00000000.xml#m80cbceaf-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-eaf3-eec600000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X5 - OLTP Source (Fusion Order)"."D01 Customers"."Membership Description (Lookup Phys)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-eaf3-eec600000000-m80cbc3ae-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cbbddc-07f3-0000-714b-e31d00000000.xml#m80cbc3ae-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-be16-690300000000" name="Expr">
+<ExprText><![CDATA[LOOKUP(SPARSE
+"%1", 
+'No values for this record',
+'FR',
+"%2"
+)
+]]></ExprText>
+<ExprTextDesc><![CDATA[LOOKUP(SPARSE
+"01 - Sample App Data (ORCL)".""."BIFOD"."MEMBERSHIP_TRANSLATIONS"."DESCRIPTION", 
+'No values for this record',
+'FR',
+"01 - Sample App Data (ORCL)".""."BIFOD"."MEMBERSHIPS_BASE"."MEMBERSHIP_ID"
+)
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-be16-690300000000-m80cbcea1-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbce85-0bb9-0000-714b-e31d00000000.xml#m80cbcea1-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m00000004-01f4-0000-be16-690300000000-m80cbceaf-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbce86-0bb9-0000-714b-e31d00000000.xml#m80cbceaf-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-f42d-946000000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X5 - OLTP Source (Fusion Order)"."D01 Customers"."Membership Name (Lookup Phys)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-f42d-946000000000-m80cbc3af-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cbbddc-07f3-0000-714b-e31d00000000.xml#m80cbc3af-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-c733-c4c500000000" name="Expr">
+<ExprText><![CDATA[LOOKUP(SPARSE
+"%1", 
+'No values for this record',
+'FR',
+"%2"
+)]]></ExprText>
+<ExprTextDesc><![CDATA[LOOKUP(SPARSE
+"01 - Sample App Data (ORCL)".""."BIFOD"."MEMBERSHIP_TRANSLATIONS"."MEMBERSHIP_NAME", 
+'No values for this record',
+'FR',
+"01 - Sample App Data (ORCL)".""."BIFOD"."MEMBERSHIPS_BASE"."MEMBERSHIP_ID"
+)]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-c733-c4c500000000-m80cbcea6-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbce85-0bb9-0000-714b-e31d00000000.xml#m80cbcea6-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m00000006-01f4-0000-c733-c4c500000000-m80cbceaf-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbce86-0bb9-0000-714b-e31d00000000.xml#m80cbceaf-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000007-01f4-0000-2fba-681500000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X5 - OLTP Source (Fusion Order)"."D01 Customers"."Membership Type Code"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-2fba-681500000000-m80cbc3b0-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cbbddc-07f3-0000-714b-e31d00000000.xml#m80cbc3b0-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000008-01f4-0000-67f1-e54900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BIFOD"."MEMBERSHIPS_BASE"."MEMBERSHIP_TYPE_CODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-67f1-e54900000000-m80cbceb0-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbce86-0bb9-0000-714b-e31d00000000.xml#m80cbceb0-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/80cbce86-0bb9-0000-714b-e31d00000000.xml#m80cbce86-0bb9-0000-714b-e31d00000000">
+</Link>
+<WhereClause mdsid="m00000009-01f4-0000-a752-3db300000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m0000000a-01f4-0000-0dca-c8ad00000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m0000000b-01f4-0000-cc60-c1c200000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

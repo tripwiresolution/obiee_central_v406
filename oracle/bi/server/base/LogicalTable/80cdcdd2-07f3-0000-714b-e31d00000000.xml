@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cdcdd2-07f3-0000-714b-e31d00000000" name="D8 Data Mining Cust LTV Tree Nodes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cab573-07d0-0000-714b-e31d00000000.xml#m80cab573-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cddaf3-07d6-0000-714b-e31d00000000" name="M11  Cust Predicted Leaf Node" isWriteable="false">
+<AttrDefn mdsid="m80cddb0a-0f3c-0000-714b-e31d00000000" name="AD_3900:1875621301653200">
+<Expr mdsid="m00000001-01f4-0000-6736-0e8800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D80 Cust LTV (ODM)"."M_PRED_LTV_NODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-6736-0e8800000000-m80cdcda9-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdcd9b-0bb9-0000-714b-e31d00000000.xml#m80cdcda9-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cddaf4-07d6-0000-714b-e31d00000000" name="M12  Cust Predicted LTV" isWriteable="false">
+<AttrDefn mdsid="m80cddb0b-0f3c-0000-714b-e31d00000000" name="AD_3900:1875631301653200">
+<Expr mdsid="m00000002-01f4-0000-ece1-99d300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D80 Cust LTV (ODM)"."M_PRED_BIN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-ece1-99d300000000-m80cdd3ad-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdcd9b-0bb9-0000-714b-e31d00000000.xml#m80cdd3ad-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdd511-07d6-0000-714b-e31d00000000" name="M20 === LTV Tree Nodes ===" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m00000003-01f4-0000-b6af-018100000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m80cdd512-0f3c-0000-714b-e31d00000000" name="AD_3900:1859981300465927">
+<Expr mdsid="m00000004-01f4-0000-dc21-a5e300000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdce23-07d6-0000-714b-e31d00000000" name="M20 Tree Node" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000005-01f4-0000-1cd3-43ad00000000" name="Expr">
+<ExprText><![CDATA[cast("%1" as varchar(2)) ||' - '||"%2" ]]></ExprText>
+<ExprTextDesc><![CDATA[cast("01 - Sample App"."D8 Data Mining Cust LTV Tree Nodes"."M21v Node # (PC Hier)" as varchar(2)) ||' - '||"01 - Sample App"."D8 Data Mining Cust LTV Tree Nodes"."M22v Local Rule (PC Hier)" ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-1cd3-43ad00000000-m80cdcdd7-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdcdd2-07f3-0000-714b-e31d00000000.xml#m80cdcdd7-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000005-01f4-0000-1cd3-43ad00000000-m80cdcdd5-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdcdd2-07f3-0000-714b-e31d00000000.xml#m80cdcdd5-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cdce24-0f3c-0000-714b-e31d00000000" name="AD_3900:1844491300196774">
+<Expr mdsid="m00000006-01f4-0000-d80f-fd0f00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cddbd0-07d6-0000-714b-e31d00000000" name="M21 Node #" isWriteable="false">
+<AttrDefn mdsid="m80cddbd1-0f3c-0000-714b-e31d00000000" name="AD_3900:1877581302169028">
+<Expr mdsid="m00000007-01f4-0000-7d07-307b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D81 Cust LTV Leaf Nodes"."NODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-7d07-307b00000000-m80cddbc6-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cddbc1-0bb9-0000-714b-e31d00000000.xml#m80cddbc6-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdcdd7-07d6-0000-714b-e31d00000000" name="M21v Node # (PC Hier)" iconIndex="91" isWriteable="false">
+<AttrDefn mdsid="m80cdcde3-0f3c-0000-714b-e31d00000000" name="AD_3900:1843841300186167">
+<Expr mdsid="m00000008-01f4-0000-6a69-ed0200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D85 Cust LTV Nodes (PC Hierarchy)"."NODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-6a69-ed0200000000-m80cdcb77-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdcb72-0bb9-0000-714b-e31d00000000.xml#m80cdcb77-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cddbd4-07d6-0000-714b-e31d00000000" name="M22 Local Rule" isWriteable="false">
+<AttrDefn mdsid="m80cddbd5-0f3c-0000-714b-e31d00000000" name="AD_3900:1877621302169028">
+<Expr mdsid="m00000009-01f4-0000-b758-f20b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D81 Cust LTV Leaf Nodes"."LOCAL_RULE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-b758-f20b00000000-m80cddbc4-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cddbc1-0bb9-0000-714b-e31d00000000.xml#m80cddbc4-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdcdd5-07d6-0000-714b-e31d00000000" name="M22v Local Rule (PC Hier)" iconIndex="91" isWriteable="false">
+<AttrDefn mdsid="m80cdcde1-0f3c-0000-714b-e31d00000000" name="AD_3900:1843821300186167">
+<Expr mdsid="m0000000a-01f4-0000-3e0d-725300000000" name="Expr">
+<ExprText><![CDATA[ CASE  WHEN "%1" = 0 THEN 'All Individuals' ELSE  REPLACE( REPLACE("%2", '(', ''), ')', '') END ]]></ExprText>
+<ExprTextDesc><![CDATA[ CASE  WHEN "01 - Sample App Data (ORCL)".""."BISAMPLE"."D85 Cust LTV Nodes (PC Hierarchy)"."NODE" = 0 THEN 'All Individuals' ELSE  REPLACE( REPLACE("01 - Sample App Data (ORCL)".""."BISAMPLE"."D85 Cust LTV Nodes (PC Hierarchy)"."LOCAL_RULE", '(', ''), ')', '') END ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-3e0d-725300000000-m80cdcb77-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdcb72-0bb9-0000-714b-e31d00000000.xml#m80cdcb77-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m0000000a-01f4-0000-3e0d-725300000000-m80cdcb75-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdcb72-0bb9-0000-714b-e31d00000000.xml#m80cdcb75-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdcdd3-07d6-0000-714b-e31d00000000" name="M23 Full Rule" isWriteable="false">
+<AttrDefn mdsid="m80cdcddf-0f3c-0000-714b-e31d00000000" name="AD_3900:1843801300186167">
+<Expr mdsid="m0000000b-01f4-0000-3965-3e4100000000" name="Expr">
+<ExprText><![CDATA[ CASE  WHEN "%1" = 0 THEN 'All Individuals' ELSE  REPLACE( REPLACE( REPLACE("%2", ' AND ', ';<br/> AND '), '(', ''), ')', '') END ]]></ExprText>
+<ExprTextDesc><![CDATA[ CASE  WHEN "01 - Sample App Data (ORCL)".""."BISAMPLE"."D81 Cust LTV Leaf Nodes"."NODE" = 0 THEN 'All Individuals' ELSE  REPLACE( REPLACE( REPLACE("01 - Sample App Data (ORCL)".""."BISAMPLE"."D81 Cust LTV Leaf Nodes"."FULL_RULE", ' AND ', ';<br/> AND '), '(', ''), ')', '') END ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-3965-3e4100000000-m80cddbc6-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cddbc1-0bb9-0000-714b-e31d00000000.xml#m80cddbc6-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m0000000b-01f4-0000-3965-3e4100000000-m80cddbc2-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cddbc1-0bb9-0000-714b-e31d00000000.xml#m80cddbc2-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdcdda-07d6-0000-714b-e31d00000000" name="M24 Node Total Individuals" isWriteable="false">
+<AttrDefn mdsid="m80cdcde6-0f3c-0000-714b-e31d00000000" name="AD_3900:1843871300186167">
+<Expr mdsid="m0000000c-01f4-0000-de77-8c4000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D81 Cust LTV Leaf Nodes"."RECORD_COUNT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-de77-8c4000000000-m80cddbc9-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cddbc1-0bb9-0000-714b-e31d00000000.xml#m80cddbc9-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cddc12-07d6-0000-714b-e31d00000000" name="M25 Parent Node" isWriteable="false">
+<AttrDefn mdsid="m80cddc13-0f3c-0000-714b-e31d00000000" name="AD_3900:1878241302266120">
+<Expr mdsid="m0000000d-01f4-0000-96a8-9a4f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D81 Cust LTV Leaf Nodes"."PARENT_NODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-96a8-9a4f00000000-m80cddbc7-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cddbc1-0bb9-0000-714b-e31d00000000.xml#m80cddbc7-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdcdd8-07d6-0000-714b-e31d00000000" name="M25v Parent Node # (PC Hier)" iconIndex="91" isWriteable="false">
+<AttrDefn mdsid="m80cdcde4-0f3c-0000-714b-e31d00000000" name="AD_3900:1843851300186167">
+<Expr mdsid="m0000000e-01f4-0000-9a65-164200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D85 Cust LTV Nodes (PC Hierarchy)"."PARENT_NODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-9a65-164200000000-m80cdcb78-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdcb72-0bb9-0000-714b-e31d00000000.xml#m80cdcb78-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdcdd4-07d6-0000-714b-e31d00000000" name="M26 Is Leaf" isWriteable="false">
+<AttrDefn mdsid="m80cdcde0-0f3c-0000-714b-e31d00000000" name="AD_3900:1843811300186167">
+<Expr mdsid="m0000000f-01f4-0000-47b4-974e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D81 Cust LTV Leaf Nodes"."IS_LEAF"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-47b4-974e00000000-m80cddbc3-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cddbc1-0bb9-0000-714b-e31d00000000.xml#m80cddbc3-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdcddb-07d6-0000-714b-e31d00000000" name="M27 Distance" isWriteable="false">
+<AttrDefn mdsid="m80cdcde7-0f3c-0000-714b-e31d00000000" name="AD_3900:1843881300186167">
+<Expr mdsid="m00000010-01f4-0000-4990-f67200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D86 Closure Table Cust LTV Nodes"."DISTANCE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-4990-f67200000000-m80cdc500-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdc4fd-0bb9-0000-714b-e31d00000000.xml#m80cdc500-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdcdd9-07d6-0000-714b-e31d00000000" name="M28 Node LTV Prediction" isWriteable="false">
+<AttrDefn mdsid="m80cdcde5-0f3c-0000-714b-e31d00000000" name="AD_3900:1843861300186167">
+<Expr mdsid="m00000011-01f4-0000-1234-17fe00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D81 Cust LTV Leaf Nodes"."PREDICTION"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-1234-17fe00000000-m80cddbc8-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cddbc1-0bb9-0000-714b-e31d00000000.xml#m80cddbc8-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cddbb9-07d6-0000-714b-e31d00000000" name="M30 === LTV Dynamic Nodes ===" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m00000012-01f4-0000-651d-35d200000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m80cddbba-0f3c-0000-714b-e31d00000000" name="AD_3900:1877351302108607">
+<Expr mdsid="m00000013-01f4-0000-8766-14a900000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cddbb5-07d6-0000-714b-e31d00000000" name="M31 Dynamic Score Node #" isWriteable="false">
+<AttrDefn mdsid="m80cddbb6-0f3c-0000-714b-e31d00000000" name="AD_3900:1877311302108420">
+<Expr mdsid="m00000014-01f4-0000-aa62-f46300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D83 Cust LTV Dynamic Leaf Nodes"."NODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-aa62-f46300000000-m80cddb9f-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cddb9a-0bb9-0000-714b-e31d00000000.xml#m80cddb9f-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cddbab-07d6-0000-714b-e31d00000000" name="M32 Dynamic Score Local Rule" isWriteable="false">
+<AttrDefn mdsid="m80cddbad-0f3c-0000-714b-e31d00000000" name="AD_3900:1877221302108209">
+<Expr mdsid="m00000015-01f4-0000-dc67-265700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D83 Cust LTV Dynamic Leaf Nodes"."LOCAL_RULE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-dc67-265700000000-m80cddb9d-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cddb9a-0bb9-0000-714b-e31d00000000.xml#m80cddb9d-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cddbaa-07d6-0000-714b-e31d00000000" name="M33 Dynamic Score Full Rule" isWriteable="false">
+<AttrDefn mdsid="m80cddbac-0f3c-0000-714b-e31d00000000" name="AD_3900:1877211302108209">
+<Expr mdsid="m00000016-01f4-0000-5952-24fc00000000" name="Expr">
+<ExprText><![CDATA[ CASE  WHEN "%1" = 0 THEN 'All Individuals' ELSE  REPLACE( REPLACE( REPLACE("%2", ' AND ', ';<br/> AND '), '(', ''), ')', '') END ]]></ExprText>
+<ExprTextDesc><![CDATA[ CASE  WHEN "01 - Sample App Data (ORCL)".""."BISAMPLE"."D83 Cust LTV Dynamic Leaf Nodes"."NODE" = 0 THEN 'All Individuals' ELSE  REPLACE( REPLACE( REPLACE("01 - Sample App Data (ORCL)".""."BISAMPLE"."D83 Cust LTV Dynamic Leaf Nodes"."FULL_RULE", ' AND ', ';<br/> AND '), '(', ''), ')', '') END ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-5952-24fc00000000-m80cddb9f-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cddb9a-0bb9-0000-714b-e31d00000000.xml#m80cddb9f-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m00000016-01f4-0000-5952-24fc00000000-m80cddb9b-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cddb9a-0bb9-0000-714b-e31d00000000.xml#m80cddb9b-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cddb8e-07d6-0000-714b-e31d00000000" name="M34 Dynamic Pred Leaf Node" isWriteable="false">
+<AttrDefn mdsid="m80cddb91-0f3c-0000-714b-e31d00000000" name="AD_3900:1876941302103411">
+<Expr mdsid="m00000017-01f4-0000-5820-11c700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D82 Cust LTV Dynamic Scoring"."M_DYN_PRED_LTV_NODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-5820-11c700000000-m80cddb81-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cddb77-0bb9-0000-714b-e31d00000000.xml#m80cddb81-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cddb8d-07d6-0000-714b-e31d00000000" name="M35  Dynamic Predicted LTV" isWriteable="false">
+<AttrDefn mdsid="m80cddb90-0f3c-0000-714b-e31d00000000" name="AD_3900:1876931302103411">
+<Expr mdsid="m00000018-01f4-0000-4f39-679700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D82 Cust LTV Dynamic Scoring"."M_DYN_PRED_BIN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000018-01f4-0000-4f39-679700000000-m80cddb79-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cddb77-0bb9-0000-714b-e31d00000000.xml#m80cddb79-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cddb8f-07d6-0000-714b-e31d00000000" name="M36 Dynamic Score Probability" isWriteable="false">
+<AttrDefn mdsid="m80cddb92-0f3c-0000-714b-e31d00000000" name="AD_3900:1876951302103411">
+<Expr mdsid="m00000019-01f4-0000-54fc-7ded00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D82 Cust LTV Dynamic Scoring"."M_DYN_PRED_PROB"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000019-01f4-0000-54fc-7ded00000000-m80cddb7d-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cddb77-0bb9-0000-714b-e31d00000000.xml#m80cddb7d-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cddc1a-07d6-0000-714b-e31d00000000" name="M29 Node Hier LTV Prediction" isWriteable="false">
+<AttrDefn mdsid="m80cddc1b-0f3c-0000-714b-e31d00000000" name="AD_3900:1878321302268967">
+<Expr mdsid="m0000001a-01f4-0000-66f7-ac5c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D85 Cust LTV Nodes (PC Hierarchy)"."PREDICTION"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001a-01f4-0000-66f7-ac5c00000000-m80cdcb79-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdcb72-0bb9-0000-714b-e31d00000000.xml#m80cdcb79-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cdcdde-07d8-0000-714b-e31d00000000" name="D64 Cust Tree Node (Orcl Data Mining)_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cdcdde-07d8-0000-714b-e31d00000000-m80cdcdd7-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdcdd2-07f3-0000-714b-e31d00000000.xml#m80cdcdd7-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cdcdd2-07f3-0000-714b-e31d00000000-m80cdcde9-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cdcde9-07f5-0000-714b-e31d00000000.xml#m80cdcde9-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cdcdd2-07f3-0000-714b-e31d00000000-m80cddbcd-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cddbcd-07f5-0000-714b-e31d00000000.xml#m80cddbcd-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

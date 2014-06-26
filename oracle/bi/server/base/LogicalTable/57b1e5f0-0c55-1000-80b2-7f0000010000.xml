@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m57b1e5f0-0c55-1000-80b2-7f0000010000" name="PerspGraph" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/ac735390-0c31-1000-8edd-0af0613a0000.xml#mac735390-0c31-1000-8edd-0af0613a0000">
+<LogicalColumn mdsid="m57b1e5f3-0c55-1000-80b2-7f0000010000" name="id" isWriteable="false">
+<AttrDefn mdsid="m57b1e5f6-0c55-1000-80b2-7f0000010000" name="AD_3900:2511061356068644">
+<Expr mdsid="m00000001-01f4-0000-0679-2dce00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["07 - ORE Sample"."".""."PERSPGRAPH"."id"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-0679-2dce00000000-m57a42a50-0c55-1000-80b2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/5782bfa0-0c55-1000-80b2-7f0000010000.xml#m57a42a50-0c55-1000-80b2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m57b1e5f4-0c55-1000-80b2-7f0000010000" name="image" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/57b1e5f0-0c55-1000-80b2-7f0000010000.xml#m57b1e5f3-0c55-1000-80b2-7f0000010000" descriptorIDRef="/oracle/bi/server/base/LogicalTable/57b1e5f0-0c55-1000-80b2-7f0000010000.xml#m57b1e5f3-0c55-1000-80b2-7f0000010000">
+<AttrDefn mdsid="m57b1e5f7-0c55-1000-80b2-7f0000010000" name="AD_3900:2511071356068644">
+<Expr mdsid="m00000002-01f4-0000-b7d4-6b5f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["07 - ORE Sample"."".""."PERSPGRAPH"."image"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-b7d4-6b5f00000000-m57a71080-0c55-1000-80b2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/5782bfa0-0c55-1000-80b2-7f0000010000.xml#m57a71080-0c55-1000-80b2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m57b1e5f5-0c55-1000-80b2-7f0000010000" name="id" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m57b1e5f5-0c55-1000-80b2-7f0000010000-m57b1e5f3-0c55-1000-80b2-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/57b1e5f0-0c55-1000-80b2-7f0000010000.xml#m57b1e5f3-0c55-1000-80b2-7f0000010000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m57b1e5f0-0c55-1000-80b2-7f0000010000-m57b1e5f2-0c55-1000-80b2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/57b1e5f2-0c55-1000-80b2-7f0000010000.xml#m57b1e5f2-0c55-1000-80b2-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

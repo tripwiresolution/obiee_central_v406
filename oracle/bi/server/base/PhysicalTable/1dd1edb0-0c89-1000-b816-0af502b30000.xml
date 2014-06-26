@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m1dd1edb0-0c89-1000-b816-0af502b30000" name="TEXT_CLASSES_DESC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/69710173-0c84-1000-8c5b-0ae4f18a0000.xml#m69710173-0c84-1000-8c5b-0ae4f18a0000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[select classification, recordid, 
+ENDECA.MARKUPTEXT(query_string,RECORDID,'DIM_CLAIM_COMMENTS_IDX1','<font color=red>','</font>') COMPLAINT_DESCRIPTION
+from endeca.text_classification, endeca.DIM_CLAIM_COMMENTS
+where matches(query_string, 
+               COMPLAINT_DESCRIPTION)>0
+order by classification]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m1dd1edb1-0c89-1000-b816-0af502b30000" name="CLASSIFICATION" dataType="VARCHAR" precision="80" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m1dd1edb2-0c89-1000-b816-0af502b30000" name="COMPLAINT_DESCRIPTION" dataType="VARCHAR" precision="400" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m1dd1edb3-0c89-1000-b816-0af502b30000" name="RECORDID" dataType="VARCHAR" precision="10" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m1dd1edb4-0c89-1000-b816-0af502b30000" name="KEY">
+<RefColumns>
+<RefColumn refId="m1dd1edb4-0c89-1000-b816-0af502b30000-m1dd1edb3-0c89-1000-b816-0af502b30000" columnRef="/oracle/bi/server/base/PhysicalTable/1dd1edb0-0c89-1000-b816-0af502b30000.xml#m1dd1edb3-0c89-1000-b816-0af502b30000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0fc6c-0ca8-1000-90a3-0af502b50000" name="Fact - Metrics CLQ Levels" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acda-0ca8-1000-90a3-0af502b50000.xml#m82f0acda-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0fc6d-0ca8-1000-90a3-0af502b50000" name="Joiners" isWriteable="false">
+<MeasureDefn mdsid="m82f17031-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1977b-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736971391789375" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-0122-6deb00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA"."Fact - Metrics CLQ Levels"."Joiners")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-0122-6deb00000000-m82f0fc6d-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc6c-0ca8-1000-90a3-0af502b50000.xml#m82f0fc6d-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a985-0ca8-1000-90a3-0af502b50000" name="AD_3900:2760941391789375">
+<Expr mdsid="m00000002-01f4-0000-4f35-7e1d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_METRICS_CLQ_LEVEL"."JOINERS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-4f35-7e1d00000000-m82e3dc7d-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc7a-0ca8-1000-90a3-0af502b50000.xml#m82e3dc7d-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc6e-0ca8-1000-90a3-0af502b50000" name="Joining" isWriteable="false">
+<MeasureDefn mdsid="m82f17032-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1977c-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736981391789375" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-a9bd-df7f00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA"."Fact - Metrics CLQ Levels"."Joining")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-a9bd-df7f00000000-m82f0fc6e-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc6c-0ca8-1000-90a3-0af502b50000.xml#m82f0fc6e-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a986-0ca8-1000-90a3-0af502b50000" name="AD_3900:2760951391789375">
+<Expr mdsid="m00000004-01f4-0000-b443-f51400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_METRICS_CLQ_LEVEL"."JOINING"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-b443-f51400000000-m82e3dc7e-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc7a-0ca8-1000-90a3-0af502b50000.xml#m82e3dc7e-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc6f-0ca8-1000-90a3-0af502b50000" name="Leavers" isWriteable="false">
+<MeasureDefn mdsid="m82f17033-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1977d-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736991391789375" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-2a35-d9d400000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA"."Fact - Metrics CLQ Levels"."Leavers")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-2a35-d9d400000000-m82f0fc6f-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc6c-0ca8-1000-90a3-0af502b50000.xml#m82f0fc6f-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a987-0ca8-1000-90a3-0af502b50000" name="AD_3900:2760961391789375">
+<Expr mdsid="m00000006-01f4-0000-a8ab-745500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_METRICS_CLQ_LEVEL"."LEAVERS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-a8ab-745500000000-m82e3dc7f-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc7a-0ca8-1000-90a3-0af502b50000.xml#m82e3dc7f-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc70-0ca8-1000-90a3-0af502b50000" name="Attrition" isWriteable="false">
+<MeasureDefn mdsid="m82f17034-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1977e-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737001391789375" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-fc71-f33000000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y02 - Demo HR Oracle EMEA"."Fact - Metrics CLQ Levels"."Attrition")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-fc71-f33000000000-m82f0fc70-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc6c-0ca8-1000-90a3-0af502b50000.xml#m82f0fc70-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a988-0ca8-1000-90a3-0af502b50000" name="AD_3900:2760971391789375">
+<Expr mdsid="m00000008-01f4-0000-fea9-f41a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_METRICS_CLQ_LEVEL"."LEAVERS_PC"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-fea9-f41a00000000-m82e3dc80-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc7a-0ca8-1000-90a3-0af502b50000.xml#m82e3dc80-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc71-0ca8-1000-90a3-0af502b50000" name="Open Offers" isWriteable="false">
+<MeasureDefn mdsid="m82f17035-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1977f-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737011391789375" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-de55-405200000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA"."Fact - Metrics CLQ Levels"."Open Offers")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-de55-405200000000-m82f0fc71-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc6c-0ca8-1000-90a3-0af502b50000.xml#m82f0fc71-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a989-0ca8-1000-90a3-0af502b50000" name="AD_3900:2760981391789375">
+<Expr mdsid="m0000000a-01f4-0000-2c37-f27900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_METRICS_CLQ_LEVEL"."OPEN_OFFERS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-2c37-f27900000000-m82e3dc83-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc7a-0ca8-1000-90a3-0af502b50000.xml#m82e3dc83-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc72-0ca8-1000-90a3-0af502b50000" name="Performance" isWriteable="false">
+<AttrDefn mdsid="m82f2a98a-0ca8-1000-90a3-0af502b50000" name="AD_3900:2760991391789375">
+<Expr mdsid="m0000000b-01f4-0000-d7f4-fa8200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_METRICS_CLQ_LEVEL"."PERFORMANCE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-d7f4-fa8200000000-m82e3dc84-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc7a-0ca8-1000-90a3-0af502b50000.xml#m82e3dc84-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc73-0ca8-1000-90a3-0af502b50000" name="Potential" isWriteable="false">
+<AttrDefn mdsid="m82f2a98b-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761001391789375">
+<Expr mdsid="m0000000c-01f4-0000-34b6-cb7700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_METRICS_CLQ_LEVEL"."POTENTIAL"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-34b6-cb7700000000-m82e3dc85-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc7a-0ca8-1000-90a3-0af502b50000.xml#m82e3dc85-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc74-0ca8-1000-90a3-0af502b50000" name="Resigned" isWriteable="false">
+<MeasureDefn mdsid="m82f17036-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19780-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737021391789375" isDefault="true">
+<Expr mdsid="m0000000d-01f4-0000-aff9-97e200000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA"."Fact - Metrics CLQ Levels"."Resigned")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-aff9-97e200000000-m82f0fc74-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc6c-0ca8-1000-90a3-0af502b50000.xml#m82f0fc74-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a98c-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761011391789375">
+<Expr mdsid="m0000000e-01f4-0000-ac75-944400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_METRICS_CLQ_LEVEL"."RESIGNED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-ac75-944400000000-m82e3dc86-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc7a-0ca8-1000-90a3-0af502b50000.xml#m82e3dc86-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0fc6c-0ca8-1000-90a3-0af502b50000-m82f31e14-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f31e14-0ca8-1000-90a3-0af502b50000.xml#m82f31e14-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

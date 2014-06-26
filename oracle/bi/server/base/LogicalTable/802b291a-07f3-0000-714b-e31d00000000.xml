@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m802b291a-07f3-0000-714b-e31d00000000" name="UT L Query Users" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/802b289f-07d0-0000-714b-e31d00000000.xml#m802b289f-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m802b291b-07d6-0000-714b-e31d00000000" name="User Name" isWriteable="false">
+<AttrDefn mdsid="m80cb08e4-0f3c-0000-714b-e31d00000000" name="AD_3900:228341263925773">
+<Expr mdsid="m00000001-01f4-0000-21ba-48e600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."USER_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-21ba-48e600000000-mbb20f8fe-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8fe-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m802b291d-07d6-0000-714b-e31d00000000" name="Impersonated User" isWriteable="false">
+<AttrDefn mdsid="m80cb08e8-0f3c-0000-714b-e31d00000000" name="AD_3900:228381263925773">
+<Expr mdsid="m00000002-01f4-0000-56c4-8aad00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."S_NQ_ACCT_Dim"."IMPERSONATOR_USER_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-56c4-8aad00000000-mbb20f8e9-0c2a-1000-ac17-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/bb20f8e0-0c2a-1000-ac17-0af06a760000.xml#mbb20f8e9-0c2a-1000-ac17-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m802b299f-07d8-0000-714b-e31d00000000" name="Users_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m802b299f-07d8-0000-714b-e31d00000000-m802b291b-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/802b291a-07f3-0000-714b-e31d00000000.xml#m802b291b-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m802b291a-07f3-0000-714b-e31d00000000-m802b2ad6-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/802b2ad6-07f5-0000-714b-e31d00000000.xml#m802b2ad6-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m8e6e8c4b-0c26-1000-9bbc-0af502b10000" name="DBA_SYS_PRIVS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/78682d26-0c20-1000-b5b8-0af502b10000.xml#m78682d26-0c20-1000-b5b8-0af502b10000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[DBA_SYS_PRIVS]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m8e6e8c4c-0c26-1000-9bbc-0af502b10000" name="ADMIN_OPTION" dataType="VARCHAR" precision="3" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8e6e8c4d-0c26-1000-9bbc-0af502b10000" name="GRANTEE" dataType="VARCHAR" precision="30" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8e6e8c4e-0c26-1000-9bbc-0af502b10000" name="PRIVILEGE" dataType="VARCHAR" precision="40" specialType="none">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="mb9db2f40-0c26-1000-b8db-0af502b10000" name="DBA_SYS_PRIVS_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/b8374340-0c26-1000-b8db-0af502b10000.xml#mb90d57f0-0c26-1000-b8db-0af502b10000">
+<RefColumns>
+<RefColumn refId="mb9db2f40-0c26-1000-b8db-0af502b10000-m8e6e8c4d-0c26-1000-9bbc-0af502b10000" columnRef="/oracle/bi/server/base/PhysicalTable/8e6e8c4b-0c26-1000-9bbc-0af502b10000.xml#m8e6e8c4d-0c26-1000-9bbc-0af502b10000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

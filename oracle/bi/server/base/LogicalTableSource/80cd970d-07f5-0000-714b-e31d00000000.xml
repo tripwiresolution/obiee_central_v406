@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m80cd970d-07f5-0000-714b-e31d00000000" name="(Fragmtd) LTSA Targets ORCL (Office &lt;20)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" canCombine="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/80cd93db-07f3-0000-714b-e31d00000000.xml#m80cd93db-07f3-0000-714b-e31d00000000">
+<Description><![CDATA["01 - Sample App Data (ORCL)"."Catalog"."BISAMPLE"."F40 Facts Targets"."Office_Key" < 19
+]]></Description>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-f207-c9c000000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - TimesTen Sample"."F2 Targets Fragmented Measures"."5- Target Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-f207-c9c000000000-m80cd93dc-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cd93db-07f3-0000-714b-e31d00000000.xml#m80cd93dc-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-1511-3e9c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."F40 Facts Targets"."Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-1511-3e9c00000000-m80cd9081-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd9080-0bb9-0000-714b-e31d00000000.xml#m80cd9081-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-67c1-df9b00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - TimesTen Sample"."F2 Targets Fragmented Measures"."6- Target Quantity"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-67c1-df9b00000000-m80cd93dd-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cd93db-07f3-0000-714b-e31d00000000.xml#m80cd93dd-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-befe-18b100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."F40 Facts Targets"."Units"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-befe-18b100000000-m80cd9084-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd9080-0bb9-0000-714b-e31d00000000.xml#m80cd9084-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-53f6-49ba00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - TimesTen Sample"."F2 Targets Fragmented Measures"."565h  Target Rev  (Sum All)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-53f6-49ba00000000-m80cd93de-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cd93db-07f3-0000-714b-e31d00000000.xml#m80cd93de-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-33ee-34ac00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."F40 Facts Targets"."Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-33ee-34ac00000000-m80cd9081-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd9080-0bb9-0000-714b-e31d00000000.xml#m80cd9081-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/80cd9080-0bb9-0000-714b-e31d00000000.xml#m80cd9080-0bb9-0000-714b-e31d00000000">
+</Link>
+<WhereClause mdsid="m00000007-01f4-0000-afc9-564500000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000008-01f4-0000-b9dd-21cf00000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1", "%2", "%3", "%4")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("05 - TimesTen Sample"."H0 Time"."Month", "05 - TimesTen Sample"."H3 Offices"."Offices Detail", "05 - TimesTen Sample"."H2 Products Ragged SkipLevels"."Product (Rgd Sk Lvl) Detail", "05 - TimesTen Sample"."H1 Products"."Products Detail")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-b9dd-21cf00000000-m80cd94bc-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cd92c8-07e3-0000-714b-e31d00000000.xml#m80cd94bc-07e9-0000-714b-e31d00000000"/>
+<RefObject refId="m00000008-01f4-0000-b9dd-21cf00000000-m80cd94f7-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cd92cf-07e3-0000-714b-e31d00000000.xml#m80cd94f7-07e9-0000-714b-e31d00000000"/>
+<RefObject refId="m00000008-01f4-0000-b9dd-21cf00000000-m80cd94f5-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cd92ce-07e3-0000-714b-e31d00000000.xml#m80cd94f5-07e9-0000-714b-e31d00000000"/>
+<RefObject refId="m00000008-01f4-0000-b9dd-21cf00000000-m80cd94de-07e9-0000-714b-e31d00000000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/80cd92cb-07e3-0000-714b-e31d00000000.xml#m80cd94de-07e9-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m00000009-01f4-0000-79c7-23b600000000" name="FragmentContent">
+<ExprText><![CDATA["%1" < 21]]></ExprText>
+<ExprTextDesc><![CDATA["05 - TimesTen Sample"."D3 Offices"."D1k  Office Key" < 21]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-79c7-23b600000000-m80cd941e-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cd941c-07f3-0000-714b-e31d00000000.xml#m80cd941e-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</FragmentContent>
+</LogicalTableSource>

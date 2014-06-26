@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationTable mdsid="m945556d6-0c1f-1000-b9aa-0af502b10000" name="Simple Calculations" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationCatalog/945556c9-0c1f-1000-b9aa-0af502b10000.xml#m945556c9-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[This folder contains simple calculations where each metric is defined as a division of two base facts. Eg:- Unit Price, Avg Order Size and so on
+]]></Description>
+<Alias name="Calcs"/>
+<PresentationColumn mdsid="m9455564d-0c1f-1000-b9aa-0af502b10000" name="17  Net Costs" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530cdd-0c1f-1000-b9aa-0af502b10000.xml#m94530cde-0c1f-1000-b9aa-0af502b10000">
+<Alias name="12  Total Costs"/>
+<Alias name="17 - Net Costs"/>
+<Alias name="Cost"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m94555642-0c1f-1000-b9aa-0af502b10000" name="20  Actual Unit Price" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_20__Actual_Unit_Price)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530cdd-0c1f-1000-b9aa-0af502b10000.xml#m94530cdf-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Help :
+Unit Price is computed as Revenue divided by Billed Quantity]]></Description>
+<Alias name="UnitPrice"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m94555648-0c1f-1000-b9aa-0af502b10000" name="22  Discount Rate" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_22__Discount_Rate)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530cdd-0c1f-1000-b9aa-0af502b10000.xml#m94530ce0-0c1f-1000-b9aa-0af502b10000">
+<Alias name="Discount Rt"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m94555644-0c1f-1000-b9aa-0af502b10000" name="23  Avg # of Orders by Customer" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_23__Avg_#_of_Orders_by_Customer)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530cdd-0c1f-1000-b9aa-0af502b10000.xml#m94530ce1-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Help :
+# of Orders by Customer is computed as Number of Distinct Orders divided by Number of Distinct Customers in the fact table.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m94555643-0c1f-1000-b9aa-0af502b10000" name="24  Avg # of Orders by Sales Rep" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_24__Avg_#_of_Orders_by_Sales_Rep)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530cdd-0c1f-1000-b9aa-0af502b10000.xml#m94530ce2-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Help :
+# of Orders by Employee is computed as Number of Distinct Orders divided by Number of Distinct Employees in the fact table.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m94555645-0c1f-1000-b9aa-0af502b10000" name="25  Avg Order Size" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_25__Avg_Order_Size)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530cdd-0c1f-1000-b9aa-0af502b10000.xml#m94530ce3-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Help :
+Average Order Size is computed as Revenue divided by Number of Distinct Orders in the fact table.]]></Description>
+<Alias name="OrderSize"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m94555647-0c1f-1000-b9aa-0af502b10000" name="27  Avg Monthly Revenue" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_27__Avg_Monthly_Revenue)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530cdd-0c1f-1000-b9aa-0af502b10000.xml#m94530ce4-0c1f-1000-b9aa-0af502b10000">
+</PresentationColumn>
+<PresentationColumn mdsid="m94555646-0c1f-1000-b9aa-0af502b10000" name="28  # of Customers by Sales Rep" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_28__#_of_Customers_by_Sales_Rep)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530cdd-0c1f-1000-b9aa-0af502b10000.xml#m94530ce5-0c1f-1000-b9aa-0af502b10000">
+</PresentationColumn>
+<PresentationColumn mdsid="m94555641-0c1f-1000-b9aa-0af502b10000" name="29  Collect to Bill Ratio" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_29__Collect_to_Bill_Ratio)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530cdd-0c1f-1000-b9aa-0af502b10000.xml#m94530ce6-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Help :
+Collect to Bill Ratio is computed as Paid Amount divided by Revenue.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m94555649-0c1f-1000-b9aa-0af502b10000" name="43  Backlog Variation (Value)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_43__Backlog_Variation_(Value))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530cdd-0c1f-1000-b9aa-0af502b10000.xml#m94530ce9-0c1f-1000-b9aa-0af502b10000">
+</PresentationColumn>
+<PresentationColumn mdsid="m9455564a-0c1f-1000-b9aa-0af502b10000" name="44  Early Shipped Value" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_44__Early_Shipped_Value)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530cdd-0c1f-1000-b9aa-0af502b10000.xml#m94530cea-0c1f-1000-b9aa-0af502b10000">
+</PresentationColumn>
+<PresentationColumn mdsid="m9455564b-0c1f-1000-b9aa-0af502b10000" name="45  Early Shipped Pct" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_45__Early_Shipped_Pct)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530cdd-0c1f-1000-b9aa-0af502b10000.xml#m94530ceb-0c1f-1000-b9aa-0af502b10000">
+</PresentationColumn>
+<PresentationColumn mdsid="m9455564c-0c1f-1000-b9aa-0af502b10000" name="46  Avg Order Process Time" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_46__Avg_Order_Process_Time)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/94530cdd-0c1f-1000-b9aa-0af502b10000.xml#m94530cec-0c1f-1000-b9aa-0af502b10000">
+<Alias name="OrderProcessTime"/>
+</PresentationColumn>
+</PresentationTable>

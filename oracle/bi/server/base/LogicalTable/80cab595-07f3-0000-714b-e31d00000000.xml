@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cab595-07f3-0000-714b-e31d00000000" name="D4 Offices and Channels (M:M Joins)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="1501" y="319" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cab573-07d0-0000-714b-e31d00000000.xml#m80cab573-07d0-0000-714b-e31d00000000">
+<Description><![CDATA[ZZZ - Not yet filled]]></Description>
+<LogicalColumn mdsid="m80cab597-07d6-0000-714b-e31d00000000" name="N1  Office" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the Market description.]]></Description>
+<AttrDefn mdsid="m80cab714-0f3c-0000-714b-e31d00000000" name="AD_3900:121641262767587">
+<Expr mdsid="m00000001-01f4-0000-db16-758000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D31 Offices (Quotas)"."Office_Dsc"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-db16-758000000000-m80cb6998-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb6826-0bb9-0000-714b-e31d00000000.xml#m80cb6998-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab596-07d6-0000-714b-e31d00000000" name="N1k  Office Key" isWriteable="false">
+<Description><![CDATA[Help : 
+Market Key is an integer that uniquely identifies each record in the Market dimension table.]]></Description>
+<AttrDefn mdsid="m80cab713-0f3c-0000-714b-e31d00000000" name="AD_3900:121631262767587">
+<Expr mdsid="m00000002-01f4-0000-8ecc-211100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D30 Offices"."Office_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-8ecc-211100000000-m80cb698f-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb6825-0bb9-0000-714b-e31d00000000.xml#m80cb698f-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab598-07d6-0000-714b-e31d00000000" name="N2  Department" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the market area description.]]></Description>
+<AttrDefn mdsid="m80cab715-0f3c-0000-714b-e31d00000000" name="AD_3900:121651262767587">
+<Expr mdsid="m00000003-01f4-0000-903c-d80900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D31 Offices (Quotas)"."Department"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-903c-d80900000000-m80cb699b-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb6826-0bb9-0000-714b-e31d00000000.xml#m80cb699b-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb2ac9-07d6-0000-714b-e31d00000000" name="N3k  Org_Key" isWriteable="false">
+<AttrDefn mdsid="m80cb2acb-0f3c-0000-714b-e31d00000000" name="AD_3900:299581267100633">
+<Expr mdsid="m00000004-01f4-0000-d27e-52cc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D31 Offices (Quotas)"."Org_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-d27e-52cc00000000-m80cb699e-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb6826-0bb9-0000-714b-e31d00000000.xml#m80cb699e-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb2ac8-07d6-0000-714b-e31d00000000" name="N2k  Dept_Key" isWriteable="false">
+<AttrDefn mdsid="m80cb2aca-0f3c-0000-714b-e31d00000000" name="AD_3900:299571267100633">
+<Expr mdsid="m00000005-01f4-0000-5d60-98c500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D31 Offices (Quotas)"."Dept_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-5d60-98c500000000-m80cb699f-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb6826-0bb9-0000-714b-e31d00000000.xml#m80cb699f-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab599-07d6-0000-714b-e31d00000000" name="N3  Organization" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the market district description.]]></Description>
+<AttrDefn mdsid="m80cab716-0f3c-0000-714b-e31d00000000" name="AD_3900:121661262767587">
+<Expr mdsid="m00000006-01f4-0000-4da8-f68600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D31 Offices (Quotas)"."Organization"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-4da8-f68600000000-m80cb699c-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb6826-0bb9-0000-714b-e31d00000000.xml#m80cb699c-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab59a-07d6-0000-714b-e31d00000000" name="N4  Company" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the market region description.]]></Description>
+<AttrDefn mdsid="m80cab717-0f3c-0000-714b-e31d00000000" name="AD_3900:121671262767587">
+<Expr mdsid="m00000007-01f4-0000-d513-d5c200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D31 Offices (Quotas)"."Company"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-d513-d5c200000000-m80cb699d-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb6826-0bb9-0000-714b-e31d00000000.xml#m80cb699d-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb29b9-07d6-0000-714b-e31d00000000" name="N4k  Company Key" isWriteable="false">
+<AttrDefn mdsid="m80cb29ba-0f3c-0000-714b-e31d00000000" name="AD_3900:297311266416937">
+<Expr mdsid="m00000008-01f4-0000-7573-ac2000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D31 Offices (Quotas)"."Company_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-7573-ac2000000000-m80cb6997-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb6826-0bb9-0000-714b-e31d00000000.xml#m80cb6997-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab59d-07d6-0000-714b-e31d00000000" name="N6  Channel Name" isWriteable="false">
+<AttrDefn mdsid="m80cab71a-0f3c-0000-714b-e31d00000000" name="AD_3900:121701262767587">
+<Expr mdsid="m00000009-01f4-0000-5f80-41d100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D42 Channels (Quotas)"."Chnl_Name"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-5f80-41d100000000-m80cb69a4-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb6828-0bb9-0000-714b-e31d00000000.xml#m80cb69a4-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab59c-07d6-0000-714b-e31d00000000" name="N6k  Channel Key" isWriteable="false">
+<AttrDefn mdsid="m80cab719-0f3c-0000-714b-e31d00000000" name="AD_3900:121691262767587">
+<Expr mdsid="m0000000a-01f4-0000-fc61-432800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D44 Chnls Offs Bridge (Quotas)"."Chnl_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-fc61-432800000000-m80cb69a9-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb682a-0bb9-0000-714b-e31d00000000.xml#m80cb69a9-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cab59e-07d6-0000-714b-e31d00000000" name="N7  Channel Attribute 1" isWriteable="false">
+<AttrDefn mdsid="m80cab71b-0f3c-0000-714b-e31d00000000" name="AD_3900:121711262767587">
+<Expr mdsid="m0000000b-01f4-0000-c257-79a300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D42 Channels (Quotas)"."Chnl_Attribute_1"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-c257-79a300000000-m80cb69a5-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb6828-0bb9-0000-714b-e31d00000000.xml#m80cb69a5-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb3817-07d6-0000-714b-e31d00000000" name="N8  Chnl-Office Weight" isWriteable="false">
+<AttrDefn mdsid="m80cb3818-0f3c-0000-714b-e31d00000000" name="AD_3900:321291267715880">
+<Expr mdsid="m0000000c-01f4-0000-dfe9-c93700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D44 Chnls Offs Bridge (Quotas)"."Chnl_Weighting"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-dfe9-c93700000000-m80cb69ab-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb682a-0bb9-0000-714b-e31d00000000.xml#m80cb69ab-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cab6f1-07d8-0000-714b-e31d00000000" name="Dim 02 Market_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cab6f1-07d8-0000-714b-e31d00000000-m80cab596-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab596-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cab6f1-07d8-0000-714b-e31d00000000-m80cab59c-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab59c-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cab595-07f3-0000-714b-e31d00000000-m80cab7d3-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cab7d3-07f5-0000-714b-e31d00000000.xml#m80cab7d3-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cab595-07f3-0000-714b-e31d00000000-m80cab7d5-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cab7d5-07f5-0000-714b-e31d00000000.xml#m80cab7d5-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cab595-07f3-0000-714b-e31d00000000-m80cab7d6-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cab7d6-07f5-0000-714b-e31d00000000.xml#m80cab7d6-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cab595-07f3-0000-714b-e31d00000000-m80cab7d7-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cab7d7-07f5-0000-714b-e31d00000000.xml#m80cab7d7-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

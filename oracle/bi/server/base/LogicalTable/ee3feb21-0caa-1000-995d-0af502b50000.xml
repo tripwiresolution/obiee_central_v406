@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="mee3feb21-0caa-1000-995d-0af502b50000" name="D03 Time Quarter Grain" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/ee3feb20-0caa-1000-995d-0af502b50000.xml#mee3feb20-0caa-1000-995d-0af502b50000">
+<LogicalColumn mdsid="mee3feb22-0caa-1000-995d-0af502b50000" name="QTR_KEY" isWriteable="false">
+<AttrDefn mdsid="mee3feb2c-0caa-1000-995d-0af502b50000" name="AD_3900:2781031392828569">
+<Expr mdsid="m00000001-01f4-0000-bd24-a83e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D03 Time Quarter Grain"."QTR_KEY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-bd24-a83e00000000-m80cb6965-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb681f-0bb9-0000-714b-e31d00000000.xml#m80cb6965-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="mee3feb2a-0caa-1000-995d-0af502b50000" name="D03 Time Quarter Grain_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="mee3feb2a-0caa-1000-995d-0af502b50000-mee3feb22-0caa-1000-995d-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/ee3feb21-0caa-1000-995d-0af502b50000.xml#mee3feb22-0caa-1000-995d-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="mee3feb21-0caa-1000-995d-0af502b50000-mee3feb2e-0caa-1000-995d-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/ee3feb2e-0caa-1000-995d-0af502b50000.xml#mee3feb2e-0caa-1000-995d-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0fc80-0ca8-1000-90a3-0af502b50000" name="Fact - Metrics Quota" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acda-0ca8-1000-90a3-0af502b50000.xml#m82f0acda-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0fc81-0ca8-1000-90a3-0af502b50000" name="Sum of Pipe Created Since Joining" isWriteable="false">
+<MeasureDefn mdsid="m82f17038-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19782-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737041391789375" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-9f74-bd6500000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA"."Fact - Metrics Quota"."Sum of Pipe Created Since Joining")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-9f74-bd6500000000-m82f0fc81-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc80-0ca8-1000-90a3-0af502b50000.xml#m82f0fc81-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a996-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761111391789375">
+<Expr mdsid="m00000002-01f4-0000-56cf-f09d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_QUOTA"."CREATED_PIPE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-56cf-f09d00000000-m82e3dc9d-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc96-0ca8-1000-90a3-0af502b50000.xml#m82e3dc9d-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc82-0ca8-1000-90a3-0af502b50000" name="Length of Service" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/82f0fc80-0ca8-1000-90a3-0af502b50000.xml#m82f0fc83-0ca8-1000-90a3-0af502b50000">
+<AttrDefn mdsid="m82f2a997-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761121391789375">
+<Expr mdsid="m00000003-01f4-0000-e6d1-c66800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_QUOTA"."LOS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-e6d1-c66800000000-m82e3dc99-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc96-0ca8-1000-90a3-0af502b50000.xml#m82e3dc99-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc83-0ca8-1000-90a3-0af502b50000" name="Length of Service ID" isWriteable="false">
+<AttrDefn mdsid="m82f2a998-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761131391789375">
+<Expr mdsid="m00000004-01f4-0000-2c9e-e9f900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_QUOTA"."LOS_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-2c9e-e9f900000000-m82e3dc98-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc96-0ca8-1000-90a3-0af502b50000.xml#m82e3dc98-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc84-0ca8-1000-90a3-0af502b50000" name="Count of Deals Open &amp; Won" isWriteable="false">
+<MeasureDefn mdsid="m82f17039-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19783-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737051391789375" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-3e93-4cb300000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA"."Fact - Metrics Quota"."Count of Deals Open & Won")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-3e93-4cb300000000-m82f0fc84-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc80-0ca8-1000-90a3-0af502b50000.xml#m82f0fc84-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a999-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761141391789375">
+<Expr mdsid="m00000006-01f4-0000-c38e-90e100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_QUOTA"."OPEN_AND_WON_COUNT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-c38e-90e100000000-m82e3dc9b-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc96-0ca8-1000-90a3-0af502b50000.xml#m82e3dc9b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc85-0ca8-1000-90a3-0af502b50000" name="Sum of Open Pipe" isWriteable="false">
+<MeasureDefn mdsid="m82f1703a-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19784-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737061391789375" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-5753-ee1800000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA"."Fact - Metrics Quota"."Sum of Open Pipe")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-5753-ee1800000000-m82f0fc85-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc80-0ca8-1000-90a3-0af502b50000.xml#m82f0fc85-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a99a-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761151391789375">
+<Expr mdsid="m00000008-01f4-0000-8fb7-1cd400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_QUOTA"."OPEN_PIPE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-8fb7-1cd400000000-m82e3dc9a-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc96-0ca8-1000-90a3-0af502b50000.xml#m82e3dc9a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc86-0ca8-1000-90a3-0af502b50000" name="Sum of Won Pipe" isWriteable="false">
+<MeasureDefn mdsid="m82f1703b-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19785-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737071391789375" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-1959-c3da00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y02 - Demo HR Oracle EMEA"."Fact - Metrics Quota"."Sum of Won Pipe")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-1959-c3da00000000-m82f0fc86-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fc80-0ca8-1000-90a3-0af502b50000.xml#m82f0fc86-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a99b-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761161391789375">
+<Expr mdsid="m0000000a-01f4-0000-1093-0d2800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_QUOTA"."WON_PIPE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-1093-0d2800000000-m82e3dc9c-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc96-0ca8-1000-90a3-0af502b50000.xml#m82e3dc9c-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0fc80-0ca8-1000-90a3-0af502b50000-m82f344e2-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f344e2-0ca8-1000-90a3-0af502b50000.xml#m82f344e2-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

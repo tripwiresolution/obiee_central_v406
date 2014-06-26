@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0d41d-0ca8-1000-90a3-0af502b50000" name="Demo2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd0-0ca8-1000-90a3-0af502b50000.xml#m82f0acd0-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0d41e-0ca8-1000-90a3-0af502b50000" name="PnL" isWriteable="false">
+<MeasureDefn mdsid="m82f1494c-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1707b-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736091391789375" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-3d8a-a8e800000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y08 - Demo Banking Adjustments"."Demo2"."PnL")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-3d8a-a8e800000000-m82f0d41e-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d41d-0ca8-1000-90a3-0af502b50000.xml#m82f0d41e-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f25adc-0ca8-1000-90a3-0af502b50000" name="AD_3900:2753801391789375">
+<Expr mdsid="m00000002-01f4-0000-ab94-98a400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Adjustments"."Adjust".""."Demo2"."PnL"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-ab94-98a400000000-m82de0fc7-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82de0f6c-0ca8-1000-90a3-0af502b50000.xml#m82de0fc7-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d41f-0ca8-1000-90a3-0af502b50000" name="Actual" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000003-01f4-0000-6577-a9e900000000" name="Expr">
+<ExprText><![CDATA[ FILTER("%1" USING "%2" = 'Actual')]]></ExprText>
+<ExprTextDesc><![CDATA[ FILTER("Y08 - Demo Banking Adjustments"."Demo2"."PnL" USING "Y08 - Demo Banking Adjustments"."Scenario"."Scenarios" = 'Actual')]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-6577-a9e900000000-m82f0d41e-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d41d-0ca8-1000-90a3-0af502b50000.xml#m82f0d41e-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000003-01f4-0000-6577-a9e900000000-m82f0d454-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d450-0ca8-1000-90a3-0af502b50000.xml#m82f0d454-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m82f25add-0ca8-1000-90a3-0af502b50000" name="AD_3900:2753811391789375">
+<Expr mdsid="m00000004-01f4-0000-685c-699200000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d420-0ca8-1000-90a3-0af502b50000" name="Forecast July" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000005-01f4-0000-17b5-8ab300000000" name="Expr">
+<ExprText><![CDATA[ FILTER("%1" USING "%2" = 'Forecast - July')]]></ExprText>
+<ExprTextDesc><![CDATA[ FILTER("Y08 - Demo Banking Adjustments"."Demo2"."PnL" USING "Y08 - Demo Banking Adjustments"."Scenario"."Scenarios" = 'Forecast - July')]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-17b5-8ab300000000-m82f0d41e-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d41d-0ca8-1000-90a3-0af502b50000.xml#m82f0d41e-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000005-01f4-0000-17b5-8ab300000000-m82f0d454-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d450-0ca8-1000-90a3-0af502b50000.xml#m82f0d454-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m82f25ade-0ca8-1000-90a3-0af502b50000" name="AD_3900:2753821391789375">
+<Expr mdsid="m00000006-01f4-0000-ff23-da2300000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d421-0ca8-1000-90a3-0af502b50000" name="Forecast June" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000007-01f4-0000-080f-785d00000000" name="Expr">
+<ExprText><![CDATA[ FILTER("%1" USING "%2" = 'Forecast - June')]]></ExprText>
+<ExprTextDesc><![CDATA[ FILTER("Y08 - Demo Banking Adjustments"."Demo2"."PnL" USING "Y08 - Demo Banking Adjustments"."Scenario"."Scenarios" = 'Forecast - June')]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-080f-785d00000000-m82f0d41e-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d41d-0ca8-1000-90a3-0af502b50000.xml#m82f0d41e-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000007-01f4-0000-080f-785d00000000-m82f0d454-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d450-0ca8-1000-90a3-0af502b50000.xml#m82f0d454-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m82f25adf-0ca8-1000-90a3-0af502b50000" name="AD_3900:2753831391789375">
+<Expr mdsid="m00000008-01f4-0000-fb7d-41c200000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d422-0ca8-1000-90a3-0af502b50000" name="Var June" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000009-01f4-0000-d334-b07100000000" name="Expr">
+<ExprText><![CDATA["%1" - "%2"]]></ExprText>
+<ExprTextDesc><![CDATA["Y08 - Demo Banking Adjustments"."Demo2"."Actual" - "Y08 - Demo Banking Adjustments"."Demo2"."Forecast June"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-d334-b07100000000-m82f0d41f-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d41d-0ca8-1000-90a3-0af502b50000.xml#m82f0d41f-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000009-01f4-0000-d334-b07100000000-m82f0d421-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d41d-0ca8-1000-90a3-0af502b50000.xml#m82f0d421-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m82f25ae0-0ca8-1000-90a3-0af502b50000" name="AD_3900:2753841391789375">
+<Expr mdsid="m0000000a-01f4-0000-252f-bd6f00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d423-0ca8-1000-90a3-0af502b50000" name="Var July" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000000b-01f4-0000-b7f6-ca6400000000" name="Expr">
+<ExprText><![CDATA["%1" - "%2"]]></ExprText>
+<ExprTextDesc><![CDATA["Y08 - Demo Banking Adjustments"."Demo2"."Actual" - "Y08 - Demo Banking Adjustments"."Demo2"."Forecast July"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-b7f6-ca6400000000-m82f0d41f-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d41d-0ca8-1000-90a3-0af502b50000.xml#m82f0d41f-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m0000000b-01f4-0000-b7f6-ca6400000000-m82f0d420-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d41d-0ca8-1000-90a3-0af502b50000.xml#m82f0d420-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m82f25ae1-0ca8-1000-90a3-0af502b50000" name="AD_3900:2753851391789375">
+<Expr mdsid="m0000000c-01f4-0000-f47f-d61400000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0d41d-0ca8-1000-90a3-0af502b50000-m82f2d0e0-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f2d0e0-0ca8-1000-90a3-0af502b50000.xml#m82f2d0e0-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m4f80bb24-0c30-1000-a9e6-7f0000010000" name="Dim_RTDMODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" pollFreq="0" x="802" y="393" maxConn="0" containerRef="/oracle/bi/server/base/Schema/4f80bac3-0c30-1000-a9e6-7f0000010000.xml#m4f80bac3-0c30-1000-a9e6-7f0000010000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/4f80bae1-0c30-1000-a9e6-7f0000010000.xml#m4f80bae1-0c30-1000-a9e6-7f0000010000">
+<PhysicalColumn mdsid="m4f80bb25-0c30-1000-a9e6-7f0000010000" name="ID" dataType="DOUBLE" precision="38" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/4f80bae1-0c30-1000-a9e6-7f0000010000.xml#m4f80bae2-0c30-1000-a9e6-7f0000010000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m4f80bb26-0c30-1000-a9e6-7f0000010000" name="NAME" dataType="VARCHAR" precision="200" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/4f80bae1-0c30-1000-a9e6-7f0000010000.xml#m4f80bae3-0c30-1000-a9e6-7f0000010000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m4f80bb27-0c30-1000-a9e6-7f0000010000" name="STUDY_ID" dataType="DOUBLE" precision="38" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/4f80bae1-0c30-1000-a9e6-7f0000010000.xml#m4f80bae4-0c30-1000-a9e6-7f0000010000">
+</PhysicalColumn>
+<PhysicalKey mdsid="m4f80bb70-0c30-1000-a9e6-7f0000010000" name="ID">
+<RefColumns>
+<RefColumn refId="m4f80bb70-0c30-1000-a9e6-7f0000010000-m4f80bb25-0c30-1000-a9e6-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/4f80bb24-0c30-1000-a9e6-7f0000010000.xml#m4f80bb25-0c30-1000-a9e6-7f0000010000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m4f80bb7e-0c30-1000-a9e6-7f0000010000" name="Dim_RTDMODEL_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/4f80bb1e-0c30-1000-a9e6-7f0000010000.xml#m4f80bb6e-0c30-1000-a9e6-7f0000010000">
+<RefColumns>
+<RefColumn refId="m4f80bb7e-0c30-1000-a9e6-7f0000010000-m4f80bb27-0c30-1000-a9e6-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/4f80bb24-0c30-1000-a9e6-7f0000010000.xml#m4f80bb27-0c30-1000-a9e6-7f0000010000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

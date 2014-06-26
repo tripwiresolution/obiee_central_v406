@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m8932c890-0c25-1000-8065-0af502b10000" name="US County Facts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cde354-07d0-0000-714b-e31d00000000.xml#m80cde354-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m8932c897-0c25-1000-8065-0af502b10000" name="Ctyfips" isWriteable="false">
+<AttrDefn mdsid="m8932c8a9-0c25-1000-8065-0af502b10000" name="AD_3900:2124071335535513">
+<Expr mdsid="m00000001-01f4-0000-7fa7-46c200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."CTYFIPS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-7fa7-46c200000000-m88d69ed4-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m88d69ed4-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m8932c89a-0c25-1000-8065-0af502b10000" name="Stfips" isWriteable="false">
+<AttrDefn mdsid="m8932c8ac-0c25-1000-8065-0af502b10000" name="AD_3900:2124101335535513">
+<Expr mdsid="m00000002-01f4-0000-b848-1ac100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."STFIPS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-b848-1ac100000000-m88d69ed6-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m88d69ed6-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m8932c89c-0c25-1000-8065-0af502b10000" name="Pop 2000" isWriteable="false">
+<MeasureDefn mdsid="m894fc670-0c25-1000-8065-0af502b10000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m894fc671-0c25-1000-8065-0af502b10000" name="AggregationRule" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-e6c3-cbe300000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."US County Facts"."Pop 2000")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-e6c3-cbe300000000-m8932c89c-0c25-1000-8065-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/8932c890-0c25-1000-8065-0af502b10000.xml#m8932c89c-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m8932c8ae-0c25-1000-8065-0af502b10000" name="AD_3900:2124121335535513">
+<Expr mdsid="m00000004-01f4-0000-d7bc-76db00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."TOTPOP2000"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-d7bc-76db00000000-m89205201-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m89205201-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m8932c89d-0c25-1000-8065-0af502b10000" name="Pop 2001" isWriteable="false">
+<MeasureDefn mdsid="m894fc672-0c25-1000-8065-0af502b10000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m894fc673-0c25-1000-8065-0af502b10000" name="AggregationRule" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-3ee8-d84500000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."US County Facts"."Pop 2001")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-3ee8-d84500000000-m8932c89d-0c25-1000-8065-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/8932c890-0c25-1000-8065-0af502b10000.xml#m8932c89d-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m8932c8af-0c25-1000-8065-0af502b10000" name="AD_3900:2124131335535513">
+<Expr mdsid="m00000006-01f4-0000-a41b-aefd00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."TOTPOP2001"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-a41b-aefd00000000-m89205203-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m89205203-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m8932c89e-0c25-1000-8065-0af502b10000" name="Pop 2002" isWriteable="false">
+<MeasureDefn mdsid="m894fc674-0c25-1000-8065-0af502b10000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m894fc675-0c25-1000-8065-0af502b10000" name="AggregationRule" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-7c20-9f7c00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."US County Facts"."Pop 2002")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-7c20-9f7c00000000-m8932c89e-0c25-1000-8065-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/8932c890-0c25-1000-8065-0af502b10000.xml#m8932c89e-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m8932c8b0-0c25-1000-8065-0af502b10000" name="AD_3900:2124141335535513">
+<Expr mdsid="m00000008-01f4-0000-2e35-898c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."TOTPOP2002"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-2e35-898c00000000-m89205205-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m89205205-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m8932c89f-0c25-1000-8065-0af502b10000" name="Pop 2003" isWriteable="false">
+<MeasureDefn mdsid="m894fc676-0c25-1000-8065-0af502b10000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m894fc677-0c25-1000-8065-0af502b10000" name="AggregationRule" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-92d4-4df500000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."US County Facts"."Pop 2003")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-92d4-4df500000000-m8932c89f-0c25-1000-8065-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/8932c890-0c25-1000-8065-0af502b10000.xml#m8932c89f-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m8932c8b1-0c25-1000-8065-0af502b10000" name="AD_3900:2124151335535513">
+<Expr mdsid="m0000000a-01f4-0000-f732-8c7400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."TOTPOP2003"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-f732-8c7400000000-m89205207-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m89205207-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m8932c8a0-0c25-1000-8065-0af502b10000" name="Pop 2004" isWriteable="false">
+<MeasureDefn mdsid="m894fc678-0c25-1000-8065-0af502b10000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m894fc679-0c25-1000-8065-0af502b10000" name="AggregationRule" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-3f89-bfa400000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."US County Facts"."Pop 2004")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-3f89-bfa400000000-m8932c8a0-0c25-1000-8065-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/8932c890-0c25-1000-8065-0af502b10000.xml#m8932c8a0-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m8932c8b2-0c25-1000-8065-0af502b10000" name="AD_3900:2124161335535513">
+<Expr mdsid="m0000000c-01f4-0000-649e-e08c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."TOTPOP2004"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-649e-e08c00000000-m8926baa1-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m8926baa1-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m8932c8a1-0c25-1000-8065-0af502b10000" name="Pop 2005" isWriteable="false">
+<MeasureDefn mdsid="m894fc67a-0c25-1000-8065-0af502b10000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m894fc67b-0c25-1000-8065-0af502b10000" name="AggregationRule" isDefault="true">
+<Expr mdsid="m0000000d-01f4-0000-d37d-4c2c00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."US County Facts"."Pop 2005")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-d37d-4c2c00000000-m8932c8a1-0c25-1000-8065-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/8932c890-0c25-1000-8065-0af502b10000.xml#m8932c8a1-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m8932c8b3-0c25-1000-8065-0af502b10000" name="AD_3900:2124171335535513">
+<Expr mdsid="m0000000e-01f4-0000-ec0d-994600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."TOTPOP2005"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-ec0d-994600000000-m891fb5c3-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m891fb5c3-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m8932c8a2-0c25-1000-8065-0af502b10000" name="Pop 2006" isWriteable="false">
+<MeasureDefn mdsid="m894fc67c-0c25-1000-8065-0af502b10000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m894fc67d-0c25-1000-8065-0af502b10000" name="AggregationRule" isDefault="true">
+<Expr mdsid="m0000000f-01f4-0000-9851-6bc000000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."US County Facts"."Pop 2006")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-9851-6bc000000000-m8932c8a2-0c25-1000-8065-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/8932c890-0c25-1000-8065-0af502b10000.xml#m8932c8a2-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m8932c8b4-0c25-1000-8065-0af502b10000" name="AD_3900:2124181335535513">
+<Expr mdsid="m00000010-01f4-0000-bbf9-052200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."TOTPOP2006"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-bbf9-052200000000-m891fb5c1-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m891fb5c1-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m8932c8a3-0c25-1000-8065-0af502b10000" name="Pop 2007" isWriteable="false">
+<MeasureDefn mdsid="m894fc67e-0c25-1000-8065-0af502b10000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m894fc67f-0c25-1000-8065-0af502b10000" name="AggregationRule" isDefault="true">
+<Expr mdsid="m00000011-01f4-0000-6b24-f94e00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."US County Facts"."Pop 2007")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-6b24-f94e00000000-m8932c8a3-0c25-1000-8065-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/8932c890-0c25-1000-8065-0af502b10000.xml#m8932c8a3-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m8932c8b5-0c25-1000-8065-0af502b10000" name="AD_3900:2124191335535513">
+<Expr mdsid="m00000012-01f4-0000-67b6-459a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."TOTPOP2007"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-67b6-459a00000000-m891f4091-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m891f4091-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m8932c8a4-0c25-1000-8065-0af502b10000" name="Pop 2008" isWriteable="false">
+<MeasureDefn mdsid="m894fc680-0c25-1000-8065-0af502b10000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m894fc681-0c25-1000-8065-0af502b10000" name="AggregationRule" isDefault="true">
+<Expr mdsid="m00000013-01f4-0000-a6a3-ea5a00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."US County Facts"."Pop 2008")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-a6a3-ea5a00000000-m8932c8a4-0c25-1000-8065-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/8932c890-0c25-1000-8065-0af502b10000.xml#m8932c8a4-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m8932c8b6-0c25-1000-8065-0af502b10000" name="AD_3900:2124201335535513">
+<Expr mdsid="m00000014-01f4-0000-5ce9-9b9e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."COUNTY"."TOTPOP2008"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-5ce9-9b9e00000000-m891aacb1-0c25-1000-8065-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/88d69ed0-0c25-1000-8065-0af502b10000.xml#m891aacb1-0c25-1000-8065-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m8932c890-0c25-1000-8065-0af502b10000-m8932c892-0c25-1000-8065-0af502b10000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/8932c892-0c25-1000-8065-0af502b10000.xml#m8932c892-0c25-1000-8065-0af502b10000"/>
+</RefTableSources>
+</LogicalTable>

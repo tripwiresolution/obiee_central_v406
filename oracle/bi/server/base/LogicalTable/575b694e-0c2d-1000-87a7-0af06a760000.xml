@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m575b694e-0c2d-1000-87a7-0af06a760000" name="21 Dep Time Blk" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/575b68b0-0c2d-1000-87a7-0af06a760000.xml#m575b68b0-0c2d-1000-87a7-0af06a760000">
+<LogicalColumn mdsid="m575b694f-0c2d-1000-87a7-0af06a760000" name="Dep Time Blk" isWriteable="false">
+<AttrDefn mdsid="m575b6c48-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372151338887867">
+<Expr mdsid="m00000001-01f4-0000-507a-68ee00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES_AGG"."SA_21_Dep_00039CE2"."Dep_Time_B00039BA6"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-507a-68ee00000000-m66f233b8-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/66f233b6-0c61-1000-99f2-7f0000010000.xml#m66f233b8-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6950-0c2d-1000-87a7-0af06a760000" name="Dep Time Grp" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000002-01f4-0000-77a7-2b5d00000000" name="Expr">
+<ExprText><![CDATA[ CASE  WHEN "%1" = '0001-0559' THEN '01:00 to 09:00' WHEN "%1" BETWEEN '06' AND '09' THEN '01:00 to 09:00' WHEN "%1" BETWEEN '09' AND '12' THEN '09:00 to 12:00' WHEN "%1" BETWEEN '12' AND '17' THEN '12:00 to 17:00' ELSE '18:00 to Midnight' END ]]></ExprText>
+<ExprTextDesc><![CDATA[ CASE  WHEN "X0 - Airlines"."21 Dep Time Blk"."Dep Time Blk" = '0001-0559' THEN '01:00 to 09:00' WHEN "X0 - Airlines"."21 Dep Time Blk"."Dep Time Blk" BETWEEN '06' AND '09' THEN '01:00 to 09:00' WHEN "X0 - Airlines"."21 Dep Time Blk"."Dep Time Blk" BETWEEN '09' AND '12' THEN '09:00 to 12:00' WHEN "X0 - Airlines"."21 Dep Time Blk"."Dep Time Blk" BETWEEN '12' AND '17' THEN '12:00 to 17:00' ELSE '18:00 to Midnight' END ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-77a7-2b5d00000000-m575b694f-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b694e-0c2d-1000-87a7-0af06a760000.xml#m575b694f-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6c49-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372161338887867">
+<Expr mdsid="m00000003-01f4-0000-913c-2b9400000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m575b6bb3-0c2d-1000-87a7-0af06a760000" name="Time Block" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6bb3-0c2d-1000-87a7-0af06a760000-m575b694f-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b694e-0c2d-1000-87a7-0af06a760000.xml#m575b694f-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m575b694e-0c2d-1000-87a7-0af06a760000-m575b6d46-0c2d-1000-87a7-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/575b6d46-0c2d-1000-87a7-0af06a760000.xml#m575b6d46-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalTableSource refId="m575b694e-0c2d-1000-87a7-0af06a760000-m66f3e161-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/66f3e161-0c61-1000-99f2-7f0000010000.xml#m66f3e161-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b694e-0c2d-1000-87a7-0af06a760000-mf0479dd1-0cb1-1000-9163-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/f0479dd1-0cb1-1000-9163-0af502b50000.xml#mf0479dd1-0cb1-1000-9163-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

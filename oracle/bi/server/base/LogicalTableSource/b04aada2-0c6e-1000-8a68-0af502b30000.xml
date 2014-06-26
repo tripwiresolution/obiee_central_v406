@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="mb04aada2-0c6e-1000-8a68-0af502b30000" name="WS_GET_DOLLARVALUE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/b04aada0-0c6e-1000-8a68-0af502b30000.xml#mb04aada0-0c6e-1000-8a68-0af502b30000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-66d8-a46200000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App"."WS_USDollar_ExhangeRate"."DollarValue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-66d8-a46200000000-mb04aada3-0c6e-1000-8a68-0af502b30000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/b04aada0-0c6e-1000-8a68-0af502b30000.xml#mb04aada3-0c6e-1000-8a68-0af502b30000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-2d2e-0f4500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."WS_GET_DOLLARVALUE"."DollarValue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-2d2e-0f4500000000-maf7ef931-0c6e-1000-8a68-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/af7ef930-0c6e-1000-8a68-0af502b30000.xml#maf7ef931-0c6e-1000-8a68-0af502b30000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/af7ef930-0c6e-1000-8a68-0af502b30000.xml#maf7ef930-0c6e-1000-8a68-0af502b30000">
+</Link>
+<WhereClause mdsid="m00000003-01f4-0000-15f6-588f00000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000004-01f4-0000-c69d-53a300000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m00000005-01f4-0000-8c45-5ea100000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

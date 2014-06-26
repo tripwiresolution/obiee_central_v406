@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationTable mdsid="m80cbdb2c-0fa8-0000-714b-e31d00000000" name="Fragmented Measures" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Federated_Measures)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationCatalog/80cab7ef-0fa4-0000-714b-e31d00000000.xml#m80cab7ef-0fa4-0000-714b-e31d00000000">
+<Description><![CDATA[This folder contains Quota and Forecast Amt allocations derived based on Period Ago allocation rules.]]></Description>
+<Alias name="Federated Measures"/>
+<PresentationColumn mdsid="m8b9a0391-0c30-1000-85d6-7f0000010000" name="1a- Revenue (DW History Data)" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/5b3ff5e0-0c2d-1000-87a7-0af06a760000.xml#m5b3ff5e2-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+<Alias name="1a- Revenue (DW Data)"/>
+<Alias name="1h- Revenue (DW Data)"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m8b9a0393-0c30-1000-85d6-7f0000010000" name="1b- Revenue (OTLP Real Time Data)" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/5b3ff5e0-0c2d-1000-87a7-0af06a760000.xml#m651dbf74-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+<Alias name="1c- Revenue (OTLP Real Time Data)"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m8b9a0395-0c30-1000-85d6-7f0000010000" name="1c- Revenue Fragmented Sources" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/5b3ff5e0-0c2d-1000-87a7-0af06a760000.xml#m653a2114-0c2d-1000-87a7-0af06a760000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+<Alias name="1c- Revenue Fragmented"/>
+<Alias name="1c- Revenue Fragmented (a+b+"/>
+<Alias name="1f- Revenue Fragmented"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m1db58221-0c33-1000-a35a-7f0000010000" name="--- Time Based Fragmentation" hasDispName="false" hasDispDescription="false" overrideLogicalName="true" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5e7-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Alias name="Dummy Object (Used for Pres Headers)"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m1db88f60-0c33-1000-a35a-7f0000010000" name="--- Dimension Based Fragmentation" hasDispName="false" hasDispDescription="false" overrideLogicalName="true" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5e7-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Alias name="--- Time Based Fragmentation#1"/>
+</PresentationColumn>
+<PresentationColumn mdsid="mdf031d11-0c20-1000-ac17-0af502b10000" name="5a  Target Rev  (Source A)" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab659-07f3-0000-714b-e31d00000000.xml#mdd713275-0c20-1000-8a7d-0af502b10000">
+</PresentationColumn>
+<PresentationColumn mdsid="mdf031d13-0c20-1000-ac17-0af502b10000" name="5b  Target Rev  (Source B)" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab659-07f3-0000-714b-e31d00000000.xml#mdd71327f-0c20-1000-8a7d-0af502b10000">
+</PresentationColumn>
+<PresentationColumn mdsid="mdf031d15-0c20-1000-ac17-0af502b10000" name="5c  Total Target Rev  (Fragmented)" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab659-07f3-0000-714b-e31d00000000.xml#mdebcec54-0c20-1000-ac17-0af502b10000">
+<Alias name="5c  Target Rev  (Sum A + B)"/>
+</PresentationColumn>
+</PresentationTable>

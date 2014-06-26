@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0d4af-0ca8-1000-90a3-0af502b50000" name="Fact - Successor Certifications" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd3-0ca8-1000-90a3-0af502b50000.xml#m82f0acd3-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0d4b0-0ca8-1000-90a3-0af502b50000" name="Certification Name" isWriteable="false">
+<AttrDefn mdsid="m82f25b5b-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755071391789375">
+<Expr mdsid="m00000001-01f4-0000-9a6f-33c700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRV"."ADS_BI_HRV_CERTS_SP"."CERT_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-9a6f-33c700000000-m82dde92b-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde928-0ca8-1000-90a3-0af502b50000.xml#m82dde92b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d4b1-0ca8-1000-90a3-0af502b50000" name="Certification Status" isWriteable="false">
+<AttrDefn mdsid="m82f25b5c-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755081391789375">
+<Expr mdsid="m00000002-01f4-0000-c7b6-359800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRV"."ADS_BI_HRV_CERTS_SP"."CERT_STATUS_MEANING"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-c7b6-359800000000-m82dde92e-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde928-0ca8-1000-90a3-0af502b50000.xml#m82dde92e-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d4b2-0ca8-1000-90a3-0af502b50000" name="Progress" isWriteable="false">
+<AttrDefn mdsid="m82f25b5d-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755091391789375">
+<Expr mdsid="m00000003-01f4-0000-be49-374a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRV"."ADS_BI_HRV_CERTS_SP"."PERIOD_STATUS_MEANING"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-be49-374a00000000-m82dde932-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde928-0ca8-1000-90a3-0af502b50000.xml#m82dde932-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d4b3-0ca8-1000-90a3-0af502b50000" name="Person ID" isWriteable="false">
+<AttrDefn mdsid="m82f25b5e-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755101391789375">
+<Expr mdsid="m00000004-01f4-0000-8345-2c8a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRV"."ADS_BI_HRV_CERTS_SP"."PERSON_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-8345-2c8a00000000-m82dde933-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde928-0ca8-1000-90a3-0af502b50000.xml#m82dde933-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d4b4-0ca8-1000-90a3-0af502b50000" name="Start Date Active" isWriteable="false">
+<AttrDefn mdsid="m82f25b5f-0ca8-1000-90a3-0af502b50000" name="AD_3900:2755111391789375">
+<Expr mdsid="m00000005-01f4-0000-2f68-d30400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRV"."ADS_BI_HRV_CERTS_SP"."START_DATE_ACTIVE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-2f68-d30400000000-m82dde934-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde928-0ca8-1000-90a3-0af502b50000.xml#m82dde934-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m82f233a8-0ca8-1000-90a3-0af502b50000" name="PERSON_ID" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f233a8-0ca8-1000-90a3-0af502b50000-m82f0d4b0-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d4af-0ca8-1000-90a3-0af502b50000.xml#m82f0d4b0-0ca8-1000-90a3-0af502b50000"/>
+<RefLogicalColumn refId="m82f233a8-0ca8-1000-90a3-0af502b50000-m82f0d4b3-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d4af-0ca8-1000-90a3-0af502b50000.xml#m82f0d4b3-0ca8-1000-90a3-0af502b50000"/>
+<RefLogicalColumn refId="m82f233a8-0ca8-1000-90a3-0af502b50000-m82f0d4b4-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d4af-0ca8-1000-90a3-0af502b50000.xml#m82f0d4b4-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0d4af-0ca8-1000-90a3-0af502b50000-m82f2f6d4-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f2f6d4-0ca8-1000-90a3-0af502b50000.xml#m82f2f6d4-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

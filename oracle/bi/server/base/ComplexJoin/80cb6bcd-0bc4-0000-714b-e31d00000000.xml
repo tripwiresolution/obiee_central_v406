@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ComplexJoin mdsid="m80cb6bcd-0bc4-0000-714b-e31d00000000" name="D54 Sales Rep (PC Closure Team Agg)_F17 Rev. (Siblings Aggr)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" table1Ref="/oracle/bi/server/base/PhysicalTable/80cb6841-0bb9-0000-714b-e31d00000000.xml#m80cb6841-0bb9-0000-714b-e31d00000000" table2Ref="/oracle/bi/server/base/PhysicalTable/80cb6830-0bb9-0000-714b-e31d00000000.xml#m80cb6830-0bb9-0000-714b-e31d00000000">
+<Expr mdsid="m00000001-01f4-0000-fd36-c57500000000" name="Expr">
+<ExprText><![CDATA["%1" = "%2" AND "%3" >0]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D54 Closure Table Sales Rep (Team Agg)"."Member_Key" = "01 - Sample App Data (ORCL)".""."BISAMPLE"."F17 Rev. (Siblings Aggr)"."Empl_Key" AND "01 - Sample App Data (ORCL)".""."BISAMPLE"."D54 Closure Table Sales Rep (Team Agg)"."Distance" >0]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-fd36-c57500000000-m80cb69bf-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb6830-0bb9-0000-714b-e31d00000000.xml#m80cb69bf-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m00000001-01f4-0000-fd36-c57500000000-m80cb6a89-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb6841-0bb9-0000-714b-e31d00000000.xml#m80cb6a89-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m00000001-01f4-0000-fd36-c57500000000-m80cb69c1-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb6830-0bb9-0000-714b-e31d00000000.xml#m80cb69c1-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ComplexJoin>

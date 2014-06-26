@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cb682e-0bb9-0000-714b-e31d00000000" name="D52 Sales Rep Position" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" x="1744" y="264" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cb680d-0bb9-0000-714b-e31d00000000.xml#m80cb680d-0bb9-0000-714b-e31d00000000">
+<Description><![CDATA[ZZZ - Not yet filled]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SAMP_EMPL_POSTN_D]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cb69b6-0bbb-0000-714b-e31d00000000" name="Postn_Key" dataType="DOUBLE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb680d-0bb9-0000-714b-e31d00000000.xml#m80cb688c-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Position Key: Surrogate key of the employee position dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb69b7-0bbb-0000-714b-e31d00000000" name="Postn_Desc" dataType="VARCHAR" precision="255" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb680d-0bb9-0000-714b-e31d00000000.xml#m80cb688d-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Position Description: Stores the employee position description as text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb69b8-0bbb-0000-714b-e31d00000000" name="Postn_Level" dataType="VARCHAR" precision="255" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb680d-0bb9-0000-714b-e31d00000000.xml#m80cb688e-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Position Level: Stores the employee position level information as text]]></Description>
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cb6af6-0bc0-0000-714b-e31d00000000" name="A061b Employee Position_Key">
+<RefColumns>
+<RefColumn refId="m80cb6af6-0bc0-0000-714b-e31d00000000-m80cb69b6-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb682e-0bb9-0000-714b-e31d00000000.xml#m80cb69b6-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

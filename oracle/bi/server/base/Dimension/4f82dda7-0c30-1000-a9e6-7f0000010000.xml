@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m4f82dda7-0c30-1000-a9e6-7f0000010000" name="Partition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="false" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/4f82dda7-0c30-1000-a9e6-7f0000010000.xml#m4f83051e-0c30-1000-a9e6-7f0000010000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/4f82dda0-0c30-1000-a9e6-7f0000010000.xml#m4f82dda0-0c30-1000-a9e6-7f0000010000">
+<LogicalLevel mdsid="m4f83051e-0c30-1000-a9e6-7f0000010000" name="Total" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;Total&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="m4f83051e-0c30-1000-a9e6-7f0000010000_m4f830521-0c30-1000-a9e6-7f0000010000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/4f82dda7-0c30-1000-a9e6-7f0000010000.xml#m4f830521-0c30-1000-a9e6-7f0000010000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m4f83051e-0c30-1000-a9e6-7f0000010000-m4f8304b5-0c30-1000-a9e6-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/4f8304b4-0c30-1000-a9e6-7f0000010000.xml#m4f8304b5-0c30-1000-a9e6-7f0000010000"/>
+<RefLogicalColumn refId="m4f83051e-0c30-1000-a9e6-7f0000010000-m4f8304b6-0c30-1000-a9e6-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/4f8304b4-0c30-1000-a9e6-7f0000010000.xml#m4f8304b6-0c30-1000-a9e6-7f0000010000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m4f830521-0c30-1000-a9e6-7f0000010000" name="Attribute" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Attribute&apos;">
+<LogicalKey mdsid="m4f832bc8-0c30-1000-a9e6-7f0000010000" name="Attribute Path" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m4f832bc8-0c30-1000-a9e6-7f0000010000-m4f8304b3-0c30-1000-a9e6-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/4f82ddb1-0c30-1000-a9e6-7f0000010000.xml#m4f8304b3-0c30-1000-a9e6-7f0000010000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m4f832bc9-0c30-1000-a9e6-7f0000010000" name="Attribute Name">
+<RefColumns>
+<RefLogicalColumn refId="m4f832bc9-0c30-1000-a9e6-7f0000010000-m4f8304b2-0c30-1000-a9e6-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/4f82ddb1-0c30-1000-a9e6-7f0000010000.xml#m4f8304b2-0c30-1000-a9e6-7f0000010000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m4f830521-0c30-1000-a9e6-7f0000010000_m4f83051f-0c30-1000-a9e6-7f0000010000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/4f82dda7-0c30-1000-a9e6-7f0000010000.xml#m4f83051f-0c30-1000-a9e6-7f0000010000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m4f830521-0c30-1000-a9e6-7f0000010000-m4f8304b2-0c30-1000-a9e6-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/4f82ddb1-0c30-1000-a9e6-7f0000010000.xml#m4f8304b2-0c30-1000-a9e6-7f0000010000"/>
+<RefLogicalColumn refId="m4f830521-0c30-1000-a9e6-7f0000010000-m4f8304b3-0c30-1000-a9e6-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/4f82ddb1-0c30-1000-a9e6-7f0000010000.xml#m4f8304b3-0c30-1000-a9e6-7f0000010000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m4f83051f-0c30-1000-a9e6-7f0000010000" name="Partition" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Partition&apos;">
+<LogicalKey mdsid="m4f832bc6-0c30-1000-a9e6-7f0000010000" name="PARTITION_VALUE" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m4f832bc6-0c30-1000-a9e6-7f0000010000-m4f8304b1-0c30-1000-a9e6-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/4f82ddb1-0c30-1000-a9e6-7f0000010000.xml#m4f8304b1-0c30-1000-a9e6-7f0000010000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m4f83051f-0c30-1000-a9e6-7f0000010000_m4f830520-0c30-1000-a9e6-7f0000010000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/4f82dda7-0c30-1000-a9e6-7f0000010000.xml#m4f830520-0c30-1000-a9e6-7f0000010000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m4f83051f-0c30-1000-a9e6-7f0000010000-m4f8304b1-0c30-1000-a9e6-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/4f82ddb1-0c30-1000-a9e6-7f0000010000.xml#m4f8304b1-0c30-1000-a9e6-7f0000010000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m4f830520-0c30-1000-a9e6-7f0000010000" name="Detail" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Detail&apos;">
+<LogicalKey mdsid="m4f832bc7-0c30-1000-a9e6-7f0000010000" name="ROW_ID" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m4f832bc7-0c30-1000-a9e6-7f0000010000-m4f8304b0-0c30-1000-a9e6-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/4f82ddb1-0c30-1000-a9e6-7f0000010000.xml#m4f8304b0-0c30-1000-a9e6-7f0000010000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m4f830520-0c30-1000-a9e6-7f0000010000-m4f8304b0-0c30-1000-a9e6-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/4f82ddb1-0c30-1000-a9e6-7f0000010000.xml#m4f8304b0-0c30-1000-a9e6-7f0000010000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

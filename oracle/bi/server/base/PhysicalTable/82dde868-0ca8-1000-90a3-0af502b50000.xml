@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m82dde868-0ca8-1000-90a3-0af502b50000" name="ADS_BI_ART_AGENTS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" maxConn="0" containerRef="/oracle/bi/server/base/Schema/82ddc125-0ca8-1000-90a3-0af502b50000.xml#m82ddc125-0ca8-1000-90a3-0af502b50000">
+<PhysicalColumn mdsid="m82dde869-0ca8-1000-90a3-0af502b50000" name="COLLECTOR_ID" dataType="INT" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde86a-0ca8-1000-90a3-0af502b50000" name="COMPLETED_TASKS" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde86b-0ca8-1000-90a3-0af502b50000" name="DATEKEY" dataType="DATETIME" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde86c-0ca8-1000-90a3-0af502b50000" name="DAY" dataType="VARCHAR" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde86d-0ca8-1000-90a3-0af502b50000" name="EXISTING_TASKS_REMOVED" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde86e-0ca8-1000-90a3-0af502b50000" name="NEW_TASKS_ASSIGNED" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde86f-0ca8-1000-90a3-0af502b50000" name="TASKS_ASSIGNED" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde870-0ca8-1000-90a3-0af502b50000" name="WEEK" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde871-0ca8-1000-90a3-0af502b50000" name="SORTDAY" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="m82de3673-0ca8-1000-90a3-0af502b50000" name="ADS_BI_ART_AGENTS_FKey#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82de1070-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82de3673-0ca8-1000-90a3-0af502b50000-m82dde86b-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82dde868-0ca8-1000-90a3-0af502b50000.xml#m82dde86b-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82de3674-0ca8-1000-90a3-0af502b50000" name="ADS_BI_ART_AGENTS_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82dde872-0ca8-1000-90a3-0af502b50000.xml#m82de1071-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82de3674-0ca8-1000-90a3-0af502b50000-m82dde869-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82dde868-0ca8-1000-90a3-0af502b50000.xml#m82dde869-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

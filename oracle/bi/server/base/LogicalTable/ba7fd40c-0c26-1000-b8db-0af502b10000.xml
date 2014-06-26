@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="mba7fd40c-0c26-1000-b8db-0af502b10000" name="TS- DBA_TEMP_FREE_SPACE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/b397a370-0c26-1000-a95b-0af502b10000.xml#mb397a370-0c26-1000-a95b-0af502b10000">
+<LogicalColumn mdsid="mba7fd40f-0c26-1000-b8db-0af502b10000" name="Allocated Space" isWriteable="false">
+<AttrDefn mdsid="mba7fd413-0c26-1000-b8db-0af502b10000" name="AD_3900:2267351336047723">
+<Expr mdsid="m00000001-01f4-0000-7327-bbf400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."DBA_TEMP_FREE_SPACE"."ALLOCATED_SPACE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-7327-bbf400000000-m8e6eb2ff-0c26-1000-9bbc-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8e6eb2fe-0c26-1000-9bbc-0af502b10000.xml#m8e6eb2ff-0c26-1000-9bbc-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd410-0c26-1000-b8db-0af502b10000" name="Free Space" isWriteable="false">
+<AttrDefn mdsid="mba7fd414-0c26-1000-b8db-0af502b10000" name="AD_3900:2267361336047723">
+<Expr mdsid="m00000002-01f4-0000-3a18-bbb400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."DBA_TEMP_FREE_SPACE"."FREE_SPACE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-3a18-bbb400000000-m8e6eb300-0c26-1000-9bbc-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8e6eb2fe-0c26-1000-9bbc-0af502b10000.xml#m8e6eb300-0c26-1000-9bbc-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd411-0c26-1000-b8db-0af502b10000" name="Tablespace Name" isWriteable="false">
+<AttrDefn mdsid="mba7fd415-0c26-1000-b8db-0af502b10000" name="AD_3900:2267371336047723">
+<Expr mdsid="m00000003-01f4-0000-d62c-247600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."DBA_TEMP_FREE_SPACE"."TABLESPACE_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-d62c-247600000000-m8e6eb301-0c26-1000-9bbc-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8e6eb2fe-0c26-1000-9bbc-0af502b10000.xml#m8e6eb301-0c26-1000-9bbc-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd412-0c26-1000-b8db-0af502b10000" name="Tablespace Size" isWriteable="false">
+<AttrDefn mdsid="mba7fd416-0c26-1000-b8db-0af502b10000" name="AD_3900:2267381336047723">
+<Expr mdsid="m00000004-01f4-0000-e466-9b3700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."DBA_TEMP_FREE_SPACE"."TABLESPACE_SIZE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-e466-9b3700000000-m8e6eb302-0c26-1000-9bbc-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8e6eb2fe-0c26-1000-9bbc-0af502b10000.xml#m8e6eb302-0c26-1000-9bbc-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="mba7fd40c-0c26-1000-b8db-0af502b10000-mba7fd40e-0c26-1000-b8db-0af502b10000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/ba7fd40e-0c26-1000-b8db-0af502b10000.xml#mba7fd40e-0c26-1000-b8db-0af502b10000"/>
+</RefTableSources>
+</LogicalTable>

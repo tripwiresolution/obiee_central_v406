@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m80cd96f4-07f5-0000-714b-e31d00000000" name="LTS02 Revenue (Billed Dt Individual Contrib.)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/80cd9341-07f3-0000-714b-e31d00000000.xml#m80cd9341-07f3-0000-714b-e31d00000000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-7921-161900000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - TimesTen Sample"."F0 Revenue Base Measures"."114  Individual Contrib (Flat Rev Agg)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-7921-161900000000-m80cd934f-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cd9341-07f3-0000-714b-e31d00000000.xml#m80cd934f-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-829b-89b600000000" name="Expr">
+<ExprText><![CDATA[case when 
+ "%1" =0 
+then 
+"%2"
+
+when 
+ "%1" is null
+then 
+"%2"
+end]]></ExprText>
+<ExprTextDesc><![CDATA[case when 
+ "05 - Sample App TimesTen".""."BISAMPLE_TT"."D51 Closure Table Sales Rep Parent Child"."Distance" =0 
+then 
+"05 - Sample App TimesTen".""."BISAMPLE_TT"."F18 Rev. (Individual Contrib)"."Revenue"
+
+when 
+ "05 - Sample App TimesTen".""."BISAMPLE_TT"."D51 Closure Table Sales Rep Parent Child"."Distance" is null
+then 
+"05 - Sample App TimesTen".""."BISAMPLE_TT"."F18 Rev. (Individual Contrib)"."Revenue"
+end]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-829b-89b600000000-m80cd8f6a-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd8f67-0bb9-0000-714b-e31d00000000.xml#m80cd8f6a-0bbb-0000-714b-e31d00000000"/>
+<RefObject refId="m00000002-01f4-0000-829b-89b600000000-m80cd9034-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd9031-0bb9-0000-714b-e31d00000000.xml#m80cd9034-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/80cd8f67-0bb9-0000-714b-e31d00000000.xml#m80cd8f67-0bb9-0000-714b-e31d00000000">
+<Join type="Inner" cardinality=" ONE TO MANY" physicalTable1Ref="/oracle/bi/server/base/PhysicalTable/80cd8f67-0bb9-0000-714b-e31d00000000.xml#m80cd8f67-0bb9-0000-714b-e31d00000000" physicalTable2Ref="/oracle/bi/server/base/PhysicalTable/80cd9031-0bb9-0000-714b-e31d00000000.xml#m80cd9031-0bb9-0000-714b-e31d00000000" physicalJoinRef="/oracle/bi/server/base/PhysicalTable/80cd9031-0bb9-0000-714b-e31d00000000.xml#m80cd927b-0bbe-0000-714b-e31d00000000"/>
+</Link>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/80cd9031-0bb9-0000-714b-e31d00000000.xml#m80cd9031-0bb9-0000-714b-e31d00000000">
+<Join type="Inner" cardinality="MANY TO ONE" physicalTable1Ref="/oracle/bi/server/base/PhysicalTable/80cd9031-0bb9-0000-714b-e31d00000000.xml#m80cd9031-0bb9-0000-714b-e31d00000000" physicalTable2Ref="/oracle/bi/server/base/PhysicalTable/80cd8f67-0bb9-0000-714b-e31d00000000.xml#m80cd8f67-0bb9-0000-714b-e31d00000000" physicalJoinRef="/oracle/bi/server/base/PhysicalTable/80cd9031-0bb9-0000-714b-e31d00000000.xml#m80cd927b-0bbe-0000-714b-e31d00000000"/>
+</Link>
+<WhereClause mdsid="m00000003-01f4-0000-e1f7-936200000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000004-01f4-0000-b759-a61700000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m00000005-01f4-0000-3ac5-9df700000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

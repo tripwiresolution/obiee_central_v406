@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m7d74b5d8-0cbe-1000-ba67-0ae9166e0000" name="D91 Associantion Rules" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/7d74b4db-0cbe-1000-ba67-0ae9166e0000.xml#m7d74b4db-0cbe-1000-ba67-0ae9166e0000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-e500-052900000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["11 - OAA Integration"."Fact - Association Rule"."Antecedent Support"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-e500-052900000000-m7d74b4dc-0cbe-1000-ba67-0ae9166e0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/7d74b4db-0cbe-1000-ba67-0ae9166e0000.xml#m7d74b4dc-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-0d63-467200000000" name="Expr">
+<ExprText><![CDATA["%1" * 100]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D91 Associantion Rules"."ANTECEDENT_SUPPORT" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-0d63-467200000000-m7d726ae0-0cbe-1000-ba67-0ae9166e0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/7d726ad2-0cbe-1000-ba67-0ae9166e0000.xml#m7d726ae0-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-38b5-7c4200000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["11 - OAA Integration"."Fact - Association Rule"."Consequent Support"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-38b5-7c4200000000-m7d74b4dd-0cbe-1000-ba67-0ae9166e0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/7d74b4db-0cbe-1000-ba67-0ae9166e0000.xml#m7d74b4dd-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-417d-017000000000" name="Expr">
+<ExprText><![CDATA["%1"* 100]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D91 Associantion Rules"."CONSEQUENT_SUPPORT"* 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-417d-017000000000-m7d726ae8-0cbe-1000-ba67-0ae9166e0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/7d726ad2-0cbe-1000-ba67-0ae9166e0000.xml#m7d726ae8-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-5b1e-e35600000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["11 - OAA Integration"."Fact - Association Rule"."Number Of Items"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-5b1e-e35600000000-m7d74b4de-0cbe-1000-ba67-0ae9166e0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/7d74b4db-0cbe-1000-ba67-0ae9166e0000.xml#m7d74b4de-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-1e29-fb1800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D91 Associantion Rules"."NUMBER_OF_ITEMS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-1e29-fb1800000000-m7d726af1-0cbe-1000-ba67-0ae9166e0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/7d726ad2-0cbe-1000-ba67-0ae9166e0000.xml#m7d726af1-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000007-01f4-0000-61e8-9b7d00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["11 - OAA Integration"."Fact - Association Rule"."Rule Confidence"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-61e8-9b7d00000000-m7d74b4df-0cbe-1000-ba67-0ae9166e0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/7d74b4db-0cbe-1000-ba67-0ae9166e0000.xml#m7d74b4df-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000008-01f4-0000-9526-b22700000000" name="Expr">
+<ExprText><![CDATA["%1"* 100]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D91 Associantion Rules"."RULE_CONFIDENCE"* 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-9526-b22700000000-m7d726af3-0cbe-1000-ba67-0ae9166e0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/7d726ad2-0cbe-1000-ba67-0ae9166e0000.xml#m7d726af3-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000009-01f4-0000-f0ab-81fd00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["11 - OAA Integration"."Fact - Association Rule"."Rule Lift"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-f0ab-81fd00000000-m7d74b4e0-0cbe-1000-ba67-0ae9166e0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/7d74b4db-0cbe-1000-ba67-0ae9166e0000.xml#m7d74b4e0-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000a-01f4-0000-3b8a-4cc800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D91 Associantion Rules"."RULE_LIFT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-3b8a-4cc800000000-m7d726af5-0cbe-1000-ba67-0ae9166e0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/7d726ad2-0cbe-1000-ba67-0ae9166e0000.xml#m7d726af5-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000000b-01f4-0000-11cd-95cd00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["11 - OAA Integration"."Fact - Association Rule"."Rule Support"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-11cd-95cd00000000-m7d74b4e1-0cbe-1000-ba67-0ae9166e0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/7d74b4db-0cbe-1000-ba67-0ae9166e0000.xml#m7d74b4e1-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000c-01f4-0000-fc72-525300000000" name="Expr">
+<ExprText><![CDATA["%1"* 100]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D91 Associantion Rules"."RULE_SUPPORT"* 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-fc72-525300000000-m7d726af6-0cbe-1000-ba67-0ae9166e0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/7d726ad2-0cbe-1000-ba67-0ae9166e0000.xml#m7d726af6-0cbe-1000-ba67-0ae9166e0000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/7d726ad2-0cbe-1000-ba67-0ae9166e0000.xml#m7d726ad2-0cbe-1000-ba67-0ae9166e0000">
+</Link>
+<WhereClause mdsid="m0000000d-01f4-0000-03fa-eae900000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m0000000e-01f4-0000-208a-328900000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m0000000f-01f4-0000-b026-f53600000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

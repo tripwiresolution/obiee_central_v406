@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m00000047-249f-14e2-b095-7f0000010000" name="Bbil End Cust" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/00000045-249f-14e2-b095-7f0000010000.xml#m00000045-249f-14e2-b095-7f0000010000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-65d7-2e6900000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y11 - Other Demos"."Bbil End Cust"."Endcust Id"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-65d7-2e6900000000-m00000048-249f-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/00000045-249f-14e2-b095-7f0000010000.xml#m00000048-249f-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-811d-ebbd00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_END_CUST"."ENDCUST_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-811d-ebbd00000000-m0000000a-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/00000008-23f4-14e2-b095-7f0000010000.xml#m0000000a-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-d7be-4cdb00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y11 - Other Demos"."Bbil End Cust"."Endcustname"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-d7be-4cdb00000000-m00000049-249f-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/00000045-249f-14e2-b095-7f0000010000.xml#m00000049-249f-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-4ea5-b1b400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."BBILL"."BBIL_END_CUST"."ENDCUSTNAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-4ea5-b1b400000000-m00000009-23f4-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/00000008-23f4-14e2-b095-7f0000010000.xml#m00000009-23f4-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/00000008-23f4-14e2-b095-7f0000010000.xml#m00000008-23f4-14e2-b095-7f0000010000">
+</Link>
+<WhereClause mdsid="m00000005-01f4-0000-9721-f54600000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000006-01f4-0000-8e56-0ecc00000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m00000007-01f4-0000-4500-c81f00000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

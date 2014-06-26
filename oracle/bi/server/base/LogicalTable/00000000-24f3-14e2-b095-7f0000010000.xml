@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m00000000-24f3-14e2-b095-7f0000010000" name="Telco Facts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/00000034-249f-14e2-b095-7f0000010000.xml#m00000034-249f-14e2-b095-7f0000010000">
+<LogicalColumn mdsid="m00000003-24f3-14e2-b095-7f0000010000" name="Actualchurn" isWriteable="false">
+<MeasureDefn mdsid="m00000000-2994-14e2-b095-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m00000001-2994-14e2-b095-7f0000010000" name="AggRule_2050:2854321401465824" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-06ca-95ee00000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y11 - Other Demos"."Telco Facts"."Actualchurn")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-06ca-95ee00000000-m00000003-24f3-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/00000000-24f3-14e2-b095-7f0000010000.xml#m00000003-24f3-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m00000018-24f3-14e2-b095-7f0000010000" name="AD_3900:2852471401465833">
+<Expr mdsid="m00000002-01f4-0000-8a48-451000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."ACTUALCHURN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-8a48-451000000000-m8000003b-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m8000003b-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m00000008-24f3-14e2-b095-7f0000010000" name="Cost" isWriteable="false">
+<MeasureDefn mdsid="m40000000-2991-14e2-b095-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m40000001-2991-14e2-b095-7f0000010000" name="AggRule_2050:2854241401465824" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-9ed6-507e00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y11 - Other Demos"."Telco Facts"."Cost")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-9ed6-507e00000000-m00000008-24f3-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/00000000-24f3-14e2-b095-7f0000010000.xml#m00000008-24f3-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m0000001d-24f3-14e2-b095-7f0000010000" name="AD_3900:2852521401465833">
+<Expr mdsid="m00000004-01f4-0000-7b65-68d400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."COST"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-7b65-68d400000000-m80000040-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m80000040-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m0000000d-24f3-14e2-b095-7f0000010000" name="Predictedchurn" isWriteable="false">
+<MeasureDefn mdsid="m00000002-2994-14e2-b095-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m00000003-2994-14e2-b095-7f0000010000" name="AggRule_2050:2854341401465824" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-3c5c-801100000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y11 - Other Demos"."Telco Facts"."Predictedchurn")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-3c5c-801100000000-m0000000d-24f3-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/00000000-24f3-14e2-b095-7f0000010000.xml#m0000000d-24f3-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m00000022-24f3-14e2-b095-7f0000010000" name="AD_3900:2852571401465833">
+<Expr mdsid="m00000006-01f4-0000-8f12-1d1c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."PREDICTEDCHURN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-8f12-1d1c00000000-m80000045-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m80000045-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m0000000f-24f3-14e2-b095-7f0000010000" name="Profit" isWriteable="false">
+<MeasureDefn mdsid="m40000002-2991-14e2-b095-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m40000003-2991-14e2-b095-7f0000010000" name="AggRule_2050:2854261401465824" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-6497-5acd00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y11 - Other Demos"."Telco Facts"."Profit")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-6497-5acd00000000-m0000000f-24f3-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/00000000-24f3-14e2-b095-7f0000010000.xml#m0000000f-24f3-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m00000024-24f3-14e2-b095-7f0000010000" name="AD_3900:2852591401465833">
+<Expr mdsid="m00000008-01f4-0000-a160-41c600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."PROFIT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-a160-41c600000000-m80000047-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m80000047-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m00000011-24f3-14e2-b095-7f0000010000" name="Revenue" isWriteable="false">
+<MeasureDefn mdsid="m40000004-2991-14e2-b095-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m40000005-2991-14e2-b095-7f0000010000" name="AggRule_2050:2854281401465824" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-d8e0-d33e00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y11 - Other Demos"."Telco Facts"."Revenue")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-d8e0-d33e00000000-m00000011-24f3-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/00000000-24f3-14e2-b095-7f0000010000.xml#m00000011-24f3-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m00000026-24f3-14e2-b095-7f0000010000" name="AD_3900:2852611401465833">
+<Expr mdsid="m0000000a-01f4-0000-a93d-4dd400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."REVENUE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-a93d-4dd400000000-m80000049-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m80000049-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m00000016-24f3-14e2-b095-7f0000010000" name="Totalcomplaints" isWriteable="false">
+<MeasureDefn mdsid="m40000006-2991-14e2-b095-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m40000007-2991-14e2-b095-7f0000010000" name="AggRule_2050:2854301401465824" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-6a13-bcf900000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y11 - Other Demos"."Telco Facts"."Totalcomplaints")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-6a13-bcf900000000-m00000016-24f3-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/00000000-24f3-14e2-b095-7f0000010000.xml#m00000016-24f3-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m0000002b-24f3-14e2-b095-7f0000010000" name="AD_3900:2852661401465833">
+<Expr mdsid="m0000000c-01f4-0000-1e45-dde900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."TOTALCOMPLAINTS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-1e45-dde900000000-m8000004e-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m8000004e-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80000002-29a7-14e2-b095-7f0000010000" name="# Of Customers" isWriteable="false">
+<MeasureDefn mdsid="m40000000-29aa-14e2-b095-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m40000001-29aa-14e2-b095-7f0000010000" name="AggRule_2050:2854521401465824" isDefault="true">
+<Expr mdsid="m0000000d-01f4-0000-84ee-70e700000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "Y11 - Other Demos"."Telco Facts"."# Of Customers")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-84ee-70e700000000-m80000002-29a7-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/00000000-24f3-14e2-b095-7f0000010000.xml#m80000002-29a7-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80000003-29a7-14e2-b095-7f0000010000" name="AD_3900:2854421401465833">
+<Expr mdsid="m0000000e-01f4-0000-6fae-707300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."CUSTOMER_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-6fae-707300000000-m80000041-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m80000041-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mc0000000-29a7-14e2-b095-7f0000010000" name="# Of Plans" isWriteable="false">
+<MeasureDefn mdsid="m40000002-29aa-14e2-b095-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m40000003-29aa-14e2-b095-7f0000010000" name="AggRule_2050:2854541401465824" isDefault="true">
+<Expr mdsid="m0000000f-01f4-0000-a8d7-986700000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "Y11 - Other Demos"."Telco Facts"."# Of Plans")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-a8d7-986700000000-mc0000000-29a7-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/00000000-24f3-14e2-b095-7f0000010000.xml#mc0000000-29a7-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mc0000001-29a7-14e2-b095-7f0000010000" name="AD_3900:2854461401465833">
+<Expr mdsid="m00000010-01f4-0000-5e0c-5f6100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."PLANS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-5e0c-5f6100000000-m80000044-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m80000044-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mc0000004-29a7-14e2-b095-7f0000010000" name="# Of Products" isWriteable="false">
+<MeasureDefn mdsid="m40000004-29aa-14e2-b095-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m40000005-29aa-14e2-b095-7f0000010000" name="AggRule_2050:2854561401465824" isDefault="true">
+<Expr mdsid="m00000011-01f4-0000-44f8-ed2900000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "Y11 - Other Demos"."Telco Facts"."# Of Products")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-44f8-ed2900000000-mc0000004-29a7-14e2-b095-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/00000000-24f3-14e2-b095-7f0000010000.xml#mc0000004-29a7-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mc0000005-29a7-14e2-b095-7f0000010000" name="AD_3900:2854501401465833">
+<Expr mdsid="m00000012-01f4-0000-16cb-a40500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."PRODUCT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-16cb-a40500000000-m80000046-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m80000046-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m00000000-24f3-14e2-b095-7f0000010000-m00000002-24f3-14e2-b095-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/00000002-24f3-14e2-b095-7f0000010000.xml#m00000002-24f3-14e2-b095-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m49d0783e-0c86-1000-87e5-0af502b20000" name="GET_DBMS_STAT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/49d05120-0c86-1000-87e5-0af502b20000.xml#m49d05120-0c86-1000-87e5-0af502b20000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-10c8-70a400000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - Db Structure"."GET_DBMS_STAT Dummy Dim"."Column"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-10c8-70a400000000-m4b540af2-0c86-1000-87e5-0af502b20000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/49d05120-0c86-1000-87e5-0af502b20000.xml#m4b540af2-0c86-1000-87e5-0af502b20000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-707d-17eb00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."GET_DBMS_STAT"."S_COLUMN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-707d-17eb00000000-m4a0df661-0c86-1000-87e5-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/49af0d80-0c86-1000-87e5-0af502b20000.xml#m4a0df661-0c86-1000-87e5-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-fed3-9c4d00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - Db Structure"."GET_DBMS_STAT Dummy Dim"."Schema"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-fed3-9c4d00000000-m4b540af6-0c86-1000-87e5-0af502b20000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/49d05120-0c86-1000-87e5-0af502b20000.xml#m4b540af6-0c86-1000-87e5-0af502b20000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-dcda-22ca00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."GET_DBMS_STAT"."S_SCHEMA"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-dcda-22ca00000000-m4a0b8560-0c86-1000-87e5-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/49af0d80-0c86-1000-87e5-0af502b20000.xml#m4a0b8560-0c86-1000-87e5-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-3702-545400000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - Db Structure"."GET_DBMS_STAT Dummy Dim"."Table"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-3702-545400000000-m4b540afa-0c86-1000-87e5-0af502b20000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/49d05120-0c86-1000-87e5-0af502b20000.xml#m4b540afa-0c86-1000-87e5-0af502b20000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-d597-f57200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."GET_DBMS_STAT"."S_TABLE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-d597-f57200000000-m4a0e92a1-0c86-1000-87e5-0af502b20000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/49af0d80-0c86-1000-87e5-0af502b20000.xml#m4a0e92a1-0c86-1000-87e5-0af502b20000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/49af0d80-0c86-1000-87e5-0af502b20000.xml#m49af0d80-0c86-1000-87e5-0af502b20000">
+</Link>
+<WhereClause mdsid="m00000007-01f4-0000-a56d-8fc400000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000008-01f4-0000-a7d8-bef700000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m00000009-01f4-0000-b01d-d2d500000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

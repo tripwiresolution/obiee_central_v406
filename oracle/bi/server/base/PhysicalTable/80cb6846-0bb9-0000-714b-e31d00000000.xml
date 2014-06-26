@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cb6846-0bb9-0000-714b-e31d00000000" name="F30 Facts Quotas" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" pollFreq="0" x="1831" y="1223" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cb6813-0bb9-0000-714b-e31d00000000.xml#m80cb6813-0bb9-0000-714b-e31d00000000">
+<Description><![CDATA[Quotas Fact Alias: Stores the fact information at channel, month and product grain.]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SAMP_QUOTAS_F]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cb6aa7-0bbb-0000-714b-e31d00000000" name="CHNL_KEY" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6813-0bb9-0000-714b-e31d00000000.xml#m80cb68b0-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Channel Key: Joins to Channel_Key of Channels dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6aa8-0bbb-0000-714b-e31d00000000" name="VALUE" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6813-0bb9-0000-714b-e31d00000000.xml#m80cb68b1-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Value: Stores Quotas value as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6aa9-0bbb-0000-714b-e31d00000000" name="MTH_KEY" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6813-0bb9-0000-714b-e31d00000000.xml#m80cb68b2-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Month Key: Joins to Mth_Key of Time dimension table (Mth grain).]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6aaa-0bbb-0000-714b-e31d00000000" name="PROD_KEY" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cb6813-0bb9-0000-714b-e31d00000000.xml#m80cb68b3-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Product Key: Joins to Prod_Key of Products dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cb6b0f-0bc0-0000-714b-e31d00000000" name="Pr Key">
+<RefColumns>
+<RefColumn refId="m80cb6b0f-0bc0-0000-714b-e31d00000000-m80cb6aaa-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6846-0bb9-0000-714b-e31d00000000.xml#m80cb6aaa-0bbb-0000-714b-e31d00000000"/>
+<RefColumn refId="m80cb6b0f-0bc0-0000-714b-e31d00000000-m80cb6aa9-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6846-0bb9-0000-714b-e31d00000000.xml#m80cb6aa9-0bbb-0000-714b-e31d00000000"/>
+<RefColumn refId="m80cb6b0f-0bc0-0000-714b-e31d00000000-m80cb6aa7-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6846-0bb9-0000-714b-e31d00000000.xml#m80cb6aa7-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m80cb6b6e-0bbe-0000-714b-e31d00000000" name="F20 Fact Quotas_FKey#2" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb6828-0bb9-0000-714b-e31d00000000.xml#m80cb6af2-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cb6b6e-0bbe-0000-714b-e31d00000000-m80cb6aa7-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6846-0bb9-0000-714b-e31d00000000.xml#m80cb6aa7-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cb6b6f-0bbe-0000-714b-e31d00000000" name="F50 Facts Quotas_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb681e-0bb9-0000-714b-e31d00000000.xml#m80cb6ae8-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cb6b6f-0bbe-0000-714b-e31d00000000-m80cb6aa9-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6846-0bb9-0000-714b-e31d00000000.xml#m80cb6aa9-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cb6b70-0bbe-0000-714b-e31d00000000" name="F50 Facts Quotas_FKey#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb6822-0bb9-0000-714b-e31d00000000.xml#m80cb6aed-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cb6b70-0bbe-0000-714b-e31d00000000-m80cb6aaa-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6846-0bb9-0000-714b-e31d00000000.xml#m80cb6aaa-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cb6b71-0bbe-0000-714b-e31d00000000" name="F50 Facts Quotas_FKey#2" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb6823-0bb9-0000-714b-e31d00000000.xml#m80cb6aee-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cb6b71-0bbe-0000-714b-e31d00000000-m80cb6aaa-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb6846-0bb9-0000-714b-e31d00000000.xml#m80cb6aaa-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

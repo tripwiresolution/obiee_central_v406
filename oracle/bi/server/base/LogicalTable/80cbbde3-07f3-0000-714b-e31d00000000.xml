@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cbbde3-07f3-0000-714b-e31d00000000" name="F3 Stock Levels" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="145" y="583" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cbbdd2-07d0-0000-714b-e31d00000000.xml#m80cbbdd2-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cbbecc-07d6-0000-714b-e31d00000000" name="Last Update Date" isWriteable="false">
+<AttrDefn mdsid="m80cbc00a-0f3c-0000-714b-e31d00000000" name="AD_3900:620821273059825">
+<Expr mdsid="m00000001-01f4-0000-0766-853400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BIFOD"."WAREHOUSE_STOCK_LEVELS"."LAST_UPDATE_DATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-0766-853400000000-m80cbb740-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbb6f8-0bb9-0000-714b-e31d00000000.xml#m80cbb740-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cbbecf-07d6-0000-714b-e31d00000000" name="Product ID" isWriteable="false">
+<AttrDefn mdsid="m80cbc00d-0f3c-0000-714b-e31d00000000" name="AD_3900:620851273059825">
+<Expr mdsid="m00000002-01f4-0000-93db-3a6d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BIFOD"."WAREHOUSE_STOCK_LEVELS"."PRODUCT_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-93db-3a6d00000000-m80cbb742-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbb6f8-0bb9-0000-714b-e31d00000000.xml#m80cbb742-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cbbed0-07d6-0000-714b-e31d00000000" name="Quantity On Hand" isWriteable="false">
+<MeasureDefn mdsid="m80cbc241-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cbcdb6-0802-0000-714b-e31d00000000" name="AggRule_2050:658541273089502" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-34e0-0e8a00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("X5 - OLTP Source (Fusion Order)"."F3 Stock Levels"."Quantity On Hand")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-34e0-0e8a00000000-m80cbbed0-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cbbde3-07f3-0000-714b-e31d00000000.xml#m80cbbed0-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cbc00e-0f3c-0000-714b-e31d00000000" name="AD_3900:620861273059825">
+<Expr mdsid="m00000004-01f4-0000-1f98-72e400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BIFOD"."WAREHOUSE_STOCK_LEVELS"."QUANTITY_ON_HAND"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-1f98-72e400000000-m80cbb743-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbb6f8-0bb9-0000-714b-e31d00000000.xml#m80cbb743-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cbbed1-07d6-0000-714b-e31d00000000" name="# of Warehouses" isWriteable="false">
+<MeasureDefn mdsid="m80cbcf28-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cbcf29-0802-0000-714b-e31d00000000" name="AggRule_2050:661481273150810" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-622a-668100000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "X5 - OLTP Source (Fusion Order)"."F3 Stock Levels"."# of Warehouses")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-622a-668100000000-m80cbbed1-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cbbde3-07f3-0000-714b-e31d00000000.xml#m80cbbed1-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cbc00f-0f3c-0000-714b-e31d00000000" name="AD_3900:620871273059825">
+<Expr mdsid="m00000006-01f4-0000-5d2a-01f900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BIFOD"."WAREHOUSE_STOCK_LEVELS"."WAREHOUSE_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-5d2a-01f900000000-m80cbb744-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cbb6f8-0bb9-0000-714b-e31d00000000.xml#m80cbb744-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cbbf34-07d8-0000-714b-e31d00000000" name="PRODUCT_ID" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cbbf34-07d8-0000-714b-e31d00000000-m80cbbecf-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cbbde3-07f3-0000-714b-e31d00000000.xml#m80cbbecf-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cbbde3-07f3-0000-714b-e31d00000000-m80cbc050-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cbc050-07f5-0000-714b-e31d00000000.xml#m80cbc050-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

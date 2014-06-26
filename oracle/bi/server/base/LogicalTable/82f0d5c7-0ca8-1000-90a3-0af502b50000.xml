@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0d5c7-0ca8-1000-90a3-0af502b50000" name="Fact - Collections" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd5-0ca8-1000-90a3-0af502b50000.xml#m82f0acd5-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0d5c8-0ca8-1000-90a3-0af502b50000" name="Avg Days to Collect" isWriteable="false">
+<MeasureDefn mdsid="m82f1496e-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19745-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736431391789375" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-2147-c0d800000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y04 - Demo Other Advanced Collections"."Fact - Collections"."Avg Days to Collect")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-2147-c0d800000000-m82f0d5c8-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d5c7-0ca8-1000-90a3-0af502b50000.xml#m82f0d5c8-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f28245-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757581391789375">
+<Expr mdsid="m00000002-01f4-0000-6e90-291e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_NON_DISPUTE_TRENDS"."AVG_DAYS_TO_COLLECT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-6e90-291e00000000-m82dde886-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde882-0ca8-1000-90a3-0af502b50000.xml#m82dde886-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d5c9-0ca8-1000-90a3-0af502b50000" name="Outstanding Debt" isWriteable="false">
+<MeasureDefn mdsid="m82f1496f-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19746-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736441391789375" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-7673-cd4700000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y04 - Demo Other Advanced Collections"."Fact - Collections"."Outstanding Debt")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-7673-cd4700000000-m82f0d5c9-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d5c7-0ca8-1000-90a3-0af502b50000.xml#m82f0d5c9-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f28246-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757591391789375">
+<Expr mdsid="m00000004-01f4-0000-3f50-cbb400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_NON_DISPUTE_TRENDS"."OUTSTANDING_DEBT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-3f50-cbb400000000-m82dde887-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde882-0ca8-1000-90a3-0af502b50000.xml#m82dde887-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d5ca-0ca8-1000-90a3-0af502b50000" name="Outstanding Debt &gt; 90 Days" isWriteable="false">
+<MeasureDefn mdsid="m82f14970-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19747-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736451391789375" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-7b12-6df400000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y04 - Demo Other Advanced Collections"."Fact - Collections"."Outstanding Debt > 90 Days")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-7b12-6df400000000-m82f0d5ca-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d5c7-0ca8-1000-90a3-0af502b50000.xml#m82f0d5ca-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f28247-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757601391789375">
+<Expr mdsid="m00000006-01f4-0000-256a-3aba00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_NON_DISPUTE_TRENDS"."OUTSTANDING_DEBT_90"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-256a-3aba00000000-m82dde888-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde882-0ca8-1000-90a3-0af502b50000.xml#m82dde888-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d5cb-0ca8-1000-90a3-0af502b50000" name="Value Promises Taken" isWriteable="false">
+<MeasureDefn mdsid="m82f14971-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19748-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736461391789375" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-7379-cffa00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y04 - Demo Other Advanced Collections"."Fact - Collections"."Value Promises Taken")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-7379-cffa00000000-m82f0d5cb-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d5c7-0ca8-1000-90a3-0af502b50000.xml#m82f0d5cb-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f28248-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757611391789375">
+<Expr mdsid="m00000008-01f4-0000-c176-170000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_NON_DISPUTE_TRENDS"."PROMISES_TAKEN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-c176-170000000000-m82dde889-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde882-0ca8-1000-90a3-0af502b50000.xml#m82dde889-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d5cc-0ca8-1000-90a3-0af502b50000" name="Value Promises Broken" isWriteable="false">
+<MeasureDefn mdsid="m82f14972-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19749-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736471391789375" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-7df2-64b700000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y04 - Demo Other Advanced Collections"."Fact - Collections"."Value Promises Broken")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-7df2-64b700000000-m82f0d5cc-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d5c7-0ca8-1000-90a3-0af502b50000.xml#m82f0d5cc-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f28249-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757621391789375">
+<Expr mdsid="m0000000a-01f4-0000-231d-7ce400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_NON_DISPUTE_TRENDS"."PROMISES_BROKEN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-231d-7ce400000000-m82dde88a-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde882-0ca8-1000-90a3-0af502b50000.xml#m82dde88a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d5cd-0ca8-1000-90a3-0af502b50000" name="Value Promises Collected" isWriteable="false">
+<MeasureDefn mdsid="m82f14973-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1974a-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736481391789375" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-4344-b3d200000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y04 - Demo Other Advanced Collections"."Fact - Collections"."Value Promises Collected")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-4344-b3d200000000-m82f0d5cd-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d5c7-0ca8-1000-90a3-0af502b50000.xml#m82f0d5cd-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2824a-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757631391789375">
+<Expr mdsid="m0000000c-01f4-0000-45c8-642b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_NON_DISPUTE_TRENDS"."PROMISES_COLLECTED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-45c8-642b00000000-m82dde88b-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde882-0ca8-1000-90a3-0af502b50000.xml#m82dde88b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0d5c7-0ca8-1000-90a3-0af502b50000-m82f31dd4-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f31dd4-0ca8-1000-90a3-0af502b50000.xml#m82f31dd4-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

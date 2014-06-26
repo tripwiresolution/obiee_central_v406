@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m575b6947-0c2d-1000-87a7-0af06a760000" name="19 Distance Group" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/575b68b0-0c2d-1000-87a7-0af06a760000.xml#m575b68b0-0c2d-1000-87a7-0af06a760000">
+<LogicalColumn mdsid="m575b6948-0c2d-1000-87a7-0af06a760000" name="Distance Group" isWriteable="false">
+<Description><![CDATA[Distance Intervals, every 250 Miles, for Flight Segment]]></Description>
+<AttrDefn mdsid="m575b6c43-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372101338887867">
+<Expr mdsid="m00000001-01f4-0000-6e25-5db900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["06 - TimesTen Agg Tables".""."BI_AGGS_TT"."SA_19_DGro00039CE0"."Distance_G00039B9F"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-6e25-5db900000000-m6ac89012-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/6ac89010-0c61-1000-99f2-7f0000010000.xml#m6ac89012-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6949-0c2d-1000-87a7-0af06a760000" name="Distance Class" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000002-01f4-0000-3c58-97cd00000000" name="Expr">
+<ExprText><![CDATA[ CASE  WHEN "%1" IN ('0250-0499 Miles', 'Less Than 250 Miles') THEN 'Below 500 Miles' WHEN "%1" IN ('0500-0749 Miles', '0750-0999 Miles') THEN 'Btw 500 and 1000 Miles' ELSE 'Over 1000 Miles' END ]]></ExprText>
+<ExprTextDesc><![CDATA[ CASE  WHEN "X0 - Airlines"."19 Distance Group"."Distance Group" IN ('0250-0499 Miles', 'Less Than 250 Miles') THEN 'Below 500 Miles' WHEN "X0 - Airlines"."19 Distance Group"."Distance Group" IN ('0500-0749 Miles', '0750-0999 Miles') THEN 'Btw 500 and 1000 Miles' ELSE 'Over 1000 Miles' END ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-3c58-97cd00000000-m575b6948-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/575b6947-0c2d-1000-87a7-0af06a760000.xml#m575b6948-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m575b6c44-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372111338887867">
+<Expr mdsid="m00000003-01f4-0000-0b0f-9a9c00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m575b6bb1-0c2d-1000-87a7-0af06a760000" name="Primary" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6bb1-0c2d-1000-87a7-0af06a760000-m575b6948-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6947-0c2d-1000-87a7-0af06a760000.xml#m575b6948-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m575b6947-0c2d-1000-87a7-0af06a760000-m575b6d40-0c2d-1000-87a7-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/575b6d40-0c2d-1000-87a7-0af06a760000.xml#m575b6d40-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalTableSource refId="m575b6947-0c2d-1000-87a7-0af06a760000-m66f3e160-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/66f3e160-0c61-1000-99f2-7f0000010000.xml#m66f3e160-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b6947-0c2d-1000-87a7-0af06a760000-m6add77a0-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/6add77a0-0c61-1000-99f2-7f0000010000.xml#m6add77a0-0c61-1000-99f2-7f0000010000"/>
+<RefLogicalTableSource refId="m575b6947-0c2d-1000-87a7-0af06a760000-mf0479dd0-0cb1-1000-9163-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/f0479dd0-0cb1-1000-9163-0af502b50000.xml#mf0479dd0-0cb1-1000-9163-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

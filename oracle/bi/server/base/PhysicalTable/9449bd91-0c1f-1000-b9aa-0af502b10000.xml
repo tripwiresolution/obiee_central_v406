@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m9449bd91-0c1f-1000-b9aa-0af502b10000" name="SAMP_REVENUE_F" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" x="262" y="1552" uri="VALUEOF(BI_EE_HOME)/sample/SampleAppFiles/Data/SAMP_REVENUE_F.xml" maxConn="0" containerRef="/oracle/bi/server/base/Schema/9449bd23-0c1f-1000-b9aa-0af502b10000.xml#m9449bd23-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Reveue Fact table: Stores the fact information at the lowest grain.]]></Description>
+<PhysicalColumn mdsid="m9449bd92-0c1f-1000-b9aa-0af502b10000" name="Bill_Qtr_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Bill Quarter Key: Joins to Qtr_Key of Time dimension table (Qtr grain).]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bd93-0c1f-1000-b9aa-0af502b10000" name="Cust_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Customer Key: Joins to Cust_Key column of Customers dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bd94-0c1f-1000-b9aa-0af502b10000" name="Revenue" iconIndex="32768" dataType="DOUBLE" specialType="none">
+<Description><![CDATA[Revenue: Stores revenue information as a double.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bd95-0c1f-1000-b9aa-0af502b10000" name="Order_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Order Number: Uniquely identifies each record in the fact table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bd96-0c1f-1000-b9aa-0af502b10000" name="Bill_Day_Dt" dataType="DATE" specialType="none">
+<Description><![CDATA[Bill Day Date: Joins to Calendar_date of Time dimension table (Day grain).]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bd97-0c1f-1000-b9aa-0af502b10000" name="Order_Day_Dt" dataType="DATETIME" specialType="none">
+<Description><![CDATA[Order Day Date: Stores the information in date format.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bd98-0c1f-1000-b9aa-0af502b10000" name="Prod_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Product Key: Joins to Prod_Key of Products dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bd99-0c1f-1000-b9aa-0af502b10000" name="Empl_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Employee Key: Joins to Empl_Key column of Employees dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bd9a-0c1f-1000-b9aa-0af502b10000" name="Units" iconIndex="32768" dataType="INT" specialType="none">
+<Description><![CDATA[Units: Stores units information as an integer.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bd9b-0c1f-1000-b9aa-0af502b10000" name="Bill_Mth_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Bill Month Key: Joins to Mth_Key of Time dimension table (Mth grain).]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bd9c-0c1f-1000-b9aa-0af502b10000" name="Paid_Day_Dt" dataType="DATETIME" specialType="none">
+<Description><![CDATA[Paid Day Date: Stores the information in date format.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bd9d-0c1f-1000-b9aa-0af502b10000" name="Currency" dataType="VARCHAR" precision="3" specialType="none">
+<Description><![CDATA[Currency: Stores currency information like AUD, USD, EUR..]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bd9e-0c1f-1000-b9aa-0af502b10000" name="Discnt_Value" iconIndex="32768" dataType="DOUBLE" specialType="none">
+<Description><![CDATA[Discount Value: Stores discount value as a double.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bd9f-0c1f-1000-b9aa-0af502b10000" name="Shipto_Addr_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Shipto Address Key: Joins to Address_Key column of Addresses dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bda0-0c1f-1000-b9aa-0af502b10000" name="Discnt_Rate" iconIndex="32768" dataType="DOUBLE" specialType="none">
+<Description><![CDATA[Discount Rate: Stores discount rate as an integer.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bda1-0c1f-1000-b9aa-0af502b10000" name="Office_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Office Key: Joins to Office_Key of Employees dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bda2-0c1f-1000-b9aa-0af502b10000" name="Order_Status" dataType="VARCHAR" precision="20" specialType="none">
+<Description><![CDATA[Order Status: Stores order status values like '1-Booked','2-Fulfilled' and so on.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bda3-0c1f-1000-b9aa-0af502b10000" name="Order_Type" dataType="VARCHAR" precision="20" specialType="none">
+<Description><![CDATA[Order Type:Stores order type value like 'Secure','Express' and so on.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bda4-0c1f-1000-b9aa-0af502b10000" name="Ship_Day_Dt" dataType="DATE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bda5-0c1f-1000-b9aa-0af502b10000" name="Cost_Variable" iconIndex="32768" dataType="INT" specialType="none">
+<Description><![CDATA[Revenue: Stores revenue information as a double.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bda6-0c1f-1000-b9aa-0af502b10000" name="Cost_Fixed" iconIndex="32768" dataType="DOUBLE" specialType="none">
+<Description><![CDATA[Revenue: Stores revenue information as a double.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449bda7-0c1f-1000-b9aa-0af502b10000" name="Src_Order_Number" dataType="VARCHAR" precision="20" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m9449bf76-0c1f-1000-b9aa-0af502b10000" name="Cust_Key">
+<RefColumns>
+<RefColumn refId="m9449bf76-0c1f-1000-b9aa-0af502b10000-m9449bd95-0c1f-1000-b9aa-0af502b10000" columnRef="/oracle/bi/server/base/PhysicalTable/9449bd91-0c1f-1000-b9aa-0af502b10000.xml#m9449bd95-0c1f-1000-b9aa-0af502b10000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

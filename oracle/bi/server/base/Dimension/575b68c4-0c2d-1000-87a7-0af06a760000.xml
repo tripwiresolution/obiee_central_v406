@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m575b68c4-0c2d-1000-87a7-0af06a760000" name="02 Week Attrib" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="false" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/575b68c4-0c2d-1000-87a7-0af06a760000.xml#m575b6abd-0c2d-1000-87a7-0af06a760000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/575b68b0-0c2d-1000-87a7-0af06a760000.xml#m575b68b0-0c2d-1000-87a7-0af06a760000">
+<LogicalLevel mdsid="m575b6abd-0c2d-1000-87a7-0af06a760000" name="02 Week Attrib Total" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;02 Week Attrib Total&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="m575b6abd-0c2d-1000-87a7-0af06a760000_m575b6abe-0c2d-1000-87a7-0af06a760000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/575b68c4-0c2d-1000-87a7-0af06a760000.xml#m575b6abe-0c2d-1000-87a7-0af06a760000"/>
+</RefChildLevels>
+</LogicalLevel>
+<LogicalLevel mdsid="m575b6abe-0c2d-1000-87a7-0af06a760000" name="02 Day of Week" isGTA="false" isFDUC="true" memberCount="7" levelConst="&apos;02 Day of Week&apos;">
+<LogicalKey mdsid="m575b6bac-0c2d-1000-87a7-0af06a760000" name="Day Of Week" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6bac-0c2d-1000-87a7-0af06a760000-m575b6a00-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69ff-0c2d-1000-87a7-0af06a760000.xml#m575b6a00-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m575b6abe-0c2d-1000-87a7-0af06a760000_m575b6abc-0c2d-1000-87a7-0af06a760000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/575b68c4-0c2d-1000-87a7-0af06a760000.xml#m575b6abc-0c2d-1000-87a7-0af06a760000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m575b6abe-0c2d-1000-87a7-0af06a760000-m575b6a00-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69ff-0c2d-1000-87a7-0af06a760000.xml#m575b6a00-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6abe-0c2d-1000-87a7-0af06a760000-m575b6a02-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69ff-0c2d-1000-87a7-0af06a760000.xml#m575b6a02-0c2d-1000-87a7-0af06a760000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m575b6abc-0c2d-1000-87a7-0af06a760000" name="02 Day Detail" isGTA="false" isFDUC="true" memberCount="1584" levelConst="&apos;02 Day Detail&apos;">
+<LogicalKey mdsid="m575b6bab-0c2d-1000-87a7-0af06a760000" name="02 Time Week Attributes Detail_Key" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6bab-0c2d-1000-87a7-0af06a760000-m575b6a01-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69ff-0c2d-1000-87a7-0af06a760000.xml#m575b6a01-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m575b6abc-0c2d-1000-87a7-0af06a760000-m575b6a01-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69ff-0c2d-1000-87a7-0af06a760000.xml#m575b6a01-0c2d-1000-87a7-0af06a760000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

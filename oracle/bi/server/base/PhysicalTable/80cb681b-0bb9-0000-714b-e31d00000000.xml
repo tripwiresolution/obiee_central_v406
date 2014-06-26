@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cb681b-0bb9-0000-714b-e31d00000000" name="SAMP_TIME_QTR_D" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" x="269" y="1560" uri="VALUEOF(BI_EE_HOME)/sample/SampleAppFiles/Data/SAMP_TIME_QTR_D.xml" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000">
+<Description><![CDATA[Time dimension table at quarter grain. Stores one record for each quarter.]]></Description>
+<PhysicalColumn mdsid="m80cb6919-0bbb-0000-714b-e31d00000000" name="CAL_HALF" dataType="INT" specialType="none">
+<Description><![CDATA[Calendar Half: Stores value 1 or 2]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb691a-0bbb-0000-714b-e31d00000000" name="CAL_QTR" dataType="INT" specialType="none">
+<Description><![CDATA[Calendar Quarter: Stores value 1,2,3 or 4]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb691b-0bbb-0000-714b-e31d00000000" name="CAL_YEAR" dataType="INT" specialType="none">
+<Description><![CDATA[Calendar Year: Stores value in the format YYYY]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb691c-0bbb-0000-714b-e31d00000000" name="DAYS_IN_QTR" dataType="INT" specialType="none">
+<Description><![CDATA[Days in Quarter : Stores value 90, 91 or 92]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb691d-0bbb-0000-714b-e31d00000000" name="FSCL_HALF" dataType="DOUBLE" specialType="none">
+<Description><![CDATA[Fiscal Half : Stores the value 1 or 2]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb691e-0bbb-0000-714b-e31d00000000" name="FSCL_QTR" dataType="DOUBLE" specialType="none">
+<Description><![CDATA[Fiscal Quarter : Stores the value 1, 2, 3 or 4]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb691f-0bbb-0000-714b-e31d00000000" name="FSCL_YEAR" dataType="DOUBLE" specialType="none">
+<Description><![CDATA[Fiscal Year : Stores the fiscal year in the format YYYY]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6920-0bbb-0000-714b-e31d00000000" name="JULIAN_QTR_NUM" dataType="INT" specialType="none">
+<Description><![CDATA[Julian Quarter Number : Stores the quarter number in the Julian Calendar format. 
+Eg:- 151, 152 and so on.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6921-0bbb-0000-714b-e31d00000000" name="PER_NAME_HALF" dataType="VARCHAR" precision="8" specialType="none">
+<Description><![CDATA[Period Name Half: Stores the Half year information in the format YYYY HYHalfYearNumber.
+Eg:- 2009 HY1]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6922-0bbb-0000-714b-e31d00000000" name="PER_NAME_QTR" dataType="VARCHAR" precision="7" specialType="none">
+<Description><![CDATA[Period Name Quarter: Stores the quarter information in the format YYYY QQuarterNumber.
+Eg:- 2009 Q1]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6923-0bbb-0000-714b-e31d00000000" name="PER_NAME_YEAR" dataType="VARCHAR" precision="4" specialType="none">
+<Description><![CDATA[Period Name Year: Stores the year information in the format YYYY.
+Eg:- 2009]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cb6924-0bbb-0000-714b-e31d00000000" name="QTR_KEY" dataType="DOUBLE" specialType="none">
+<Description><![CDATA[Quarter Key: Surrogate key of the table. Stores the quarter information in the format YYYY0Quarternumber.
+Eg:- 200901]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m833e7a52-0c8a-1000-8bc9-0af502b30000" name="TOTAL_VALUE" dataType="VARCHAR" precision="20" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cb6ae5-0bc0-0000-714b-e31d00000000" name="CAL_QTR">
+<RefColumns>
+<RefColumn refId="m80cb6ae5-0bc0-0000-714b-e31d00000000-m80cb6924-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cb681b-0bb9-0000-714b-e31d00000000.xml#m80cb6924-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

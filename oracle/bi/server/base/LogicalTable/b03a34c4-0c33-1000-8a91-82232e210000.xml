@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="mb03a34c4-0c33-1000-8a91-82232e210000" name="WC Exec Measures" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/802b289f-07d0-0000-714b-e31d00000000.xml#m802b289f-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="mb0a41a12-0c33-1000-8a91-82232e210000" name="Is Error" isWriteable="false">
+<AttrDefn mdsid="mb0a41a13-0c33-1000-8a91-82232e210000" name="AD_3900:2447601341614641">
+<Expr mdsid="m00000001-01f4-0000-d78e-86a300000000" name="Expr">
+<ExprText><![CDATA[CASE WHEN EVALUATE('LENGTH(TRIM(TRANSLATE(%1,%2,%3)))',"%1",'0123456789',' ') IS NULL THEN 
+(CASE WHEN Cast("%1" AS INTEGER) = 0 THEN 'Yes' ELSE 'No' END)
+ELSE
+'Yes'
+END]]></ExprText>
+<ExprTextDesc><![CDATA[CASE WHEN EVALUATE('LENGTH(TRIM(TRANSLATE(%1,%2,%3)))',"10 - System DB (ORCL)"."Catalog"."dbo"."WC_EXEC_Facts"."ROWCOUNT_MSG",'0123456789',' ') IS NULL THEN 
+(CASE WHEN Cast("10 - System DB (ORCL)"."Catalog"."dbo"."WC_EXEC_Facts"."ROWCOUNT_MSG" AS INTEGER) = 0 THEN 'Yes' ELSE 'No' END)
+ELSE
+'Yes'
+END]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-d78e-86a300000000-maff9f767-0c33-1000-8a91-82232e210000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/aff9f760-0c33-1000-8a91-82232e210000.xml#maff9f767-0c33-1000-8a91-82232e210000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb0906b04-0c33-1000-8a91-82232e210000" name="Row Count Msg" isWriteable="false">
+<AttrDefn mdsid="mb0906b05-0c33-1000-8a91-82232e210000" name="AD_3900:2447521341614512">
+<Expr mdsid="m00000002-01f4-0000-9a7a-ebf200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."WC_EXEC_Facts"."ROWCOUNT_MSG"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-9a7a-ebf200000000-maff9f767-0c33-1000-8a91-82232e210000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/aff9f760-0c33-1000-8a91-82232e210000.xml#maff9f767-0c33-1000-8a91-82232e210000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb03a34cc-0c33-1000-8a91-82232e210000" name="Analysis Count" isWriteable="false">
+<MeasureDefn mdsid="mb093c660-0c33-1000-8a91-82232e210000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mb093c661-0c33-1000-8a91-82232e210000" name="AggRule_2050:2447551341614535" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-987c-4b0100000000" name="Expr">
+<ExprText><![CDATA[ COUNT("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT("10 - Usage Tracking"."WC Exec Measures"."Analysis Count")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-987c-4b0100000000-mb03a34cc-0c33-1000-8a91-82232e210000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/b03a34c4-0c33-1000-8a91-82232e210000.xml#mb03a34cc-0c33-1000-8a91-82232e210000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb03a34d4-0c33-1000-8a91-82232e210000" name="AD_3900:2446731341613947">
+<Expr mdsid="m00000004-01f4-0000-9b1f-194200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."WC_EXEC_Facts"."REPORT_PATH"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-9b1f-194200000000-maff9f766-0c33-1000-8a91-82232e210000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/aff9f760-0c33-1000-8a91-82232e210000.xml#maff9f766-0c33-1000-8a91-82232e210000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m2a720c30-0c34-1000-8a9c-7f0000010000" name="Invalid Analysis" isWriteable="false">
+<MeasureDefn mdsid="m2d3794d0-0c34-1000-8a9c-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m2d37e2f0-0c34-1000-8a9c-7f0000010000" name="AggRule_2050:2450411341823751" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-4f1b-4f8f00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("10 - Usage Tracking"."WC Exec Measures"."Invalid Analysis")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-4f1b-4f8f00000000-m2a720c30-0c34-1000-8a9c-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/b03a34c4-0c33-1000-8a91-82232e210000.xml#m2a720c30-0c34-1000-8a9c-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m2a723340-0c34-1000-8a9c-7f0000010000" name="AD_3900:2450351341823495">
+<Expr mdsid="m00000006-01f4-0000-f5cd-6b7400000000" name="Expr">
+<ExprText><![CDATA[CASE WHEN EVALUATE('LENGTH(TRIM(TRANSLATE(%1,%2,%3)))',"%1",'0123456789',' ') IS NULL THEN 
+(CASE WHEN Cast("%1" AS INTEGER) = 0 THEN 1 ELSE 0 END)
+ELSE
+0
+END]]></ExprText>
+<ExprTextDesc><![CDATA[CASE WHEN EVALUATE('LENGTH(TRIM(TRANSLATE(%1,%2,%3)))',"10 - System DB (ORCL)"."Catalog"."dbo"."WC_EXEC_Facts"."ROWCOUNT_MSG",'0123456789',' ') IS NULL THEN 
+(CASE WHEN Cast("10 - System DB (ORCL)"."Catalog"."dbo"."WC_EXEC_Facts"."ROWCOUNT_MSG" AS INTEGER) = 0 THEN 1 ELSE 0 END)
+ELSE
+0
+END]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-f5cd-6b7400000000-maff9f767-0c33-1000-8a91-82232e210000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/aff9f760-0c33-1000-8a91-82232e210000.xml#maff9f767-0c33-1000-8a91-82232e210000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m2d3990a0-0c34-1000-8a9c-7f0000010000" name="Valid Analysis" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000007-01f4-0000-1088-b1f000000000" name="Expr">
+<ExprText><![CDATA["%1" -"%2" ]]></ExprText>
+<ExprTextDesc><![CDATA["10 - Usage Tracking"."WC Exec Measures"."Analysis Count" -"10 - Usage Tracking"."WC Exec Measures"."Invalid Analysis" ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-1088-b1f000000000-mb03a34cc-0c33-1000-8a91-82232e210000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/b03a34c4-0c33-1000-8a91-82232e210000.xml#mb03a34cc-0c33-1000-8a91-82232e210000"/>
+<RefObject refId="m00000007-01f4-0000-1088-b1f000000000-m2a720c30-0c34-1000-8a9c-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/b03a34c4-0c33-1000-8a91-82232e210000.xml#m2a720c30-0c34-1000-8a9c-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m2d39b7b2-0c34-1000-8a9c-7f0000010000" name="AD_3900:2450491341823751">
+<Expr mdsid="m00000008-01f4-0000-05c9-6cc400000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="mb03a34c4-0c33-1000-8a91-82232e210000-mb03a34c6-0c33-1000-8a91-82232e210000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/b03a34c6-0c33-1000-8a91-82232e210000.xml#mb03a34c6-0c33-1000-8a91-82232e210000"/>
+</RefTableSources>
+</LogicalTable>

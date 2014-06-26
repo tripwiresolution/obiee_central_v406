@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="ma7c7de30-0c84-1000-9d09-0af502b20000" name="D71 Orders TimeZone Converted" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" pollFreq="0" x="1234" y="386" rowCount="71000.0" lastUpdated="2013-08-13 08:00:07" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/a78a11e0-0c84-1000-9d09-0af502b20000.xml#ma78a11e0-0c84-1000-9d09-0af502b20000">
+<Description><![CDATA[Orders Ship To Alias: This is an alias of the Addresses dimension table which joins to the Ship_To_Address key in all the fact aliases]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SELECT ORDER_KEY, ORDER_DTIME1_DB_TZ,
+to_char(SESSIONTIMEZONE) AS DB_TIMEZONE,'valueof(NQ_SESSION.TIMEZONE_VALUE)' AS SELECTED_TZ,
+cast(TO_CHAR((ORDER_DTIME1_DB_TZ AT TIME ZONE 'valueof(NQ_SESSION.TIMEZONE_VALUE)'), 'DD-MON-YYYY HH:MI:SS PM') as timestamp) AS ORDER_DTIME1_SELECTED_TZ, 
+cast(TO_CHAR(ORDER_DTIME2_CUSTOM_TZ, 'DD-MON-YYYY HH:MI:SS PM') as timestamp) AS ORDER_DTIME2_CUSTOM_TZ, ORDER_DTIME2_TIMEZONE,
+cast(TO_CHAR((ORDER_DTIME2_CUSTOM_TZ AT LOCAL), 'DD-MON-YYYY HH:MI:SS pm') as timestamp) AS ORDER_DTIME2_AT_DB_TZ,
+cast(TO_CHAR((ORDER_DTIME2_CUSTOM_TZ AT TIME ZONE 'valueof(NQ_SESSION.TIMEZONE_VALUE)'), 'DD-MON-YYYY HH:MI:SS PM') as timestamp) AS ORDER_DTIME2_SELECTED_TZ
+from samp_revenue_f]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="ma7d12d01-0c84-1000-9d09-0af502b20000" name="ORDER_DTIME1_DB_TZ" dataType="DATETIME" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/a78a11e0-0c84-1000-9d09-0af502b20000.xml#ma78a11ea-0c84-1000-9d09-0af502b20000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="ma7d12d02-0c84-1000-9d09-0af502b20000" name="Order_key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/a78a11e0-0c84-1000-9d09-0af502b20000.xml#ma78a11eb-0c84-1000-9d09-0af502b20000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="maf34ced3-0c84-1000-9d09-0af502b20000" name="DB_TIMEZONE" dataType="VARCHAR" precision="200" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/a78a11e0-0c84-1000-9d09-0af502b20000.xml#maf34ced2-0c84-1000-9d09-0af502b20000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="maf360753-0c84-1000-9d09-0af502b20000" name="ORDER_DTIME1_SELECTED_TZ" dataType="DATETIME" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/a78a11e0-0c84-1000-9d09-0af502b20000.xml#maf360752-0c84-1000-9d09-0af502b20000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="maf365573-0c84-1000-9d09-0af502b20000" name="ORDER_DTIME2_AT_DB_TZ" dataType="DATETIME" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/a78a11e0-0c84-1000-9d09-0af502b20000.xml#maf365572-0c84-1000-9d09-0af502b20000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="maf36caa3-0c84-1000-9d09-0af502b20000" name="ORDER_DTIME2_TIMEZONE" dataType="VARCHAR" precision="200" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/a78a11e0-0c84-1000-9d09-0af502b20000.xml#maf36caa2-0c84-1000-9d09-0af502b20000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb0139613-0c84-1000-9d09-0af502b20000" name="SELECTED_TZ" dataType="VARCHAR" precision="200" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/a78a11e0-0c84-1000-9d09-0af502b20000.xml#mb0139612-0c84-1000-9d09-0af502b20000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb0ee65b3-0c84-1000-9d09-0af502b20000" name="ORDER_DTIME2_SELECTED_TZ" dataType="DATETIME" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/a78a11e0-0c84-1000-9d09-0af502b20000.xml#mb0ee65b2-0c84-1000-9d09-0af502b20000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb128af93-0c84-1000-9d09-0af502b20000" name="ORDER_DTIME2_CUSTOM_TZ" dataType="DATETIME" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/a78a11e0-0c84-1000-9d09-0af502b20000.xml#mb128af92-0c84-1000-9d09-0af502b20000">
+</PhysicalColumn>
+<PhysicalKey mdsid="ma7df0fb0-0c84-1000-9d09-0af502b20000" name="D71 Orders TimeZone Converted_Key">
+<RefColumns>
+<RefColumn refId="ma7df0fb0-0c84-1000-9d09-0af502b20000-ma7d12d02-0c84-1000-9d09-0af502b20000" columnRef="/oracle/bi/server/base/PhysicalTable/a7c7de30-0c84-1000-9d09-0af502b20000.xml#ma7d12d02-0c84-1000-9d09-0af502b20000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

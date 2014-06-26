@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m82f2f6df-0ca8-1000-90a3-0af502b50000" name="MOJ_PO_DISTRIBUTIONS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/82f0d50e-0ca8-1000-90a3-0af502b50000.xml#m82f0d50e-0ca8-1000-90a3-0af502b50000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-4c74-303900000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y03 - Demo LG Invoice Holds"."Dim - Purchase Order"."PO Distribution ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-4c74-303900000000-m82f0d50f-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d50e-0ca8-1000-90a3-0af502b50000.xml#m82f0d50f-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-516d-221800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_DISTRIBUTIONS"."PO_DISTRIBUTION_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-516d-221800000000-m82ddc171-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc16f-0ca8-1000-90a3-0af502b50000.xml#m82ddc171-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-75f0-5f2000000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y03 - Demo LG Invoice Holds"."Dim - Purchase Order"."PO Line Total Quantity Invoiced"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-75f0-5f2000000000-m82f0d510-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d50e-0ca8-1000-90a3-0af502b50000.xml#m82f0d510-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-4d21-ecaf00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_DISTRIBUTIONS"."QUANTITY_BILLED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-4d21-ecaf00000000-m82ddc173-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc16f-0ca8-1000-90a3-0af502b50000.xml#m82ddc173-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-db04-d3cb00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y03 - Demo LG Invoice Holds"."Dim - Purchase Order"."PO Line Total Quantity Delivered"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-db04-d3cb00000000-m82f0d511-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d50e-0ca8-1000-90a3-0af502b50000.xml#m82f0d511-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-4c7a-638900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_DISTRIBUTIONS"."QUANTITY_DELIVERED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-4c7a-638900000000-m82ddc174-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc16f-0ca8-1000-90a3-0af502b50000.xml#m82ddc174-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000007-01f4-0000-19cb-a6e800000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y03 - Demo LG Invoice Holds"."Dim - Purchase Order"."PO Line Total Quantity Ordered"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-19cb-a6e800000000-m82f0d512-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d50e-0ca8-1000-90a3-0af502b50000.xml#m82f0d512-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000008-01f4-0000-3f4a-14a100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_DISTRIBUTIONS"."QUANTITY_ORDERED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-3f4a-14a100000000-m82ddc175-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc16f-0ca8-1000-90a3-0af502b50000.xml#m82ddc175-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000009-01f4-0000-7d5b-e0d500000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y03 - Demo LG Invoice Holds"."Dim - Purchase Order"."Requestor ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-7d5b-e0d500000000-m82f0d513-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d50e-0ca8-1000-90a3-0af502b50000.xml#m82f0d513-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000a-01f4-0000-495d-034000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_DISTRIBUTIONS"."REQUESTOR_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-495d-034000000000-m82ddc176-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc16f-0ca8-1000-90a3-0af502b50000.xml#m82ddc176-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000000b-01f4-0000-e998-9b0f00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y03 - Demo LG Invoice Holds"."Dim - Purchase Order"."Name of Requestor"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-e998-9b0f00000000-m82f0d514-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d50e-0ca8-1000-90a3-0af502b50000.xml#m82f0d514-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000c-01f4-0000-5db3-2c8300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_DISTRIBUTIONS"."REQUESTOR_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-5db3-2c8300000000-m82ddc177-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc16f-0ca8-1000-90a3-0af502b50000.xml#m82ddc177-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000000d-01f4-0000-5026-5b1e00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y03 - Demo LG Invoice Holds"."Dim - Purchase Order"."PO Line ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-5026-5b1e00000000-m82f0d515-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d50e-0ca8-1000-90a3-0af502b50000.xml#m82f0d515-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000e-01f4-0000-9be9-fe7300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_LINES"."PO_LINE_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-9be9-fe7300000000-m82ddc181-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc17f-0ca8-1000-90a3-0af502b50000.xml#m82ddc181-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000000f-01f4-0000-9120-3ce200000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y03 - Demo LG Invoice Holds"."Dim - Purchase Order"."PO Line Number"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-9120-3ce200000000-m82f0d516-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d50e-0ca8-1000-90a3-0af502b50000.xml#m82f0d516-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000010-01f4-0000-6589-975000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_LINES"."PO_LINE_NUM"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-6589-975000000000-m82ddc182-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc17f-0ca8-1000-90a3-0af502b50000.xml#m82ddc182-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000011-01f4-0000-bd76-dc9600000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y03 - Demo LG Invoice Holds"."Dim - Purchase Order"."PO Unit Price"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-bd76-dc9600000000-m82f0d517-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d50e-0ca8-1000-90a3-0af502b50000.xml#m82f0d517-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000012-01f4-0000-67a6-f80200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_LINES"."PO_UNIT_PRICE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-67a6-f80200000000-m82ddc184-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc17f-0ca8-1000-90a3-0af502b50000.xml#m82ddc184-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000013-01f4-0000-d368-07f500000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y03 - Demo LG Invoice Holds"."Dim - Purchase Order"."Buyer ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-d368-07f500000000-m82f0d518-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d50e-0ca8-1000-90a3-0af502b50000.xml#m82f0d518-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000014-01f4-0000-3bd0-ec0500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_HEADERS"."BUYER_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-3bd0-ec0500000000-m82ddc17a-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc179-0ca8-1000-90a3-0af502b50000.xml#m82ddc17a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000015-01f4-0000-1531-2b2400000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y03 - Demo LG Invoice Holds"."Dim - Purchase Order"."Buyer Name"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-1531-2b2400000000-m82f0d519-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d50e-0ca8-1000-90a3-0af502b50000.xml#m82f0d519-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000016-01f4-0000-7741-1b7900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_HEADERS"."BUYER_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-7741-1b7900000000-m82ddc17b-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc179-0ca8-1000-90a3-0af502b50000.xml#m82ddc17b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000017-01f4-0000-bb55-8c7800000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y03 - Demo LG Invoice Holds"."Dim - Purchase Order"."PO Number"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-bb55-8c7800000000-m82f0d51a-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d50e-0ca8-1000-90a3-0af502b50000.xml#m82f0d51a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000018-01f4-0000-28b8-d77e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_HEADERS"."PO_NUM"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000018-01f4-0000-28b8-d77e00000000-m82ddc17d-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc179-0ca8-1000-90a3-0af502b50000.xml#m82ddc17d-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000019-01f4-0000-f521-6b3200000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y03 - Demo LG Invoice Holds"."Dim - Purchase Order"."PO Header ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000019-01f4-0000-f521-6b3200000000-m82f0d51b-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d50e-0ca8-1000-90a3-0af502b50000.xml#m82f0d51b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000001a-01f4-0000-76af-6fa700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_HEADERS"."PO_HEADER_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001a-01f4-0000-76af-6fa700000000-m82ddc17e-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc179-0ca8-1000-90a3-0af502b50000.xml#m82ddc17e-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000001b-01f4-0000-d1b7-b83d00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y03 - Demo LG Invoice Holds"."Dim - Purchase Order"."PO Distribution Number"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001b-01f4-0000-d1b7-b83d00000000-m82f0d51c-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d50e-0ca8-1000-90a3-0af502b50000.xml#m82f0d51c-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000001c-01f4-0000-70d4-529c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_PO_DISTRIBUTIONS"."PO_DISTRIBUTION_NUM"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001c-01f4-0000-70d4-529c00000000-m82ddc178-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc16f-0ca8-1000-90a3-0af502b50000.xml#m82ddc178-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/82ddc16f-0ca8-1000-90a3-0af502b50000.xml#m82ddc16f-0ca8-1000-90a3-0af502b50000">
+<Join type="Inner" cardinality="MANY TO ONE" physicalTable1Ref="/oracle/bi/server/base/PhysicalTable/82ddc16f-0ca8-1000-90a3-0af502b50000.xml#m82ddc16f-0ca8-1000-90a3-0af502b50000" physicalTable2Ref="/oracle/bi/server/base/PhysicalTable/82ddc17f-0ca8-1000-90a3-0af502b50000.xml#m82ddc17f-0ca8-1000-90a3-0af502b50000" physicalJoinRef="/oracle/bi/server/base/PhysicalTable/82ddc16f-0ca8-1000-90a3-0af502b50000.xml#m82de3663-0ca8-1000-90a3-0af502b50000"/>
+</Link>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/82ddc179-0ca8-1000-90a3-0af502b50000.xml#m82ddc179-0ca8-1000-90a3-0af502b50000">
+<Join type="Inner" cardinality=" ONE TO MANY" physicalTable1Ref="/oracle/bi/server/base/PhysicalTable/82ddc179-0ca8-1000-90a3-0af502b50000.xml#m82ddc179-0ca8-1000-90a3-0af502b50000" physicalTable2Ref="/oracle/bi/server/base/PhysicalTable/82ddc17f-0ca8-1000-90a3-0af502b50000.xml#m82ddc17f-0ca8-1000-90a3-0af502b50000" physicalJoinRef="/oracle/bi/server/base/PhysicalTable/82ddc17f-0ca8-1000-90a3-0af502b50000.xml#m82de3664-0ca8-1000-90a3-0af502b50000"/>
+</Link>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/82ddc17f-0ca8-1000-90a3-0af502b50000.xml#m82ddc17f-0ca8-1000-90a3-0af502b50000">
+<Join type="Inner" cardinality=" ONE TO MANY" physicalTable1Ref="/oracle/bi/server/base/PhysicalTable/82ddc17f-0ca8-1000-90a3-0af502b50000.xml#m82ddc17f-0ca8-1000-90a3-0af502b50000" physicalTable2Ref="/oracle/bi/server/base/PhysicalTable/82ddc16f-0ca8-1000-90a3-0af502b50000.xml#m82ddc16f-0ca8-1000-90a3-0af502b50000" physicalJoinRef="/oracle/bi/server/base/PhysicalTable/82ddc16f-0ca8-1000-90a3-0af502b50000.xml#m82de3663-0ca8-1000-90a3-0af502b50000"/>
+<Join type="Inner" cardinality="MANY TO ONE" physicalTable1Ref="/oracle/bi/server/base/PhysicalTable/82ddc17f-0ca8-1000-90a3-0af502b50000.xml#m82ddc17f-0ca8-1000-90a3-0af502b50000" physicalTable2Ref="/oracle/bi/server/base/PhysicalTable/82ddc179-0ca8-1000-90a3-0af502b50000.xml#m82ddc179-0ca8-1000-90a3-0af502b50000" physicalJoinRef="/oracle/bi/server/base/PhysicalTable/82ddc17f-0ca8-1000-90a3-0af502b50000.xml#m82de3664-0ca8-1000-90a3-0af502b50000"/>
+</Link>
+<WhereClause mdsid="m0000001d-01f4-0000-dd15-97a000000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m0000001e-01f4-0000-b581-c51500000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m0000001f-01f4-0000-e020-f95200000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

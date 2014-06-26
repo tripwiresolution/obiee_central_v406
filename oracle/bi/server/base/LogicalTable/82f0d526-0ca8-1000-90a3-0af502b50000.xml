@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0d526-0ca8-1000-90a3-0af502b50000" name="Fact - Invoice Line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd4-0ca8-1000-90a3-0af502b50000.xml#m82f0acd4-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0d527-0ca8-1000-90a3-0af502b50000" name="Invoice Unit Price" isWriteable="false">
+<MeasureDefn mdsid="m82f14956-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f17085-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736191391789375" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-d404-ba6100000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y03 - Demo LG Invoice Holds"."Fact - Invoice Line"."Invoice Unit Price")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-d404-ba6100000000-m82f0d527-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d526-0ca8-1000-90a3-0af502b50000.xml#m82f0d527-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f281b4-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756131391789375">
+<Expr mdsid="m00000002-01f4-0000-8e3b-7a1200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_INVOICE_DISTRIBUTIONS"."INVOICE_UNIT_PRICE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-8e3b-7a1200000000-m82ddc153-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc14d-0ca8-1000-90a3-0af502b50000.xml#m82ddc153-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d528-0ca8-1000-90a3-0af502b50000" name="Invoice Line Qty Invoiced" isWriteable="false">
+<MeasureDefn mdsid="m82f14957-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f17086-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736201391789375" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-82bb-ae3300000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y03 - Demo LG Invoice Holds"."Fact - Invoice Line"."Invoice Line Qty Invoiced")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-82bb-ae3300000000-m82f0d528-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d526-0ca8-1000-90a3-0af502b50000.xml#m82f0d528-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f281b5-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756141391789375">
+<Expr mdsid="m00000004-01f4-0000-ba10-45b000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_INVOICE_DISTRIBUTIONS"."QUANTITY_INVOICED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-ba10-45b000000000-m82ddc156-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc14d-0ca8-1000-90a3-0af502b50000.xml#m82ddc156-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d529-0ca8-1000-90a3-0af502b50000" name="Invoice Line Amount" isWriteable="false">
+<MeasureDefn mdsid="m82f14958-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f17087-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736211391789375" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-f52b-9ef800000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y03 - Demo LG Invoice Holds"."Fact - Invoice Line"."Invoice Line Amount")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-f52b-9ef800000000-m82f0d529-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d526-0ca8-1000-90a3-0af502b50000.xml#m82f0d529-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f281b6-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756151391789375">
+<Expr mdsid="m00000006-01f4-0000-27d9-8f2000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_INVOICE_DISTRIBUTIONS"."INVOICE_LINE_AMOUNT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-27d9-8f2000000000-m82ddc14f-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc14d-0ca8-1000-90a3-0af502b50000.xml#m82ddc14f-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d52a-0ca8-1000-90a3-0af502b50000" name="No. Holds" isWriteable="false">
+<MeasureDefn mdsid="m82f14959-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19730-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736221391789375" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-5bfc-003700000000" name="Expr">
+<ExprText><![CDATA[ COUNT("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT("Y03 - Demo LG Invoice Holds"."Fact - Invoice Line"."No. Holds")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-5bfc-003700000000-m82f0d52a-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d526-0ca8-1000-90a3-0af502b50000.xml#m82f0d52a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f281b7-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756161391789375">
+<Expr mdsid="m00000008-01f4-0000-b545-11f200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_INVOICE_HOLDS"."HOLD_DATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-b545-11f200000000-m82ddc164-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc163-0ca8-1000-90a3-0af502b50000.xml#m82ddc164-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d52b-0ca8-1000-90a3-0af502b50000" name="# Price Holds" isWriteable="false">
+<MeasureDefn mdsid="m82f1495a-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19731-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736231391789375" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-c87a-634f00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y03 - Demo LG Invoice Holds"."Fact - Invoice Line"."# Price Holds")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-c87a-634f00000000-m82f0d52b-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d526-0ca8-1000-90a3-0af502b50000.xml#m82f0d52b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f281b8-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756171391789375">
+<Expr mdsid="m0000000a-01f4-0000-fda2-5b4e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_INVOICE_HOLDS"."NUM_PRICE_HOLDS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-fda2-5b4e00000000-m82ddc16c-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc163-0ca8-1000-90a3-0af502b50000.xml#m82ddc16c-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d52c-0ca8-1000-90a3-0af502b50000" name="# Qty Holds" isWriteable="false">
+<MeasureDefn mdsid="m82f1495b-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19732-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736241391789375" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-9ce4-e50c00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y03 - Demo LG Invoice Holds"."Fact - Invoice Line"."# Qty Holds")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-9ce4-e50c00000000-m82f0d52c-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d526-0ca8-1000-90a3-0af502b50000.xml#m82f0d52c-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f281b9-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756181391789375">
+<Expr mdsid="m0000000c-01f4-0000-00e6-e84300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."DEMO_APT_INVOICE"."DEMO_APT_INVOICE_HOLDS"."NUM_QTY_HOLDS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-00e6-e84300000000-m82ddc16b-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc163-0ca8-1000-90a3-0af502b50000.xml#m82ddc16b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0d526-0ca8-1000-90a3-0af502b50000-m82f2f6e1-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f2f6e1-0ca8-1000-90a3-0af502b50000.xml#m82f2f6e1-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m6974ab3a-0c84-1000-8c5b-0ae4f18a0000" name="Claim Comments" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/6974aaf0-0c84-1000-8c5b-0ae4f18a0000.xml#m6974aaf0-0c84-1000-8c5b-0ae4f18a0000">
+<LogicalColumn mdsid="m6974ab3b-0c84-1000-8c5b-0ae4f18a0000" name="Complaint" isWriteable="false">
+<AttrDefn mdsid="m6974d243-0c84-1000-8c5b-0ae4f18a0000" name="AD_3900:2659991376284448">
+<Expr mdsid="m00000001-01f4-0000-48c6-e20d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."DIM_CLAIM_COMMENTS"."COMPLAINT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-48c6-e20d00000000-m697101c1-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101bf-0c84-1000-8c5b-0ae4f18a0000.xml#m697101c1-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m6974ab3c-0c84-1000-8c5b-0ae4f18a0000" name="Complaint Description" isWriteable="false">
+<AttrDefn mdsid="m6974d244-0c84-1000-8c5b-0ae4f18a0000" name="AD_3900:2660001376284448">
+<Expr mdsid="m00000002-01f4-0000-c885-01f300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."DIM_CLAIM_COMMENTS"."COMPLAINT_DESCRIPTION"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-c885-01f300000000-m697101c2-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101bf-0c84-1000-8c5b-0ae4f18a0000.xml#m697101c2-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m6974ab3d-0c84-1000-8c5b-0ae4f18a0000" name="Recordid" isWriteable="false">
+<AttrDefn mdsid="m6974d245-0c84-1000-8c5b-0ae4f18a0000" name="AD_3900:2660011376284448">
+<Expr mdsid="m00000003-01f4-0000-6250-c9ba00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."DIM_CLAIM_COMMENTS"."RECORDID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-6250-c9ba00000000-m697101c0-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101bf-0c84-1000-8c5b-0ae4f18a0000.xml#m697101c0-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m6974ab3e-0c84-1000-8c5b-0ae4f18a0000" name="Terms" isWriteable="false">
+<AttrDefn mdsid="m6974d246-0c84-1000-8c5b-0ae4f18a0000" name="AD_3900:2660021376284448">
+<Expr mdsid="m00000004-01f4-0000-a9ae-311200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."DIM_CLAIM_COMMENTS"."TERMS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-a9ae-311200000000-m697101c3-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101bf-0c84-1000-8c5b-0ae4f18a0000.xml#m697101c3-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m6974abc3-0c84-1000-8c5b-0ae4f18a0000" name="SYS_C0018406" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m6974abc3-0c84-1000-8c5b-0ae4f18a0000-m6974ab3d-0c84-1000-8c5b-0ae4f18a0000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/6974ab3a-0c84-1000-8c5b-0ae4f18a0000.xml#m6974ab3d-0c84-1000-8c5b-0ae4f18a0000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m6974ab3a-0c84-1000-8c5b-0ae4f18a0000-m6974d29a-0c84-1000-8c5b-0ae4f18a0000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/6974d29a-0c84-1000-8c5b-0ae4f18a0000.xml#m6974d29a-0c84-1000-8c5b-0ae4f18a0000"/>
+</RefTableSources>
+</LogicalTable>

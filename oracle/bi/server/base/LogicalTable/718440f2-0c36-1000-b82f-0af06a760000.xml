@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m718440f2-0c36-1000-b82f-0af06a760000" name="GL Income Statement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="529" y="176" subjectAreaRef="/oracle/bi/server/base/BusinessModel/718440a0-0c36-1000-b82f-0af06a760000.xml#m718440a0-0c36-1000-b82f-0af06a760000">
+<LogicalColumn mdsid="m718440f3-0c36-1000-b82f-0af06a760000" name="PandL Lvl 3" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/718440f2-0c36-1000-b82f-0af06a760000.xml#m71844104-0c36-1000-b82f-0af06a760000">
+<AttrDefn mdsid="m71844261-0c36-1000-b82f-0af06a760000" name="AD_3900:2508871342797226">
+<Expr mdsid="m00000001-01f4-0000-71ad-fbc400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Flat"."BISAMPL2".""."SampleGL_Flattened"."Gen3,Accounts"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-71ad-fbc400000000-m71809751-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/7180973a-0c36-1000-b82f-0af06a760000.xml#m71809751-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440f4-0c36-1000-b82f-0af06a760000" name="Gen3 PandL - Member Key" isWriteable="false">
+<AttrDefn mdsid="m71844262-0c36-1000-b82f-0af06a760000" name="AD_3900:2508881342797226">
+<Expr mdsid="m00000002-01f4-0000-0e9f-4d6600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen3,Accounts - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-0e9f-4d6600000000-m7180991b-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m7180991b-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440f5-0c36-1000-b82f-0af06a760000" name="PandL Lvl 4" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/718440f2-0c36-1000-b82f-0af06a760000.xml#m71844105-0c36-1000-b82f-0af06a760000">
+<AttrDefn mdsid="m71844263-0c36-1000-b82f-0af06a760000" name="AD_3900:2508891342797226">
+<Expr mdsid="m00000003-01f4-0000-8aa8-7a9a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Flat"."BISAMPL2".""."SampleGL_Flattened"."Gen4,Accounts"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-8aa8-7a9a00000000-m71809755-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/7180973a-0c36-1000-b82f-0af06a760000.xml#m71809755-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440f6-0c36-1000-b82f-0af06a760000" name="Gen4 PandL - Member Key" isWriteable="false">
+<AttrDefn mdsid="m71844264-0c36-1000-b82f-0af06a760000" name="AD_3900:2508901342797226">
+<Expr mdsid="m00000004-01f4-0000-5b65-2d8800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen4,Accounts - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-5b65-2d8800000000-m7180991f-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m7180991f-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440f7-0c36-1000-b82f-0af06a760000" name="PandL Lvl 5" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/718440f2-0c36-1000-b82f-0af06a760000.xml#m71844106-0c36-1000-b82f-0af06a760000">
+<AttrDefn mdsid="m71844265-0c36-1000-b82f-0af06a760000" name="AD_3900:2508911342797226">
+<Expr mdsid="m00000005-01f4-0000-2fc6-361100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Flat"."BISAMPL2".""."SampleGL_Flattened"."Gen5,Accounts"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-2fc6-361100000000-m71809759-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/7180973a-0c36-1000-b82f-0af06a760000.xml#m71809759-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440f8-0c36-1000-b82f-0af06a760000" name="Gen5 PandL - Member Key" isWriteable="false">
+<AttrDefn mdsid="m71844266-0c36-1000-b82f-0af06a760000" name="AD_3900:2508921342797226">
+<Expr mdsid="m00000006-01f4-0000-1e4d-12c600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen5,Accounts - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-1e4d-12c600000000-m71809923-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m71809923-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440f9-0c36-1000-b82f-0af06a760000" name="PandL Lvl 6" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/718440f2-0c36-1000-b82f-0af06a760000.xml#m71844107-0c36-1000-b82f-0af06a760000">
+<AttrDefn mdsid="m71844267-0c36-1000-b82f-0af06a760000" name="AD_3900:2508931342797226">
+<Expr mdsid="m00000007-01f4-0000-c64f-200900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Flat"."BISAMPL2".""."SampleGL_Flattened"."Gen6,Accounts"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-c64f-200900000000-m7180975d-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/7180973a-0c36-1000-b82f-0af06a760000.xml#m7180975d-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440fa-0c36-1000-b82f-0af06a760000" name="Gen6 PandL - Member Key" isWriteable="false">
+<AttrDefn mdsid="m71844268-0c36-1000-b82f-0af06a760000" name="AD_3900:2508941342797226">
+<Expr mdsid="m00000008-01f4-0000-28c7-54cc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen6,Accounts - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-28c7-54cc00000000-m71809927-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m71809927-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440fb-0c36-1000-b82f-0af06a760000" name="PandL Lvl 7" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/718440f2-0c36-1000-b82f-0af06a760000.xml#m71844108-0c36-1000-b82f-0af06a760000">
+<AttrDefn mdsid="m71844269-0c36-1000-b82f-0af06a760000" name="AD_3900:2508951342797226">
+<Expr mdsid="m00000009-01f4-0000-6779-658c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Flat"."BISAMPL2".""."SampleGL_Flattened"."Gen7,Accounts"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-6779-658c00000000-m71809761-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/7180973a-0c36-1000-b82f-0af06a760000.xml#m71809761-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440fc-0c36-1000-b82f-0af06a760000" name="Gen7 PandL - Member Key" isWriteable="false">
+<AttrDefn mdsid="m7184426a-0c36-1000-b82f-0af06a760000" name="AD_3900:2508961342797226">
+<Expr mdsid="m0000000a-01f4-0000-e12c-1db100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen7,Accounts - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-e12c-1db100000000-m7180992b-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m7180992b-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440fd-0c36-1000-b82f-0af06a760000" name="PandL Lvl 8" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/718440f2-0c36-1000-b82f-0af06a760000.xml#m71844109-0c36-1000-b82f-0af06a760000">
+<AttrDefn mdsid="m7184426b-0c36-1000-b82f-0af06a760000" name="AD_3900:2508971342797226">
+<Expr mdsid="m0000000b-01f4-0000-4a0e-825800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Flat"."BISAMPL2".""."SampleGL_Flattened"."Gen8,Accounts"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-4a0e-825800000000-m71809765-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/7180973a-0c36-1000-b82f-0af06a760000.xml#m71809765-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440fe-0c36-1000-b82f-0af06a760000" name="Gen8 PandL - Member Key" isWriteable="false">
+<AttrDefn mdsid="m7184426c-0c36-1000-b82f-0af06a760000" name="AD_3900:2508981342797226">
+<Expr mdsid="m0000000c-01f4-0000-3b05-aa3700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen8,Accounts - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-3b05-aa3700000000-m7180992f-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m7180992f-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440ff-0c36-1000-b82f-0af06a760000" name="PandL Lvl 9" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/718440f2-0c36-1000-b82f-0af06a760000.xml#m71844109-0c36-1000-b82f-0af06a760000">
+<AttrDefn mdsid="m7184426d-0c36-1000-b82f-0af06a760000" name="AD_3900:2508991342797226">
+<Expr mdsid="m0000000d-01f4-0000-8b39-737800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Flat"."BISAMPL2".""."SampleGL_Flattened"."Gen9,Accounts"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-8b39-737800000000-m71809769-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/7180973a-0c36-1000-b82f-0af06a760000.xml#m71809769-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m71844100-0c36-1000-b82f-0af06a760000" name="Gen9 PandL - Member Key" isWriteable="false">
+<AttrDefn mdsid="m7184426e-0c36-1000-b82f-0af06a760000" name="AD_3900:2509001342797226">
+<Expr mdsid="m0000000e-01f4-0000-37ff-024400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen9,Accounts - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-37ff-024400000000-m71809933-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m71809933-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m71844101-0c36-1000-b82f-0af06a760000" name="PandL Lvl 10" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/718440f2-0c36-1000-b82f-0af06a760000.xml#m7184410a-0c36-1000-b82f-0af06a760000">
+<AttrDefn mdsid="m7184426f-0c36-1000-b82f-0af06a760000" name="AD_3900:2509011342797226">
+<Expr mdsid="m0000000f-01f4-0000-4097-e49d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Flat"."BISAMPL2".""."SampleGL_Flattened"."Gen10,Accounts"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-4097-e49d00000000-m7180976d-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/7180973a-0c36-1000-b82f-0af06a760000.xml#m7180976d-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m71844102-0c36-1000-b82f-0af06a760000" name="Gen10 PandL - Member Key" isWriteable="false">
+<AttrDefn mdsid="m71844270-0c36-1000-b82f-0af06a760000" name="AD_3900:2509021342797226">
+<Expr mdsid="m00000010-01f4-0000-54a5-195300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen10,Accounts - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-54a5-195300000000-m71809937-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m71809937-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m71844103-0c36-1000-b82f-0af06a760000" name="Gen10,Accounts - Member Key" isWriteable="false">
+<AttrDefn mdsid="m71844271-0c36-1000-b82f-0af06a760000" name="AD_3900:2509031342797226">
+<Expr mdsid="m00000011-01f4-0000-15d4-b70f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen10,Accounts - Member Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-15d4-b70f00000000-m71809937-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m71809937-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m71844104-0c36-1000-b82f-0af06a760000" name="Gen3,Accounts - Memnor" isWriteable="false">
+<AttrDefn mdsid="m71844272-0c36-1000-b82f-0af06a760000" name="AD_3900:2509041342797226">
+<Expr mdsid="m00000012-01f4-0000-7ffc-112e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen3,Accounts - Memnor"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-7ffc-112e00000000-m7180991a-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m7180991a-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m71844105-0c36-1000-b82f-0af06a760000" name="Gen4,Accounts - Memnor" isWriteable="false">
+<AttrDefn mdsid="m71844273-0c36-1000-b82f-0af06a760000" name="AD_3900:2509051342797226">
+<Expr mdsid="m00000013-01f4-0000-b2d4-ff7d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen4,Accounts - Memnor"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-b2d4-ff7d00000000-m7180991e-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m7180991e-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m71844106-0c36-1000-b82f-0af06a760000" name="Gen5,Accounts - Memnor" isWriteable="false">
+<AttrDefn mdsid="m71844274-0c36-1000-b82f-0af06a760000" name="AD_3900:2509061342797226">
+<Expr mdsid="m00000014-01f4-0000-3ee1-d68f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen5,Accounts - Memnor"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-3ee1-d68f00000000-m71809922-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m71809922-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m71844107-0c36-1000-b82f-0af06a760000" name="Gen6,Accounts - Memnor" isWriteable="false">
+<AttrDefn mdsid="m71844275-0c36-1000-b82f-0af06a760000" name="AD_3900:2509071342797226">
+<Expr mdsid="m00000015-01f4-0000-42a7-3fed00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen6,Accounts - Memnor"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-42a7-3fed00000000-m71809926-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m71809926-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m71844108-0c36-1000-b82f-0af06a760000" name="Gen7,Accounts - Memnor" isWriteable="false">
+<AttrDefn mdsid="m71844276-0c36-1000-b82f-0af06a760000" name="AD_3900:2509081342797226">
+<Expr mdsid="m00000016-01f4-0000-5728-0d8900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen7,Accounts - Memnor"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-5728-0d8900000000-m7180992a-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m7180992a-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m71844109-0c36-1000-b82f-0af06a760000" name="Gen8,Accounts - Memnor" isWriteable="false">
+<AttrDefn mdsid="m71844277-0c36-1000-b82f-0af06a760000" name="AD_3900:2509091342797226">
+<Expr mdsid="m00000017-01f4-0000-26e6-ac9000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen8,Accounts - Memnor"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-26e6-ac9000000000-m7180992e-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m7180992e-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m7184410a-0c36-1000-b82f-0af06a760000" name="Gen9,Accounts - Memnor" isWriteable="false">
+<AttrDefn mdsid="m71844278-0c36-1000-b82f-0af06a760000" name="AD_3900:2509101342797226">
+<Expr mdsid="m00000018-01f4-0000-b053-129000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen9,Accounts - Memnor"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000018-01f4-0000-b053-129000000000-m71809932-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m71809932-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m7184421b-0c36-1000-b82f-0af06a760000" name="Primary" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m7184421b-0c36-1000-b82f-0af06a760000-m718440f3-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440f2-0c36-1000-b82f-0af06a760000.xml#m718440f3-0c36-1000-b82f-0af06a760000"/>
+<RefLogicalColumn refId="m7184421b-0c36-1000-b82f-0af06a760000-m718440f5-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440f2-0c36-1000-b82f-0af06a760000.xml#m718440f5-0c36-1000-b82f-0af06a760000"/>
+<RefLogicalColumn refId="m7184421b-0c36-1000-b82f-0af06a760000-m718440f7-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440f2-0c36-1000-b82f-0af06a760000.xml#m718440f7-0c36-1000-b82f-0af06a760000"/>
+<RefLogicalColumn refId="m7184421b-0c36-1000-b82f-0af06a760000-m718440f9-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440f2-0c36-1000-b82f-0af06a760000.xml#m718440f9-0c36-1000-b82f-0af06a760000"/>
+<RefLogicalColumn refId="m7184421b-0c36-1000-b82f-0af06a760000-m718440fb-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440f2-0c36-1000-b82f-0af06a760000.xml#m718440fb-0c36-1000-b82f-0af06a760000"/>
+<RefLogicalColumn refId="m7184421b-0c36-1000-b82f-0af06a760000-m718440fd-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440f2-0c36-1000-b82f-0af06a760000.xml#m718440fd-0c36-1000-b82f-0af06a760000"/>
+<RefLogicalColumn refId="m7184421b-0c36-1000-b82f-0af06a760000-m718440ff-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440f2-0c36-1000-b82f-0af06a760000.xml#m718440ff-0c36-1000-b82f-0af06a760000"/>
+<RefLogicalColumn refId="m7184421b-0c36-1000-b82f-0af06a760000-m71844101-0c36-1000-b82f-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/718440f2-0c36-1000-b82f-0af06a760000.xml#m71844101-0c36-1000-b82f-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m718440f2-0c36-1000-b82f-0af06a760000-m71844298-0c36-1000-b82f-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/71844298-0c36-1000-b82f-0af06a760000.xml#m71844298-0c36-1000-b82f-0af06a760000"/>
+<RefLogicalTableSource refId="m718440f2-0c36-1000-b82f-0af06a760000-m71844299-0c36-1000-b82f-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/71844299-0c36-1000-b82f-0af06a760000.xml#m71844299-0c36-1000-b82f-0af06a760000"/>
+</RefTableSources>
+</LogicalTable>

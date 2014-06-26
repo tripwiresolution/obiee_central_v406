@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m67c31840-0c61-1000-99f2-7f0000010000" name="SA_Time_Mo00039CFB" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" cacheExpiry="86400" isSysGen="true" maxConn="0" containerRef="/oracle/bi/server/base/Schema/5758346a-0c2d-1000-87a7-0af06a760000.xml#m5758346a-0c2d-1000-87a7-0af06a760000" aggrConnPoolRef="/oracle/bi/server/base/ConnectionPool/57583464-0c2d-1000-87a7-0af06a760000.xml#m57583464-0c2d-1000-87a7-0af06a760000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SA_Time_Mo00039CFB]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m67c31842-0c61-1000-99f2-7f0000010000" name="Dep_Half00039C06" dataType="VARCHAR" precision="8" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m67c31843-0c61-1000-99f2-7f0000010000" name="Dep_Month00039C07" dataType="VARCHAR" precision="9" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m67c31844-0c61-1000-99f2-7f0000010000" name="Dep_Qtr00039C08" dataType="VARCHAR" precision="7" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m67c31845-0c61-1000-99f2-7f0000010000" name="Dep_Year00039C0A" dataType="VARCHAR" precision="4" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m67c31846-0c61-1000-99f2-7f0000010000" name="Cal_Half00039C0E" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m67c31847-0c61-1000-99f2-7f0000010000" name="Month_of_Y00039C0F" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m67c31848-0c61-1000-99f2-7f0000010000" name="Qtr_of_Yea00039C10" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m67c31849-0c61-1000-99f2-7f0000010000" name="Cal_Year00039C12" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m67c3184a-0c61-1000-99f2-7f0000010000" name="Time_Mo_00039CFBSK" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m67c3184c-0c61-1000-99f2-7f0000010000" name="Time_Qt_00039CFASK" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m67c3184e-0c61-1000-99f2-7f0000010000" name="Time_Ha_00039CFDSK" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m67c31850-0c61-1000-99f2-7f0000010000" name="Time_Ye_00039CF9SK" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m67c31852-0c61-1000-99f2-7f0000010000" name="ALL_AW_LEVEL_KEY" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m67c31841-0c61-1000-99f2-7f0000010000" name="K_Dep Month">
+<RefColumns>
+<RefColumn refId="m67c31841-0c61-1000-99f2-7f0000010000-m67c31843-0c61-1000-99f2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/67c31840-0c61-1000-99f2-7f0000010000.xml#m67c31843-0c61-1000-99f2-7f0000010000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="m67c3184b-0c61-1000-99f2-7f0000010000" name="Time_Mo_00039CFBSK">
+<RefColumns>
+<RefColumn refId="m67c3184b-0c61-1000-99f2-7f0000010000-m67c3184a-0c61-1000-99f2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/67c31840-0c61-1000-99f2-7f0000010000.xml#m67c3184a-0c61-1000-99f2-7f0000010000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="m67c3184d-0c61-1000-99f2-7f0000010000" name="Time_Qt_00039CFASK">
+<RefColumns>
+<RefColumn refId="m67c3184d-0c61-1000-99f2-7f0000010000-m67c3184c-0c61-1000-99f2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/67c31840-0c61-1000-99f2-7f0000010000.xml#m67c3184c-0c61-1000-99f2-7f0000010000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="m67c3184f-0c61-1000-99f2-7f0000010000" name="Time_Ha_00039CFDSK">
+<RefColumns>
+<RefColumn refId="m67c3184f-0c61-1000-99f2-7f0000010000-m67c3184e-0c61-1000-99f2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/67c31840-0c61-1000-99f2-7f0000010000.xml#m67c3184e-0c61-1000-99f2-7f0000010000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="m67c31851-0c61-1000-99f2-7f0000010000" name="Time_Ye_00039CF9SK">
+<RefColumns>
+<RefColumn refId="m67c31851-0c61-1000-99f2-7f0000010000-m67c31850-0c61-1000-99f2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/67c31840-0c61-1000-99f2-7f0000010000.xml#m67c31850-0c61-1000-99f2-7f0000010000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

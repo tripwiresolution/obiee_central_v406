@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m9c69a140-0ca7-1000-9703-0af502b50000" name="Supplier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" rowCount="62.0" lastUpdated="2014-02-05 08:51:34" maxConn="0" containerRef="/oracle/bi/server/base/Database/3365eeb0-0ca7-1000-9703-0af502b50000.xml#m3365eeb0-0ca7-1000-9703-0af502b50000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SELECT E1 AS pCLAIM_TOT_GLOBL_AMT, E2 AS pCLAIM_PART_TOT_GLOBL_AMT, E5 AS Supplier_UltimateName, E4 AS Supplier_Name, E3 AS Supplier_Location
+FROM TABLE(EQL('SELECT 
+sum(pCLAIM_TOT_GLOBL_AMT) as ClaimTotal, sum(pCLAIM_PART_TOT_GLOBL_AMT) as PartTotal
+group by 
+Supplier_UltimateName, Supplier_Name, Supplier_Location'))
+
+]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m1f92e680-0ca8-1000-90a3-0af502b50000" name="pCLAIM_TOT_GLOBL_AMT" dataType="VARCHAR" precision="10" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m1f95a5a0-0ca8-1000-90a3-0af502b50000" name="pCLAIM_PART_TOT_GLOBL_AMT" dataType="VARCHAR" precision="10" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m1f97a170-0ca8-1000-90a3-0af502b50000" name="Supplier_UltimateName" dataType="VARCHAR" precision="10" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m1f997630-0ca8-1000-90a3-0af502b50000" name="Supplier_Name" dataType="VARCHAR" precision="10" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m1f9c3550-0ca8-1000-90a3-0af502b50000" name="Supplier_Location" dataType="VARCHAR" precision="10" specialType="none">
+</PhysicalColumn>
+</PhysicalTable>

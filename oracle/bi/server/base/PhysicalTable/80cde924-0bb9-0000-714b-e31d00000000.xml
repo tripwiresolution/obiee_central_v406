@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cde924-0bb9-0000-714b-e31d00000000" name="GC_POI_NA" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" x="908" y="280" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cde2bb-0bd3-0000-714b-e31d00000000.xml#m80cde2bb-0bd3-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[GC_POI_NA]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cde928-0bbb-0000-714b-e31d00000000" name="COUNTRY_CODE_2" dataType="CHAR" precision="3" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cde92a-0bbb-0000-714b-e31d00000000" name="LOC_LAT" dataType="DOUBLE" precision="10" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cde92b-0bbb-0000-714b-e31d00000000" name="NAME" dataType="VARCHAR" precision="240" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cde92c-0bbb-0000-714b-e31d00000000" name="LOC_LONG" dataType="DOUBLE" precision="10" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cde92d-0bbb-0000-714b-e31d00000000" name="PARTITION_ID" dataType="DOUBLE" precision="10" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cde92e-0bbb-0000-714b-e31d00000000" name="MUNICIPALITY_NAME" dataType="VARCHAR" precision="240" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cde92f-0bbb-0000-714b-e31d00000000" name="HOUSE_NUMBER" dataType="VARCHAR" precision="50" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cde930-0bbb-0000-714b-e31d00000000" name="POI_ID" dataType="DOUBLE" precision="38" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cde932-0bbb-0000-714b-e31d00000000" name="POSTAL_CODE" dataType="VARCHAR" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cde933-0bbb-0000-714b-e31d00000000" name="SIDE" dataType="CHAR" precision="1" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cde934-0bbb-0000-714b-e31d00000000" name="STREET_NAME" dataType="VARCHAR" precision="240" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m12d3b610-0c33-1000-8c32-0af0613a0000" name="FEATURE_CODE" dataType="DOUBLE" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cde936-0bc0-0000-714b-e31d00000000" name="POI_ID">
+<RefColumns>
+<RefColumn refId="m80cde936-0bc0-0000-714b-e31d00000000-m80cde930-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cde924-0bb9-0000-714b-e31d00000000.xml#m80cde930-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m80cde93a-0bbe-0000-714b-e31d00000000" name="GC_POI_NA_FKey#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cde812-0bb9-0000-714b-e31d00000000.xml#m80cde81a-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cde93a-0bbe-0000-714b-e31d00000000-m80cde930-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cde924-0bb9-0000-714b-e31d00000000.xml#m80cde930-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cde9db-0bbe-0000-714b-e31d00000000" name="GC_POI_NA_FKey#2" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cde337-0bb9-0000-714b-e31d00000000.xml#m80cde34f-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cde9db-0bbe-0000-714b-e31d00000000-m80cde930-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cde924-0bb9-0000-714b-e31d00000000.xml#m80cde930-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m12dc68a0-0c33-1000-8c32-0af0613a0000" name="GC_POI_NA_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cde2bc-0bb9-0000-714b-e31d00000000.xml#m80cde34c-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m12dc68a0-0c33-1000-8c32-0af0613a0000-m12d3b610-0c33-1000-8c32-0af0613a0000" columnRef="/oracle/bi/server/base/PhysicalTable/80cde924-0bb9-0000-714b-e31d00000000.xml#m12d3b610-0c33-1000-8c32-0af0613a0000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

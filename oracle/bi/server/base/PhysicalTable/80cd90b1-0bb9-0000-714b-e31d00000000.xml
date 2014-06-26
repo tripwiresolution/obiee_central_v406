@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cd90b1-0bb9-0000-714b-e31d00000000" name="L1 Currency FX Lookup" iconIndex="77" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" x="551" y="1427" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cd8dda-0bd3-0000-714b-e31d00000000.xml#m80cd8dda-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cd8dfe-0bb9-0000-714b-e31d00000000.xml#m80cd8dfe-0bb9-0000-714b-e31d00000000">
+<Description><![CDATA[Currency Lookup Alias: Stores currency conversion rate information at quarter grain]]></Description>
+<PhysicalColumn mdsid="m80cd90b2-0bbb-0000-714b-e31d00000000" name="Qtr_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8dfe-0bb9-0000-714b-e31d00000000.xml#m80cd8dff-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Quarter Key: Joins to Qtr_Key of Time dimension table (Qtr grain).]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd90b3-0bbb-0000-714b-e31d00000000" name="Fx_Rate" dataType="DOUBLE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8dfe-0bb9-0000-714b-e31d00000000.xml#m80cd8e00-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Fx Rate: Stores FX rate as a double]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd90b4-0bbb-0000-714b-e31d00000000" name="From_Curr" dataType="VARCHAR" precision="20" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8dfe-0bb9-0000-714b-e31d00000000.xml#m80cd8e01-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[From Currency: Stores the 'From Currency' code]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd90b5-0bbb-0000-714b-e31d00000000" name="To_Curr" dataType="VARCHAR" precision="20" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8dfe-0bb9-0000-714b-e31d00000000.xml#m80cd8e02-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[To Currency: Stores the 'To currency' code]]></Description>
+</PhysicalColumn>
+</PhysicalTable>

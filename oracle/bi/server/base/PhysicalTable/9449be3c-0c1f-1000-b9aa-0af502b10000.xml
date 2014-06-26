@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m9449be3c-0c1f-1000-b9aa-0af502b10000" name="D30 Offices" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" x="1201" y="1172" maxConn="0" containerRef="/oracle/bi/server/base/Schema/9449bd23-0c1f-1000-b9aa-0af502b10000.xml#m9449bd23-0c1f-1000-b9aa-0af502b10000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/9449bd66-0c1f-1000-b9aa-0af502b10000.xml#m9449bd66-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Offices dimension Alias: Stores office dimension attribute information]]></Description>
+<PhysicalColumn mdsid="m9449be3d-0c1f-1000-b9aa-0af502b10000" name="Department" dataType="VARCHAR" precision="30" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/9449bd66-0c1f-1000-b9aa-0af502b10000.xml#m9449bd67-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Department: Stores the department information as text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449be3e-0c1f-1000-b9aa-0af502b10000" name="Organization" dataType="VARCHAR" precision="20" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/9449bd66-0c1f-1000-b9aa-0af502b10000.xml#m9449bd68-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Organization: Stores the Organization information as text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449be3f-0c1f-1000-b9aa-0af502b10000" name="Office_Dsc" dataType="VARCHAR" precision="20" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/9449bd66-0c1f-1000-b9aa-0af502b10000.xml#m9449bd69-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Office Description: Stores the office description as text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449be40-0c1f-1000-b9aa-0af502b10000" name="Office_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/9449bd66-0c1f-1000-b9aa-0af502b10000.xml#m9449bd6a-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Office Key: Surrogate key of the office dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449be41-0c1f-1000-b9aa-0af502b10000" name="Company" dataType="VARCHAR" precision="20" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/9449bd66-0c1f-1000-b9aa-0af502b10000.xml#m9449bd6b-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Company: Stores the company information as text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449be42-0c1f-1000-b9aa-0af502b10000" name="Sequence" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/9449bd66-0c1f-1000-b9aa-0af502b10000.xml#m9449bd6c-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Sequence: Stores sequence as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449be43-0c1f-1000-b9aa-0af502b10000" name="Company_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/9449bd66-0c1f-1000-b9aa-0af502b10000.xml#m9449bd6d-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Company Key: Stores company key as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449be44-0c1f-1000-b9aa-0af502b10000" name="Address_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/9449bd66-0c1f-1000-b9aa-0af502b10000.xml#m9449bd6e-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Address Key: Joins to Address_Key of Addresses dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449be45-0c1f-1000-b9aa-0af502b10000" name="Org_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/9449bd66-0c1f-1000-b9aa-0af502b10000.xml#m9449bd6f-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Organization Key: Stores Organization key as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m9449be46-0c1f-1000-b9aa-0af502b10000" name="Dept_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/9449bd66-0c1f-1000-b9aa-0af502b10000.xml#m9449bd70-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[Department Key: Stores department key as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8485a053-0c8a-1000-8bc9-0af502b30000" name="TOTAL_VALUE" dataType="VARCHAR" precision="20" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/9449bd66-0c1f-1000-b9aa-0af502b10000.xml#m8485a052-0c8a-1000-8bc9-0af502b30000">
+</PhysicalColumn>
+<PhysicalKey mdsid="m9449bf83-0c1f-1000-b9aa-0af502b10000" name="Dim 02 Market_Key">
+<RefColumns>
+<RefColumn refId="m9449bf83-0c1f-1000-b9aa-0af502b10000-m9449be40-0c1f-1000-b9aa-0af502b10000" columnRef="/oracle/bi/server/base/PhysicalTable/9449be3c-0c1f-1000-b9aa-0af502b10000.xml#m9449be40-0c1f-1000-b9aa-0af502b10000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m9449bf97-0c1f-1000-b9aa-0af502b10000" name="D30 Offices_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/9449bf5c-0c1f-1000-b9aa-0af502b10000.xml#m9449bf96-0c1f-1000-b9aa-0af502b10000">
+<RefColumns>
+<RefColumn refId="m9449bf97-0c1f-1000-b9aa-0af502b10000-m9449be44-0c1f-1000-b9aa-0af502b10000" columnRef="/oracle/bi/server/base/PhysicalTable/9449be3c-0c1f-1000-b9aa-0af502b10000.xml#m9449be44-0c1f-1000-b9aa-0af502b10000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

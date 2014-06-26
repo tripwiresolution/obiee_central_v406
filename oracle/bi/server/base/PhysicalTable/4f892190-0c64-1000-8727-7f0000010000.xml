@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m4f892190-0c64-1000-8727-7f0000010000" name="D11 Product Images" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" pollFreq="0" x="1347" y="617" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/4f7c2940-0c64-1000-8727-7f0000010000.xml#m4f7c2940-0c64-1000-8727-7f0000010000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[select IMAGE, PRODUCT_ID, PRODUCT_IMAGE_ID from BISAMPLE.SAMP_PROD_IMG_D]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m4f902674-0c64-1000-8727-7f0000010000" name="IMAGE" dataType="LONGVARBINARY" precision="96000" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/4f7c2940-0c64-1000-8727-7f0000010000.xml#m4f7c2945-0c64-1000-8727-7f0000010000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m4f902678-0c64-1000-8727-7f0000010000" name="PRODUCT_ID" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/4f7c2940-0c64-1000-8727-7f0000010000.xml#m4f7c2949-0c64-1000-8727-7f0000010000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m4f902679-0c64-1000-8727-7f0000010000" name="PRODUCT_IMAGE_ID" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/4f7c2940-0c64-1000-8727-7f0000010000.xml#m4f7c294a-0c64-1000-8727-7f0000010000">
+</PhysicalColumn>
+<PhysicalKey mdsid="m51700a00-0c64-1000-8727-7f0000010000" name="D11 Product Images_Key">
+<RefColumns>
+<RefColumn refId="m51700a00-0c64-1000-8727-7f0000010000-m4f902678-0c64-1000-8727-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/4f892190-0c64-1000-8727-7f0000010000.xml#m4f902678-0c64-1000-8727-7f0000010000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

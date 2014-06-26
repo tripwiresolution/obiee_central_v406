@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cb94af-07f3-0000-714b-e31d00000000" name="D0 Time" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="762" y="563" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cb9462-07d0-0000-714b-e31d00000000.xml#m80cb9462-07d0-0000-714b-e31d00000000">
+<Description><![CDATA[This logical table maps to the physical Time Dimension tables at Day,Month and Quarter grains. 
+It is mapped to 4 LTS.
+LTS1 Time Day Grain - Maps to the physical time table at day grain.
+LTS2 Time Month Grain - Maps to the physical time table at month grain.
+LTS3 Time Quarter Grain - Maps to the physical time table at quarter grain.
+LTS4 Targets (XML Source) - Maps to Fact targets XML source.
+
+ ]]></Description>
+<LogicalColumn mdsid="m80cb94b0-07d6-0000-714b-e31d00000000" name="T00 Date (Rel Only)" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the information in date format .]]></Description>
+<AttrDefn mdsid="m80cb96f5-0f3c-0000-714b-e31d00000000" name="AD_3900:543491271159864">
+<Expr mdsid="m00000001-01f4-0000-36fd-60fc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D01 Time Day Grain"."Calendar_Date"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-36fd-60fc00000000-m80cb692d-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb681d-0bb9-0000-714b-e31d00000000.xml#m80cb692d-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb94b1-07d6-0000-714b-e31d00000000" name="T01 Per Name Week (Rel Only)" isWriteable="false">
+<Description><![CDATA[Help : 
+Period Name Week: Stores the week information in the format YYYY Week Weeknumber.
+Eg:- 2009 Week 1]]></Description>
+<AttrDefn mdsid="m80cb96f6-0f3c-0000-714b-e31d00000000" name="AD_3900:543501271159864">
+<Expr mdsid="m00000002-01f4-0000-6b95-776e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."D01 Time Day Grain"."Per_Name_Week"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-6b95-776e00000000-m80cb6941-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb681d-0bb9-0000-714b-e31d00000000.xml#m80cb6941-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb94b2-07d6-0000-714b-e31d00000000" name="T02 Per Name Month" isWriteable="false">
+<Description><![CDATA[Help : 
+Period Name Month: Stores the year information in the format YYYY / MM.
+Eg:- 2009 / 01]]></Description>
+<AttrDefn mdsid="m80cb96f7-0f3c-0000-714b-e31d00000000" name="AD_3900:543511271159864">
+<Expr mdsid="m00000003-01f4-0000-8b29-9f0300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["08 - Sample App Xml Target Data"."".""."D02 Time Month Grain (XML Source)"."Per_Name_Month"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-8b29-9f0300000000-m80cdb8b7-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdb8b5-0bb9-0000-714b-e31d00000000.xml#m80cdb8b7-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb94b3-07d6-0000-714b-e31d00000000" name="T03 Per Name Qtr" isWriteable="false">
+<Description><![CDATA[Help :
+Period Name Quarter: Stores the quarter information in the format YYYY QQuarterNumber.
+Eg:- 2009 Q1]]></Description>
+<AttrDefn mdsid="m80cb96f8-0f3c-0000-714b-e31d00000000" name="AD_3900:543521271159864">
+<Expr mdsid="m00000004-01f4-0000-92fa-a8aa00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase Sample E1 Flat"."BISAMPLE Flat".""."Sample Flattened"."Quarters"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-92fa-a8aa00000000-m80cb9cf0-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cb9c63-0bdf-0000-714b-e31d00000000.xml#m80cb9cf0-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb94b4-07d6-0000-714b-e31d00000000" name="T04 Per Name Half" isWriteable="false">
+<Description><![CDATA[Help : 
+Period Name Half: Stores the Half year information in the format YYYY HYHalfYearNumber.
+Eg:- 2009 HY1]]></Description>
+<AttrDefn mdsid="m80cb96f9-0f3c-0000-714b-e31d00000000" name="AD_3900:543531271159864">
+<Expr mdsid="m00000005-01f4-0000-603b-7fff00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase Sample E1 Flat"."BISAMPLE Flat".""."Sample Flattened"."Half Years"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-603b-7fff00000000-m80cb9cec-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cb9c63-0bdf-0000-714b-e31d00000000.xml#m80cb9cec-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb94b5-07d6-0000-714b-e31d00000000" name="T05 Per Name Year" isWriteable="false">
+<Description><![CDATA[Help :
+Period Name Year: Stores the year information in the format YYYY.
+Eg:- 2009]]></Description>
+<AttrDefn mdsid="m80cb96fa-0f3c-0000-714b-e31d00000000" name="AD_3900:543541271159864">
+<Expr mdsid="m00000006-01f4-0000-f220-f1e100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase Sample E1 Flat"."BISAMPLE Flat".""."Sample Flattened"."Years"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-f220-f1e100000000-m80cb9ce8-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cb9c63-0bdf-0000-714b-e31d00000000.xml#m80cb9ce8-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cb96a8-07d8-0000-714b-e31d00000000" name="Dim 07 Time_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cb96a8-07d8-0000-714b-e31d00000000-m80cb94b0-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb94af-07f3-0000-714b-e31d00000000.xml#m80cb94b0-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cb94af-07f3-0000-714b-e31d00000000-m80cb97f5-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cb97f5-07f5-0000-714b-e31d00000000.xml#m80cb97f5-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cb94af-07f3-0000-714b-e31d00000000-m80cb97f6-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cb97f6-07f5-0000-714b-e31d00000000.xml#m80cb97f6-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cb94af-07f3-0000-714b-e31d00000000-m80cb9994-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cb9994-07f5-0000-714b-e31d00000000.xml#m80cb9994-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cb94af-07f3-0000-714b-e31d00000000-m80cdb651-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cdb651-07f5-0000-714b-e31d00000000.xml#m80cdb651-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cb94af-07f3-0000-714b-e31d00000000-m80cdb656-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cdb656-07f5-0000-714b-e31d00000000.xml#m80cdb656-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cb94af-07f3-0000-714b-e31d00000000-m80cdb8c5-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cdb8c5-07f5-0000-714b-e31d00000000.xml#m80cdb8c5-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

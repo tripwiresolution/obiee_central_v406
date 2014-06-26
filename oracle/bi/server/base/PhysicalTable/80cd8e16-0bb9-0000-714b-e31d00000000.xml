@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cd8e16-0bb9-0000-714b-e31d00000000" name="SAMP_EMPL_D_VH" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" x="237" y="1545" uri="VALUEOF(BI_EE_HOME)/sample/SampleAppFiles/Data/SAMP_EMPL_D_VH.xml" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cd8dda-0bd3-0000-714b-e31d00000000.xml#m80cd8dda-0bd3-0000-714b-e31d00000000">
+<Description><![CDATA[Employee Dimension table: Stores employee dimension attribute information]]></Description>
+<PhysicalColumn mdsid="m80cd8e17-0bbb-0000-714b-e31d00000000" name="Mgr_Id" dataType="INT" nullable="true" specialType="none">
+<Description><![CDATA[Manager Id: Stores manager id as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8e18-0bbb-0000-714b-e31d00000000" name="Empl_Name" dataType="VARCHAR" precision="50" specialType="none">
+<Description><![CDATA[Employee Name: Stores employee name as a text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8e19-0bbb-0000-714b-e31d00000000" name="Employee_Key" dataType="INT" specialType="none">
+<Description><![CDATA[Employee Key: Surrogate key of the employee dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8e1a-0bbb-0000-714b-e31d00000000" name="Postn_Key" dataType="DOUBLE" specialType="none">
+<Description><![CDATA[Position Key: Joins to Postn_key in employee position dimension table]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8e1b-0bbb-0000-714b-e31d00000000" name="Hire_Dt" dataType="DATETIME" specialType="none">
+<Description><![CDATA[Hire Date: Stores employee hire date information in date format]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8e1c-0bbb-0000-714b-e31d00000000" name="Type" dataType="VARCHAR" precision="20" specialType="none">
+<Description><![CDATA[Type: Stores employee type information as text]]></Description>
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cd91ed-0bc0-0000-714b-e31d00000000" name="Primary Key">
+<RefColumns>
+<RefColumn refId="m80cd91ed-0bc0-0000-714b-e31d00000000-m80cd8e19-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cd8e16-0bb9-0000-714b-e31d00000000.xml#m80cd8e19-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

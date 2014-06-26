@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<InitBlock mdsid="m80cc638b-0bd9-0000-714b-e31d00000000" name="ProxyLevel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isSessionVar="true" refreshPeriod="86400" connectionPoolRef="/oracle/bi/server/base/ConnectionPool/80cb28c8-0bd5-0000-714b-e31d00000000.xml#m80cb28c8-0bd5-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[select proxyLevel 
+	from SAMP_USERS_PROXIES 
+	where 'VALUEOF(NQ_SESSION.RUNAS)'=targetId and ':USER'=proxyId]]></Value>
+</DBMapItem>
+<RefVariables>
+<RefVariable refId="m80cc638b-0bd9-0000-714b-e31d00000000-m80cc638c-0bd7-0000-714b-e31d00000000" variableRef="/oracle/bi/server/base/Variable/80cc638c-0bd7-0000-714b-e31d00000000.xml#m80cc638c-0bd7-0000-714b-e31d00000000"/>
+</RefVariables>
+<InitString><![CDATA[select proxyLevel 
+	from SAMP_USERS_PROXIES 
+	where 'VALUEOF(NQ_SESSION.RUNAS)'=targetId and ':USER'=proxyId]]></InitString>
+</InitBlock>

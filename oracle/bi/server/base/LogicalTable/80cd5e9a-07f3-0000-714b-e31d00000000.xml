@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cd5e9a-07f3-0000-714b-e31d00000000" name="D0 Time" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="1230" y="292" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cd5e8b-07d0-0000-714b-e31d00000000.xml#m80cd5e8b-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cd5ebd-07d6-0000-714b-e31d00000000" name="T02 Per Name Month" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/80cd5e9a-07f3-0000-714b-e31d00000000.xml#m80cd5ebc-07d6-0000-714b-e31d00000000">
+<AttrDefn mdsid="m80cd606d-0f3c-0000-714b-e31d00000000" name="AD_3900:1577661291973959">
+<Expr mdsid="m00000001-01f4-0000-4e80-a20c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."Month - Long Description"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-4e80-a20c00000000-m80cd5b19-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5b19-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5eac-07d6-0000-714b-e31d00000000" name="T03 Per Name Qtr" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/80cd5e9a-07f3-0000-714b-e31d00000000.xml#m80cd5ea6-07d6-0000-714b-e31d00000000">
+<AttrDefn mdsid="m80cd605c-0f3c-0000-714b-e31d00000000" name="AD_3900:1577491291973959">
+<Expr mdsid="m00000002-01f4-0000-a575-2db400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."Fiscal Quarter - Long Description"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-a575-2db400000000-m80cd5b12-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5b12-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5f65-07d6-0000-714b-e31d00000000" name="T04 Per Name Half" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/80cd5e9a-07f3-0000-714b-e31d00000000.xml#m80cd5f5f-07d6-0000-714b-e31d00000000">
+<AttrDefn mdsid="m80cd6051-0f3c-0000-714b-e31d00000000" name="AD_3900:1577381291973959">
+<Expr mdsid="m00000003-01f4-0000-4cc0-540200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."Fiscal Half Year - Long Description"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-4cc0-540200000000-m80cd5b07-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5b07-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5eb7-07d6-0000-714b-e31d00000000" name="T05 Per Name Year" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/80cd5e9a-07f3-0000-714b-e31d00000000.xml#m80cd5eb1-07d6-0000-714b-e31d00000000">
+<AttrDefn mdsid="m80cd6067-0f3c-0000-714b-e31d00000000" name="AD_3900:1577601291973959">
+<Expr mdsid="m00000004-01f4-0000-7b12-c7b800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."Fiscal Year - Long Description"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-7b12-c7b800000000-m80cd5afc-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5afc-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5f55-07d6-0000-714b-e31d00000000" name="All Years" isWriteable="false">
+<AttrDefn mdsid="m80cd6041-0f3c-0000-714b-e31d00000000" name="AD_3900:1577221291973959">
+<Expr mdsid="m00000005-01f4-0000-aeef-cb4500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."All Years"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-aeef-cb4500000000-m80cd5bc8-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5bc8-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5f5a-07d6-0000-714b-e31d00000000" name="All Years - End Date" isWriteable="false">
+<AttrDefn mdsid="m80cd6046-0f3c-0000-714b-e31d00000000" name="AD_3900:1577271291973959">
+<Expr mdsid="m00000006-01f4-0000-592b-78ef00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."All Years - End Date"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-592b-78ef00000000-m80cd5bc4-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5bc4-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5f5b-07d6-0000-714b-e31d00000000" name="All Years - Desc" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/80cd5e9a-07f3-0000-714b-e31d00000000.xml#m80cd5f5a-07d6-0000-714b-e31d00000000">
+<AttrDefn mdsid="m80cd6047-0f3c-0000-714b-e31d00000000" name="AD_3900:1577281291973959">
+<Expr mdsid="m00000007-01f4-0000-b3a1-e88b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."All Years - Long Description"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-b3a1-e88b00000000-m80cd5bc5-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5bc5-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5f5d-07d6-0000-714b-e31d00000000" name="All Years - Time Span" isWriteable="false">
+<AttrDefn mdsid="m80cd6049-0f3c-0000-714b-e31d00000000" name="AD_3900:1577301291973959">
+<Expr mdsid="m00000008-01f4-0000-ed7e-da9100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."All Years - Time Span"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-ed7e-da9100000000-m80cd5bc7-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5bc7-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5f5e-07d6-0000-714b-e31d00000000" name="Half Year" isWriteable="false">
+<AttrDefn mdsid="m80cd604a-0f3c-0000-714b-e31d00000000" name="AD_3900:1577311291973959">
+<Expr mdsid="m00000009-01f4-0000-16e6-bd2000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."Fiscal Half Year"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-16e6-bd2000000000-m80cd5b0c-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5b0c-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5f5f-07d6-0000-714b-e31d00000000" name="Half Year - End Date" isWriteable="false">
+<AttrDefn mdsid="m80cd604b-0f3c-0000-714b-e31d00000000" name="AD_3900:1577321291973959">
+<Expr mdsid="m0000000a-01f4-0000-0577-627b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."Fiscal Half Year - End Date"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-0577-627b00000000-m80cd5b02-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5b02-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5f66-07d6-0000-714b-e31d00000000" name="Half Year - Prior Year" isWriteable="false">
+<AttrDefn mdsid="m80cd6052-0f3c-0000-714b-e31d00000000" name="AD_3900:1577391291973959">
+<Expr mdsid="m0000000b-01f4-0000-e2d4-dd5000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."Fiscal Half Year - Prior Fiscal Year"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-e2d4-dd5000000000-m80cd5b0a-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5b0a-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5ea4-07d6-0000-714b-e31d00000000" name="Half Year - Time Span" isWriteable="false">
+<AttrDefn mdsid="m80cd6054-0f3c-0000-714b-e31d00000000" name="AD_3900:1577411291973959">
+<Expr mdsid="m0000000c-01f4-0000-1885-e9da00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."Fiscal Half Year - Time Span"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-1885-e9da00000000-m80cd5b09-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5b09-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5ea5-07d6-0000-714b-e31d00000000" name="Quarter" isWriteable="false">
+<AttrDefn mdsid="m80cd6055-0f3c-0000-714b-e31d00000000" name="AD_3900:1577421291973959">
+<Expr mdsid="m0000000d-01f4-0000-fb43-97bf00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."Fiscal Quarter"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-fb43-97bf00000000-m80cd5b17-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5b17-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5ea6-07d6-0000-714b-e31d00000000" name="Quarter - End Date" isWriteable="false">
+<AttrDefn mdsid="m80cd6056-0f3c-0000-714b-e31d00000000" name="AD_3900:1577431291973959">
+<Expr mdsid="m0000000e-01f4-0000-27d5-b21d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."Fiscal Quarter - End Date"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-27d5-b21d00000000-m80cd5b0d-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5b0d-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5ead-07d6-0000-714b-e31d00000000" name="Quarter - Prior Year" isWriteable="false">
+<AttrDefn mdsid="m80cd605d-0f3c-0000-714b-e31d00000000" name="AD_3900:1577501291973959">
+<Expr mdsid="m0000000f-01f4-0000-3935-4b3900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."Fiscal Quarter - Prior Fiscal Year"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-3935-4b3900000000-m80cd5b15-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5b15-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5eaf-07d6-0000-714b-e31d00000000" name="Quarter - Time Span" isWriteable="false">
+<AttrDefn mdsid="m80cd605f-0f3c-0000-714b-e31d00000000" name="AD_3900:1577521291973959">
+<Expr mdsid="m00000010-01f4-0000-6d85-330f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."Fiscal Quarter - Time Span"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-6d85-330f00000000-m80cd5b14-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5b14-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5eb0-07d6-0000-714b-e31d00000000" name="Year" isWriteable="false">
+<AttrDefn mdsid="m80cd6060-0f3c-0000-714b-e31d00000000" name="AD_3900:1577531291973959">
+<Expr mdsid="m00000011-01f4-0000-64b4-37f600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."Fiscal Year"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-64b4-37f600000000-m80cd5b01-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5b01-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5eb1-07d6-0000-714b-e31d00000000" name="Year - End Date" isWriteable="false">
+<AttrDefn mdsid="m80cd6061-0f3c-0000-714b-e31d00000000" name="AD_3900:1577541291973959">
+<Expr mdsid="m00000012-01f4-0000-b680-f23200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."Fiscal Year - End Date"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-b680-f23200000000-m80cd5bc9-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5bc9-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5eb8-07d6-0000-714b-e31d00000000" name="Year - Prior Year" isWriteable="false">
+<AttrDefn mdsid="m80cd6068-0f3c-0000-714b-e31d00000000" name="AD_3900:1577611291973959">
+<Expr mdsid="m00000013-01f4-0000-2818-ec5900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."Fiscal Year - Prior Fiscal Year"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-2818-ec5900000000-m80cd5aff-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5aff-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5eba-07d6-0000-714b-e31d00000000" name="Year - Time Span" isWriteable="false">
+<AttrDefn mdsid="m80cd606a-0f3c-0000-714b-e31d00000000" name="AD_3900:1577631291973959">
+<Expr mdsid="m00000014-01f4-0000-4aef-b28c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."Fiscal Year - Time Span"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-4aef-b28c00000000-m80cd5afe-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5afe-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5ebb-07d6-0000-714b-e31d00000000" name="Month" isWriteable="false">
+<AttrDefn mdsid="m80cd606b-0f3c-0000-714b-e31d00000000" name="AD_3900:1577641291973959">
+<Expr mdsid="m00000015-01f4-0000-8df2-07a700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."Month"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-8df2-07a700000000-m80cd5b22-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5b22-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5ebc-07d6-0000-714b-e31d00000000" name="Month - End Date" isWriteable="false">
+<AttrDefn mdsid="m80cd606c-0f3c-0000-714b-e31d00000000" name="AD_3900:1577651291973959">
+<Expr mdsid="m00000016-01f4-0000-6748-d23c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."Month - End Date"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-6748-d23c00000000-m80cd5b18-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5b18-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5ec3-07d6-0000-714b-e31d00000000" name="Month - Prior Year" isWriteable="false">
+<AttrDefn mdsid="m80cd6073-0f3c-0000-714b-e31d00000000" name="AD_3900:1577721291973959">
+<Expr mdsid="m00000017-01f4-0000-cfac-e24500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."Month - Prior Fiscal Year"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-cfac-e24500000000-m80cd5b20-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5b20-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5ec5-07d6-0000-714b-e31d00000000" name="Month - Time Span" isWriteable="false">
+<AttrDefn mdsid="m80cd6075-0f3c-0000-714b-e31d00000000" name="AD_3900:1577741291973959">
+<Expr mdsid="m00000018-01f4-0000-7fd3-d63200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Time"."Month - Time Span"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000018-01f4-0000-7fd3-d63200000000-m80cd5b1f-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af7-0bec-0000-714b-e31d00000000.xml#m80cd5b1f-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cd5ff0-07d8-0000-714b-e31d00000000" name="Month" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cd5ff0-07d8-0000-714b-e31d00000000-m80cd5ebb-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd5e9a-07f3-0000-714b-e31d00000000.xml#m80cd5ebb-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cd5e9a-07f3-0000-714b-e31d00000000-m80cd610f-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cd610f-07f5-0000-714b-e31d00000000.xml#m80cd610f-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

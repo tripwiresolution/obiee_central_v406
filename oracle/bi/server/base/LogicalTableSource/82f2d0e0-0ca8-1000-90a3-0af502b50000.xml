@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m82f2d0e0-0ca8-1000-90a3-0af502b50000" name="Demo2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/82f0d41d-0ca8-1000-90a3-0af502b50000.xml#m82f0d41d-0ca8-1000-90a3-0af502b50000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-2bae-d4e600000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y08 - Demo Banking Adjustments"."Demo2"."PnL"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-2bae-d4e600000000-m82f0d41e-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d41d-0ca8-1000-90a3-0af502b50000.xml#m82f0d41e-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-8183-034200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Adjustments"."Adjust".""."Demo2"."PnL"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-8183-034200000000-m82de0fc7-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82de0f6c-0ca8-1000-90a3-0af502b50000.xml#m82de0fc7-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/CubeTable/82de0f6c-0ca8-1000-90a3-0af502b50000.xml#m82de0f6c-0ca8-1000-90a3-0af502b50000">
+</Link>
+<WhereClause mdsid="m00000003-01f4-0000-40ac-197200000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000004-01f4-0000-5c77-ce3500000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1", "%2", "%3", "%4", "%5", "%6")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("Y08 - Demo Banking Adjustments"."ReportDate"."Date", "Y08 - Demo Banking Adjustments"."Version"."Versions", "Y08 - Demo Banking Adjustments"."Region"."Region Name", "Y08 - Demo Banking Adjustments"."Book"."Book Name", "Y08 - Demo Banking Adjustments"."Scenario"."Scenarios", "Y08 - Demo Banking Adjustments"."EntryDate"."ED Date")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-5c77-ce3500000000-m82f197c8-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0ace0-0ca8-1000-90a3-0af502b50000.xml#m82f197c8-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000004-01f4-0000-5c77-ce3500000000-m82f197cb-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0ace1-0ca8-1000-90a3-0af502b50000.xml#m82f197cb-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000004-01f4-0000-5c77-ce3500000000-m82f197cd-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0ace2-0ca8-1000-90a3-0af502b50000.xml#m82f197cd-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000004-01f4-0000-5c77-ce3500000000-m82f197cf-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0ace3-0ca8-1000-90a3-0af502b50000.xml#m82f197cf-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000004-01f4-0000-5c77-ce3500000000-m82f197d1-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0ace4-0ca8-1000-90a3-0af502b50000.xml#m82f197d1-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000004-01f4-0000-5c77-ce3500000000-m82f197d5-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0ace5-0ca8-1000-90a3-0af502b50000.xml#m82f197d5-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m00000005-01f4-0000-fcb0-0ef100000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="mfe34e102-0c82-1000-806e-0af170e40000" name="Facts - Movie Activities" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/fe34e080-0c82-1000-806e-0af170e40000.xml#mfe34e080-0c82-1000-806e-0af170e40000">
+<LogicalColumn mdsid="mfe34e103-0c82-1000-806e-0af170e40000" name="Number of Activities" isWriteable="false">
+<MeasureDefn mdsid="mfe34e1a4-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1db-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630811375675016" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-372a-21f900000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y10 - Movie Demo (ORCL)"."Facts - Movie Activities"."Number of Activities")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-372a-21f900000000-mfe34e103-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e102-0c82-1000-806e-0af170e40000.xml#mfe34e103-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e391-0c82-1000-806e-0af170e40000" name="AD_3900:2635191375675016">
+<Expr mdsid="m00000002-01f4-0000-9cce-666300000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e104-0c82-1000-806e-0af170e40000" name="Sales" isWriteable="false">
+<MeasureDefn mdsid="mfe34e1a5-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1dc-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630821375675016" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-b535-e79200000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y10 - Movie Demo (ORCL)"."Facts - Movie Activities"."Sales")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-b535-e79200000000-mfe34e104-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e102-0c82-1000-806e-0af170e40000.xml#mfe34e104-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e392-0c82-1000-806e-0af170e40000" name="AD_3900:2635201375675016">
+<Expr mdsid="m00000004-01f4-0000-ee02-cbcc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."SALES"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-ee02-cbcc00000000-mfe333351-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe333351-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e105-0c82-1000-806e-0af170e40000" name="Recommended" isWriteable="false">
+<MeasureDefn mdsid="mfe34e1a6-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1dd-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630831375675016" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-28e6-d74800000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y10 - Movie Demo (ORCL)"."Facts - Movie Activities"."Recommended")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-28e6-d74800000000-mfe34e105-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e102-0c82-1000-806e-0af170e40000.xml#mfe34e105-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e393-0c82-1000-806e-0af170e40000" name="AD_3900:2635211375675016">
+<Expr mdsid="m00000006-01f4-0000-3483-932d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."RECOMMENDED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-3483-932d00000000-mfe333350-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe333350-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e106-0c82-1000-806e-0af170e40000" name="Average Rating" isWriteable="false">
+<MeasureDefn mdsid="mfe34e1a7-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1de-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630841375675016" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-dd75-23d600000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y10 - Movie Demo (ORCL)"."Facts - Movie Activities"."Average Rating")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-dd75-23d600000000-mfe34e106-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e102-0c82-1000-806e-0af170e40000.xml#mfe34e106-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e394-0c82-1000-806e-0af170e40000" name="AD_3900:2635221375675016">
+<Expr mdsid="m00000008-01f4-0000-e9ab-809600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."RATING"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-e9ab-809600000000-mfe33334f-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe33334f-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="mfe34e102-0c82-1000-806e-0af170e40000-mfe34e404-0c82-1000-806e-0af170e40000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/fe34e404-0c82-1000-806e-0af170e40000.xml#mfe34e404-0c82-1000-806e-0af170e40000"/>
+</RefTableSources>
+</LogicalTable>

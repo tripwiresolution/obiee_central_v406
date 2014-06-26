@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cd941c-07f3-0000-714b-e31d00000000" name="D3 Offices" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="400" y="415" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cd92c7-07d0-0000-714b-e31d00000000.xml#m80cd92c7-07d0-0000-714b-e31d00000000">
+<Description><![CDATA[This logical table maps to the physical Offices Dimension table with various attributes like Office, Department, Organization and so on.
+It is mapped to 1 LTS
+LTS1 Offices - Maps the physical Office table. ]]></Description>
+<LogicalColumn mdsid="m80cd941d-07d6-0000-714b-e31d00000000" name="D1  Office" isWriteable="false">
+<Description><![CDATA[Help : 
+Office: Stores the office description as text]]></Description>
+<AttrDefn mdsid="m80cd96b7-0f3c-0000-714b-e31d00000000" name="AD_3900:1705771292245695">
+<Expr mdsid="m00000001-01f4-0000-d785-47a300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."D30 Offices"."Office_Dsc"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-d785-47a300000000-m80cd8f3d-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd8f3a-0bb9-0000-714b-e31d00000000.xml#m80cd8f3d-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd941e-07d6-0000-714b-e31d00000000" name="D1k  Office Key" isWriteable="false">
+<Description><![CDATA[Help : 
+Office Key: An integer that uniquely identifies each record in the Office dimension table.]]></Description>
+<AttrDefn mdsid="m80cd96b8-0f3c-0000-714b-e31d00000000" name="AD_3900:1705781292245695">
+<Expr mdsid="m00000002-01f4-0000-d15a-fc0600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."D30 Offices"."Office_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-d15a-fc0600000000-m80cd8f3e-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd8f3a-0bb9-0000-714b-e31d00000000.xml#m80cd8f3e-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd941f-07d6-0000-714b-e31d00000000" name="D2  Department" isWriteable="false">
+<Description><![CDATA[Help : 
+Department: Stores the department information as text]]></Description>
+<AttrDefn mdsid="m80cd96b9-0f3c-0000-714b-e31d00000000" name="AD_3900:1705791292245695">
+<Expr mdsid="m00000003-01f4-0000-5e2b-06ae00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."D30 Offices"."Department"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-5e2b-06ae00000000-m80cd8f3b-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd8f3a-0bb9-0000-714b-e31d00000000.xml#m80cd8f3b-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd9420-07d6-0000-714b-e31d00000000" name="D2k  Dept Key" isWriteable="false">
+<Description><![CDATA[Help :
+Department Key: Stores department key as an integer]]></Description>
+<AttrDefn mdsid="m80cd96ba-0f3c-0000-714b-e31d00000000" name="AD_3900:1705801292245695">
+<Expr mdsid="m00000004-01f4-0000-5f46-3f7000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."D30 Offices"."Dept_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-5f46-3f7000000000-m80cd8f44-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd8f3a-0bb9-0000-714b-e31d00000000.xml#m80cd8f44-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd9421-07d6-0000-714b-e31d00000000" name="D3  Organization" isWriteable="false">
+<Description><![CDATA[Help : 
+Organization: Stores the Organization information as text]]></Description>
+<AttrDefn mdsid="m80cd96bb-0f3c-0000-714b-e31d00000000" name="AD_3900:1705811292245695">
+<Expr mdsid="m00000005-01f4-0000-9e52-23c600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."D30 Offices"."Organization"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-9e52-23c600000000-m80cd8f3c-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd8f3a-0bb9-0000-714b-e31d00000000.xml#m80cd8f3c-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd9422-07d6-0000-714b-e31d00000000" name="D3k  Org Key" isWriteable="false">
+<Description><![CDATA[Help :
+Organization Key: Stores Organization key as an integer]]></Description>
+<AttrDefn mdsid="m80cd96bc-0f3c-0000-714b-e31d00000000" name="AD_3900:1705821292245695">
+<Expr mdsid="m00000006-01f4-0000-5ab8-4c3400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."D30 Offices"."Org_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-5ab8-4c3400000000-m80cd8f43-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd8f3a-0bb9-0000-714b-e31d00000000.xml#m80cd8f43-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd9423-07d6-0000-714b-e31d00000000" name="D4  Company" isWriteable="false">
+<Description><![CDATA[Help : 
+Company: Stores the company information as text]]></Description>
+<AttrDefn mdsid="m80cd96bd-0f3c-0000-714b-e31d00000000" name="AD_3900:1705831292245695">
+<Expr mdsid="m00000007-01f4-0000-3728-4e4400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."D30 Offices"."Company"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-3728-4e4400000000-m80cd8f3f-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd8f3a-0bb9-0000-714b-e31d00000000.xml#m80cd8f3f-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd9424-07d6-0000-714b-e31d00000000" name="D4k  Company Key" isWriteable="false">
+<Description><![CDATA[Help :
+Company Key: Stores company key as an integer]]></Description>
+<AttrDefn mdsid="m80cd96be-0f3c-0000-714b-e31d00000000" name="AD_3900:1705841292245695">
+<Expr mdsid="m00000008-01f4-0000-4a5f-5e0900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."D30 Offices"."Company_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-4a5f-5e0900000000-m80cd8f41-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd8f3a-0bb9-0000-714b-e31d00000000.xml#m80cd8f41-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd9425-07d6-0000-714b-e31d00000000" name="D8  Office Sequence" isWriteable="true">
+<Description><![CDATA[Help :
+Sequence: Stores sequence as an integer]]></Description>
+<AttrDefn mdsid="m80cd96bf-0f3c-0000-714b-e31d00000000" name="AD_3900:1705851292245695">
+<Expr mdsid="m00000009-01f4-0000-625b-608400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."D30 Offices"."Sequence"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-625b-608400000000-m80cd8f40-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd8f3a-0bb9-0000-714b-e31d00000000.xml#m80cd8f40-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cd9575-07d8-0000-714b-e31d00000000" name="Dim 02 Market_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cd9575-07d8-0000-714b-e31d00000000-m80cd941e-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd941c-07f3-0000-714b-e31d00000000.xml#m80cd941e-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cd941c-07f3-0000-714b-e31d00000000-m80cd9714-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cd9714-07f5-0000-714b-e31d00000000.xml#m80cd9714-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

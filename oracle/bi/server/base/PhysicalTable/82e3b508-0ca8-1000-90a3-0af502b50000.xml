@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m82e3b508-0ca8-1000-90a3-0af502b50000" name="INS_FACT_MONTH" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/82e3b499-0ca8-1000-90a3-0af502b50000.xml#m82e3b499-0ca8-1000-90a3-0af502b50000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[INS_FACT_MONTH]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m82e3b509-0ca8-1000-90a3-0af502b50000" name="AMOUNT_CLAIMED" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b50a-0ca8-1000-90a3-0af502b50000" name="AMOUNT_PAID" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b50b-0ca8-1000-90a3-0af502b50000" name="CATEGORY_ID" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b50c-0ca8-1000-90a3-0af502b50000" name="CHANNELID" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b50d-0ca8-1000-90a3-0af502b50000" name="CLAIMED" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b50e-0ca8-1000-90a3-0af502b50000" name="CLAIMID" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b50f-0ca8-1000-90a3-0af502b50000" name="CUSTOMERID" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b510-0ca8-1000-90a3-0af502b50000" name="EARNED_PREMIUM" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b511-0ca8-1000-90a3-0af502b50000" name="ENTITYID" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b512-0ca8-1000-90a3-0af502b50000" name="MONTHORDER" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b513-0ca8-1000-90a3-0af502b50000" name="POLICY_COVERED_AMOUNT" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b514-0ca8-1000-90a3-0af502b50000" name="PRODUCTID" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b515-0ca8-1000-90a3-0af502b50000" name="REVENUE" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b516-0ca8-1000-90a3-0af502b50000" name="UNEARNED_PREMIUM" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b517-0ca8-1000-90a3-0af502b50000" name="YEAR_NAME" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b518-0ca8-1000-90a3-0af502b50000" name="MONTH_KEY" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="m82e42a07-0ca8-1000-90a3-0af502b50000" name="FACT_MONTH_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3b4ce-0ca8-1000-90a3-0af502b50000.xml#m82e429ba-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a07-0ca8-1000-90a3-0af502b50000-m82e3b50f-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3b508-0ca8-1000-90a3-0af502b50000.xml#m82e3b50f-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82e42a08-0ca8-1000-90a3-0af502b50000" name="FACT_MONTH_Foreign Key#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3b4bd-0ca8-1000-90a3-0af502b50000.xml#m82e429b8-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a08-0ca8-1000-90a3-0af502b50000-m82e3b511-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3b508-0ca8-1000-90a3-0af502b50000.xml#m82e3b511-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82e42a09-0ca8-1000-90a3-0af502b50000" name="FACT_MONTH_Foreign Key#2" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3b4a5-0ca8-1000-90a3-0af502b50000.xml#m82e429b6-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a09-0ca8-1000-90a3-0af502b50000-m82e3b50c-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3b508-0ca8-1000-90a3-0af502b50000.xml#m82e3b50c-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82e42a0a-0ca8-1000-90a3-0af502b50000" name="FACT_MONTH_Foreign Key#3" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3b4a9-0ca8-1000-90a3-0af502b50000.xml#m82e429b7-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a0a-0ca8-1000-90a3-0af502b50000-m82e3b50e-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3b508-0ca8-1000-90a3-0af502b50000.xml#m82e3b50e-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82e42a0b-0ca8-1000-90a3-0af502b50000" name="FACT_MONTH_Foreign Key#5" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3b4de-0ca8-1000-90a3-0af502b50000.xml#m82e429bd-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a0b-0ca8-1000-90a3-0af502b50000-m82e3b514-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3b508-0ca8-1000-90a3-0af502b50000.xml#m82e3b514-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82e42a0c-0ca8-1000-90a3-0af502b50000" name="FACT_MONTH_Foreign Key#6" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3b519-0ca8-1000-90a3-0af502b50000.xml#m82e429c3-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a0c-0ca8-1000-90a3-0af502b50000-m82e3b518-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3b508-0ca8-1000-90a3-0af502b50000.xml#m82e3b518-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82e42a0d-0ca8-1000-90a3-0af502b50000" name="FACT_MONTH_Foreign Key#4" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3b541-0ca8-1000-90a3-0af502b50000.xml#m82e429c6-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a0d-0ca8-1000-90a3-0af502b50000-m82e3b514-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3b508-0ca8-1000-90a3-0af502b50000.xml#m82e3b514-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

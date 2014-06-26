@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="me5e87da0-0c61-1000-9af8-7f0000010000" name="F81 Database Functions Facts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cab573-07d0-0000-714b-e31d00000000.xml#m80cab573-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="ma7cc6a82-0c62-1000-adfc-7f0000010000" name="170  ---- Model Clause Forecast -------------------------" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m00000001-01f4-0000-2417-b68600000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="ma7cc6a83-0c62-1000-adfc-7f0000010000" name="AD_3900:2567911361786600">
+<Expr mdsid="m00000002-01f4-0000-d98f-5d2200000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="me5e87da6-0c61-1000-9af8-7f0000010000" name="170  Projected Revenue Estimation" isWriteable="false">
+<MeasureDefn mdsid="me6041bf0-0c61-1000-9af8-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="me6041bf1-0c61-1000-9af8-7f0000010000" name="AggRule_2050:2567421361461113" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-31f0-588800000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("01 - Sample App"."F81 Database Functions Facts"."170  Projected Revenue Estimation")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-31f0-588800000000-me5e87da6-0c61-1000-9af8-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/e5e87da0-0c61-1000-9af8-7f0000010000.xml#me5e87da6-0c61-1000-9af8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="me5e87dab-0c61-1000-9af8-7f0000010000" name="AD_3900:2567271361461114">
+<Expr mdsid="m00000004-01f4-0000-1d98-e3c900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F81 Db Facts Forecast Model from Db Function"."PROJECTED_REV"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-1d98-e3c900000000-me5d0d6f4-0c61-1000-9af8-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/e5ce8d00-0c61-1000-9af8-7f0000010000.xml#me5d0d6f4-0c61-1000-9af8-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="ma7d0b042-0c62-1000-adfc-7f0000010000" name="171  ---- Frequent Itemset Function -------------------------" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m00000005-01f4-0000-557b-18d000000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="ma7d0b043-0c62-1000-adfc-7f0000010000" name="AD_3900:2567951361786600">
+<Expr mdsid="m00000006-01f4-0000-7323-d59500000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="ma7da7440-0c62-1000-adfc-7f0000010000" name="176  # of Individuals" isWriteable="false">
+<AttrDefn mdsid="ma7da7449-0c62-1000-adfc-7f0000010000" name="AD_3900:2568211361786600">
+<Expr mdsid="m00000007-01f4-0000-d3a8-ca8f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F82 Db Facts Frequent Itemset from Db Function"."TOTAL_TRANX"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-d3a8-ca8f00000000-ma7d80341-0c62-1000-adfc-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/a7411a70-0c62-1000-adfc-7f0000010000.xml#ma7d80341-0c62-1000-adfc-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="ma7da7441-0c62-1000-adfc-7f0000010000" name="173  # of Sales Records" isWriteable="false">
+<AttrDefn mdsid="ma7da7445-0c62-1000-adfc-7f0000010000" name="AD_3900:2568171361786600">
+<Expr mdsid="m00000008-01f4-0000-47ae-8ffc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F82 Db Facts Frequent Itemset from Db Function"."OCCURS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-47ae-8ffc00000000-ma7d80344-0c62-1000-adfc-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/a7411a70-0c62-1000-adfc-7f0000010000.xml#ma7d80344-0c62-1000-adfc-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="ma7da7443-0c62-1000-adfc-7f0000010000" name="171  Combination Id" isWriteable="false">
+<AttrDefn mdsid="ma7da7447-0c62-1000-adfc-7f0000010000" name="AD_3900:2568191361786600">
+<Expr mdsid="m00000009-01f4-0000-8972-320000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F82 Db Facts Frequent Itemset from Db Function"."SERIES_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-8972-320000000000-ma7d80342-0c62-1000-adfc-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/a7411a70-0c62-1000-adfc-7f0000010000.xml#ma7d80342-0c62-1000-adfc-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="ma7da7444-0c62-1000-adfc-7f0000010000" name="172  Combination Length" isWriteable="false">
+<AttrDefn mdsid="ma7da7448-0c62-1000-adfc-7f0000010000" name="AD_3900:2568201361786600">
+<Expr mdsid="m0000000a-01f4-0000-4de3-360d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F82 Db Facts Frequent Itemset from Db Function"."SERIES_LENGTH"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-4de3-360d00000000-ma7d80343-0c62-1000-adfc-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/a7411a70-0c62-1000-adfc-7f0000010000.xml#ma7d80343-0c62-1000-adfc-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="maa9db2f4-0c62-1000-adfc-7f0000010000" name="175  Rank" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000000b-01f4-0000-b55d-659700000000" name="Expr">
+<ExprText><![CDATA[rank( "%1"   +"%2"/10000 )]]></ExprText>
+<ExprTextDesc><![CDATA[rank( "01 - Sample App"."F81 Database Functions Facts"."173  # of Sales Records"   +"01 - Sample App"."F81 Database Functions Facts"."171  Combination Id"/10000 )]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-b55d-659700000000-ma7da7441-0c62-1000-adfc-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/e5e87da0-0c61-1000-9af8-7f0000010000.xml#ma7da7441-0c62-1000-adfc-7f0000010000"/>
+<RefObject refId="m0000000b-01f4-0000-b55d-659700000000-ma7da7443-0c62-1000-adfc-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/e5e87da0-0c61-1000-9af8-7f0000010000.xml#ma7da7443-0c62-1000-adfc-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="maa9db2f7-0c62-1000-adfc-7f0000010000" name="AD_3900:2568781361791021">
+<Expr mdsid="m0000000c-01f4-0000-19cc-774e00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mad09d0f3-0c62-1000-8c9c-7f0000010000" name="174  # of Combinations" isWriteable="false">
+<MeasureDefn mdsid="mad0da180-0c62-1000-8c9c-7f0000010000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mad0da181-0c62-1000-8c9c-7f0000010000" name="AggRule_2050:2569091361795072" isDefault="true">
+<Expr mdsid="m0000000d-01f4-0000-c91b-edcc00000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "01 - Sample App"."F81 Database Functions Facts"."174  # of Combinations")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-c91b-edcc00000000-mad09d0f3-0c62-1000-8c9c-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/e5e87da0-0c61-1000-9af8-7f0000010000.xml#mad09d0f3-0c62-1000-8c9c-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mad09d0f4-0c62-1000-8c9c-7f0000010000" name="AD_3900:2569071361795072">
+<Expr mdsid="m0000000e-01f4-0000-af21-ab0c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F82 Db Facts Frequent Itemset from Db Function"."SERIES_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-af21-ab0c00000000-ma7d80342-0c62-1000-adfc-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/a7411a70-0c62-1000-adfc-7f0000010000.xml#ma7d80342-0c62-1000-adfc-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="me5e87da0-0c61-1000-9af8-7f0000010000-me5e87da2-0c61-1000-9af8-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/e5e87da2-0c61-1000-9af8-7f0000010000.xml#me5e87da2-0c61-1000-9af8-7f0000010000"/>
+<RefLogicalTableSource refId="me5e87da0-0c61-1000-9af8-7f0000010000-ma7da744a-0c62-1000-adfc-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/a7da744a-0c62-1000-adfc-7f0000010000.xml#ma7da744a-0c62-1000-adfc-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

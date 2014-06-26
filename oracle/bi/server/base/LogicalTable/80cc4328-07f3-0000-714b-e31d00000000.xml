@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cc4328-07f3-0000-714b-e31d00000000" name="4 Dim Roles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="667" y="438" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cc4320-07d0-0000-714b-e31d00000000.xml#m80cc4320-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cc4341-07d6-0000-714b-e31d00000000" name="App Role Name" isWriteable="false">
+<AttrDefn mdsid="m80cc44b8-0f3c-0000-714b-e31d00000000" name="AD_3900:872131285346076">
+<Expr mdsid="m00000001-01f4-0000-2ddd-ec5600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X3 - BPM Data (ORCL)".""."BISAMPLE"."4 Dim Roles"."APPROLENAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-2ddd-ec5600000000-m80cc4408-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43e1-0bb9-0000-714b-e31d00000000.xml#m80cc4408-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc4342-07d6-0000-714b-e31d00000000" name="Isprocessowner" isWriteable="false">
+<AttrDefn mdsid="m80cc44b9-0f3c-0000-714b-e31d00000000" name="AD_3900:872141285346076">
+<Expr mdsid="m00000002-01f4-0000-6a76-060400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X3 - BPM Data (ORCL)".""."BISAMPLE"."4 Dim Roles"."ISPROCESSOWNER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-6a76-060400000000-m80cc4409-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43e1-0bb9-0000-714b-e31d00000000.xml#m80cc4409-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc4343-07d6-0000-714b-e31d00000000" name="Label" isWriteable="false">
+<AttrDefn mdsid="m80cc44ba-0f3c-0000-714b-e31d00000000" name="AD_3900:872151285346076">
+<Expr mdsid="m00000003-01f4-0000-0308-f3d600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X3 - BPM Data (ORCL)".""."BISAMPLE"."4 Dim Roles"."LABEL"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-0308-f3d600000000-m80cc440a-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43e1-0bb9-0000-714b-e31d00000000.xml#m80cc440a-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc4344-07d6-0000-714b-e31d00000000" name="Process Id" isWriteable="false">
+<AttrDefn mdsid="m80cc44bb-0f3c-0000-714b-e31d00000000" name="AD_3900:872161285346076">
+<Expr mdsid="m00000004-01f4-0000-6342-1bf500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X3 - BPM Data (ORCL)".""."BISAMPLE"."7 Facts TasksPerf"."PROCESS_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-6342-1bf500000000-m80cc4420-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43e2-0bb9-0000-714b-e31d00000000.xml#m80cc4420-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc4345-07d6-0000-714b-e31d00000000" name="Role Id" isWriteable="false">
+<AttrDefn mdsid="m80cc44bc-0f3c-0000-714b-e31d00000000" name="AD_3900:872171285346076">
+<Expr mdsid="m00000005-01f4-0000-f945-8d8700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X3 - BPM Data (ORCL)".""."BISAMPLE"."7 Facts TasksPerf"."ACTIVITY_ROLE_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-f945-8d8700000000-m80cc4415-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43e2-0bb9-0000-714b-e31d00000000.xml#m80cc4415-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cc4346-07d6-0000-714b-e31d00000000" name="Role Name" isWriteable="false">
+<AttrDefn mdsid="m80cc44bd-0f3c-0000-714b-e31d00000000" name="AD_3900:872181285346076">
+<Expr mdsid="m00000006-01f4-0000-48a2-a90200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X3 - BPM Data (ORCL)".""."BISAMPLE"."7 Facts TasksPerf"."ACTIVITY_ROLE_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-48a2-a90200000000-m80cc4416-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cc43e2-0bb9-0000-714b-e31d00000000.xml#m80cc4416-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cc43ce-07d8-0000-714b-e31d00000000" name="3 Dim Role_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cc43ce-07d8-0000-714b-e31d00000000-m80cc4344-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc4328-07f3-0000-714b-e31d00000000.xml#m80cc4344-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cc43ce-07d8-0000-714b-e31d00000000-m80cc4345-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cc4328-07f3-0000-714b-e31d00000000.xml#m80cc4345-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cc4328-07f3-0000-714b-e31d00000000-m80cc4501-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cc4501-07f5-0000-714b-e31d00000000.xml#m80cc4501-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cc4328-07f3-0000-714b-e31d00000000-m80cc4502-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cc4502-07f5-0000-714b-e31d00000000.xml#m80cc4502-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cc4328-07f3-0000-714b-e31d00000000-m80cc4503-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cc4503-07f5-0000-714b-e31d00000000.xml#m80cc4503-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

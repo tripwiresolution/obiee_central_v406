@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m82ddc17f-0ca8-1000-90a3-0af502b50000" name="DEMO_APT_PO_LINES" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" maxConn="0" containerRef="/oracle/bi/server/base/Schema/82ddc124-0ca8-1000-90a3-0af502b50000.xml#m82ddc124-0ca8-1000-90a3-0af502b50000">
+<PhysicalColumn mdsid="m82ddc180-0ca8-1000-90a3-0af502b50000" name="ORG_ID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82ddc181-0ca8-1000-90a3-0af502b50000" name="PO_LINE_ID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82ddc182-0ca8-1000-90a3-0af502b50000" name="PO_LINE_NUM" dataType="INT" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82ddc183-0ca8-1000-90a3-0af502b50000" name="PO_NUM" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82ddc184-0ca8-1000-90a3-0af502b50000" name="PO_UNIT_PRICE" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82ddc185-0ca8-1000-90a3-0af502b50000" name="PO_HEADER_ID" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m82de1066-0ca8-1000-90a3-0af502b50000" name="MOJ_PO_LINES_Key#1">
+<RefColumns>
+<RefColumn refId="m82de1066-0ca8-1000-90a3-0af502b50000-m82ddc181-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82ddc17f-0ca8-1000-90a3-0af502b50000.xml#m82ddc181-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m82de3664-0ca8-1000-90a3-0af502b50000" name="MOJ_PO_LINES_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82ddc179-0ca8-1000-90a3-0af502b50000.xml#m82de1065-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82de3664-0ca8-1000-90a3-0af502b50000-m82ddc185-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82ddc17f-0ca8-1000-90a3-0af502b50000.xml#m82ddc185-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

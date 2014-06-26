@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m8f857a20-0c26-1000-9bbc-0af502b10000" name="V$SEGMENT_STATISTICS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/78682d26-0c20-1000-b5b8-0af502b10000.xml#m78682d26-0c20-1000-b5b8-0af502b10000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[V$SEGMENT_STATISTICS]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m8f857a21-0c26-1000-9bbc-0af502b10000" name="DATAOBJ#" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8f857a22-0c26-1000-9bbc-0af502b10000" name="OBJ#" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8f857a23-0c26-1000-9bbc-0af502b10000" name="OBJECT_NAME" dataType="VARCHAR" precision="30" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8f857a24-0c26-1000-9bbc-0af502b10000" name="OBJECT_TYPE" dataType="VARCHAR" precision="18" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8f857a25-0c26-1000-9bbc-0af502b10000" name="OWNER" dataType="VARCHAR" precision="30" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8f857a26-0c26-1000-9bbc-0af502b10000" name="STATISTIC#" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8f857a27-0c26-1000-9bbc-0af502b10000" name="STATISTIC_NAME" dataType="VARCHAR" precision="64" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8f857a28-0c26-1000-9bbc-0af502b10000" name="SUBOBJECT_NAME" dataType="VARCHAR" precision="30" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8f857a29-0c26-1000-9bbc-0af502b10000" name="TABLESPACE_NAME" dataType="VARCHAR" precision="30" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8f857a2a-0c26-1000-9bbc-0af502b10000" name="TS#" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8f857a2b-0c26-1000-9bbc-0af502b10000" name="VALUE" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="mba04fe60-0c26-1000-b8db-0af502b10000" name="V_$SEGMENT_STATISTICS_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/b8374340-0c26-1000-b8db-0af502b10000.xml#mb90d57f0-0c26-1000-b8db-0af502b10000">
+<RefColumns>
+<RefColumn refId="mba04fe60-0c26-1000-b8db-0af502b10000-m8f857a25-0c26-1000-9bbc-0af502b10000" columnRef="/oracle/bi/server/base/PhysicalTable/8f857a20-0c26-1000-9bbc-0af502b10000.xml#m8f857a25-0c26-1000-9bbc-0af502b10000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

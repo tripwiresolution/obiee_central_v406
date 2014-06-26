@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m82e3dc41-0ca8-1000-90a3-0af502b50000" name="LOIC_METRICS_CLQ_AGL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" maxConn="0" containerRef="/oracle/bi/server/base/Schema/82e3b49b-0ca8-1000-90a3-0af502b50000.xml#m82e3b49b-0ca8-1000-90a3-0af502b50000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[LOIC_METRICS_CLQ_AGL]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m82e3dc42-0ca8-1000-90a3-0af502b50000" name="AGEBAND_ID" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dc43-0ca8-1000-90a3-0af502b50000" name="CALENDAR_DATE" dataType="DATETIME" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dc44-0ca8-1000-90a3-0af502b50000" name="COUNTRY_ID" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dc45-0ca8-1000-90a3-0af502b50000" name="GENDER_ID" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dc46-0ca8-1000-90a3-0af502b50000" name="LEAVERS" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dc47-0ca8-1000-90a3-0af502b50000" name="LOB_ID" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dc48-0ca8-1000-90a3-0af502b50000" name="REASON_ID" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dc49-0ca8-1000-90a3-0af502b50000" name="INV_LEAVERS" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="m82e42a21-0ca8-1000-90a3-0af502b50000" name="LOIC_METRICS_CLQ_AGL_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3dc2a-0ca8-1000-90a3-0af502b50000.xml#m82e429d3-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a21-0ca8-1000-90a3-0af502b50000-m82e3dc42-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3dc41-0ca8-1000-90a3-0af502b50000.xml#m82e3dc42-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82e42a22-0ca8-1000-90a3-0af502b50000" name="LOIC_METRICS_CLQ_AGL_Foreign Key#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3dc58-0ca8-1000-90a3-0af502b50000.xml#m82e429d7-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a22-0ca8-1000-90a3-0af502b50000-m82e3dc48-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3dc41-0ca8-1000-90a3-0af502b50000.xml#m82e3dc48-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82e42a23-0ca8-1000-90a3-0af502b50000" name="LOIC_METRICS_CLQ_AGL_Foreign Key#2" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3dc34-0ca8-1000-90a3-0af502b50000.xml#m82e429d5-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a23-0ca8-1000-90a3-0af502b50000-m82e3dc45-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3dc41-0ca8-1000-90a3-0af502b50000.xml#m82e3dc45-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82e42a24-0ca8-1000-90a3-0af502b50000" name="LOIC_METRICS_CLQ_AGL_Foreign Key#3" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3dc37-0ca8-1000-90a3-0af502b50000.xml#m82e429d6-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a24-0ca8-1000-90a3-0af502b50000-m82e3dc47-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3dc41-0ca8-1000-90a3-0af502b50000.xml#m82e3dc47-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82e42a25-0ca8-1000-90a3-0af502b50000" name="LOIC_METRICS_CLQ_AGL_Foreign Key#4" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3dc2d-0ca8-1000-90a3-0af502b50000.xml#m82e429d4-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a25-0ca8-1000-90a3-0af502b50000-m82e3dc44-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3dc41-0ca8-1000-90a3-0af502b50000.xml#m82e3dc44-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82e42a26-0ca8-1000-90a3-0af502b50000" name="LOIC_METRICS_CLQ_AGL_Foreign Key#5" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3dc61-0ca8-1000-90a3-0af502b50000.xml#m82e429da-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a26-0ca8-1000-90a3-0af502b50000-m82e3dc43-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3dc41-0ca8-1000-90a3-0af502b50000.xml#m82e3dc43-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

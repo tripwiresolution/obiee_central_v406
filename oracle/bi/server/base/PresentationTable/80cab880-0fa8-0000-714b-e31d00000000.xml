@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationTable mdsid="m80cab880-0fa8-0000-714b-e31d00000000" name="Simple Calculations" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationCatalog/80cab7ef-0fa4-0000-714b-e31d00000000.xml#m80cab7ef-0fa4-0000-714b-e31d00000000">
+<Description><![CDATA[This folder contains simple calculations where each metric is defined as a division of two base facts. Eg:- Unit Price, Avg Order Size and so on
+]]></Description>
+<Alias name="Calcs"/>
+<PresentationColumn mdsid="m80cc769d-0faa-0000-714b-e31d00000000" name="17  Net Costs" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cc769a-07d6-0000-714b-e31d00000000">
+<Alias name="12  Total Costs"/>
+<Alias name="17 - Net Costs"/>
+<Alias name="Cost"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m80caba1c-0faa-0000-714b-e31d00000000" name="20  Actual Unit Price" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_20__Actual_Unit_Price)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cab994-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Unit Price is computed as Revenue divided by Billed Quantity]]></Description>
+<Alias name="Unit Price"/>
+<Alias name="UnitPrice"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m80caba2d-0faa-0000-714b-e31d00000000" name="21  Target Unit Price" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_21__Target_Unit_Price)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80caba2a-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Target Unit Price is computed as Target Revenue divided by Target Quantity]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cb730e-0faa-0000-714b-e31d00000000" name="22  Discount Rate" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_22__Discount_Rate)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cb730b-07d6-0000-714b-e31d00000000">
+<Alias name="Discount Rt"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m80caba3e-0faa-0000-714b-e31d00000000" name="23  Avg # of Orders by Customer" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_23__Avg_#_of_Orders_by_Customer)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80caba35-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+# of Orders by Customer is computed as Number of Distinct Orders divided by Number of Distinct Customers in the fact table.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80caba3c-0faa-0000-714b-e31d00000000" name="24  Avg # of Orders by Sales Rep" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_24__Avg_#_of_Orders_by_Sales_Rep)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80caba31-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+# of Orders by Employee is computed as Number of Distinct Orders divided by Number of Distinct Employees in the fact table.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80caba40-0faa-0000-714b-e31d00000000" name="25  Avg Order Size" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_25__Avg_Order_Size)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80caba39-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Average Order Size is computed as Revenue divided by Number of Distinct Orders in the fact table.]]></Description>
+<Alias name="OrderSize"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cadd13-0faa-0000-714b-e31d00000000" name="26  Target Completion  (Rev Pct)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_26__Target_Completion__(Rev_Pct))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cadcc3-07d6-0000-714b-e31d00000000">
+</PresentationColumn>
+<PresentationColumn mdsid="m80cadd21-0faa-0000-714b-e31d00000000" name="27  Avg Monthly Revenue" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_27__Avg_Monthly_Revenue)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cadd1e-07d6-0000-714b-e31d00000000">
+</PresentationColumn>
+<PresentationColumn mdsid="m80cadd19-0faa-0000-714b-e31d00000000" name="28  # of Customers by Sales Rep" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_28__#_of_Customers_by_Sales_Rep)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cadccf-07d6-0000-714b-e31d00000000">
+</PresentationColumn>
+<PresentationColumn mdsid="m80caba1a-0faa-0000-714b-e31d00000000" name="29  Collect to Bill Ratio" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_29__Collect_to_Bill_Ratio)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cab993-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Collect to Bill Ratio is computed as Paid Amount divided by Revenue.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m7b6de9e1-0c5e-1000-9ac7-7f0000010000" name="30  Profit Margin" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m7b572d93-0c5e-1000-9ac7-7f0000010000">
+</PresentationColumn>
+<PresentationColumn mdsid="mbccef101-0c6c-1000-b7cb-0af502b20000" name="36  Profit Ratio" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#mbcb379c3-0c6c-1000-b7cb-0af502b20000">
+</PresentationColumn>
+<PresentationColumn mdsid="m1822df81-0c22-1000-8ce6-0af502b10000" name="40  Avg Monthly Revenue by FTE" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cadcd3-07d6-0000-714b-e31d00000000">
+</PresentationColumn>
+<PresentationColumn mdsid="m1822df80-0c22-1000-8ce6-0af502b10000" name="41  Avg Revenue by FTE" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cadccb-07d6-0000-714b-e31d00000000">
+</PresentationColumn>
+<PresentationColumn mdsid="m80cbdb77-0faa-0000-714b-e31d00000000" name="43  Backlog Variation (Value)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_43__Backlog_Variation_(Value))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cbdb3e-07d6-0000-714b-e31d00000000">
+</PresentationColumn>
+<PresentationColumn mdsid="m80cbdc02-0faa-0000-714b-e31d00000000" name="44  Early Shipped Value" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_44__Early_Shipped_Value)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cbdbfe-07d6-0000-714b-e31d00000000">
+</PresentationColumn>
+<PresentationColumn mdsid="m80cbdc15-0faa-0000-714b-e31d00000000" name="45  Early Shipped Pct" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_45__Early_Shipped_Pct)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cbdc11-07d6-0000-714b-e31d00000000">
+</PresentationColumn>
+<PresentationColumn mdsid="m80cbdc38-0faa-0000-714b-e31d00000000" name="46  Avg Order Process Time" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_46__Avg_Order_Process_Time)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cbdc24-07d6-0000-714b-e31d00000000">
+<Alias name="OrderProcessTime"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m1822df82-0c22-1000-8ce6-0af502b10000" name="47  Avg FTE over Period" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cc6384-07d6-0000-714b-e31d00000000">
+</PresentationColumn>
+<PresentationColumn mdsid="m80cdebff-0faa-0000-714b-e31d00000000" name="48 LTS Filtered Revenue" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cdebf1-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+<Alias name="48- LTS Filtered Revenue"/>
+</PresentationColumn>
+</PresentationTable>

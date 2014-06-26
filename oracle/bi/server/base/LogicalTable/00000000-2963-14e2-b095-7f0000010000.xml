@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m00000000-2963-14e2-b095-7f0000010000" name="Telco Dim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/00000034-249f-14e2-b095-7f0000010000.xml#m00000034-249f-14e2-b095-7f0000010000">
+<LogicalColumn mdsid="m00000002-2963-14e2-b095-7f0000010000" name="Address" isWriteable="false">
+<AttrDefn mdsid="m4000000b-2963-14e2-b095-7f0000010000" name="AD_3900:2854021401465833">
+<Expr mdsid="m00000001-01f4-0000-cf51-24b600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."ADDRESS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-cf51-24b600000000-m8000003c-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m8000003c-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m00000003-2963-14e2-b095-7f0000010000" name="Ageaugmented" isWriteable="false">
+<AttrDefn mdsid="m4000000c-2963-14e2-b095-7f0000010000" name="AD_3900:2854031401465833">
+<Expr mdsid="m00000002-01f4-0000-08c0-ff2600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."AGEAUGMENTED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-08c0-ff2600000000-m8000003d-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m8000003d-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m00000004-2963-14e2-b095-7f0000010000" name="Agegroup" isWriteable="false">
+<AttrDefn mdsid="m4000000d-2963-14e2-b095-7f0000010000" name="AD_3900:2854041401465833">
+<Expr mdsid="m00000003-01f4-0000-4e85-ea5200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."AGEGROUP"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-4e85-ea5200000000-m8000003e-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m8000003e-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m00000005-2963-14e2-b095-7f0000010000" name="City" isWriteable="false">
+<AttrDefn mdsid="m4000000e-2963-14e2-b095-7f0000010000" name="AD_3900:2854051401465833">
+<Expr mdsid="m00000004-01f4-0000-f8c3-98c300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."CITY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-f8c3-98c300000000-m8000003f-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m8000003f-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m00000007-2963-14e2-b095-7f0000010000" name="Customer Id" isWriteable="false">
+<AttrDefn mdsid="m40000010-2963-14e2-b095-7f0000010000" name="AD_3900:2854071401465833">
+<Expr mdsid="m00000005-01f4-0000-aad7-596900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."CUSTOMER_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-aad7-596900000000-m80000041-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m80000041-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m00000008-2963-14e2-b095-7f0000010000" name="Lifetimevalue" isWriteable="false">
+<AttrDefn mdsid="m40000011-2963-14e2-b095-7f0000010000" name="AD_3900:2854081401465833">
+<Expr mdsid="m00000006-01f4-0000-124c-bbea00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."LIFETIMEVALUE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-124c-bbea00000000-m80000042-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m80000042-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m00000009-2963-14e2-b095-7f0000010000" name="Name" isWriteable="false">
+<AttrDefn mdsid="m40000012-2963-14e2-b095-7f0000010000" name="AD_3900:2854091401465833">
+<Expr mdsid="m00000007-01f4-0000-3c68-82af00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-3c68-82af00000000-m80000043-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m80000043-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m0000000a-2963-14e2-b095-7f0000010000" name="Plans" isWriteable="false">
+<AttrDefn mdsid="m40000013-2963-14e2-b095-7f0000010000" name="AD_3900:2854101401465833">
+<Expr mdsid="m00000008-01f4-0000-4c79-b03000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."PLANS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-4c79-b03000000000-m80000044-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m80000044-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m0000000c-2963-14e2-b095-7f0000010000" name="Product" isWriteable="false">
+<AttrDefn mdsid="m40000015-2963-14e2-b095-7f0000010000" name="AD_3900:2854121401465833">
+<Expr mdsid="m00000009-01f4-0000-77a1-85b800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."PRODUCT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-77a1-85b800000000-m80000046-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m80000046-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m40000001-2963-14e2-b095-7f0000010000" name="Region" isWriteable="false">
+<AttrDefn mdsid="m40000017-2963-14e2-b095-7f0000010000" name="AD_3900:2854141401465833">
+<Expr mdsid="m0000000a-01f4-0000-974b-783700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."REGION_"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-974b-783700000000-m80000048-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m80000048-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m40000003-2963-14e2-b095-7f0000010000" name="Segment" isWriteable="false">
+<AttrDefn mdsid="m40000019-2963-14e2-b095-7f0000010000" name="AD_3900:2854161401465833">
+<Expr mdsid="m0000000b-01f4-0000-4846-573200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."SEGMENT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-4846-573200000000-m8000004a-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m8000004a-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m40000004-2963-14e2-b095-7f0000010000" name="State" isWriteable="false">
+<AttrDefn mdsid="m4000001a-2963-14e2-b095-7f0000010000" name="AD_3900:2854171401465833">
+<Expr mdsid="m0000000c-01f4-0000-ffcb-25ad00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."STATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-ffcb-25ad00000000-m8000004b-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m8000004b-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m40000006-2963-14e2-b095-7f0000010000" name="Times" isWriteable="false">
+<AttrDefn mdsid="m4000001c-2963-14e2-b095-7f0000010000" name="AD_3900:2854191401465833">
+<Expr mdsid="m0000000d-01f4-0000-bbdf-50aa00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."TIMES"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-bbdf-50aa00000000-m8000004d-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m8000004d-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m40000008-2963-14e2-b095-7f0000010000" name="Zip" isWriteable="false">
+<AttrDefn mdsid="m4000001e-2963-14e2-b095-7f0000010000" name="AD_3900:2854211401465833">
+<Expr mdsid="m0000000e-01f4-0000-a896-8d6300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."ZIP"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-a896-8d6300000000-m8000004f-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m8000004f-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m00000014-24f3-14e2-b095-7f0000010000" name="Tenure" isWriteable="false">
+<AttrDefn mdsid="m00000029-24f3-14e2-b095-7f0000010000" name="AD_3900:2852641401465833">
+<Expr mdsid="m0000000f-01f4-0000-f072-017d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."TELCO"."TELCO_DENORM"."TENURE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-f072-017d00000000-m8000004c-2401-14e2-b095-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8000003a-2401-14e2-b095-7f0000010000.xml#m8000004c-2401-14e2-b095-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m00000000-2a75-14e2-b095-7f0000010000" name="Primary" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m00000000-2a75-14e2-b095-7f0000010000-m00000007-2963-14e2-b095-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/00000000-2963-14e2-b095-7f0000010000.xml#m00000007-2963-14e2-b095-7f0000010000"/>
+<RefLogicalColumn refId="m00000000-2a75-14e2-b095-7f0000010000-m0000000c-2963-14e2-b095-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/00000000-2963-14e2-b095-7f0000010000.xml#m0000000c-2963-14e2-b095-7f0000010000"/>
+<RefLogicalColumn refId="m00000000-2a75-14e2-b095-7f0000010000-m40000006-2963-14e2-b095-7f0000010000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/00000000-2963-14e2-b095-7f0000010000.xml#m40000006-2963-14e2-b095-7f0000010000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m00000000-2963-14e2-b095-7f0000010000-m4000001f-2963-14e2-b095-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/4000001f-2963-14e2-b095-7f0000010000.xml#m4000001f-2963-14e2-b095-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

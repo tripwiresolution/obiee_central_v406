@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="mfe3332db-0c82-1000-806e-0af170e40000" name="movieapp_log_json" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" maxConn="0" containerRef="/oracle/bi/server/base/Schema/fe3332d8-0c82-1000-806e-0af170e40000.xml#mfe3332d8-0c82-1000-806e-0af170e40000">
+<Description><![CDATA[hdfs://localhost.localdomain:8020/user/oracle/moviework/applog]]></Description>
+<PhysicalColumn mdsid="mfe3332dc-0c82-1000-806e-0af170e40000" name="custid" dataType="INT" precision="10" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe3332dd-0c82-1000-806e-0af170e40000" name="movieid" dataType="INT" precision="10" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe3332de-0c82-1000-806e-0af170e40000" name="genreid" dataType="INT" precision="10" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe3332df-0c82-1000-806e-0af170e40000" name="time" dataType="VARCHAR" precision="32768" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe3332e0-0c82-1000-806e-0af170e40000" name="recommended" dataType="VARCHAR" precision="32768" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe3332e1-0c82-1000-806e-0af170e40000" name="activity" dataType="INT" precision="10" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe3332e2-0c82-1000-806e-0af170e40000" name="rating" dataType="INT" precision="10" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mfe3332e3-0c82-1000-806e-0af170e40000" name="price" dataType="FLOAT" precision="24" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="m83cc1880-0c83-1000-ba54-0a973ed50000" name="movieapp_log_json_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/fe333357-0c82-1000-806e-0af170e40000.xml#mfe33343a-0c82-1000-806e-0af170e40000">
+<RefColumns>
+<RefColumn refId="m83cc1880-0c83-1000-ba54-0a973ed50000-mfe3332e1-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe3332db-0c82-1000-806e-0af170e40000.xml#mfe3332e1-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m83cd9f20-0c83-1000-ba54-0a973ed50000" name="movieapp_log_json_Foreign Key#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/fe333322-0c82-1000-806e-0af170e40000.xml#mfe33342e-0c82-1000-806e-0af170e40000">
+<RefColumns>
+<RefColumn refId="m83cd9f20-0c83-1000-ba54-0a973ed50000-mfe3332de-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe3332db-0c82-1000-806e-0af170e40000.xml#mfe3332de-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m83cefeb0-0c83-1000-ba54-0a973ed50000" name="movieapp_log_json_Foreign Key#2" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/fe333325-0c82-1000-806e-0af170e40000.xml#mfe33342f-0c82-1000-806e-0af170e40000">
+<RefColumns>
+<RefColumn refId="m83cefeb0-0c83-1000-ba54-0a973ed50000-mfe3332dd-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe3332db-0c82-1000-806e-0af170e40000.xml#mfe3332dd-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m83d01020-0c83-1000-ba54-0a973ed50000" name="movieapp_log_json_Foreign Key#3" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/fe3332f5-0c82-1000-806e-0af170e40000.xml#mfe33342c-0c82-1000-806e-0af170e40000">
+<RefColumns>
+<RefColumn refId="m83d01020-0c83-1000-ba54-0a973ed50000-mfe3332dc-0c82-1000-806e-0af170e40000" columnRef="/oracle/bi/server/base/PhysicalTable/fe3332db-0c82-1000-806e-0af170e40000.xml#mfe3332dc-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

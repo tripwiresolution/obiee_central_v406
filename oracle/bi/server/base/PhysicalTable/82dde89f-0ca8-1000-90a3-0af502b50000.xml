@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m82dde89f-0ca8-1000-90a3-0af502b50000" name="ADS_BI_PT_CONTRACT_FACT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/82ddc126-0ca8-1000-90a3-0af502b50000.xml#m82ddc126-0ca8-1000-90a3-0af502b50000">
+<Description><![CDATA[Old name W_CONTRACT_DETAILS_FACT]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[ADS_BI_PT_CONTRACT_FACT]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m82dde8a0-0ca8-1000-90a3-0af502b50000" name="AGREED_AMOUNT" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8a1-0ca8-1000-90a3-0af502b50000" name="CONTRACT_NO" dataType="VARCHAR" precision="20" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8a2-0ca8-1000-90a3-0af502b50000" name="CREATION_DATE" dataType="DATE" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8a3-0ca8-1000-90a3-0af502b50000" name="END_DATE" dataType="DATE" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8a4-0ca8-1000-90a3-0af502b50000" name="SPEND_TO_DATE" dataType="DOUBLE" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8a5-0ca8-1000-90a3-0af502b50000" name="START_DATE" dataType="DATE" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8a6-0ca8-1000-90a3-0af502b50000" name="PO_LINES_COUNT" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8a7-0ca8-1000-90a3-0af502b50000" name="PREDICTED_SAVINGS" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82dde8a8-0ca8-1000-90a3-0af502b50000" name="ACTUAL_SAVINGS" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m82de107a-0ca8-1000-90a3-0af502b50000" name="CONTRACT_NO">
+<RefColumns>
+<RefColumn refId="m82de107a-0ca8-1000-90a3-0af502b50000-m82dde8a1-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82dde89f-0ca8-1000-90a3-0af502b50000.xml#m82dde8a1-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m82de3682-0ca8-1000-90a3-0af502b50000" name="W_CONTRACT_DETAILS_FACT_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82dde8a9-0ca8-1000-90a3-0af502b50000.xml#m82de3640-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82de3682-0ca8-1000-90a3-0af502b50000-m82dde8a1-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82dde89f-0ca8-1000-90a3-0af502b50000.xml#m82dde8a1-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82de3683-0ca8-1000-90a3-0af502b50000" name="W_CONTRACT_DETAILS_FACT_FKey#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82dde8b1-0ca8-1000-90a3-0af502b50000.xml#m82de3641-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82de3683-0ca8-1000-90a3-0af502b50000-m82dde8a2-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82dde89f-0ca8-1000-90a3-0af502b50000.xml#m82dde8a2-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

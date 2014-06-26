@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0fb4e-0ca8-1000-90a3-0af502b50000" name="Dim - Supplier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd7-0ca8-1000-90a3-0af502b50000.xml#m82f0acd7-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0fb4f-0ca8-1000-90a3-0af502b50000" name="Supplier ID" isWriteable="false">
+<AttrDefn mdsid="m82f282a3-0ca8-1000-90a3-0af502b50000" name="AD_3900:2758521391789375">
+<Expr mdsid="m00000001-01f4-0000-0128-df6100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_SS"."ADS_BI_SS_PO_VENDORS"."VENDOR_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-0128-df6100000000-m82dde98a-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde989-0ca8-1000-90a3-0af502b50000.xml#m82dde98a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fb50-0ca8-1000-90a3-0af502b50000" name="Supplier Name" isWriteable="false">
+<AttrDefn mdsid="m82f282a4-0ca8-1000-90a3-0af502b50000" name="AD_3900:2758531391789375">
+<Expr mdsid="m00000002-01f4-0000-4787-b74000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_SS"."ADS_BI_SS_PO_VENDORS"."VENDOR_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-4787-b74000000000-m82dde98d-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde989-0ca8-1000-90a3-0af502b50000.xml#m82dde98d-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fb51-0ca8-1000-90a3-0af502b50000" name="Party ID" isWriteable="false">
+<AttrDefn mdsid="m82f282a5-0ca8-1000-90a3-0af502b50000" name="AD_3900:2758541391789375">
+<Expr mdsid="m00000003-01f4-0000-426c-527400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_SS"."ADS_BI_SS_PO_VENDORS"."PARTY_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-426c-527400000000-m82ddea00-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde989-0ca8-1000-90a3-0af502b50000.xml#m82ddea00-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m82f233ef-0ca8-1000-90a3-0af502b50000" name="VENDOR_ID" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f233ef-0ca8-1000-90a3-0af502b50000-m82f0fb4f-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0fb4e-0ca8-1000-90a3-0af502b50000.xml#m82f0fb4f-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m82f233f0-0ca8-1000-90a3-0af502b50000" name="PO_VENDORS_Key">
+<RefColumns>
+<RefLogicalColumn refId="m82f233f0-0ca8-1000-90a3-0af502b50000-m82f0fb51-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0fb4e-0ca8-1000-90a3-0af502b50000.xml#m82f0fb51-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0fb4e-0ca8-1000-90a3-0af502b50000-m82f31de5-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f31de5-0ca8-1000-90a3-0af502b50000.xml#m82f31de5-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

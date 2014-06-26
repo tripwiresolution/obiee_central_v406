@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cd5e97-07f3-0000-714b-e31d00000000" name="D9 Measure Hierarchy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="221" y="170" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cd5e8b-07d0-0000-714b-e31d00000000.xml#m80cd5e8b-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cd5f00-07d6-0000-714b-e31d00000000" name="Measures" isWriteable="false">
+<AttrDefn mdsid="m80cd60b0-0f3c-0000-714b-e31d00000000" name="AD_3900:1573161291973959">
+<Expr mdsid="m00000001-01f4-0000-3bc7-7fae00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Measures"."Measures"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-3bc7-7fae00000000-m80cd5b5d-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af4-0bec-0000-714b-e31d00000000.xml#m80cd5b5d-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd5f01-07d6-0000-714b-e31d00000000" name="ParentKey" isWriteable="false">
+<AttrDefn mdsid="m80cd60b1-0f3c-0000-714b-e31d00000000" name="AD_3900:1573171291973959">
+<Expr mdsid="m00000002-01f4-0000-e969-fca500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Measures"."ParentKey"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-e969-fca500000000-m80cd5b5e-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af4-0bec-0000-714b-e31d00000000.xml#m80cd5b5e-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cda76b-07d6-0000-714b-e31d00000000" name="Measure Name" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/80cd5e97-07f3-0000-714b-e31d00000000.xml#m80cdb80f-07d6-0000-714b-e31d00000000">
+<AttrDefn mdsid="m80cda76c-0f3c-0000-714b-e31d00000000" name="AD_3900:1735891292252280">
+<Expr mdsid="m00000003-01f4-0000-dec8-eb9400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Measures"."Measures - Long Description"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-dec8-eb9400000000-m80cda768-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af4-0bec-0000-714b-e31d00000000.xml#m80cda768-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdb80f-07d6-0000-714b-e31d00000000" name="Measures Sort Order" isWriteable="false">
+<AttrDefn mdsid="m80cdb810-0f3c-0000-714b-e31d00000000" name="AD_3900:1782321292582044">
+<Expr mdsid="m00000004-01f4-0000-d73b-189700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Measures"."Measures Sort Order"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-d73b-189700000000-m80cdb80c-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWDimension/80cd5af4-0bec-0000-714b-e31d00000000.xml#m80cdb80c-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cd600f-07d8-0000-714b-e31d00000000" name="Measures" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cd600f-07d8-0000-714b-e31d00000000-m80cd5f00-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd5e97-07f3-0000-714b-e31d00000000.xml#m80cd5f00-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cd5e97-07f3-0000-714b-e31d00000000-m80cd610a-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cd610a-07f5-0000-714b-e31d00000000.xml#m80cd610a-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cddb77-0bb9-0000-714b-e31d00000000" name="D82 Cust LTV Dynamic Scoring" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" pollFreq="0" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cddb74-0bb9-0000-714b-e31d00000000.xml#m80cddb74-0bb9-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[select Cust_key,
+to_number(extractValue(PREDICTION_DETAILS(DMUSER.ODM_LTV_BIN USING CUST_KEY, 
+valueof(NQ_SESSION.ODM_ARG_5) AS M_INCOME_LVL, 
+'valueof(NQ_SESSION.ODM_ARG_6)' AS M_MARITAL_ST,
+valueof(NQ_SESSION.ODM_ARG_7) AS M_CRDT_RATE,
+valueof(NQ_SESSION.ODM_ARG_1) AS M_AGE,
+valueof(NQ_SESSION.ODM_ARG_8) AS M_MONTHS_CONTACT
+),'Details/@node')) M_DYN_PRED_LTV_NODE,
+
+PREDICTION(DMUSER.ODM_LTV_BIN USING CUST_KEY, 
+valueof(NQ_SESSION.ODM_ARG_5) AS M_INCOME_LVL, 
+'valueof(NQ_SESSION.ODM_ARG_6)' AS M_MARITAL_ST,
+valueof(NQ_SESSION.ODM_ARG_7) AS M_CRDT_RATE,
+valueof(NQ_SESSION.ODM_ARG_1) AS M_AGE,
+valueof(NQ_SESSION.ODM_ARG_8) AS M_MONTHS_CONTACT
+) M_DYN_PRED_BIN,
+
+PREDICTION_PROBABILITY(DMUSER.ODM_LTV_BIN USING CUST_KEY, 
+valueof(NQ_SESSION.ODM_ARG_5) AS M_INCOME_LVL, 
+'valueof(NQ_SESSION.ODM_ARG_6)' AS M_MARITAL_ST,
+valueof(NQ_SESSION.ODM_ARG_7) AS M_CRDT_RATE,
+valueof(NQ_SESSION.ODM_ARG_1) AS M_AGE,
+valueof(NQ_SESSION.ODM_ARG_8) AS M_MONTHS_CONTACT
+) M_DYN_PRED_PROB
+
+from ODM_SAMP_CUSTOMERS_V]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cddb78-0bbb-0000-714b-e31d00000000" name="CUST_KEY" dataType="DOUBLE" precision="15" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cddb74-0bb9-0000-714b-e31d00000000.xml#m80cddb75-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cddb79-0bbb-0000-714b-e31d00000000" name="M_DYN_PRED_BIN" dataType="VARCHAR" precision="10" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cddb74-0bb9-0000-714b-e31d00000000.xml#m80cddb76-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cddb7d-0bbb-0000-714b-e31d00000000" name="M_DYN_PRED_PROB" dataType="DOUBLE" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cddb74-0bb9-0000-714b-e31d00000000.xml#m80cddb7c-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cddb81-0bbb-0000-714b-e31d00000000" name="M_DYN_PRED_LTV_NODE" dataType="DOUBLE" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cddb74-0bb9-0000-714b-e31d00000000.xml#m80cddb80-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cddb83-0bc0-0000-714b-e31d00000000" name="D87 Cust LTV Dynamic Facts (ODM Classification)_Key">
+<RefColumns>
+<RefColumn refId="m80cddb83-0bc0-0000-714b-e31d00000000-m80cddb78-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cddb77-0bb9-0000-714b-e31d00000000.xml#m80cddb78-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m80cddba4-0bbe-0000-714b-e31d00000000" name="D82 Cust LTV Dynamic Scoring (ODM Classification)_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cddb9a-0bb9-0000-714b-e31d00000000.xml#m80cddba3-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cddba4-0bbe-0000-714b-e31d00000000-m80cddb81-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cddb77-0bb9-0000-714b-e31d00000000.xml#m80cddb81-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

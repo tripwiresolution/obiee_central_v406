@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cd8fb4-0bb9-0000-714b-e31d00000000" name="D70 Orders Ship to Addresses" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" x="1235" y="386" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cd8dda-0bd3-0000-714b-e31d00000000.xml#m80cd8dda-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cd8de4-0bb9-0000-714b-e31d00000000.xml#m80cd8de4-0bb9-0000-714b-e31d00000000">
+<Description><![CDATA[Orders Ship To Alias: This is an alias of the Addresses dimension table which joins to the Ship_To_Address key in all the fact aliases]]></Description>
+<PhysicalColumn mdsid="m80cd8fb5-0bbb-0000-714b-e31d00000000" name="State_Province" dataType="VARCHAR" precision="40" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8de4-0bb9-0000-714b-e31d00000000.xml#m80cd8dec-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[State Provice: Stores the state province name as a text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8fb6-0bbb-0000-714b-e31d00000000" name="Address_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8de4-0bb9-0000-714b-e31d00000000.xml#m80cd8ded-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Address Key: Surrogate key of the address dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8fb7-0bbb-0000-714b-e31d00000000" name="Address1" dataType="VARCHAR" precision="40" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8de4-0bb9-0000-714b-e31d00000000.xml#m80cd8dee-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Address1: Stores address1 as a text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8fb8-0bbb-0000-714b-e31d00000000" name="Address2" dataType="VARCHAR" precision="40" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8de4-0bb9-0000-714b-e31d00000000.xml#m80cd8df0-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Address2: Stores address2 as a text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8fb9-0bbb-0000-714b-e31d00000000" name="City" dataType="VARCHAR" precision="40" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8de4-0bb9-0000-714b-e31d00000000.xml#m80cd8df1-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[City: Stores city information as a text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8fba-0bbb-0000-714b-e31d00000000" name="Postal_Code" dataType="VARCHAR" precision="12" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8de4-0bb9-0000-714b-e31d00000000.xml#m80cd8df2-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Postal Code: Stores the postal code information as a double]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8fbb-0bbb-0000-714b-e31d00000000" name="Country_Name" dataType="VARCHAR" precision="100" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8de4-0bb9-0000-714b-e31d00000000.xml#m80cd8df3-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Country Name: Stores country name as a text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8fbc-0bbb-0000-714b-e31d00000000" name="Latitude" dataType="DOUBLE" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8de4-0bb9-0000-714b-e31d00000000.xml#m80cd8df4-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Latitude: Stores the latitude information as a double]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8fbd-0bbb-0000-714b-e31d00000000" name="Longitude" dataType="DOUBLE" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8de4-0bb9-0000-714b-e31d00000000.xml#m80cd8df5-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Longitude: Stores the longitude information as a double]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8fbe-0bbb-0000-714b-e31d00000000" name="Iso_Country_code3" dataType="VARCHAR" precision="3" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8de4-0bb9-0000-714b-e31d00000000.xml#m80cd8de5-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[ISO Country Code: Stores the ISO country code as a text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8fbf-0bbb-0000-714b-e31d00000000" name="Estab_Name" dataType="VARCHAR" precision="240" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8de4-0bb9-0000-714b-e31d00000000.xml#m80cd8de6-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Establishment Name: Stores the establishment name as a text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8fc0-0bbb-0000-714b-e31d00000000" name="Region" dataType="VARCHAR" precision="20" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8de4-0bb9-0000-714b-e31d00000000.xml#m80cd8de7-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Region: Stores the region information as a text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8fc1-0bbb-0000-714b-e31d00000000" name="Ctry_Cd3_State_Abbrv" dataType="VARCHAR" precision="6" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8de4-0bb9-0000-714b-e31d00000000.xml#m80cd8de8-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Country Code State Abbrevation: Stores the country code concatenated with the state abbrevation]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8fc2-0bbb-0000-714b-e31d00000000" name="Ctry_Cd3_State_Name" dataType="VARCHAR" precision="300" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8de4-0bb9-0000-714b-e31d00000000.xml#m80cd8de9-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Country Code State Name: Stores the country code concatenated with state name]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8fc3-0bbb-0000-714b-e31d00000000" name="Ctry_Cd3_State_Name_City" dataType="VARCHAR" precision="300" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8de4-0bb9-0000-714b-e31d00000000.xml#m80cd8dea-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Country Code State Name City: Stores the country code concatenated with state name concatenated with city name]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8fc4-0bbb-0000-714b-e31d00000000" name="State_Province_Abbrv" dataType="VARCHAR" precision="6" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8de4-0bb9-0000-714b-e31d00000000.xml#m80cd8deb-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[State Province Abbrevation: Stores the state province abbrevation as a text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd8fc5-0bbb-0000-714b-e31d00000000" name="Area" dataType="VARCHAR" precision="20" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8de4-0bb9-0000-714b-e31d00000000.xml#m80cd8def-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Area: Stores area information as a text]]></Description>
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cd9215-0bc0-0000-714b-e31d00000000" name="D20 Customer Addresses_Key">
+<RefColumns>
+<RefColumn refId="m80cd9215-0bc0-0000-714b-e31d00000000-m80cd8fb6-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cd8fb4-0bb9-0000-714b-e31d00000000.xml#m80cd8fb6-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

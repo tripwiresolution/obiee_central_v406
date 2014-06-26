@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<InitBlock mdsid="m80cdc1be-0bd9-0000-714b-e31d00000000" name="Verify DUAL ESSB HOST" iconIndex="89" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isSessionVar="true" refreshPeriod="86400" connectionPoolRef="/oracle/bi/server/base/ConnectionPool/80cb28c8-0bd5-0000-714b-e31d00000000.xml#m80cb28c8-0bd5-0000-714b-e31d00000000">
+<Description><![CDATA[This host information should be the computer name (or IP) of your essbase server host.]]></Description>
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[Select 'localhost:9799' From Dual]]></Value>
+</DBMapItem>
+<RefVariables>
+<RefVariable refId="m80cdc1be-0bd9-0000-714b-e31d00000000-m80cdc1bd-0bd7-0000-714b-e31d00000000" variableRef="/oracle/bi/server/base/Variable/80cdc1bd-0bd7-0000-714b-e31d00000000.xml#m80cdc1bd-0bd7-0000-714b-e31d00000000"/>
+</RefVariables>
+<InitString><![CDATA[Select 'localhost:9799' From Dual]]></InitString>
+</InitBlock>

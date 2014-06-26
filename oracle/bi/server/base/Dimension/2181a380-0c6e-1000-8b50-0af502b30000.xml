@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m2181a380-0c6e-1000-8b50-0af502b30000" name="Mumbai Areas" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="false" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/2181a380-0c6e-1000-8b50-0af502b30000.xml#m2181a383-0c6e-1000-8b50-0af502b30000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cde354-07d0-0000-714b-e31d00000000.xml#m80cde354-07d0-0000-714b-e31d00000000">
+<LogicalLevel mdsid="m2181a383-0c6e-1000-8b50-0af502b30000" name="All Mumbai" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;All Mumbai&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="m2181a383-0c6e-1000-8b50-0af502b30000_m2184b0c0-0c6e-1000-8b50-0af502b30000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/2181a380-0c6e-1000-8b50-0af502b30000.xml#m2184b0c0-0c6e-1000-8b50-0af502b30000"/>
+</RefChildLevels>
+</LogicalLevel>
+<LogicalLevel mdsid="m2184b0c0-0c6e-1000-8b50-0af502b30000" name="Wards" isGTA="false" isFDUC="true" memberCount="10" levelConst="&apos;Wards&apos;">
+<LogicalKey mdsid="m218721c0-0c6e-1000-8b50-0af502b30000" name="Ward" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m218721c0-0c6e-1000-8b50-0af502b30000-m210f32a2-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1cf20940-0c6e-1000-8b50-0af502b30000.xml#m210f32a2-0c6e-1000-8b50-0af502b30000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m2184b0c0-0c6e-1000-8b50-0af502b30000_m2181a381-0c6e-1000-8b50-0af502b30000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/2181a380-0c6e-1000-8b50-0af502b30000.xml#m2181a381-0c6e-1000-8b50-0af502b30000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m2184b0c0-0c6e-1000-8b50-0af502b30000-m210f32a2-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1cf20940-0c6e-1000-8b50-0af502b30000.xml#m210f32a2-0c6e-1000-8b50-0af502b30000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m2181a381-0c6e-1000-8b50-0af502b30000" name="Mumbai Areas Detail" isGTA="false" isFDUC="true" memberCount="99" levelConst="&apos;Mumbai Areas Detail&apos;">
+<LogicalKey mdsid="m2181a382-0c6e-1000-8b50-0af502b30000" name="Mumbai Areas Detail_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m2181a382-0c6e-1000-8b50-0af502b30000-m1cf20993-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1cf20940-0c6e-1000-8b50-0af502b30000.xml#m1cf20993-0c6e-1000-8b50-0af502b30000"/>
+</RefColumns>
+</LogicalKey>
+<LogicalKey mdsid="m21985fd0-0c6e-1000-8b50-0af502b30000" name="Neighbourhood" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m21985fd0-0c6e-1000-8b50-0af502b30000-m1f081802-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1cf20940-0c6e-1000-8b50-0af502b30000.xml#m1f081802-0c6e-1000-8b50-0af502b30000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m2181a381-0c6e-1000-8b50-0af502b30000-m1cf20993-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1cf20940-0c6e-1000-8b50-0af502b30000.xml#m1cf20993-0c6e-1000-8b50-0af502b30000"/>
+<RefLogicalColumn refId="m2181a381-0c6e-1000-8b50-0af502b30000-m1f081802-0c6e-1000-8b50-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/1cf20940-0c6e-1000-8b50-0af502b30000.xml#m1f081802-0c6e-1000-8b50-0af502b30000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

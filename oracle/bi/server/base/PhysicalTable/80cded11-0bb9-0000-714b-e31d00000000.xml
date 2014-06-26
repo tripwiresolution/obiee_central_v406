@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cded11-0bb9-0000-714b-e31d00000000" name="WS_FILTER" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/802b29ac-0bd3-0000-714b-e31d00000000.xml#m802b29ac-0bd3-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[WS_FILTER]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cded12-0bbb-0000-714b-e31d00000000" name="ANALYSISCOLUMN" dataType="VARCHAR" precision="150" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cded13-0bbb-0000-714b-e31d00000000" name="ANALYSISTABLE" dataType="VARCHAR" precision="150" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cded14-0bbb-0000-714b-e31d00000000" name="FILTERNAME" dataType="VARCHAR" precision="150" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cded15-0bbb-0000-714b-e31d00000000" name="PATH" dataType="VARCHAR" precision="400" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cded16-0bbb-0000-714b-e31d00000000" name="SEQUENCEID" dataType="DOUBLE" precision="15" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cded17-0bbb-0000-714b-e31d00000000" name="SUBJECTAREA" dataType="VARCHAR" precision="150" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cded1f-0bc0-0000-714b-e31d00000000" name="SEQUENCEID">
+<RefColumns>
+<RefColumn refId="m80cded1f-0bc0-0000-714b-e31d00000000-m80cded16-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cded11-0bb9-0000-714b-e31d00000000.xml#m80cded16-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="m80cded20-0bc0-0000-714b-e31d00000000" name="FILTER_Key">
+<RefColumns>
+<RefColumn refId="m80cded20-0bc0-0000-714b-e31d00000000-m80cded15-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cded11-0bb9-0000-714b-e31d00000000.xml#m80cded15-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

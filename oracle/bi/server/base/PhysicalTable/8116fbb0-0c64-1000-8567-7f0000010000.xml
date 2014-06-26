@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m8116fbb0-0c64-1000-8567-7f0000010000" name="D51 Employees (PC Hier Closure Table)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" pollFreq="0" x="574" y="175" isOverrideCacheProp="true" maxConn="0" containerRef="/oracle/bi/server/base/Schema/9449bd23-0c1f-1000-b9aa-0af502b10000.xml#m9449bd23-0c1f-1000-b9aa-0af502b10000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80eb30c0-0c64-1000-8567-7f0000010000.xml#m80eb30c0-0c64-1000-8567-7f0000010000" memberKeyRef="/oracle/bi/server/base/PhysicalTable/8116fbb0-0c64-1000-8567-7f0000010000.xml#m8119e1e0-0c64-1000-8567-7f0000010000" parentKeyRef="/oracle/bi/server/base/PhysicalTable/8116fbb0-0c64-1000-8567-7f0000010000.xml#m8119e1e1-0c64-1000-8567-7f0000010000" distanceColumnRef="/oracle/bi/server/base/PhysicalTable/8116fbb0-0c64-1000-8567-7f0000010000.xml#m8119e1e2-0c64-1000-8567-7f0000010000" leafColumnRef="/oracle/bi/server/base/PhysicalTable/8116fbb0-0c64-1000-8567-7f0000010000.xml#m8119e1e3-0c64-1000-8567-7f0000010000">
+<Description><![CDATA[Customer Alias: Alias of the customer dimension table]]></Description>
+<PhysicalColumn mdsid="m8119e1e0-0c64-1000-8567-7f0000010000" name="Member_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80eb30c0-0c64-1000-8567-7f0000010000.xml#m80eb30c1-0c64-1000-8567-7f0000010000">
+<Description><![CDATA[Member Key: Stores the member key information as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8119e1e1-0c64-1000-8567-7f0000010000" name="Ancestor_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80eb30c0-0c64-1000-8567-7f0000010000.xml#m80eb30c2-0c64-1000-8567-7f0000010000">
+<Description><![CDATA[Ancestor Key: Stores the parent information as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8119e1e2-0c64-1000-8567-7f0000010000" name="Distance" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80eb30c0-0c64-1000-8567-7f0000010000.xml#m80eb30c3-0c64-1000-8567-7f0000010000">
+<Description><![CDATA[Distance: Stores the distance between the employee and it's ancestor. The ancestor could be the immediate parent or any other parent up in the hierarchy.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m8119e1e3-0c64-1000-8567-7f0000010000" name="Is_Leaf" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80eb30c0-0c64-1000-8567-7f0000010000.xml#m80eb30c4-0c64-1000-8567-7f0000010000">
+<Description><![CDATA[Is Leaf: Flag to indicate if a member is leaf or not. Possible values are 1 or 0.]]></Description>
+</PhysicalColumn>
+<PhysicalKey mdsid="m81294b30-0c64-1000-8567-7f0000010000" name="D51 Employees (PC Hier Closure Table)_Key">
+<RefColumns>
+<RefColumn refId="m81294b30-0c64-1000-8567-7f0000010000-m8119e1e0-0c64-1000-8567-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/8116fbb0-0c64-1000-8567-7f0000010000.xml#m8119e1e0-0c64-1000-8567-7f0000010000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m81252c80-0c64-1000-8567-7f0000010000" name="D51 Employees (PC Hier Closure Table)_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/8111f2a0-0c64-1000-8567-7f0000010000.xml#m8125c8c0-0c64-1000-8567-7f0000010000">
+<RefColumns>
+<RefColumn refId="m81252c80-0c64-1000-8567-7f0000010000-m8119e1e1-0c64-1000-8567-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/8116fbb0-0c64-1000-8567-7f0000010000.xml#m8119e1e1-0c64-1000-8567-7f0000010000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f1221f-0ca8-1000-90a3-0af502b50000" name="Measures" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acde-0ca8-1000-90a3-0af502b50000.xml#m82f0acde-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f12220-0ca8-1000-90a3-0af502b50000" name="P &amp; L" isWriteable="false">
+<MeasureDefn mdsid="m82f17059-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f197a3-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737371391789375" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-9276-165b00000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y08 - Demo Retail Banking Essbase Flat"."Measures"."P & L")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-9276-165b00000000-m82f12220-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f1221f-0ca8-1000-90a3-0af502b50000.xml#m82f12220-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2d006-0ca8-1000-90a3-0af502b50000" name="AD_3900:2762611391789376">
+<Expr mdsid="m00000002-01f4-0000-4463-b66200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Essb (Flat)"."RetBank".""."RetBank"."P & L"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-4463-b66200000000-m82e40412-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82e403a9-0ca8-1000-90a3-0af502b50000.xml#m82e40412-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f12221-0ca8-1000-90a3-0af502b50000" name="Sales" isWriteable="false">
+<MeasureDefn mdsid="m82f1705a-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f197a4-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737381391789375" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-fe3f-1b1800000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y08 - Demo Retail Banking Essbase Flat"."Measures"."Sales")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-fe3f-1b1800000000-m82f12221-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f1221f-0ca8-1000-90a3-0af502b50000.xml#m82f12221-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2d007-0ca8-1000-90a3-0af502b50000" name="AD_3900:2762621391789376">
+<Expr mdsid="m00000004-01f4-0000-8d69-3fea00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Essb (Flat)"."RetBank".""."RetBank"."Sales"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-8d69-3fea00000000-m82e40413-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82e403a9-0ca8-1000-90a3-0af502b50000.xml#m82e40413-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f12222-0ca8-1000-90a3-0af502b50000" name="Operating Income" isWriteable="false">
+<MeasureDefn mdsid="m82f1705b-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f197a5-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737391391789375" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-a195-a99000000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y08 - Demo Retail Banking Essbase Flat"."Measures"."Operating Income")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-a195-a99000000000-m82f12222-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f1221f-0ca8-1000-90a3-0af502b50000.xml#m82f12222-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2d008-0ca8-1000-90a3-0af502b50000" name="AD_3900:2762631391789376">
+<Expr mdsid="m00000006-01f4-0000-df20-04dc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Essb (Flat)"."RetBank".""."RetBank"."Operating Income"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-df20-04dc00000000-m82e40414-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82e403a9-0ca8-1000-90a3-0af502b50000.xml#m82e40414-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f12223-0ca8-1000-90a3-0af502b50000" name="Currency Exchange Differences" isWriteable="false">
+<MeasureDefn mdsid="m82f1705c-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f197a6-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737401391789375" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-c29f-865100000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y08 - Demo Retail Banking Essbase Flat"."Measures"."Currency Exchange Differences")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-c29f-865100000000-m82f12223-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f1221f-0ca8-1000-90a3-0af502b50000.xml#m82f12223-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2d009-0ca8-1000-90a3-0af502b50000" name="AD_3900:2762641391789376">
+<Expr mdsid="m00000008-01f4-0000-0f61-b81d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Essb (Flat)"."RetBank".""."RetBank"."Currency Exchange Differences"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-0f61-b81d00000000-m82e40415-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82e403a9-0ca8-1000-90a3-0af502b50000.xml#m82e40415-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f12224-0ca8-1000-90a3-0af502b50000" name="Commissions and Charges" isWriteable="false">
+<MeasureDefn mdsid="m82f1705d-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f197a7-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737411391789375" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-0743-278d00000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y08 - Demo Retail Banking Essbase Flat"."Measures"."Commissions and Charges")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-0743-278d00000000-m82f12224-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f1221f-0ca8-1000-90a3-0af502b50000.xml#m82f12224-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2d00a-0ca8-1000-90a3-0af502b50000" name="AD_3900:2762651391789376">
+<Expr mdsid="m0000000a-01f4-0000-2f40-845d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Essb (Flat)"."RetBank".""."RetBank"."Commissions and Charges"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-2f40-845d00000000-m82e40416-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82e403a9-0ca8-1000-90a3-0af502b50000.xml#m82e40416-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f12225-0ca8-1000-90a3-0af502b50000" name="Custody Fees" isWriteable="false">
+<MeasureDefn mdsid="m82f1705e-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f197a8-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737421391789375" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-d62b-21d400000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y08 - Demo Retail Banking Essbase Flat"."Measures"."Custody Fees")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-d62b-21d400000000-m82f12225-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f1221f-0ca8-1000-90a3-0af502b50000.xml#m82f12225-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2d00b-0ca8-1000-90a3-0af502b50000" name="AD_3900:2762661391789376">
+<Expr mdsid="m0000000c-01f4-0000-c2fa-582700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Essb (Flat)"."RetBank".""."RetBank"."Custody Fees"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-c2fa-582700000000-m82e40417-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82e403a9-0ca8-1000-90a3-0af502b50000.xml#m82e40417-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f12226-0ca8-1000-90a3-0af502b50000" name="Financial Services Specific" isWriteable="false">
+<MeasureDefn mdsid="m82f1705f-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f197a9-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737431391789375" isDefault="true">
+<Expr mdsid="m0000000d-01f4-0000-9fd4-d36000000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y08 - Demo Retail Banking Essbase Flat"."Measures"."Financial Services Specific")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-9fd4-d36000000000-m82f12226-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f1221f-0ca8-1000-90a3-0af502b50000.xml#m82f12226-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2d00c-0ca8-1000-90a3-0af502b50000" name="AD_3900:2762671391789376">
+<Expr mdsid="m0000000e-01f4-0000-3d63-262300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Essb (Flat)"."RetBank".""."RetBank"."Financial Services Specific"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-3d63-262300000000-m82e40418-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82e403a9-0ca8-1000-90a3-0af502b50000.xml#m82e40418-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f12227-0ca8-1000-90a3-0af502b50000" name="Trading Fees" isWriteable="false">
+<MeasureDefn mdsid="m82f17060-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f197aa-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737441391789375" isDefault="true">
+<Expr mdsid="m0000000f-01f4-0000-1c22-94d700000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y08 - Demo Retail Banking Essbase Flat"."Measures"."Trading Fees")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-1c22-94d700000000-m82f12227-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f1221f-0ca8-1000-90a3-0af502b50000.xml#m82f12227-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2d00d-0ca8-1000-90a3-0af502b50000" name="AD_3900:2762681391789376">
+<Expr mdsid="m00000010-01f4-0000-df34-bfc700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Essb (Flat)"."RetBank".""."RetBank"."Trading Fees"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-df34-bfc700000000-m82e40419-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82e403a9-0ca8-1000-90a3-0af502b50000.xml#m82e40419-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f12228-0ca8-1000-90a3-0af502b50000" name="Costs" isWriteable="false">
+<MeasureDefn mdsid="m82f17061-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f197ab-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737451391789375" isDefault="true">
+<Expr mdsid="m00000011-01f4-0000-c79a-3ca900000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y08 - Demo Retail Banking Essbase Flat"."Measures"."Costs")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-c79a-3ca900000000-m82f12228-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f1221f-0ca8-1000-90a3-0af502b50000.xml#m82f12228-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2d00e-0ca8-1000-90a3-0af502b50000" name="AD_3900:2762691391789376">
+<Expr mdsid="m00000012-01f4-0000-1715-f37600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Essb (Flat)"."RetBank".""."RetBank"."Costs"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-1715-f37600000000-m82e4041a-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82e403a9-0ca8-1000-90a3-0af502b50000.xml#m82e4041a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f12229-0ca8-1000-90a3-0af502b50000" name="Operational Expenses" isWriteable="false">
+<MeasureDefn mdsid="m82f17062-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f197ac-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737461391789375" isDefault="true">
+<Expr mdsid="m00000013-01f4-0000-6399-2e2800000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y08 - Demo Retail Banking Essbase Flat"."Measures"."Operational Expenses")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-6399-2e2800000000-m82f12229-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f1221f-0ca8-1000-90a3-0af502b50000.xml#m82f12229-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2d00f-0ca8-1000-90a3-0af502b50000" name="AD_3900:2762701391789376">
+<Expr mdsid="m00000014-01f4-0000-4488-bf7f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Essb (Flat)"."RetBank".""."RetBank"."Operational Expenses"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-4488-bf7f00000000-m82e4041b-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82e403a9-0ca8-1000-90a3-0af502b50000.xml#m82e4041b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f1222a-0ca8-1000-90a3-0af502b50000" name="Personnel Expenses" isWriteable="false">
+<MeasureDefn mdsid="m82f17063-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f197ad-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737471391789375" isDefault="true">
+<Expr mdsid="m00000015-01f4-0000-39e4-0e8200000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y08 - Demo Retail Banking Essbase Flat"."Measures"."Personnel Expenses")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-39e4-0e8200000000-m82f1222a-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f1221f-0ca8-1000-90a3-0af502b50000.xml#m82f1222a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2d010-0ca8-1000-90a3-0af502b50000" name="AD_3900:2762711391789376">
+<Expr mdsid="m00000016-01f4-0000-f11f-e7df00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Essb (Flat)"."RetBank".""."RetBank"."Personnel Expenses"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-f11f-e7df00000000-m82e4041c-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82e403a9-0ca8-1000-90a3-0af502b50000.xml#m82e4041c-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f1222b-0ca8-1000-90a3-0af502b50000" name="Administrative Costs" isWriteable="false">
+<MeasureDefn mdsid="m82f17064-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f197ae-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737481391789375" isDefault="true">
+<Expr mdsid="m00000017-01f4-0000-639e-f50a00000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y08 - Demo Retail Banking Essbase Flat"."Measures"."Administrative Costs")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-639e-f50a00000000-m82f1222b-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f1221f-0ca8-1000-90a3-0af502b50000.xml#m82f1222b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2d011-0ca8-1000-90a3-0af502b50000" name="AD_3900:2762721391789376">
+<Expr mdsid="m00000018-01f4-0000-a900-537800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Essb (Flat)"."RetBank".""."RetBank"."Administrative Costs"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000018-01f4-0000-a900-537800000000-m82e4041d-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82e403a9-0ca8-1000-90a3-0af502b50000.xml#m82e4041d-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f1222c-0ca8-1000-90a3-0af502b50000" name="Marketing Costs" isWriteable="false">
+<MeasureDefn mdsid="m82f17065-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f197af-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737491391789375" isDefault="true">
+<Expr mdsid="m00000019-01f4-0000-0467-966400000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y08 - Demo Retail Banking Essbase Flat"."Measures"."Marketing Costs")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000019-01f4-0000-0467-966400000000-m82f1222c-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f1221f-0ca8-1000-90a3-0af502b50000.xml#m82f1222c-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2d012-0ca8-1000-90a3-0af502b50000" name="AD_3900:2762731391789376">
+<Expr mdsid="m0000001a-01f4-0000-96da-724600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Essb (Flat)"."RetBank".""."RetBank"."Marketing Costs"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001a-01f4-0000-96da-724600000000-m82e4041e-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82e403a9-0ca8-1000-90a3-0af502b50000.xml#m82e4041e-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f1222d-0ca8-1000-90a3-0af502b50000" name="Cancelled Accounts" isWriteable="false">
+<MeasureDefn mdsid="m82f17066-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f197b0-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737501391789375" isDefault="true">
+<Expr mdsid="m0000001b-01f4-0000-1469-74e300000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y08 - Demo Retail Banking Essbase Flat"."Measures"."Cancelled Accounts")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001b-01f4-0000-1469-74e300000000-m82f1222d-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f1221f-0ca8-1000-90a3-0af502b50000.xml#m82f1222d-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2d013-0ca8-1000-90a3-0af502b50000" name="AD_3900:2762741391789376">
+<Expr mdsid="m0000001c-01f4-0000-c6e3-46d900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Essb (Flat)"."RetBank".""."RetBank"."Cancelled Accounts"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001c-01f4-0000-c6e3-46d900000000-m82e4041f-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82e403a9-0ca8-1000-90a3-0af502b50000.xml#m82e4041f-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f1222e-0ca8-1000-90a3-0af502b50000" name="Complaints Costs" isWriteable="false">
+<MeasureDefn mdsid="m82f17067-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f197b1-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737511391789375" isDefault="true">
+<Expr mdsid="m0000001d-01f4-0000-5de1-8cde00000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y08 - Demo Retail Banking Essbase Flat"."Measures"."Complaints Costs")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001d-01f4-0000-5de1-8cde00000000-m82f1222e-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f1221f-0ca8-1000-90a3-0af502b50000.xml#m82f1222e-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2d014-0ca8-1000-90a3-0af502b50000" name="AD_3900:2762751391789376">
+<Expr mdsid="m0000001e-01f4-0000-3e1c-21e600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Essb (Flat)"."RetBank".""."RetBank"."Complaints Costs"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001e-01f4-0000-3e1c-21e600000000-m82e40420-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82e403a9-0ca8-1000-90a3-0af502b50000.xml#m82e40420-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f1222f-0ca8-1000-90a3-0af502b50000" name="Collection Costs" isWriteable="false">
+<MeasureDefn mdsid="m82f17068-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f197b2-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737521391789375" isDefault="true">
+<Expr mdsid="m0000001f-01f4-0000-8d7d-89fb00000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y08 - Demo Retail Banking Essbase Flat"."Measures"."Collection Costs")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001f-01f4-0000-8d7d-89fb00000000-m82f1222f-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f1221f-0ca8-1000-90a3-0af502b50000.xml#m82f1222f-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2d015-0ca8-1000-90a3-0af502b50000" name="AD_3900:2762761391789376">
+<Expr mdsid="m00000020-01f4-0000-4599-eb9600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Essb (Flat)"."RetBank".""."RetBank"."Collection Costs"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000020-01f4-0000-4599-eb9600000000-m82e40421-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82e403a9-0ca8-1000-90a3-0af502b50000.xml#m82e40421-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f12230-0ca8-1000-90a3-0af502b50000" name="Exceptional Costs" isWriteable="false">
+<MeasureDefn mdsid="m82f17069-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f197b3-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737531391789375" isDefault="true">
+<Expr mdsid="m00000021-01f4-0000-4538-320900000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y08 - Demo Retail Banking Essbase Flat"."Measures"."Exceptional Costs")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000021-01f4-0000-4538-320900000000-m82f12230-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f1221f-0ca8-1000-90a3-0af502b50000.xml#m82f12230-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2d016-0ca8-1000-90a3-0af502b50000" name="AD_3900:2762771391789376">
+<Expr mdsid="m00000022-01f4-0000-c821-afb000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Essb (Flat)"."RetBank".""."RetBank"."Exceptional Costs"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000022-01f4-0000-c821-afb000000000-m82e40422-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82e403a9-0ca8-1000-90a3-0af502b50000.xml#m82e40422-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f12231-0ca8-1000-90a3-0af502b50000" name="Bad Debt" isWriteable="false">
+<MeasureDefn mdsid="m82f1706a-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f197b4-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737541391789375" isDefault="true">
+<Expr mdsid="m00000023-01f4-0000-f958-33c800000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y08 - Demo Retail Banking Essbase Flat"."Measures"."Bad Debt")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000023-01f4-0000-f958-33c800000000-m82f12231-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f1221f-0ca8-1000-90a3-0af502b50000.xml#m82f12231-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2d017-0ca8-1000-90a3-0af502b50000" name="AD_3900:2762781391789376">
+<Expr mdsid="m00000024-01f4-0000-d3e9-b03500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Essb (Flat)"."RetBank".""."RetBank"."Bad Debt"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000024-01f4-0000-d3e9-b03500000000-m82e40423-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82e403a9-0ca8-1000-90a3-0af502b50000.xml#m82e40423-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f12232-0ca8-1000-90a3-0af502b50000" name="Real Estate Expenditures" isWriteable="false">
+<MeasureDefn mdsid="m82f1706b-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f197b5-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2737551391789375" isDefault="true">
+<Expr mdsid="m00000025-01f4-0000-34b5-8f6d00000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("Y08 - Demo Retail Banking Essbase Flat"."Measures"."Real Estate Expenditures")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000025-01f4-0000-34b5-8f6d00000000-m82f12232-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f1221f-0ca8-1000-90a3-0af502b50000.xml#m82f12232-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2d018-0ca8-1000-90a3-0af502b50000" name="AD_3900:2762791391789376">
+<Expr mdsid="m00000026-01f4-0000-7f54-215100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Essb (Flat)"."RetBank".""."RetBank"."Real Estate Expenditures"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000026-01f4-0000-7f54-215100000000-m82e40424-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82e403a9-0ca8-1000-90a3-0af502b50000.xml#m82e40424-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f1221f-0ca8-1000-90a3-0af502b50000-m82f344f3-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f344f3-0ca8-1000-90a3-0af502b50000.xml#m82f344f3-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

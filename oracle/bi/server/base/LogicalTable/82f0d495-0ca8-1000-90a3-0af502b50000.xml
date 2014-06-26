@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0d495-0ca8-1000-90a3-0af502b50000" name="Dim - Time" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd2-0ca8-1000-90a3-0af502b50000.xml#m82f0acd2-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0d496-0ca8-1000-90a3-0af502b50000" name="Date" isWriteable="false">
+<AttrDefn mdsid="m82f25b46-0ca8-1000-90a3-0af502b50000" name="AD_3900:2754861391789375">
+<Expr mdsid="m00000001-01f4-0000-01d6-4d3b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRT"."ADS_BI_HRT_OTL_TIME_DAY"."START_DATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-01d6-4d3b00000000-m82ddc13a-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc138-0ca8-1000-90a3-0af502b50000.xml#m82ddc13a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d497-0ca8-1000-90a3-0af502b50000" name="Week End Date" isWriteable="false">
+<AttrDefn mdsid="m82f25b47-0ca8-1000-90a3-0af502b50000" name="AD_3900:2754871391789375">
+<Expr mdsid="m00000002-01f4-0000-ec96-aa3800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRT"."ADS_BI_HRT_OTL_TIME_DAY"."WEEK_END_DATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-ec96-aa3800000000-m82ddc13b-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc138-0ca8-1000-90a3-0af502b50000.xml#m82ddc13b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d498-0ca8-1000-90a3-0af502b50000" name="Week Start Date" isWriteable="false">
+<AttrDefn mdsid="m82f25b48-0ca8-1000-90a3-0af502b50000" name="AD_3900:2754881391789375">
+<Expr mdsid="m00000003-01f4-0000-bdd6-321e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRT"."ADS_BI_HRT_OTL_TIME_DAY"."WEEK_START_DATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-bdd6-321e00000000-m82ddc13c-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc138-0ca8-1000-90a3-0af502b50000.xml#m82ddc13c-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d499-0ca8-1000-90a3-0af502b50000" name="Month" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/82f0d495-0ca8-1000-90a3-0af502b50000.xml#m82f0d496-0ca8-1000-90a3-0af502b50000">
+<AttrDefn mdsid="m82f25b49-0ca8-1000-90a3-0af502b50000" name="AD_3900:2754891391789375">
+<Expr mdsid="m00000004-01f4-0000-1b80-959a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRT"."ADS_BI_HRT_OTL_TIME_DAY"."MONTH"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-1b80-959a00000000-m82ddc13e-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc138-0ca8-1000-90a3-0af502b50000.xml#m82ddc13e-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d49a-0ca8-1000-90a3-0af502b50000" name="Quarter" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/82f0d495-0ca8-1000-90a3-0af502b50000.xml#m82f0d496-0ca8-1000-90a3-0af502b50000">
+<AttrDefn mdsid="m82f25b4a-0ca8-1000-90a3-0af502b50000" name="AD_3900:2754901391789375">
+<Expr mdsid="m00000005-01f4-0000-0203-a91000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRT"."ADS_BI_HRT_OTL_TIME_DAY"."QUARTER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-0203-a91000000000-m82ddc13d-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc138-0ca8-1000-90a3-0af502b50000.xml#m82ddc13d-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d49b-0ca8-1000-90a3-0af502b50000" name="Year" isWriteable="false">
+<AttrDefn mdsid="m82f25b4b-0ca8-1000-90a3-0af502b50000" name="AD_3900:2754911391789375">
+<Expr mdsid="m00000006-01f4-0000-3802-e4b200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_HRT"."ADS_BI_HRT_OTL_TIME_DAY"."ENT_YEAR_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-3802-e4b200000000-m82ddc139-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82ddc138-0ca8-1000-90a3-0af502b50000.xml#m82ddc139-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m82f233a4-0ca8-1000-90a3-0af502b50000" name="pk" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f233a4-0ca8-1000-90a3-0af502b50000-m82f0d496-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d495-0ca8-1000-90a3-0af502b50000.xml#m82f0d496-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0d495-0ca8-1000-90a3-0af502b50000-m82f2f6cf-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f2f6cf-0ca8-1000-90a3-0af502b50000.xml#m82f2f6cf-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

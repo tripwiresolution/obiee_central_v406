@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0fbc0-0ca8-1000-90a3-0af502b50000" name="Fact Month" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd8-0ca8-1000-90a3-0af502b50000.xml#m82f0acd8-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0fbc1-0ca8-1000-90a3-0af502b50000" name="Amount Claimed" isWriteable="false">
+<MeasureDefn mdsid="m82f14990-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19767-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736771391789375" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-8e42-fecb00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y07 - Demo Insurance"."Fact Month"."Amount Claimed")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-8e42-fecb00000000-m82f0fbc1-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fbc0-0ca8-1000-90a3-0af502b50000.xml#m82f0fbc1-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a8f7-0ca8-1000-90a3-0af502b50000" name="AD_3900:2759521391789375">
+<Expr mdsid="m00000002-01f4-0000-a19a-38bc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."INS"."INS_FACT_MONTH"."AMOUNT_CLAIMED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-a19a-38bc00000000-m82e3b509-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3b508-0ca8-1000-90a3-0af502b50000.xml#m82e3b509-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fbc2-0ca8-1000-90a3-0af502b50000" name="Amount Paid" isWriteable="false">
+<MeasureDefn mdsid="m82f14991-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19768-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736781391789375" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-9ae3-5aed00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y07 - Demo Insurance"."Fact Month"."Amount Paid")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-9ae3-5aed00000000-m82f0fbc2-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fbc0-0ca8-1000-90a3-0af502b50000.xml#m82f0fbc2-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a8f8-0ca8-1000-90a3-0af502b50000" name="AD_3900:2759531391789375">
+<Expr mdsid="m00000004-01f4-0000-a1fc-12ce00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."INS"."INS_FACT_MONTH"."AMOUNT_PAID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-a1fc-12ce00000000-m82e3b50a-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3b508-0ca8-1000-90a3-0af502b50000.xml#m82e3b50a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fbc3-0ca8-1000-90a3-0af502b50000" name="Claimed" isWriteable="false">
+<MeasureDefn mdsid="m82f14992-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19769-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736791391789375" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-9638-e1bb00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y07 - Demo Insurance"."Fact Month"."Claimed")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-9638-e1bb00000000-m82f0fbc3-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fbc0-0ca8-1000-90a3-0af502b50000.xml#m82f0fbc3-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a8f9-0ca8-1000-90a3-0af502b50000" name="AD_3900:2759541391789375">
+<Expr mdsid="m00000006-01f4-0000-228a-efdd00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."INS"."INS_FACT_MONTH"."CLAIMED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-228a-efdd00000000-m82e3b50d-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3b508-0ca8-1000-90a3-0af502b50000.xml#m82e3b50d-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fbc4-0ca8-1000-90a3-0af502b50000" name="Earned Premium" isWriteable="false">
+<MeasureDefn mdsid="m82f17020-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1976a-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736801391789375" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-a553-7c8200000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y07 - Demo Insurance"."Fact Month"."Earned Premium")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-a553-7c8200000000-m82f0fbc4-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fbc0-0ca8-1000-90a3-0af502b50000.xml#m82f0fbc4-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a8fa-0ca8-1000-90a3-0af502b50000" name="AD_3900:2759551391789375">
+<Expr mdsid="m00000008-01f4-0000-b999-d3c100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."INS"."INS_FACT_MONTH"."EARNED_PREMIUM"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-b999-d3c100000000-m82e3b510-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3b508-0ca8-1000-90a3-0af502b50000.xml#m82e3b510-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fbc5-0ca8-1000-90a3-0af502b50000" name="Policy Covered Amount" isWriteable="false">
+<MeasureDefn mdsid="m82f17021-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1976b-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736811391789375" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-458f-98c800000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y07 - Demo Insurance"."Fact Month"."Policy Covered Amount")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-458f-98c800000000-m82f0fbc5-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fbc0-0ca8-1000-90a3-0af502b50000.xml#m82f0fbc5-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a8fb-0ca8-1000-90a3-0af502b50000" name="AD_3900:2759561391789375">
+<Expr mdsid="m0000000a-01f4-0000-921a-ddba00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."INS"."INS_FACT_MONTH"."POLICY_COVERED_AMOUNT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-921a-ddba00000000-m82e3b513-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3b508-0ca8-1000-90a3-0af502b50000.xml#m82e3b513-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fbc6-0ca8-1000-90a3-0af502b50000" name="Revenue" isWriteable="false">
+<MeasureDefn mdsid="m82f17022-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1976c-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736821391789375" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-b454-a1e500000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y07 - Demo Insurance"."Fact Month"."Revenue")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-b454-a1e500000000-m82f0fbc6-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fbc0-0ca8-1000-90a3-0af502b50000.xml#m82f0fbc6-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a8fc-0ca8-1000-90a3-0af502b50000" name="AD_3900:2759571391789375">
+<Expr mdsid="m0000000c-01f4-0000-981b-63f200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."INS"."INS_FACT_MONTH"."REVENUE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-981b-63f200000000-m82e3b515-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3b508-0ca8-1000-90a3-0af502b50000.xml#m82e3b515-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fbc7-0ca8-1000-90a3-0af502b50000" name="Unearned Premium" isWriteable="false">
+<MeasureDefn mdsid="m82f17023-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1976d-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736831391789375" isDefault="true">
+<Expr mdsid="m0000000d-01f4-0000-93b6-e53600000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y07 - Demo Insurance"."Fact Month"."Unearned Premium")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-93b6-e53600000000-m82f0fbc7-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fbc0-0ca8-1000-90a3-0af502b50000.xml#m82f0fbc7-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a8fd-0ca8-1000-90a3-0af502b50000" name="AD_3900:2759581391789375">
+<Expr mdsid="m0000000e-01f4-0000-65bc-206500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."INS"."INS_FACT_MONTH"."UNEARNED_PREMIUM"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-65bc-206500000000-m82e3b516-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3b508-0ca8-1000-90a3-0af502b50000.xml#m82e3b516-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fbc8-0ca8-1000-90a3-0af502b50000" name="No of Claims" isWriteable="false">
+<MeasureDefn mdsid="m82f17024-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1976e-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736841391789375" isDefault="true">
+<Expr mdsid="m0000000f-01f4-0000-90bc-c39a00000000" name="Expr">
+<ExprText><![CDATA[ COUNT("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT("Y07 - Demo Insurance"."Fact Month"."No of Claims")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-90bc-c39a00000000-m82f0fbc8-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fbc0-0ca8-1000-90a3-0af502b50000.xml#m82f0fbc8-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a8fe-0ca8-1000-90a3-0af502b50000" name="AD_3900:2759591391789375">
+<Expr mdsid="m00000010-01f4-0000-cd44-c4f000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."INS"."INS_FACT_MONTH"."CLAIMID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-cd44-c4f000000000-m82e3b50e-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3b508-0ca8-1000-90a3-0af502b50000.xml#m82e3b50e-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0fbc0-0ca8-1000-90a3-0af502b50000-m82f31df6-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f31df6-0ca8-1000-90a3-0af502b50000.xml#m82f31df6-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

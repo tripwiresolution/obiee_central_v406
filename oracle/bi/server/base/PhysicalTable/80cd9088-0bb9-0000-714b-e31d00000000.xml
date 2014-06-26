@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cd9088-0bb9-0000-714b-e31d00000000" name="F50 Facts Headcount" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" x="254" y="1141" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cd8dda-0bd3-0000-714b-e31d00000000.xml#m80cd8dda-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cd8e26-0bb9-0000-714b-e31d00000000.xml#m80cd8e26-0bb9-0000-714b-e31d00000000">
+<Description><![CDATA[Headcount Fact Alias: Stores the headcount information at day and office grain.]]></Description>
+<PhysicalColumn mdsid="m80cd9089-0bbb-0000-714b-e31d00000000" name="Office_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e26-0bb9-0000-714b-e31d00000000.xml#m80cd8e27-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd908a-0bbb-0000-714b-e31d00000000" name="Day_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e26-0bb9-0000-714b-e31d00000000.xml#m80cd8e28-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Day Key: Joins to Calendar_date of Time dimension table (Day grain).]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd908b-0bbb-0000-714b-e31d00000000" name="Fte" dataType="DOUBLE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e26-0bb9-0000-714b-e31d00000000.xml#m80cd8e29-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Full Time Employee: Stores the fact information as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="m80cd9298-0bbe-0000-714b-e31d00000000" name="F40 Facts Headcount_FKey#2" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cd8ecd-0bb9-0000-714b-e31d00000000.xml#m80cd91f8-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cd9298-0bbe-0000-714b-e31d00000000-m80cd908a-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cd9088-0bb9-0000-714b-e31d00000000.xml#m80cd908a-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m80cd9299-0bbe-0000-714b-e31d00000000" name="F40 Facts Headcount_FKey#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cd8f3a-0bb9-0000-714b-e31d00000000.xml#m80cd9202-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cd9299-0bbe-0000-714b-e31d00000000-m80cd9089-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cd9088-0bb9-0000-714b-e31d00000000.xml#m80cd9089-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

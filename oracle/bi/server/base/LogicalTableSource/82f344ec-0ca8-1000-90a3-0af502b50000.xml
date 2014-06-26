@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m82f344ec-0ca8-1000-90a3-0af502b50000" name="RetBank" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/82f0fcd3-0ca8-1000-90a3-0af502b50000.xml#m82f0fcd3-0ca8-1000-90a3-0af502b50000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-3716-aa3100000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y08 - Demo Retail Banking Essbase"."Measure"."Current"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-3716-aa3100000000-m82f0fcd4-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fcd3-0ca8-1000-90a3-0af502b50000.xml#m82f0fcd4-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-63c7-8fd200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Demo Banking Essbase"."RetBank".""."RetBank"."RetBank - measure"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-63c7-8fd200000000-m82e40426-0ca8-1000-90a3-0af502b50000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/82e40425-0ca8-1000-90a3-0af502b50000.xml#m82e40426-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/CubeTable/82e40425-0ca8-1000-90a3-0af502b50000.xml#m82e40425-0ca8-1000-90a3-0af502b50000">
+</Link>
+<WhereClause mdsid="m00000003-01f4-0000-d27d-928a00000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000004-01f4-0000-386d-4e2a00000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1", "%2", "%3", "%4", "%5", "%6")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("Y08 - Demo Retail Banking Essbase"."Time"."Month", "Y08 - Demo Retail Banking Essbase"."Account"."Gen5,Account", "Y08 - Demo Retail Banking Essbase"."Scenario"."Gen2,Scenario", "Y08 - Demo Retail Banking Essbase"."Branch"."Gen5,Branch", "Y08 - Demo Retail Banking Essbase"."Product"."Gen5,Product", "Y08 - Demo Retail Banking Essbase"."Dummy"."Gen2,Dummy")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-386d-4e2a00000000-m82f1be54-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0d40b-0ca8-1000-90a3-0af502b50000.xml#m82f1be54-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000004-01f4-0000-386d-4e2a00000000-m82f1be59-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0d40c-0ca8-1000-90a3-0af502b50000.xml#m82f1be59-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000004-01f4-0000-386d-4e2a00000000-m82f1be5b-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0d40d-0ca8-1000-90a3-0af502b50000.xml#m82f1be5b-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000004-01f4-0000-386d-4e2a00000000-m82f1be60-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0d40e-0ca8-1000-90a3-0af502b50000.xml#m82f1be60-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000004-01f4-0000-386d-4e2a00000000-m82f1be65-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0d40f-0ca8-1000-90a3-0af502b50000.xml#m82f1be65-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000004-01f4-0000-386d-4e2a00000000-m82f1be67-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0d410-0ca8-1000-90a3-0af502b50000.xml#m82f1be67-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m00000005-01f4-0000-33e8-51d800000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

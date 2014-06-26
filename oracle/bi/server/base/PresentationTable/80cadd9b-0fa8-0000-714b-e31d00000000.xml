@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationTable mdsid="m80cadd9b-0fa8-0000-714b-e31d00000000" name="FX conversion" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_FX_conversion)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationCatalog/80cab7ef-0fa4-0000-714b-e31d00000000.xml#m80cab7ef-0fa4-0000-714b-e31d00000000">
+<Description><![CDATA[This folder contains simple count metrics like # of Customers, # of Products and so on.]]></Description>
+<Alias name="CFX conversion"/>
+<Alias name="Counts#1"/>
+<PresentationColumn mdsid="m80cadd9e-0faa-0000-714b-e31d00000000" name="R4  Order Line FX Rate (Lookup Pref Curr)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_FX_conversion_R4__Order_Line_FX_Rate_(Lookup_Pref_Curr))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab629-07f3-0000-714b-e31d00000000.xml#m80cadd72-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help : 
+Stores the product's color description.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cadd9d-0faa-0000-714b-e31d00000000" name="70  Average FX Rate to Pref Currency" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_FX_conversion_70__Average_FX_Rate_to_Pref_Currency)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cadd92-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Billed Unit Price is computed as Revenue divided by Billed Quantity]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cb196a-0faa-0000-714b-e31d00000000" name="120  Converted Rev  (Indexcol)" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_FX_conversion_120__Converted_Rev__(Indexcol))" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cb1963-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+</PresentationColumn>
+</PresentationTable>

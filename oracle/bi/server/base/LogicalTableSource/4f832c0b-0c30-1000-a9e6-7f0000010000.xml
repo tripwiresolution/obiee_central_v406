@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m4f832c0b-0c30-1000-a9e6-7f0000010000" name="Fact_RTDCORRELATION" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/4f8304ba-0c30-1000-a9e6-7f0000010000.xml#m4f8304ba-0c30-1000-a9e6-7f0000010000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-7f1b-a6ef00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X4 - RTD Analytics"."Fact - Correlation"."Actual Count"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-7f1b-a6ef00000000-m4f8304bb-0c30-1000-a9e6-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4f8304ba-0c30-1000-a9e6-7f0000010000.xml#m4f8304bb-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-662c-092b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDCORRELATION"."COUNT_OUTPUT_INPUT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-662c-092b00000000-m4f80bb41-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb3e-0c30-1000-a9e6-7f0000010000.xml#m4f80bb41-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-1a04-3dc300000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X4 - RTD Analytics"."Fact - Correlation"."Correlation"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-1a04-3dc300000000-m4f8304bc-0c30-1000-a9e6-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4f8304ba-0c30-1000-a9e6-7f0000010000.xml#m4f8304bc-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-ae06-9bd300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDCORRELATION"."CORRELATION"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-ae06-9bd300000000-m4f80bb42-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb3e-0c30-1000-a9e6-7f0000010000.xml#m4f80bb42-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000005-01f4-0000-b9f0-e91e00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X4 - RTD Analytics"."Fact - Correlation"."Input Count"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-b9f0-e91e00000000-m4f8304bd-0c30-1000-a9e6-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4f8304ba-0c30-1000-a9e6-7f0000010000.xml#m4f8304bd-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000006-01f4-0000-7163-f11500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDCORRELATION"."COUNT_INPUT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-7163-f11500000000-m4f80bb43-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb3e-0c30-1000-a9e6-7f0000010000.xml#m4f80bb43-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000007-01f4-0000-e764-476b00000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X4 - RTD Analytics"."Fact - Correlation"."Expected Count"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-e764-476b00000000-m4f8304be-0c30-1000-a9e6-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4f8304ba-0c30-1000-a9e6-7f0000010000.xml#m4f8304be-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000008-01f4-0000-c1e1-bfea00000000" name="Expr">
+<ExprText><![CDATA[ CASE  WHEN "%1" IS NULL  OR "%1" = 0 THEN 0 ELSE "%2" * "%3" / "%1" END ]]></ExprText>
+<ExprTextDesc><![CDATA[ CASE  WHEN "01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDMODELINSTANCE_Correlation"."COUNT_TOTAL" IS NULL  OR "01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDMODELINSTANCE_Correlation"."COUNT_TOTAL" = 0 THEN 0 ELSE "01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDMODELINSTANCE_Correlation"."COUNT_POSITIVE" * "01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDCORRELATION"."COUNT_INPUT" / "01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDMODELINSTANCE_Correlation"."COUNT_TOTAL" END ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-c1e1-bfea00000000-m4f80bb39-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb33-0c30-1000-a9e6-7f0000010000.xml#m4f80bb39-0c30-1000-a9e6-7f0000010000"/>
+<RefObject refId="m00000008-01f4-0000-c1e1-bfea00000000-m4f80bb3a-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb33-0c30-1000-a9e6-7f0000010000.xml#m4f80bb3a-0c30-1000-a9e6-7f0000010000"/>
+<RefObject refId="m00000008-01f4-0000-c1e1-bfea00000000-m4f80bb43-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb3e-0c30-1000-a9e6-7f0000010000.xml#m4f80bb43-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000009-01f4-0000-1c21-21f400000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X4 - RTD Analytics"."Fact - Correlation"."Percentage Difference"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-1c21-21f400000000-m4f8304bf-0c30-1000-a9e6-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4f8304ba-0c30-1000-a9e6-7f0000010000.xml#m4f8304bf-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000a-01f4-0000-01b2-753300000000" name="Expr">
+<ExprText><![CDATA[ CASE  WHEN "%1" = 0 OR "%1" IS NULL  THEN 0 ELSE ("%1" -  CASE  WHEN "%2" = 0 OR "%2" IS NULL  THEN 0 ELSE "%3" * "%4" / "%2" END ) * 100 / "%1" END ]]></ExprText>
+<ExprTextDesc><![CDATA[ CASE  WHEN "01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDCORRELATION"."COUNT_OUTPUT_INPUT" = 0 OR "01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDCORRELATION"."COUNT_OUTPUT_INPUT" IS NULL  THEN 0 ELSE ("01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDCORRELATION"."COUNT_OUTPUT_INPUT" -  CASE  WHEN "01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDMODELINSTANCE_Correlation"."COUNT_TOTAL" = 0 OR "01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDMODELINSTANCE_Correlation"."COUNT_TOTAL" IS NULL  THEN 0 ELSE "01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDCORRELATION"."COUNT_INPUT" * "01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDMODELINSTANCE_Correlation"."COUNT_POSITIVE" / "01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDMODELINSTANCE_Correlation"."COUNT_TOTAL" END ) * 100 / "01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDCORRELATION"."COUNT_OUTPUT_INPUT" END ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-01b2-753300000000-m4f80bb41-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb3e-0c30-1000-a9e6-7f0000010000.xml#m4f80bb41-0c30-1000-a9e6-7f0000010000"/>
+<RefObject refId="m0000000a-01f4-0000-01b2-753300000000-m4f80bb39-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb33-0c30-1000-a9e6-7f0000010000.xml#m4f80bb39-0c30-1000-a9e6-7f0000010000"/>
+<RefObject refId="m0000000a-01f4-0000-01b2-753300000000-m4f80bb43-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb3e-0c30-1000-a9e6-7f0000010000.xml#m4f80bb43-0c30-1000-a9e6-7f0000010000"/>
+<RefObject refId="m0000000a-01f4-0000-01b2-753300000000-m4f80bb3a-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb33-0c30-1000-a9e6-7f0000010000.xml#m4f80bb3a-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m0000000b-01f4-0000-4914-424700000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X4 - RTD Analytics"."Fact - Correlation"."Actual Count Total"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-4914-424700000000-m4f8304c0-0c30-1000-a9e6-7f0000010000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4f8304ba-0c30-1000-a9e6-7f0000010000.xml#m4f8304c0-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m0000000c-01f4-0000-c7b0-7acf00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."RTD"."Fact_RTDCORRELATION"."COUNT_OUTPUT_INPUT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-c7b0-7acf00000000-m4f80bb41-0c30-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4f80bb3e-0c30-1000-a9e6-7f0000010000.xml#m4f80bb41-0c30-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/4f80bb33-0c30-1000-a9e6-7f0000010000.xml#m4f80bb33-0c30-1000-a9e6-7f0000010000">
+<Join type="Inner" cardinality=" ONE TO MANY" physicalTable1Ref="/oracle/bi/server/base/PhysicalTable/4f80bb33-0c30-1000-a9e6-7f0000010000.xml#m4f80bb33-0c30-1000-a9e6-7f0000010000" physicalTable2Ref="/oracle/bi/server/base/PhysicalTable/4f80bb3e-0c30-1000-a9e6-7f0000010000.xml#m4f80bb3e-0c30-1000-a9e6-7f0000010000" physicalJoinRef="/oracle/bi/server/base/PhysicalTable/4f80bb3e-0c30-1000-a9e6-7f0000010000.xml#m4f80bb88-0c30-1000-a9e6-7f0000010000"/>
+</Link>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/4f80bb3e-0c30-1000-a9e6-7f0000010000.xml#m4f80bb3e-0c30-1000-a9e6-7f0000010000">
+<Join type="Inner" cardinality="MANY TO ONE" physicalTable1Ref="/oracle/bi/server/base/PhysicalTable/4f80bb3e-0c30-1000-a9e6-7f0000010000.xml#m4f80bb3e-0c30-1000-a9e6-7f0000010000" physicalTable2Ref="/oracle/bi/server/base/PhysicalTable/4f80bb33-0c30-1000-a9e6-7f0000010000.xml#m4f80bb33-0c30-1000-a9e6-7f0000010000" physicalJoinRef="/oracle/bi/server/base/PhysicalTable/4f80bb3e-0c30-1000-a9e6-7f0000010000.xml#m4f80bb88-0c30-1000-a9e6-7f0000010000"/>
+</Link>
+<WhereClause mdsid="m0000000d-01f4-0000-dc58-a77200000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m0000000e-01f4-0000-6b00-fa4700000000" name="GroupBy">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</GroupBy>
+<FragmentContent mdsid="m0000000f-01f4-0000-63ba-c00700000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

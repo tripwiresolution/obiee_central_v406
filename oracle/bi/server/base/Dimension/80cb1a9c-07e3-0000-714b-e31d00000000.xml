@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m80cb1a9c-07e3-0000-714b-e31d00000000" name="H2 Products Ragged SkipLevels" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="true" isSkipped="true" defaultRootLevelRef="/oracle/bi/server/base/Dimension/80cb1a9c-07e3-0000-714b-e31d00000000.xml#m80cb1a9d-07e9-0000-714b-e31d00000000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cab573-07d0-0000-714b-e31d00000000.xml#m80cab573-07d0-0000-714b-e31d00000000">
+<Description><![CDATA[Products Dimension:
+Type - Ragged and Skipped Levels
+Drill Path - Brand->LOB->Type->Product->Detail]]></Description>
+<LogicalLevel mdsid="m80cb1a9d-07e9-0000-714b-e31d00000000" name="Product (Rgd Sk Lvl) Total" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;Product (Rgd Sk Lvl) Total&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="m80cb1a9d-07e9-0000-714b-e31d00000000_m80cb1a9e-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cb1a9c-07e3-0000-714b-e31d00000000.xml#m80cb1a9e-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cb1a9d-07e9-0000-714b-e31d00000000-m80cab61c-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cab61c-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cb1a9d-07e9-0000-714b-e31d00000000-m80cab620-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab620-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cb1a9d-07e9-0000-714b-e31d00000000-m80cab622-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab622-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cb1a9d-07e9-0000-714b-e31d00000000-m80cadcd6-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cadc45-07f3-0000-714b-e31d00000000.xml#m80cadcd6-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cb1a9d-07e9-0000-714b-e31d00000000-m80cb1a01-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab659-07f3-0000-714b-e31d00000000.xml#m80cb1a01-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cb1a9d-07e9-0000-714b-e31d00000000-m80cc1ff5-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cc1ff5-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cb1a9d-07e9-0000-714b-e31d00000000-m83854752-0c8a-1000-8bc9-0af502b30000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb1a7c-07f3-0000-714b-e31d00000000.xml#m83854752-0c8a-1000-8bc9-0af502b30000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cb1a9e-07e9-0000-714b-e31d00000000" name="Product (Rgd Sk Lvl) Brand" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Product (Rgd Sk Lvl) Brand&apos;">
+<LogicalKey mdsid="m80cb1aa4-07d8-0000-714b-e31d00000000" name="P14  Brand (Rgd)" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cb1aa4-07d8-0000-714b-e31d00000000-m80cb1a82-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb1a7c-07f3-0000-714b-e31d00000000.xml#m80cb1a82-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cb1a9e-07e9-0000-714b-e31d00000000_m80cb1a9f-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cb1a9c-07e3-0000-714b-e31d00000000.xml#m80cb1a9f-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cb1a9e-07e9-0000-714b-e31d00000000-m80cb1a82-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb1a7c-07f3-0000-714b-e31d00000000.xml#m80cb1a82-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cb1a9f-07e9-0000-714b-e31d00000000" name="Product (Rgd Sk Lvl) LOB" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Product (Rgd Sk Lvl) LOB&apos;">
+<LogicalKey mdsid="m80cb1aa3-07d8-0000-714b-e31d00000000" name="P13  LOB (Rgd)" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cb1aa3-07d8-0000-714b-e31d00000000-m80cb1a81-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb1a7c-07f3-0000-714b-e31d00000000.xml#m80cb1a81-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cb1a9f-07e9-0000-714b-e31d00000000_m80cb1aa0-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cb1a9c-07e3-0000-714b-e31d00000000.xml#m80cb1aa0-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cb1a9f-07e9-0000-714b-e31d00000000-m80cb1a81-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb1a7c-07f3-0000-714b-e31d00000000.xml#m80cb1a81-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cb1aa0-07e9-0000-714b-e31d00000000" name="Product (Rgd Sk Lvl) Type" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Product (Rgd Sk Lvl) Type&apos;">
+<LogicalKey mdsid="m80cb1aa2-07d8-0000-714b-e31d00000000" name="P12i  Product Type (Rgd)" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cb1aa2-07d8-0000-714b-e31d00000000-m80cb1a7f-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb1a7c-07f3-0000-714b-e31d00000000.xml#m80cb1a7f-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cb1aa0-07e9-0000-714b-e31d00000000_m80cb6c37-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cb1a9c-07e3-0000-714b-e31d00000000.xml#m80cb6c37-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cb1aa0-07e9-0000-714b-e31d00000000-m80cb1a7f-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb1a7c-07f3-0000-714b-e31d00000000.xml#m80cb1a7f-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cb6c37-07e9-0000-714b-e31d00000000" name="Product (Rgd Sk Lvl) Product" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Product (Rgd Sk Lvl) Product&apos;">
+<LogicalKey mdsid="m80cb6c39-07d8-0000-714b-e31d00000000" name="P11  Product (Rgd Sk Lvl)" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cb6c39-07d8-0000-714b-e31d00000000-m80cb1a7e-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb1a7c-07f3-0000-714b-e31d00000000.xml#m80cb1a7e-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cb6c37-07e9-0000-714b-e31d00000000_m80cb1aa1-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cb1a9c-07e3-0000-714b-e31d00000000.xml#m80cb1aa1-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cb6c37-07e9-0000-714b-e31d00000000-m80cb1a7e-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb1a7c-07f3-0000-714b-e31d00000000.xml#m80cb1a7e-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cb1aa1-07e9-0000-714b-e31d00000000" name="Product (Rgd Sk Lvl) Detail" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Product (Rgd Sk Lvl) Detail&apos;">
+<LogicalKey mdsid="m80cb6c3b-07d8-0000-714b-e31d00000000" name="P10  Product Number (Rgd Sk Lvl)" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cb6c3b-07d8-0000-714b-e31d00000000-m80cb1a7d-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb1a7c-07f3-0000-714b-e31d00000000.xml#m80cb1a7d-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cb1aa1-07e9-0000-714b-e31d00000000-m80cb1a7d-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb1a7c-07f3-0000-714b-e31d00000000.xml#m80cb1a7d-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

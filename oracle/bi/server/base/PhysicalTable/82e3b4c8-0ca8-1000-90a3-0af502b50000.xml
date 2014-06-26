@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m82e3b4c8-0ca8-1000-90a3-0af502b50000" name="INS_FINANCIAL_RESULTS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/82e3b499-0ca8-1000-90a3-0af502b50000.xml#m82e3b499-0ca8-1000-90a3-0af502b50000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[INS_FINANCIAL_RESULTS]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m82e3b4c9-0ca8-1000-90a3-0af502b50000" name="AMOUNT" dataType="DOUBLE" precision="126" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4ca-0ca8-1000-90a3-0af502b50000" name="CALENDAR_DATE" dataType="DATETIME" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4cb-0ca8-1000-90a3-0af502b50000" name="CATEGORY_ID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4cc-0ca8-1000-90a3-0af502b50000" name="ENTITY_ID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4cd-0ca8-1000-90a3-0af502b50000" name="SCENARIO" dataType="VARCHAR" precision="20" specialType="none">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="m82e42a03-0ca8-1000-90a3-0af502b50000" name="FINANCIAL_RESULTS_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3b4c2-0ca8-1000-90a3-0af502b50000.xml#m82e429b9-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a03-0ca8-1000-90a3-0af502b50000-m82e3b4cb-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3b4c8-0ca8-1000-90a3-0af502b50000.xml#m82e3b4cb-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82e42a04-0ca8-1000-90a3-0af502b50000" name="FINANCIAL_RESULTS_Foreign Key#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3b4bd-0ca8-1000-90a3-0af502b50000.xml#m82e429b8-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a04-0ca8-1000-90a3-0af502b50000-m82e3b4cc-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3b4c8-0ca8-1000-90a3-0af502b50000.xml#m82e3b4cc-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82e42a05-0ca8-1000-90a3-0af502b50000" name="FINANCIAL_RESULTS_Foreign Key#2" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3b4fb-0ca8-1000-90a3-0af502b50000.xml#m82e429c2-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a05-0ca8-1000-90a3-0af502b50000-m82e3b4ca-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3b4c8-0ca8-1000-90a3-0af502b50000.xml#m82e3b4ca-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

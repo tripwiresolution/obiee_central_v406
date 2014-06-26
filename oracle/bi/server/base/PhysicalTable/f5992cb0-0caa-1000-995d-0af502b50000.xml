@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="mf5992cb0-0caa-1000-995d-0af502b50000" name="USERLIST" iconIndex="79" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[USERLIST]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="mf59b0170-0caa-1000-995d-0af502b50000" name="CUSTOMERNAME" dataType="VARCHAR" precision="255" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mf5a14300-0caa-1000-995d-0af502b50000" name="LISTNAME" dataType="VARCHAR" precision="255" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mf5a2a290-0caa-1000-995d-0af502b50000" name="NUSERATTRIBUTE1" dataType="DOUBLE" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mf5a5fdf0-0caa-1000-995d-0af502b50000" name="NUSERATTRIBUTE2" dataType="DOUBLE" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mf5a73670-0caa-1000-995d-0af502b50000" name="NUSERATTRIBUTE3" dataType="DOUBLE" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mf5a7f9c0-0caa-1000-995d-0af502b50000" name="SUSERATTRIBUTE1" dataType="DOUBLE" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mf5aadff0-0caa-1000-995d-0af502b50000" name="SUSERATTRIBUTE2" dataType="DOUBLE" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mf5abf160-0caa-1000-995d-0af502b50000" name="SUSERATTRIBUTE3" dataType="DOUBLE" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="mf83868a0-0caa-1000-995d-0af502b50000" name="USERLIST_Key">
+<RefColumns>
+<RefColumn refId="mf83868a0-0caa-1000-995d-0af502b50000-mf59b0170-0caa-1000-995d-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/f5992cb0-0caa-1000-995d-0af502b50000.xml#mf59b0170-0caa-1000-995d-0af502b50000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="mf844c4b0-0caa-1000-995d-0af502b50000" name="USERLIST_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/f6e11600-0caa-1000-995d-0af502b50000.xml#mf84e3a90-0caa-1000-995d-0af502b50000">
+<RefColumns>
+<RefColumn refId="mf844c4b0-0caa-1000-995d-0af502b50000-mf5a14300-0caa-1000-995d-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/f5992cb0-0caa-1000-995d-0af502b50000.xml#mf5a14300-0caa-1000-995d-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

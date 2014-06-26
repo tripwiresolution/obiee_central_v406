@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0fbc9-0ca8-1000-90a3-0af502b50000" name="Sales by Segment" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd8-0ca8-1000-90a3-0af502b50000.xml#m82f0acd8-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0fbca-0ca8-1000-90a3-0af502b50000" name="PROFITP" isWriteable="false">
+<MeasureDefn mdsid="m82f17025-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f1976f-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736851391789375" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-098d-d4e500000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y07 - Demo Insurance"."Sales by Segment"."PROFITP")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-098d-d4e500000000-m82f0fbca-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fbc9-0ca8-1000-90a3-0af502b50000.xml#m82f0fbca-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a8ff-0ca8-1000-90a3-0af502b50000" name="AD_3900:2759601391789375">
+<Expr mdsid="m00000002-01f4-0000-ee78-83d600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."INS"."INS_POLICY_HOLDER"."PROFITP"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-ee78-83d600000000-m82e3b4db-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3b4ce-0ca8-1000-90a3-0af502b50000.xml#m82e3b4db-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fbcb-0ca8-1000-90a3-0af502b50000" name="SALESP" isWriteable="false">
+<MeasureDefn mdsid="m82f17026-0ca8-1000-90a3-0af502b50000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m82f19770-0ca8-1000-90a3-0af502b50000" name="AggRule_2050:2736861391789375" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-765f-b42b00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y07 - Demo Insurance"."Sales by Segment"."SALESP")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-765f-b42b00000000-m82f0fbcb-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0fbc9-0ca8-1000-90a3-0af502b50000.xml#m82f0fbcb-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m82f2a900-0ca8-1000-90a3-0af502b50000" name="AD_3900:2759611391789375">
+<Expr mdsid="m00000004-01f4-0000-4be8-f5c000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."INS"."INS_POLICY_HOLDER"."SALESP"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-4be8-f5c000000000-m82e3b4da-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3b4ce-0ca8-1000-90a3-0af502b50000.xml#m82e3b4da-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0fbc9-0ca8-1000-90a3-0af502b50000-m82f31df7-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f31df7-0ca8-1000-90a3-0af502b50000.xml#m82f31df7-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationTable mdsid="m80cab85c-0fa8-0000-714b-e31d00000000" name="Orders" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Orders)" hasDispName="true" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationCatalog/80cab7ef-0fa4-0000-714b-e31d00000000.xml#m80cab7ef-0fa4-0000-714b-e31d00000000">
+<Description><![CDATA[Orders dimension attribute objects]]></Description>
+<Alias name="R"/>
+<PresentationColumn mdsid="m80cab85e-0faa-0000-714b-e31d00000000" name="R1  Order Status" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Orders_R1__Order_Status)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab629-07f3-0000-714b-e31d00000000.xml#m80cab62b-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help : 
+Stores the order status description.]]></Description>
+<Alias name="OrderStatus"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cb2ae3-0faa-0000-714b-e31d00000000" name="R2  Order Type" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Orders_R2__Order_Type)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab629-07f3-0000-714b-e31d00000000.xml#m80cb2ad8-07d6-0000-714b-e31d00000000">
+<Alias name="OrderType"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cadd3f-0faa-0000-714b-e31d00000000" name="R3  Order Currency" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Orders_R3__Order_Currency)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab629-07f3-0000-714b-e31d00000000.xml#m80cadd3c-07d6-0000-714b-e31d00000000">
+</PresentationColumn>
+<PresentationColumn mdsid="m80cb7310-0faa-0000-714b-e31d00000000" name="R5  Order Discount Rate" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Orders_R5__Order_Discount_Rate)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab629-07f3-0000-714b-e31d00000000.xml#m80cb72ff-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help : 
+Mapped to Order date in the fact table.]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cab85d-0faa-0000-714b-e31d00000000" name="R0  Order Key" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Orders_R0__Order_Number)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab629-07f3-0000-714b-e31d00000000.xml#m80cab62a-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help : 
+This maps to the order key in the fact table.]]></Description>
+<Alias name="Order"/>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cc5944-0faa-0000-714b-e31d00000000" name="R6  Transactional Order Number" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab629-07f3-0000-714b-e31d00000000.xml#m80cc5937-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help : 
+This maps to the order key in the fact table.]]></Description>
+</PresentationColumn>
+<RefHierarchies>
+<RefPresentationHierarchy refId="m80cab85c-0fa8-0000-714b-e31d00000000-m80caba91-0fbc-0000-714b-e31d00000000" presentationHierarchyRef="/oracle/bi/server/base/PresentationHierarchy/80caba91-0fbc-0000-714b-e31d00000000.xml#m80caba91-0fbc-0000-714b-e31d00000000"/>
+<RefPresentationHierarchy refId="m80cab85c-0fa8-0000-714b-e31d00000000-m80cb38ef-0fbc-0000-714b-e31d00000000" presentationHierarchyRef="/oracle/bi/server/base/PresentationHierarchy/80cb38ef-0fbc-0000-714b-e31d00000000.xml#m80cb38ef-0fbc-0000-714b-e31d00000000"/>
+</RefHierarchies>
+<RefContentFolders>
+<RefPresentationTable refId="m80cab85c-0fa8-0000-714b-e31d00000000-m80cab845-0fa8-0000-714b-e31d00000000" presentationTableRef="/oracle/bi/server/base/PresentationTable/80cab845-0fa8-0000-714b-e31d00000000.xml#m80cab845-0fa8-0000-714b-e31d00000000"/>
+<RefPresentationTable refId="m80cab85c-0fa8-0000-714b-e31d00000000-m80cab864-0fa8-0000-714b-e31d00000000" presentationTableRef="/oracle/bi/server/base/PresentationTable/80cab864-0fa8-0000-714b-e31d00000000.xml#m80cab864-0fa8-0000-714b-e31d00000000"/>
+<RefPresentationTable refId="m80cab85c-0fa8-0000-714b-e31d00000000-m80cbdbed-0fa8-0000-714b-e31d00000000" presentationTableRef="/oracle/bi/server/base/PresentationTable/80cbdbed-0fa8-0000-714b-e31d00000000.xml#m80cbdbed-0fa8-0000-714b-e31d00000000"/>
+</RefContentFolders>
+</PresentationTable>

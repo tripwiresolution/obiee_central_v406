@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m6ac8b72a-0c61-1000-99f2-7f0000010000" name="SA_24_Canc00039CFE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" cacheExpiry="86400" isSysGen="true" maxConn="0" containerRef="/oracle/bi/server/base/Schema/d62c7334-0c34-1000-8a91-8c5486920000.xml#md62c7334-0c34-1000-8a91-8c5486920000" aggrConnPoolRef="/oracle/bi/server/base/ConnectionPool/d62c7332-0c34-1000-8a91-8c5486920000.xml#md62c7332-0c34-1000-8a91-8c5486920000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SA_24_Canc00039CFE]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m6ac8b72c-0c61-1000-99f2-7f0000010000" name="CODE00039C1C" dataType="VARCHAR" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6ac8b72d-0c61-1000-99f2-7f0000010000" name="Cancel_Rea00039C1D" dataType="VARCHAR" precision="250" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m6ac8b72e-0c61-1000-99f2-7f0000010000" name="Cancel__00039CFESK" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m6ac8b72b-0c61-1000-99f2-7f0000010000" name="K_CODE">
+<RefColumns>
+<RefColumn refId="m6ac8b72b-0c61-1000-99f2-7f0000010000-m6ac8b72c-0c61-1000-99f2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/6ac8b72a-0c61-1000-99f2-7f0000010000.xml#m6ac8b72c-0c61-1000-99f2-7f0000010000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="m6ac8b72f-0c61-1000-99f2-7f0000010000" name="Cancel__00039CFESK">
+<RefColumns>
+<RefColumn refId="m6ac8b72f-0c61-1000-99f2-7f0000010000-m6ac8b72e-0c61-1000-99f2-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/6ac8b72a-0c61-1000-99f2-7f0000010000.xml#m6ac8b72e-0c61-1000-99f2-7f0000010000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

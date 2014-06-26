@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m5c24b6f0-0c35-1000-a434-0a9f4a520000" name="WR Search Criteria" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/802b289f-07d0-0000-714b-e31d00000000.xml#m802b289f-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m5c24b6f3-0c35-1000-a434-0a9f4a520000" name="Search Pattern" isWriteable="false">
+<AttrDefn mdsid="m5c24b6f5-0c35-1000-a434-0a9f4a520000" name="AD_3900:2496781342331871">
+<Expr mdsid="m00000001-01f4-0000-32cd-6bbd00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["10 - System DB (ORCL)"."Catalog"."dbo"."WR_SEARCH_PATTERN"."SEARCH_PATTERN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-32cd-6bbd00000000-m5c1f86d3-0c35-1000-a434-0a9f4a520000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/5c1f86d2-0c35-1000-a434-0a9f4a520000.xml#m5c1f86d3-0c35-1000-a434-0a9f4a520000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m5c24b6f4-0c35-1000-a434-0a9f4a520000" name="SEARCH_PATTERN" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m5c24b6f4-0c35-1000-a434-0a9f4a520000-m5c24b6f3-0c35-1000-a434-0a9f4a520000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/5c24b6f0-0c35-1000-a434-0a9f4a520000.xml#m5c24b6f3-0c35-1000-a434-0a9f4a520000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m5c24b6f0-0c35-1000-a434-0a9f4a520000-m5c24b6f2-0c35-1000-a434-0a9f4a520000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/5c24b6f2-0c35-1000-a434-0a9f4a520000.xml#m5c24b6f2-0c35-1000-a434-0a9f4a520000"/>
+</RefTableSources>
+</LogicalTable>

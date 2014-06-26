@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PresentationTable mdsid="m80cdbe8d-0fa8-0000-714b-e31d00000000" name="Base Facts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" hasDispName="false" hasDispDescription="false" containerRef="/oracle/bi/server/base/PresentationCatalog/80cdbdbb-0fa4-0000-714b-e31d00000000.xml#m80cdbdbb-0fa4-0000-714b-e31d00000000">
+<Description><![CDATA[This folder contains all the base facts like Revenue, Quantity, Target, Headcount and so on. All the metrics in this folder have the aggregation type as Sum unless explicitly specified.]]></Description>
+<PresentationColumn mdsid="m80cdbe8e-0faa-0000-714b-e31d00000000" name="1- Revenue" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Base_Facts_1-_Revenue)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdb9dd-07f3-0000-714b-e31d00000000.xml#m80cdb9df-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Revenue data. Sources from Revenue physical column in 'Sample Revenue Fact' table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cdbe8f-0faa-0000-714b-e31d00000000" name="2- Billed Quantity" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Base_Facts_2-_Billed_Quantity)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdb9dd-07f3-0000-714b-e31d00000000.xml#m80cdb9e0-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Billed Quantity data. Sources from Units physical column in 'Sample Revenue Fact' table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimension]]></Description>
+</PresentationColumn>
+<PresentationColumn mdsid="m80cdbe9b-0faa-0000-714b-e31d00000000" name="20  Actual Unit Price" dispName="VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Simple_Calculations_20__Actual_Unit_Price)" hasDispName="true" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cdb9dd-07f3-0000-714b-e31d00000000.xml#m80cdba80-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Help :
+Unit Price is computed as Revenue divided by Billed Quantity]]></Description>
+</PresentationColumn>
+</PresentationTable>

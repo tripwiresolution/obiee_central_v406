@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="mfe34e0eb-0c82-1000-806e-0af170e40000" name="Facts - Customers" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/fe34e080-0c82-1000-806e-0af170e40000.xml#mfe34e080-0c82-1000-806e-0af170e40000">
+<LogicalColumn mdsid="mfe34e0ec-0c82-1000-806e-0af170e40000" name="Average Age" isWriteable="false">
+<MeasureDefn mdsid="mfe34e192-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1c9-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630631375675016" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-bde2-a96400000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y10 - Movie Demo (ORCL)"."Facts - Customers"."Average Age")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-bde2-a96400000000-mfe34e0ec-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e0eb-0c82-1000-806e-0af170e40000.xml#mfe34e0ec-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e37d-0c82-1000-806e-0af170e40000" name="AD_3900:2634991375675016">
+<Expr mdsid="m00000002-01f4-0000-3568-47fa00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."CUSTOMER"."AGE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-3568-47fa00000000-mfe3332f6-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe3332f5-0c82-1000-806e-0af170e40000.xml#mfe3332f6-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0ed-0c82-1000-806e-0af170e40000" name="# Comments" isWriteable="false">
+<MeasureDefn mdsid="mfe34e193-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1ca-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630641375675016" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-5167-c33c00000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "Y10 - Movie Demo (ORCL)"."Facts - Customers"."# Comments")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-5167-c33c00000000-mfe34e0ed-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e0eb-0c82-1000-806e-0af170e40000.xml#mfe34e0ed-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e37e-0c82-1000-806e-0af170e40000" name="AD_3900:2635001375675016">
+<Expr mdsid="m00000004-01f4-0000-d763-221d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."CUSTOMER"."COMMENTS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-d763-221d00000000-mfe3332f9-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe3332f5-0c82-1000-806e-0af170e40000.xml#mfe3332f9-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0ee-0c82-1000-806e-0af170e40000" name="Average Commute Distance" isWriteable="false">
+<MeasureDefn mdsid="mfe34e194-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1cb-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630651375675016" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-8bf1-fd6600000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y10 - Movie Demo (ORCL)"."Facts - Customers"."Average Commute Distance")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-8bf1-fd6600000000-mfe34e0ee-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e0eb-0c82-1000-806e-0af170e40000.xml#mfe34e0ee-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e37f-0c82-1000-806e-0af170e40000" name="AD_3900:2635011375675016">
+<Expr mdsid="m00000006-01f4-0000-3ff4-225600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."CUSTOMER"."COMMUTE_DISTANCE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-3ff4-225600000000-mfe3332fa-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe3332f5-0c82-1000-806e-0af170e40000.xml#mfe3332fa-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0ef-0c82-1000-806e-0af170e40000" name="Average Credit Balance" isWriteable="false">
+<MeasureDefn mdsid="mfe34e195-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1cc-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630661375675016" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-f641-4a7400000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y10 - Movie Demo (ORCL)"."Facts - Customers"."Average Credit Balance")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-f641-4a7400000000-mfe34e0ef-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e0eb-0c82-1000-806e-0af170e40000.xml#mfe34e0ef-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e380-0c82-1000-806e-0af170e40000" name="AD_3900:2635021375675016">
+<Expr mdsid="m00000008-01f4-0000-90a7-49d600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."CUSTOMER"."CREDIT_BALANCE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-90a7-49d600000000-mfe333300-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe3332f5-0c82-1000-806e-0af170e40000.xml#mfe333300-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0f0-0c82-1000-806e-0af170e40000" name="Average Household Size" isWriteable="false">
+<MeasureDefn mdsid="mfe34e196-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1cd-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630671375675016" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-45e2-2cb100000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y10 - Movie Demo (ORCL)"."Facts - Customers"."Average Household Size")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-45e2-2cb100000000-mfe34e0f0-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e0eb-0c82-1000-806e-0af170e40000.xml#mfe34e0f0-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e381-0c82-1000-806e-0af170e40000" name="AD_3900:2635031375675016">
+<Expr mdsid="m0000000a-01f4-0000-046b-64b900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."CUSTOMER"."HOUSEHOLD_SIZE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-046b-64b900000000-mfe333307-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe3332f5-0c82-1000-806e-0af170e40000.xml#mfe333307-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0f1-0c82-1000-806e-0af170e40000" name="Average Income" isWriteable="false">
+<MeasureDefn mdsid="mfe34e197-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1ce-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630681375675016" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-38eb-ce9b00000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y10 - Movie Demo (ORCL)"."Facts - Customers"."Average Income")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-38eb-ce9b00000000-mfe34e0f1-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e0eb-0c82-1000-806e-0af170e40000.xml#mfe34e0f1-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e382-0c82-1000-806e-0af170e40000" name="AD_3900:2635041375675016">
+<Expr mdsid="m0000000c-01f4-0000-95e7-467400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."CUSTOMER"."INCOME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-95e7-467400000000-mfe333308-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe3332f5-0c82-1000-806e-0af170e40000.xml#mfe333308-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0f2-0c82-1000-806e-0af170e40000" name="Average Late Mort Rent Pmts" isWriteable="false">
+<MeasureDefn mdsid="mfe34e198-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1cf-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630691375675016" isDefault="true">
+<Expr mdsid="m0000000d-01f4-0000-6f76-20c000000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y10 - Movie Demo (ORCL)"."Facts - Customers"."Average Late Mort Rent Pmts")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-6f76-20c000000000-mfe34e0f2-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e0eb-0c82-1000-806e-0af170e40000.xml#mfe34e0f2-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e383-0c82-1000-806e-0af170e40000" name="AD_3900:2635051375675016">
+<Expr mdsid="m0000000e-01f4-0000-8a2c-0d9800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."CUSTOMER"."LATE_MORT_RENT_PMTS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-8a2c-0d9800000000-mfe33330d-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe3332f5-0c82-1000-806e-0af170e40000.xml#mfe33330d-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0f3-0c82-1000-806e-0af170e40000" name="Average Mortgage Amt" isWriteable="false">
+<MeasureDefn mdsid="mfe34e199-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1d0-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630701375675016" isDefault="true">
+<Expr mdsid="m0000000f-01f4-0000-3ecb-cb9900000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y10 - Movie Demo (ORCL)"."Facts - Customers"."Average Mortgage Amt")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-3ecb-cb9900000000-mfe34e0f3-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e0eb-0c82-1000-806e-0af170e40000.xml#mfe34e0f3-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e384-0c82-1000-806e-0af170e40000" name="AD_3900:2635061375675016">
+<Expr mdsid="m00000010-01f4-0000-6ea7-538400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."CUSTOMER"."MORTGAGE_AMT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-6ea7-538400000000-mfe33330f-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe3332f5-0c82-1000-806e-0af170e40000.xml#mfe33330f-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0f4-0c82-1000-806e-0af170e40000" name="Average Num Cars" isWriteable="false">
+<MeasureDefn mdsid="mfe34e19a-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1d1-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630711375675016" isDefault="true">
+<Expr mdsid="m00000011-01f4-0000-55a3-faa600000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y10 - Movie Demo (ORCL)"."Facts - Customers"."Average Num Cars")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-55a3-faa600000000-mfe34e0f4-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e0eb-0c82-1000-806e-0af170e40000.xml#mfe34e0f4-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e385-0c82-1000-806e-0af170e40000" name="AD_3900:2635071375675016">
+<Expr mdsid="m00000012-01f4-0000-6d60-138000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."CUSTOMER"."NUM_CARS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-6d60-138000000000-mfe333310-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe3332f5-0c82-1000-806e-0af170e40000.xml#mfe333310-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0f5-0c82-1000-806e-0af170e40000" name="Average Num Mortgages" isWriteable="false">
+<MeasureDefn mdsid="mfe34e19b-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1d2-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630721375675016" isDefault="true">
+<Expr mdsid="m00000013-01f4-0000-d762-fed700000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y10 - Movie Demo (ORCL)"."Facts - Customers"."Average Num Mortgages")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-d762-fed700000000-mfe34e0f5-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e0eb-0c82-1000-806e-0af170e40000.xml#mfe34e0f5-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e386-0c82-1000-806e-0af170e40000" name="AD_3900:2635081375675016">
+<Expr mdsid="m00000014-01f4-0000-80a5-9af500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."CUSTOMER"."NUM_MORTGAGES"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-80a5-9af500000000-mfe333311-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe3332f5-0c82-1000-806e-0af170e40000.xml#mfe333311-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0f6-0c82-1000-806e-0af170e40000" name="Average Work Experience" isWriteable="false">
+<MeasureDefn mdsid="mfe34e19c-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1d3-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630731375675016" isDefault="true">
+<Expr mdsid="m00000015-01f4-0000-bac5-8fe200000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y10 - Movie Demo (ORCL)"."Facts - Customers"."Average Work Experience")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-bac5-8fe200000000-mfe34e0f6-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e0eb-0c82-1000-806e-0af170e40000.xml#mfe34e0f6-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e387-0c82-1000-806e-0af170e40000" name="AD_3900:2635091375675016">
+<Expr mdsid="m00000016-01f4-0000-9bbf-b79200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."CUSTOMER"."WORK_EXPERIENCE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-9bbf-b79200000000-mfe33331a-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe3332f5-0c82-1000-806e-0af170e40000.xml#mfe33331a-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0f7-0c82-1000-806e-0af170e40000" name="Average Years Current Employer" isWriteable="false">
+<MeasureDefn mdsid="mfe34e19d-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1d4-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630741375675016" isDefault="true">
+<Expr mdsid="m00000017-01f4-0000-cba8-b40200000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y10 - Movie Demo (ORCL)"."Facts - Customers"."Average Years Current Employer")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-cba8-b40200000000-mfe34e0f7-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e0eb-0c82-1000-806e-0af170e40000.xml#mfe34e0f7-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e388-0c82-1000-806e-0af170e40000" name="AD_3900:2635101375675016">
+<Expr mdsid="m00000018-01f4-0000-14a0-ddde00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."CUSTOMER"."YRS_CURRENT_EMPLOYER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000018-01f4-0000-14a0-ddde00000000-mfe33331b-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe3332f5-0c82-1000-806e-0af170e40000.xml#mfe33331b-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0f8-0c82-1000-806e-0af170e40000" name="Average Years Customer" isWriteable="false">
+<MeasureDefn mdsid="mfe34e19e-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1d5-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630751375675016" isDefault="true">
+<Expr mdsid="m00000019-01f4-0000-3378-b53500000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y10 - Movie Demo (ORCL)"."Facts - Customers"."Average Years Customer")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000019-01f4-0000-3378-b53500000000-mfe34e0f8-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e0eb-0c82-1000-806e-0af170e40000.xml#mfe34e0f8-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e389-0c82-1000-806e-0af170e40000" name="AD_3900:2635111375675016">
+<Expr mdsid="m0000001a-01f4-0000-16c4-3f8300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."CUSTOMER"."YRS_CUSTOMER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001a-01f4-0000-16c4-3f8300000000-mfe33331c-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe3332f5-0c82-1000-806e-0af170e40000.xml#mfe33331c-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0f9-0c82-1000-806e-0af170e40000" name="Average Years Residence" isWriteable="false">
+<MeasureDefn mdsid="mfe34e19f-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1d6-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630761375675016" isDefault="true">
+<Expr mdsid="m0000001b-01f4-0000-e9ce-747500000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y10 - Movie Demo (ORCL)"."Facts - Customers"."Average Years Residence")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001b-01f4-0000-e9ce-747500000000-mfe34e0f9-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e0eb-0c82-1000-806e-0af170e40000.xml#mfe34e0f9-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e38a-0c82-1000-806e-0af170e40000" name="AD_3900:2635121375675016">
+<Expr mdsid="m0000001c-01f4-0000-6711-74f500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."CUSTOMER"."YRS_RESIDENCE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001c-01f4-0000-6711-74f500000000-mfe33331d-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe3332f5-0c82-1000-806e-0af170e40000.xml#mfe33331d-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0fa-0c82-1000-806e-0af170e40000" name="# of Cust in Base" isWriteable="false">
+<MeasureDefn mdsid="mfe34e1a0-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1d7-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630771375675016" isDefault="true">
+<Expr mdsid="m0000001d-01f4-0000-bfd2-19d200000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "Y10 - Movie Demo (ORCL)"."Facts - Customers"."# of Cust in Base")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001d-01f4-0000-bfd2-19d200000000-mfe34e0fa-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e0eb-0c82-1000-806e-0af170e40000.xml#mfe34e0fa-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e38b-0c82-1000-806e-0af170e40000" name="AD_3900:2635131375675016">
+<Expr mdsid="m0000001e-01f4-0000-22a6-d6e800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."CUSTOMER"."CUST_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001e-01f4-0000-22a6-d6e800000000-mfe333301-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe3332f5-0c82-1000-806e-0af170e40000.xml#mfe333301-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="mfe34e0eb-0c82-1000-806e-0af170e40000-mfe34e401-0c82-1000-806e-0af170e40000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/fe34e401-0c82-1000-806e-0af170e40000.xml#mfe34e401-0c82-1000-806e-0af170e40000"/>
+</RefTableSources>
+</LogicalTable>

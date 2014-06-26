@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0fc53-0ca8-1000-90a3-0af502b50000" name="Dim - Recruitment Phases" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acda-0ca8-1000-90a3-0af502b50000.xml#m82f0acda-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0fc54-0ca8-1000-90a3-0af502b50000" name="Phase Number" isWriteable="false">
+<AttrDefn mdsid="m82f2a973-0ca8-1000-90a3-0af502b50000" name="AD_3900:2760761391789375">
+<Expr mdsid="m00000001-01f4-0000-e02c-1be700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_RECRUITMENT_PHASES"."PHASE_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-e02c-1be700000000-m82e3dc5c-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc5b-0ca8-1000-90a3-0af502b50000.xml#m82e3dc5c-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc55-0ca8-1000-90a3-0af502b50000" name="Phase Name" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/82f0fc53-0ca8-1000-90a3-0af502b50000.xml#m82f0fc54-0ca8-1000-90a3-0af502b50000">
+<AttrDefn mdsid="m82f2a974-0ca8-1000-90a3-0af502b50000" name="AD_3900:2760771391789375">
+<Expr mdsid="m00000002-01f4-0000-1510-95e800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_RECRUITMENT_PHASES"."PHASE_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-1510-95e800000000-m82e3dc5d-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc5b-0ca8-1000-90a3-0af502b50000.xml#m82e3dc5d-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m82f2344e-0ca8-1000-90a3-0af502b50000" name="LOIC_RECRUITMENT_PHASES_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f2344e-0ca8-1000-90a3-0af502b50000-m82f0fc54-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0fc53-0ca8-1000-90a3-0af502b50000.xml#m82f0fc54-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0fc53-0ca8-1000-90a3-0af502b50000-m82f31e0d-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f31e0d-0ca8-1000-90a3-0af502b50000.xml#m82f31e0d-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

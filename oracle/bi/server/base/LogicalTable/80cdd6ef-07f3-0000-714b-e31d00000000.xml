@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cdd6ef-07f3-0000-714b-e31d00000000" name="F7 Datamining Regression Facts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cab573-07d0-0000-714b-e31d00000000.xml#m80cab573-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cddada-07d6-0000-714b-e31d00000000" name="M00 === Mining Regression Model ====" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m00000001-01f4-0000-2cc5-b9ff00000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m80cddadb-0f3c-0000-714b-e31d00000000" name="AD_3900:1875151301577489">
+<Expr mdsid="m00000002-01f4-0000-c472-d67e00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdd6fe-07d6-0000-714b-e31d00000000" name="M01- Actual Revenue" isWriteable="false">
+<MeasureDefn mdsid="m80cdd783-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdd82b-0802-0000-714b-e31d00000000" name="AggRule_2050:1868271300980309" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-9292-381600000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("01 - Sample App"."F7 Datamining Regression Facts"."M01- Actual Revenue")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-9292-381600000000-m80cdd6fe-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdd6ef-07f3-0000-714b-e31d00000000.xml#m80cdd6fe-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdd70e-0f3c-0000-714b-e31d00000000" name="AD_3900:1865261300957684">
+<Expr mdsid="m00000004-01f4-0000-9130-858000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F70 ODM Regression Data"."M_REVENUE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-9130-858000000000-m80cde1ff-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cde1fe-0bb9-0000-714b-e31d00000000.xml#m80cde1ff-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdd700-07d6-0000-714b-e31d00000000" name="M02- Expected Rev" isWriteable="false">
+<MeasureDefn mdsid="m80cdd785-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdd786-0802-0000-714b-e31d00000000" name="AggregationRule" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-62ba-dc3c00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("01 - Sample App"."F7 Datamining Regression Facts"."M02- Expected Rev")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-62ba-dc3c00000000-m80cdd700-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdd6ef-07f3-0000-714b-e31d00000000.xml#m80cdd700-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdd710-0f3c-0000-714b-e31d00000000" name="AD_3900:1865281300957684">
+<Expr mdsid="m00000006-01f4-0000-3d9a-660c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F71 ODM Regression Results"."M_REVENUE_EXPECT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-3d9a-660c00000000-m80cde1fc-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cde1fb-0bb9-0000-714b-e31d00000000.xml#m80cde1fc-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdd701-07d6-0000-714b-e31d00000000" name="M03- Dyn Expected Rev" isWriteable="false">
+<MeasureDefn mdsid="m80cdd787-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdd826-0802-0000-714b-e31d00000000" name="AggRule_2050:1868221300972900" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-8aba-22d500000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("01 - Sample App"."F7 Datamining Regression Facts"."M03- Dyn Expected Rev")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-8aba-22d500000000-m80cdd701-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdd6ef-07f3-0000-714b-e31d00000000.xml#m80cdd701-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdd711-0f3c-0000-714b-e31d00000000" name="AD_3900:1865291300957684">
+<Expr mdsid="m00000008-01f4-0000-0f3c-78d300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F71 ODM Regression Results"."M_REVENUE_EXPECT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-0f3c-78d300000000-m80cde1fc-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cde1fb-0bb9-0000-714b-e31d00000000.xml#m80cde1fc-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdd830-07d6-0000-714b-e31d00000000" name="M05- Actual as % of Exptd" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000009-01f4-0000-8cef-7def00000000" name="Expr">
+<ExprText><![CDATA[cast("%1" as double) /
+"%2" *100]]></ExprText>
+<ExprTextDesc><![CDATA[cast("01 - Sample App"."F7 Datamining Regression Facts"."M01- Actual Revenue" as double) /
+"01 - Sample App"."F7 Datamining Regression Facts"."M02- Expected Rev" *100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-8cef-7def00000000-m80cdd6fe-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdd6ef-07f3-0000-714b-e31d00000000.xml#m80cdd6fe-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000009-01f4-0000-8cef-7def00000000-m80cdd700-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdd6ef-07f3-0000-714b-e31d00000000.xml#m80cdd700-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cdd833-0f3c-0000-714b-e31d00000000" name="AD_3900:1868351300980808">
+<Expr mdsid="m0000000a-01f4-0000-dcdb-3f1400000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdd837-07d6-0000-714b-e31d00000000" name="M06- Actual Diff to Exptd" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000000b-01f4-0000-6283-9d4200000000" name="Expr">
+<ExprText><![CDATA[cast("%1" as double) -
+"%2"]]></ExprText>
+<ExprTextDesc><![CDATA[cast("01 - Sample App"."F7 Datamining Regression Facts"."M01- Actual Revenue" as double) -
+"01 - Sample App"."F7 Datamining Regression Facts"."M02- Expected Rev"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-6283-9d4200000000-m80cdd6fe-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdd6ef-07f3-0000-714b-e31d00000000.xml#m80cdd6fe-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m0000000b-01f4-0000-6283-9d4200000000-m80cdd700-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdd6ef-07f3-0000-714b-e31d00000000.xml#m80cdd700-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cdd838-0f3c-0000-714b-e31d00000000" name="AD_3900:1868401300980808">
+<Expr mdsid="m0000000c-01f4-0000-e931-877100000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdd83b-07d6-0000-714b-e31d00000000" name="M07- Actual as % of Dyn Exptd" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000000d-01f4-0000-c117-81f300000000" name="Expr">
+<ExprText><![CDATA[cast("%1" as double) /
+"%2" *100]]></ExprText>
+<ExprTextDesc><![CDATA[cast("01 - Sample App"."F7 Datamining Regression Facts"."M01- Actual Revenue" as double) /
+"01 - Sample App"."F7 Datamining Regression Facts"."M03- Dyn Expected Rev" *100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-c117-81f300000000-m80cdd6fe-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdd6ef-07f3-0000-714b-e31d00000000.xml#m80cdd6fe-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m0000000d-01f4-0000-c117-81f300000000-m80cdd701-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdd6ef-07f3-0000-714b-e31d00000000.xml#m80cdd701-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cdd83c-0f3c-0000-714b-e31d00000000" name="AD_3900:1868441300980808">
+<Expr mdsid="m0000000e-01f4-0000-0801-e73100000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdd83f-07d6-0000-714b-e31d00000000" name="M08- Actual Diff to Dyn Exptd" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000000f-01f4-0000-98f4-7d0a00000000" name="Expr">
+<ExprText><![CDATA[cast("%1" as double) -
+"%2"]]></ExprText>
+<ExprTextDesc><![CDATA[cast("01 - Sample App"."F7 Datamining Regression Facts"."M01- Actual Revenue" as double) -
+"01 - Sample App"."F7 Datamining Regression Facts"."M03- Dyn Expected Rev"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-98f4-7d0a00000000-m80cdd6fe-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdd6ef-07f3-0000-714b-e31d00000000.xml#m80cdd6fe-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m0000000f-01f4-0000-98f4-7d0a00000000-m80cdd701-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdd6ef-07f3-0000-714b-e31d00000000.xml#m80cdd701-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cdd840-0f3c-0000-714b-e31d00000000" name="AD_3900:1868481300980808">
+<Expr mdsid="m00000010-01f4-0000-fe77-595600000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdd84b-07d6-0000-714b-e31d00000000" name="M09- Dyn Exptd as % of Exptd" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000011-01f4-0000-ba51-5a1c00000000" name="Expr">
+<ExprText><![CDATA[cast("%1" as double) /
+"%2"*100]]></ExprText>
+<ExprTextDesc><![CDATA[cast("01 - Sample App"."F7 Datamining Regression Facts"."M03- Dyn Expected Rev" as double) /
+"01 - Sample App"."F7 Datamining Regression Facts"."M02- Expected Rev"*100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-ba51-5a1c00000000-m80cdd701-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdd6ef-07f3-0000-714b-e31d00000000.xml#m80cdd701-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000011-01f4-0000-ba51-5a1c00000000-m80cdd700-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdd6ef-07f3-0000-714b-e31d00000000.xml#m80cdd700-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cdd84c-0f3c-0000-714b-e31d00000000" name="AD_3900:1868601300981151">
+<Expr mdsid="m00000012-01f4-0000-2a74-d5ff00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cde215-07d6-0000-714b-e31d00000000" name="M00- Original Revenue" iconIndex="91" isWriteable="false">
+<MeasureDefn mdsid="m80cde216-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cde21a-0802-0000-714b-e31d00000000" name="AggRule_2050:1893661304347793" isDefault="true">
+<Expr mdsid="m00000013-01f4-0000-4cc6-6c9c00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("01 - Sample App"."F7 Datamining Regression Facts"."M00- Original Revenue")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-4cc6-6c9c00000000-m80cde215-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cdd6ef-07f3-0000-714b-e31d00000000.xml#m80cde215-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cde218-0f3c-0000-714b-e31d00000000" name="AD_3900:1893651304347740">
+<Expr mdsid="m00000014-01f4-0000-df96-629900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F10 Billed Rev"."Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-df96-629900000000-m80cb6a0b-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb683a-0bb9-0000-714b-e31d00000000.xml#m80cb6a0b-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cdd6ef-07f3-0000-714b-e31d00000000-m80cde204-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cde204-07f5-0000-714b-e31d00000000.xml#m80cde204-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cdd6ef-07f3-0000-714b-e31d00000000-m80cde206-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cde206-07f5-0000-714b-e31d00000000.xml#m80cde206-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

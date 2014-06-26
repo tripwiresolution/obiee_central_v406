@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m82e3dc9e-0ca8-1000-90a3-0af502b50000" name="LOIC_ATTR_COUNTRY" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" maxConn="0" containerRef="/oracle/bi/server/base/Schema/82e3b49c-0ca8-1000-90a3-0af502b50000.xml#m82e3b49c-0ca8-1000-90a3-0af502b50000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[LOIC_ATTR_COUNTRY]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m82e3dc9f-0ca8-1000-90a3-0af502b50000" name="COUNTRY_ORG" dataType="VARCHAR" precision="50" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dca0-0ca8-1000-90a3-0af502b50000" name="REGION" dataType="VARCHAR" precision="50" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dca1-0ca8-1000-90a3-0af502b50000" name="DATA" dataType="VARCHAR" precision="50" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dca2-0ca8-1000-90a3-0af502b50000" name="YEAR" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dca3-0ca8-1000-90a3-0af502b50000" name="QUARTER" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dca4-0ca8-1000-90a3-0af502b50000" name="TOTAL" dataType="FLOAT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dca5-0ca8-1000-90a3-0af502b50000" name="QUARTERD" dataType="VARCHAR" precision="10" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dca6-0ca8-1000-90a3-0af502b50000" name="COUNTRY_MAP" dataType="VARCHAR" precision="50" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dca7-0ca8-1000-90a3-0af502b50000" name="CONSULTING" dataType="FLOAT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dca8-0ca8-1000-90a3-0af502b50000" name="DEVELOPMENT" dataType="FLOAT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dca9-0ca8-1000-90a3-0af502b50000" name="GA" dataType="FLOAT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dcaa-0ca8-1000-90a3-0af502b50000" name="LICENSE" dataType="FLOAT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dcab-0ca8-1000-90a3-0af502b50000" name="MARKETING" dataType="FLOAT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dcac-0ca8-1000-90a3-0af502b50000" name="SUPPORT_IT_EDUCATION" dataType="FLOAT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dcad-0ca8-1000-90a3-0af502b50000" name="SYSTEMS_PRODUCT_SALES" dataType="FLOAT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dcae-0ca8-1000-90a3-0af502b50000" name="JOINERS" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dcaf-0ca8-1000-90a3-0af502b50000" name="LEAVERS" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dcb0-0ca8-1000-90a3-0af502b50000" name="EMPLOYEES" dataType="INT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dcb1-0ca8-1000-90a3-0af502b50000" name="FY" dataType="VARCHAR" precision="20" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3dcb2-0ca8-1000-90a3-0af502b50000" name="DATARQ" dataType="FLOAT" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m82e429df-0ca8-1000-90a3-0af502b50000" name="ATTR_COUNTRY_Key">
+<RefColumns>
+<RefColumn refId="m82e429df-0ca8-1000-90a3-0af502b50000-m82e3dc9f-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3dc9e-0ca8-1000-90a3-0af502b50000.xml#m82e3dc9f-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m82e42a3e-0ca8-1000-90a3-0af502b50000" name="ATTR_COUNTRY_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3dcbc-0ca8-1000-90a3-0af502b50000.xml#m82e429e5-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a3e-0ca8-1000-90a3-0af502b50000-m82e3dca1-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3dc9e-0ca8-1000-90a3-0af502b50000.xml#m82e3dca1-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+<PhysicalForeignKey mdsid="m82e42a3f-0ca8-1000-90a3-0af502b50000" name="ATTR_COUNTRY_Foreign Key#1" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3dcd4-0ca8-1000-90a3-0af502b50000.xml#m82e429e7-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a3f-0ca8-1000-90a3-0af502b50000-m82e3dc9f-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3dc9e-0ca8-1000-90a3-0af502b50000.xml#m82e3dc9f-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

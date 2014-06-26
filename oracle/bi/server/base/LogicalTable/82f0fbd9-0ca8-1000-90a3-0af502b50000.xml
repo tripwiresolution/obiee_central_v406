@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0fbd9-0ca8-1000-90a3-0af502b50000" name="Writeback Comments" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd8-0ca8-1000-90a3-0af502b50000.xml#m82f0acd8-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0fbda-0ca8-1000-90a3-0af502b50000" name="Comment ID" isWriteable="false">
+<AttrDefn mdsid="m82f2a90b-0ca8-1000-90a3-0af502b50000" name="AD_3900:2759721391789375">
+<Expr mdsid="m00000001-01f4-0000-7949-5c0500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."INS"."INS_COMMENTS"."COMMENT_CODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-7949-5c0500000000-m82e3b542-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3b541-0ca8-1000-90a3-0af502b50000.xml#m82e3b542-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fbdb-0ca8-1000-90a3-0af502b50000" name="Comment Description" isWriteable="true">
+<AttrDefn mdsid="m82f2a90c-0ca8-1000-90a3-0af502b50000" name="AD_3900:2759731391789375">
+<Expr mdsid="m00000002-01f4-0000-8514-f15800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."INS"."INS_COMMENTS"."COMMENT_DESCR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-8514-f15800000000-m82e3b543-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3b541-0ca8-1000-90a3-0af502b50000.xml#m82e3b543-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fbdc-0ca8-1000-90a3-0af502b50000" name="Current Timestamp" isWriteable="false">
+<AttrDefn mdsid="m82f2a90d-0ca8-1000-90a3-0af502b50000" name="AD_3900:2759741391789375">
+<Expr mdsid="m00000003-01f4-0000-a9f3-d3d400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."INS"."INS_COMMENTS"."CURR_TIMESTAMP"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-a9f3-d3d400000000-m82e3b544-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3b541-0ca8-1000-90a3-0af502b50000.xml#m82e3b544-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fbdd-0ca8-1000-90a3-0af502b50000" name="Username" isWriteable="false">
+<AttrDefn mdsid="m82f2a90e-0ca8-1000-90a3-0af502b50000" name="AD_3900:2759751391789375">
+<Expr mdsid="m00000004-01f4-0000-d5fa-365c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."INS"."INS_COMMENTS"."USERNAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-d5fa-365c00000000-m82e3b545-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3b541-0ca8-1000-90a3-0af502b50000.xml#m82e3b545-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m82f2340e-0ca8-1000-90a3-0af502b50000" name="COMMENTS_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f2340e-0ca8-1000-90a3-0af502b50000-m82f0fbda-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0fbd9-0ca8-1000-90a3-0af502b50000.xml#m82f0fbda-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0fbd9-0ca8-1000-90a3-0af502b50000-m82f31dfb-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f31dfb-0ca8-1000-90a3-0af502b50000.xml#m82f31dfb-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

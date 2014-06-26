@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ConnectionPool mdsid="m71809722-0c36-1000-b82f-0af06a760000" name="Essb Connection Pool 3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" user="weblogic" password="6C6F0BE01FC4111F3AC2236A364D912EC5045C425D3984B2945A2441144AD151ED0393FFEF5968B518B2197311090DDFBD2FC60C1DF0D2B71CF5EB418C3A8C80 D7BA0DACF0715196A126DC3874922714C6EC2799C88D43FF119889099EFBFE17" timeout="300" maxConnDiff="10" maxConn="10" dataSource="VALUEOF(NQ_SESSION.ESSB_SERVER)" type="ESSBASE" reqQualifedTableName="false" isSharedLogin="true" isConcurrentQueriesInConnection="false" isCloseAfterEveryRequest="false" outputType="xml" ignoreFirstLine="false" bulkInsertBufferSize="0" transactionBoundary="0" xmlaInfo="10.228.232.106" xmlaCatalog="10.228.232.106" xmlaUseSession="true" isSiebelJDBSecured="false" databaseRef="/oracle/bi/server/base/Database/71809720-0c36-1000-b82f-0af06a760000.xml#m71809720-0c36-1000-b82f-0af06a760000">
+<Description><![CDATA[Connection pool for Sample Essbase source.
+Instead of editing connectivity parameters in each connection pool, update the RPD and Session variables that hold that information (Manage > Variables)
+
+Make sure you have 
+- updated the default value of the session variable ESS_SERVER with the correct information, 
+- and updated the password in the password field with the correct values
+
+Note : you can also replace the 
+"VALUEOF(NQ_SESSION.ESSB_SERVER)"
+by the correct essbase server host name or IP adress directly]]></Description>
+</ConnectionPool>

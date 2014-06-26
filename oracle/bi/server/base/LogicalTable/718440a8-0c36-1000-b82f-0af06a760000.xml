@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m718440a8-0c36-1000-b82f-0af06a760000" name="Measures" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="288" y="141" subjectAreaRef="/oracle/bi/server/base/BusinessModel/718440a0-0c36-1000-b82f-0af06a760000.xml#m718440a0-0c36-1000-b82f-0af06a760000">
+<LogicalColumn mdsid="m718440a9-0c36-1000-b82f-0af06a760000" name="Balance" isWriteable="false">
+<MeasureDefn mdsid="m71844124-0c36-1000-b82f-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m7184412a-0c36-1000-b82f-0af06a760000" name="AggRule_2050:2505761342797226" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-9dd8-f13100000000" name="Expr">
+<ExprText><![CDATA[ AGGR_EXTERNAL("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AGGR_EXTERNAL("03 - Essbase GL"."Measures"."Balance")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-9dd8-f13100000000-m718440a9-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440a8-0c36-1000-b82f-0af06a760000.xml#m718440a9-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m7184421d-0c36-1000-b82f-0af06a760000" name="AD_3900:2508191342797226">
+<Expr mdsid="m00000002-01f4-0000-1c79-eddc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."GL1 - measure"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-1c79-eddc00000000-m71809901-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m71809901-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440aa-0c36-1000-b82f-0af06a760000" name="Period Ago Balance" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000003-01f4-0000-ee6a-286c00000000" name="Expr">
+<ExprText><![CDATA[ AGO("%1", 1)]]></ExprText>
+<ExprTextDesc><![CDATA[ AGO("03 - Essbase GL"."Measures"."Balance", 1)]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-ee6a-286c00000000-m718440a9-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440a8-0c36-1000-b82f-0af06a760000.xml#m718440a9-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m7184421e-0c36-1000-b82f-0af06a760000" name="AD_3900:2508201342797226">
+<Expr mdsid="m00000004-01f4-0000-3bf4-f9f300000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440ab-0c36-1000-b82f-0af06a760000" name="Net Revenue" isWriteable="false">
+<MeasureDefn mdsid="m71844125-0c36-1000-b82f-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m00000000-be60-14e3-92a3-7f0000010000" name="AggRule_2050:2857881401879167" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-16f3-940200000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("03 - Essbase GL"."Measures"."Net Revenue")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-16f3-940200000000-m718440ab-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440a8-0c36-1000-b82f-0af06a760000.xml#m718440ab-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m7184421f-0c36-1000-b82f-0af06a760000" name="AD_3900:2508211342797226">
+<Expr mdsid="m00000006-01f4-0000-c5a6-3da600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Flat"."BISAMPL2".""."SampleGL_Flattened"."Net Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-c5a6-3da600000000-m71809888-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/7180973a-0c36-1000-b82f-0af06a760000.xml#m71809888-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440ac-0c36-1000-b82f-0af06a760000" name="% of Net Rev" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000007-01f4-0000-fcb6-e28400000000" name="Expr">
+<ExprText><![CDATA["%1" / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL"."Measures"."Balance" / "03 - Essbase GL"."Measures"."Net Revenue" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-fcb6-e28400000000-m718440a9-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440a8-0c36-1000-b82f-0af06a760000.xml#m718440a9-0c36-1000-b82f-0af06a760000"/>
+<RefObject refId="m00000007-01f4-0000-fcb6-e28400000000-m718440ab-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440a8-0c36-1000-b82f-0af06a760000.xml#m718440ab-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m71844220-0c36-1000-b82f-0af06a760000" name="AD_3900:2508221342797226">
+<Expr mdsid="m00000008-01f4-0000-c30f-385600000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440ad-0c36-1000-b82f-0af06a760000" name="% Variation to Period Ago" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000009-01f4-0000-4dbb-09fe00000000" name="Expr">
+<ExprText><![CDATA[( CAST ("%1" AS DOUBLE PRECISION ) / "%2" - 1) * 100]]></ExprText>
+<ExprTextDesc><![CDATA[( CAST ("03 - Essbase GL"."Measures"."Balance" AS DOUBLE PRECISION ) / "03 - Essbase GL"."Measures"."Period Ago Balance" - 1) * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-4dbb-09fe00000000-m718440a9-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440a8-0c36-1000-b82f-0af06a760000.xml#m718440a9-0c36-1000-b82f-0af06a760000"/>
+<RefObject refId="m00000009-01f4-0000-4dbb-09fe00000000-m718440aa-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440a8-0c36-1000-b82f-0af06a760000.xml#m718440aa-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m71844221-0c36-1000-b82f-0af06a760000" name="AD_3900:2508231342797226">
+<Expr mdsid="m0000000a-01f4-0000-1b83-61f200000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440ae-0c36-1000-b82f-0af06a760000" name="Actual (Case St)" isWriteable="false">
+<MeasureDefn mdsid="m71844126-0c36-1000-b82f-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m7184412c-0c36-1000-b82f-0af06a760000" name="AggRule_2050:2505781342797226" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-7818-b7d500000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("03 - Essbase GL"."Measures"."Actual (Case St)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-7818-b7d500000000-m718440ae-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440a8-0c36-1000-b82f-0af06a760000.xml#m718440ae-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m71844222-0c36-1000-b82f-0af06a760000" name="AD_3900:2508241342797226">
+<Expr mdsid="m0000000c-01f4-0000-bc8a-2bf300000000" name="Expr">
+<ExprText><![CDATA[Case when 
+ "%1" ='Actual'
+
+then "%2"
+end]]></ExprText>
+<ExprTextDesc><![CDATA[Case when 
+ "03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen2,Scenarios" ='Actual'
+
+then "03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."GL1 - measure"
+end]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-bc8a-2bf300000000-m7180993b-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m7180993b-0c36-1000-b82f-0af06a760000"/>
+<RefObject refId="m0000000c-01f4-0000-bc8a-2bf300000000-m71809901-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m71809901-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440af-0c36-1000-b82f-0af06a760000" name="Plan (Case St)" isWriteable="false">
+<MeasureDefn mdsid="m71844127-0c36-1000-b82f-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m7184412d-0c36-1000-b82f-0af06a760000" name="AggRule_2050:2505791342797226" isDefault="true">
+<Expr mdsid="m0000000d-01f4-0000-be25-31c800000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("03 - Essbase GL"."Measures"."Plan (Case St)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-be25-31c800000000-m718440af-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440a8-0c36-1000-b82f-0af06a760000.xml#m718440af-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m71844223-0c36-1000-b82f-0af06a760000" name="AD_3900:2508251342797226">
+<Expr mdsid="m0000000e-01f4-0000-9c77-8cd800000000" name="Expr">
+<ExprText><![CDATA[Case when 
+ "%1" ='Plan'
+then "%2"
+end]]></ExprText>
+<ExprTextDesc><![CDATA[Case when 
+ "03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."Gen2,Scenarios" ='Plan'
+then "03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."GL1 - measure"
+end]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-9c77-8cd800000000-m7180993b-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m7180993b-0c36-1000-b82f-0af06a760000"/>
+<RefObject refId="m0000000e-01f4-0000-9c77-8cd800000000-m71809901-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m71809901-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440b0-0c36-1000-b82f-0af06a760000" name="Actual (LTS Filter)" isWriteable="false">
+<MeasureDefn mdsid="m71844128-0c36-1000-b82f-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m7184412e-0c36-1000-b82f-0af06a760000" name="AggRule_2050:2505801342797226" isDefault="true">
+<Expr mdsid="m0000000f-01f4-0000-0335-761100000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("03 - Essbase GL"."Measures"."Actual (LTS Filter)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-0335-761100000000-m718440b0-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440a8-0c36-1000-b82f-0af06a760000.xml#m718440b0-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m71844224-0c36-1000-b82f-0af06a760000" name="AD_3900:2508261342797226">
+<Expr mdsid="m00000010-01f4-0000-2f51-b8c600000000" name="Expr">
+<ExprText><![CDATA["%1" ]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."GL1 - measure" ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-2f51-b8c600000000-m71809901-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m71809901-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440b1-0c36-1000-b82f-0af06a760000" name="Plan (LTS Filter)" isWriteable="false">
+<MeasureDefn mdsid="m71844129-0c36-1000-b82f-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m7184412f-0c36-1000-b82f-0af06a760000" name="AggRule_2050:2505811342797226" isDefault="true">
+<Expr mdsid="m00000011-01f4-0000-e508-f0aa00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("03 - Essbase GL"."Measures"."Plan (LTS Filter)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-e508-f0aa00000000-m718440b1-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440a8-0c36-1000-b82f-0af06a760000.xml#m718440b1-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m71844225-0c36-1000-b82f-0af06a760000" name="AD_3900:2508271342797226">
+<Expr mdsid="m00000012-01f4-0000-7ed1-d45500000000" name="Expr">
+<ExprText><![CDATA["%1" ]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase GL Sample Hierarchical"."BISAMPL2".""."SampleGL_Hierarchical"."GL1 - measure" ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-7ed1-d45500000000-m71809901-0c36-1000-b82f-0af06a760000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/71809900-0c36-1000-b82f-0af06a760000.xml#m71809901-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440b2-0c36-1000-b82f-0af06a760000" name="Plan Completion (Case St)" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000013-01f4-0000-073a-1f2400000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" / "%2" AS DOUBLE PRECISION ) * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("03 - Essbase GL"."Measures"."Actual (LTS Filter)" / "03 - Essbase GL"."Measures"."Plan (Case St)" AS DOUBLE PRECISION ) * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-073a-1f2400000000-m718440b0-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440a8-0c36-1000-b82f-0af06a760000.xml#m718440b0-0c36-1000-b82f-0af06a760000"/>
+<RefObject refId="m00000013-01f4-0000-073a-1f2400000000-m718440af-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440a8-0c36-1000-b82f-0af06a760000.xml#m718440af-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m71844226-0c36-1000-b82f-0af06a760000" name="AD_3900:2508281342797226">
+<Expr mdsid="m00000014-01f4-0000-21cc-2e8b00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m718440b3-0c36-1000-b82f-0af06a760000" name="Plan Completion (LTS Filter)" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000015-01f4-0000-ef1b-6df700000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" / "%2" AS DOUBLE PRECISION ) * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("03 - Essbase GL"."Measures"."Actual (LTS Filter)" / "03 - Essbase GL"."Measures"."Plan (LTS Filter)" AS DOUBLE PRECISION ) * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-ef1b-6df700000000-m718440b0-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440a8-0c36-1000-b82f-0af06a760000.xml#m718440b0-0c36-1000-b82f-0af06a760000"/>
+<RefObject refId="m00000015-01f4-0000-ef1b-6df700000000-m718440b1-0c36-1000-b82f-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/718440a8-0c36-1000-b82f-0af06a760000.xml#m718440b1-0c36-1000-b82f-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m71844227-0c36-1000-b82f-0af06a760000" name="AD_3900:2508291342797226">
+<Expr mdsid="m00000016-01f4-0000-de58-354f00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m718440a8-0c36-1000-b82f-0af06a760000-m71844289-0c36-1000-b82f-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/71844289-0c36-1000-b82f-0af06a760000.xml#m71844289-0c36-1000-b82f-0af06a760000"/>
+<RefLogicalTableSource refId="m718440a8-0c36-1000-b82f-0af06a760000-m7184428a-0c36-1000-b82f-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/7184428a-0c36-1000-b82f-0af06a760000.xml#m7184428a-0c36-1000-b82f-0af06a760000"/>
+<RefLogicalTableSource refId="m718440a8-0c36-1000-b82f-0af06a760000-m7184428b-0c36-1000-b82f-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/7184428b-0c36-1000-b82f-0af06a760000.xml#m7184428b-0c36-1000-b82f-0af06a760000"/>
+<RefLogicalTableSource refId="m718440a8-0c36-1000-b82f-0af06a760000-m7184428c-0c36-1000-b82f-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/7184428c-0c36-1000-b82f-0af06a760000.xml#m7184428c-0c36-1000-b82f-0af06a760000"/>
+<RefLogicalTableSource refId="m718440a8-0c36-1000-b82f-0af06a760000-m7184428d-0c36-1000-b82f-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/7184428d-0c36-1000-b82f-0af06a760000.xml#m7184428d-0c36-1000-b82f-0af06a760000"/>
+<RefLogicalTableSource refId="m718440a8-0c36-1000-b82f-0af06a760000-m7184428e-0c36-1000-b82f-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/7184428e-0c36-1000-b82f-0af06a760000.xml#m7184428e-0c36-1000-b82f-0af06a760000"/>
+</RefTableSources>
+</LogicalTable>

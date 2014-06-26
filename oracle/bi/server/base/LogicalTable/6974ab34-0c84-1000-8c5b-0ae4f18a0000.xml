@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m6974ab34-0c84-1000-8c5b-0ae4f18a0000" name="Commodity Hierarchy - Xref" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/6974aaf0-0c84-1000-8c5b-0ae4f18a0000.xml#m6974aaf0-0c84-1000-8c5b-0ae4f18a0000">
+<LogicalColumn mdsid="m6974ab35-0c84-1000-8c5b-0ae4f18a0000" name="Commodity" isWriteable="false">
+<AttrDefn mdsid="m6974d23f-0c84-1000-8c5b-0ae4f18a0000" name="AD_3900:2659951376284448">
+<Expr mdsid="m00000001-01f4-0000-b025-22f600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."XREF_COMMODITY_HEIRCHY"."COMMODITY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-b025-22f600000000-m697101ba-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101b9-0c84-1000-8c5b-0ae4f18a0000.xml#m697101ba-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m6974ab36-0c84-1000-8c5b-0ae4f18a0000" name="Commodity Hierarchy" isWriteable="false">
+<AttrDefn mdsid="m6974d240-0c84-1000-8c5b-0ae4f18a0000" name="AD_3900:2659961376284448">
+<Expr mdsid="m00000002-01f4-0000-d918-95bb00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X6 - Warranty Claims Data".""."ENDECA"."XREF_COMMODITY_HEIRCHY"."COMMODITY_HIERARCHY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-d918-95bb00000000-m697101bb-0c84-1000-8c5b-0ae4f18a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/697101b9-0c84-1000-8c5b-0ae4f18a0000.xml#m697101bb-0c84-1000-8c5b-0ae4f18a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m6974abc1-0c84-1000-8c5b-0ae4f18a0000" name="SYS_C0018206" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m6974abc1-0c84-1000-8c5b-0ae4f18a0000-m6974ab35-0c84-1000-8c5b-0ae4f18a0000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/6974ab34-0c84-1000-8c5b-0ae4f18a0000.xml#m6974ab35-0c84-1000-8c5b-0ae4f18a0000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m6974ab34-0c84-1000-8c5b-0ae4f18a0000-m6974d298-0c84-1000-8c5b-0ae4f18a0000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/6974d298-0c84-1000-8c5b-0ae4f18a0000.xml#m6974d298-0c84-1000-8c5b-0ae4f18a0000"/>
+</RefTableSources>
+</LogicalTable>

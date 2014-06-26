@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cde1fe-0bb9-0000-714b-e31d00000000" name="F70 ODM Regression Data" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cde1f8-0bb9-0000-714b-e31d00000000.xml#m80cde1f8-0bb9-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[ODM_REVENUE_F_EXT]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cde1ff-0bbb-0000-714b-e31d00000000" name="M_REVENUE" dataType="DOUBLE" precision="15" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cde1f8-0bb9-0000-714b-e31d00000000.xml#m80cde1f9-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cde200-0bbb-0000-714b-e31d00000000" name="ORDER_KEY" dataType="DOUBLE" precision="15" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cde1f8-0bb9-0000-714b-e31d00000000.xml#m80cde1fa-0bbb-0000-714b-e31d00000000">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="m80cde201-0bbe-0000-714b-e31d00000000" name="F70 ODM Regression Data_FKey" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/80cb683a-0bb9-0000-714b-e31d00000000.xml#m80cb6b03-0bc0-0000-714b-e31d00000000">
+<RefColumns>
+<RefColumn refId="m80cde201-0bbe-0000-714b-e31d00000000-m80cde200-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cde1fe-0bb9-0000-714b-e31d00000000.xml#m80cde200-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

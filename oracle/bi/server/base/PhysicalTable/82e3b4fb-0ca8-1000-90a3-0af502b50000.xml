@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m82e3b4fb-0ca8-1000-90a3-0af502b50000" name="INS_Financial Calendar" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" isOverrideCacheProp="true" maxConn="0" containerRef="/oracle/bi/server/base/Schema/82e3b499-0ca8-1000-90a3-0af502b50000.xml#m82e3b499-0ca8-1000-90a3-0af502b50000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/82e3b4e3-0ca8-1000-90a3-0af502b50000.xml#m82e3b4e3-0ca8-1000-90a3-0af502b50000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[INS_TIME]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m82e3b4fc-0ca8-1000-90a3-0af502b50000" name="CALENDAR_DATE" dataType="DATE" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/82e3b4e3-0ca8-1000-90a3-0af502b50000.xml#m82e3b4e4-0ca8-1000-90a3-0af502b50000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4fd-0ca8-1000-90a3-0af502b50000" name="CAL_HALF" dataType="INT" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/82e3b4e3-0ca8-1000-90a3-0af502b50000.xml#m82e3b4e5-0ca8-1000-90a3-0af502b50000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4fe-0ca8-1000-90a3-0af502b50000" name="CAL_MONTH" dataType="INT" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/82e3b4e3-0ca8-1000-90a3-0af502b50000.xml#m82e3b4e6-0ca8-1000-90a3-0af502b50000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4ff-0ca8-1000-90a3-0af502b50000" name="CAL_QTR" dataType="INT" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/82e3b4e3-0ca8-1000-90a3-0af502b50000.xml#m82e3b4e7-0ca8-1000-90a3-0af502b50000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b500-0ca8-1000-90a3-0af502b50000" name="CAL_WEEK" dataType="INT" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/82e3b4e3-0ca8-1000-90a3-0af502b50000.xml#m82e3b4e8-0ca8-1000-90a3-0af502b50000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b501-0ca8-1000-90a3-0af502b50000" name="CAL_YEAR" dataType="INT" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/82e3b4e3-0ca8-1000-90a3-0af502b50000.xml#m82e3b4e9-0ca8-1000-90a3-0af502b50000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b502-0ca8-1000-90a3-0af502b50000" name="DAY_KEY" dataType="DOUBLE" precision="15" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/82e3b4e3-0ca8-1000-90a3-0af502b50000.xml#m82e3b4ea-0ca8-1000-90a3-0af502b50000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b503-0ca8-1000-90a3-0af502b50000" name="YEAR_QUARTER" dataType="VARCHAR" precision="20" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/82e3b4e3-0ca8-1000-90a3-0af502b50000.xml#m82e3b4eb-0ca8-1000-90a3-0af502b50000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b504-0ca8-1000-90a3-0af502b50000" name="YEAR_MONTH" dataType="VARCHAR" precision="20" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/82e3b4e3-0ca8-1000-90a3-0af502b50000.xml#m82e3b4ec-0ca8-1000-90a3-0af502b50000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b505-0ca8-1000-90a3-0af502b50000" name="YEAR_HALF" dataType="VARCHAR" precision="20" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/82e3b4e3-0ca8-1000-90a3-0af502b50000.xml#m82e3b4ef-0ca8-1000-90a3-0af502b50000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b506-0ca8-1000-90a3-0af502b50000" name="MONTH_KEY" dataType="DOUBLE" precision="22" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/82e3b4e3-0ca8-1000-90a3-0af502b50000.xml#m82e3b4ed-0ca8-1000-90a3-0af502b50000">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b507-0ca8-1000-90a3-0af502b50000" name="YEAR_DATE" dataType="VARCHAR" precision="20" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/82e3b4e3-0ca8-1000-90a3-0af502b50000.xml#m82e3b4ee-0ca8-1000-90a3-0af502b50000">
+</PhysicalColumn>
+<PhysicalKey mdsid="m82e429c2-0ca8-1000-90a3-0af502b50000" name="Financial Calendar_Key">
+<RefColumns>
+<RefColumn refId="m82e429c2-0ca8-1000-90a3-0af502b50000-m82e3b4fc-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3b4fb-0ca8-1000-90a3-0af502b50000.xml#m82e3b4fc-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

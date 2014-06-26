@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PrivilegePackage mdsid="m80cbb4c9-1071-0000-714b-e31d00000000" name="PrivPack_4209:603131272993508" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" userRef="/oracle/bi/server/base/User/80cc4899-05dd-0000-714b-e31d00000000.xml#m80cc4899-05dd-0000-714b-e31d00000000">
+<FilterMapping status="enable" objectTypeId="2035" objectRef="/oracle/bi/server/base/LogicalTable/80cab5a9-07f3-0000-714b-e31d00000000.xml#m80cab5a9-07f3-0000-714b-e31d00000000">
+<Expr mdsid="m00000001-01f4-0000-eaeb-dac300000000" name="Expr">
+<ExprText><![CDATA[CAST("%1" AS VARCHAR(5))
+<> VALUEOF(NQ_SESSION.VISIBILITY_PRODUCTS)  ]]></ExprText>
+<ExprTextDesc><![CDATA[CAST("01 - Sample App"."D1 Products (Level Based Hier)"."P3k  LOB Key" AS VARCHAR(5))
+<> VALUEOF(NQ_SESSION.VISIBILITY_PRODUCTS)  ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-eaeb-dac300000000-m80cb2aa7-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5a9-07f3-0000-714b-e31d00000000.xml#m80cb2aa7-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</FilterMapping>
+<FilterMapping status="enable" objectTypeId="2035" objectRef="/oracle/bi/server/base/LogicalTable/80cab5d5-07f3-0000-714b-e31d00000000.xml#m80cab5d5-07f3-0000-714b-e31d00000000">
+<Expr mdsid="m00000002-01f4-0000-4053-d4a400000000" name="Expr">
+<ExprText><![CDATA[CAST ("%1" AS VARCHAR(5))<>
+VALUEOF(NQ_SESSION.VISIBILITY_COMPANIES)  
+and
+CAST("%2" AS VARCHAR(5))
+<> VALUEOF(NQ_SESSION.VISIBILITY_PRODUCTS)  
+
+]]></ExprText>
+<ExprTextDesc><![CDATA[CAST ("01 - Sample App"."D3 Offices"."D4k  Company Key" AS VARCHAR(5))<>
+VALUEOF(NQ_SESSION.VISIBILITY_COMPANIES)  
+and
+CAST("01 - Sample App"."D1 Products (Level Based Hier)"."P3k  LOB Key" AS VARCHAR(5))
+<> VALUEOF(NQ_SESSION.VISIBILITY_PRODUCTS)  
+
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-4053-d4a400000000-m80cb35b0-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb35a8-07f3-0000-714b-e31d00000000.xml#m80cb35b0-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000002-01f4-0000-4053-d4a400000000-m80cb2aa7-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cab5a9-07f3-0000-714b-e31d00000000.xml#m80cb2aa7-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</FilterMapping>
+<FilterMapping status="enable" objectTypeId="2035" objectRef="/oracle/bi/server/base/LogicalTable/80cb35a8-07f3-0000-714b-e31d00000000.xml#m80cb35a8-07f3-0000-714b-e31d00000000">
+<Expr mdsid="m00000003-01f4-0000-d33a-1d6500000000" name="Expr">
+<ExprText><![CDATA[CAST ("%1" AS VARCHAR(5))<>
+VALUEOF(NQ_SESSION.VISIBILITY_COMPANIES)  
+]]></ExprText>
+<ExprTextDesc><![CDATA[CAST ("01 - Sample App"."D3 Offices"."D4k  Company Key" AS VARCHAR(5))<>
+VALUEOF(NQ_SESSION.VISIBILITY_COMPANIES)  
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-d33a-1d6500000000-m80cb35b0-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb35a8-07f3-0000-714b-e31d00000000.xml#m80cb35b0-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</FilterMapping>
+<FilterMapping status="enable" objectTypeId="2035" objectRef="/oracle/bi/server/base/LogicalTable/80cb94a3-07f3-0000-714b-e31d00000000.xml#m80cb94a3-07f3-0000-714b-e31d00000000">
+<Expr mdsid="m00000004-01f4-0000-883a-e07900000000" name="Expr">
+<ExprText><![CDATA[CAST("%1" 
+ AS VARCHAR(5))<> VALUEOF(NQ_SESSION.VISIBILITY_PRODUCTS)  
+]]></ExprText>
+<ExprTextDesc><![CDATA[CAST("06 - Federated Sources"."D1 Products"."P0  Product Number" 
+ AS VARCHAR(5))<> VALUEOF(NQ_SESSION.VISIBILITY_PRODUCTS)  
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-883a-e07900000000-m80cb94a4-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94a3-07f3-0000-714b-e31d00000000.xml#m80cb94a4-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</FilterMapping>
+<FilterMapping status="enable" objectTypeId="2035" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cb94d3-07f3-0000-714b-e31d00000000">
+<Expr mdsid="m00000005-01f4-0000-fc19-1ed600000000" name="Expr">
+<ExprText><![CDATA[CAST("%1" 
+ AS VARCHAR(5))<> VALUEOF(NQ_SESSION.VISIBILITY_PRODUCTS)  ]]></ExprText>
+<ExprTextDesc><![CDATA[CAST("06 - Federated Sources"."D1 Products"."P0  Product Number" 
+ AS VARCHAR(5))<> VALUEOF(NQ_SESSION.VISIBILITY_PRODUCTS)  ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-fc19-1ed600000000-m80cb94a4-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94a3-07f3-0000-714b-e31d00000000.xml#m80cb94a4-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</FilterMapping>
+</PrivilegePackage>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="m80cab576-07e3-0000-714b-e31d00000000" name="H4 Offices and Channels (M:M)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="true" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/80cab576-07e3-0000-714b-e31d00000000.xml#m80cab6ac-07e9-0000-714b-e31d00000000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cab573-07d0-0000-714b-e31d00000000.xml#m80cab573-07d0-0000-714b-e31d00000000">
+<Description><![CDATA[Offices and Channels Dimension:
+Type - Ragged
+Drill Path - Off and Chnl Company->Off and Chnl Organization->Off and Chnl Department->Off and Chnl Detail]]></Description>
+<LogicalLevel mdsid="m80cab6ac-07e9-0000-714b-e31d00000000" name="Off and Chnl Total" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;Off and Chnl Total&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="m80cab6ac-07e9-0000-714b-e31d00000000_m80cab6ad-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cab576-07e3-0000-714b-e31d00000000.xml#m80cab6ad-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefPreferredDrillDown>
+<RefLogicalLevel refId="m80cab6ac-07e9-0000-714b-e31d00000000-m80cab6ad-07e9-0000-714b-e31d00000000" logicalLevelRef="/oracle/bi/server/base/Dimension/80cab576-07e3-0000-714b-e31d00000000.xml#m80cab6ad-07e9-0000-714b-e31d00000000"/>
+</RefPreferredDrillDown>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cab6ac-07e9-0000-714b-e31d00000000-m80cab61c-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cab61c-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cab6ac-07e9-0000-714b-e31d00000000-m80cab61f-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab61f-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cab6ac-07e9-0000-714b-e31d00000000-m80cab622-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab5e8-07f3-0000-714b-e31d00000000.xml#m80cab622-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cab6ac-07e9-0000-714b-e31d00000000-m80cadcd6-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cadc45-07f3-0000-714b-e31d00000000.xml#m80cadcd6-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cab6ac-07e9-0000-714b-e31d00000000-m80cb1a01-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab659-07f3-0000-714b-e31d00000000.xml#m80cb1a01-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cab6ac-07e9-0000-714b-e31d00000000-m80cc1ff5-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab954-07f3-0000-714b-e31d00000000.xml#m80cc1ff5-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cab6ad-07e9-0000-714b-e31d00000000" name="Off and Chnl Company" isGTA="false" isFDUC="true" memberCount="3" levelConst="&apos;Off and Chnl Company&apos;">
+<LogicalKey mdsid="m80cab6e1-07d8-0000-714b-e31d00000000" name="Region" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cab6e1-07d8-0000-714b-e31d00000000-m80cab59a-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab59a-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cab6ad-07e9-0000-714b-e31d00000000_m80cab6ae-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cab576-07e3-0000-714b-e31d00000000.xml#m80cab6ae-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefPreferredDrillDown>
+<RefLogicalLevel refId="m80cab6ad-07e9-0000-714b-e31d00000000-m80cab6b0-07e9-0000-714b-e31d00000000" logicalLevelRef="/oracle/bi/server/base/Dimension/80cab576-07e3-0000-714b-e31d00000000.xml#m80cab6b0-07e9-0000-714b-e31d00000000"/>
+</RefPreferredDrillDown>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cab6ad-07e9-0000-714b-e31d00000000-m80cab59a-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab59a-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cab6ae-07e9-0000-714b-e31d00000000" name="Off and Chnl Organization" isGTA="false" isFDUC="true" memberCount="6" levelConst="&apos;Off and Chnl Organization&apos;">
+<LogicalKey mdsid="m80cab6e2-07d8-0000-714b-e31d00000000" name="District" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cab6e2-07d8-0000-714b-e31d00000000-m80cab599-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab599-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cab6ae-07e9-0000-714b-e31d00000000_m80cab6af-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cab576-07e3-0000-714b-e31d00000000.xml#m80cab6af-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cab6ae-07e9-0000-714b-e31d00000000-m80cab599-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab599-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cab6af-07e9-0000-714b-e31d00000000" name="Off and Chnl Department" isGTA="false" isFDUC="true" memberCount="11" levelConst="&apos;Off and Chnl Department&apos;">
+<LogicalKey mdsid="m80cab6e3-07d8-0000-714b-e31d00000000" name="Area" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cab6e3-07d8-0000-714b-e31d00000000-m80cab598-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab598-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cab6af-07e9-0000-714b-e31d00000000_m80cab6b0-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cab576-07e3-0000-714b-e31d00000000.xml#m80cab6b0-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cab6af-07e9-0000-714b-e31d00000000-m80cab598-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab598-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cab6b0-07e9-0000-714b-e31d00000000" name="Off and Chnl Detail" isGTA="false" isFDUC="true" memberCount="30" levelConst="&apos;Off and Chnl Detail&apos;">
+<LogicalKey mdsid="m80cab6e4-07d8-0000-714b-e31d00000000" name="Mkt_Dsc" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cab6e4-07d8-0000-714b-e31d00000000-m80cab597-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab597-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cab6e4-07d8-0000-714b-e31d00000000-m80cab596-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab596-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefChildLevels>
+<RefLogicalLevel refId="m80cab6b0-07e9-0000-714b-e31d00000000_m80cc1f5c-07e9-0000-714b-e31d00000000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/80cab576-07e3-0000-714b-e31d00000000.xml#m80cc1f5c-07e9-0000-714b-e31d00000000"/>
+</RefChildLevels>
+<RefPreferredDrillDown>
+<RefLogicalLevel refId="m80cab6b0-07e9-0000-714b-e31d00000000-m80cab6ba-07e9-0000-714b-e31d00000000" logicalLevelRef="/oracle/bi/server/base/Dimension/80cab579-07e3-0000-714b-e31d00000000.xml#m80cab6ba-07e9-0000-714b-e31d00000000"/>
+</RefPreferredDrillDown>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cab6b0-07e9-0000-714b-e31d00000000-m80cab596-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab596-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cab6b0-07e9-0000-714b-e31d00000000-m80cab597-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab597-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+<LogicalLevel mdsid="m80cc1f5c-07e9-0000-714b-e31d00000000" name="Channel Detail" isGTA="false" isFDUC="true" memberCount="35" levelConst="&apos;Channel Detail&apos;">
+<LogicalKey mdsid="mb98dd290-0c26-1000-b8db-0af502b10000" name="Channel" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="mb98dd290-0c26-1000-b8db-0af502b10000-m80cab59c-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab59c-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="mb98dd290-0c26-1000-b8db-0af502b10000-m80cab596-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab596-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="m80cc1f5c-07e9-0000-714b-e31d00000000-m80cab59c-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cab595-07f3-0000-714b-e31d00000000.xml#m80cab59c-07d6-0000-714b-e31d00000000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

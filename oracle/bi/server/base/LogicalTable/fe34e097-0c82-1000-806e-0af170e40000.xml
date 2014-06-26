@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="mfe34e097-0c82-1000-806e-0af170e40000" name="Facts - Transactions" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/fe34e080-0c82-1000-806e-0af170e40000.xml#mfe34e080-0c82-1000-806e-0af170e40000">
+<LogicalColumn mdsid="mfe34e098-0c82-1000-806e-0af170e40000" name="# Browsed" isWriteable="false">
+<MeasureDefn mdsid="mfe34e189-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1c0-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630541375675016" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-5779-7a6d00000000" name="Expr">
+<ExprText><![CDATA[ COUNT("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT("Y10 - Movie Demo (ORCL)"."Facts - Transactions"."# Browsed")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-5779-7a6d00000000-mfe34e098-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e097-0c82-1000-806e-0af170e40000.xml#mfe34e098-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e331-0c82-1000-806e-0af170e40000" name="AD_3900:2634231375675016">
+<Expr mdsid="m00000002-01f4-0000-0abc-2d7200000000" name="Expr">
+<ExprText><![CDATA[CASE "%1" WHEN 5 THEN "%1" END]]></ExprText>
+<ExprTextDesc><![CDATA[CASE "Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."ACTIVITY_ID" WHEN 5 THEN "Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."ACTIVITY_ID" END]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-0abc-2d7200000000-mfe333354-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe333354-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e099-0c82-1000-806e-0af170e40000" name="# Completed" isWriteable="false">
+<MeasureDefn mdsid="mfe34e18a-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1c1-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630551375675016" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-9eb4-e16100000000" name="Expr">
+<ExprText><![CDATA[ COUNT("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT("Y10 - Movie Demo (ORCL)"."Facts - Transactions"."# Completed")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-9eb4-e16100000000-mfe34e099-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e097-0c82-1000-806e-0af170e40000.xml#mfe34e099-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e332-0c82-1000-806e-0af170e40000" name="AD_3900:2634241375675016">
+<Expr mdsid="m00000004-01f4-0000-bb70-831f00000000" name="Expr">
+<ExprText><![CDATA[CASE "%1" WHEN 2 THEN "%1" END]]></ExprText>
+<ExprTextDesc><![CDATA[CASE "Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."ACTIVITY_ID" WHEN 2 THEN "Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."ACTIVITY_ID" END]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-bb70-831f00000000-mfe333354-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe333354-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e09a-0c82-1000-806e-0af170e40000" name="# Rated" isWriteable="false">
+<MeasureDefn mdsid="mfe34e18b-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1c2-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630561375675016" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-a035-550300000000" name="Expr">
+<ExprText><![CDATA[ COUNT("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT("Y10 - Movie Demo (ORCL)"."Facts - Transactions"."# Rated")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-a035-550300000000-mfe34e09a-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e097-0c82-1000-806e-0af170e40000.xml#mfe34e09a-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e333-0c82-1000-806e-0af170e40000" name="AD_3900:2634251375675016">
+<Expr mdsid="m00000006-01f4-0000-6ee7-f1f700000000" name="Expr">
+<ExprText><![CDATA[CASE "%1" WHEN 1 THEN "%1" END]]></ExprText>
+<ExprTextDesc><![CDATA[CASE "Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."ACTIVITY_ID" WHEN 1 THEN "Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."ACTIVITY_ID" END]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-6ee7-f1f700000000-mfe333354-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe333354-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e09b-0c82-1000-806e-0af170e40000" name="# Purchases" isWriteable="false">
+<MeasureDefn mdsid="mfe34e18c-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1c3-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630571375675016" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-9304-9b5200000000" name="Expr">
+<ExprText><![CDATA[ COUNT("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT("Y10 - Movie Demo (ORCL)"."Facts - Transactions"."# Purchases")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-9304-9b5200000000-mfe34e09b-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e097-0c82-1000-806e-0af170e40000.xml#mfe34e09b-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e334-0c82-1000-806e-0af170e40000" name="AD_3900:2634261375675016">
+<Expr mdsid="m00000008-01f4-0000-2a25-935500000000" name="Expr">
+<ExprText><![CDATA[CASE "%1" WHEN 11 THEN "%1" END]]></ExprText>
+<ExprTextDesc><![CDATA[CASE "Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."ACTIVITY_ID" WHEN 11 THEN "Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."ACTIVITY_ID" END]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-2a25-935500000000-mfe333354-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe333354-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e09c-0c82-1000-806e-0af170e40000" name="Average Rating" isWriteable="false">
+<MeasureDefn mdsid="mfe34e18d-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1c4-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630581375675016" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-036e-437d00000000" name="Expr">
+<ExprText><![CDATA[ AVG("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ AVG("Y10 - Movie Demo (ORCL)"."Facts - Transactions"."Average Rating")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-036e-437d00000000-mfe34e09c-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e097-0c82-1000-806e-0af170e40000.xml#mfe34e09c-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e335-0c82-1000-806e-0af170e40000" name="AD_3900:2634271375675016">
+<Expr mdsid="m0000000a-01f4-0000-d809-472200000000" name="Expr">
+<ExprText><![CDATA[CASE "%1" WHEN 1 THEN  "%2"  END]]></ExprText>
+<ExprTextDesc><![CDATA[CASE "Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."ACTIVITY_ID" WHEN 1 THEN  "Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."RATING"  END]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-d809-472200000000-mfe333354-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe333354-0c82-1000-806e-0af170e40000"/>
+<RefObject refId="m0000000a-01f4-0000-d809-472200000000-mfe33334f-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe33334f-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e09d-0c82-1000-806e-0af170e40000" name="Recommended" isWriteable="false">
+<AttrDefn mdsid="mfe34e336-0c82-1000-806e-0af170e40000" name="AD_3900:2634281375675016">
+<Expr mdsid="m0000000b-01f4-0000-9951-b01900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."RECOMMENDED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-9951-b01900000000-mfe333350-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe333350-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e09e-0c82-1000-806e-0af170e40000" name="Sales $" isWriteable="false">
+<MeasureDefn mdsid="mfe34e18e-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1c5-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630591375675016" isDefault="true">
+<Expr mdsid="m0000000c-01f4-0000-b0e9-c17500000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("Y10 - Movie Demo (ORCL)"."Facts - Transactions"."Sales $")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-b0e9-c17500000000-mfe34e09e-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e097-0c82-1000-806e-0af170e40000.xml#mfe34e09e-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e337-0c82-1000-806e-0af170e40000" name="AD_3900:2634291375675016">
+<Expr mdsid="m0000000d-01f4-0000-1f31-cc0200000000" name="Expr">
+<ExprText><![CDATA[CASE "%1" WHEN 11 THEN  "%2" END
+
+
+]]></ExprText>
+<ExprTextDesc><![CDATA[CASE "Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."ACTIVITY_ID" WHEN 11 THEN  "Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."SALES" END
+
+
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-1f31-cc0200000000-mfe333354-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe333354-0c82-1000-806e-0af170e40000"/>
+<RefObject refId="m0000000d-01f4-0000-1f31-cc0200000000-mfe333351-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe333351-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e09f-0c82-1000-806e-0af170e40000" name="# Started" isWriteable="false">
+<MeasureDefn mdsid="mfe34e18f-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1c6-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630601375675016" isDefault="true">
+<Expr mdsid="m0000000e-01f4-0000-cb5b-68b200000000" name="Expr">
+<ExprText><![CDATA[ COUNT("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT("Y10 - Movie Demo (ORCL)"."Facts - Transactions"."# Started")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-cb5b-68b200000000-mfe34e09f-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e097-0c82-1000-806e-0af170e40000.xml#mfe34e09f-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e338-0c82-1000-806e-0af170e40000" name="AD_3900:2634301375675016">
+<Expr mdsid="m0000000f-01f4-0000-6e6e-bd0900000000" name="Expr">
+<ExprText><![CDATA[CASE "%1" WHEN 4 THEN "%1" END
+]]></ExprText>
+<ExprTextDesc><![CDATA[CASE "Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."ACTIVITY_ID" WHEN 4 THEN "Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."ACTIVITY_ID" END
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-6e6e-bd0900000000-mfe333354-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe333354-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0a0-0c82-1000-806e-0af170e40000" name="Movies Transacted" isWriteable="false">
+<MeasureDefn mdsid="mfe34e190-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1c7-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630611375675016" isDefault="true">
+<Expr mdsid="m00000010-01f4-0000-b9a1-365f00000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "Y10 - Movie Demo (ORCL)"."Facts - Transactions"."Movies Transacted")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-b9a1-365f00000000-mfe34e0a0-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e097-0c82-1000-806e-0af170e40000.xml#mfe34e0a0-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e339-0c82-1000-806e-0af170e40000" name="AD_3900:2634311375675016">
+<Expr mdsid="m00000011-01f4-0000-44a3-421800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."MOVIE_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-44a3-421800000000-mfe33334e-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe33334e-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mfe34e0a1-0c82-1000-806e-0af170e40000" name="Customers Transacted" isWriteable="false">
+<MeasureDefn mdsid="mfe34e191-0c82-1000-806e-0af170e40000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mfe34e1c8-0c82-1000-806e-0af170e40000" name="AggRule_2050:2630621375675016" isDefault="true">
+<Expr mdsid="m00000012-01f4-0000-9ba5-2b8600000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "Y10 - Movie Demo (ORCL)"."Facts - Transactions"."Customers Transacted")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-9ba5-2b8600000000-mfe34e0a1-0c82-1000-806e-0af170e40000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/fe34e097-0c82-1000-806e-0af170e40000.xml#mfe34e0a1-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mfe34e33a-0c82-1000-806e-0af170e40000" name="AD_3900:2634321375675016">
+<Expr mdsid="m00000013-01f4-0000-be7a-ced900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y10 - Movies Demo (ORCL)".""."MOVIEDEMO"."MOVIE_FACT"."CUST_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-be7a-ced900000000-mfe33334d-0c82-1000-806e-0af170e40000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/fe33334c-0c82-1000-806e-0af170e40000.xml#mfe33334d-0c82-1000-806e-0af170e40000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="mfe34e307-0c82-1000-806e-0af170e40000" name="MOVIE_FACT_KEY_ACT" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="mfe34e307-0c82-1000-806e-0af170e40000-mfe34e098-0c82-1000-806e-0af170e40000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/fe34e097-0c82-1000-806e-0af170e40000.xml#mfe34e098-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="mfe34e097-0c82-1000-806e-0af170e40000-mfe34e3f7-0c82-1000-806e-0af170e40000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/fe34e3f7-0c82-1000-806e-0af170e40000.xml#mfe34e3f7-0c82-1000-806e-0af170e40000"/>
+</RefTableSources>
+</LogicalTable>

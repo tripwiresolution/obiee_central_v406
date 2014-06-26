@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m575b6957-0c2d-1000-87a7-0af06a760000" name="60 Market" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/575b68b0-0c2d-1000-87a7-0af06a760000.xml#m575b68b0-0c2d-1000-87a7-0af06a760000">
+<LogicalColumn mdsid="m575b6958-0c2d-1000-87a7-0af06a760000" name="Air Time" isWriteable="false">
+<AttrDefn mdsid="m575b6c4e-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372211338887867">
+<Expr mdsid="m00000001-01f4-0000-0e28-788100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."AIR_TIME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-0e28-788100000000-m575865bd-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865bd-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6959-0c2d-1000-87a7-0af06a760000" name="Aircraft Config" isWriteable="false">
+<AttrDefn mdsid="m575b6c4f-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372221338887867">
+<Expr mdsid="m00000002-01f4-0000-665c-186400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."AIRCRAFT_CONFIG"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-665c-186400000000-m575865ba-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865ba-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b695a-0c2d-1000-87a7-0af06a760000" name="Dbg - Carrier" isWriteable="false">
+<Description><![CDATA[Code assigned by IATA and commonly used to identify a carrier. As the same code may have been assigned to different carriers over time, the code is not always unique. For analysis, use the Unique Carrier Code.]]></Description>
+<AttrDefn mdsid="m575b6c50-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372231338887867">
+<Expr mdsid="m00000003-01f4-0000-e357-382800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."CARRIER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-e357-382800000000-m57586597-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m57586597-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b695b-0c2d-1000-87a7-0af06a760000" name="Dbg - Carrier Name" isWriteable="false">
+<AttrDefn mdsid="m575b6c51-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372241338887867">
+<Expr mdsid="m00000004-01f4-0000-6d23-f31400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."CARRIER_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-6d23-f31400000000-m5758659a-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m5758659a-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b695c-0c2d-1000-87a7-0af06a760000" name="Class" isWriteable="false">
+<AttrDefn mdsid="m575b6c52-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372251338887867">
+<Expr mdsid="m00000005-01f4-0000-4e0b-542300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."CLASS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-4e0b-542300000000-m5758659b-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m5758659b-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b695d-0c2d-1000-87a7-0af06a760000" name="Dbg - Dest Wac" isWriteable="false">
+<AttrDefn mdsid="m575b6c53-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372261338887867">
+<Expr mdsid="m00000006-01f4-0000-1153-318500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."DEST_WAC"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-1153-318500000000-m575865a4-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865a4-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b695e-0c2d-1000-87a7-0af06a760000" name="Distance" isWriteable="false">
+<AttrDefn mdsid="m575b6c54-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372271338887867">
+<Expr mdsid="m00000007-01f4-0000-3fae-cbe400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."DISTANCE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-3fae-cbe400000000-m575865a5-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865a5-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b695f-0c2d-1000-87a7-0af06a760000" name="Passengers" isWriteable="false">
+<AttrDefn mdsid="m575b6c55-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372281338887867">
+<Expr mdsid="m00000008-01f4-0000-58d7-df6800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."PASSENGERS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-58d7-df6800000000-m575865b3-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865b3-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6960-0c2d-1000-87a7-0af06a760000" name="Payload" isWriteable="false">
+<AttrDefn mdsid="m575b6c56-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372291338887867">
+<Expr mdsid="m00000009-01f4-0000-3a7b-a9d700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."PAYLOAD"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-3a7b-a9d700000000-m575865c0-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865c0-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6961-0c2d-1000-87a7-0af06a760000" name="Ramp To Ramp" isWriteable="false">
+<AttrDefn mdsid="m575b6c57-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372301338887867">
+<Expr mdsid="m0000000a-01f4-0000-3401-19bc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."RAMP_TO_RAMP"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-3401-19bc00000000-m575865c1-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865c1-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6962-0c2d-1000-87a7-0af06a760000" name="Region" isWriteable="false">
+<AttrDefn mdsid="m575b6c58-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372311338887867">
+<Expr mdsid="m0000000b-01f4-0000-c1d9-788a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."REGION"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-c1d9-788a00000000-m575865b5-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865b5-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6963-0c2d-1000-87a7-0af06a760000" name="Seats" isWriteable="false">
+<AttrDefn mdsid="m575b6c59-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372321338887867">
+<Expr mdsid="m0000000c-01f4-0000-2a65-d14200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."SEATS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-2a65-d14200000000-m575865c2-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865c2-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6964-0c2d-1000-87a7-0af06a760000" name="Unique Carrier Entity" isWriteable="false">
+<AttrDefn mdsid="m575b6c5a-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372331338887867">
+<Expr mdsid="m0000000d-01f4-0000-0d90-bc9500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."UNIQUE_CARRIER_ENTITY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-0d90-bc9500000000-m575865b7-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865b7-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6965-0c2d-1000-87a7-0af06a760000" name="Unique Carrier Name" isWriteable="false">
+<AttrDefn mdsid="m575b6c5b-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372341338887867">
+<Expr mdsid="m0000000e-01f4-0000-eecc-5e7c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."UNIQUE_CARRIER_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-eecc-5e7c00000000-m575865b8-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865b8-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6966-0c2d-1000-87a7-0af06a760000" name="Dbg - Aircraft Group" isWriteable="false">
+<AttrDefn mdsid="m575b6c5c-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372351338887867">
+<Expr mdsid="m0000000f-01f4-0000-3791-343200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."AIRCRAFT_GROUP"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-3791-343200000000-m575865bb-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865bb-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6967-0c2d-1000-87a7-0af06a760000" name="Dbg - Aircraft Type" isWriteable="false">
+<AttrDefn mdsid="m575b6c5d-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372361338887867">
+<Expr mdsid="m00000010-01f4-0000-fc90-fd3d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."AIRCRAFT_TYPE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-fc90-fd3d00000000-m575865bc-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865bc-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6968-0c2d-1000-87a7-0af06a760000" name="Dbg - Airline Id" isWriteable="false">
+<AttrDefn mdsid="m575b6c5e-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372371338887867">
+<Expr mdsid="m00000011-01f4-0000-5e0e-98fb00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."AIRLINE_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-5e0e-98fb00000000-m57586596-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m57586596-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6969-0c2d-1000-87a7-0af06a760000" name="Dbg - Carrier Group" isWriteable="false">
+<AttrDefn mdsid="m575b6c5f-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372381338887867">
+<Expr mdsid="m00000012-01f4-0000-4f0f-36a600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."CARRIER_GROUP"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-4f0f-36a600000000-m57586598-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m57586598-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b696a-0c2d-1000-87a7-0af06a760000" name="Dbg - Carrier Group New" isWriteable="false">
+<AttrDefn mdsid="m575b6c60-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372391338887867">
+<Expr mdsid="m00000013-01f4-0000-f331-9e6700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."CARRIER_GROUP_NEW"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-f331-9e6700000000-m57586599-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m57586599-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b696b-0c2d-1000-87a7-0af06a760000" name="Dbg - Dest" isWriteable="false">
+<AttrDefn mdsid="m575b6c61-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372401338887867">
+<Expr mdsid="m00000014-01f4-0000-8747-82f100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."DEST"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-8747-82f100000000-m5758659c-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m5758659c-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b696c-0c2d-1000-87a7-0af06a760000" name="Dbg - Dest Airport Id" isWriteable="false">
+<AttrDefn mdsid="m575b6c62-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372411338887867">
+<Expr mdsid="m00000015-01f4-0000-8fa1-868d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."DEST_AIRPORT_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-8fa1-868d00000000-m5758659d-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m5758659d-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b696d-0c2d-1000-87a7-0af06a760000" name="Dbg - Dest Airport Seq Id" isWriteable="false">
+<AttrDefn mdsid="m575b6c63-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372421338887867">
+<Expr mdsid="m00000016-01f4-0000-41c1-274e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."DEST_AIRPORT_SEQ_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-41c1-274e00000000-m5758659e-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m5758659e-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b696e-0c2d-1000-87a7-0af06a760000" name="Dbg - Dest City Market Id" isWriteable="false">
+<AttrDefn mdsid="m575b6c64-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372431338887867">
+<Expr mdsid="m00000017-01f4-0000-0141-e8ef00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."DEST_CITY_MARKET_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-0141-e8ef00000000-m5758659f-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m5758659f-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b696f-0c2d-1000-87a7-0af06a760000" name="Dbg - Dest City Name" isWriteable="false">
+<AttrDefn mdsid="m575b6c65-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372441338887867">
+<Expr mdsid="m00000018-01f4-0000-bed9-7b5c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."DEST_CITY_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000018-01f4-0000-bed9-7b5c00000000-m575865a0-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865a0-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6970-0c2d-1000-87a7-0af06a760000" name="Dbg - Dest State Abr" isWriteable="false">
+<AttrDefn mdsid="m575b6c66-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372451338887867">
+<Expr mdsid="m00000019-01f4-0000-5402-6a1f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."DEST_STATE_ABR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000019-01f4-0000-5402-6a1f00000000-m575865a1-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865a1-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6971-0c2d-1000-87a7-0af06a760000" name="Dbg - Dest State Fips" isWriteable="false">
+<AttrDefn mdsid="m575b6c67-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372461338887867">
+<Expr mdsid="m0000001a-01f4-0000-2a6b-715b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."DEST_STATE_FIPS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001a-01f4-0000-2a6b-715b00000000-m575865a2-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865a2-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6972-0c2d-1000-87a7-0af06a760000" name="Dbg - Dest State Nm" isWriteable="false">
+<AttrDefn mdsid="m575b6c68-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372471338887867">
+<Expr mdsid="m0000001b-01f4-0000-f7fe-8c8a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."DEST_STATE_NM"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001b-01f4-0000-f7fe-8c8a00000000-m575865a3-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865a3-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6973-0c2d-1000-87a7-0af06a760000" name="Dbg - Distance Group" isWriteable="false">
+<AttrDefn mdsid="m575b6c69-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372481338887867">
+<Expr mdsid="m0000001c-01f4-0000-00f0-176e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."DISTANCE_GROUP"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001c-01f4-0000-00f0-176e00000000-m575865a6-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865a6-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6974-0c2d-1000-87a7-0af06a760000" name="Dbg - Month" isWriteable="false">
+<AttrDefn mdsid="m575b6c6a-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372491338887867">
+<Expr mdsid="m0000001d-01f4-0000-4c27-1a4c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."MONTH"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001d-01f4-0000-4c27-1a4c00000000-m575865a9-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865a9-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6975-0c2d-1000-87a7-0af06a760000" name="Dbg - Origin" isWriteable="false">
+<AttrDefn mdsid="m575b6c6b-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372501338887867">
+<Expr mdsid="m0000001e-01f4-0000-415e-64a400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."ORIGIN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001e-01f4-0000-415e-64a400000000-m575865aa-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865aa-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6976-0c2d-1000-87a7-0af06a760000" name="Dbg - Origin Airport Id" isWriteable="false">
+<AttrDefn mdsid="m575b6c6c-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372511338887867">
+<Expr mdsid="m0000001f-01f4-0000-7ec7-b49200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."ORIGIN_AIRPORT_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001f-01f4-0000-7ec7-b49200000000-m575865ab-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865ab-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6977-0c2d-1000-87a7-0af06a760000" name="Dbg - Origin Airport Seq Id" isWriteable="false">
+<AttrDefn mdsid="m575b6c6d-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372521338887867">
+<Expr mdsid="m00000020-01f4-0000-773d-c26900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."ORIGIN_AIRPORT_SEQ_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000020-01f4-0000-773d-c26900000000-m575865ac-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865ac-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6978-0c2d-1000-87a7-0af06a760000" name="Dbg - Origin City Market Id" isWriteable="false">
+<AttrDefn mdsid="m575b6c6e-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372531338887867">
+<Expr mdsid="m00000021-01f4-0000-88f9-413f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."ORIGIN_CITY_MARKET_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000021-01f4-0000-88f9-413f00000000-m575865ad-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865ad-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6979-0c2d-1000-87a7-0af06a760000" name="Dbg - Origin City Name" isWriteable="false">
+<AttrDefn mdsid="m575b6c6f-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372541338887867">
+<Expr mdsid="m00000022-01f4-0000-2817-b0c700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."ORIGIN_CITY_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000022-01f4-0000-2817-b0c700000000-m575865ae-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865ae-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b697a-0c2d-1000-87a7-0af06a760000" name="Dbg - Origin State Abr" isWriteable="false">
+<AttrDefn mdsid="m575b6c70-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372551338887867">
+<Expr mdsid="m00000023-01f4-0000-9de4-a5d200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."ORIGIN_STATE_ABR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000023-01f4-0000-9de4-a5d200000000-m575865af-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865af-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b697b-0c2d-1000-87a7-0af06a760000" name="Dbg - Origin State Fips" isWriteable="false">
+<AttrDefn mdsid="m575b6c71-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372561338887867">
+<Expr mdsid="m00000024-01f4-0000-85c0-99a900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."ORIGIN_STATE_FIPS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000024-01f4-0000-85c0-99a900000000-m575865b0-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865b0-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b697c-0c2d-1000-87a7-0af06a760000" name="Dbg - Origin State Nm" isWriteable="false">
+<AttrDefn mdsid="m575b6c72-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372571338887867">
+<Expr mdsid="m00000025-01f4-0000-1f33-4e0d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."ORIGIN_STATE_NM"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000025-01f4-0000-1f33-4e0d00000000-m575865b1-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865b1-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b697d-0c2d-1000-87a7-0af06a760000" name="Dbg - Origin Wac" isWriteable="false">
+<AttrDefn mdsid="m575b6c73-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372581338887867">
+<Expr mdsid="m00000026-01f4-0000-1161-735100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."ORIGIN_WAC"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000026-01f4-0000-1161-735100000000-m575865b2-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865b2-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b697e-0c2d-1000-87a7-0af06a760000" name="Dbg - Quarter" isWriteable="false">
+<AttrDefn mdsid="m575b6c74-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372591338887867">
+<Expr mdsid="m00000027-01f4-0000-4e98-c82800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."QUARTER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000027-01f4-0000-4e98-c82800000000-m575865b4-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865b4-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b697f-0c2d-1000-87a7-0af06a760000" name="Dbg - Unique Carrier" isWriteable="false">
+<AttrDefn mdsid="m575b6c75-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372601338887867">
+<Expr mdsid="m00000028-01f4-0000-f19d-8d4000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."UNIQUE_CARRIER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000028-01f4-0000-f19d-8d4000000000-m575865b6-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865b6-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6980-0c2d-1000-87a7-0af06a760000" name="Dbg - Year" isWriteable="false">
+<AttrDefn mdsid="m575b6c76-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372611338887867">
+<Expr mdsid="m00000029-01f4-0000-8a24-af2f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."YEAR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000029-01f4-0000-8a24-af2f00000000-m575865b9-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865b9-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b6981-0c2d-1000-87a7-0af06a760000" name="Pax per Flights Grp" isWriteable="false">
+<AttrDefn mdsid="m575b6c77-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372621338887867">
+<Expr mdsid="m0000002a-01f4-0000-8a41-954400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."PPF_GROUP"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002a-01f4-0000-8a41-954400000000-m575865c5-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m575865c5-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m83079e62-0c33-1000-a9e6-7f0000010000" name="Dbg - Unique Row Wid" isWriteable="false">
+<AttrDefn mdsid="m83079e63-0c33-1000-a9e6-7f0000010000" name="AD_3900:2415351341538242">
+<Expr mdsid="m0000002b-01f4-0000-038b-a5ac00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES"."01 DOMESTIC Segment"."UROWID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002b-01f4-0000-038b-a5ac00000000-m82f4d9b3-0c33-1000-a9e6-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/57586595-0c2d-1000-87a7-0af06a760000.xml#m82f4d9b3-0c33-1000-a9e6-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m575b6bb6-0c2d-1000-87a7-0af06a760000" name="Primary" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6bb6-0c2d-1000-87a7-0af06a760000-m575b6968-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6957-0c2d-1000-87a7-0af06a760000.xml#m575b6968-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6bb6-0c2d-1000-87a7-0af06a760000-m575b696b-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6957-0c2d-1000-87a7-0af06a760000.xml#m575b696b-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6bb6-0c2d-1000-87a7-0af06a760000-m575b6974-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6957-0c2d-1000-87a7-0af06a760000.xml#m575b6974-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6bb6-0c2d-1000-87a7-0af06a760000-m575b6975-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6957-0c2d-1000-87a7-0af06a760000.xml#m575b6975-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6bb6-0c2d-1000-87a7-0af06a760000-m575b697e-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6957-0c2d-1000-87a7-0af06a760000.xml#m575b697e-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalColumn refId="m575b6bb6-0c2d-1000-87a7-0af06a760000-m575b6980-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b6957-0c2d-1000-87a7-0af06a760000.xml#m575b6980-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m575b6957-0c2d-1000-87a7-0af06a760000-m575b6d4f-0c2d-1000-87a7-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/575b6d4f-0c2d-1000-87a7-0af06a760000.xml#m575b6d4f-0c2d-1000-87a7-0af06a760000"/>
+</RefTableSources>
+</LogicalTable>

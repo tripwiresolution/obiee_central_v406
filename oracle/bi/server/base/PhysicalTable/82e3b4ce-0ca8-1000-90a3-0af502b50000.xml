@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m82e3b4ce-0ca8-1000-90a3-0af502b50000" name="INS_POLICY_HOLDER" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/82e3b499-0ca8-1000-90a3-0af502b50000.xml#m82e3b499-0ca8-1000-90a3-0af502b50000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[INS_POLICY_HOLDER]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m82e3b4cf-0ca8-1000-90a3-0af502b50000" name="AGE" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4d0-0ca8-1000-90a3-0af502b50000" name="CITY" dataType="VARCHAR" precision="100" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4d1-0ca8-1000-90a3-0af502b50000" name="COUNTRY" dataType="VARCHAR" precision="100" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4d2-0ca8-1000-90a3-0af502b50000" name="CUSTOMERID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4d3-0ca8-1000-90a3-0af502b50000" name="CUSTOMER_NAME" dataType="VARCHAR" precision="70" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4d4-0ca8-1000-90a3-0af502b50000" name="EMPLOYMENT" dataType="VARCHAR" precision="70" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4d5-0ca8-1000-90a3-0af502b50000" name="GENDER" dataType="VARCHAR" precision="70" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4d6-0ca8-1000-90a3-0af502b50000" name="MARITAL_STATUS" dataType="VARCHAR" precision="70" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4d7-0ca8-1000-90a3-0af502b50000" name="PAYMENT" dataType="VARCHAR" precision="70" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4d8-0ca8-1000-90a3-0af502b50000" name="SALARY" dataType="DOUBLE" precision="126" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4d9-0ca8-1000-90a3-0af502b50000" name="TYPE_OF_INSURANCE" dataType="VARCHAR" precision="70" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4da-0ca8-1000-90a3-0af502b50000" name="SALESP" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4db-0ca8-1000-90a3-0af502b50000" name="PROFITP" dataType="FLOAT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4dc-0ca8-1000-90a3-0af502b50000" name="ADDRESS_KEY" dataType="INT" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m82e3b4dd-0ca8-1000-90a3-0af502b50000" name="COUNTRY_CODE" dataType="VARCHAR" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m82e429ba-0ca8-1000-90a3-0af502b50000" name="POLICY_HOLDER_Key">
+<RefColumns>
+<RefColumn refId="m82e429ba-0ca8-1000-90a3-0af502b50000-m82e3b4d2-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3b4ce-0ca8-1000-90a3-0af502b50000.xml#m82e3b4d2-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="m82e429bb-0ca8-1000-90a3-0af502b50000" name="POLICY_HOLDER_Key#1">
+<RefColumns>
+<RefColumn refId="m82e429bb-0ca8-1000-90a3-0af502b50000-m82e3b4dc-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3b4ce-0ca8-1000-90a3-0af502b50000.xml#m82e3b4dc-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="m82e429bc-0ca8-1000-90a3-0af502b50000" name="POLICY_HOLDER_Key#2">
+<RefColumns>
+<RefColumn refId="m82e429bc-0ca8-1000-90a3-0af502b50000-m82e3b4dd-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3b4ce-0ca8-1000-90a3-0af502b50000.xml#m82e3b4dd-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalForeignKey mdsid="m82e42a06-0ca8-1000-90a3-0af502b50000" name="POLICY_HOLDER_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/82e3b52b-0ca8-1000-90a3-0af502b50000.xml#m82e429c5-0ca8-1000-90a3-0af502b50000">
+<RefColumns>
+<RefColumn refId="m82e42a06-0ca8-1000-90a3-0af502b50000-m82e3b4dc-0ca8-1000-90a3-0af502b50000" columnRef="/oracle/bi/server/base/PhysicalTable/82e3b4ce-0ca8-1000-90a3-0af502b50000.xml#m82e3b4dc-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

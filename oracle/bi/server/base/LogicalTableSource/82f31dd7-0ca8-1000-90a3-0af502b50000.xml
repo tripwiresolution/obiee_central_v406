@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTableSource mdsid="m82f31dd7-0ca8-1000-90a3-0af502b50000" name="ADS_BI_ART_DISPUTE_TRENDS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isActive="true" logicalTableRef="/oracle/bi/server/base/LogicalTable/82f0d5d2-0ca8-1000-90a3-0af502b50000.xml#m82f0d5d2-0ca8-1000-90a3-0af502b50000">
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000001-01f4-0000-9be7-817500000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y04 - Demo Other Advanced Collections"."Fact - Disputes"."Dispute Amount"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-9be7-817500000000-m82f0d5d3-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d5d2-0ca8-1000-90a3-0af502b50000.xml#m82f0d5d3-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000002-01f4-0000-cf9f-135300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_DISPUTE_TRENDS"."DISPUTE_AMOUNT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-cf9f-135300000000-m82dde896-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde892-0ca8-1000-90a3-0af502b50000.xml#m82dde896-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<ColumnMapping>
+<LogicalColumnExpr mdsid="m00000003-01f4-0000-45f1-028700000000" name="LogicalColumnExpr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y04 - Demo Other Advanced Collections"."Fact - Disputes"."Number of Disputes"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-45f1-028700000000-m82f0d5d4-0ca8-1000-90a3-0af502b50000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/82f0d5d2-0ca8-1000-90a3-0af502b50000.xml#m82f0d5d4-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</LogicalColumnExpr>
+<Expr mdsid="m00000004-01f4-0000-07ab-69d400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_DISPUTE_TRENDS"."DISPUTE_REASON_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-07ab-69d400000000-m82dde897-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde892-0ca8-1000-90a3-0af502b50000.xml#m82dde897-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</ColumnMapping>
+<Link startNodeTableRef="/oracle/bi/server/base/PhysicalTable/82dde892-0ca8-1000-90a3-0af502b50000.xml#m82dde892-0ca8-1000-90a3-0af502b50000">
+</Link>
+<WhereClause mdsid="m00000005-01f4-0000-7e42-938000000000" name="WhereClause">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</WhereClause>
+<GroupBy mdsid="m00000006-01f4-0000-f169-ed0200000000" name="GroupBy">
+<ExprText><![CDATA[ GROUPBYLEVEL("%1", "%2", "%3", "%4", "%5")]]></ExprText>
+<ExprTextDesc><![CDATA[ GROUPBYLEVEL("Y04 - Demo Other Advanced Collections"."Agent"."Detail", "Y04 - Demo Other Advanced Collections"."Customer"."Detail", "Y04 - Demo Other Advanced Collections"."Dispute Reason"."Detail", "Y04 - Demo Other Advanced Collections"."Dispute Status"."Detail", "Y04 - Demo Other Advanced Collections"."Time"."Detail")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-f169-ed0200000000-m82f19803-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0d3e3-0ca8-1000-90a3-0af502b50000.xml#m82f19803-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000006-01f4-0000-f169-ed0200000000-m82f197fc-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0d3e1-0ca8-1000-90a3-0af502b50000.xml#m82f197fc-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000006-01f4-0000-f169-ed0200000000-m82f1980b-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0d3e7-0ca8-1000-90a3-0af502b50000.xml#m82f1980b-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000006-01f4-0000-f169-ed0200000000-m82f1980d-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0d3e8-0ca8-1000-90a3-0af502b50000.xml#m82f1980d-0ca8-1000-90a3-0af502b50000"/>
+<RefObject refId="m00000006-01f4-0000-f169-ed0200000000-m82f19801-0ca8-1000-90a3-0af502b50000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/82f0d3e2-0ca8-1000-90a3-0af502b50000.xml#m82f19801-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</GroupBy>
+<FragmentContent mdsid="m00000007-01f4-0000-3c90-b6e300000000" name="FragmentContent">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</FragmentContent>
+</LogicalTableSource>

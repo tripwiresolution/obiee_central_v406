@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="mac71f41e-0c31-1000-8edd-0af0613a0000" name="DELAY_PRED" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Database/ac71f401-0c31-1000-8edd-0af0613a0000.xml#mac71f401-0c31-1000-8edd-0af0613a0000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[select *
+  from   table(rqTableEval(
+    cursor(select ARRDELAY,DISTANCE,DEPDELAY,YEAR,MONTH,DAYOFMONTH,DEPTIME,ARRTIME,UNIQUECARRIER,FLIGHTNUM,ORIGIN,DEST, ORIGIN||'-'||DEST ROUTE
+           from   ontime_s
+           where  year >= valueof(NQ_SESSION.OR_ARG1) and year <= valueof(NQ_SESSION.OR_ARG2)
+           and DEPDELAY is not NULL),
+cursor(select 1 "ore.connect" from dual),
+    'select ARRDELAY, DISTANCE, DEPDELAY,YEAR,MONTH,DAYOFMONTH,DEPTIME,ARRTIME,UNIQUECARRIER,FLIGHTNUM,ORIGIN,DEST, ORIGIN||''-''||DEST ROUTE, 1 PRED from ontime_s',
+    'PredictDelays-score'))
+order by 1, 2, 3]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="mac71f41f-0c31-1000-8edd-0af0613a0000" name="ArrDelay" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mac71f420-0c31-1000-8edd-0af0613a0000" name="Distance" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mac71f421-0c31-1000-8edd-0af0613a0000" name="DepDelay" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mac71f422-0c31-1000-8edd-0af0613a0000" name="Pred" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mac71f423-0c31-1000-8edd-0af0613a0000" name="Year" dataType="INT" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mac71f424-0c31-1000-8edd-0af0613a0000" name="Month" dataType="DOUBLE" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mac71f425-0c31-1000-8edd-0af0613a0000" name="DayofMonth" dataType="DOUBLE" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mac71f426-0c31-1000-8edd-0af0613a0000" name="DepTime" dataType="DOUBLE" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mac71f427-0c31-1000-8edd-0af0613a0000" name="ArrTime" dataType="DOUBLE" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mac71f428-0c31-1000-8edd-0af0613a0000" name="UniqueCarrier" dataType="VARCHAR" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mac71f429-0c31-1000-8edd-0af0613a0000" name="FlightNum" dataType="DOUBLE" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mac71f42a-0c31-1000-8edd-0af0613a0000" name="Origin" dataType="VARCHAR" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mac71f42b-0c31-1000-8edd-0af0613a0000" name="Dest" dataType="VARCHAR" precision="20" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mac71f42c-0c31-1000-8edd-0af0613a0000" name="Route" dataType="VARCHAR" precision="42" specialType="none">
+</PhysicalColumn>
+</PhysicalTable>

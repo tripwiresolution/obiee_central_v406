@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0fcc6-0ca8-1000-90a3-0af502b50000" name="Recruitment Costs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acdc-0ca8-1000-90a3-0af502b50000.xml#m82f0acdc-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0fcc7-0ca8-1000-90a3-0af502b50000" name="Ordering" isWriteable="false">
+<AttrDefn mdsid="m82f2a9d4-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761731391789375">
+<Expr mdsid="m00000001-01f4-0000-60c6-074d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC_RECRUITMENT"."LOIC_RECRUITMENT_COSTS"."NR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-60c6-074d00000000-m82e3dce6-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dce5-0ca8-1000-90a3-0af502b50000.xml#m82e3dce6-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fcc8-0ca8-1000-90a3-0af502b50000" name="Sub Type" isWriteable="false">
+<AttrDefn mdsid="m82f2a9d5-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761741391789375">
+<Expr mdsid="m00000002-01f4-0000-487e-bacc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC_RECRUITMENT"."LOIC_RECRUITMENT_COSTS"."SUBTYPE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-487e-bacc00000000-m82e3dce8-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dce5-0ca8-1000-90a3-0af502b50000.xml#m82e3dce8-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fcc9-0ca8-1000-90a3-0af502b50000" name="Type of Cost" isWriteable="false">
+<AttrDefn mdsid="m82f2cfb0-0ca8-1000-90a3-0af502b50000" name="AD_3900:2761751391789375">
+<Expr mdsid="m00000003-01f4-0000-b4c0-661800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC_RECRUITMENT"."LOIC_RECRUITMENT_COSTS"."TYPE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-b4c0-661800000000-m82e3dce7-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dce5-0ca8-1000-90a3-0af502b50000.xml#m82e3dce7-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m82f23463-0ca8-1000-90a3-0af502b50000" name="key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f23463-0ca8-1000-90a3-0af502b50000-m82f0fcc7-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0fcc6-0ca8-1000-90a3-0af502b50000.xml#m82f0fcc7-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0fcc6-0ca8-1000-90a3-0af502b50000-m82f344ea-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f344ea-0ca8-1000-90a3-0af502b50000.xml#m82f344ea-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

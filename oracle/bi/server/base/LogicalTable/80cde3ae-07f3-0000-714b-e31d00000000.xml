@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cde3ae-07f3-0000-714b-e31d00000000" name="Block Groups" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="804" y="150" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cde354-07d0-0000-714b-e31d00000000.xml#m80cde354-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m80cde3ba-07d6-0000-714b-e31d00000000" name="Poi Id" isWriteable="false">
+<AttrDefn mdsid="m80cde430-0f3c-0000-714b-e31d00000000" name="AD_3900:1899041304605309">
+<Expr mdsid="m00000001-01f4-0000-1a6d-0f6600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."V_POI_Block_Group"."poi_id"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-1a6d-0f6600000000-m80cde339-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cde337-0bb9-0000-714b-e31d00000000.xml#m80cde339-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cde3bf-07d6-0000-714b-e31d00000000" name="POI Category Name" isWriteable="false">
+<AttrDefn mdsid="m80cde435-0f3c-0000-714b-e31d00000000" name="AD_3900:1899091304605309">
+<Expr mdsid="m00000002-01f4-0000-aeb0-ad6400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."V_POI_Block_Group"."category_name"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-aeb0-ad6400000000-m80cde9dd-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cde337-0bb9-0000-714b-e31d00000000.xml#m80cde9dd-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cde3c0-07d6-0000-714b-e31d00000000" name="Block Id in range of POIs" isWriteable="false">
+<AttrDefn mdsid="m80cde436-0f3c-0000-714b-e31d00000000" name="AD_3900:1899101304605309">
+<Expr mdsid="m00000003-01f4-0000-1b3b-935c00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS VARCHAR ( 12 ))]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."BLOCK_GROUPS"."BGP_ID" AS VARCHAR ( 12 ))]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-1b3b-935c00000000-m80cde2de-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cde2dd-0bb9-0000-714b-e31d00000000.xml#m80cde2de-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cde357-07d6-0000-714b-e31d00000000" name="Block Label in range of POIs" isWriteable="false">
+<AttrDefn mdsid="m80cde3ce-0f3c-0000-714b-e31d00000000" name="AD_3900:1898061304605309">
+<Expr mdsid="m00000004-01f4-0000-a3e7-6b0900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."BLOCK_GROUPS"."BGP_LABEL"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-a3e7-6b0900000000-m80cde2df-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cde2dd-0bb9-0000-714b-e31d00000000.xml#m80cde2df-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m8474c122-0c6e-1000-b524-0af502b30000" name="Block Id" isWriteable="false">
+<AttrDefn mdsid="m8474c123-0c6e-1000-b524-0af502b30000" name="AD_3900:2611031366880929">
+<Expr mdsid="m00000005-01f4-0000-5f20-478800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."BLOCK_GROUPS"."ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-5f20-478800000000-m80cde315-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cde2dd-0bb9-0000-714b-e31d00000000.xml#m80cde315-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m8474c126-0c6e-1000-b524-0af502b30000" name="Block Label" isWriteable="false" descriptorIDRef="/oracle/bi/server/base/LogicalTable/80cde3ae-07f3-0000-714b-e31d00000000.xml#m8474c122-0c6e-1000-b524-0af502b30000">
+<AttrDefn mdsid="m8474c127-0c6e-1000-b524-0af502b30000" name="AD_3900:2611071366880929">
+<Expr mdsid="m00000006-01f4-0000-d841-683300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."BLOCK_GROUPS"."BGP_LABEL"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-d841-683300000000-m80cde2df-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cde2dd-0bb9-0000-714b-e31d00000000.xml#m80cde2df-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cde3cb-07d8-0000-714b-e31d00000000" name="POI_ID" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cde3cb-07d8-0000-714b-e31d00000000-m80cde3ba-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cde3ae-07f3-0000-714b-e31d00000000.xml#m80cde3ba-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cde3cb-07d8-0000-714b-e31d00000000-m80cde3c0-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cde3ae-07f3-0000-714b-e31d00000000.xml#m80cde3c0-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cde3ae-07f3-0000-714b-e31d00000000-m80cde439-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cde439-07f5-0000-714b-e31d00000000.xml#m80cde439-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cde3ae-07f3-0000-714b-e31d00000000-m80cdeaaf-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cdeaaf-07f5-0000-714b-e31d00000000.xml#m80cdeaaf-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

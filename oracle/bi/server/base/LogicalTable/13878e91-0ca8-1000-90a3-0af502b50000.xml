@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m13878e91-0ca8-1000-90a3-0af502b50000" name="Mileage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/13878e90-0ca8-1000-90a3-0af502b50000.xml#m13878e90-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m13878e94-0ca8-1000-90a3-0af502b50000" name="Claim Period" isWriteable="false">
+<AttrDefn mdsid="m13878e98-0ca8-1000-90a3-0af502b50000" name="AD_3900:2683281391614598">
+<Expr mdsid="m00000001-01f4-0000-db11-fbe300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X9-EID (EQL)"."".""."mileage"."CLAIM_PERIOD"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-db11-fbe300000000-m9c1f51d0-0ca7-1000-9703-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/9c165120-0ca7-1000-9703-0af502b50000.xml#m9c1f51d0-0ca7-1000-9703-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m13878e95-0ca8-1000-90a3-0af502b50000" name="Pclaim Odmtr Mileage" isWriteable="false">
+<AttrDefn mdsid="m13878e99-0ca8-1000-90a3-0af502b50000" name="AD_3900:2683291391614598">
+<Expr mdsid="m00000002-01f4-0000-4520-fc6400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X9-EID (EQL)"."".""."mileage"."TOTAL_MILEAGE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-4520-fc6400000000-m9c1b0c10-0ca7-1000-9703-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/9c165120-0ca7-1000-9703-0af502b50000.xml#m9c1b0c10-0ca7-1000-9703-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m13878e96-0ca8-1000-90a3-0af502b50000" name="Sales Date" isWriteable="false">
+<AttrDefn mdsid="m13878e9a-0ca8-1000-90a3-0af502b50000" name="AD_3900:2683301391614598">
+<Expr mdsid="m00000003-01f4-0000-f888-68a400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X9-EID (EQL)"."".""."mileage"."SALES_DATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-f888-68a400000000-m9c24d010-0ca7-1000-9703-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/9c165120-0ca7-1000-9703-0af502b50000.xml#m9c24d010-0ca7-1000-9703-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m13878e97-0ca8-1000-90a3-0af502b50000" name="Vehicle Make" isWriteable="false">
+<AttrDefn mdsid="m13878e9b-0ca8-1000-90a3-0af502b50000" name="AD_3900:2683311391614598">
+<Expr mdsid="m00000004-01f4-0000-bc23-08a000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X9-EID (EQL)"."".""."mileage"."VEHICLE_MAKE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-bc23-08a000000000-m9c234970-0ca7-1000-9703-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/9c165120-0ca7-1000-9703-0af502b50000.xml#m9c234970-0ca7-1000-9703-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m1ae4c7c0-0ca8-1000-90a3-0af502b50000" name="Primary" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m1ae4c7c0-0ca8-1000-90a3-0af502b50000-m13878e94-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/13878e91-0ca8-1000-90a3-0af502b50000.xml#m13878e94-0ca8-1000-90a3-0af502b50000"/>
+<RefLogicalColumn refId="m1ae4c7c0-0ca8-1000-90a3-0af502b50000-m13878e95-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/13878e91-0ca8-1000-90a3-0af502b50000.xml#m13878e95-0ca8-1000-90a3-0af502b50000"/>
+<RefLogicalColumn refId="m1ae4c7c0-0ca8-1000-90a3-0af502b50000-m13878e96-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/13878e91-0ca8-1000-90a3-0af502b50000.xml#m13878e96-0ca8-1000-90a3-0af502b50000"/>
+<RefLogicalColumn refId="m1ae4c7c0-0ca8-1000-90a3-0af502b50000-m13878e97-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/13878e91-0ca8-1000-90a3-0af502b50000.xml#m13878e97-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m13878e91-0ca8-1000-90a3-0af502b50000-m13878e93-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/13878e93-0ca8-1000-90a3-0af502b50000.xml#m13878e93-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

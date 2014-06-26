@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dimension mdsid="mfe34e088-0c82-1000-806e-0af170e40000" name="Movie Cast" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isValueBased="false" isRagged="false" isSkipped="false" defaultRootLevelRef="/oracle/bi/server/base/Dimension/fe34e088-0c82-1000-806e-0af170e40000.xml#mfe34e209-0c82-1000-806e-0af170e40000" subjectAreaRef="/oracle/bi/server/base/BusinessModel/fe34e080-0c82-1000-806e-0af170e40000.xml#mfe34e080-0c82-1000-806e-0af170e40000">
+<LogicalLevel mdsid="mfe34e209-0c82-1000-806e-0af170e40000" name="Total" isGTA="true" isFDUC="true" memberCount="1" levelConst="&apos;Total&apos;">
+<RefChildLevels>
+<RefLogicalLevel refId="mfe34e209-0c82-1000-806e-0af170e40000_mfe34e20a-0c82-1000-806e-0af170e40000_1" logicalLevelRef="/oracle/bi/server/base/Dimension/fe34e088-0c82-1000-806e-0af170e40000.xml#mfe34e20a-0c82-1000-806e-0af170e40000"/>
+</RefChildLevels>
+</LogicalLevel>
+<LogicalLevel mdsid="mfe34e20a-0c82-1000-806e-0af170e40000" name="Cast" isGTA="false" isFDUC="true" memberCount="1" levelConst="&apos;Cast&apos;">
+<LogicalKey mdsid="mfe34e2ff-0c82-1000-806e-0af170e40000" name="Cast Id" isPrimary="true" isForDrillDown="true">
+<RefColumns>
+<RefLogicalColumn refId="mfe34e2ff-0c82-1000-806e-0af170e40000-mfe34e0e8-0c82-1000-806e-0af170e40000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/fe34e0e7-0c82-1000-806e-0af170e40000.xml#mfe34e0e8-0c82-1000-806e-0af170e40000"/>
+</RefColumns>
+</LogicalKey>
+<RefLogicalColumns>
+<RefLogicalColumn refId="mfe34e20a-0c82-1000-806e-0af170e40000-mfe34e0e8-0c82-1000-806e-0af170e40000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/fe34e0e7-0c82-1000-806e-0af170e40000.xml#mfe34e0e8-0c82-1000-806e-0af170e40000"/>
+<RefLogicalColumn refId="mfe34e20a-0c82-1000-806e-0af170e40000-mfe34e0e9-0c82-1000-806e-0af170e40000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/fe34e0e7-0c82-1000-806e-0af170e40000.xml#mfe34e0e9-0c82-1000-806e-0af170e40000"/>
+<RefLogicalColumn refId="mfe34e20a-0c82-1000-806e-0af170e40000-mfe34e0ea-0c82-1000-806e-0af170e40000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/fe34e0e7-0c82-1000-806e-0af170e40000.xml#mfe34e0ea-0c82-1000-806e-0af170e40000"/>
+</RefLogicalColumns>
+</LogicalLevel>
+</Dimension>

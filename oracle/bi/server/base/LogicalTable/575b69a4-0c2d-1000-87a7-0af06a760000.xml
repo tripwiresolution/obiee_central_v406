@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m575b69a4-0c2d-1000-87a7-0af06a760000" name="33 Aircraft Type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/575b68b0-0c2d-1000-87a7-0af06a760000.xml#m575b68b0-0c2d-1000-87a7-0af06a760000">
+<LogicalColumn mdsid="m575b69a5-0c2d-1000-87a7-0af06a760000" name="CODE" isWriteable="false">
+<AttrDefn mdsid="m575b6c98-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372951338887867">
+<Expr mdsid="m00000001-01f4-0000-6cd9-fedc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES_AGG"."SA_33_Airc00039CF4"."CODE00039BFC"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-6cd9-fedc00000000-m69700515-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/69700513-0c61-1000-99f2-7f0000010000.xml#m69700515-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m575b69a6-0c2d-1000-87a7-0af06a760000" name="Aircraft Type" isWriteable="false">
+<AttrDefn mdsid="m575b6c99-0c2d-1000-87a7-0af06a760000" name="AD_3900:2372961338887867">
+<Expr mdsid="m00000002-01f4-0000-82a1-146700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X0 - Airlines Demo Dbs (ORCL)".""."BI_AIRLINES_AGG"."SA_33_Airc00039CF4"."Aircraft_T00039BFD"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-82a1-146700000000-m69700516-0c61-1000-99f2-7f0000010000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/69700513-0c61-1000-99f2-7f0000010000.xml#m69700516-0c61-1000-99f2-7f0000010000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m575b6bb9-0c2d-1000-87a7-0af06a760000" name="20 ARRIVAL_DELAY_GROUPS_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m575b6bb9-0c2d-1000-87a7-0af06a760000-m575b69a5-0c2d-1000-87a7-0af06a760000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/575b69a4-0c2d-1000-87a7-0af06a760000.xml#m575b69a5-0c2d-1000-87a7-0af06a760000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m575b69a4-0c2d-1000-87a7-0af06a760000-m575b6d5d-0c2d-1000-87a7-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/575b6d5d-0c2d-1000-87a7-0af06a760000.xml#m575b6d5d-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalTableSource refId="m575b69a4-0c2d-1000-87a7-0af06a760000-m697a1711-0c61-1000-99f2-7f0000010000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/697a1711-0c61-1000-99f2-7f0000010000.xml#m697a1711-0c61-1000-99f2-7f0000010000"/>
+</RefTableSources>
+</LogicalTable>

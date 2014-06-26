@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m4adbee0b-0c34-1000-bf73-82232f1a0000" name="Floor Plan Metrics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cde354-07d0-0000-714b-e31d00000000.xml#m80cde354-07d0-0000-714b-e31d00000000">
+<LogicalColumn mdsid="m4adbee0c-0c34-1000-bf73-82232f1a0000" name="Cage Area" isWriteable="false">
+<MeasureDefn mdsid="m4adbee16-0c34-1000-bf73-82232f1a0000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m4adbee1c-0c34-1000-bf73-82232f1a0000" name="AggRule_2050:2451051341873376" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-78cf-b3fc00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."Floor Plan Metrics"."Cage Area")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-78cf-b3fc00000000-m4adbee0c-0c34-1000-bf73-82232f1a0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4adbee0b-0c34-1000-bf73-82232f1a0000.xml#m4adbee0c-0c34-1000-bf73-82232f1a0000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m4adbee44-0c34-1000-bf73-82232f1a0000" name="AD_3900:2451451341873376">
+<Expr mdsid="m00000002-01f4-0000-4c58-6a5600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."AI_FLOORPLAN_DATA"."CAGE_AREA"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-4c58-6a5600000000-m4adb51ce-0c34-1000-bf73-82232f1a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4adb51cd-0c34-1000-bf73-82232f1a0000.xml#m4adb51ce-0c34-1000-bf73-82232f1a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m4adbee0d-0c34-1000-bf73-82232f1a0000" name="Cage Count" isWriteable="false">
+<MeasureDefn mdsid="m4adbee17-0c34-1000-bf73-82232f1a0000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m4adbee1d-0c34-1000-bf73-82232f1a0000" name="AggRule_2050:2451061341873376" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-130f-fccb00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."Floor Plan Metrics"."Cage Count")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-130f-fccb00000000-m4adbee0d-0c34-1000-bf73-82232f1a0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4adbee0b-0c34-1000-bf73-82232f1a0000.xml#m4adbee0d-0c34-1000-bf73-82232f1a0000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m4adbee45-0c34-1000-bf73-82232f1a0000" name="AD_3900:2451461341873376">
+<Expr mdsid="m00000004-01f4-0000-6a66-752900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."AI_FLOORPLAN_DATA"."CAGE_COUNT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-6a66-752900000000-m4adb51cf-0c34-1000-bf73-82232f1a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4adb51cd-0c34-1000-bf73-82232f1a0000.xml#m4adb51cf-0c34-1000-bf73-82232f1a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m4adbee0f-0c34-1000-bf73-82232f1a0000" name="Cage PEC" isWriteable="false">
+<MeasureDefn mdsid="m4adbee18-0c34-1000-bf73-82232f1a0000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m4adbee1e-0c34-1000-bf73-82232f1a0000" name="AggRule_2050:2451071341873376" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-10da-f98100000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."Floor Plan Metrics"."Cage PEC")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-10da-f98100000000-m4adbee0f-0c34-1000-bf73-82232f1a0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4adbee0b-0c34-1000-bf73-82232f1a0000.xml#m4adbee0f-0c34-1000-bf73-82232f1a0000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m4adbee47-0c34-1000-bf73-82232f1a0000" name="AD_3900:2451481341873376">
+<Expr mdsid="m00000006-01f4-0000-19fb-fa4900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."AI_FLOORPLAN_DATA"."CAGE_PEC"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-19fb-fa4900000000-m4adb51d1-0c34-1000-bf73-82232f1a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4adb51cd-0c34-1000-bf73-82232f1a0000.xml#m4adb51d1-0c34-1000-bf73-82232f1a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m4adbee11-0c34-1000-bf73-82232f1a0000" name="KVA per Cab" isWriteable="false">
+<MeasureDefn mdsid="m4adbee19-0c34-1000-bf73-82232f1a0000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m4adbee1f-0c34-1000-bf73-82232f1a0000" name="AggRule_2050:2451081341873376" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-7323-ada900000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."Floor Plan Metrics"."KVA per Cab")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-7323-ada900000000-m4adbee11-0c34-1000-bf73-82232f1a0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4adbee0b-0c34-1000-bf73-82232f1a0000.xml#m4adbee11-0c34-1000-bf73-82232f1a0000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m4adbee49-0c34-1000-bf73-82232f1a0000" name="AD_3900:2451501341873376">
+<Expr mdsid="m00000008-01f4-0000-8814-b4f500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."AI_FLOORPLAN_DATA"."KVA_PER_CAB"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-8814-b4f500000000-m4adb51d3-0c34-1000-bf73-82232f1a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4adb51cd-0c34-1000-bf73-82232f1a0000.xml#m4adb51d3-0c34-1000-bf73-82232f1a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m4adbee12-0c34-1000-bf73-82232f1a0000" name="KVA priv" isWriteable="false">
+<MeasureDefn mdsid="m4adbee1a-0c34-1000-bf73-82232f1a0000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m4adbee20-0c34-1000-bf73-82232f1a0000" name="AggRule_2050:2451091341873376" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-f848-c2fc00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."Floor Plan Metrics"."KVA priv")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-f848-c2fc00000000-m4adbee12-0c34-1000-bf73-82232f1a0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4adbee0b-0c34-1000-bf73-82232f1a0000.xml#m4adbee12-0c34-1000-bf73-82232f1a0000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m4adbee4a-0c34-1000-bf73-82232f1a0000" name="AD_3900:2451511341873376">
+<Expr mdsid="m0000000a-01f4-0000-fab5-6f0600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."AI_FLOORPLAN_DATA"."KVA_PRIV"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-fab5-6f0600000000-m4adb51d4-0c34-1000-bf73-82232f1a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4adb51cd-0c34-1000-bf73-82232f1a0000.xml#m4adb51d4-0c34-1000-bf73-82232f1a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m4adbee13-0c34-1000-bf73-82232f1a0000" name="Cross Connect Count" isWriteable="false">
+<MeasureDefn mdsid="m4adbee1b-0c34-1000-bf73-82232f1a0000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m4adbee21-0c34-1000-bf73-82232f1a0000" name="AggRule_2050:2451101341873376" isDefault="true">
+<Expr mdsid="m0000000b-01f4-0000-ed55-7ffb00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("07 - Spatial Samples"."Floor Plan Metrics"."Cross Connect Count")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-ed55-7ffb00000000-m4adbee13-0c34-1000-bf73-82232f1a0000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/4adbee0b-0c34-1000-bf73-82232f1a0000.xml#m4adbee13-0c34-1000-bf73-82232f1a0000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m4adbee4b-0c34-1000-bf73-82232f1a0000" name="AD_3900:2451521341873376">
+<Expr mdsid="m0000000c-01f4-0000-8ad2-153900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["09 - Sample Geo Data (ORCL)".""."OBIEE_NAVTEQ"."AI_FLOORPLAN_DATA"."CROSS_CONNECT_COUNT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-8ad2-153900000000-m4adb51d5-0c34-1000-bf73-82232f1a0000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/4adb51cd-0c34-1000-bf73-82232f1a0000.xml#m4adb51d5-0c34-1000-bf73-82232f1a0000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m4adbee0b-0c34-1000-bf73-82232f1a0000-m4adbee4d-0c34-1000-bf73-82232f1a0000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/4adbee4d-0c34-1000-bf73-82232f1a0000.xml#m4adbee4d-0c34-1000-bf73-82232f1a0000"/>
+</RefTableSources>
+</LogicalTable>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ConnectionPool mdsid="m29cda221-0c71-1000-a576-0af502b30000" name="Exa Aggs TT Connection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" user="BI_AGGS_TT" password="6C6F0BE01FC4111F3AC2236A364D912EEF2DF46BD0590556587349A8B8538CCF8CB73F00179AE6C260B995AFE0565C4541DF91DEBCA19D94150D0B326F407491 55028D35434B7670C90CAC60695887053D97B58535739BA63B977E348CC9FA47" timeout="4294967295" maxConnDiff="10" maxConn="10" dataSource="BISAMPLE_TT" type="TIMESTEN35" reqQualifedTableName="true" isSharedLogin="true" isConcurrentQueriesInConnection="false" isCloseAfterEveryRequest="false" outputType="xml" ignoreFirstLine="false" bulkInsertBufferSize="0" transactionBoundary="0" xmlaUseSession="false" multiThreaded="false" supportParams="false" isSiebelJDBSecured="false" databaseRef="/oracle/bi/server/base/Database/29cda220-0c71-1000-a576-0af502b30000.xml#m29cda220-0c71-1000-a576-0af502b30000">
+<Description><![CDATA[Connection pool for Sample relational db source.
+Instead of editing connectivity parameters in each connection pool, update the RPD and Session variables that hold that information (Manage > Variables)]]></Description>
+<PostConnectString isEnabled="true">
+<Value><![CDATA[call ttoptsetflag('rowlock',0)]]></Value>
+</PostConnectString>
+<PostConnectString isEnabled="true">
+<Value><![CDATA[call ttoptsetflag('tbllock',1)]]></Value>
+</PostConnectString>
+<PostConnectString isEnabled="true">
+<Value><![CDATA[call ttoptsetflag('mergejoin',0)]]></Value>
+</PostConnectString>
+<PostConnectString isEnabled="true">
+<Value><![CDATA[call ttoptsetflag('nestedloop',1)]]></Value>
+</PostConnectString>
+</ConnectionPool>

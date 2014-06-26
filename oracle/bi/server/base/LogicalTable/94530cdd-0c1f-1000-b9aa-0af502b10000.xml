@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m94530cdd-0c1f-1000-b9aa-0af502b10000" name="F6 Logical Calculations Examples" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="1691" y="122" subjectAreaRef="/oracle/bi/server/base/BusinessModel/94530bf0-0c1f-1000-b9aa-0af502b10000.xml#m94530bf0-0c1f-1000-b9aa-0af502b10000">
+<Description><![CDATA[This logical table contains metrics that always return value at a particular level within a dimension. Eg:- Revenue at Month level, Billed Qtry at Year level, Booked Amt for all Products etc.
+All metrics in this table are logical calculations based on physically mapped metrics from F0 Rev Base Measures and F1 Inv Base Measures.]]></Description>
+<LogicalColumn mdsid="m94530cde-0c1f-1000-b9aa-0af502b10000" name="17  Net Costs" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000001-01f4-0000-6ffb-0cc900000000" name="Expr">
+<ExprText><![CDATA["%1" + "%2"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Exa"."F0 Sales Base Measures"."10- Variable Costs" + "01 - Sample App Exa"."F0 Sales Base Measures"."11- Fixed Costs"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-6ffb-0cc900000000-m94530c65-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c65-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m00000001-01f4-0000-6ffb-0cc900000000-m94530c66-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c66-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94533340-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1980921332977200">
+<Expr mdsid="m00000002-01f4-0000-360f-51b000000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530cdf-0c1f-1000-b9aa-0af502b10000" name="20  Actual Unit Price" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Billed Unit Price is computed as Revenue divided by Billed Quantity]]></Description>
+<Expr mdsid="m00000003-01f4-0000-332e-697600000000" name="Expr">
+<ExprText><![CDATA["%1" / "%2"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Exa"."F0 Sales Base Measures"."1- Revenue" / "01 - Sample App Exa"."F0 Sales Base Measures"."2- Billed Quantity"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-332e-697600000000-m94530c5d-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c5d-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m00000003-01f4-0000-332e-697600000000-m94530c5e-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c5e-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94533341-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1980931332977200">
+<Expr mdsid="m00000004-01f4-0000-1ec5-c12f00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530ce0-0c1f-1000-b9aa-0af502b10000" name="22  Discount Rate" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000005-01f4-0000-1663-3f0e00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("01 - Sample App Exa"."F0 Sales Base Measures"."3- Discount Amount" AS DOUBLE PRECISION ) / "01 - Sample App Exa"."F0 Sales Base Measures"."1- Revenue" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-1663-3f0e00000000-m94530c5f-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c5f-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m00000005-01f4-0000-1663-3f0e00000000-m94530c5d-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c5d-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94533342-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1980941332977200">
+<Expr mdsid="m00000006-01f4-0000-b71d-2bb200000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530ce1-0c1f-1000-b9aa-0af502b10000" name="23  Avg # of Orders by Customer" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Billed Unit Price is computed as Revenue divided by Billed Quantity]]></Description>
+<Expr mdsid="m00000007-01f4-0000-213f-fcf300000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2"]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("01 - Sample App Exa"."F0 Sales Base Measures"."31  # of Orders (Bn limit)" AS DOUBLE PRECISION ) / "01 - Sample App Exa"."F0 Sales Base Measures"."32  # of Cust with Orders  (Cnt Distinct)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-213f-fcf300000000-m94530c68-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c68-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m00000007-01f4-0000-213f-fcf300000000-m94530c69-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c69-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94533343-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1980951332977200">
+<Expr mdsid="m00000008-01f4-0000-692f-8e7000000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530ce2-0c1f-1000-b9aa-0af502b10000" name="24  Avg # of Orders by Sales Rep" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Billed Unit Price is computed as Revenue divided by Billed Quantity]]></Description>
+<Expr mdsid="m00000009-01f4-0000-e294-02ca00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2"]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("01 - Sample App Exa"."F0 Sales Base Measures"."31  # of Orders (Bn limit)" AS DOUBLE PRECISION ) / "01 - Sample App Exa"."F0 Sales Base Measures"."33  # of Empl with Orders  (Cnt Distinct)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-e294-02ca00000000-m94530c68-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c68-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m00000009-01f4-0000-e294-02ca00000000-m94530c6a-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c6a-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94533344-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1980961332977200">
+<Expr mdsid="m0000000a-01f4-0000-8d63-016000000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530ce3-0c1f-1000-b9aa-0af502b10000" name="25  Avg Order Size" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Billed Unit Price is computed as Revenue divided by Billed Quantity]]></Description>
+<Expr mdsid="m0000000b-01f4-0000-0200-a16d00000000" name="Expr">
+<ExprText><![CDATA["%1" / "%2"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Exa"."F0 Sales Base Measures"."1- Revenue" / "01 - Sample App Exa"."F0 Sales Base Measures"."31  # of Orders (Bn limit)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-0200-a16d00000000-m94530c5d-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c5d-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m0000000b-01f4-0000-0200-a16d00000000-m94530c68-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c68-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94533345-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1980971332977200">
+<Expr mdsid="m0000000c-01f4-0000-4527-de3a00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530ce4-0c1f-1000-b9aa-0af502b10000" name="27  Avg Monthly Revenue" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000000d-01f4-0000-c5c1-25de00000000" name="Expr">
+<ExprText><![CDATA["%1" / "%2"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Exa"."F0 Sales Base Measures"."1- Revenue" / "01 - Sample App Exa"."F90 Time Facts"."T64  # of Months"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-c5c1-25de00000000-m94530c5d-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c5d-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m0000000d-01f4-0000-c5c1-25de00000000-m94530cfa-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530cf3-0c1f-1000-b9aa-0af502b10000.xml#m94530cfa-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94533346-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1980981332977200">
+<Expr mdsid="m0000000e-01f4-0000-54c1-0ef400000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530ce5-0c1f-1000-b9aa-0af502b10000" name="28  # of Customers by Sales Rep" isDerived="true" isWriteable="false">
+<Expr mdsid="m0000000f-01f4-0000-2442-ec0f00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2"]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("01 - Sample App Exa"."F0 Sales Base Measures"."32  # of Cust with Orders  (Cnt Distinct)" AS DOUBLE PRECISION ) / "01 - Sample App Exa"."F0 Sales Base Measures"."33  # of Empl with Orders  (Cnt Distinct)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-2442-ec0f00000000-m94530c69-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c69-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m0000000f-01f4-0000-2442-ec0f00000000-m94530c6a-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c6a-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94533347-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1980991332977200">
+<Expr mdsid="m00000010-01f4-0000-aafc-57ed00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530ce6-0c1f-1000-b9aa-0af502b10000" name="29  Collect to Bill Ratio" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Book to Bill Ratio is computed as Booked Amount divided by Revenue Amount.]]></Description>
+<Expr mdsid="m00000011-01f4-0000-672d-375700000000" name="Expr">
+<ExprText><![CDATA["%1" / "%2"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Exa"."F0 Sales Base Measures"."4- Paid Amount" / "01 - Sample App Exa"."F0 Sales Base Measures"."1- Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-672d-375700000000-m94530c60-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c60-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m00000011-01f4-0000-672d-375700000000-m94530c5d-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c5d-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94533348-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1981001332977200">
+<Expr mdsid="m00000012-01f4-0000-ae56-a5ce00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530ce9-0c1f-1000-b9aa-0af502b10000" name="43  Backlog Variation (Value)" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000013-01f4-0000-b17b-b63100000000" name="Expr">
+<ExprText><![CDATA["%1" - "%2"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Exa"."F0 Sales Base Measures"."8- Booked Amount" - "01 - Sample App Exa"."F0 Sales Base Measures"."7- Shipped Amount"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-b17b-b63100000000-m94530c63-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c63-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m00000013-01f4-0000-b17b-b63100000000-m94530c61-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c61-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m9453334b-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1981031332977200">
+<Expr mdsid="m00000014-01f4-0000-c812-83ae00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530cea-0c1f-1000-b9aa-0af502b10000" name="44  Early Shipped Value" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000015-01f4-0000-eab8-60f900000000" name="Expr">
+<ExprText><![CDATA[ FILTER("%1" USING "%2" = 'Y')]]></ExprText>
+<ExprTextDesc><![CDATA[ FILTER("01 - Sample App Exa"."F0 Sales Base Measures"."1- Revenue" USING "01 - Sample App Exa"."D7 Orders (Facts Attributes)"."R27  Early Shipped Mark" = 'Y')]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-eab8-60f900000000-m94530c5d-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c5d-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m00000015-01f4-0000-eab8-60f900000000-m94530cb6-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c9c-0c1f-1000-b9aa-0af502b10000.xml#m94530cb6-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m9453334c-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1981041332977200">
+<Expr mdsid="m00000016-01f4-0000-a7cd-d04d00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530ceb-0c1f-1000-b9aa-0af502b10000" name="45  Early Shipped Pct" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000017-01f4-0000-26a3-f07f00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2" * 100]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("01 - Sample App Exa"."F6 Logical Calculations Examples"."44  Early Shipped Value" AS DOUBLE PRECISION ) / "01 - Sample App Exa"."F5 Time Series and Level Based Examples"."164  Rev  (Sum for All Orders)" * 100]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-26a3-f07f00000000-m94530cea-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530cdd-0c1f-1000-b9aa-0af502b10000.xml#m94530cea-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m00000017-01f4-0000-26a3-f07f00000000-m94530c96-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c73-0c1f-1000-b9aa-0af502b10000.xml#m94530c96-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m9453334d-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1981051332977200">
+<Expr mdsid="m00000018-01f4-0000-b282-3e5d00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530cec-0c1f-1000-b9aa-0af502b10000" name="46  Avg Order Process Time" isDerived="true" isWriteable="false">
+<Expr mdsid="m00000019-01f4-0000-728f-697c00000000" name="Expr">
+<ExprText><![CDATA[ CAST ("%1" AS DOUBLE PRECISION ) / "%2"]]></ExprText>
+<ExprTextDesc><![CDATA[ CAST ("01 - Sample App Exa"."F0 Sales Base Measures"."39  Order to Ship Days (Sum)" AS DOUBLE PRECISION ) / "01 - Sample App Exa"."F0 Sales Base Measures"."31  # of Orders (Bn limit)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000019-01f4-0000-728f-697c00000000-m94530c6d-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c6d-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m00000019-01f4-0000-728f-697c00000000-m94530c68-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c68-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m9453334e-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1981061332977200">
+<Expr mdsid="m0000001a-01f4-0000-4711-5a7000000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530cee-0c1f-1000-b9aa-0af502b10000" name="75  ======== Allocations Rules ========" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m0000001b-01f4-0000-0985-cf8200000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m94533350-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1981081332977200">
+<Expr mdsid="m0000001c-01f4-0000-9cf5-371200000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530cef-0c1f-1000-b9aa-0af502b10000" name="75  Yago Rev Allocation Factor" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue Forecast data. Sources from Dollars column in Forecast table. Grain of forecast is Market, Month  
+
+- This aggregation will fragment physical data to a lower granularity then it is in the database, using the pattern of last year spread. Example : Forecast data is available by month in db, this metric will take the 'by month' information, and break it down at day level using the same spread as how last year's actual daily values were spread over the same month. This aggregation will apply similar break down on the following dimensions : Time, Customer, Market. I.e., forecast data available only by month by market level is fragmented further down to be "by customer, by product, by day" according to how that pattern was the previous year.]]></Description>
+<Expr mdsid="m0000001d-01f4-0000-28de-7dc600000000" name="Expr">
+<ExprText><![CDATA["%1" / "%2"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Exa"."F5 Time Series and Level Based Examples"."129  Year Ago Rev  (Fix Time Lvl)" / "01 - Sample App Exa"."F6 Logical Calculations Examples"."119  Rev  (Yago Sum for Non Target Dims)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001d-01f4-0000-28de-7dc600000000-m94530c7d-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c73-0c1f-1000-b9aa-0af502b10000.xml#m94530c7d-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m0000001d-01f4-0000-28de-7dc600000000-m94530cf1-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530cdd-0c1f-1000-b9aa-0af502b10000.xml#m94530cf1-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94533351-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1981091332977200">
+<Expr mdsid="m0000001e-01f4-0000-903d-19b200000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530cf0-0c1f-1000-b9aa-0af502b10000" name="76  Qago Rev Allocation Factor" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue Forecast data. Sources from Dollars column in Forecast table. Grain of forecast is Market, Month  
+
+- This aggregation will fragment physical data to a lower granularity then it is in the database, using the pattern of last quarter spread. Example : Forecast data is available by month in db, this metric will take the 'by month' information, and break it down at day level using the same spread as how last quarter's actual daily values were spread over the same month. This aggregation will apply similar break down rule on the following dimensions : Time, Customer, Market. I.e., forecast data available only by month by market level is fragmented further down to be "by customer, by product, by day" according to how that pattern was the previous quarter.]]></Description>
+<Expr mdsid="m0000001f-01f4-0000-69cd-449100000000" name="Expr">
+<ExprText><![CDATA["%1" / "%2"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Exa"."F5 Time Series and Level Based Examples"."128  Qtr Ago Rev  (Fix Time Lvl)" / "01 - Sample App Exa"."F6 Logical Calculations Examples"."118  Rev  (Qago Sum for Non Target Dims)"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001f-01f4-0000-69cd-449100000000-m94530c7c-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c73-0c1f-1000-b9aa-0af502b10000.xml#m94530c7c-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m0000001f-01f4-0000-69cd-449100000000-m94530cf2-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530cdd-0c1f-1000-b9aa-0af502b10000.xml#m94530cf2-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94533352-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1981101332977200">
+<Expr mdsid="m00000020-01f4-0000-4fb0-915900000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530cf1-0c1f-1000-b9aa-0af502b10000" name="119  Rev  (Yago Sum for Non Target Dims)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- 12 months prior to the current month, the value of the metric for the full month and at the Total level of Customer, Product and Employee]]></Description>
+<Expr mdsid="m00000021-01f4-0000-ba2c-c38e00000000" name="Expr">
+<ExprText><![CDATA[ AGO("%1", "%2", 1)]]></ExprText>
+<ExprTextDesc><![CDATA[ AGO("01 - Sample App Exa"."F0 Sales Base Measures"."1- Revenue", "01 - Sample App Exa"."H0 Time"."Year", 1)]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000021-01f4-0000-ba2c-c38e00000000-m94530c5d-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c5d-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m00000021-01f4-0000-ba2c-c38e00000000-m94530d7a-0c1f-1000-b9aa-0af502b10000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/94530bf1-0c1f-1000-b9aa-0af502b10000.xml#m94530d7a-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94533353-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1981111332977200">
+<Expr mdsid="m00000022-01f4-0000-d931-ebdf00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m94530cf2-0c1f-1000-b9aa-0af502b10000" name="118  Rev  (Qago Sum for Non Target Dims)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- 13 months prior to the current month, the value of the metric for the full month and at the Total level of Customer, Product and Employee]]></Description>
+<Expr mdsid="m00000023-01f4-0000-2fb3-72a600000000" name="Expr">
+<ExprText><![CDATA[ AGO("%1", "%2", 3)]]></ExprText>
+<ExprTextDesc><![CDATA[ AGO("01 - Sample App Exa"."F0 Sales Base Measures"."1- Revenue", "01 - Sample App Exa"."H0 Time"."Month", 3)]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000023-01f4-0000-2fb3-72a600000000-m94530c5d-0c1f-1000-b9aa-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/94530c5b-0c1f-1000-b9aa-0af502b10000.xml#m94530c5d-0c1f-1000-b9aa-0af502b10000"/>
+<RefObject refId="m00000023-01f4-0000-2fb3-72a600000000-m94530d7d-0c1f-1000-b9aa-0af502b10000" objectTypeId="2025" objectRef="/oracle/bi/server/base/Dimension/94530bf1-0c1f-1000-b9aa-0af502b10000.xml#m94530d7d-0c1f-1000-b9aa-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m94533354-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1981121332977200">
+<Expr mdsid="m00000024-01f4-0000-6b38-76e900000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+</LogicalTable>

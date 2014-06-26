@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="mba7fd41a-0c26-1000-b8db-0af502b10000" name="DB- V_DATABASE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/b397a370-0c26-1000-a95b-0af502b10000.xml#mb397a370-0c26-1000-a95b-0af502b10000">
+<LogicalColumn mdsid="mba7fd41d-0c26-1000-b8db-0af502b10000" name="Activation#" isWriteable="false">
+<AttrDefn mdsid="mba7fd451-0c26-1000-b8db-0af502b10000" name="AD_3900:2267971336047723">
+<Expr mdsid="m00000001-01f4-0000-5fdd-28e000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."ACTIVATION#"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-5fdd-28e000000000-mb2d20982-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d20982-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd41e-0c26-1000-b8db-0af502b10000" name="Archive Change#" isWriteable="false">
+<AttrDefn mdsid="mba7fd452-0c26-1000-b8db-0af502b10000" name="AD_3900:2267981336047723">
+<Expr mdsid="m00000002-01f4-0000-4cb7-7c4b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."ARCHIVE_CHANGE#"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-4cb7-7c4b00000000-mb2d20985-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d20985-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd41f-0c26-1000-b8db-0af502b10000" name="Archivelog Change#" isWriteable="false">
+<AttrDefn mdsid="mba7fd453-0c26-1000-b8db-0af502b10000" name="AD_3900:2267991336047723">
+<Expr mdsid="m00000003-01f4-0000-a528-b77a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."ARCHIVELOG_CHANGE#"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-a528-b77a00000000-mb2d20983-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d20983-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd420-0c26-1000-b8db-0af502b10000" name="Archivelog Compression" isWriteable="false">
+<AttrDefn mdsid="mba7fd454-0c26-1000-b8db-0af502b10000" name="AD_3900:2268001336047723">
+<Expr mdsid="m00000004-01f4-0000-6f15-426900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."ARCHIVELOG_COMPRESSION"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-6f15-426900000000-mb2d20984-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d20984-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd421-0c26-1000-b8db-0af502b10000" name="Checkpoint Change#" isWriteable="false">
+<AttrDefn mdsid="mba7fd455-0c26-1000-b8db-0af502b10000" name="AD_3900:2268011336047723">
+<Expr mdsid="m00000005-01f4-0000-506c-389c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."CHECKPOINT_CHANGE#"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-506c-389c00000000-mb2d20986-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d20986-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd422-0c26-1000-b8db-0af502b10000" name="Controlfile Change#" isWriteable="false">
+<AttrDefn mdsid="mba7fd456-0c26-1000-b8db-0af502b10000" name="AD_3900:2268021336047723">
+<Expr mdsid="m00000006-01f4-0000-9f86-831900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."CONTROLFILE_CHANGE#"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-9f86-831900000000-mb2d20987-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d20987-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd423-0c26-1000-b8db-0af502b10000" name="Controlfile Converted" isWriteable="false">
+<AttrDefn mdsid="mba7fd457-0c26-1000-b8db-0af502b10000" name="AD_3900:2268031336047723">
+<Expr mdsid="m00000007-01f4-0000-d70b-897700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."CONTROLFILE_CONVERTED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-d70b-897700000000-mb2d20988-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d20988-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd424-0c26-1000-b8db-0af502b10000" name="Controlfile Created" isWriteable="false">
+<AttrDefn mdsid="mba7fd458-0c26-1000-b8db-0af502b10000" name="AD_3900:2268041336047723">
+<Expr mdsid="m00000008-01f4-0000-896b-4cff00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."CONTROLFILE_CREATED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-896b-4cff00000000-mb2d20989-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d20989-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd425-0c26-1000-b8db-0af502b10000" name="Controlfile Sequence#" isWriteable="false">
+<AttrDefn mdsid="mba7fd459-0c26-1000-b8db-0af502b10000" name="AD_3900:2268051336047723">
+<Expr mdsid="m00000009-01f4-0000-fe9b-3ff200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."CONTROLFILE_SEQUENCE#"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-fe9b-3ff200000000-mb2d2098a-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d2098a-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd426-0c26-1000-b8db-0af502b10000" name="Controlfile Time" isWriteable="false">
+<AttrDefn mdsid="mba7fd45a-0c26-1000-b8db-0af502b10000" name="AD_3900:2268061336047723">
+<Expr mdsid="m0000000a-01f4-0000-e78b-340f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."CONTROLFILE_TIME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-e78b-340f00000000-mb2d2098b-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d2098b-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd427-0c26-1000-b8db-0af502b10000" name="Controlfile Type" isWriteable="false">
+<AttrDefn mdsid="mba7fd45b-0c26-1000-b8db-0af502b10000" name="AD_3900:2268071336047723">
+<Expr mdsid="m0000000b-01f4-0000-fc77-d32200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."CONTROLFILE_TYPE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-fc77-d32200000000-mb2d2098c-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d2098c-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd428-0c26-1000-b8db-0af502b10000" name="Created" isWriteable="false">
+<AttrDefn mdsid="mba7fd45c-0c26-1000-b8db-0af502b10000" name="AD_3900:2268081336047723">
+<Expr mdsid="m0000000c-01f4-0000-072a-fc7000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."CREATED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-072a-fc7000000000-mb2d2098d-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d2098d-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd429-0c26-1000-b8db-0af502b10000" name="Current Scn" isWriteable="false">
+<AttrDefn mdsid="mba7fd45d-0c26-1000-b8db-0af502b10000" name="AD_3900:2268091336047723">
+<Expr mdsid="m0000000d-01f4-0000-e0cc-73cb00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."CURRENT_SCN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-e0cc-73cb00000000-mb2d2098e-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d2098e-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd42a-0c26-1000-b8db-0af502b10000" name="Database Role" isWriteable="false">
+<AttrDefn mdsid="mba7fd45e-0c26-1000-b8db-0af502b10000" name="AD_3900:2268101336047723">
+<Expr mdsid="m0000000e-01f4-0000-bc9e-621900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."DATABASE_ROLE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-bc9e-621900000000-mb2d2098f-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d2098f-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd42b-0c26-1000-b8db-0af502b10000" name="Dataguard Broker" isWriteable="false">
+<AttrDefn mdsid="mba7fd45f-0c26-1000-b8db-0af502b10000" name="AD_3900:2268111336047723">
+<Expr mdsid="m0000000f-01f4-0000-2ec1-3ac000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."DATAGUARD_BROKER"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-2ec1-3ac000000000-mb2d20990-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d20990-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd42c-0c26-1000-b8db-0af502b10000" name="Db Unique Name" isWriteable="false">
+<AttrDefn mdsid="mba7fd460-0c26-1000-b8db-0af502b10000" name="AD_3900:2268121336047723">
+<Expr mdsid="m00000010-01f4-0000-1f3a-46b300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."DB_UNIQUE_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-1f3a-46b300000000-mb2d20992-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d20992-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd42d-0c26-1000-b8db-0af502b10000" name="Dbid" isWriteable="false">
+<AttrDefn mdsid="mba7fd461-0c26-1000-b8db-0af502b10000" name="AD_3900:2268131336047723">
+<Expr mdsid="m00000011-01f4-0000-4a80-b58400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."DBID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-4a80-b58400000000-mb2d20991-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d20991-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd42e-0c26-1000-b8db-0af502b10000" name="Flashback On" isWriteable="false">
+<AttrDefn mdsid="mba7fd462-0c26-1000-b8db-0af502b10000" name="AD_3900:2268141336047723">
+<Expr mdsid="m00000012-01f4-0000-b58d-396c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."FLASHBACK_ON"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-b58d-396c00000000-mb2d20993-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d20993-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd42f-0c26-1000-b8db-0af502b10000" name="Force Logging" isWriteable="false">
+<AttrDefn mdsid="mba7fd463-0c26-1000-b8db-0af502b10000" name="AD_3900:2268151336047723">
+<Expr mdsid="m00000013-01f4-0000-c6e8-602800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."FORCE_LOGGING"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-c6e8-602800000000-mb2d20994-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d20994-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd430-0c26-1000-b8db-0af502b10000" name="Fs Failover Current Target" isWriteable="false">
+<AttrDefn mdsid="mba7fd464-0c26-1000-b8db-0af502b10000" name="AD_3900:2268161336047723">
+<Expr mdsid="m00000014-01f4-0000-3a02-f83000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."FS_FAILOVER_CURRENT_TARGET"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-3a02-f83000000000-mb2d20995-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d20995-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd431-0c26-1000-b8db-0af502b10000" name="Fs Failover Observer Host" isWriteable="false">
+<AttrDefn mdsid="mba7fd465-0c26-1000-b8db-0af502b10000" name="AD_3900:2268171336047723">
+<Expr mdsid="m00000015-01f4-0000-18eb-57a000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."FS_FAILOVER_OBSERVER_HOST"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-18eb-57a000000000-mb2d20996-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d20996-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd432-0c26-1000-b8db-0af502b10000" name="Fs Failover Observer Present" isWriteable="false">
+<AttrDefn mdsid="mba7fd466-0c26-1000-b8db-0af502b10000" name="AD_3900:2268181336047723">
+<Expr mdsid="m00000016-01f4-0000-a32e-5d6e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."FS_FAILOVER_OBSERVER_PRESENT"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-a32e-5d6e00000000-mb2d20997-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d20997-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd433-0c26-1000-b8db-0af502b10000" name="Fs Failover Status" isWriteable="false">
+<AttrDefn mdsid="mba7fd467-0c26-1000-b8db-0af502b10000" name="AD_3900:2268191336047723">
+<Expr mdsid="m00000017-01f4-0000-cbaf-115a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."FS_FAILOVER_STATUS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-cbaf-115a00000000-mb2d20998-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d20998-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd434-0c26-1000-b8db-0af502b10000" name="Fs Failover Threshold" isWriteable="false">
+<AttrDefn mdsid="mba7fd468-0c26-1000-b8db-0af502b10000" name="AD_3900:2268201336047723">
+<Expr mdsid="m00000018-01f4-0000-6e88-db1400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."FS_FAILOVER_THRESHOLD"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000018-01f4-0000-6e88-db1400000000-mb2d20999-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d20999-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd435-0c26-1000-b8db-0af502b10000" name="Guard Status" isWriteable="false">
+<AttrDefn mdsid="mba7fd469-0c26-1000-b8db-0af502b10000" name="AD_3900:2268211336047723">
+<Expr mdsid="m00000019-01f4-0000-56db-e5b100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."GUARD_STATUS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000019-01f4-0000-56db-e5b100000000-mb2d2099a-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d2099a-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd436-0c26-1000-b8db-0af502b10000" name="Last Open Incarnation#" isWriteable="false">
+<AttrDefn mdsid="mba7fd46a-0c26-1000-b8db-0af502b10000" name="AD_3900:2268221336047723">
+<Expr mdsid="m0000001a-01f4-0000-af29-5e9a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."LAST_OPEN_INCARNATION#"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001a-01f4-0000-af29-5e9a00000000-mb2d2099b-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d2099b-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd437-0c26-1000-b8db-0af502b10000" name="Log Mode" isWriteable="false">
+<AttrDefn mdsid="mba7fd46b-0c26-1000-b8db-0af502b10000" name="AD_3900:2268231336047723">
+<Expr mdsid="m0000001b-01f4-0000-6547-65a300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."LOG_MODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001b-01f4-0000-6547-65a300000000-mb2d2099c-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d2099c-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd438-0c26-1000-b8db-0af502b10000" name="Min Required Capture Change#" isWriteable="false">
+<AttrDefn mdsid="mba7fd46c-0c26-1000-b8db-0af502b10000" name="AD_3900:2268241336047723">
+<Expr mdsid="m0000001c-01f4-0000-7d29-257500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."MIN_REQUIRED_CAPTURE_CHANGE#"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001c-01f4-0000-7d29-257500000000-mb2d2099d-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d2099d-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd439-0c26-1000-b8db-0af502b10000" name="Name" isWriteable="false">
+<AttrDefn mdsid="mba7fd46d-0c26-1000-b8db-0af502b10000" name="AD_3900:2268251336047723">
+<Expr mdsid="m0000001d-01f4-0000-aa12-c97200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001d-01f4-0000-aa12-c97200000000-mb2d2099e-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d2099e-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd43a-0c26-1000-b8db-0af502b10000" name="Open Mode" isWriteable="false">
+<AttrDefn mdsid="mba7fd46e-0c26-1000-b8db-0af502b10000" name="AD_3900:2268261336047723">
+<Expr mdsid="m0000001e-01f4-0000-8e6b-fc8e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."OPEN_MODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001e-01f4-0000-8e6b-fc8e00000000-mb2d2099f-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d2099f-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd43b-0c26-1000-b8db-0af502b10000" name="Open Resetlogs" isWriteable="false">
+<AttrDefn mdsid="mba7fd46f-0c26-1000-b8db-0af502b10000" name="AD_3900:2268271336047723">
+<Expr mdsid="m0000001f-01f4-0000-19bb-18bc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."OPEN_RESETLOGS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001f-01f4-0000-19bb-18bc00000000-mb2d209a0-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209a0-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd43c-0c26-1000-b8db-0af502b10000" name="Platform Id" isWriteable="false">
+<AttrDefn mdsid="mba7fd470-0c26-1000-b8db-0af502b10000" name="AD_3900:2268281336047723">
+<Expr mdsid="m00000020-01f4-0000-a8e5-688a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."PLATFORM_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000020-01f4-0000-a8e5-688a00000000-mb2d209a1-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209a1-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd43d-0c26-1000-b8db-0af502b10000" name="Platform Name" isWriteable="false">
+<AttrDefn mdsid="mba7fd471-0c26-1000-b8db-0af502b10000" name="AD_3900:2268291336047723">
+<Expr mdsid="m00000021-01f4-0000-1159-d42400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."PLATFORM_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000021-01f4-0000-1159-d42400000000-mb2d209a2-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209a2-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd43e-0c26-1000-b8db-0af502b10000" name="Primary Db Unique Name" isWriteable="false">
+<AttrDefn mdsid="mba7fd472-0c26-1000-b8db-0af502b10000" name="AD_3900:2268301336047723">
+<Expr mdsid="m00000022-01f4-0000-08d1-57e200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."PRIMARY_DB_UNIQUE_NAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000022-01f4-0000-08d1-57e200000000-mb2d209a3-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209a3-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd43f-0c26-1000-b8db-0af502b10000" name="Prior Resetlogs Change#" isWriteable="false">
+<AttrDefn mdsid="mba7fd473-0c26-1000-b8db-0af502b10000" name="AD_3900:2268311336047723">
+<Expr mdsid="m00000023-01f4-0000-603e-41b900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."PRIOR_RESETLOGS_CHANGE#"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000023-01f4-0000-603e-41b900000000-mb2d209a4-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209a4-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd440-0c26-1000-b8db-0af502b10000" name="Prior Resetlogs Time" isWriteable="false">
+<AttrDefn mdsid="mba7fd474-0c26-1000-b8db-0af502b10000" name="AD_3900:2268321336047723">
+<Expr mdsid="m00000024-01f4-0000-8323-39c700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."PRIOR_RESETLOGS_TIME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000024-01f4-0000-8323-39c700000000-mb2d209a5-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209a5-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd441-0c26-1000-b8db-0af502b10000" name="Protection Level" isWriteable="false">
+<AttrDefn mdsid="mba7fd475-0c26-1000-b8db-0af502b10000" name="AD_3900:2268331336047723">
+<Expr mdsid="m00000025-01f4-0000-524c-ac0500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."PROTECTION_LEVEL"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000025-01f4-0000-524c-ac0500000000-mb2d209a6-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209a6-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd442-0c26-1000-b8db-0af502b10000" name="Protection Mode" isWriteable="false">
+<AttrDefn mdsid="mba7fd476-0c26-1000-b8db-0af502b10000" name="AD_3900:2268341336047723">
+<Expr mdsid="m00000026-01f4-0000-68ae-838300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."PROTECTION_MODE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000026-01f4-0000-68ae-838300000000-mb2d209a7-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209a7-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd443-0c26-1000-b8db-0af502b10000" name="Recovery Target Incarnation#" isWriteable="false">
+<AttrDefn mdsid="mba7fd477-0c26-1000-b8db-0af502b10000" name="AD_3900:2268351336047723">
+<Expr mdsid="m00000027-01f4-0000-e332-9be300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."RECOVERY_TARGET_INCARNATION#"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000027-01f4-0000-e332-9be300000000-mb2d209a8-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209a8-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd444-0c26-1000-b8db-0af502b10000" name="Remote Archive" isWriteable="false">
+<AttrDefn mdsid="mba7fd478-0c26-1000-b8db-0af502b10000" name="AD_3900:2268361336047723">
+<Expr mdsid="m00000028-01f4-0000-a003-796900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."REMOTE_ARCHIVE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000028-01f4-0000-a003-796900000000-mb2d209a9-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209a9-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd445-0c26-1000-b8db-0af502b10000" name="Resetlogs Change#" isWriteable="false">
+<AttrDefn mdsid="mba7fd479-0c26-1000-b8db-0af502b10000" name="AD_3900:2268371336047723">
+<Expr mdsid="m00000029-01f4-0000-299e-432f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."RESETLOGS_CHANGE#"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000029-01f4-0000-299e-432f00000000-mb2d209aa-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209aa-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd446-0c26-1000-b8db-0af502b10000" name="Resetlogs Time" isWriteable="false">
+<AttrDefn mdsid="mba7fd47a-0c26-1000-b8db-0af502b10000" name="AD_3900:2268381336047723">
+<Expr mdsid="m0000002a-01f4-0000-1d99-f86200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."RESETLOGS_TIME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002a-01f4-0000-1d99-f86200000000-mb2d209ab-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209ab-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd447-0c26-1000-b8db-0af502b10000" name="Standby Became Primary Scn" isWriteable="false">
+<AttrDefn mdsid="mba7fd47b-0c26-1000-b8db-0af502b10000" name="AD_3900:2268391336047723">
+<Expr mdsid="m0000002b-01f4-0000-5997-39da00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."STANDBY_BECAME_PRIMARY_SCN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002b-01f4-0000-5997-39da00000000-mb2d209ac-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209ac-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd448-0c26-1000-b8db-0af502b10000" name="Supplemental Log Data All" isWriteable="false">
+<AttrDefn mdsid="mba7fd47c-0c26-1000-b8db-0af502b10000" name="AD_3900:2268401336047723">
+<Expr mdsid="m0000002c-01f4-0000-6165-3c1300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."SUPPLEMENTAL_LOG_DATA_ALL"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002c-01f4-0000-6165-3c1300000000-mb2d209ad-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209ad-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd449-0c26-1000-b8db-0af502b10000" name="Supplemental Log Data Fk" isWriteable="false">
+<AttrDefn mdsid="mba7fd47d-0c26-1000-b8db-0af502b10000" name="AD_3900:2268411336047723">
+<Expr mdsid="m0000002d-01f4-0000-d937-10ca00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."SUPPLEMENTAL_LOG_DATA_FK"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002d-01f4-0000-d937-10ca00000000-mb2d209ae-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209ae-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd44a-0c26-1000-b8db-0af502b10000" name="Supplemental Log Data Min" isWriteable="false">
+<AttrDefn mdsid="mba7fd47e-0c26-1000-b8db-0af502b10000" name="AD_3900:2268421336047723">
+<Expr mdsid="m0000002e-01f4-0000-ff07-7a3600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."SUPPLEMENTAL_LOG_DATA_MIN"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002e-01f4-0000-ff07-7a3600000000-mb2d209af-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209af-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd44b-0c26-1000-b8db-0af502b10000" name="Supplemental Log Data Pk" isWriteable="false">
+<AttrDefn mdsid="mba7fd47f-0c26-1000-b8db-0af502b10000" name="AD_3900:2268431336047723">
+<Expr mdsid="m0000002f-01f4-0000-7009-8ce900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."SUPPLEMENTAL_LOG_DATA_PK"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000002f-01f4-0000-7009-8ce900000000-mb2d209b0-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209b0-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd44c-0c26-1000-b8db-0af502b10000" name="Supplemental Log Data Pl" isWriteable="false">
+<AttrDefn mdsid="mba7fd480-0c26-1000-b8db-0af502b10000" name="AD_3900:2268441336047723">
+<Expr mdsid="m00000030-01f4-0000-f332-bae900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."SUPPLEMENTAL_LOG_DATA_PL"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000030-01f4-0000-f332-bae900000000-mb2d209b1-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209b1-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd44d-0c26-1000-b8db-0af502b10000" name="Supplemental Log Data Ui" isWriteable="false">
+<AttrDefn mdsid="mba7fd481-0c26-1000-b8db-0af502b10000" name="AD_3900:2268451336047723">
+<Expr mdsid="m00000031-01f4-0000-273b-013200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."SUPPLEMENTAL_LOG_DATA_UI"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000031-01f4-0000-273b-013200000000-mb2d209b2-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209b2-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd44e-0c26-1000-b8db-0af502b10000" name="Switchover#" isWriteable="false">
+<AttrDefn mdsid="mba7fd482-0c26-1000-b8db-0af502b10000" name="AD_3900:2268461336047723">
+<Expr mdsid="m00000032-01f4-0000-3f2f-c05500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."SWITCHOVER#"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000032-01f4-0000-3f2f-c05500000000-mb2d209b3-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209b3-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd44f-0c26-1000-b8db-0af502b10000" name="Switchover Status" isWriteable="false">
+<AttrDefn mdsid="mba7fd483-0c26-1000-b8db-0af502b10000" name="AD_3900:2268471336047723">
+<Expr mdsid="m00000033-01f4-0000-f581-2da200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."SWITCHOVER_STATUS"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000033-01f4-0000-f581-2da200000000-mb2d209b4-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209b4-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mba7fd450-0c26-1000-b8db-0af502b10000" name="Version Time" isWriteable="false">
+<AttrDefn mdsid="mba7fd484-0c26-1000-b8db-0af502b10000" name="AD_3900:2268481336047723">
+<Expr mdsid="m00000034-01f4-0000-594d-130d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."V$DATABASE"."VERSION_TIME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000034-01f4-0000-594d-130d00000000-mb2d209b5-0c26-1000-a95b-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/b2d20981-0c26-1000-a95b-0af502b10000.xml#mb2d209b5-0c26-1000-a95b-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="mbb5af170-0c26-1000-b8db-0af502b10000" name="Primary" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="mbb5af170-0c26-1000-b8db-0af502b10000-mba7fd42d-0c26-1000-b8db-0af502b10000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/ba7fd41a-0c26-1000-b8db-0af502b10000.xml#mba7fd42d-0c26-1000-b8db-0af502b10000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="mba7fd41a-0c26-1000-b8db-0af502b10000-mba7fd41c-0c26-1000-b8db-0af502b10000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/ba7fd41c-0c26-1000-b8db-0af502b10000.xml#mba7fd41c-0c26-1000-b8db-0af502b10000"/>
+</RefTableSources>
+</LogicalTable>

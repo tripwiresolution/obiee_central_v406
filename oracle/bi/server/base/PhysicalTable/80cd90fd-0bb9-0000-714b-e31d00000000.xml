@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cd90fd-0bb9-0000-714b-e31d00000000" name="D59 Sales Rep (Mgr Name)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" pollFreq="0" x="1231" y="376" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cd8dda-0bd3-0000-714b-e31d00000000.xml#m80cd8dda-0bd3-0000-714b-e31d00000000" sourceTableRef="/oracle/bi/server/base/PhysicalTable/80cd8e16-0bb9-0000-714b-e31d00000000.xml#m80cd8e16-0bb9-0000-714b-e31d00000000">
+<Description><![CDATA[ZZZ - Not yet filled]]></Description>
+<PhysicalColumn mdsid="m80cd90fe-0bbb-0000-714b-e31d00000000" name="Mgr_Id" dataType="INT" nullable="true" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e16-0bb9-0000-714b-e31d00000000.xml#m80cd8e17-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Manager Id: Stores manager id as an integer]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd90ff-0bbb-0000-714b-e31d00000000" name="Empl_Name" dataType="VARCHAR" precision="50" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e16-0bb9-0000-714b-e31d00000000.xml#m80cd8e18-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Employee Name: Stores employee name as a text]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd9100-0bbb-0000-714b-e31d00000000" name="Employee_Key" dataType="INT" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e16-0bb9-0000-714b-e31d00000000.xml#m80cd8e19-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Employee Key: Surrogate key of the employee dimension table.]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd9101-0bbb-0000-714b-e31d00000000" name="Postn_Key" dataType="DOUBLE" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e16-0bb9-0000-714b-e31d00000000.xml#m80cd8e1a-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Position Key: Joins to Postn_key in employee position dimension table]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd9102-0bbb-0000-714b-e31d00000000" name="Hire_Dt" dataType="DATETIME" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e16-0bb9-0000-714b-e31d00000000.xml#m80cd8e1b-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Hire Date: Stores employee hire date information in date format]]></Description>
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cd9103-0bbb-0000-714b-e31d00000000" name="Type" dataType="VARCHAR" precision="20" specialType="none" sourceColumnRef="/oracle/bi/server/base/PhysicalTable/80cd8e16-0bb9-0000-714b-e31d00000000.xml#m80cd8e1c-0bbb-0000-714b-e31d00000000">
+<Description><![CDATA[Type: Stores employee type information as text]]></Description>
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cd922d-0bc0-0000-714b-e31d00000000" name="A061 Employee (Parent-Child)_Key">
+<RefColumns>
+<RefColumn refId="m80cd922d-0bc0-0000-714b-e31d00000000-m80cd9100-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cd90fd-0bb9-0000-714b-e31d00000000.xml#m80cd9100-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="m80cd922e-0bc0-0000-714b-e31d00000000" name="D30 Sales Rep (Parent Child Hierarchy)_Key">
+<RefColumns>
+<RefColumn refId="m80cd922e-0bc0-0000-714b-e31d00000000-m80cd90fe-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cd90fd-0bb9-0000-714b-e31d00000000.xml#m80cd90fe-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

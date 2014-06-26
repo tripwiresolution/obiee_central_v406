@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<InitBlock mdsid="m80cdc1bc-0bd9-0000-714b-e31d00000000" name="Verify DUAL ORCL DSN" iconIndex="89" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" isSessionVar="true" refreshPeriod="86400" connectionPoolRef="/oracle/bi/server/base/ConnectionPool/80cb28c8-0bd5-0000-714b-e31d00000000.xml#m80cb28c8-0bd5-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[SELECT '(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=VALUEOF(DB_HOST))(PORT=VALUEOF(DB_PORT))))(CONNECT_DATA=(SERVICE_NAME=VALUEOF(DB_SID))))'
+FROM DUAL
+]]></Value>
+</DBMapItem>
+<RefVariables>
+<RefVariable refId="m80cdc1bc-0bd9-0000-714b-e31d00000000-m80cdc1ba-0bd7-0000-714b-e31d00000000" variableRef="/oracle/bi/server/base/Variable/80cdc1ba-0bd7-0000-714b-e31d00000000.xml#m80cdc1ba-0bd7-0000-714b-e31d00000000"/>
+</RefVariables>
+<InitString><![CDATA[SELECT '(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=VALUEOF(DB_HOST))(PORT=VALUEOF(DB_PORT))))(CONNECT_DATA=(SERVICE_NAME=VALUEOF(DB_SID))))'
+FROM DUAL
+]]></InitString>
+</InitBlock>

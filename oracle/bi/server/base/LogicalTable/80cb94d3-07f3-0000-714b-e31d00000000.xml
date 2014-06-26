@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cb94d3-07f3-0000-714b-e31d00000000" name="F0 Revenue Base Measures" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="855" y="224" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cb9462-07d0-0000-714b-e31d00000000.xml#m80cb9462-07d0-0000-714b-e31d00000000">
+<Description><![CDATA[This logical table contains metrics like Revenue, Billed Qty, Booked Amt and Booked Qty with different types of aggregation like Sum, First on Time , Last on Time and Count Distinct. 
+All the metrics in this table are physically mapped to columns in the Revenue fact table.
+]]></Description>
+<LogicalColumn mdsid="m80cb94d5-07d6-0000-714b-e31d00000000" name="1a- Revenue (Orcl Db Tables Only)" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+<MeasureDefn mdsid="m80cb95cc-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdb7f1-0802-0000-714b-e31d00000000" name="AggRule_2050:1782021292432545" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-eb15-1f3800000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("06 - Federated Sources"."F0 Revenue Base Measures"."1a- Revenue (Orcl Db Tables Only)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-eb15-1f3800000000-m80cb94d5-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cb94d5-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cb9719-0f3c-0000-714b-e31d00000000" name="AD_3900:543851271159864">
+<Expr mdsid="m00000002-01f4-0000-18ea-f0dc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F10 Billed Rev"."Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-18ea-f0dc00000000-m80cb6a0b-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb683a-0bb9-0000-714b-e31d00000000.xml#m80cb6a0b-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdb629-07d6-0000-714b-e31d00000000" name="1b- Revenue (Essbase Cube Only)" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+<MeasureDefn mdsid="m80cdb62a-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdb70b-0802-0000-714b-e31d00000000" name="AggRule_2050:1780301292412464" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-e67a-d9d700000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("06 - Federated Sources"."F0 Revenue Base Measures"."1b- Revenue (Essbase Cube Only)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-e67a-d9d700000000-m80cdb629-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb629-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdb62c-0f3c-0000-714b-e31d00000000" name="AD_3900:1778071292336688">
+<Expr mdsid="m00000004-01f4-0000-a24d-870b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["03 - Essbase Sample E1 Flat"."BISAMPLE Flat".""."Sample Flattened"."Gross Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-a24d-870b00000000-m80cc0cdb-0be3-0000-714b-e31d00000000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/80cb9c63-0bdf-0000-714b-e31d00000000.xml#m80cc0cdb-0be3-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdb631-07d6-0000-714b-e31d00000000" name="1c- Revenue (TimesTen Only)" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+<MeasureDefn mdsid="m80cdb632-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdb684-0802-0000-714b-e31d00000000" name="AggRule_2050:1778951292336904" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-0619-4f5b00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("06 - Federated Sources"."F0 Revenue Base Measures"."1c- Revenue (TimesTen Only)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-0619-4f5b00000000-m80cdb631-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb631-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdb634-0f3c-0000-714b-e31d00000000" name="AD_3900:1778151292336688">
+<Expr mdsid="m00000006-01f4-0000-7f51-087d00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."F10 Billed Rev."."Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-7f51-087d00000000-m80cd8fc9-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd8fc6-0bb9-0000-714b-e31d00000000.xml#m80cd8fc9-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdb639-07d6-0000-714b-e31d00000000" name="1d- Revenue (Orcl Db Cube Only)" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+<MeasureDefn mdsid="m80cdb63a-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdb685-0802-0000-714b-e31d00000000" name="AggRule_2050:1778961292336904" isDefault="true">
+<Expr mdsid="m00000007-01f4-0000-c7ac-32e600000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("06 - Federated Sources"."F0 Revenue Base Measures"."1d- Revenue (Orcl Db Cube Only)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-c7ac-32e600000000-m80cdb639-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb639-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdb63c-0f3c-0000-714b-e31d00000000" name="AD_3900:1778231292336688">
+<Expr mdsid="m00000008-01f4-0000-8799-cc2e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["04 - Sample OLAP AW"."BISAMPLE"."OLAPSAMPLE"."Revenue Cube"."Gross Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-8799-cc2e00000000-m80cd5b2b-0bf4-0000-714b-e31d00000000" objectTypeId="3060" objectRef="/oracle/bi/server/base/AWCube/80cd5af0-0bee-0000-714b-e31d00000000.xml#m80cd5b2b-0bf4-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdb83d-07d6-0000-714b-e31d00000000" name="1f- Revenue (XML File Only)" isWriteable="false">
+<MeasureDefn mdsid="m80cdb844-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdb845-0802-0000-714b-e31d00000000" name="AggRule_2050:1782851293012222" isDefault="true">
+<Expr mdsid="m00000009-01f4-0000-71af-117500000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("06 - Federated Sources"."F0 Revenue Base Measures"."1f- Revenue (XML File Only)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-71af-117500000000-m80cdb83d-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb83d-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdb83e-0f3c-0000-714b-e31d00000000" name="AD_3900:1782781293012189">
+<Expr mdsid="m0000000a-01f4-0000-a28e-9abb00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["08 - Sample App Xml Target Data"."".""."F10 Billed Rev. Aggregate (XML Source)"."Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-a28e-9abb00000000-m80cdb8b1-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdb8b0-0bb9-0000-714b-e31d00000000.xml#m80cdb8b1-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb94d4-07d6-0000-714b-e31d00000000" name="==== Federated Metrics ========" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m0000000b-01f4-0000-d39f-da3400000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m80cb9718-0f3c-0000-714b-e31d00000000" name="AD_3900:543841271159864">
+<Expr mdsid="m0000000c-01f4-0000-ae11-135e00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdb751-07d6-0000-714b-e31d00000000" name="2a- Qty (Orcl Db Tables Only)" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+<MeasureDefn mdsid="m80cdb752-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdb7ad-0802-0000-714b-e31d00000000" name="AggRule_2050:1781921292414869" isDefault="true">
+<Expr mdsid="m0000000d-01f4-0000-25fb-9c0d00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("06 - Federated Sources"."F0 Revenue Base Measures"."2a- Qty (Orcl Db Tables Only)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-25fb-9c0d00000000-m80cdb751-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb751-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdb754-0f3c-0000-714b-e31d00000000" name="AD_3900:1781031292413747">
+<Expr mdsid="m0000000e-01f4-0000-c796-906a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F10 Billed Rev"."Units"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-c796-906a00000000-m80cb6a12-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb683a-0bb9-0000-714b-e31d00000000.xml#m80cb6a12-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdb71e-07d6-0000-714b-e31d00000000" name="2b- Qty (Essbase Cube Federated)" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+<MeasureDefn mdsid="m80cdb71f-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdb720-0802-0000-714b-e31d00000000" name="AggRule_2050:1780511292413747" isDefault="true">
+<Expr mdsid="m0000000f-01f4-0000-e41f-c43a00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("06 - Federated Sources"."F0 Revenue Base Measures"."2b- Qty (Essbase Cube Federated)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-e41f-c43a00000000-m80cdb71e-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb71e-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdb721-0f3c-0000-714b-e31d00000000" name="AD_3900:1780521292413747">
+<Expr mdsid="m00000010-01f4-0000-b072-12e300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["08 - Sample App Xml Target Data"."".""."F10 Billed Rev. Aggregate (XML Source)"."Units"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-b072-12e300000000-m80cdb8b3-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdb8b0-0bb9-0000-714b-e31d00000000.xml#m80cdb8b3-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdb726-07d6-0000-714b-e31d00000000" name="2c- Qty (TimesTen Federated)" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+<MeasureDefn mdsid="m80cdb727-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdbf46-0802-0000-714b-e31d00000000" name="AggRule_2050:1803181293031324" isDefault="true">
+<Expr mdsid="m00000011-01f4-0000-1125-942900000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("06 - Federated Sources"."F0 Revenue Base Measures"."2c- Qty (TimesTen Federated)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-1125-942900000000-m80cdb726-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb726-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdb729-0f3c-0000-714b-e31d00000000" name="AD_3900:1780601292413747">
+<Expr mdsid="m00000012-01f4-0000-9066-07c200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["08 - Sample App Xml Target Data"."".""."F10 Billed Rev. Aggregate (XML Source)"."Units"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-9066-07c200000000-m80cdb8b3-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdb8b0-0bb9-0000-714b-e31d00000000.xml#m80cdb8b3-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdb72e-07d6-0000-714b-e31d00000000" name="2d- Qty (Orcl Db Cubes Federated)" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+<MeasureDefn mdsid="m80cdb72f-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdb730-0802-0000-714b-e31d00000000" name="AggRule_2050:1780671292413747" isDefault="true">
+<Expr mdsid="m00000013-01f4-0000-3503-6a7600000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("06 - Federated Sources"."F0 Revenue Base Measures"."2d- Qty (Orcl Db Cubes Federated)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-3503-6a7600000000-m80cdb72e-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb72e-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdb731-0f3c-0000-714b-e31d00000000" name="AD_3900:1780681292413747">
+<Expr mdsid="m00000014-01f4-0000-8d94-0c7000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["08 - Sample App Xml Target Data"."".""."F10 Billed Rev. Aggregate (XML Source)"."Units"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-8d94-0c7000000000-m80cdb8b3-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdb8b0-0bb9-0000-714b-e31d00000000.xml#m80cdb8b3-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdb8cd-07d6-0000-714b-e31d00000000" name="2f- Qty (XML File Federated)" isWriteable="false">
+<MeasureDefn mdsid="m80cdb8cf-0800-0000-714b-e31d00000000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m80cdbf44-0802-0000-714b-e31d00000000" name="AggRule_2050:1803161293030585" isDefault="true">
+<Expr mdsid="m00000015-01f4-0000-0b6d-0e2a00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("06 - Federated Sources"."F0 Revenue Base Measures"."2f- Qty (XML File Federated)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-0b6d-0e2a00000000-m80cdb8cd-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb8cd-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m80cdb8ce-0f3c-0000-714b-e31d00000000" name="AD_3900:1784221293025196">
+<Expr mdsid="m00000016-01f4-0000-537d-0d9600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["08 - Sample App Xml Target Data"."".""."F10 Billed Rev. Aggregate (XML Source)"."Units"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-537d-0d9600000000-m80cdb8b3-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdb8b0-0bb9-0000-714b-e31d00000000.xml#m80cdb8b3-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdb7a8-07d6-0000-714b-e31d00000000" name="==== Calculated Metrics ========" iconIndex="86" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Header object, dummy not to be used in any queries]]></Description>
+<Expr mdsid="m00000017-01f4-0000-4224-13d300000000" name="Expr">
+<ExprText><![CDATA[1]]></ExprText>
+<ExprTextDesc><![CDATA[1]]></ExprTextDesc>
+</Expr>
+<AttrDefn mdsid="m80cdb7a9-0f3c-0000-714b-e31d00000000" name="AD_3900:1781881292414418">
+<Expr mdsid="m00000018-01f4-0000-cab5-bf5c00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdb787-07d6-0000-714b-e31d00000000" name="20a - Unit Price (Orcl Db/Orcl Db)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+<Expr mdsid="m00000019-01f4-0000-7e80-7e5600000000" name="Expr">
+<ExprText><![CDATA[cast(
+"%1" 
+
+as double)/
+ "%2" 
+
+]]></ExprText>
+<ExprTextDesc><![CDATA[cast(
+"06 - Federated Sources"."F0 Revenue Base Measures"."1a- Revenue (Orcl Db Tables Only)" 
+
+as double)/
+ "06 - Federated Sources"."F0 Revenue Base Measures"."2a- Qty (Orcl Db Tables Only)" 
+
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000019-01f4-0000-7e80-7e5600000000-m80cb94d5-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cb94d5-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000019-01f4-0000-7e80-7e5600000000-m80cdb751-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb751-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cdb78a-0f3c-0000-714b-e31d00000000" name="AD_3900:1781571292414418">
+<Expr mdsid="m0000001a-01f4-0000-22bf-f8b400000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdb7f4-07d6-0000-714b-e31d00000000" name="20b - Unit Price (Essb Cube/Orcl Db)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+<Expr mdsid="m0000001b-01f4-0000-1cad-056000000000" name="Expr">
+<ExprText><![CDATA[cast(
+"%1" 
+as double)/
+ "%2" 
+]]></ExprText>
+<ExprTextDesc><![CDATA[cast(
+"06 - Federated Sources"."F0 Revenue Base Measures"."1b- Revenue (Essbase Cube Only)" 
+as double)/
+ "06 - Federated Sources"."F0 Revenue Base Measures"."2a- Qty (Orcl Db Tables Only)" 
+]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001b-01f4-0000-1cad-056000000000-m80cdb629-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb629-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m0000001b-01f4-0000-1cad-056000000000-m80cdb751-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb751-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cdb7f5-0f3c-0000-714b-e31d00000000" name="AD_3900:1782061292433245">
+<Expr mdsid="m0000001c-01f4-0000-9718-609000000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdbf4a-07d6-0000-714b-e31d00000000" name="20c - Unit Price (TimesTen/Orcl Db)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+<Expr mdsid="m0000001d-01f4-0000-ae64-032100000000" name="Expr">
+<ExprText><![CDATA[cast(
+"%1" 
+as double)/
+ "%2" ]]></ExprText>
+<ExprTextDesc><![CDATA[cast(
+"06 - Federated Sources"."F0 Revenue Base Measures"."1c- Revenue (TimesTen Only)" 
+as double)/
+ "06 - Federated Sources"."F0 Revenue Base Measures"."2a- Qty (Orcl Db Tables Only)" ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001d-01f4-0000-ae64-032100000000-m80cdb631-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb631-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m0000001d-01f4-0000-ae64-032100000000-m80cdb751-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb751-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cdbf4b-0f3c-0000-714b-e31d00000000" name="AD_3900:1803231293038565">
+<Expr mdsid="m0000001e-01f4-0000-0f61-210500000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdb7f8-07d6-0000-714b-e31d00000000" name="20d - Unit Price (Orcl Cube/Orcl Db)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+<Expr mdsid="m0000001f-01f4-0000-a363-03c500000000" name="Expr">
+<ExprText><![CDATA[cast(
+"%1" 
+as double)/
+ "%2" ]]></ExprText>
+<ExprTextDesc><![CDATA[cast(
+"06 - Federated Sources"."F0 Revenue Base Measures"."1d- Revenue (Orcl Db Cube Only)" 
+as double)/
+ "06 - Federated Sources"."F0 Revenue Base Measures"."2a- Qty (Orcl Db Tables Only)" ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001f-01f4-0000-a363-03c500000000-m80cdb639-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb639-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m0000001f-01f4-0000-a363-03c500000000-m80cdb751-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb751-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cdb7f9-0f3c-0000-714b-e31d00000000" name="AD_3900:1782101292433245">
+<Expr mdsid="m00000020-01f4-0000-66c1-659a00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cdb8d3-07d6-0000-714b-e31d00000000" name="20f - Unit Price (XML File/Orcl Db)" isDerived="true" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+<Expr mdsid="m00000021-01f4-0000-e624-269200000000" name="Expr">
+<ExprText><![CDATA[cast(
+"%1"  
+as double)/
+ "%2" ]]></ExprText>
+<ExprTextDesc><![CDATA[cast(
+"06 - Federated Sources"."F0 Revenue Base Measures"."1f- Revenue (XML File Only)"  
+as double)/
+ "06 - Federated Sources"."F0 Revenue Base Measures"."2a- Qty (Orcl Db Tables Only)" ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000021-01f4-0000-e624-269200000000-m80cdb83d-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb83d-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000021-01f4-0000-e624-269200000000-m80cdb751-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m80cdb751-07d6-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+<AttrDefn mdsid="m80cdb8d4-0f3c-0000-714b-e31d00000000" name="AD_3900:1784281293025196">
+<Expr mdsid="m00000022-01f4-0000-0b17-d4ee00000000" name="Expr">
+<ExprText></ExprText>
+<ExprTextDesc></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m4a7cd8b4-0c21-1000-b709-0af502b10000" name="Source Database Info" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+<MeasureDefn mdsid="m4a7cd8b5-0c21-1000-b709-0af502b10000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m4a7e5f50-0c21-1000-b709-0af502b10000" name="AggRule_2050:2026951333712493" isDefault="true">
+<Expr mdsid="m00000023-01f4-0000-d5ac-d73100000000" name="Expr">
+<ExprText><![CDATA[ MAX("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ MAX("06 - Federated Sources"."F0 Revenue Base Measures"."Source Database Info")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000023-01f4-0000-d5ac-d73100000000-m4a7cd8b4-0c21-1000-b709-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb94d3-07f3-0000-714b-e31d00000000.xml#m4a7cd8b4-0c21-1000-b709-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m4a7cd8b7-0c21-1000-b709-0af502b10000" name="AD_3900:2026921333712315">
+<Expr mdsid="m00000024-01f4-0000-0cb6-caf400000000" name="Expr">
+<ExprText><![CDATA['TimesTen Database']]></ExprText>
+<ExprTextDesc><![CDATA['TimesTen Database']]></ExprTextDesc>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cb94d3-07f3-0000-714b-e31d00000000-m80cdb70d-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cdb70d-07f5-0000-714b-e31d00000000.xml#m80cdb70d-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cb94d3-07f3-0000-714b-e31d00000000-m80cb9998-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cb9998-07f5-0000-714b-e31d00000000.xml#m80cb9998-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cb94d3-07f3-0000-714b-e31d00000000-m80cdb621-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cdb621-07f5-0000-714b-e31d00000000.xml#m80cdb621-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cb94d3-07f3-0000-714b-e31d00000000-m80cdb70a-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cdb70a-07f5-0000-714b-e31d00000000.xml#m80cdb70a-07f5-0000-714b-e31d00000000"/>
+<RefLogicalTableSource refId="m80cb94d3-07f3-0000-714b-e31d00000000-m80cdb8ca-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cdb8ca-07f5-0000-714b-e31d00000000.xml#m80cdb8ca-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

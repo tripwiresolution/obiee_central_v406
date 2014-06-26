@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80cc4614-0bb9-0000-714b-e31d00000000" name="Instance_Error" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" x="184" y="482" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cc4612-0bd3-0000-714b-e31d00000000.xml#m80cc4612-0bd3-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[select
+JOB_ID ,
+INSTANCE_ID,
+replace(
+replace(
+replace(
+replace(
+max( decode( val_number, 1 , ERROR_MSG_TEXT, null ) ) ||
+max( decode( val_number, 2 , ERROR_MSG_TEXT, null ) ) ||
+max( decode( val_number, 3 , ERROR_MSG_TEXT, null ) ) ||
+max( decode( val_number, 4 , ERROR_MSG_TEXT, null ) ) ||
+max( decode( val_number, 5 , ERROR_MSG_TEXT, null ) ) ||
+max( decode( val_number, 6 , ERROR_MSG_TEXT, null ) ) ||
+max( decode( val_number, 8 , ERROR_MSG_TEXT, null ) ) ||
+max( decode( val_number, 9 , ERROR_MSG_TEXT, null ) ) ||
+max( decode( val_number, 10 , ERROR_MSG_TEXT, null ) ),
+'$_\s_$',' '),
+'$_\r_$',' '),
+'$_\n_$',' '),
+'$_\,$',',') AS ERROR_MSG
+from
+( select
+JOB_ID,
+INSTANCE_ID,
+row_number() over ( partition by JOB_ID, INSTANCE_ID
+order by RELATIVE_ORDER ) as val_number ,
+ERROR_MSG_TEXT
+from S_NQ_ERR_MSG
+) ta
+GROUP BY JOB_ID, INSTANCE_ID]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m80cc4620-0bbb-0000-714b-e31d00000000" name="ERROR_MSG" dataType="VARCHAR" precision="5000" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4621-0bbb-0000-714b-e31d00000000" name="INSTANCE_ID" dataType="UINT" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80cc4622-0bbb-0000-714b-e31d00000000" name="JOB_ID" dataType="UINT" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80cc4627-0bc0-0000-714b-e31d00000000" name="KEY">
+<RefColumns>
+<RefColumn refId="m80cc4627-0bc0-0000-714b-e31d00000000-m80cc4621-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc4614-0bb9-0000-714b-e31d00000000.xml#m80cc4621-0bbb-0000-714b-e31d00000000"/>
+<RefColumn refId="m80cc4627-0bc0-0000-714b-e31d00000000-m80cc4622-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80cc4614-0bb9-0000-714b-e31d00000000.xml#m80cc4622-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

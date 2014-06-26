@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="mb2d231e2-0c26-1000-a95b-0af502b10000" name="V$SYSMETRIC_SUMMARY" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/78682d26-0c20-1000-b5b8-0af502b10000.xml#m78682d26-0c20-1000-b5b8-0af502b10000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[V$SYSMETRIC_SUMMARY]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="mb2d231e3-0c26-1000-a95b-0af502b10000" name="AVERAGE" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb2d231e4-0c26-1000-a95b-0af502b10000" name="BEGIN_TIME" dataType="DATETIME" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb2d231e5-0c26-1000-a95b-0af502b10000" name="END_TIME" dataType="DATETIME" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb2d231e6-0c26-1000-a95b-0af502b10000" name="GROUP_ID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb2d231e7-0c26-1000-a95b-0af502b10000" name="INTSIZE_CSEC" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb2d231e8-0c26-1000-a95b-0af502b10000" name="MAXVAL" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb2d231e9-0c26-1000-a95b-0af502b10000" name="METRIC_ID" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb2d231ea-0c26-1000-a95b-0af502b10000" name="METRIC_NAME" dataType="VARCHAR" precision="64" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb2d231eb-0c26-1000-a95b-0af502b10000" name="METRIC_UNIT" dataType="VARCHAR" precision="64" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb2d231ec-0c26-1000-a95b-0af502b10000" name="MINVAL" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb2d231ed-0c26-1000-a95b-0af502b10000" name="NUM_INTERVAL" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="mb2d231ee-0c26-1000-a95b-0af502b10000" name="STANDARD_DEVIATION" dataType="DOUBLE" precision="15" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalForeignKey mdsid="mbb39add0-0c26-1000-b8db-0af502b10000" name="V_$SYSMETRIC_SUMMARY_Foreign Key" counterPartKeyRef="/oracle/bi/server/base/PhysicalTable/b2d231d0-0c26-1000-a95b-0af502b10000.xml#mbb395fb0-0c26-1000-b8db-0af502b10000">
+<RefColumns>
+<RefColumn refId="mbb39add0-0c26-1000-b8db-0af502b10000-mb2d231e9-0c26-1000-a95b-0af502b10000" columnRef="/oracle/bi/server/base/PhysicalTable/b2d231e2-0c26-1000-a95b-0af502b10000.xml#mb2d231e9-0c26-1000-a95b-0af502b10000"/>
+</RefColumns>
+</PhysicalForeignKey>
+</PhysicalTable>

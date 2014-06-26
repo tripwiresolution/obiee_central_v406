@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="mb9de3cac-0c26-1000-b8db-0af502b10000" name="OBJ- ALL_USERS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/b397a370-0c26-1000-a95b-0af502b10000.xml#mb397a370-0c26-1000-a95b-0af502b10000">
+<LogicalColumn mdsid="mb9de3caf-0c26-1000-b8db-0af502b10000" name="Created" isWriteable="false">
+<AttrDefn mdsid="mb9de3cb2-0c26-1000-b8db-0af502b10000" name="AD_3900:2264621336046664">
+<Expr mdsid="m00000001-01f4-0000-2dde-0d7300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."ALL_USERS"."CREATED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-2dde-0d7300000000-m8ea3f485-0c26-1000-9bbc-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8ea3f484-0c26-1000-9bbc-0af502b10000.xml#m8ea3f485-0c26-1000-9bbc-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb9de3cb0-0c26-1000-b8db-0af502b10000" name="Owner" isWriteable="false">
+<AttrDefn mdsid="mb9de3cb3-0c26-1000-b8db-0af502b10000" name="AD_3900:2264631336046664">
+<Expr mdsid="m00000002-01f4-0000-2718-acbd00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."ALL_USERS"."USERNAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-2718-acbd00000000-m8ea3f486-0c26-1000-9bbc-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8ea3f484-0c26-1000-9bbc-0af502b10000.xml#m8ea3f486-0c26-1000-9bbc-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb9de3cb1-0c26-1000-b8db-0af502b10000" name="User Id" isWriteable="false">
+<AttrDefn mdsid="mb9de3cb4-0c26-1000-b8db-0af502b10000" name="AD_3900:2264641336046664">
+<Expr mdsid="m00000003-01f4-0000-785d-93b100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."ALL_USERS"."USER_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-785d-93b100000000-m8ea3f487-0c26-1000-9bbc-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8ea3f484-0c26-1000-9bbc-0af502b10000.xml#m8ea3f487-0c26-1000-9bbc-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="mb9e393b2-0c26-1000-b8db-0af502b10000" name="# Of Users" isWriteable="false">
+<MeasureDefn mdsid="mb9ed0990-0c26-1000-b8db-0af502b10000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mb9ed0992-0c26-1000-b8db-0af502b10000" name="AggRule_2050:2265041336046761" isDefault="true">
+<Expr mdsid="m00000004-01f4-0000-0c19-559100000000" name="Expr">
+<ExprText><![CDATA[ COUNT(DISTINCT "%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ COUNT(DISTINCT "X1 - Db Structure"."OBJ- ALL_USERS"."# Of Users")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-0c19-559100000000-mb9e393b2-0c26-1000-b8db-0af502b10000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/b9de3cac-0c26-1000-b8db-0af502b10000.xml#mb9e393b2-0c26-1000-b8db-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="mb9e393b3-0c26-1000-b8db-0af502b10000" name="AD_3900:2265011336046699">
+<Expr mdsid="m00000005-01f4-0000-1633-725a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["X1 - ORCL Database Admin".""."SYS"."ALL_USERS"."USERNAME"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-1633-725a00000000-m8ea3f486-0c26-1000-9bbc-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/8ea3f484-0c26-1000-9bbc-0af502b10000.xml#m8ea3f486-0c26-1000-9bbc-0af502b10000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="mb9de3cac-0c26-1000-b8db-0af502b10000-mb9de3cae-0c26-1000-b8db-0af502b10000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/b9de3cae-0c26-1000-b8db-0af502b10000.xml#mb9de3cae-0c26-1000-b8db-0af502b10000"/>
+</RefTableSources>
+</LogicalTable>

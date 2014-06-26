@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m64a35e80-0c5d-1000-b780-7f0000010000" name="ORE_SCRIPTS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Database/ac71f401-0c31-1000-8edd-0af0613a0000.xml#mac71f401-0c31-1000-8edd-0af0613a0000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[select name, script from sys.rq$script]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m64ad4990-0c5d-1000-b780-7f0000010000" name="NAME" dataType="VARCHAR" precision="128" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m64af1e50-0c5d-1000-b780-7f0000010000" name="SCRIPT" dataType="VARCHAR" precision="4000" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m64b2c7d0-0c5d-1000-b780-7f0000010000" name="Name">
+<RefColumns>
+<RefColumn refId="m64b2c7d0-0c5d-1000-b780-7f0000010000-m64ad4990-0c5d-1000-b780-7f0000010000" columnRef="/oracle/bi/server/base/PhysicalTable/64a35e80-0c5d-1000-b780-7f0000010000.xml#m64ad4990-0c5d-1000-b780-7f0000010000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

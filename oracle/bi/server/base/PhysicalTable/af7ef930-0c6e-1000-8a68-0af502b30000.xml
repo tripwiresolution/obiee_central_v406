@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="maf7ef930-0c6e-1000-8a68-0af502b30000" name="WS_GET_DOLLARVALUE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="select" isCacheable="false" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[select TO_NUMBER(SYS.WS_GET_DOLLARVALUE( 'VALUEOF(NQ_SESSION.WS_CURRENCY)', 'AVERAGE', 'VALUEOF(NQ_SESSION.WS_PROXY)')) DollarValue from dual
+]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="maf7ef931-0c6e-1000-8a68-0af502b30000" name="DollarValue" dataType="DOUBLE" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="maf7ef933-0c6e-1000-8a68-0af502b30000" name="id">
+<RefColumns>
+<RefColumn refId="maf7ef933-0c6e-1000-8a68-0af502b30000-maf7ef931-0c6e-1000-8a68-0af502b30000" columnRef="/oracle/bi/server/base/PhysicalTable/af7ef930-0c6e-1000-8a68-0af502b30000.xml#maf7ef931-0c6e-1000-8a68-0af502b30000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

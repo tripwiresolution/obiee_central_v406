@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cd9416-07f3-0000-714b-e31d00000000" name="D2 Products (Ragged SkipLevels Hier)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="1504" y="618" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cd92c7-07d0-0000-714b-e31d00000000.xml#m80cd92c7-07d0-0000-714b-e31d00000000">
+<Description><![CDATA[This logical table maps to the physical Products Ragged Dimension table which stores ragged and skipped level product data.
+It is mapped to 1 LTS
+LTS1 Products - Maps the physical Product Ragged table. There are a few entries in the table where some of the levels are null or some levels have been skipped.
+]]></Description>
+<LogicalColumn mdsid="m80cd9417-07d6-0000-714b-e31d00000000" name="P10  Product Number (Rgd Sk Lvl)" isWriteable="false">
+<Description><![CDATA[Help : 
+Product Key is an integer that uniquely identifies each record in the Product dimension table.]]></Description>
+<AttrDefn mdsid="m80cd96b2-0f3c-0000-714b-e31d00000000" name="AD_3900:1705721292245695">
+<Expr mdsid="m00000001-01f4-0000-94f3-0d6000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."D20 Product (Ragged Hier)"."Prod_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-94f3-0d6000000000-m80cd8f38-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd8f34-0bb9-0000-714b-e31d00000000.xml#m80cd8f38-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd9418-07d6-0000-714b-e31d00000000" name="P11  Product (Rgd Sk Lvl)" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the product description.]]></Description>
+<AttrDefn mdsid="m80cd96b3-0f3c-0000-714b-e31d00000000" name="AD_3900:1705731292245695">
+<Expr mdsid="m00000002-01f4-0000-b0ce-732c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."D20 Product (Ragged Hier)"."Prod_Dsc"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-b0ce-732c00000000-m80cd8f37-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd8f34-0bb9-0000-714b-e31d00000000.xml#m80cd8f37-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd9419-07d6-0000-714b-e31d00000000" name="P12  Product Type (Rgd Sk Lvl)" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the product type description.]]></Description>
+<AttrDefn mdsid="m80cd96b4-0f3c-0000-714b-e31d00000000" name="AD_3900:1705741292245695">
+<Expr mdsid="m00000003-01f4-0000-58de-881100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."D20 Product (Ragged Hier)"."Type"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-58de-881100000000-m80cd8f39-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd8f34-0bb9-0000-714b-e31d00000000.xml#m80cd8f39-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd941a-07d6-0000-714b-e31d00000000" name="P13  LOB (Rgd Sk Lvl)" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the product's LOB description.]]></Description>
+<AttrDefn mdsid="m80cd96b5-0f3c-0000-714b-e31d00000000" name="AD_3900:1705751292245695">
+<Expr mdsid="m00000004-01f4-0000-aad0-816600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."D20 Product (Ragged Hier)"."LOB"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-aad0-816600000000-m80cd8f36-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd8f34-0bb9-0000-714b-e31d00000000.xml#m80cd8f36-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cd941b-07d6-0000-714b-e31d00000000" name="P14  Brand (Rgd Sk Lvl)" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the product's brand description.]]></Description>
+<AttrDefn mdsid="m80cd96b6-0f3c-0000-714b-e31d00000000" name="AD_3900:1705761292245695">
+<Expr mdsid="m00000005-01f4-0000-6b6f-6a7a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["05 - Sample App TimesTen".""."BISAMPLE_TT"."D20 Product (Ragged Hier)"."Brand"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-6b6f-6a7a00000000-m80cd8f35-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cd8f34-0bb9-0000-714b-e31d00000000.xml#m80cd8f35-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cd9574-07d8-0000-714b-e31d00000000" name="Dim 05 Product_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cd9574-07d8-0000-714b-e31d00000000-m80cd9417-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cd9416-07f3-0000-714b-e31d00000000.xml#m80cd9417-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cd9416-07f3-0000-714b-e31d00000000-m80cd9713-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cd9713-07f5-0000-714b-e31d00000000.xml#m80cd9713-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>

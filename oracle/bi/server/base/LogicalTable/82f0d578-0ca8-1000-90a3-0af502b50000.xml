@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0d578-0ca8-1000-90a3-0af502b50000" name="D0 Time" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acd5-0ca8-1000-90a3-0af502b50000.xml#m82f0acd5-0ca8-1000-90a3-0af502b50000">
+<Description><![CDATA[This logical table maps to the physical Time Dimension tables at Day and Month grains. It maps to 4 physical table objects.
+A07 Time Day and A08 Time Mth have the calendar hierarchy defined on them.
+A10 Fiscal Time Day has the Fiscal hierarchy defined on it.
+B08 Time Mth maps to the Forecast fact table.
+ ]]></Description>
+<LogicalColumn mdsid="m82f0d579-0ca8-1000-90a3-0af502b50000" name="T00 Calendar Date" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the date information in the format YYYY-MM-DD. Eg :- 2005-11-01]]></Description>
+<AttrDefn mdsid="m82f28200-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756891391789375">
+<Expr mdsid="m00000001-01f4-0000-cc93-e80800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."CALENDAR_DATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-cc93-e80800000000-m82dde844-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde844-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d57a-0ca8-1000-90a3-0af502b50000" name="T01 Per Name Week" isWriteable="false">
+<Description><![CDATA[Help : 
+Period Name Week. Stores the week information in the format YYYY Week Number. Eg :- 2005 Week 44]]></Description>
+<AttrDefn mdsid="m82f28201-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756901391789375">
+<Expr mdsid="m00000002-01f4-0000-d797-462400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."PER_NAME_WEEK"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-d797-462400000000-m82dde85d-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde85d-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d57b-0ca8-1000-90a3-0af502b50000" name="T02 Per Name Month" isWriteable="false">
+<Description><![CDATA[Help : 
+Period Name Month. Stores the month information in the format YYYY / MM. Eg :- 2005 / 11]]></Description>
+<AttrDefn mdsid="m82f28202-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756911391789375">
+<Expr mdsid="m00000003-01f4-0000-2c6b-f1f400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."PER_NAME_MONTH"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-2c6b-f1f400000000-m82dde85b-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde85b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d57c-0ca8-1000-90a3-0af502b50000" name="T03 Per Name Qtr" isWriteable="false">
+<Description><![CDATA[Help :
+Period Name Quarter. Stores the Quarter information in the format YYYY QQuarterNumber. Eg :- 2005 Q3]]></Description>
+<AttrDefn mdsid="m82f28203-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756921391789375">
+<Expr mdsid="m00000004-01f4-0000-22c5-cadf00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."PER_NAME_QTR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-22c5-cadf00000000-m82dde85c-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde85c-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d57d-0ca8-1000-90a3-0af502b50000" name="T04 Per Name Half" isWriteable="false">
+<Description><![CDATA[Help : 
+Period Name Half. Stores the Half year information in the format YYYY HYHalfYearNumber. Eg :- 2005 HY2]]></Description>
+<AttrDefn mdsid="m82f28204-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756931391789375">
+<Expr mdsid="m00000005-01f4-0000-a64c-1af000000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."PER_NAME_HALF"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-a64c-1af000000000-m82dde85a-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde85a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d57e-0ca8-1000-90a3-0af502b50000" name="T05 Per Name Year" isWriteable="false">
+<Description><![CDATA[Help :
+Period Name Year. Stores the year information in the format YYYY. Eg :- 2005]]></Description>
+<AttrDefn mdsid="m82f28205-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756941391789375">
+<Expr mdsid="m00000006-01f4-0000-55bc-c28400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."PER_NAME_YEAR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-55bc-c28400000000-m82dde85e-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde85e-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d57f-0ca8-1000-90a3-0af502b50000" name="T06 Row Wid" iconIndex="32859" isWriteable="false">
+<Description><![CDATA[Help : 
+Row Wid uniquely identifies a row in the Time dimension table and stores the date information in the format YYYYMMDD.
+Eg :- 20051101.]]></Description>
+<AttrDefn mdsid="m82f28206-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756951391789375">
+<Expr mdsid="m00000007-01f4-0000-f434-bcda00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."ROW_WID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-f434-bcda00000000-m82dde85f-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde85f-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d580-0ca8-1000-90a3-0af502b50000" name="T11 Day Of Week" isWriteable="false">
+<Description><![CDATA[Eg :- 20051101.]]></Description>
+<AttrDefn mdsid="m82f28207-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756961391789375">
+<Expr mdsid="m00000008-01f4-0000-44f5-a74400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."DAY_OF_WEEK"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-44f5-a74400000000-m82dde84d-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde84d-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d581-0ca8-1000-90a3-0af502b50000" name="T12 Day Of Month" isWriteable="false">
+<Description><![CDATA[Help : 
+Day of Month is a value between 1 and 31.]]></Description>
+<AttrDefn mdsid="m82f28208-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756971391789375">
+<Expr mdsid="m00000009-01f4-0000-d5a2-a30900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."DAY_OF_MONTH"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-d5a2-a30900000000-m82dde84c-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde84c-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d582-0ca8-1000-90a3-0af502b50000" name="T15 Day Of Year" isWriteable="false">
+<Description><![CDATA[Help : 
+Day of Year is a value between 1 and 366.]]></Description>
+<AttrDefn mdsid="m82f28209-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756981391789375">
+<Expr mdsid="m0000000a-01f4-0000-35ca-d56f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."DAY_OF_YEAR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000a-01f4-0000-35ca-d56f00000000-m82dde84e-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde84e-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d583-0ca8-1000-90a3-0af502b50000" name="T21 Beg of Week Wid" iconIndex="32859" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the beginning of the week value in the format YYYYMMDD.]]></Description>
+<AttrDefn mdsid="m82f2820a-0ca8-1000-90a3-0af502b50000" name="AD_3900:2756991391789375">
+<Expr mdsid="m0000000b-01f4-0000-2a2d-8a1600000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."BEG_OF_WEEK_WID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000b-01f4-0000-2a2d-8a1600000000-m82dde843-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde843-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d584-0ca8-1000-90a3-0af502b50000" name="T22 Beg of Mth Wid" iconIndex="32859" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the beginning of the month value in the format YYYYMMDD.]]></Description>
+<AttrDefn mdsid="m82f2820b-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757001391789375">
+<Expr mdsid="m0000000c-01f4-0000-761a-a5f300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."BEG_OF_MTH_WID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000c-01f4-0000-761a-a5f300000000-m82dde841-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde841-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d585-0ca8-1000-90a3-0af502b50000" name="T23 Beg of Qtr Wid" iconIndex="32859" isWriteable="false">
+<Description><![CDATA[Help :
+Stores the beginning of the quarter value in the format YYYYMMDD.]]></Description>
+<AttrDefn mdsid="m82f2820c-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757011391789375">
+<Expr mdsid="m0000000d-01f4-0000-206f-f45f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."BEG_OF_QTR_WID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000d-01f4-0000-206f-f45f00000000-m82dde842-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde842-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d586-0ca8-1000-90a3-0af502b50000" name="T24 Days in Mth" isWriteable="false">
+<Description><![CDATA[Help : 
+Days in Mth stores the number of days in that month. It could either be 30,31,28 or 29.]]></Description>
+<AttrDefn mdsid="m82f2820d-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757021391789375">
+<Expr mdsid="m0000000e-01f4-0000-1c23-41dc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."DAYS_IN_MTH"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000e-01f4-0000-1c23-41dc00000000-m82dde84a-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde84a-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d587-0ca8-1000-90a3-0af502b50000" name="T25 Days in Qtr" isWriteable="false">
+<Description><![CDATA[Help : 
+Days in Qtr stores the number of days in that quarter. It could either be 90,91 or 92.]]></Description>
+<AttrDefn mdsid="m82f2820e-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757031391789375">
+<Expr mdsid="m0000000f-01f4-0000-018d-aa1f00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."DAYS_IN_QTR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000000f-01f4-0000-018d-aa1f00000000-m82dde84b-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde84b-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d588-0ca8-1000-90a3-0af502b50000" name="T26 Data Loaded" iconIndex="32859" isWriteable="false">
+<Description><![CDATA[Help : 
+This column indicates if data is loaded in the fact table for this particular date. The value is either 0 or 1.]]></Description>
+<AttrDefn mdsid="m82f2820f-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757041391789375">
+<Expr mdsid="m00000010-01f4-0000-0c35-607e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."LOADED"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000010-01f4-0000-0c35-607e00000000-m82dde859-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde859-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d589-0ca8-1000-90a3-0af502b50000" name="T27 Holiday" isWriteable="false">
+<Description><![CDATA[Help : 
+This column indicates if the particular date is a holiday or not. The value is either 0 or 1.]]></Description>
+<AttrDefn mdsid="m82f28210-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757051391789375">
+<Expr mdsid="m00000011-01f4-0000-7a66-155100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."HOLIDAY"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000011-01f4-0000-7a66-155100000000-m82dde854-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde854-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d58a-0ca8-1000-90a3-0af502b50000" name="T31 Cal Week" isWriteable="false">
+<Description><![CDATA[Help : 
+Calendar Week stores the week number and is a value between 1 and 53.]]></Description>
+<AttrDefn mdsid="m82f28211-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757061391789375">
+<Expr mdsid="m00000012-01f4-0000-23f7-02ef00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."CAL_WEEK"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000012-01f4-0000-23f7-02ef00000000-m82dde848-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde848-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d58b-0ca8-1000-90a3-0af502b50000" name="T32 Cal Month" isWriteable="false">
+<Description><![CDATA[Help : 
+Calendar Month stores the month number and is a value between 1 and 12.]]></Description>
+<AttrDefn mdsid="m82f28212-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757071391789375">
+<Expr mdsid="m00000013-01f4-0000-292d-ec6a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."CAL_MONTH"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000013-01f4-0000-292d-ec6a00000000-m82dde846-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde846-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d58c-0ca8-1000-90a3-0af502b50000" name="T33 Cal Qtr" isWriteable="false">
+<Description><![CDATA[Help : 
+Calendar Quarter stores the quarter number and is a value between 1 and 4.]]></Description>
+<AttrDefn mdsid="m82f28213-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757081391789375">
+<Expr mdsid="m00000014-01f4-0000-db06-78dd00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."CAL_QTR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000014-01f4-0000-db06-78dd00000000-m82dde847-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde847-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d58d-0ca8-1000-90a3-0af502b50000" name="T34 Cal Half" isWriteable="false">
+<Description><![CDATA[Help : 
+Calendar Half stores the Half Year number and is either 1 or 2.]]></Description>
+<AttrDefn mdsid="m82f28214-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757091391789375">
+<Expr mdsid="m00000015-01f4-0000-9e87-e43100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."CAL_HALF"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000015-01f4-0000-9e87-e43100000000-m82dde845-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde845-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d58e-0ca8-1000-90a3-0af502b50000" name="T35 Cal Year" isWriteable="false">
+<Description><![CDATA[Help : 
+Calendar Year stores the Year value in the format YYYY.]]></Description>
+<AttrDefn mdsid="m82f28215-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757101391789375">
+<Expr mdsid="m00000016-01f4-0000-0d13-8be700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."CAL_YEAR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000016-01f4-0000-0d13-8be700000000-m82dde849-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde849-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d58f-0ca8-1000-90a3-0af502b50000" name="T41 Fscl Week" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the Fiscal week number and is a value between 1 and 53.]]></Description>
+<AttrDefn mdsid="m82f28216-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757111391789375">
+<Expr mdsid="m00000017-01f4-0000-b388-5d2800000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."FSCL_WEEK"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000017-01f4-0000-b388-5d2800000000-m82dde852-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde852-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d590-0ca8-1000-90a3-0af502b50000" name="T42 Fscl Month" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the Fiscal month number and is a value between 1 and 12.]]></Description>
+<AttrDefn mdsid="m82f28217-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757121391789375">
+<Expr mdsid="m00000018-01f4-0000-04ff-521100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."FSCL_MONTH"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000018-01f4-0000-04ff-521100000000-m82dde850-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde850-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d591-0ca8-1000-90a3-0af502b50000" name="T43 Fscl Qtr" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the Fiscal quarter number and is a value between 1 and 4.]]></Description>
+<AttrDefn mdsid="m82f28218-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757131391789375">
+<Expr mdsid="m00000019-01f4-0000-d0a5-7e6300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."FSCL_QTR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000019-01f4-0000-d0a5-7e6300000000-m82dde851-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde851-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d592-0ca8-1000-90a3-0af502b50000" name="T44 Fscl Half" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the Fiscal half year number and is either 1 or 2.]]></Description>
+<AttrDefn mdsid="m82f28219-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757141391789375">
+<Expr mdsid="m0000001a-01f4-0000-6ac1-1d5b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."FSCL_HALF"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001a-01f4-0000-6ac1-1d5b00000000-m82dde84f-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde84f-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d593-0ca8-1000-90a3-0af502b50000" name="T45 Fscl Year" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the Fiscal Year number in the format YYYY.]]></Description>
+<AttrDefn mdsid="m82f2821a-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757151391789375">
+<Expr mdsid="m0000001b-01f4-0000-0268-d88300000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."FSCL_YEAR"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001b-01f4-0000-0268-d88300000000-m82dde853-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde853-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d594-0ca8-1000-90a3-0af502b50000" name="T50 Julian Day Num" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the Julian Day Number as an integer.]]></Description>
+<AttrDefn mdsid="m82f2821b-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757161391789375">
+<Expr mdsid="m0000001c-01f4-0000-66c0-21c700000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."JULIAN_DAY_NUM"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001c-01f4-0000-66c0-21c700000000-m82dde855-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde855-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d595-0ca8-1000-90a3-0af502b50000" name="T51 Julian Week Num" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the Julian Week Number as an integer.]]></Description>
+<AttrDefn mdsid="m82f2821c-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757171391789375">
+<Expr mdsid="m0000001d-01f4-0000-53e4-988b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."JULIAN_WEEK_NUM"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001d-01f4-0000-53e4-988b00000000-m82dde858-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde858-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d596-0ca8-1000-90a3-0af502b50000" name="T52 Julian Month Num" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the Julian Month Number as an integer.]]></Description>
+<AttrDefn mdsid="m82f2821d-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757181391789375">
+<Expr mdsid="m0000001e-01f4-0000-b272-696b00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."JULIAN_MONTH_NUM"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001e-01f4-0000-b272-696b00000000-m82dde856-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde856-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0d597-0ca8-1000-90a3-0af502b50000" name="T53 Julian Qtr Num" isWriteable="false">
+<Description><![CDATA[Help : 
+Stores the Julian Quarter Number as an integer.]]></Description>
+<AttrDefn mdsid="m82f2821e-0ca8-1000-90a3-0af502b50000" name="AD_3900:2757191391789375">
+<Expr mdsid="m0000001f-01f4-0000-5519-1c8c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."ADS_BI_ART"."ADS_BI_ART_TIME"."JULIAN_QTR_NUM"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001f-01f4-0000-5519-1c8c00000000-m82dde857-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82dde840-0ca8-1000-90a3-0af502b50000.xml#m82dde857-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m82f233cc-0ca8-1000-90a3-0af502b50000" name="Dim 07 Time_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f233cc-0ca8-1000-90a3-0af502b50000-m82f0d579-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0d578-0ca8-1000-90a3-0af502b50000.xml#m82f0d579-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0d578-0ca8-1000-90a3-0af502b50000-m82f2f6e8-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f2f6e8-0ca8-1000-90a3-0af502b50000.xml#m82f2f6e8-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>

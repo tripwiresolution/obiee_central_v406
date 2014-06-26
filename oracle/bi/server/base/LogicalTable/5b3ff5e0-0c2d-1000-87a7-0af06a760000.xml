@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m5b3ff5e0-0c2d-1000-87a7-0af06a760000" name="F1 Time Based Fragmentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="979" y="460" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cab573-07d0-0000-714b-e31d00000000.xml#m80cab573-07d0-0000-714b-e31d00000000">
+<Description><![CDATA[This logical table contains metrics like Revenue, Billed Qty, Booked Amt and Booked Qty with different types of aggregation like Sum, First on Time , Last on Time and Count Distinct. 
+All the metrics in this table are physically mapped to columns in the Revenue fact table.
+]]></Description>
+<LogicalColumn mdsid="m5b3ff5e2-0c2d-1000-87a7-0af06a760000" name="1a- Revenue (DW History Data)" isWriteable="false">
+<MeasureDefn mdsid="m5b3ff608-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="mf5103c20-0c32-1000-939a-7f0000010000" name="AggRule_2050:2403531341300038" isDefault="true">
+<Expr mdsid="m00000001-01f4-0000-6ae5-665a00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("01 - Sample App"."F1 Time Based Fragmentation"."1a- Revenue (DW History Data)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-6ae5-665a00000000-m5b3ff5e2-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/5b3ff5e0-0c2d-1000-87a7-0af06a760000.xml#m5b3ff5e2-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m5b3ff63b-0c2d-1000-87a7-0af06a760000" name="AD_3900:2379951338894398">
+<Expr mdsid="m00000002-01f4-0000-e48a-963100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE"."F10 Billed Rev"."Revenue"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-e48a-963100000000-m80cb6a0b-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cb683a-0bb9-0000-714b-e31d00000000.xml#m80cb6a0b-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m651dbf74-0c2d-1000-87a7-0af06a760000" name="1b- Revenue (OTLP Real Time Data)" isWriteable="false">
+<MeasureDefn mdsid="m651dbf75-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m19ab6b90-0c33-1000-be81-7f0000010000" name="AggRule_2050:2403771341361391" isDefault="true">
+<Expr mdsid="m00000003-01f4-0000-8f64-b05c00000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("01 - Sample App"."F1 Time Based Fragmentation"."1b- Revenue (OTLP Real Time Data)")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-8f64-b05c00000000-m651dbf74-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/5b3ff5e0-0c2d-1000-87a7-0af06a760000.xml#m651dbf74-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m651dbf77-0c2d-1000-87a7-0af06a760000" name="AD_3900:2387111338910951">
+<Expr mdsid="m00000004-01f4-0000-08e4-52f800000000" name="Expr">
+<ExprText><![CDATA["%1"*"%2" ]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE_RT"."ORDER_ITEMS"."QUANTITY"*"01 - Sample App Data (ORCL)".""."BISAMPLE_RT"."ORDER_ITEMS"."UNIT_PRICE" ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-08e4-52f800000000-m65c7e29e-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/65c7e295-0c2d-1000-87a7-0af06a760000.xml#m65c7e29e-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000004-01f4-0000-08e4-52f800000000-m65c7e29f-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/65c7e295-0c2d-1000-87a7-0af06a760000.xml#m65c7e29f-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m653a2114-0c2d-1000-87a7-0af06a760000" name="1c- Revenue Fragmented Sources" isWriteable="false">
+<Description><![CDATA[Help :
+Revenue data. Sources from Dollars physical column in FactsRev table joining to time using Billed time.  
+
+- Returns sum of data over any selected dimensions]]></Description>
+<MeasureDefn mdsid="m653a2115-0c2d-1000-87a7-0af06a760000" name="Measure" isCommutative="false">
+<AggrRule mdsid="m19a6b0a0-0c33-1000-be81-7f0000010000" name="AggRule_2050:2403761341361391" isDefault="true">
+<Expr mdsid="m00000005-01f4-0000-57f4-640900000000" name="Expr">
+<ExprText><![CDATA[ SUM("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[ SUM("01 - Sample App"."F1 Time Based Fragmentation"."1c- Revenue Fragmented Sources")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-57f4-640900000000-m653a2114-0c2d-1000-87a7-0af06a760000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/5b3ff5e0-0c2d-1000-87a7-0af06a760000.xml#m653a2114-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AggrRule>
+</MeasureDefn>
+<AttrDefn mdsid="m653a2117-0c2d-1000-87a7-0af06a760000" name="AD_3900:2387191338911137">
+<Expr mdsid="m00000006-01f4-0000-75a1-6a2100000000" name="Expr">
+<ExprText><![CDATA["%1"*"%2" ]]></ExprText>
+<ExprTextDesc><![CDATA["01 - Sample App Data (ORCL)".""."BISAMPLE_RT"."ORDER_ITEMS"."QUANTITY"*"01 - Sample App Data (ORCL)".""."BISAMPLE_RT"."ORDER_ITEMS"."UNIT_PRICE" ]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-75a1-6a2100000000-m65c7e29e-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/65c7e295-0c2d-1000-87a7-0af06a760000.xml#m65c7e29e-0c2d-1000-87a7-0af06a760000"/>
+<RefObject refId="m00000006-01f4-0000-75a1-6a2100000000-m65c7e29f-0c2d-1000-87a7-0af06a760000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/65c7e295-0c2d-1000-87a7-0af06a760000.xml#m65c7e29f-0c2d-1000-87a7-0af06a760000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<RefTableSources>
+<RefLogicalTableSource refId="m5b3ff5e0-0c2d-1000-87a7-0af06a760000-m5b3ff660-0c2d-1000-87a7-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/5b3ff660-0c2d-1000-87a7-0af06a760000.xml#m5b3ff660-0c2d-1000-87a7-0af06a760000"/>
+<RefLogicalTableSource refId="m5b3ff5e0-0c2d-1000-87a7-0af06a760000-m662173d3-0c2d-1000-87a7-0af06a760000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/662173d3-0c2d-1000-87a7-0af06a760000.xml#m662173d3-0c2d-1000-87a7-0af06a760000"/>
+</RefTableSources>
+</LogicalTable>

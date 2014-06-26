@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m7d696a20-0cbe-1000-ba67-0ae9166e0000" name="ODM_ALL_MINING_MODELS_V" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" maxConn="0" containerRef="/oracle/bi/server/base/Schema/80cb6803-0bd3-0000-714b-e31d00000000.xml#m80cb6803-0bd3-0000-714b-e31d00000000">
+<DBMapItem name="DefaultMulDB">
+<Value><![CDATA[ODM_ALL_MINING_MODELS_V]]></Value>
+</DBMapItem>
+<PhysicalColumn mdsid="m7d696a27-0cbe-1000-ba67-0ae9166e0000" name="ALGORITHM" dataType="VARCHAR" precision="30" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m7d696a28-0cbe-1000-ba67-0ae9166e0000" name="BUILD_DURATION" dataType="DOUBLE" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m7d696a29-0cbe-1000-ba67-0ae9166e0000" name="COMMENTS" dataType="VARCHAR" precision="4000" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m7d696a2a-0cbe-1000-ba67-0ae9166e0000" name="CREATION_DATE" dataType="DATETIME" precision="4000" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m7d696a2b-0cbe-1000-ba67-0ae9166e0000" name="MINING_FUNCTION" dataType="VARCHAR" precision="30" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m7d696a2c-0cbe-1000-ba67-0ae9166e0000" name="MODEL_NAME" dataType="VARCHAR" precision="128" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m7d696a2d-0cbe-1000-ba67-0ae9166e0000" name="MODEL_SIZE" dataType="DOUBLE" precision="22" nullable="true" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m7d696a2e-0cbe-1000-ba67-0ae9166e0000" name="OWNER" dataType="VARCHAR" precision="128" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m7d696a74-0cbe-1000-ba67-0ae9166e0000" name="ODM_ALL_MINING_MODELS_V_PK">
+<RefColumns>
+<RefColumn refId="m7d696a74-0cbe-1000-ba67-0ae9166e0000-m7d696a2a-0cbe-1000-ba67-0ae9166e0000" columnRef="/oracle/bi/server/base/PhysicalTable/7d696a20-0cbe-1000-ba67-0ae9166e0000.xml#m7d696a2a-0cbe-1000-ba67-0ae9166e0000"/>
+<RefColumn refId="m7d696a74-0cbe-1000-ba67-0ae9166e0000-m7d696a2c-0cbe-1000-ba67-0ae9166e0000" columnRef="/oracle/bi/server/base/PhysicalTable/7d696a20-0cbe-1000-ba67-0ae9166e0000.xml#m7d696a2c-0cbe-1000-ba67-0ae9166e0000"/>
+<RefColumn refId="m7d696a74-0cbe-1000-ba67-0ae9166e0000-m7d696a2e-0cbe-1000-ba67-0ae9166e0000" columnRef="/oracle/bi/server/base/PhysicalTable/7d696a20-0cbe-1000-ba67-0ae9166e0000.xml#m7d696a2e-0cbe-1000-ba67-0ae9166e0000"/>
+</RefColumns>
+</PhysicalKey>
+<PhysicalKey mdsid="m7d696a75-0cbe-1000-ba67-0ae9166e0000" name="ODM_ALL_MINING_MODELS_V_Key">
+<RefColumns>
+<RefColumn refId="m7d696a75-0cbe-1000-ba67-0ae9166e0000-m7d696a2c-0cbe-1000-ba67-0ae9166e0000" columnRef="/oracle/bi/server/base/PhysicalTable/7d696a20-0cbe-1000-ba67-0ae9166e0000.xml#m7d696a2c-0cbe-1000-ba67-0ae9166e0000"/>
+<RefColumn refId="m7d696a75-0cbe-1000-ba67-0ae9166e0000-m7d696a2e-0cbe-1000-ba67-0ae9166e0000" columnRef="/oracle/bi/server/base/PhysicalTable/7d696a20-0cbe-1000-ba67-0ae9166e0000.xml#m7d696a2e-0cbe-1000-ba67-0ae9166e0000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>

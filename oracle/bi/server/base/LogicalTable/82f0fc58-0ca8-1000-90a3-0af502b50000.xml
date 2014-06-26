@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m82f0fc58-0ca8-1000-90a3-0af502b50000" name="Dim - Time" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" subjectAreaRef="/oracle/bi/server/base/BusinessModel/82f0acda-0ca8-1000-90a3-0af502b50000.xml#m82f0acda-0ca8-1000-90a3-0af502b50000">
+<LogicalColumn mdsid="m82f0fc59-0ca8-1000-90a3-0af502b50000" name="Calendar Date" isWriteable="false">
+<AttrDefn mdsid="m82f2a976-0ca8-1000-90a3-0af502b50000" name="AD_3900:2760791391789375">
+<Expr mdsid="m00000001-01f4-0000-885a-fdf400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_TIME"."CALENDAR_DATE"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-885a-fdf400000000-m82e3dc62-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc61-0ca8-1000-90a3-0af502b50000.xml#m82e3dc62-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc5a-0ca8-1000-90a3-0af502b50000" name="Month" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/82f0fc58-0ca8-1000-90a3-0af502b50000.xml#m82f0fc5b-0ca8-1000-90a3-0af502b50000">
+<AttrDefn mdsid="m82f2a977-0ca8-1000-90a3-0af502b50000" name="AD_3900:2760801391789375">
+<Expr mdsid="m00000002-01f4-0000-720a-2f6900000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_TIME"."MONTH_DESC"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-720a-2f6900000000-m82e3dc63-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc61-0ca8-1000-90a3-0af502b50000.xml#m82e3dc63-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc5b-0ca8-1000-90a3-0af502b50000" name="Month Number" isWriteable="false">
+<AttrDefn mdsid="m82f2a978-0ca8-1000-90a3-0af502b50000" name="AD_3900:2760811391789375">
+<Expr mdsid="m00000003-01f4-0000-39e3-dece00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_TIME"."MONTH_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-39e3-dece00000000-m82e3dc64-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc61-0ca8-1000-90a3-0af502b50000.xml#m82e3dc64-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc5c-0ca8-1000-90a3-0af502b50000" name="Quarter" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/82f0fc58-0ca8-1000-90a3-0af502b50000.xml#m82f0fc5d-0ca8-1000-90a3-0af502b50000">
+<AttrDefn mdsid="m82f2a979-0ca8-1000-90a3-0af502b50000" name="AD_3900:2760821391789375">
+<Expr mdsid="m00000004-01f4-0000-02f2-47dc00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_TIME"."QUARTER_DESC"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-02f2-47dc00000000-m82e3dc65-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc61-0ca8-1000-90a3-0af502b50000.xml#m82e3dc65-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc5d-0ca8-1000-90a3-0af502b50000" name="Quarter Number" isWriteable="false">
+<AttrDefn mdsid="m82f2a97a-0ca8-1000-90a3-0af502b50000" name="AD_3900:2760831391789375">
+<Expr mdsid="m00000005-01f4-0000-c5e4-288a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_TIME"."QUARTER_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-c5e4-288a00000000-m82e3dc66-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc61-0ca8-1000-90a3-0af502b50000.xml#m82e3dc66-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc5e-0ca8-1000-90a3-0af502b50000" name="Fiscal Year" isWriteable="false">
+<AttrDefn mdsid="m82f2a97b-0ca8-1000-90a3-0af502b50000" name="AD_3900:2760841391789375">
+<Expr mdsid="m00000006-01f4-0000-a963-a55a00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_TIME"."YEAR_DESC"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-a963-a55a00000000-m82e3dc67-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc61-0ca8-1000-90a3-0af502b50000.xml#m82e3dc67-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m82f0fc5f-0ca8-1000-90a3-0af502b50000" name="Fiscal Year Number" isWriteable="false">
+<AttrDefn mdsid="m82f2a97c-0ca8-1000-90a3-0af502b50000" name="AD_3900:2760851391789375">
+<Expr mdsid="m00000007-01f4-0000-5ae6-34c400000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Y01 - Custom Demo Datasets".""."LOIC"."LOIC_TIME"."YEAR_ID"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-5ae6-34c400000000-m82e3dc68-0ca8-1000-90a3-0af502b50000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/82e3dc61-0ca8-1000-90a3-0af502b50000.xml#m82e3dc68-0ca8-1000-90a3-0af502b50000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m82f23450-0ca8-1000-90a3-0af502b50000" name="LOIC_TIME_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m82f23450-0ca8-1000-90a3-0af502b50000-m82f0fc59-0ca8-1000-90a3-0af502b50000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/82f0fc58-0ca8-1000-90a3-0af502b50000.xml#m82f0fc59-0ca8-1000-90a3-0af502b50000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m82f0fc58-0ca8-1000-90a3-0af502b50000-m82f31e0f-0ca8-1000-90a3-0af502b50000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/82f31e0f-0ca8-1000-90a3-0af502b50000.xml#m82f31e0f-0ca8-1000-90a3-0af502b50000"/>
+</RefTableSources>
+</LogicalTable>
