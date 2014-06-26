@@ -358,6 +358,17 @@ Header object, dummy not to be used in any queries]]></Description>
 </Expr>
 </AttrDefn>
 </LogicalColumn>
+<LogicalColumn mdsid="mc0000002-fd76-14ea-8505-0a00020f0000" name="D55  City (upper)" isWriteable="false">
+<AttrDefn mdsid="mc0000003-fd76-14ea-8505-0a00020f0000" name="AD_3900:433941403778523">
+<Expr mdsid="m0000001f-01f4-0000-b19f-aee600000000" name="Expr">
+<ExprText><![CDATA[upper("%1")]]></ExprText>
+<ExprTextDesc><![CDATA[upper("01 - Sample App Data (ORCL)".""."BISAMPLE"."D32 Offices Addresses"."City")]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m0000001f-01f4-0000-b19f-aee600000000-m80cdeb35-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80cdeb28-0bb9-0000-714b-e31d00000000.xml#m80cdeb35-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
 <LogicalKey mdsid="m80cb35c9-07d8-0000-714b-e31d00000000" name="Dim 02 Market_Key" isPrimary="true">
 <RefColumns>
 <RefLogicalColumn refId="m80cb35c9-07d8-0000-714b-e31d00000000-m80cb35aa-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb35a8-07f3-0000-714b-e31d00000000.xml#m80cb35aa-07d6-0000-714b-e31d00000000"/>

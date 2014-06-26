@@ -62,9 +62,9 @@ Billed Quantity data. Sources from Units column in FactsRev table joining to tim
 <AttrDefn mdsid="m94530ece-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979701332977199">
 <Expr mdsid="m00000006-01f4-0000-2eb8-7a7400000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["DMA_DB"."ESSCUBE1".""."ESSCUBE1"."2- Billed Quantity"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ESSB)"."EXA_ESSB".""."EXA_ESSB"."2- Billed Quantity"]]></ExprTextDesc>
 <ObjectRefList>
-<RefObject refId="m00000006-01f4-0000-2eb8-7a7400000000-mc0000000-1f16-14da-be73-7f0000010000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/c0000001-1efa-14da-be73-7f0000010000.xml#mc0000000-1f16-14da-be73-7f0000010000"/>
+<RefObject refId="m00000006-01f4-0000-2eb8-7a7400000000-m40000001-1e70-14da-be73-7f0000010000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/00000001-1e52-14da-be73-7f0000010000.xml#m40000001-1e70-14da-be73-7f0000010000"/>
 </ObjectRefList>
 </Expr>
 </AttrDefn>
@@ -109,10 +109,10 @@ Booked Amount data. Sources from Dollars column in FactsRev table joining to tim
 </MeasureDefn>
 <AttrDefn mdsid="m94530ed0-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979721332977199">
 <Expr mdsid="m0000000a-01f4-0000-8cc2-251800000000" name="Expr">
-<ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."EXA_FACT_AGG_OR_03"."Paid_Am000302E4"]]></ExprTextDesc>
+<ExprText><![CDATA[ IFNULL("%1", 0)]]></ExprText>
+<ExprTextDesc><![CDATA[ IFNULL("02 - Sample App Exa Data (ORCL)".""."BISAMPLE_EXA"."F15 Rev. (Paid Dt Join)"."Revenue", 0)]]></ExprTextDesc>
 <ObjectRefList>
-<RefObject refId="m0000000a-01f4-0000-8cc2-251800000000-m28542186-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28542180-0c71-1000-a576-0af502b30000.xml#m28542186-0c71-1000-a576-0af502b30000"/>
+<RefObject refId="m0000000a-01f4-0000-8cc2-251800000000-m9449be9f-0c1f-1000-b9aa-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/9449be9b-0c1f-1000-b9aa-0af502b10000.xml#m9449be9f-0c1f-1000-b9aa-0af502b10000"/>
 </ObjectRefList>
 </Expr>
 </AttrDefn>
@@ -136,9 +136,9 @@ Booked Amount data. Sources from Dollars column in FactsRev table joining to tim
 <AttrDefn mdsid="m94530ed1-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979731332977199">
 <Expr mdsid="m0000000c-01f4-0000-5f40-b3e500000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."EXA_FACT_AGG_OR_03"."Shipped000302E5"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_EXA"."F14 Rev. (Ship Dt Join)"."Revenue"]]></ExprTextDesc>
 <ObjectRefList>
-<RefObject refId="m0000000c-01f4-0000-5f40-b3e500000000-m28542187-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28542180-0c71-1000-a576-0af502b30000.xml#m28542187-0c71-1000-a576-0af502b30000"/>
+<RefObject refId="m0000000c-01f4-0000-5f40-b3e500000000-m9449bf26-0c1f-1000-b9aa-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/9449bf22-0c1f-1000-b9aa-0af502b10000.xml#m9449bf26-0c1f-1000-b9aa-0af502b10000"/>
 </ObjectRefList>
 </Expr>
 </AttrDefn>
@@ -162,9 +162,9 @@ Billed Quantity data. Sources from Units column in FactsRev table joining to tim
 <AttrDefn mdsid="m94530ed2-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979741332977199">
 <Expr mdsid="m0000000e-01f4-0000-4b9e-33f000000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."EXA_FACT_AGG_OR_03"."Shipped000302E6"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_EXA"."F14 Rev. (Ship Dt Join)"."Units"]]></ExprTextDesc>
 <ObjectRefList>
-<RefObject refId="m0000000e-01f4-0000-4b9e-33f000000000-m28542188-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28542180-0c71-1000-a576-0af502b30000.xml#m28542188-0c71-1000-a576-0af502b30000"/>
+<RefObject refId="m0000000e-01f4-0000-4b9e-33f000000000-m9449bf2c-0c1f-1000-b9aa-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/9449bf22-0c1f-1000-b9aa-0af502b10000.xml#m9449bf2c-0c1f-1000-b9aa-0af502b10000"/>
 </ObjectRefList>
 </Expr>
 </AttrDefn>
@@ -258,9 +258,9 @@ Billed Quantity data. Sources from Units column in FactsRev table joining to tim
 <AttrDefn mdsid="m94530ed6-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979781332977199">
 <Expr mdsid="m00000016-01f4-0000-b628-72c400000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["DMA_DB"."ESSCUBE1".""."ESSCUBE1"."11- Fixed Costs"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ESSB)"."EXA_ESSB".""."EXA_ESSB"."11- Fixed Costs"]]></ExprTextDesc>
 <ObjectRefList>
-<RefObject refId="m00000016-01f4-0000-b628-72c400000000-mc0000001-1f16-14da-be73-7f0000010000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/c0000001-1efa-14da-be73-7f0000010000.xml#mc0000001-1f16-14da-be73-7f0000010000"/>
+<RefObject refId="m00000016-01f4-0000-b628-72c400000000-m40000003-1e70-14da-be73-7f0000010000" objectTypeId="3043" objectRef="/oracle/bi/server/base/CubeTable/00000001-1e52-14da-be73-7f0000010000.xml#m40000003-1e70-14da-be73-7f0000010000"/>
 </ObjectRefList>
 </Expr>
 </AttrDefn>
@@ -334,9 +334,9 @@ Header object, dummy not to be used in any queries]]></Description>
 <AttrDefn mdsid="m94530ed9-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979811332977199">
 <Expr mdsid="m0000001e-01f4-0000-2790-d28a00000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."EXA_FACT_AGG_OR_03"."of_C000302ED"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_EXA"."F13 Rev. (Order Dt Join)"."Cust_Key"]]></ExprTextDesc>
 <ObjectRefList>
-<RefObject refId="m0000001e-01f4-0000-2790-d28a00000000-m28542189-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28542180-0c71-1000-a576-0af502b30000.xml#m28542189-0c71-1000-a576-0af502b30000"/>
+<RefObject refId="m0000001e-01f4-0000-2790-d28a00000000-m9449bf3c-0c1f-1000-b9aa-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/9449bf39-0c1f-1000-b9aa-0af502b10000.xml#m9449bf3c-0c1f-1000-b9aa-0af502b10000"/>
 </ObjectRefList>
 </Expr>
 </AttrDefn>
@@ -358,9 +358,9 @@ Header object, dummy not to be used in any queries]]></Description>
 <AttrDefn mdsid="m94530eda-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979821332977199">
 <Expr mdsid="m00000020-01f4-0000-839f-14f200000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."EXA_FACT_AGG_OR_03"."of_E000302EE"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_EXA"."F13 Rev. (Order Dt Join)"."Empl_Key"]]></ExprTextDesc>
 <ObjectRefList>
-<RefObject refId="m00000020-01f4-0000-839f-14f200000000-m2854218a-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28542180-0c71-1000-a576-0af502b30000.xml#m2854218a-0c71-1000-a576-0af502b30000"/>
+<RefObject refId="m00000020-01f4-0000-839f-14f200000000-m9449bf42-0c1f-1000-b9aa-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/9449bf39-0c1f-1000-b9aa-0af502b10000.xml#m9449bf42-0c1f-1000-b9aa-0af502b10000"/>
 </ObjectRefList>
 </Expr>
 </AttrDefn>
@@ -382,9 +382,9 @@ Header object, dummy not to be used in any queries]]></Description>
 <AttrDefn mdsid="m94530edb-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979831332977199">
 <Expr mdsid="m00000022-01f4-0000-874c-f30200000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."EXA_FACT_AGG_OR_03"."of_O000302EF"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_EXA"."F13 Rev. (Order Dt Join)"."Office_Key"]]></ExprTextDesc>
 <ObjectRefList>
-<RefObject refId="m00000022-01f4-0000-874c-f30200000000-m2854218b-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28542180-0c71-1000-a576-0af502b30000.xml#m2854218b-0c71-1000-a576-0af502b30000"/>
+<RefObject refId="m00000022-01f4-0000-874c-f30200000000-m9449bf49-0c1f-1000-b9aa-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/9449bf39-0c1f-1000-b9aa-0af502b10000.xml#m9449bf49-0c1f-1000-b9aa-0af502b10000"/>
 </ObjectRefList>
 </Expr>
 </AttrDefn>
@@ -406,9 +406,9 @@ Header object, dummy not to be used in any queries]]></Description>
 <AttrDefn mdsid="m94530edc-0c1f-1000-b9aa-0af502b10000" name="AD_3900:1979841332977199">
 <Expr mdsid="m00000024-01f4-0000-6763-1f3e00000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_AGGS"."EXA_FACT_AGG_OR_03"."of_P000302F0"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA["02 - Sample App Exa Data (ORCL)".""."BISAMPLE_EXA"."F13 Rev. (Order Dt Join)"."Prod_Key"]]></ExprTextDesc>
 <ObjectRefList>
-<RefObject refId="m00000024-01f4-0000-6763-1f3e00000000-m2854218c-0c71-1000-a576-0af502b30000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/28542180-0c71-1000-a576-0af502b30000.xml#m2854218c-0c71-1000-a576-0af502b30000"/>
+<RefObject refId="m00000024-01f4-0000-6763-1f3e00000000-m9449bf41-0c1f-1000-b9aa-0af502b10000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/9449bf39-0c1f-1000-b9aa-0af502b10000.xml#m9449bf41-0c1f-1000-b9aa-0af502b10000"/>
 </ObjectRefList>
 </Expr>
 </AttrDefn>
